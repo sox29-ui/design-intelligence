@@ -1,0 +1,333 @@
+{
+  "ref_id": "ref-012",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:27:08.599Z",
+  "observations": [
+    {
+      "id": "ref-012.hierarchy.home-en-a-department-router-hero",
+      "ref_id": "ref-012",
+      "page": "home-en",
+      "source_url": "https://www.ounass.ae/",
+      "capture_id": "20261002T162237Z",
+      "captured_at": "2026-10-02T16:22:37.711Z",
+      "viewport": "390x844",
+      "category": "hierarchy",
+      "property": "department-router-hero",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-en/20261002T162237Z/390x844-top.jpg",
+          "sha256": "5464f67b6a7b6d22f4565649e2e34d04de0e746b76f903a4afa3b8f0dba602d3"
+        }
+      ],
+      "statement": "Mobile first read is full-bleed fashion photography with three stacked white rectangular buttons (women / men / kids) centred over it; the hero routes to departments instead of carrying a slogan. Above it, a dark rounded strip states a fast-delivery promise; a promo for the app follows below.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "hero",
+        "router",
+        "commerce"
+      ]
+    },
+    {
+      "id": "ref-012.rtl.home-ar-a-mirrored-commerce-header",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "390x844",
+      "category": "rtl",
+      "property": "mirrored-commerce-header",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-top.jpg",
+          "sha256": "05cce725338d157acda7898ad4410434e154cb6cad2df91dd6e099627fa7a275"
+        }
+      ],
+      "statement": "In Arabic the mobile header mirrors the English one: menu and search move to the right, wishlist and bag to the left, logo stays centred; the delivery-promise strip and its icons also flip sides. Photography and button stack are unchanged.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "mirroring",
+        "bilingual-parity"
+      ]
+    },
+    {
+      "id": "ref-012.rtl.home-ar-a-localized-logotype",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "1440x900",
+      "category": "rtl",
+      "property": "localized-logotype",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/1440x900-top.jpg",
+          "sha256": "2212b707082a47c448ec6bb4e3fc21f8c4e92ed0203dd62867a9fd080f7c8a06"
+        },
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-top.jpg",
+          "sha256": "05cce725338d157acda7898ad4410434e154cb6cad2df91dd6e099627fa7a275"
+        }
+      ],
+      "statement": "At 1440 the Arabic storefront shows an Arabic logotype with an Arabic tagline, while at 390 the same Arabic page shows the Latin wordmark.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "logo",
+        "localisation"
+      ]
+    },
+    {
+      "id": "ref-012.layout.home-ar-a-desktop-department-tiles",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "desktop-department-tiles",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/1440x900-top.jpg",
+          "sha256": "2212b707082a47c448ec6bb4e3fc21f8c4e92ed0203dd62867a9fd080f7c8a06"
+        }
+      ],
+      "statement": "Desktop composition: dark utility bar (departments; country and language switch), a search field at the inline start, account/wishlist/bag links at the inline end, a three-item trust row (delivery, gift wrap, wallet payment) and three equal department photo tiles with centred white label buttons. Department order follows reading direction.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "grid",
+        "trust",
+        "rtl"
+      ]
+    },
+    {
+      "id": "ref-012.color.home-ar-a-monochrome-ui",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "monochrome-ui",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/1440x900-top.jpg",
+          "sha256": "2212b707082a47c448ec6bb4e3fc21f8c4e92ed0203dd62867a9fd080f7c8a06"
+        },
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-top.jpg",
+          "sha256": "05cce725338d157acda7898ad4410434e154cb6cad2df91dd6e099627fa7a275"
+        }
+      ],
+      "statement": "Interface colour is limited to black, white and greys with small rounded corners; all colour comes from the photography. No gradients, glows, blur or illustration.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "luxury",
+        "restraint"
+      ]
+    },
+    {
+      "id": "ref-012.typography.home-ar-a-arabic-type-swap",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "arabic-type-swap",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-top.jpg",
+          "sha256": "05cce725338d157acda7898ad4410434e154cb6cad2df91dd6e099627fa7a275"
+        },
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-scroll-25.jpg",
+          "sha256": "ab077ec11f4566b8b55ce2c2e400fa52c4794e6c27f885cf5e095aeded45b787"
+        }
+      ],
+      "statement": "The English promo heading is set in an elegant serif; its Arabic counterpart uses the same plain Kufi sans as all other Arabic text and wraps to three lines where English needs two.",
+      "confidence": 0.85,
+      "assessment": "weakness",
+      "tags": [
+        "bilingual-type",
+        "wrapping"
+      ]
+    },
+    {
+      "id": "ref-012.responsive.home-ar-a-mobile-footer-accordion",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-footer-accordion",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-012/home-ar/20261002T162428Z/390x844-scroll-25.jpg",
+          "sha256": "ab077ec11f4566b8b55ce2c2e400fa52c4794e6c27f885cf5e095aeded45b787"
+        }
+      ],
+      "statement": "On mobile the footer becomes a dark section with newsletter field, social icons and collapsible link groups marked with plus icons; the newsletter submit button appears as light grey on dark (disabled-looking).",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "accordion",
+        "footer"
+      ]
+    },
+    {
+      "id": "ref-012.hierarchy.home-en-a-why-router-hero",
+      "ref_id": "ref-012",
+      "page": "home-en",
+      "source_url": "https://www.ounass.ae/",
+      "capture_id": "20261002T162237Z",
+      "captured_at": "2026-10-02T16:22:37.711Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "why-router-hero",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-012.hierarchy.home-en-a-department-router-hero"
+        },
+        {
+          "observation": "ref-012.layout.home-ar-a-desktop-department-tiles"
+        }
+      ],
+      "statement": "For a broad multi-department luxury store the home page's job is to route quickly; photography supplies the brand mood and plain department buttons supply the task. A comparable logic to GOV.UK's search-first hero in a completely different register.",
+      "confidence": 0.65,
+      "assessment": "strength",
+      "tags": [
+        "user-intent",
+        "commerce"
+      ]
+    },
+    {
+      "id": "ref-012.components.home-en-a-why-delivery-promise",
+      "ref_id": "ref-012",
+      "page": "home-en",
+      "source_url": "https://www.ounass.ae/",
+      "capture_id": "20261002T162237Z",
+      "captured_at": "2026-10-02T16:22:37.711Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "why-delivery-promise",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-012.hierarchy.home-en-a-department-router-hero"
+        },
+        {
+          "observation": "ref-012.layout.home-ar-a-desktop-department-tiles"
+        }
+      ],
+      "statement": "Delivery speed, gift wrapping and wallet payment appear before any product: in GCC e-commerce these trust and convenience promises are likely decisive enough to earn space above the fold.",
+      "confidence": 0.55,
+      "assessment": "strength",
+      "tags": [
+        "trust",
+        "mena-commerce"
+      ]
+    },
+    {
+      "id": "ref-012.typography.home-ar-a-why-bilingual-voice-loss",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "why-bilingual-voice-loss",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-012.typography.home-ar-a-arabic-type-swap"
+        },
+        {
+          "observation": "ref-012.typography.home-ar-1440-family-share"
+        },
+        {
+          "observation": "ref-012.typography.home-en-1440-family-share"
+        }
+      ],
+      "statement": "English pairs a display serif with a sans; Arabic uses one generic Kufi for everything, so the brand's typographic voice does not survive translation. Bilingual brands need an Arabic display choice planned with the Latin one, not a fallback.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "bilingual-type",
+        "brand-voice"
+      ]
+    },
+    {
+      "id": "ref-012.accessibility.home-ar-a-why-small-text",
+      "ref_id": "ref-012",
+      "page": "home-ar",
+      "source_url": "https://ar.ounass.ae/",
+      "capture_id": "20261002T162428Z",
+      "captured_at": "2026-10-02T16:24:28.412Z",
+      "viewport": "cross-viewport",
+      "category": "accessibility",
+      "property": "why-small-text",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-012.typography.home-ar-390-body-size"
+        },
+        {
+          "observation": "ref-012.accessibility.home-ar-390-axe-by-impact"
+        },
+        {
+          "observation": "ref-012.performance.home-ar-390-cls-before-interaction"
+        }
+      ],
+      "statement": "Dominant text size is 12 px in both languages (small for Arabic glyph detail on phones), mobile shows critical automated issues and pre-interaction layout shift above 0.1; luxury minimalism here trades legibility and stability for density of merchandising.",
+      "confidence": 0.65,
+      "assessment": "weakness",
+      "tags": [
+        "legibility",
+        "cls"
+      ]
+    }
+  ]
+}

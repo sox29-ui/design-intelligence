@@ -1,0 +1,1305 @@
+{
+  "viewport": {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "mobileEmulation": false,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0,
+    "shifts": 0,
+    "atMs": 9730
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 2621,
+    "endHeight": 2621,
+    "reachedY": 1597,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 311,
+    "document": {
+      "lang": "en",
+      "dirAttr": "ltr",
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 42,
+      "metaViewport": "width=device-width, initial-scale=1",
+      "themeColor": null,
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollY": 0,
+      "docHeight": 2621,
+      "docWidth": 768,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "NunitoSans, sans-serif",
+        "size": 16,
+        "lineHeight": "24px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "auto"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 14,
+      "loadedFaces": 6,
+      "loadedFamilies": [
+        "NunitoSans",
+        "Portrait"
+      ],
+      "loadedDetail": [
+        {
+          "family": "NunitoSans",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "NunitoSans",
+          "weight": "700",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Portrait",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "NunitoSans",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "NunitoSans",
+          "weight": "700",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Portrait",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 14
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 27,
+      "totalChars": 447,
+      "scriptChars": {
+        "arabic": 0,
+        "latin": 356,
+        "westDigits": 32,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 2,
+      "familyShare": {
+        "NunitoSans": 0.928,
+        "Portrait": 0.072
+      },
+      "distinctSizes": 5,
+      "sizeShare": {
+        "11": 0.268,
+        "12": 0.342,
+        "13": 0.257,
+        "14": 0.06,
+        "18": 0.072
+      },
+      "minSize": 11,
+      "maxSize": 18,
+      "dominantBodySize": 12,
+      "scaleRange": 1.5,
+      "distinctWeights": [
+        "400",
+        "700"
+      ],
+      "uppercaseShare": 0.134,
+      "clusters": [
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 12,
+          "weight": "700",
+          "lineHeightRatio": 1.33,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 108,
+          "nodes": 5,
+          "firstDocY": 2514,
+          "scripts": {
+            "latin": 97,
+            "digits": 11
+          },
+          "colors": {
+            "#ffffff": 74,
+            "#b87253": 34
+          },
+          "share": 0.242
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 13,
+          "weight": "700",
+          "lineHeightRatio": 1.54,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 80,
+          "nodes": 7,
+          "firstDocY": 1890,
+          "scripts": {
+            "latin": 80
+          },
+          "colors": {
+            "#ffffff": 80
+          },
+          "share": 0.179
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 11,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 69,
+          "nodes": 3,
+          "firstDocY": 92,
+          "scripts": {
+            "latin": 69
+          },
+          "colors": {
+            "#ffffff": 69
+          },
+          "share": 0.154
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 11,
+          "weight": "700",
+          "lineHeightRatio": 1.45,
+          "letterSpacing": "1px",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 51,
+          "nodes": 3,
+          "firstDocY": 1634,
+          "scripts": {
+            "latin": 51
+          },
+          "colors": {
+            "#ffffff": 51
+          },
+          "share": 0.114
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.33,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 45,
+          "nodes": 1,
+          "firstDocY": 2554,
+          "scripts": {
+            "latin": 45
+          },
+          "colors": {
+            "#ffffff": 45
+          },
+          "share": 0.101
+        },
+        {
+          "family": "Portrait",
+          "stack": "Portrait, Georgia, serif",
+          "size": 18,
+          "weight": "400",
+          "lineHeightRatio": 1.67,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 32,
+          "nodes": 1,
+          "firstDocY": 1208,
+          "scripts": {
+            "latin": 32
+          },
+          "colors": {
+            "#000000": 32
+          },
+          "share": 0.072
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 14,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 27,
+          "nodes": 3,
+          "firstDocY": 832,
+          "scripts": {
+            "latin": 27
+          },
+          "colors": {
+            "#000000": 27
+          },
+          "share": 0.06
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 13,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 21,
+          "nodes": 2,
+          "firstDocY": 1275,
+          "scripts": {
+            "latin": 21
+          },
+          "colors": {
+            "#000000": 21
+          },
+          "share": 0.047
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 13,
+          "weight": "700",
+          "lineHeightRatio": 1.54,
+          "letterSpacing": "2px",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 9,
+          "nodes": 1,
+          "firstDocY": 1729,
+          "scripts": {
+            "latin": 9
+          },
+          "colors": {
+            "#ffffff": 9
+          },
+          "share": 0.02
+        },
+        {
+          "family": "NunitoSans",
+          "stack": "NunitoSans, sans-serif",
+          "size": 13,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 5,
+          "nodes": 1,
+          "firstDocY": 1275,
+          "scripts": {
+            "latin": 5
+          },
+          "colors": {
+            "#000000": 5
+          },
+          "share": 0.011
+        }
+      ]
+    },
+    "headings": {
+      "count": 3,
+      "h1Count": 0,
+      "outline": [
+        3,
+        5,
+        4
+      ],
+      "skippedLevels": 1,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h3",
+          "level": 3,
+          "family": "Portrait",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "400",
+          "lineHeightRatio": 1.67,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "center",
+          "textWrap": "wrap",
+          "chars": 32,
+          "words": 7,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 16,
+          "box": {
+            "x": 294,
+            "y": 1208,
+            "w": 180,
+            "h": 60
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h5",
+          "level": 5,
+          "family": "NunitoSans",
+          "size": 11,
+          "sizeVw": 1.43,
+          "weight": "700",
+          "lineHeightRatio": 1.45,
+          "letterSpacingEm": 0.091,
+          "textTransform": "uppercase",
+          "textAlign": "center",
+          "textWrap": "wrap",
+          "chars": 13,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 16,
+            "y": 1786,
+            "w": 736,
+            "h": 16
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h4",
+          "level": 4,
+          "family": "NunitoSans",
+          "size": 11,
+          "sizeVw": 1.43,
+          "weight": "700",
+          "lineHeightRatio": 1.45,
+          "letterSpacingEm": 0.091,
+          "textTransform": "uppercase",
+          "textAlign": "center",
+          "textWrap": "wrap",
+          "chars": 11,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 11,
+          "box": {
+            "x": 0,
+            "y": 2288,
+            "w": 768,
+            "h": 16
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "heading-0",
+      "tag": "h3",
+      "level": 3,
+      "family": "Portrait",
+      "size": 18,
+      "sizeVw": 2.34,
+      "weight": "400",
+      "lineHeightRatio": 1.67,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "center",
+      "textWrap": "wrap",
+      "chars": 32,
+      "words": 7,
+      "script": "latin",
+      "lines": 2,
+      "charsPerLine": 16,
+      "box": {
+        "x": 294,
+        "y": 1208,
+        "w": 180,
+        "h": 60
+      },
+      "aboveFold": false,
+      "color": "#000000"
+    },
+    "reading": {
+      "sampled": 0,
+      "fontSize": null,
+      "lineHeightRatio": null,
+      "charsPerLine": null,
+      "widthEm": null,
+      "justified": 0,
+      "scripts": {}
+    },
+    "color": {
+      "rootBackground": "#ffffff",
+      "rootBackgroundLuminance": 1,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#f4f4f4",
+          "areaShare": 0.336,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.96
+          }
+        },
+        {
+          "color": "#000000",
+          "areaShare": 0.328,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          }
+        },
+        {
+          "color": "#2d2d2d",
+          "areaShare": 0.145,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.18
+          }
+        },
+        {
+          "color": "#525252",
+          "areaShare": 0.128,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.32
+          }
+        },
+        {
+          "color": "#383838",
+          "areaShare": 0.037,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.22
+          }
+        },
+        {
+          "color": "#cccccc",
+          "areaShare": 0.015,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.8
+          }
+        },
+        {
+          "color": "#ffffff",
+          "areaShare": 0.01,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#ffffff",
+          "share": 0.734
+        },
+        {
+          "color": "#000000",
+          "share": 0.19
+        },
+        {
+          "color": "#b87253",
+          "share": 0.076
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#525252",
+          "count": 7
+        },
+        {
+          "color": "#383838",
+          "count": 3
+        },
+        {
+          "color": "#ffffff",
+          "count": 3
+        },
+        {
+          "color": "#cccccc",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "imageBackgrounds": 0,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain",
+        "checkedChars": 448,
+        "lowContrastNormalShare": 0.096,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0,
+        "ratio": {
+          "n": 26,
+          "min": 1.61,
+          "p25": 6.72,
+          "median": 11.73,
+          "p75": 16.07,
+          "max": 21
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 736,
+          "count": 2
+        }
+      ],
+      "dominantContainer": 736,
+      "widestContainer": 736,
+      "textLeftEdges": [
+        {
+          "x": 16,
+          "n": 8
+        },
+        {
+          "x": 284,
+          "n": 3
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 284,
+          "n": 3
+        }
+      ],
+      "distinctTextEdges": 15,
+      "gridContainers": 2,
+      "flexContainers": 94,
+      "gridColumnCounts": [
+        {
+          "value": 12,
+          "count": 1
+        }
+      ],
+      "gaps": {
+        "n": 72,
+        "min": 4,
+        "p25": 4,
+        "median": 8,
+        "p75": 16,
+        "max": 24
+      },
+      "stickyElements": 0,
+      "fixedElements": 2,
+      "sections": {
+        "count": 3,
+        "heightsVh": {
+          "n": 3,
+          "min": 0.04,
+          "p25": 0.04,
+          "median": 0.4,
+          "p75": 0.4,
+          "max": 1
+        },
+        "paddingTop": {
+          "n": 3,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 3,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      },
+      "pageHeightVh": 2.56,
+      "textOverMedia": 0
+    },
+    "components": {
+      "header": {
+        "position": "static",
+        "height": 48,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 5,
+        "expandableToggles": 0
+      },
+      "navCount": 3,
+      "buttons": {
+        "count": 19,
+        "radius": {
+          "n": 19,
+          "min": 0,
+          "p25": 4,
+          "median": 4,
+          "p75": 4,
+          "max": 5
+        },
+        "pillShare": 0,
+        "height": {
+          "n": 19,
+          "min": 40,
+          "p25": 44.03,
+          "median": 48,
+          "p75": 56,
+          "max": 56
+        },
+        "fontSize": {
+          "n": 19,
+          "min": 11,
+          "p25": 14,
+          "median": 16,
+          "p75": 16,
+          "max": 16
+        },
+        "textTransform": {
+          "none": 19
+        },
+        "fontWeight": {
+          "400": 16,
+          "700": 3
+        }
+      },
+      "forms": {
+        "forms": 1,
+        "inputs": 1
+      },
+      "media": {
+        "images": 10,
+        "imagesTotal": 20,
+        "lazyImages": 7,
+        "srcsetImages": 0,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 31,
+        "canvases": [],
+        "iframes": 5
+      },
+      "cardGroups": {
+        "count": 1,
+        "items": [
+          {
+            "items": 3,
+            "width": 200,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": true
+          }
+        ],
+        "radius": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 24,
+      "roundedBoxShare12": 0,
+      "roundedBoxShare24": 0,
+      "opacityZeroElements": 1,
+      "transformedElements": 1
+    },
+    "motion": {
+      "transitionElements": 13,
+      "transitionDuration": {
+        "n": 13,
+        "min": 300,
+        "p25": 300,
+        "median": 300,
+        "p75": 300,
+        "max": 300
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.4, 0, 0.2, 1)": 13
+      },
+      "transitionProperty": {
+        "color": 12,
+        "all": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 4,
+      "inaccessibleSheets": 0,
+      "rules": 3558,
+      "mediaQueries": {
+        "(max-width: 1179px)": 49,
+        "(hover: hover)": 28,
+        "(min-width: 1180px)": 27,
+        "(min-width: 1224px)": 4,
+        "(width >= 1224px)": 4,
+        "(min-width: 1176px)": 2,
+        "(forced-colors: active)": 2,
+        "not all and (min-width: 1224px)": 2,
+        "(max-width: 1176px)": 2
+      },
+      "breakpoints": {
+        "max:1179px": 49,
+        "min:1180px": 27,
+        "min:1224px": 6,
+        "min:1176px": 2,
+        "max:1176px": 2
+      },
+      "reducedMotionRules": 0,
+      "colorSchemeRules": 0,
+      "containerRules": 0,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 90,
+      "physicalInlineProps": 406,
+      "focusVisibleRules": 40,
+      "fontFaceRules": 21,
+      "scrollTimelineUses": 0,
+      "customPropertiesDeclared": 550,
+      "hoverMediaRules": 28
+    },
+    "tokens": {
+      "rootCustomProperties": 121,
+      "colorTokens": 36,
+      "lengthTokens": 56,
+      "colorSample": [
+        {
+          "name": "--primary-color",
+          "value": "#b87253"
+        },
+        {
+          "name": "--color-outline",
+          "value": "rgba(0, 0, 0, .12)"
+        },
+        {
+          "name": "--color-error-variant",
+          "value": "#ff4856"
+        },
+        {
+          "name": "--color-on-surface-disabled",
+          "value": "rgba(0, 0, 0, .38)"
+        },
+        {
+          "name": "--color-secondary-container",
+          "value": "#f5f5f5"
+        },
+        {
+          "name": "--color-success-container",
+          "value": "#f5fff4"
+        },
+        {
+          "name": "--color-on-error",
+          "value": "#ffffff"
+        },
+        {
+          "name": "--color-on-surface-variant",
+          "value": "rgba(0, 0, 0, .6)"
+        },
+        {
+          "name": "--color-primary-container-high",
+          "value": "#fdceb9"
+        },
+        {
+          "name": "--color-secondary-variant",
+          "value": "#525252"
+        },
+        {
+          "name": "--tw-gradient-via",
+          "value": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "name": "--color-secondary",
+          "value": "#2d2d2d"
+        },
+        {
+          "name": "--color-success",
+          "value": "#468941"
+        },
+        {
+          "name": "--color-on-secondary",
+          "value": "#ffffff"
+        },
+        {
+          "name": "--color-surface-container",
+          "value": "#ffffff"
+        },
+        {
+          "name": "--error-color",
+          "value": "#cb202d"
+        },
+        {
+          "name": "--color-surface-container-high",
+          "value": "#f5f5f5"
+        },
+        {
+          "name": "--color-primary-variant",
+          "value": "#854d34"
+        },
+        {
+          "name": "--tw-ring-offset-color",
+          "value": "#fff"
+        },
+        {
+          "name": "--color-primary-container",
+          "value": "#fff6f2"
+        },
+        {
+          "name": "--tw-gradient-from",
+          "value": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "name": "--color-error-container",
+          "value": "#ffecee"
+        },
+        {
+          "name": "--color-outline-high",
+          "value": "rgba(0, 0, 0, .2)"
+        },
+        {
+          "name": "--color-on-primary-container",
+          "value": "#522c1b"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--tw-inset-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--text-2xl",
+          "value": "1.5rem"
+        },
+        {
+          "name": "--text-xxs",
+          "value": ".5625rem"
+        },
+        {
+          "name": "--leading-xl",
+          "value": "2rem"
+        },
+        {
+          "name": "--tw-drop-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--text-lg",
+          "value": "1.125rem"
+        },
+        {
+          "name": "--leading-xxl",
+          "value": "2.5rem"
+        },
+        {
+          "name": "--spacing-section-inner",
+          "value": "calc(.25rem * 4)"
+        },
+        {
+          "name": "--text-md",
+          "value": ".8125rem"
+        },
+        {
+          "name": "--text-2xl--line-height",
+          "value": "2rem"
+        },
+        {
+          "name": "--text-base--line-height",
+          "value": "1.5rem"
+        },
+        {
+          "name": "--spacing",
+          "value": ".25rem"
+        },
+        {
+          "name": "--text-xl--line-height",
+          "value": "1.75rem"
+        },
+        {
+          "name": "--text-sm",
+          "value": ".75rem"
+        },
+        {
+          "name": "--tracking-outward",
+          "value": ".0625rem"
+        },
+        {
+          "name": "--text-xxl",
+          "value": "1.5rem"
+        },
+        {
+          "name": "--text-mb",
+          "value": ".875rem"
+        },
+        {
+          "name": "--text-lg--line-height",
+          "value": "1.75rem"
+        },
+        {
+          "name": "--leading-base",
+          "value": "1.5rem"
+        },
+        {
+          "name": "--spacing-container-flow",
+          "value": "calc(.25rem * 4)"
+        },
+        {
+          "name": "--tw-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--radius-sm",
+          "value": "4px"
+        },
+        {
+          "name": "--spacing-block-padding",
+          "value": "calc(.25rem * 4)"
+        },
+        {
+          "name": "--leading-xxs",
+          "value": ".75rem"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 3,
+        "main": 1,
+        "footer": 1,
+        "aside": 0,
+        "search": 0
+      },
+      "langPresent": true,
+      "images": {
+        "total": 20,
+        "missingAlt": 10,
+        "emptyAlt": 0
+      },
+      "linksVisible": 19,
+      "linksWithoutName": 2,
+      "buttonsVisible": 10,
+      "buttonsWithoutName": 2,
+      "inputsVisible": 1,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 1,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 1,
+      "focusableCount": 46
+    },
+    "rtl": {
+      "htmlDir": "ltr",
+      "computedDirection": "ltr",
+      "mainDirection": "ltr",
+      "dirAttributes": {
+        "rtl": 0,
+        "ltr": 1,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "center": 16,
+        "start": 3,
+        "left": 7
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 32,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 23,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 457,
+      "load": 4162,
+      "transferSize": 53800,
+      "firstContentfulPaint": 3436,
+      "lcp": {
+        "time": 4412,
+        "element": "img",
+        "size": 669696
+      },
+      "cls": 0,
+      "longTasks": {
+        "count": 13,
+        "totalMs": 1085
+      },
+      "domElements": 311
+    },
+    "implementation": {
+      "globals": {
+        "dataLayer": true
+      },
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {
+          "offscreen:2d": 1,
+          "offscreen:webgl": 1,
+          "offscreen:webgl2": 1,
+          "bitmaprenderer": 1
+        },
+        "webgpuRequested": false,
+        "matchMediaQueries": {
+          "(max-width: 1179px)": 1,
+          "(prefers-color-scheme: dark)": 1
+        },
+        "intersectionObservers": 3,
+        "resizeObservers": 1,
+        "rafCalls": 2,
+        "rafFirstAt": 3154,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 5,
+        "wheelListeners": 1,
+        "touchmoveListeners": 2,
+        "pointermoveListeners": 2,
+        "startedAt": 1790958186690
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": "Portrait Light",
+        "postScriptName": "Portrait-Light",
+        "custom": true,
+        "glyphs": 31
+      }
+    ],
+    "heading-1": [
+      {
+        "family": "Nunito Sans",
+        "postScriptName": "NunitoSans-Bold",
+        "custom": true,
+        "glyphs": 13
+      }
+    ],
+    "header-3": [],
+    "button-4": [
+      {
+        "family": "Nunito Sans",
+        "postScriptName": "NunitoSans-Regular",
+        "custom": true,
+        "glyphs": 24
+      }
+    ]
+  },
+  "interactions": {},
+  "axe": null,
+  "aria": null,
+  "network": {
+    "requests": 215,
+    "failed": 14,
+    "totalBytes": 2587255,
+    "byType": {
+      "script": {
+        "count": 114,
+        "bytes": 1976994
+      },
+      "image": {
+        "count": 33,
+        "bytes": 231879
+      },
+      "font": {
+        "count": 7,
+        "bytes": 135182
+      },
+      "other": {
+        "count": 4,
+        "bytes": 82398
+      },
+      "document": {
+        "count": 10,
+        "bytes": 78307
+      },
+      "stylesheet": {
+        "count": 4,
+        "bytes": 54482
+      },
+      "fetch": {
+        "count": 22,
+        "bytes": 11284
+      },
+      "ping": {
+        "count": 11,
+        "bytes": 9724
+      },
+      "xhr": {
+        "count": 10,
+        "bytes": 7005
+      }
+    },
+    "imageFormats": {
+      "image/gif": {
+        "count": 17,
+        "bytes": 11093
+      },
+      "image/svg+xml": {
+        "count": 2,
+        "bytes": 4811
+      },
+      "image/webp": {
+        "count": 5,
+        "bytes": 18127
+      },
+      "image/avif": {
+        "count": 5,
+        "bytes": 195094
+      },
+      "gif": {
+        "count": 2,
+        "bytes": 1861
+      },
+      "text/html": {
+        "count": 1,
+        "bytes": 692
+      },
+      "unknown": {
+        "count": 1,
+        "bytes": 201
+      }
+    },
+    "fonts": {
+      "count": 7,
+      "bytes": 135182,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 107,
+      "bytes": 1969638,
+      "hosts": 42
+    },
+    "topHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "bytes": 872804
+      },
+      {
+        "host": "www.ounass.ae",
+        "bytes": 617617
+      },
+      {
+        "host": "connect.facebook.net",
+        "bytes": 215208
+      },
+      {
+        "host": "ounass-ae.atgcdn.ae",
+        "bytes": 195094
+      },
+      {
+        "host": "analytics.tiktok.com",
+        "bytes": 172752
+      },
+      {
+        "host": "www.google-analytics.com",
+        "bytes": 138851
+      },
+      {
+        "host": "d2r1yp2w7bby2u.cloudfront.net",
+        "bytes": 103571
+      },
+      {
+        "host": "s.pinimg.com",
+        "bytes": 41097
+      }
+    ],
+    "libraryEvidence": {
+      "google-tag-manager": 5
+    }
+  },
+  "console": {
+    "errors": 7,
+    "pageErrors": 1
+  }
+}

@@ -1,0 +1,1903 @@
+{
+  "viewport": {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "mobileEmulation": true,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0,
+    "shifts": 0,
+    "atMs": 11400
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 4374,
+    "endHeight": 4374,
+    "reachedY": 3530,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 6133,
+    "document": {
+      "lang": "ar",
+      "dirAttr": null,
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 50,
+      "metaViewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+      "themeColor": null,
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "docHeight": 4374,
+      "docWidth": 390,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "\"29LT Zarid Sans AL Variable\"",
+        "size": 16,
+        "lineHeight": "18.4px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "scroll"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 37,
+      "loadedFaces": 8,
+      "loadedFamilies": [
+        "Merriweather",
+        "Roboto",
+        "29LT Zarid Sans AL Variable",
+        "ManchetteFine"
+      ],
+      "loadedDetail": [
+        {
+          "family": "Merriweather",
+          "weight": "300",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U"
+        },
+        {
+          "family": "Merriweather",
+          "weight": "900",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U"
+        },
+        {
+          "family": "Roboto",
+          "weight": "700",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U"
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "auto",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "weight": "500",
+          "style": "normal",
+          "status": "loaded",
+          "display": "auto",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "weight": "600",
+          "style": "normal",
+          "status": "loaded",
+          "display": "auto",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "auto",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "ManchetteFine",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "auto",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 29,
+        "auto": 8
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 111,
+      "totalChars": 2839,
+      "scriptChars": {
+        "arabic": 2045,
+        "latin": 223,
+        "westDigits": 137,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 1,
+      "distinctFamilies": 4,
+      "familyShare": {
+        "29LT Zarid Sans AL Variable": 0.839,
+        "ManchetteFine": 0.08,
+        "Merriweather": 0.051,
+        "Roboto": 0.03
+      },
+      "distinctSizes": 13,
+      "sizeShare": {
+        "13": 0.027,
+        "14": 0.099,
+        "15": 0.02,
+        "16": 0.043,
+        "17": 0.003,
+        "18": 0.398,
+        "19": 0.146,
+        "20": 0.013,
+        "21": 0.128,
+        "23": 0.052,
+        "24": 0.039,
+        "27": 0.018,
+        "32": 0.014
+      },
+      "minSize": 13,
+      "maxSize": 32,
+      "dominantBodySize": 18,
+      "scaleRange": 1.78,
+      "distinctWeights": [
+        "300",
+        "400",
+        "500",
+        "600",
+        "700",
+        "900"
+      ],
+      "uppercaseShare": 0,
+      "clusters": [
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 18,
+          "weight": "400",
+          "lineHeightRatio": 1.39,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 491,
+          "nodes": 7,
+          "firstDocY": 1515,
+          "scripts": {
+            "arabic": 491
+          },
+          "colors": {
+            "#737373": 452,
+            "#001ed7": 39
+          },
+          "share": 0.173
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 19,
+          "weight": "400",
+          "lineHeightRatio": 1.26,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 392,
+          "nodes": 3,
+          "firstDocY": 429,
+          "scripts": {
+            "arabic": 392
+          },
+          "colors": {
+            "#ffffff": 392
+          },
+          "share": 0.138
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 18,
+          "weight": "400",
+          "lineHeightRatio": 1.44,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 337,
+          "nodes": 1,
+          "firstDocY": 1963,
+          "scripts": {
+            "arabic": 337
+          },
+          "colors": {
+            "#212529": 337
+          },
+          "share": 0.119
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 21,
+          "weight": "700",
+          "lineHeightRatio": 2.2,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 205,
+          "nodes": 17,
+          "firstDocY": 179,
+          "scripts": {
+            "arabic": 205
+          },
+          "colors": {
+            "#ffffff": 205
+          },
+          "share": 0.072
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 18,
+          "weight": "300",
+          "lineHeightRatio": 1.28,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 145,
+          "nodes": 2,
+          "firstDocY": 237,
+          "scripts": {
+            "mixed": 126,
+            "arabic": 19
+          },
+          "colors": {
+            "#ffffff": 145
+          },
+          "share": 0.051
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 23,
+          "weight": "600",
+          "lineHeightRatio": 1.26,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 116,
+          "nodes": 5,
+          "firstDocY": 1473,
+          "scripts": {
+            "arabic": 116
+          },
+          "colors": {
+            "#001ed7": 116
+          },
+          "share": 0.041
+        },
+        {
+          "family": "ManchetteFine",
+          "stack": "ManchetteFine",
+          "size": 21,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 115,
+          "nodes": 4,
+          "firstDocY": 2904,
+          "scripts": {
+            "arabic": 115
+          },
+          "colors": {
+            "#000000": 87,
+            "#001ed7": 28
+          },
+          "share": 0.041
+        },
+        {
+          "family": "Merriweather",
+          "stack": "Merriweather, serif",
+          "size": 14,
+          "weight": "300",
+          "lineHeightRatio": 1.43,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 110,
+          "nodes": 2,
+          "firstDocY": 428,
+          "scripts": {
+            "latin": 110
+          },
+          "colors": {
+            "#ffffff": 110
+          },
+          "share": 0.039
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 18,
+          "weight": "500",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 100,
+          "nodes": 10,
+          "firstDocY": 397,
+          "scripts": {
+            "digits": 100
+          },
+          "colors": {
+            "#cccccc": 100
+          },
+          "share": 0.035
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.57,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 80,
+          "nodes": 2,
+          "firstDocY": 827,
+          "scripts": {
+            "arabic": 80
+          },
+          "colors": {
+            "#ebebeb": 80
+          },
+          "share": 0.028
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.15,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 80,
+          "nodes": 2,
+          "firstDocY": 4299,
+          "scripts": {
+            "arabic": 80
+          },
+          "colors": {
+            "#c6c6c6": 80
+          },
+          "share": 0.028
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 16,
+          "weight": "600",
+          "lineHeightRatio": 1.56,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 60,
+          "nodes": 5,
+          "firstDocY": 577,
+          "scripts": {
+            "arabic": 60
+          },
+          "colors": {
+            "#ffffff": 48,
+            "#001ed7": 12
+          },
+          "share": 0.021
+        },
+        {
+          "family": "Roboto",
+          "stack": "Roboto, sans-serif",
+          "size": 13,
+          "weight": "600",
+          "lineHeightRatio": 1.92,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 58,
+          "nodes": 4,
+          "firstDocY": 577,
+          "scripts": {
+            "latin": 58
+          },
+          "colors": {
+            "#ffffff": 58
+          },
+          "share": 0.02
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 15,
+          "weight": "400",
+          "lineHeightRatio": 1.13,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 57,
+          "nodes": 4,
+          "firstDocY": 127,
+          "scripts": {
+            "arabic": 41,
+            "digits": 16
+          },
+          "colors": {
+            "#4d4d4d": 5,
+            "#989898": 27,
+            "#000000": 25
+          },
+          "share": 0.02
+        },
+        {
+          "family": "ManchetteFine",
+          "stack": "ManchetteFine",
+          "size": 24,
+          "weight": "700",
+          "lineHeightRatio": 1.25,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 56,
+          "nodes": 2,
+          "firstDocY": 2314,
+          "scripts": {
+            "arabic": 56
+          },
+          "colors": {
+            "#000000": 56
+          },
+          "share": 0.02
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 27,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 51,
+          "nodes": 5,
+          "firstDocY": 133,
+          "scripts": {
+            "arabic": 51
+          },
+          "colors": {
+            "#000000": 40,
+            "#202121": 11
+          },
+          "share": 0.018
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 24,
+          "weight": "700",
+          "lineHeightRatio": 1.08,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 49,
+          "nodes": 1,
+          "firstDocY": 175,
+          "scripts": {
+            "arabic": 49
+          },
+          "colors": {
+            "#ffffff": 49
+          },
+          "share": 0.017
+        },
+        {
+          "family": "29LT Zarid Sans AL Variable",
+          "stack": "\"29LT Zarid Sans AL Variable\"",
+          "size": 21,
+          "weight": "500",
+          "lineHeightRatio": 1.14,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 42,
+          "nodes": 4,
+          "firstDocY": 2928,
+          "scripts": {
+            "arabic": 42
+          },
+          "colors": {
+            "#000000": 33,
+            "#001ed7": 9
+          },
+          "share": 0.015
+        },
+        {
+          "family": "ManchetteFine",
+          "stack": "ManchetteFine",
+          "size": 32,
+          "weight": "700",
+          "lineHeightRatio": 1.13,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 41,
+          "nodes": 2,
+          "firstDocY": 1830,
+          "scripts": {
+            "arabic": 41
+          },
+          "colors": {
+            "#000000": 41
+          },
+          "share": 0.014
+        },
+        {
+          "family": "Merriweather",
+          "stack": "Merriweather, serif",
+          "size": 20,
+          "weight": "900",
+          "lineHeightRatio": 1.2,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 36,
+          "nodes": 2,
+          "firstDocY": 370,
+          "scripts": {
+            "latin": 36
+          },
+          "colors": {
+            "#ffffff": 36
+          },
+          "share": 0.013
+        }
+      ]
+    },
+    "headings": {
+      "count": 14,
+      "h1Count": 0,
+      "outline": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h2",
+          "level": 2,
+          "family": "29LT Zarid Sans AL Variable",
+          "size": 27,
+          "sizeVw": 6.92,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 8,
+          "words": 1,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 282,
+            "y": 133,
+            "w": 88,
+            "h": 32
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h2",
+          "level": 2,
+          "family": "29LT Zarid Sans AL Variable",
+          "size": 27,
+          "sizeVw": 6.92,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "right",
+          "textWrap": "wrap",
+          "chars": 7,
+          "words": 1,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 7,
+          "box": {
+            "x": 20,
+            "y": 1647,
+            "w": 350,
+            "h": 32
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.13,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 27,
+          "words": 5,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 13.5,
+          "box": {
+            "x": 61,
+            "y": 1830,
+            "w": 280,
+            "h": 72
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "700",
+          "lineHeightRatio": 1.25,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 40,
+          "words": 6,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 20,
+          "box": {
+            "x": 49,
+            "y": 2314,
+            "w": 304,
+            "h": 60
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "700",
+          "lineHeightRatio": 1.25,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 16,
+          "words": 3,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 49,
+            "y": 2574,
+            "w": 304,
+            "h": 30
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h2",
+          "level": 2,
+          "family": "29LT Zarid Sans AL Variable",
+          "size": 27,
+          "sizeVw": 6.92,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "right",
+          "textWrap": "wrap",
+          "chars": 13,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 20,
+            "y": 2685,
+            "w": 350,
+            "h": 32
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.13,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 14,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": 37,
+            "y": 2782,
+            "w": 316,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 23,
+          "words": 3,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 138,
+            "y": 2904,
+            "w": 190,
+            "h": 24
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 28,
+          "words": 5,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 28,
+          "box": {
+            "x": 136,
+            "y": 2999,
+            "w": 192,
+            "h": 24
+          },
+          "aboveFold": false,
+          "color": "#001ed7"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 37,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 18.5,
+          "box": {
+            "x": 39,
+            "y": 3094,
+            "w": 289,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 27,
+          "words": 5,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 27,
+          "box": {
+            "x": 85,
+            "y": 3213,
+            "w": 243,
+            "h": 24
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h2",
+          "level": 2,
+          "family": "29LT Zarid Sans AL Variable",
+          "size": 27,
+          "sizeVw": 6.92,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "right",
+          "textWrap": "wrap",
+          "chars": 12,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 12,
+          "box": {
+            "x": 0,
+            "y": 3307,
+            "w": 390,
+            "h": 32
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-12",
+          "tag": "h2",
+          "level": 2,
+          "family": "29LT Zarid Sans AL Variable",
+          "size": 27,
+          "sizeVw": 6.92,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 11,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 11,
+          "box": {
+            "x": 281,
+            "y": 3611,
+            "w": 109,
+            "h": 32
+          },
+          "aboveFold": false,
+          "color": "#202121"
+        },
+        {
+          "probe": "heading-13",
+          "tag": "h2",
+          "level": 2,
+          "family": "ManchetteFine",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.21,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 14,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": -216,
+            "y": 3676,
+            "w": 95,
+            "h": 28
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "heading-0",
+      "tag": "h2",
+      "level": 2,
+      "family": "29LT Zarid Sans AL Variable",
+      "size": 27,
+      "sizeVw": 6.92,
+      "weight": "700",
+      "lineHeightRatio": 1.19,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "wrap",
+      "chars": 8,
+      "words": 1,
+      "script": "arabic",
+      "lines": 1,
+      "charsPerLine": 8,
+      "box": {
+        "x": 282,
+        "y": 133,
+        "w": 88,
+        "h": 32
+      },
+      "aboveFold": true,
+      "color": "#000000"
+    },
+    "reading": {
+      "sampled": 4,
+      "fontSize": {
+        "n": 4,
+        "min": 18,
+        "p25": 18,
+        "median": 19,
+        "p75": 19,
+        "max": 19
+      },
+      "lineHeightRatio": {
+        "n": 4,
+        "min": 1.26,
+        "p25": 1.26,
+        "median": 1.26,
+        "p75": 1.26,
+        "max": 1.44
+      },
+      "charsPerLine": {
+        "n": 4,
+        "min": 36.3,
+        "p25": 36.3,
+        "median": 40.5,
+        "p75": 42.5,
+        "max": 48.1
+      },
+      "widthEm": {
+        "n": 4,
+        "min": 15.3,
+        "p25": 15.3,
+        "median": 15.4,
+        "p75": 16,
+        "max": 16.7
+      },
+      "justified": 0,
+      "scripts": {
+        "arabic": 4
+      }
+    },
+    "color": {
+      "rootBackground": "#f4f4f4",
+      "rootBackgroundLuminance": 0.905,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#ebebeb",
+          "areaShare": 0.533,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.92
+          }
+        },
+        {
+          "color": "#ffffff",
+          "areaShare": 0.156,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        },
+        {
+          "color": "#000000",
+          "areaShare": 0.128,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          }
+        },
+        {
+          "color": "#001ed7",
+          "areaShare": 0.097,
+          "hsl": {
+            "h": 232,
+            "s": 1,
+            "l": 0.42
+          }
+        },
+        {
+          "color": "#f2f2f2",
+          "areaShare": 0.043,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.95
+          }
+        },
+        {
+          "color": "#bfbfbf",
+          "areaShare": 0.028,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.75
+          }
+        },
+        {
+          "color": "#ededed",
+          "areaShare": 0.011,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.93
+          }
+        },
+        {
+          "color": "#ffef00",
+          "areaShare": 0.004,
+          "hsl": {
+            "h": 56,
+            "s": 1,
+            "l": 0.5
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#ffffff",
+          "share": 0.375
+        },
+        {
+          "color": "#737373",
+          "share": 0.159
+        },
+        {
+          "color": "#000000",
+          "share": 0.136
+        },
+        {
+          "color": "#212529",
+          "share": 0.119
+        },
+        {
+          "color": "#001ed7",
+          "share": 0.087
+        },
+        {
+          "color": "#cccccc",
+          "share": 0.035
+        },
+        {
+          "color": "#ebebeb",
+          "share": 0.03
+        },
+        {
+          "color": "#c6c6c6",
+          "share": 0.028
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#ffffff",
+          "count": 7
+        },
+        {
+          "color": "#ffef00",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "imageBackgrounds": 7,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain",
+        "checkedChars": 2843,
+        "lowContrastNormalShare": 0.015,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0.091,
+        "ratio": {
+          "n": 107,
+          "min": 1.64,
+          "p25": 9.69,
+          "median": 9.69,
+          "p75": 13.08,
+          "max": 21
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 350,
+          "count": 30
+        },
+        {
+          "value": 348,
+          "count": 13
+        },
+        {
+          "value": 310,
+          "count": 2
+        },
+        {
+          "value": 312,
+          "count": 1
+        }
+      ],
+      "dominantContainer": 350,
+      "widestContainer": 350,
+      "textLeftEdges": [
+        {
+          "x": 20,
+          "n": 7
+        },
+        {
+          "x": 36,
+          "n": 5
+        },
+        {
+          "x": 44,
+          "n": 4
+        },
+        {
+          "x": 48,
+          "n": 4
+        },
+        {
+          "x": -60,
+          "n": 4
+        },
+        {
+          "x": 68,
+          "n": 3
+        },
+        {
+          "x": 84,
+          "n": 3
+        },
+        {
+          "x": -112,
+          "n": 3
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 404,
+          "n": 21
+        },
+        {
+          "x": 36,
+          "n": 11
+        },
+        {
+          "x": 64,
+          "n": 8
+        },
+        {
+          "x": 48,
+          "n": 7
+        },
+        {
+          "x": 20,
+          "n": 6
+        },
+        {
+          "x": 44,
+          "n": 3
+        },
+        {
+          "x": 512,
+          "n": 3
+        }
+      ],
+      "distinctTextEdges": 60,
+      "gridContainers": 1,
+      "flexContainers": 818,
+      "gridColumnCounts": [
+        {
+          "value": 1,
+          "count": 1
+        }
+      ],
+      "gaps": {
+        "n": 216,
+        "min": 4,
+        "p25": 15,
+        "median": 15,
+        "p75": 15,
+        "max": 30
+      },
+      "stickyElements": 0,
+      "fixedElements": 173,
+      "sections": {
+        "count": 1,
+        "heightsVh": {
+          "n": 1,
+          "min": 4.49,
+          "p25": 4.49,
+          "median": 4.49,
+          "p75": 4.49,
+          "max": 4.49
+        },
+        "paddingTop": {
+          "n": 1,
+          "min": 20,
+          "p25": 20,
+          "median": 20,
+          "p75": 20,
+          "max": 20
+        },
+        "paddingBottom": {
+          "n": 1,
+          "min": 20,
+          "p25": 20,
+          "median": 20,
+          "p75": 20,
+          "max": 20
+        }
+      },
+      "pageHeightVh": 5.18,
+      "textOverMedia": 0
+    },
+    "components": {
+      "header": {
+        "position": "relative",
+        "height": 107,
+        "top": 0,
+        "background": "#ffffff",
+        "backgroundAlpha": 1,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 36,
+        "expandableToggles": 0
+      },
+      "navCount": 0,
+      "buttons": {
+        "count": 8,
+        "radius": {
+          "n": 8,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 4,
+          "max": 10
+        },
+        "pillShare": 0,
+        "height": {
+          "n": 8,
+          "min": 40,
+          "p25": 42,
+          "median": 340,
+          "p75": 340,
+          "max": 340
+        },
+        "fontSize": {
+          "n": 8,
+          "min": 16,
+          "p25": 16,
+          "median": 16,
+          "p75": 16,
+          "max": 18
+        },
+        "textTransform": {
+          "none": 8
+        },
+        "fontWeight": {
+          "400": 7,
+          "600": 1
+        }
+      },
+      "forms": {
+        "forms": 0,
+        "inputs": 0
+      },
+      "media": {
+        "images": 38,
+        "imagesTotal": 61,
+        "lazyImages": 0,
+        "srcsetImages": 0,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 345,
+        "canvases": [],
+        "iframes": 0
+      },
+      "cardGroups": {
+        "count": 0,
+        "items": [],
+        "radius": null
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 47,
+      "roundedBoxShare12": 0.064,
+      "roundedBoxShare24": 0.064,
+      "opacityZeroElements": 172,
+      "transformedElements": 7
+    },
+    "motion": {
+      "transitionElements": 6,
+      "transitionDuration": {
+        "n": 6,
+        "min": 200,
+        "p25": 200,
+        "median": 300,
+        "p75": 300,
+        "max": 300
+      },
+      "transitionEasing": {
+        "ease": 6
+      },
+      "transitionProperty": {
+        "all": 3,
+        "transform": 2,
+        "max-height": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 3,
+      "inaccessibleSheets": 1,
+      "rules": 2799,
+      "mediaQueries": {
+        "(max-width: 47.99em)": 292,
+        "(min-width: 48em)": 82,
+        "(min-width: 79.9375em)": 82,
+        "(max-width: 79.9275em)": 59,
+        "(min-width: 48em) and (max-width: 79.9275em)": 46,
+        "(min-width: 64em)": 36,
+        "(max-width: 63.99em)": 21,
+        "(max-width: 767px)": 18,
+        "(min-width: 48em) and (max-width: 63.99em)": 15,
+        "(max-width: 28.115em)": 7,
+        "(min-width: 28.125em) and (max-width: 47.99em)": 6,
+        "(max-width: 1280px)": 5,
+        "(min-width: 64em) and (max-width: 79.9275em)": 2,
+        "(min-width: 1546px)": 2,
+        "(min-width: 28.125em)": 1,
+        "(max-width: 25em)": 1,
+        "(max-width: 62.5em)": 1,
+        "(max-width: 43.75em)": 1,
+        "only screen and (max-width: 768px)": 1,
+        "(min-width: 640px)": 1,
+        "(min-width: 768px) and (max-width: 1023px)": 1,
+        "(min-width: 768px)": 1,
+        "(hover: none) and (pointer: coarse) and (max-width: 1024px)": 1,
+        "(min-width: 821px)": 1
+      },
+      "breakpoints": {
+        "max:47.99em": 298,
+        "min:48em": 143,
+        "max:79.9275em": 107,
+        "min:79.9375em": 82,
+        "min:64em": 38,
+        "max:63.99em": 36,
+        "max:767px": 18,
+        "max:28.115em": 7,
+        "min:28.125em": 7,
+        "max:1280px": 5,
+        "min:768px": 2,
+        "min:1546px": 2,
+        "max:25em": 1,
+        "max:62.5em": 1,
+        "max:43.75em": 1,
+        "max:768px": 1,
+        "min:640px": 1,
+        "max:1023px": 1,
+        "max:1024px": 1,
+        "min:821px": 1
+      },
+      "reducedMotionRules": 0,
+      "colorSchemeRules": 0,
+      "containerRules": 0,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 5,
+      "physicalInlineProps": 403,
+      "focusVisibleRules": 0,
+      "fontFaceRules": 8,
+      "scrollTimelineUses": 0,
+      "customPropertiesDeclared": 24,
+      "hoverMediaRules": 0
+    },
+    "tokens": {
+      "rootCustomProperties": 9,
+      "colorTokens": 4,
+      "lengthTokens": 2,
+      "colorSample": [
+        {
+          "name": "--long-post-color",
+          "value": "#6e6d6d"
+        },
+        {
+          "name": "--oped-opinion-color",
+          "value": "#001ed7"
+        },
+        {
+          "name": "--oped-color",
+          "value": "#b43ec1"
+        },
+        {
+          "name": "--menu-color",
+          "value": "#001ed7"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--toc-sticky-top",
+          "value": "92px"
+        },
+        {
+          "name": "--sidebar-width",
+          "value": "268px"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 1,
+        "aside": 1,
+        "search": 0
+      },
+      "langPresent": true,
+      "images": {
+        "total": 61,
+        "missingAlt": 4,
+        "emptyAlt": 0
+      },
+      "linksVisible": 76,
+      "linksWithoutName": 22,
+      "buttonsVisible": 7,
+      "buttonsWithoutName": 1,
+      "inputsVisible": 0,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 10,
+      "focusableCount": 730
+    },
+    "rtl": {
+      "htmlDir": null,
+      "computedDirection": "ltr",
+      "mainDirection": "rtl",
+      "dirAttributes": {
+        "rtl": 174,
+        "ltr": 18,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "start": 76,
+        "center": 10,
+        "left": 8,
+        "right": 13
+      },
+      "mixedRunNodes": 1,
+      "digits": {
+        "western": 137,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 25,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 2711,
+      "load": 8103,
+      "transferSize": 54504,
+      "firstContentfulPaint": 2428,
+      "lcp": {
+        "time": 3736,
+        "element": "img",
+        "size": 68208
+      },
+      "cls": 0,
+      "longTasks": {
+        "count": 3,
+        "totalMs": 307
+      },
+      "domElements": 6133
+    },
+    "implementation": {
+      "globals": {
+        "gtag": true,
+        "dataLayer": true
+      },
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {},
+        "webgpuRequested": false,
+        "matchMediaQueries": {},
+        "intersectionObservers": 0,
+        "resizeObservers": 0,
+        "rafCalls": 0,
+        "rafFirstAt": null,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 0,
+        "wheelListeners": 0,
+        "touchmoveListeners": 0,
+        "pointermoveListeners": 0,
+        "startedAt": 1790958039946
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": "29LT Zarid Sans AL",
+        "postScriptName": "29LTZaridSansAL-Bold",
+        "custom": true,
+        "glyphs": 7
+      }
+    ],
+    "heading-1": [
+      {
+        "family": "29LT Zarid Sans AL",
+        "postScriptName": "29LTZaridSansAL-Bold",
+        "custom": true,
+        "glyphs": 7
+      }
+    ],
+    "header-15": [],
+    "button-16": [
+      {
+        "family": "Roboto",
+        "postScriptName": "Roboto-Bold",
+        "custom": true,
+        "glyphs": 8
+      },
+      {
+        "family": "29LT Zarid Sans AL",
+        "postScriptName": "29LTZaridSansAL-Regular",
+        "custom": true,
+        "glyphs": 1
+      },
+      {
+        "family": "29LT Zarid Sans AL",
+        "postScriptName": "29LTZaridSansAL-Bold",
+        "custom": true,
+        "glyphs": 5
+      }
+    ],
+    "para-14": [
+      {
+        "family": "29LT Zarid Sans AL",
+        "postScriptName": "29LTZaridSansAL-Regular",
+        "custom": true,
+        "glyphs": 134
+      }
+    ]
+  },
+  "interactions": {
+    "menu": {
+      "found": false
+    },
+    "focus": {
+      "steps": 16,
+      "focusedSteps": 16,
+      "withIndicator": 16,
+      "indicatorShare": 1,
+      "offscreenOrHidden": 9,
+      "firstIsSkipLink": false,
+      "indicatorProps": [
+        [
+          "outline",
+          16
+        ],
+        [
+          "outlineStyle",
+          16
+        ],
+        [
+          "outlineWidth",
+          16
+        ],
+        [
+          "outlineColor",
+          16
+        ]
+      ],
+      "sequence": [
+        "a",
+        "a",
+        "a",
+        "button",
+        "a",
+        "a",
+        "button",
+        "a~",
+        "a~",
+        "a~",
+        "a~",
+        "a~",
+        "a~",
+        "a~",
+        "a~",
+        "a~"
+      ]
+    }
+  },
+  "axe": {
+    "engine": "4.13.0",
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 23
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": 1
+      }
+    ],
+    "counts": {
+      "violations": 3,
+      "incomplete": 1,
+      "passes": 28
+    },
+    "byImpact": {
+      "critical": 1,
+      "serious": 23,
+      "moderate": 1
+    }
+  },
+  "aria": {
+    "lines": 266,
+    "roles": {
+      "link": 76,
+      "text": 40,
+      "img": 38,
+      "heading": 14,
+      "button": 7,
+      "separator": 5,
+      "paragraph": 4,
+      "banner": 1,
+      "complementary": 1,
+      "main": 1,
+      "emphasis": 1,
+      "contentinfo": 1
+    }
+  },
+  "network": {
+    "requests": 78,
+    "failed": 5,
+    "totalBytes": 10974870,
+    "byType": {
+      "image": {
+        "count": 49,
+        "bytes": 9679367
+      },
+      "script": {
+        "count": 12,
+        "bytes": 626653
+      },
+      "font": {
+        "count": 8,
+        "bytes": 567628
+      },
+      "document": {
+        "count": 1,
+        "bytes": 56225
+      },
+      "stylesheet": {
+        "count": 2,
+        "bytes": 39723
+      },
+      "xhr": {
+        "count": 3,
+        "bytes": 4482
+      },
+      "ping": {
+        "count": 1,
+        "bytes": 792
+      },
+      "fetch": {
+        "count": 2,
+        "bytes": 0
+      }
+    },
+    "imageFormats": {
+      "image/svg+xml": {
+        "count": 21,
+        "bytes": 424966
+      },
+      "image/jpeg": {
+        "count": 23,
+        "bytes": 9250344
+      },
+      "image/gif": {
+        "count": 4,
+        "bytes": 3375
+      },
+      "text/plain": {
+        "count": 1,
+        "bytes": 682
+      }
+    },
+    "fonts": {
+      "count": 8,
+      "bytes": 567628,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 46,
+      "bytes": 9960634,
+      "hosts": 15
+    },
+    "topHosts": [
+      {
+        "host": "megacms-admin.s3.eu-west-3.amazonaws.com",
+        "bytes": 9250344
+      },
+      {
+        "host": "megaphone.news",
+        "bytes": 1014236
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "bytes": 321728
+      },
+      {
+        "host": "connect.facebook.net",
+        "bytes": 213653
+      },
+      {
+        "host": "fonts.gstatic.com",
+        "bytes": 115876
+      },
+      {
+        "host": "www.google-analytics.com",
+        "bytes": 20314
+      },
+      {
+        "host": "static.ads-twitter.com",
+        "bytes": 17873
+      },
+      {
+        "host": "static.cloudflareinsights.com",
+        "bytes": 10564
+      }
+    ],
+    "libraryEvidence": {
+      "google-fonts": 4,
+      "google-tag-manager": 2
+    }
+  },
+  "console": {
+    "errors": 2,
+    "pageErrors": 1
+  }
+}

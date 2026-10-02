@@ -1,0 +1,104 @@
+# Analyst observations — ref-011 Megaphone (Arabic independent media). Compiled by scripts/analyst.ts.
+# Inspected: 390-top, 1440-scroll-50, 390-scroll-50 (plus the 1440 screening preview during selection).
+notes: "Consent dialog offers only an accept option, so it stayed open during capture (consent=left-as-is)."
+items:
+  - key: consent-occlusion
+    page: home
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "A saturated blue bilingual consent dialog (Arabic block above an English block) covers most of the first mobile viewport and offers only an accept button and a close icon."
+    confidence: 0.9
+    assessment: weakness
+    tags: [consent, mobile]
+  - key: mobile-header-rtl
+    page: home
+    viewport: 390x844
+    category: rtl
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "Mobile header in RTL: logo at the right, menu and search icons at the left; above it a full-width yellow donation bar with bilingual label and a left-pointing chevron."
+    confidence: 0.9
+    assessment: neutral
+    tags: [header, mirroring]
+  - key: content-type-skins
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 390x844-scroll-50]
+    statement: "Card skins encode content type: long studies look like a stack of offset sheets with a rounded corner, commentary sits in grey boxes with a dotted texture and dashed border, videos are black tiles with a white play button and date; each card carries a small grey type label above the headline."
+    confidence: 0.85
+    assessment: strength
+    tags: [cards, content-type, kicker]
+  - key: video-row
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-scroll-50]
+    statement: "Desktop sections are right-aligned headings with a 'more' pill (chevron pointing left) at the start of the row, followed by five equal video tiles; the grid fills the full container width."
+    confidence: 0.85
+    assessment: neutral
+    tags: [grid, rtl]
+  - key: text-in-images
+    page: home
+    viewport: cross-viewport
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 390x844-top]
+    statement: "Video and news thumbnails carry their headlines as text burned into the image, often in Arabic plus an English subtitle, with mixed display faces and colour labels."
+    confidence: 0.9
+    assessment: trade-off
+    tags: [text-in-image, bilingual]
+  - key: collage-imagery
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 390x844-scroll-50]
+    statement: "Imagery is collaged: halftone cut-outs, archival paper scans, colour-blocked strips; the page ground is a neutral light grey that lets these saturated images carry the colour."
+    confidence: 0.85
+    assessment: strength
+    tags: [collage, editorial]
+  - key: why-type-skins
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: INFERRED
+    based_on: [content-type-skins, ref-011.typography.home-1440-scale-range]
+    statement: "On a dense editorial home page with a narrow type scale (largest text only ~2.2× body), distinct card forms do the hierarchy work that size cannot: readers can scan by format (study / comment / video) before reading. A transferable device for high-density editorial pages."
+    confidence: 0.65
+    assessment: strength
+    tags: [density, scanning]
+  - key: why-root-dir-risk
+    page: home
+    viewport: cross-viewport
+    category: rtl
+    type: INFERRED
+    based_on: [mobile-header-rtl, ref-011.rtl.home-1440-dir-attributes, ref-011.rtl.home-1440-computed-direction, ref-011.rtl.home-1440-logical-properties]
+    statement: "The document root has no dir attribute (computed ltr) while ~174 elements set dir=rtl individually and very few logical CSS properties are used; RTL works where it was remembered, but any unmarked component, form control or scroll container defaults to LTR. Setting dir on <html> is the safer baseline."
+    confidence: 0.7
+    assessment: weakness
+    tags: [dir, fragility]
+  - key: why-heavy-images
+    page: home
+    viewport: cross-viewport
+    category: performance
+    type: INFERRED
+    based_on: [collage-imagery, ref-011.performance.home-390-transfer-bytes]
+    statement: "About 9.7 MB of images (≈11 MB total) load on the home page even at 390 px; the collage identity depends on many large images, which is a real cost for mobile readers on metered connections."
+    confidence: 0.7
+    assessment: weakness
+    tags: [weight, mobile]
+  - key: why-text-in-image-cost
+    page: home
+    viewport: cross-viewport
+    category: accessibility
+    type: INFERRED
+    based_on: [text-in-images, ref-011.accessibility.home-1440-axe-by-impact]
+    statement: "Burned-in titles make thumbnails shareable on social video platforms, but on the page many image links have no accessible name (34 link-name nodes at 1440) and the text cannot be translated, resized or searched."
+    confidence: 0.7
+    assessment: weakness
+    tags: [accessible-name]

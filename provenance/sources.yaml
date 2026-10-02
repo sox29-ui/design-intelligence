@@ -7,3 +7,38 @@ sources:
     url: https://code.claude.com/docs/en/skills
     accessed: 2026-10-02
     used_for: skill layout, frontmatter limits (1,536-char listing cap), <500-line SKILL.md guidance, mid-session discovery (/reload-skills)
+  - id: w3c-i18n-html-dir
+    title: W3C Internationalization — Structural markup and right-to-left text in HTML
+    url: https://www.w3.org/International/questions/qa-html-dir
+    accessed: 2026-10-02
+    used_for: "dir=rtl on the html element; do not use CSS to set base direction; dir=auto for inserted/user text; start/end over left/right"
+  - id: w3c-alreq
+    title: Arabic & Persian Layout Requirements (W3C Group Draft Note, 2025-10-02)
+    url: https://www.w3.org/TR/alreq/
+    accessed: 2026-10-02
+    used_for: "three digit systems and left-to-right digit order inside RTL text; justification by inter-word space/kashida, not letter-spacing; tall Arabic ascenders/descenders affect vertical metrics"
+  - id: rtlstyling-shadeed
+    title: Right-to-left Styling (Ahmad Shadeed, rtlstyling.com)
+    url: https://rtlstyling.com/posts/rtl-styling
+    accessed: 2026-10-02
+    used_for: "practitioner guide: icons to flip vs not flip (media controls, symmetric icons, right-hand objects), numeral consistency, dir=auto for mixed runs, no letter-spacing on Arabic, higher line-height for Arabic, logical properties"
+  - id: wcag22
+    title: Web Content Accessibility Guidelines (WCAG) 2.2, W3C Recommendation 12 December 2024
+    url: https://www.w3.org/TR/WCAG22/
+    accessed: 2026-10-02
+    used_for: "SC 1.4.1 use of colour, 1.4.3 contrast 4.5:1, 1.4.10 reflow, 1.4.11 non-text contrast 3:1, 2.2.2 pause/stop/hide, 2.3.3 animation from interactions (AAA), 2.4.7 focus visible, 2.4.11 focus not obscured, 3.1.1 language of page"
+  - id: wcag22-target-size
+    title: Understanding SC 2.5.8 Target Size (Minimum)
+    url: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+    accessed: 2026-10-02
+    used_for: "24×24 CSS px minimum (AA) with spacing, equivalent, inline, user-agent and essential exceptions"
+  - id: webdev-vitals
+    title: web.dev — Web Vitals
+    url: https://web.dev/articles/vitals
+    accessed: 2026-10-02
+    used_for: "LCP ≤ 2.5 s, INP ≤ 200 ms, CLS ≤ 0.1 at the 75th percentile; Lighthouse cannot measure INP (use TBT as lab proxy)"
+  - id: mdn-logical-properties
+    title: MDN — CSS logical properties and values
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values
+    accessed: 2026-10-02
+    used_for: "logical properties map to physical sides by writing mode and direction; families: margin/padding/border/inset inline/block, start/end values"

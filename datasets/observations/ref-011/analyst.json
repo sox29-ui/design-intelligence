@@ -1,0 +1,305 @@
+{
+  "ref_id": "ref-011",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:24:01.006Z",
+  "notes": "Consent dialog offers only an accept option, so it stayed open during capture (consent=left-as-is).",
+  "observations": [
+    {
+      "id": "ref-011.components.home-a-consent-occlusion",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "consent-occlusion",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/390x844-top.jpg",
+          "sha256": "6cff39e569edce2fc96e4edd35464db46ee2adf7c962817d35dea63572c2af4b"
+        }
+      ],
+      "statement": "A saturated blue bilingual consent dialog (Arabic block above an English block) covers most of the first mobile viewport and offers only an accept button and a close icon.",
+      "confidence": 0.9,
+      "assessment": "weakness",
+      "tags": [
+        "consent",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-011.rtl.home-a-mobile-header-rtl",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "390x844",
+      "category": "rtl",
+      "property": "mobile-header-rtl",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/390x844-top.jpg",
+          "sha256": "6cff39e569edce2fc96e4edd35464db46ee2adf7c962817d35dea63572c2af4b"
+        }
+      ],
+      "statement": "Mobile header in RTL: logo at the right, menu and search icons at the left; above it a full-width yellow donation bar with bilingual label and a left-pointing chevron.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "header",
+        "mirroring"
+      ]
+    },
+    {
+      "id": "ref-011.components.home-a-content-type-skins",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "content-type-skins",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/1440x900-scroll-50.jpg",
+          "sha256": "99bba577eba63ab1ecefeb48714cce6e0aada2228875ba24da5168d86abd5d6f"
+        },
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/390x844-scroll-50.jpg",
+          "sha256": "ad0caeb12d6fde58ccacc987cc7d758a4c9a9663e2580158394ee534f3374927"
+        }
+      ],
+      "statement": "Card skins encode content type: long studies look like a stack of offset sheets with a rounded corner, commentary sits in grey boxes with a dotted texture and dashed border, videos are black tiles with a white play button and date; each card carries a small grey type label above the headline.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "cards",
+        "content-type",
+        "kicker"
+      ]
+    },
+    {
+      "id": "ref-011.layout.home-a-video-row",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "video-row",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/1440x900-scroll-50.jpg",
+          "sha256": "99bba577eba63ab1ecefeb48714cce6e0aada2228875ba24da5168d86abd5d6f"
+        }
+      ],
+      "statement": "Desktop sections are right-aligned headings with a 'more' pill (chevron pointing left) at the start of the row, followed by five equal video tiles; the grid fills the full container width.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "grid",
+        "rtl"
+      ]
+    },
+    {
+      "id": "ref-011.accessibility.home-a-text-in-images",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "accessibility",
+      "property": "text-in-images",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/1440x900-scroll-50.jpg",
+          "sha256": "99bba577eba63ab1ecefeb48714cce6e0aada2228875ba24da5168d86abd5d6f"
+        },
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/390x844-top.jpg",
+          "sha256": "6cff39e569edce2fc96e4edd35464db46ee2adf7c962817d35dea63572c2af4b"
+        }
+      ],
+      "statement": "Video and news thumbnails carry their headlines as text burned into the image, often in Arabic plus an English subtitle, with mixed display faces and colour labels.",
+      "confidence": 0.9,
+      "assessment": "trade-off",
+      "tags": [
+        "text-in-image",
+        "bilingual"
+      ]
+    },
+    {
+      "id": "ref-011.color.home-a-collage-imagery",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "collage-imagery",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/1440x900-scroll-50.jpg",
+          "sha256": "99bba577eba63ab1ecefeb48714cce6e0aada2228875ba24da5168d86abd5d6f"
+        },
+        {
+          "artifact": "research-artifacts/ref-011/home/20261002T162037Z/390x844-scroll-50.jpg",
+          "sha256": "ad0caeb12d6fde58ccacc987cc7d758a4c9a9663e2580158394ee534f3374927"
+        }
+      ],
+      "statement": "Imagery is collaged: halftone cut-outs, archival paper scans, colour-blocked strips; the page ground is a neutral light grey that lets these saturated images carry the colour.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "collage",
+        "editorial"
+      ]
+    },
+    {
+      "id": "ref-011.components.home-a-why-type-skins",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "why-type-skins",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-011.components.home-a-content-type-skins"
+        },
+        {
+          "observation": "ref-011.typography.home-1440-scale-range"
+        }
+      ],
+      "statement": "On a dense editorial home page with a narrow type scale (largest text only ~2.2× body), distinct card forms do the hierarchy work that size cannot: readers can scan by format (study / comment / video) before reading. A transferable device for high-density editorial pages.",
+      "confidence": 0.65,
+      "assessment": "strength",
+      "tags": [
+        "density",
+        "scanning"
+      ]
+    },
+    {
+      "id": "ref-011.rtl.home-a-why-root-dir-risk",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "rtl",
+      "property": "why-root-dir-risk",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-011.rtl.home-a-mobile-header-rtl"
+        },
+        {
+          "observation": "ref-011.rtl.home-1440-dir-attributes"
+        },
+        {
+          "observation": "ref-011.rtl.home-1440-computed-direction"
+        },
+        {
+          "observation": "ref-011.rtl.home-1440-logical-properties"
+        }
+      ],
+      "statement": "The document root has no dir attribute (computed ltr) while ~174 elements set dir=rtl individually and very few logical CSS properties are used; RTL works where it was remembered, but any unmarked component, form control or scroll container defaults to LTR. Setting dir on <html> is the safer baseline.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "dir",
+        "fragility"
+      ]
+    },
+    {
+      "id": "ref-011.performance.home-a-why-heavy-images",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "performance",
+      "property": "why-heavy-images",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-011.color.home-a-collage-imagery"
+        },
+        {
+          "observation": "ref-011.performance.home-390-transfer-bytes"
+        }
+      ],
+      "statement": "About 9.7 MB of images (≈11 MB total) load on the home page even at 390 px; the collage identity depends on many large images, which is a real cost for mobile readers on metered connections.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "weight",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-011.accessibility.home-a-why-text-in-image-cost",
+      "ref_id": "ref-011",
+      "page": "home",
+      "source_url": "https://megaphone.news/",
+      "capture_id": "20261002T162037Z",
+      "captured_at": "2026-10-02T16:20:37.946Z",
+      "viewport": "cross-viewport",
+      "category": "accessibility",
+      "property": "why-text-in-image-cost",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-011.accessibility.home-a-text-in-images"
+        },
+        {
+          "observation": "ref-011.accessibility.home-1440-axe-by-impact"
+        }
+      ],
+      "statement": "Burned-in titles make thumbnails shareable on social video platforms, but on the page many image links have no accessible name (34 link-name nodes at 1440) and the text cannot be translated, resized or searched.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "accessible-name"
+      ]
+    }
+  ]
+}
