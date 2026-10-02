@@ -191,7 +191,9 @@ export function normalizeRef(ref: string): Obs[] {
   const obs: Obs[] = [];
   const seen = new Set<string>();
   for (const cap of latestCaptures(ref)) {
-    const manifest = readJson<{ url: string; started_at: string; capture_id: string; files: Array<{ path: string }> }>(abs(cap.dir, 'manifest.json'));
+    const manifest = readJson<{ url: string; started_at: string; capture_id: string; files: Array<{ path: string }>; tool?: { version?: string } }>(abs(cap.dir, 'manifest.json'));
+    // Probe 0.1.0 counted text over <img>/<video> media as contrast against white: lower confidence.
+    const legacyContrast = (manifest.tool?.version ?? '0.1.0') === '0.1.0';
     const vpFiles = manifest.files.map((f) => f.path).filter((p) => /^viewport-\d+x\d+\.json$/.test(p));
     const data = new Map<string, any>();
     for (const f of vpFiles) data.set(f.match(/(\d+x\d+)/)![1], readJson(abs(cap.dir, f)));
@@ -231,7 +233,8 @@ export function normalizeRef(ref: string): Obs[] {
         if (spec.rtlOnly && !isRtl) continue;
         const r = resolvePointer(d, spec.ptr);
         if (!r.found || empty(r.value)) continue;
-        base(`${ref}.${spec.cat}.${cap.page}-${short}-${spec.slug}`, vp, spec.cat, spec.slug, r.value, [{ path: file, pointer: spec.ptr }], spec);
+        const adj = legacyContrast && /^low-contrast/.test(spec.slug) ? { ...spec, conf: 0.9, weakIf: undefined, tags: ['legacy-contrast-estimate'], statement: () => 'estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions' } : spec;
+        base(`${ref}.${spec.cat}.${cap.page}-${short}-${spec.slug}`, vp, spec.cat, spec.slug, r.value, [{ path: file, pointer: spec.ptr }], adj);
       }
     }
     // Cross-viewport (responsive) observations: value is a map viewport → measured value.

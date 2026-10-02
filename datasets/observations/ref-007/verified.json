@@ -2,7 +2,7 @@
   "ref_id": "ref-007",
   "authorship": "normalizer",
   "generator": "scripts/normalize.ts@0.1.0",
-  "generated_at": "2026-10-02T16:14:05.755Z",
+  "generated_at": "2026-10-02T16:32:34.907Z",
   "notes": "Generated deterministically from datasets/raw. Do not edit by hand (D-004).",
   "observations": [
     {
@@ -1310,10 +1310,11 @@
           "pointer": "/metrics/color/contrast/lowContrastNormalShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -1335,10 +1336,11 @@
           "pointer": "/metrics/color/contrast/lowContrastLargeShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -4346,10 +4348,11 @@
           "pointer": "/metrics/color/contrast/lowContrastNormalShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -4371,10 +4374,11 @@
           "pointer": "/metrics/color/contrast/lowContrastLargeShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -7973,10 +7977,11 @@
           "pointer": "/metrics/color/contrast/lowContrastNormalShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -7998,10 +8003,11 @@
           "pointer": "/metrics/color/contrast/lowContrastLargeShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -10959,10 +10965,11 @@
           "pointer": "/metrics/color/contrast/lowContrastNormalShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {
@@ -10984,10 +10991,11 @@
           "pointer": "/metrics/color/contrast/lowContrastLargeShare"
         }
       ],
+      "statement": "estimate from probe 0.1.0 — text over <img>/<video> was compared against white, so this over-counts low contrast on image-led pages; use axe color-contrast for decisions",
       "confidence": 0.9,
       "assessment": "neutral",
       "tags": [
-        "wcag-1-4-3"
+        "legacy-contrast-estimate"
       ]
     },
     {

@@ -1,0 +1,137 @@
+{
+  "scrollLinked": {
+    "sampledElements": 4000,
+    "changedAfterScroll": 4
+  },
+  "entranceFrames": [
+    400,
+    900,
+    2600,
+    4200
+  ],
+  "reducedMotion": {
+    "motion": {
+      "transitionElements": 546,
+      "transitionDuration": {
+        "n": 546,
+        "min": 50,
+        "p25": 150,
+        "median": 300,
+        "p75": 300,
+        "max": 1000
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.4, 0, 0.2, 1)": 368,
+        "cubic-bezier(0.34, 1.56, 0.64, 1)": 92,
+        "cubic-bezier(0, 0, 0.2, 1)": 54,
+        "ease-out": 32
+      },
+      "transitionProperty": {
+        "opacity": 202,
+        "color": 198,
+        "transform": 66,
+        "x1": 32,
+        "background-color": 20,
+        "min-width": 20,
+        "scale": 5,
+        "none": 2,
+        "all": 1
+      },
+      "animations": {
+        "total": 42,
+        "running": 21,
+        "infinite": 1,
+        "scrollDriven": 0,
+        "byType": {
+          "CSSAnimation": 22,
+          "CSSTransition": 20
+        },
+        "duration": {
+          "n": 42,
+          "min": 400,
+          "p25": 400,
+          "median": 2000,
+          "p75": 4000,
+          "max": 4000
+        },
+        "easing": {
+          "linear": 22,
+          "cubic-bezier(0.34, 1.56, 0.64, 1)": 20
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 5,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 6,
+      "roundedBoxShare12": 0.167,
+      "roundedBoxShare24": 0.167,
+      "opacityZeroElements": 414,
+      "transformedElements": 435
+    },
+    "instrumentation": {
+      "canvasContexts": {
+        "webgl": 2,
+        "webgl2": 2,
+        "offscreen:2d": 1
+      },
+      "webgpuRequested": false,
+      "matchMediaQueries": {
+        "(min-width: 58.75rem)": 2,
+        "(max-width: 768px)": 2,
+        "(orientation: landscape) and (max-height: 599px)": 1,
+        "(max-width: 939px)": 3,
+        "(min-width: 1181px)": 1,
+        "(prefers-reduced-motion: reduce)": 22,
+        "(prefers-color-scheme: dark)": 1
+      },
+      "intersectionObservers": 50,
+      "resizeObservers": 5,
+      "rafCalls": 37,
+      "rafFirstAt": 906,
+      "waapiAnimate": 0,
+      "waapiDurations": [],
+      "scrollListeners": 5,
+      "wheelListeners": 4,
+      "touchmoveListeners": 3,
+      "pointermoveListeners": 4,
+      "startedAt": 1790958472712
+    },
+    "media": {
+      "images": 0,
+      "imagesTotal": 345,
+      "lazyImages": 344,
+      "srcsetImages": 85,
+      "videos": 12,
+      "autoplayVideos": 0,
+      "videosWithControls": 0,
+      "inlineSvgs": 124,
+      "canvases": [
+        {
+          "w": 1440,
+          "h": 900,
+          "fixed": false
+        },
+        {
+          "w": 1140,
+          "h": 648,
+          "fixed": false
+        }
+      ],
+      "iframes": 1
+    },
+    "cssom": {
+      "reducedMotionRules": 0
+    }
+  },
+  "darkScheme": {
+    "bodyBackground": "rgb(0, 0, 0)",
+    "rootBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "colorSchemeProperty": "normal"
+  }
+}

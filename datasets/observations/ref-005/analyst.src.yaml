@@ -1,0 +1,74 @@
+# Analyst observations — ref-005 Exat typeface microsite. Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 1440-scroll-50.
+notes: "The probe's above-the-fold display detection missed the giant hero word (likely mid-animation when measured); maximum text size on the page is VERIFIED separately (654 px at 1440, 312 px at 390)."
+items:
+  - key: type-as-image
+    page: home
+    viewport: 1440x900
+    category: typography
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "The first viewport is the typeface name set in light letters hundreds of pixels tall on a flat saturated orange field, spanning the full width and bleeding off the bottom edge; header text is tiny by comparison (logo, product line, 'get font' link, menu)."
+    confidence: 0.95
+    assessment: strength
+    tags: [display, specimen, scale]
+  - key: mobile-rotation
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "At 390 the giant word is rotated 90° to run vertically up the right side of the tall viewport, keeping its letters huge; the product line and the 'get font' link sit small at the left."
+    confidence: 0.9
+    assessment: strength
+    tags: [reorientation, mobile-transform]
+  - key: poster-modules
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-scroll-25, 1440x900-scroll-50]
+    statement: "Further down, flat colour bands (yellow, black) hold large statements, and specimen modules sit in a modular grid like modernist posters: cut numerals, a list of names, a single huge letter on a colour block, a dot pattern, a spiral of alphabet in graded colours; small captions set very tight."
+    confidence: 0.85
+    assessment: strength
+    tags: [modernist, grid, specimen]
+  - key: saturated-flat-palette
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-25, 1440x900-scroll-50]
+    statement: "Palette of flat saturated orange, yellow, pink, green, blue and near-black on off-white — no gradients, shadows or blur; colour blocks are the layout units."
+    confidence: 0.9
+    assessment: neutral
+    tags: [flat-colour]
+  - key: why-type-as-image
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [type-as-image, mobile-rotation, ref-005.typography.home-1440-max-size]
+    statement: "When the product is a typeface, enormous letterforms are the product demonstration, so extreme display scale (largest text ≈ 40× body at 1440) is justified by the goal. The rotation on mobile shows the principle: preserve the decisive scale relationship by changing orientation rather than shrinking the word to fit."
+    confidence: 0.75
+    assessment: strength
+    tags: [scale, context]
+  - key: why-not-general
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [type-as-image, poster-modules]
+    statement: "The rotated giant word and the alphabet spiral are this site's signature moves tied to a type-specimen brief; on a page whose product is not typography they would be decoration that pushes content below the fold."
+    confidence: 0.7
+    assessment: neutral
+    tags: [signature]
+  - key: why-contrast-and-structure
+    page: home
+    viewport: cross-viewport
+    category: accessibility
+    type: INFERRED
+    based_on: [poster-modules, ref-005.accessibility.home-1440-axe-by-impact, ref-005.accessibility.home-390-axe-by-impact]
+    statement: "Coloured poster modules and tight small captions generate serious colour-contrast findings (33 nodes at 1440, 77 at 390) and the page has no h1; specimen pages trade semantic structure and small-text legibility for poster aesthetics."
+    confidence: 0.7
+    assessment: weakness
+    tags: [contrast, headings]

@@ -1,0 +1,2668 @@
+{
+  "viewport": {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "mobileEmulation": false,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0.0001,
+    "shifts": 1,
+    "atMs": 15286
+  },
+  "scroll": {
+    "method": "scrollTo",
+    "marksCaptured": 4,
+    "startHeight": 57340,
+    "endHeight": 57340,
+    "reachedY": 25389,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 4012,
+    "document": {
+      "lang": "en",
+      "dirAttr": null,
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 29,
+      "metaViewport": "width=device-width,initial-scale=1",
+      "themeColor": null,
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollY": 0,
+      "docHeight": 57340,
+      "docWidth": 768,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+        "size": 14,
+        "lineHeight": "21px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "visible"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 4,
+      "loadedFaces": 4,
+      "loadedFamilies": [
+        "Inter-Variable",
+        "NeueMontreal",
+        "HWCigars",
+        "ImperialScript"
+      ],
+      "loadedDetail": [
+        {
+          "family": "Inter-Variable",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "NeueMontreal",
+          "weight": "700",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "HWCigars",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "ImperialScript",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 4
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 673,
+      "totalChars": 31200,
+      "scriptChars": {
+        "arabic": 0,
+        "latin": 26274,
+        "westDigits": 85,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 5,
+      "familyShare": {
+        "NeueMontreal": 0.888,
+        "HWCigars": 0.096,
+        "Inter-Variable": 0.013,
+        "PP Neue Montreal": 0.003,
+        "ui-sans-serif": 0.001
+      },
+      "distinctSizes": 12,
+      "sizeShare": {
+        "12": 0.001,
+        "13": 0.011,
+        "14": 0.032,
+        "16": 0.839,
+        "17": 0.001,
+        "18": 0.006,
+        "20": 0.032,
+        "24": 0.022,
+        "28": 0.042,
+        "32": 0.01,
+        "54": 0.001,
+        "72": 0.003
+      },
+      "minSize": 12,
+      "maxSize": 72,
+      "dominantBodySize": 16,
+      "scaleRange": 4.5,
+      "distinctWeights": [
+        "400",
+        "500",
+        "700"
+      ],
+      "uppercaseShare": 0,
+      "clusters": [
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 26147,
+          "nodes": 479,
+          "firstDocY": 887,
+          "scripts": {
+            "latin": 26141,
+            "other": 6
+          },
+          "colors": {
+            "#ffffff": 530,
+            "#292919": 268,
+            "#5c5c4e": 5569,
+            "#909083": 14489,
+            "#000000": 5291
+          },
+          "share": 0.838
+        },
+        {
+          "family": "HWCigars",
+          "stack": "HWCigars, Georgia, \"Times New Roman\", serif",
+          "size": 28,
+          "weight": "400",
+          "lineHeightRatio": 0.96,
+          "letterSpacing": "-1.4px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 1314,
+          "nodes": 36,
+          "firstDocY": 2136,
+          "scripts": {
+            "latin": 1314
+          },
+          "colors": {
+            "#f7f7ee": 877,
+            "#292919": 437
+          },
+          "share": 0.042
+        },
+        {
+          "family": "HWCigars",
+          "stack": "HWCigars, Georgia, \"Times New Roman\", serif",
+          "size": 20,
+          "weight": "400",
+          "lineHeightRatio": 0.97,
+          "letterSpacing": "-0.8px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 1007,
+          "nodes": 10,
+          "firstDocY": 13001,
+          "scripts": {
+            "latin": 1007
+          },
+          "colors": {
+            "#f7f7ee": 663,
+            "#292919": 344
+          },
+          "share": 0.032
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 716,
+          "nodes": 59,
+          "firstDocY": 2963,
+          "scripts": {
+            "latin": 716
+          },
+          "colors": {
+            "#292919": 716
+          },
+          "share": 0.023
+        },
+        {
+          "family": "HWCigars",
+          "stack": "HWCigars, Georgia, \"Times New Roman\", serif",
+          "size": 24,
+          "weight": "400",
+          "lineHeightRatio": 0.97,
+          "letterSpacing": "-1.2px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 600,
+          "nodes": 6,
+          "firstDocY": 2899,
+          "scripts": {
+            "latin": 600
+          },
+          "colors": {
+            "#292919": 521,
+            "#f7f7ee": 79
+          },
+          "share": 0.019
+        },
+        {
+          "family": "Inter-Variable",
+          "stack": "Inter-Variable, Helvetica, sans-serif",
+          "size": 13,
+          "weight": "500",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 339,
+          "nodes": 5,
+          "firstDocY": 5369,
+          "scripts": {
+            "latin": 339
+          },
+          "colors": {
+            "#303030": 339
+          },
+          "share": 0.011
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 32,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacing": "-0.96px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 316,
+          "nodes": 14,
+          "firstDocY": 12963,
+          "scripts": {
+            "latin": 316
+          },
+          "colors": {
+            "#f7f7ee": 159,
+            "#292919": 80,
+            "#000000": 77
+          },
+          "share": 0.01
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "500",
+          "lineHeightRatio": 1.1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 216,
+          "nodes": 12,
+          "firstDocY": 12093,
+          "scripts": {
+            "latin": 216
+          },
+          "colors": {
+            "#f7f7ee": 216
+          },
+          "share": 0.007
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 18,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacing": "-0.36px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 188,
+          "nodes": 17,
+          "firstDocY": 524,
+          "scripts": {
+            "latin": 188
+          },
+          "colors": {
+            "#ffffff": 89,
+            "#292919": 99
+          },
+          "share": 0.006
+        },
+        {
+          "family": "PP Neue Montreal",
+          "stack": "\"PP Neue Montreal\", sans-serif",
+          "size": 24,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacing": "-0.48px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 89,
+          "nodes": 12,
+          "firstDocY": 121,
+          "scripts": {
+            "latin": 89
+          },
+          "colors": {
+            "#f7f7ee": 89
+          },
+          "share": 0.003
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 72,
+          "weight": "700",
+          "lineHeightRatio": 0.9,
+          "letterSpacing": "-2.16px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 89,
+          "nodes": 12,
+          "firstDocY": 2031,
+          "scripts": {
+            "latin": 89
+          },
+          "colors": {
+            "#f7f7ee": 80,
+            "#292919": 9
+          },
+          "share": 0.003
+        },
+        {
+          "family": "HWCigars",
+          "stack": "HWCigars, Georgia, \"Times New Roman\", serif",
+          "size": 17,
+          "weight": "400",
+          "lineHeightRatio": 0.97,
+          "letterSpacing": "-0.68px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 46,
+          "nodes": 1,
+          "firstDocY": 473,
+          "scripts": {
+            "latin": 46
+          },
+          "colors": {
+            "#f7f7ee": 46
+          },
+          "share": 0.001
+        },
+        {
+          "family": "Inter-Variable",
+          "stack": "Inter-Variable, Helvetica, sans-serif",
+          "size": 14,
+          "weight": "500",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 40,
+          "nodes": 3,
+          "firstDocY": 15,
+          "scripts": {
+            "latin": 40
+          },
+          "colors": {
+            "#ffffff": 26,
+            "#000000": 14
+          },
+          "share": 0.001
+        },
+        {
+          "family": "HWCigars",
+          "stack": "HWCigars, Georgia, \"Times New Roman\", serif",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.07,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 30,
+          "nodes": 2,
+          "firstDocY": 910,
+          "scripts": {
+            "latin": 30
+          },
+          "colors": {
+            "#ffffff": 30
+          },
+          "share": 0.001
+        },
+        {
+          "family": "Inter-Variable",
+          "stack": "Inter-Variable, Helvetica, sans-serif",
+          "size": 16,
+          "weight": "500",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 25,
+          "nodes": 3,
+          "firstDocY": 979,
+          "scripts": {
+            "latin": 25
+          },
+          "colors": {
+            "#ffffff": 25
+          },
+          "share": 0.001
+        },
+        {
+          "family": "ui-sans-serif",
+          "stack": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 20,
+          "nodes": 1,
+          "firstDocY": -60,
+          "scripts": {
+            "latin": 20
+          },
+          "colors": {
+            "#000000": 20
+          },
+          "share": 0.001
+        },
+        {
+          "family": "NeueMontreal",
+          "stack": "NeueMontreal, Helvetica, Arial, sans-serif",
+          "size": 54,
+          "weight": "700",
+          "lineHeightRatio": 0.9,
+          "letterSpacing": "-1.08px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 18,
+          "nodes": 1,
+          "firstDocY": 20919,
+          "scripts": {
+            "latin": 18
+          },
+          "colors": {
+            "#f7f7ee": 18
+          },
+          "share": 0.001
+        }
+      ]
+    },
+    "headings": {
+      "count": 221,
+      "h1Count": 1,
+      "outline": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h1",
+          "level": 1,
+          "family": "ui-sans-serif",
+          "size": 14,
+          "sizeVw": 1.82,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 26,
+          "words": 3,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 13,
+          "box": {
+            "x": 20,
+            "y": 10,
+            "w": 146,
+            "h": 40
+          },
+          "aboveFold": true,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h2",
+          "level": 2,
+          "family": "NeueMontreal",
+          "size": 32,
+          "sizeVw": 4.17,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 23,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 234,
+            "y": 300,
+            "w": 165,
+            "h": 72
+          },
+          "aboveFold": true,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h2",
+          "level": 2,
+          "family": "NeueMontreal",
+          "size": 72,
+          "sizeVw": 9.38,
+          "weight": "700",
+          "lineHeightRatio": 0.9,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 8,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 12,
+            "y": 1991,
+            "w": 744,
+            "h": 145
+          },
+          "aboveFold": false,
+          "color": "#f7f7ee"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h3",
+          "level": 3,
+          "family": "HWCigars",
+          "size": 28,
+          "sizeVw": 3.65,
+          "weight": "400",
+          "lineHeightRatio": 0.96,
+          "letterSpacingEm": -0.05,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 31,
+          "words": 3,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 15.5,
+          "box": {
+            "x": 0,
+            "y": 2731,
+            "w": 768,
+            "h": 140
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.02,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 17,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 12,
+            "y": 2871,
+            "w": 744,
+            "h": 13
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h3",
+          "level": 3,
+          "family": "HWCigars",
+          "size": 28,
+          "sizeVw": 3.65,
+          "weight": "400",
+          "lineHeightRatio": 0.96,
+          "letterSpacingEm": -0.05,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 2,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 10.5,
+          "box": {
+            "x": 0,
+            "y": 4269,
+            "w": 768,
+            "h": 140
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.02,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 21,
+          "box": {
+            "x": 12,
+            "y": 4409,
+            "w": 744,
+            "h": 13
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.02,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 20,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 20,
+          "box": {
+            "x": 12,
+            "y": 5644,
+            "w": 744,
+            "h": 13
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 24,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 24,
+          "box": {
+            "x": 12,
+            "y": 7381,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 20,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 20,
+          "box": {
+            "x": 390,
+            "y": 7381,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h3",
+          "level": 3,
+          "family": "HWCigars",
+          "size": 28,
+          "sizeVw": 3.65,
+          "weight": "400",
+          "lineHeightRatio": 0.96,
+          "letterSpacingEm": -0.05,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 16,
+          "words": 2,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 8,
+          "box": {
+            "x": 0,
+            "y": 7545,
+            "w": 768,
+            "h": 140
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.02,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 20,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 20,
+          "box": {
+            "x": 12,
+            "y": 7685,
+            "w": 744,
+            "h": 13
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-12",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 21,
+          "box": {
+            "x": 12,
+            "y": 8975,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-13",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 19,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 19,
+          "box": {
+            "x": 390,
+            "y": 9060,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-14",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 13,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 12,
+            "y": 9580,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-15",
+          "tag": "h3",
+          "level": 3,
+          "family": "HWCigars",
+          "size": 28,
+          "sizeVw": 3.65,
+          "weight": "400",
+          "lineHeightRatio": 0.96,
+          "letterSpacingEm": -0.05,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 25,
+          "words": 3,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 12.5,
+          "box": {
+            "x": 0,
+            "y": 9727,
+            "w": 768,
+            "h": 140
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-16",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 18,
+          "sizeVw": 2.34,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.02,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 21,
+          "box": {
+            "x": 12,
+            "y": 9867,
+            "w": 744,
+            "h": 13
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-17",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 12,
+            "y": 10883,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-18",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 25,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 25,
+          "box": {
+            "x": 12,
+            "y": 11514,
+            "w": 496,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-19",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 9,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 9,
+          "box": {
+            "x": 12,
+            "y": 11623,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-20",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 13,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 12,
+            "y": 11686,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-21",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 16,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 12,
+            "y": 11749,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-22",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 13,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 12,
+            "y": 11812,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-23",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 22,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 22,
+          "box": {
+            "x": 12,
+            "y": 11874,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-24",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 16,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 12,
+            "y": 11937,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-25",
+          "tag": "h4",
+          "level": 4,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 31,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 31,
+          "box": {
+            "x": 12,
+            "y": 12000,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-26",
+          "tag": "h2",
+          "level": 2,
+          "family": "NeueMontreal",
+          "size": 72,
+          "sizeVw": 9.38,
+          "weight": "700",
+          "lineHeightRatio": 0.9,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 7,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 7,
+          "box": {
+            "x": 12,
+            "y": 12548,
+            "w": 744,
+            "h": 145
+          },
+          "aboveFold": false,
+          "color": "#f7f7ee"
+        },
+        {
+          "probe": "heading-27",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 32,
+          "sizeVw": 4.17,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 27,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 27,
+          "box": {
+            "x": 12,
+            "y": 12963,
+            "w": 744,
+            "h": 23
+          },
+          "aboveFold": false,
+          "color": "#f7f7ee"
+        },
+        {
+          "probe": "heading-28",
+          "tag": "h2",
+          "level": 2,
+          "family": "NeueMontreal",
+          "size": 72,
+          "sizeVw": 9.38,
+          "weight": "700",
+          "lineHeightRatio": 0.9,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 6,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 6,
+          "box": {
+            "x": 12,
+            "y": 15473,
+            "w": 744,
+            "h": 145
+          },
+          "aboveFold": false,
+          "color": "#f7f7ee"
+        },
+        {
+          "probe": "heading-29",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 32,
+          "sizeVw": 4.17,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 41,
+          "words": 7,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 41,
+          "box": {
+            "x": 12,
+            "y": 15991,
+            "w": 744,
+            "h": 23
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-30",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 32,
+          "sizeVw": 4.17,
+          "weight": "700",
+          "lineHeightRatio": 0.95,
+          "letterSpacingEm": -0.03,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 18,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 18,
+          "box": {
+            "x": 12,
+            "y": 16777,
+            "w": 744,
+            "h": 23
+          },
+          "aboveFold": false,
+          "color": "#292919"
+        },
+        {
+          "probe": "heading-31",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 40,
+          "words": 7,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 40,
+          "box": {
+            "x": 12,
+            "y": 18236,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-32",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 390,
+            "y": 18330,
+            "w": 366,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-33",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 17,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 12,
+            "y": 19347,
+            "w": 496,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-34",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 35,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 35,
+          "box": {
+            "x": 12,
+            "y": 19514,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-35",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 25,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 25,
+          "box": {
+            "x": 12,
+            "y": 19576,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-36",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 23,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 12,
+            "y": 19639,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-37",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 24,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 24,
+          "box": {
+            "x": 12,
+            "y": 19720,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-38",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 42,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 42,
+          "box": {
+            "x": 12,
+            "y": 19783,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-39",
+          "tag": "h3",
+          "level": 3,
+          "family": "NeueMontreal",
+          "size": 16,
+          "sizeVw": 2.08,
+          "weight": "700",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 29,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 29,
+          "box": {
+            "x": 12,
+            "y": 19846,
+            "w": 744,
+            "h": 11
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "display-40",
+      "tag": "span",
+      "level": null,
+      "family": "PP Neue Montreal",
+      "size": 24,
+      "sizeVw": 3.13,
+      "weight": "700",
+      "lineHeightRatio": 0.95,
+      "letterSpacingEm": -0.02,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "wrap",
+      "chars": 8,
+      "words": 1,
+      "script": "latin",
+      "lines": 1,
+      "charsPerLine": 8,
+      "box": {
+        "x": 220,
+        "y": 121,
+        "w": 94,
+        "h": 23
+      },
+      "aboveFold": true,
+      "color": "#f7f7ee"
+    },
+    "reading": {
+      "sampled": 60,
+      "fontSize": {
+        "n": 60,
+        "min": 13,
+        "p25": 14,
+        "median": 16,
+        "p75": 16,
+        "max": 28
+      },
+      "lineHeightRatio": {
+        "n": 60,
+        "min": 0.96,
+        "p25": 1.1,
+        "median": 1.1,
+        "p75": 1.5,
+        "max": 1.5
+      },
+      "charsPerLine": {
+        "n": 60,
+        "min": 10.7,
+        "p25": 24.3,
+        "median": 40,
+        "p75": 61,
+        "max": 103
+      },
+      "widthEm": {
+        "n": 60,
+        "min": 21.4,
+        "p25": 21.4,
+        "median": 23.8,
+        "p75": 37.2,
+        "max": 48
+      },
+      "justified": 0,
+      "scripts": {
+        "latin": 60
+      }
+    },
+    "color": {
+      "rootBackground": "#000000",
+      "rootBackgroundLuminance": 0,
+      "scheme": "dark",
+      "backgroundPalette": [
+        {
+          "color": "#f7f7ee",
+          "areaShare": 0.756,
+          "hsl": {
+            "h": 60,
+            "s": 0.36,
+            "l": 0.95
+          }
+        },
+        {
+          "color": "#dcdcd0",
+          "areaShare": 0.201,
+          "hsl": {
+            "h": 60,
+            "s": 0.15,
+            "l": 0.84
+          }
+        },
+        {
+          "color": "#ffffff",
+          "areaShare": 0.036,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        },
+        {
+          "color": "#000000",
+          "areaShare": 0.006,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          }
+        },
+        {
+          "color": "#f4f4f4",
+          "areaShare": 0.001,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.96
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#909083",
+          "share": 0.464
+        },
+        {
+          "color": "#5c5c4e",
+          "share": 0.178
+        },
+        {
+          "color": "#000000",
+          "share": 0.173
+        },
+        {
+          "color": "#292919",
+          "share": 0.079
+        },
+        {
+          "color": "#f7f7ee",
+          "share": 0.071
+        },
+        {
+          "color": "#ffffff",
+          "share": 0.022
+        },
+        {
+          "color": "#303030",
+          "share": 0.011
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#f7f7ee",
+          "count": 59
+        },
+        {
+          "color": "#292919",
+          "count": 12
+        },
+        {
+          "color": "#ffffff",
+          "count": 2
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "imageBackgrounds": 9,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain",
+        "checkedChars": 31252,
+        "lowContrastNormalShare": 0.494,
+        "lowContrastLargeShare": 0.025,
+        "uncertainShare": 0,
+        "ratio": {
+          "n": 400,
+          "min": 1.43,
+          "p25": 3.1,
+          "median": 13.68,
+          "p75": 15.19,
+          "max": 21
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 340,
+          "count": 6
+        },
+        {
+          "value": 369,
+          "count": 1
+        },
+        {
+          "value": 329,
+          "count": 1
+        }
+      ],
+      "dominantContainer": 340,
+      "widestContainer": 369,
+      "textLeftEdges": [
+        {
+          "x": 12,
+          "n": 397
+        },
+        {
+          "x": 20,
+          "n": 42
+        },
+        {
+          "x": 392,
+          "n": 38
+        },
+        {
+          "x": 396,
+          "n": 18
+        },
+        {
+          "x": 220,
+          "n": 16
+        },
+        {
+          "x": 4,
+          "n": 12
+        },
+        {
+          "x": 236,
+          "n": 12
+        },
+        {
+          "x": 0,
+          "n": 7
+        },
+        {
+          "x": 44,
+          "n": 6
+        },
+        {
+          "x": 48,
+          "n": 3
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 12,
+          "n": 230
+        },
+        {
+          "x": 392,
+          "n": 42
+        },
+        {
+          "x": 660,
+          "n": 27
+        },
+        {
+          "x": 260,
+          "n": 17
+        },
+        {
+          "x": 284,
+          "n": 13
+        },
+        {
+          "x": 616,
+          "n": 12
+        },
+        {
+          "x": 0,
+          "n": 9
+        },
+        {
+          "x": 472,
+          "n": 8
+        },
+        {
+          "x": 444,
+          "n": 7
+        },
+        {
+          "x": 448,
+          "n": 6
+        },
+        {
+          "x": 456,
+          "n": 6
+        },
+        {
+          "x": 512,
+          "n": 6
+        }
+      ],
+      "distinctTextEdges": 65,
+      "gridContainers": 76,
+      "flexContainers": 455,
+      "gridColumnCounts": [
+        {
+          "value": 2,
+          "count": 42
+        }
+      ],
+      "gaps": {
+        "n": 335,
+        "min": 2,
+        "p25": 5,
+        "median": 10,
+        "p75": 10,
+        "max": 20
+      },
+      "stickyElements": 4,
+      "fixedElements": 12,
+      "sections": {
+        "count": 2,
+        "heightsVh": {
+          "n": 2,
+          "min": 1.5,
+          "p25": 1.5,
+          "median": 1.5,
+          "p75": 1.5,
+          "max": 54.5
+        },
+        "paddingTop": {
+          "n": 2,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 2,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      },
+      "pageHeightVh": 56,
+      "textOverMedia": 3
+    },
+    "components": {
+      "header": {
+        "position": "relative",
+        "height": 60,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 22,
+        "expandableToggles": 2
+      },
+      "navCount": 2,
+      "buttons": {
+        "count": 74,
+        "radius": {
+          "n": 74,
+          "min": 0,
+          "p25": 3,
+          "median": 3,
+          "p75": 3,
+          "max": 33554400
+        },
+        "pillShare": 0.01,
+        "height": {
+          "n": 74,
+          "min": 26,
+          "p25": 26,
+          "median": 26,
+          "p75": 26,
+          "max": 60
+        },
+        "fontSize": {
+          "n": 74,
+          "min": 14,
+          "p25": 14,
+          "median": 14,
+          "p75": 14,
+          "max": 16
+        },
+        "textTransform": {
+          "none": 74
+        },
+        "fontWeight": {
+          "400": 60,
+          "500": 14
+        }
+      },
+      "forms": {
+        "forms": 2,
+        "inputs": 1
+      },
+      "media": {
+        "images": 66,
+        "imagesTotal": 345,
+        "lazyImages": 344,
+        "srcsetImages": 85,
+        "videos": 17,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 124,
+        "canvases": [
+          {
+            "w": 768,
+            "h": 1024,
+            "fixed": false
+          },
+          {
+            "w": 768,
+            "h": 583,
+            "fixed": false
+          }
+        ],
+        "iframes": 1
+      },
+      "cardGroups": {
+        "count": 1,
+        "items": [
+          {
+            "items": 20,
+            "width": 300,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          }
+        ],
+        "radius": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 5,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 212,
+      "roundedBoxShare12": 0.057,
+      "roundedBoxShare24": 0.028,
+      "opacityZeroElements": 331,
+      "transformedElements": 422
+    },
+    "motion": {
+      "transitionElements": 557,
+      "transitionDuration": {
+        "n": 557,
+        "min": 50,
+        "p25": 150,
+        "median": 300,
+        "p75": 300,
+        "max": 3000
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.4, 0, 0.2, 1)": 306,
+        "cubic-bezier(0.34, 1.56, 0.64, 1)": 92,
+        "cubic-bezier(0, 0, 0.2, 1)": 55,
+        "cubic-bezier(0.34, 0.22, 0.47, 0.84)": 39,
+        "ease-out": 33,
+        "cubic-bezier(0.41, 0.19, 0.13, 0.95)": 16,
+        "cubic-bezier(0.215, 0.61, 0.355, 1)": 10,
+        "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 5,
+        "ease": 1
+      },
+      "transitionProperty": {
+        "color": 195,
+        "opacity": 143,
+        "transform": 66,
+        "stroke-dashoffset": 39,
+        "x1": 32,
+        "background-color": 20,
+        "min-width": 20,
+        "grid-template-rows": 20,
+        "translate": 14,
+        "scale": 6,
+        "all": 2
+      },
+      "animations": {
+        "total": 35,
+        "running": 22,
+        "infinite": 5,
+        "scrollDriven": 0,
+        "byType": {
+          "CSSAnimation": 18,
+          "CSSTransition": 17
+        },
+        "duration": {
+          "n": 35,
+          "min": 600,
+          "p25": 600,
+          "median": 3000,
+          "p75": 3000,
+          "max": 6000
+        },
+        "easing": {
+          "linear": 18,
+          "cubic-bezier(0.34, 0.22, 0.47, 0.84)": 17
+        }
+      }
+    },
+    "cssom": {
+      "sheets": 2,
+      "inaccessibleSheets": 2,
+      "rules": 0,
+      "mediaQueries": {},
+      "breakpoints": {},
+      "reducedMotionRules": 0,
+      "colorSchemeRules": 0,
+      "containerRules": 0,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 0,
+      "physicalInlineProps": 0,
+      "focusVisibleRules": 0,
+      "fontFaceRules": 0,
+      "scrollTimelineUses": 0,
+      "customPropertiesDeclared": 0,
+      "hoverMediaRules": 0
+    },
+    "tokens": {
+      "rootCustomProperties": 92,
+      "colorTokens": 29,
+      "lengthTokens": 27,
+      "colorSample": [
+        {
+          "name": "--color-gray-800",
+          "value": "oklch(27.8% .033 256.848)"
+        },
+        {
+          "name": "--color-yellow-800",
+          "value": "oklch(47.6% .114 61.907)"
+        },
+        {
+          "name": "--color-red-300",
+          "value": "oklch(80.8% .114 19.571)"
+        },
+        {
+          "name": "--color-green-100",
+          "value": "oklch(96.2% .044 156.743)"
+        },
+        {
+          "name": "--color-red-200",
+          "value": "oklch(88.5% .062 18.334)"
+        },
+        {
+          "name": "--tw-gradient-via",
+          "value": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "name": "--color-yellow-400",
+          "value": "oklch(85.2% .199 91.936)"
+        },
+        {
+          "name": "--color-green-800",
+          "value": "oklch(44.8% .119 151.328)"
+        },
+        {
+          "name": "--color-red-700",
+          "value": "oklch(50.5% .213 27.518)"
+        },
+        {
+          "name": "--color-green-400",
+          "value": "oklch(79.2% .209 151.711)"
+        },
+        {
+          "name": "--color-blue-500",
+          "value": "oklch(62.3% .214 259.815)"
+        },
+        {
+          "name": "--color-gray-900",
+          "value": "oklch(21% .034 264.665)"
+        },
+        {
+          "name": "--tw-ring-offset-color",
+          "value": "#fff"
+        },
+        {
+          "name": "--color-red-400",
+          "value": "oklch(70.4% .191 22.216)"
+        },
+        {
+          "name": "--tw-gradient-from",
+          "value": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "name": "--color-white",
+          "value": "#fff"
+        },
+        {
+          "name": "--tw-gradient-to",
+          "value": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "name": "--color-yellow-200",
+          "value": "oklch(94.5% .129 101.54)"
+        },
+        {
+          "name": "--color-red-100",
+          "value": "oklch(93.6% .032 17.717)"
+        },
+        {
+          "name": "--color-blue-600",
+          "value": "oklch(54.6% .245 262.881)"
+        },
+        {
+          "name": "--color-yellow-300",
+          "value": "oklch(90.5% .182 98.111)"
+        },
+        {
+          "name": "--color-green-200",
+          "value": "oklch(92.5% .084 155.995)"
+        },
+        {
+          "name": "--color-gray-100",
+          "value": "oklch(96.7% .003 264.542)"
+        },
+        {
+          "name": "--color-red-800",
+          "value": "oklch(44.4% .177 26.899)"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--tw-inset-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--orbital-dot-glow-blur",
+          "value": "20px"
+        },
+        {
+          "name": "--orbital-dot-focus-outline-offset",
+          "value": "4px"
+        },
+        {
+          "name": "--orbital-dot-focus-outline-width",
+          "value": "2px"
+        },
+        {
+          "name": "--tw-drop-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--spacing",
+          "value": ".25rem"
+        },
+        {
+          "name": "--tracking-wider",
+          "value": ".05em"
+        },
+        {
+          "name": "--text-sm",
+          "value": ".875rem"
+        },
+        {
+          "name": "--spacing-grid-spacing",
+          "value": "12px"
+        },
+        {
+          "name": "--spacing-grid-spacing-md",
+          "value": "clamp(12px, 1vw, 16px)"
+        },
+        {
+          "name": "--container-4xl",
+          "value": "56rem"
+        },
+        {
+          "name": "--tw-shadow-alpha",
+          "value": "100%"
+        },
+        {
+          "name": "--radius-sm",
+          "value": ".25rem"
+        },
+        {
+          "name": "--container-2xl",
+          "value": "42rem"
+        },
+        {
+          "name": "--text-sm--line-height",
+          "value": "calc(1.25 / .875)"
+        },
+        {
+          "name": "--tw-ring-offset-width",
+          "value": "0px"
+        },
+        {
+          "name": "--tw-gradient-via-position",
+          "value": "50%"
+        },
+        {
+          "name": "--text-xs--line-height",
+          "value": "calc(1 / .75)"
+        },
+        {
+          "name": "--text-xs",
+          "value": ".75rem"
+        },
+        {
+          "name": "--radius-xs",
+          "value": ".125rem"
+        },
+        {
+          "name": "--tw-gradient-to-position",
+          "value": "100%"
+        },
+        {
+          "name": "--radius-xl",
+          "value": ".75rem"
+        },
+        {
+          "name": "--radius-md",
+          "value": ".375rem"
+        },
+        {
+          "name": "--radius-lg",
+          "value": ".5rem"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 2,
+        "main": 1,
+        "footer": 0,
+        "aside": 1,
+        "search": 0
+      },
+      "langPresent": true,
+      "images": {
+        "total": 345,
+        "missingAlt": 0,
+        "emptyAlt": 304
+      },
+      "linksVisible": 280,
+      "linksWithoutName": 0,
+      "buttonsVisible": 46,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 1,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": true,
+      "smallTapTargets": 157,
+      "focusableCount": 359
+    },
+    "rtl": {
+      "htmlDir": null,
+      "computedDirection": "ltr",
+      "mainDirection": "ltr",
+      "dirAttributes": {
+        "rtl": 0,
+        "ltr": 0,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "start": 523,
+        "center": 34,
+        "left": 64
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 85,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 369,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 1860,
+      "load": 2384,
+      "transferSize": 146718,
+      "firstContentfulPaint": 1880,
+      "lcp": {
+        "time": 27952,
+        "element": "p",
+        "size": 6755
+      },
+      "cls": 0.0001,
+      "longTasks": {
+        "count": 159,
+        "totalMs": 122805
+      },
+      "domElements": 4012
+    },
+    "implementation": {
+      "globals": {
+        "lenis": true,
+        "dataLayer": true
+      },
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {
+          "webgl": 2,
+          "webgl2": 3,
+          "offscreen:2d": 1,
+          "2d": 15
+        },
+        "webgpuRequested": false,
+        "matchMediaQueries": {
+          "(min-width: 58.75rem)": 2,
+          "(max-width: 768px)": 2,
+          "(orientation: landscape) and (max-height: 599px)": 1,
+          "(max-width: 939px)": 3,
+          "(min-width: 1181px)": 1,
+          "(prefers-reduced-motion: reduce)": 22,
+          "(prefers-color-scheme: dark)": 1,
+          "(resolution: 1dppx)": 2,
+          "screen and (resolution: 1dppx)": 18
+        },
+        "intersectionObservers": 66,
+        "resizeObservers": 72,
+        "rafCalls": 800,
+        "rafFirstAt": 935,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 6,
+        "wheelListeners": 4,
+        "touchmoveListeners": 3,
+        "pointermoveListeners": 10,
+        "startedAt": 1790957978422
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [],
+    "heading-1": [],
+    "display-40": [
+      {
+        "family": "Liberation Sans",
+        "postScriptName": "LiberationSans-Bold",
+        "custom": false,
+        "glyphs": 8
+      }
+    ],
+    "header-42": [],
+    "button-43": [
+      {
+        "family": "DejaVu Sans",
+        "postScriptName": "DejaVuSans",
+        "custom": false,
+        "glyphs": 20
+      }
+    ],
+    "para-41": []
+  },
+  "interactions": {},
+  "axe": null,
+  "aria": null,
+  "network": {
+    "requests": 390,
+    "failed": 15,
+    "totalBytes": 21482917,
+    "byType": {
+      "media": {
+        "count": 15,
+        "bytes": 10002768
+      },
+      "fetch": {
+        "count": 169,
+        "bytes": 9322650
+      },
+      "script": {
+        "count": 39,
+        "bytes": 1060139
+      },
+      "image": {
+        "count": 147,
+        "bytes": 770175
+      },
+      "document": {
+        "count": 2,
+        "bytes": 149793
+      },
+      "font": {
+        "count": 4,
+        "bytes": 143932
+      },
+      "stylesheet": {
+        "count": 2,
+        "bytes": 22725
+      },
+      "ping": {
+        "count": 12,
+        "bytes": 10735
+      }
+    },
+    "imageFormats": {
+      "image/svg+xml": {
+        "count": 14,
+        "bytes": 27386
+      },
+      "image/avif": {
+        "count": 8,
+        "bytes": 89184
+      },
+      "image/webp": {
+        "count": 24,
+        "bytes": 622079
+      },
+      "image/gif": {
+        "count": 5,
+        "bytes": 4192
+      },
+      "unknown": {
+        "count": 1,
+        "bytes": 0
+      },
+      "text/plain": {
+        "count": 2,
+        "bytes": 1424
+      },
+      "image/png": {
+        "count": 92,
+        "bytes": 0
+      },
+      "image/jpeg": {
+        "count": 1,
+        "bytes": 25910
+      }
+    },
+    "fonts": {
+      "count": 4,
+      "bytes": 143932,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 172,
+      "bytes": 12575432,
+      "hosts": 12
+    },
+    "topHosts": [
+      {
+        "host": "editions-winter-2026.myshopify.com",
+        "bytes": 11100366
+      },
+      {
+        "host": "cdn.shopify.com",
+        "bytes": 8738374
+      },
+      {
+        "host": "unpkg.com",
+        "bytes": 776584
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "bytes": 320153
+      },
+      {
+        "host": "cdn.jsdelivr.net",
+        "bytes": 263556
+      },
+      {
+        "host": "www.shopify.com",
+        "bytes": 160951
+      },
+      {
+        "host": "www.gstatic.com",
+        "bytes": 102199
+      },
+      {
+        "host": "gtm.shopify.com",
+        "bytes": 8160
+      }
+    ],
+    "libraryEvidence": {
+      "shopify-cdn": 195,
+      "google-tag-manager": 2,
+      "three.js": 2,
+      "rive": 10
+    }
+  },
+  "console": {
+    "errors": 8,
+    "pageErrors": 0
+  }
+}

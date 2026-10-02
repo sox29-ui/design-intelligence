@@ -1,0 +1,83 @@
+# Analyst observations — ref-002 Shopify Editions Winter '26 ("The Renaissance Edition"). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 1440-scroll-50.
+items:
+  - key: index-as-hero
+    page: home
+    viewport: cross-viewport
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top]
+    statement: "The hero is a thin-bordered box centred over a full-bleed painted scene; inside it, the edition title, a two-line serif subtitle, and an index of twelve chapters, each with a Roman numeral aligned right. The table of contents is the first-viewport content at both 1440 and 390."
+    confidence: 0.9
+    assessment: strength
+    tags: [toc, hero, density]
+  - key: sticky-chapter-index
+    page: home
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-scroll-25, 1440x900-scroll-50]
+    statement: "After the hero the chapter index persists as a sticky left column with the edition title above it; the current chapter is emphasised while others are greyed, and each chapter occupies the main area as one scene with a short headline, a paragraph and a help-doc link."
+    confidence: 0.85
+    assessment: strength
+    tags: [sticky-nav, chapters, wayfinding]
+  - key: painted-collage-scenes
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-50]
+    statement: "Art direction mashes Renaissance-style paintings with modern commerce props (sneakers, a skateboard, a magenta shopping bag, a phone showing a chat assistant); chapters change the painted backdrop, while product UI appears as clean screenshots with concentric-circle hotspots."
+    confidence: 0.85
+    assessment: neutral
+    tags: [collage, generative-art]
+  - key: title-wordplay
+    page: home
+    viewport: 1440x900
+    category: typography
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "The title is set in a tight grotesk with one syllable swapped into an italic serif to embed a pun; subtitles use a serif text face, the index uses the grotesk in bold."
+    confidence: 0.8
+    assessment: neutral
+    tags: [pairing, wordplay]
+  - key: mobile-same-index
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "At 390 the bordered index box fills most of the viewport over a cropped painting; header keeps the logo, a filled 'start for free' pill and a menu icon."
+    confidence: 0.85
+    assessment: neutral
+    tags: [mobile]
+  - key: why-toc-for-density
+    page: home
+    viewport: cross-viewport
+    category: hierarchy
+    type: INFERRED
+    based_on: [index-as-hero, sticky-chapter-index]
+    statement: "A release with 150+ updates is made navigable by chaptering (12 numbered sections) and keeping the index visible: the spectacle never removes the reader's map. This is how an expressive page carries high information density; without the persistent index the same art direction would bury the content."
+    confidence: 0.7
+    assessment: strength
+    tags: [density, wayfinding]
+  - key: why-cost
+    page: home
+    viewport: cross-viewport
+    category: performance
+    type: INFERRED
+    based_on: [painted-collage-scenes, ref-002.performance.home-390-transfer-bytes, ref-002.performance.home-1440-long-tasks, ref-002.accessibility.home-1440-axe-by-impact]
+    statement: "The painted scenes, WebGL/three.js and Rive animation cost ≈15.6 MB on mobile and 160+ long tasks in the lab, and text over paintings fails contrast on ~100 nodes; acceptable for a seasonal flagship campaign with a dedicated audience, not as a template for routine product pages."
+    confidence: 0.7
+    assessment: trade-off
+    tags: [budget, contrast]
+  - key: reduced-motion-partial
+    page: home
+    viewport: 1440x900
+    category: motion
+    type: INFERRED
+    based_on: [ref-002.motion.home-1440-reduced-motion-response]
+    statement: "Under prefers-reduced-motion, running animations drop from 38 to 21 and animation-frame calls fall sharply, but motion is not removed — partial honouring of the preference."
+    confidence: 0.7
+    assessment: trade-off
+    tags: [reduced-motion]

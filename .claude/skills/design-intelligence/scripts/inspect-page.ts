@@ -16,7 +16,7 @@ const AxeBuilder = ((AxeBuilderModule as unknown as { default?: unknown }).defau
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PROBE_SRC = readFileSync(join(HERE, 'lib', 'probe.browser.js'), 'utf8').replace(/^\/\/.*$/gm, '');
 const INSTRUMENT_SRC = readFileSync(join(HERE, 'lib', 'instrument.browser.js'), 'utf8');
-export const TOOL_VERSION = '0.1.0';
+export const TOOL_VERSION = '0.1.1';
 
 export type ViewportSpec = { name: string; width: number; height: number; mobile?: boolean; touch?: boolean };
 export const BENCHMARK_VIEWPORTS: ViewportSpec[] = [
@@ -105,6 +105,18 @@ async function settle(page: Page, ms: number) {
   await page.waitForTimeout(ms);
 }
 
+/** Click, then absorb a navigation/reload the click may trigger (some consent tools reload the page). */
+async function clickAndSettle(page: Page, click: () => Promise<unknown>) {
+  const nav = page.waitForEvent('framenavigated', { predicate: (f) => f === page.mainFrame(), timeout: 4000 }).catch(() => null);
+  await click();
+  const navigated = await nav;
+  if (navigated) {
+    await page.waitForLoadState('load', { timeout: 60000 }).catch(() => {});
+    await settle(page, 2000);
+  } else await page.waitForTimeout(700);
+  return !!navigated;
+}
+
 async function handleConsent(page: Page, policy: 'reject' | 'none'): Promise<{ action: string; detail: string }> {
   const containers = page.locator(CONSENT_CONTAINER);
   const n = Math.min(await containers.count().catch(() => 0), 12);
@@ -120,9 +132,8 @@ async function handleConsent(page: Page, policy: 'reject' | 'none'): Promise<{ a
       const b = buttons.nth(j);
       const name = ((await b.getAttribute('aria-label').catch(() => null)) || (await b.innerText().catch(() => '')) || '').trim();
       if (name.length < 60 && REJECT_RE.test(name) && (await b.isVisible().catch(() => false))) {
-        await b.click({ timeout: 3000 }).catch(() => {});
-        await page.waitForTimeout(700);
-        return { action: 'rejected-nonessential', detail: 'clicked a visible reject/necessary-only control inside a consent container' };
+        const reloaded = await clickAndSettle(page, () => b.click({ timeout: 3000 }).catch(() => {}));
+        return { action: 'rejected-nonessential', detail: `clicked a visible reject/necessary-only control inside a consent container${reloaded ? ' (page reloaded)' : ''}` };
       }
     }
   }
@@ -146,9 +157,8 @@ async function handleConsent(page: Page, policy: 'reject' | 'none'): Promise<{ a
       return false;
     }, REJECT_RE.source).catch(() => false);
     if (tagged) {
-      await page.locator('[data-di-consent="reject"]').first().click({ timeout: 3000 }).catch(() => {});
-      await page.waitForTimeout(700);
-      return { action: 'rejected-nonessential', detail: 'clicked a reject/necessary-only control inside a fixed consent layer' };
+      const reloaded = await clickAndSettle(page, () => page.locator('[data-di-consent="reject"]').first().click({ timeout: 3000 }).catch(() => {}));
+      return { action: 'rejected-nonessential', detail: `clicked a reject/necessary-only control inside a fixed consent layer${reloaded ? ' (page reloaded)' : ''}` };
     }
   }
   return bannerVisible ? { action: 'left-as-is', detail: 'consent-like container visible; no privacy-preserving control found' } : { action: 'none-found', detail: 'no visible consent container detected' };

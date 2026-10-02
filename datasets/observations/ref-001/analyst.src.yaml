@@ -110,8 +110,8 @@ items:
     viewport: cross-viewport
     category: accessibility
     type: INFERRED
-    based_on: [collage-composition, ref-001.color.home-1440-low-contrast-normal-share, ref-001.accessibility.home-1440-axe-by-impact]
-    statement: "About 38% of measured text falls below 4.5:1, mostly tiny pale captions over light or photographic grounds; the scrapbook aesthetic is bought with legibility of secondary text."
+    based_on: [collage-composition, ref-001.accessibility.home-1440-axe-by-impact, ref-001.accessibility.home-390-axe-by-impact]
+    statement: "axe reports 11 (1440) and 20 (390) serious colour-contrast nodes, consistent with the tiny pale captions over light or photographic grounds seen in the collage; the scrapbook aesthetic is bought with legibility of secondary text. (The probe's own low-contrast share for this capture over-counts text over images and is not used here.)"
     confidence: 0.7
     assessment: weakness
     tags: [contrast, captions]

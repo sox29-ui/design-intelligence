@@ -407,7 +407,17 @@ async (opts) => {
   const rootBg = effectiveBg(document.body || doc).color;
   const textColorChars = {};
   for (const c of clusterList) for (const [k, v] of Object.entries(c.colors)) textColorChars[k] = (textColorChars[k] || 0) + v;
-  // Contrast over all visible text elements (char-weighted).
+  // Contrast over all visible text elements (char-weighted). Text whose box overlaps a replaced
+  // media element (img/video/canvas/picture/svg) that is not its ancestor is counted as uncertain.
+  const mediaRects = [...document.querySelectorAll('img, video, canvas, picture, svg')]
+    .filter((m) => { const r = m.getBoundingClientRect(); return r.width > 40 && r.height > 40; })
+    .map((m) => ({ m, r: m.getBoundingClientRect() }));
+  const overMedia = (el) => {
+    const r = el.getBoundingClientRect();
+    const cx = r.left + r.width / 2;
+    const cy = r.top + r.height / 2;
+    return mediaRects.some(({ m, r: mr }) => !m.contains(el) && cx >= mr.left && cx <= mr.right && cy >= mr.top && cy <= mr.bottom);
+  };
   let lowNormal = 0, lowLarge = 0, uncertainChars = 0, checkedChars = 0;
   const contrastSamples = [];
   for (const el of textEls) {
@@ -417,6 +427,7 @@ async (opts) => {
     const fg = parseColor(s.color);
     if (!fg) continue;
     const bg = effectiveBg(el);
+    if (!bg.uncertain && overMedia(el)) bg.uncertain = true;
     const ratio = contrast(blend(fg, bg.color), bg.color);
     const size = px(s.fontSize);
     const large = size >= 24 || (size >= 18.66 && +s.fontWeight >= 700);
@@ -454,7 +465,7 @@ async (opts) => {
     gradientColors: Object.entries(gradientColorArea).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k]) => k),
     imageBackgrounds: imageBgCount,
     contrast: {
-      method: 'computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain',
+      method: 'computed colour vs nearest opaque ancestor background; text over CSS images/gradients or overlapping img/video/canvas/svg counted as uncertain (probe 0.1.1+)',
       checkedChars,
       lowContrastNormalShare: round(lowNormal / Math.max(1, checkedChars), 3),
       lowContrastLargeShare: round(lowLarge / Math.max(1, checkedChars), 3),

@@ -1,0 +1,100 @@
+{
+  "scrollLinked": {
+    "sampledElements": 4000,
+    "changedAfterScroll": 1
+  },
+  "entranceFrames": [
+    400,
+    900,
+    1600,
+    2600,
+    4200
+  ],
+  "reducedMotion": {
+    "motion": {
+      "transitionElements": 165,
+      "transitionDuration": {
+        "n": 165,
+        "min": 150,
+        "p25": 150,
+        "median": 200,
+        "p75": 200,
+        "max": 800
+      },
+      "transitionEasing": {
+        "ease": 160,
+        "cubic-bezier(0.84, 0.01, 0.18, 1)": 5
+      },
+      "transitionProperty": {
+        "opacity": 109,
+        "transform": 41,
+        "all": 11,
+        "background-color": 3,
+        "color": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 185,
+      "roundedBoxShare12": 0.703,
+      "roundedBoxShare24": 0.703,
+      "opacityZeroElements": 41,
+      "transformedElements": 765
+    },
+    "instrumentation": {
+      "canvasContexts": {},
+      "webgpuRequested": false,
+      "matchMediaQueries": {
+        "(hover: none), (pointer: coarse)": 1,
+        "(max-width:768px)": 1,
+        "(prefers-reduced-motion: reduce)": 3
+      },
+      "intersectionObservers": 0,
+      "resizeObservers": 1,
+      "rafCalls": 499,
+      "rafFirstAt": 5690,
+      "waapiAnimate": 0,
+      "waapiDurations": [],
+      "scrollListeners": 14,
+      "wheelListeners": 4,
+      "touchmoveListeners": 1,
+      "pointermoveListeners": 7,
+      "startedAt": 1790958805551
+    },
+    "media": {
+      "images": 180,
+      "imagesTotal": 228,
+      "lazyImages": 0,
+      "srcsetImages": 0,
+      "videos": 9,
+      "autoplayVideos": 0,
+      "videosWithControls": 0,
+      "inlineSvgs": 52,
+      "canvases": [],
+      "iframes": 0
+    },
+    "cssom": {
+      "reducedMotionRules": 0
+    }
+  },
+  "darkScheme": {
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "rootBackground": "rgb(28, 29, 30)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "colorSchemeProperty": "normal"
+  }
+}

@@ -2,7 +2,7 @@
   "ref_id": "ref-001",
   "authorship": "analyst",
   "generator": "scripts/analyst.ts from analyst.src.yaml",
-  "generated_at": "2026-10-02T16:20:35.751Z",
+  "generated_at": "2026-10-02T16:32:50.532Z",
   "notes": "CAPTURE LIMITATION: the WebGL hero did not render in headless Chromium (software GL) within the capture window — top-of-page shots show only the background texture and a small loading indicator. Hero composition is therefore UNVERIFIED; observations below cover chrome, later sections and behaviour.",
   "observations": [
     {
@@ -323,13 +323,13 @@
           "observation": "ref-001.layout.home-a-collage-composition"
         },
         {
-          "observation": "ref-001.color.home-1440-low-contrast-normal-share"
+          "observation": "ref-001.accessibility.home-1440-axe-by-impact"
         },
         {
-          "observation": "ref-001.accessibility.home-1440-axe-by-impact"
+          "observation": "ref-001.accessibility.home-390-axe-by-impact"
         }
       ],
-      "statement": "About 38% of measured text falls below 4.5:1, mostly tiny pale captions over light or photographic grounds; the scrapbook aesthetic is bought with legibility of secondary text.",
+      "statement": "axe reports 11 (1440) and 20 (390) serious colour-contrast nodes, consistent with the tiny pale captions over light or photographic grounds seen in the collage; the scrapbook aesthetic is bought with legibility of secondary text. (The probe's own low-contrast share for this capture over-counts text over images and is not used here.)",
       "confidence": 0.7,
       "assessment": "weakness",
       "tags": [

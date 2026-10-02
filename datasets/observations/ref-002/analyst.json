@@ -1,0 +1,245 @@
+{
+  "ref_id": "ref-002",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:36:30.363Z",
+  "observations": [
+    {
+      "id": "ref-002.hierarchy.home-a-index-as-hero",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "index-as-hero",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-top.jpg",
+          "sha256": "1f377310922dfdf1a0418c1977920948ff1e1dc64095c090dd6442b7415df9fd"
+        },
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/390x844-top.jpg",
+          "sha256": "882376139ea40fb5c489f229b6220409688fbc843d2b1971fb0d93f7eb20f96e"
+        }
+      ],
+      "statement": "The hero is a thin-bordered box centred over a full-bleed painted scene; inside it, the edition title, a two-line serif subtitle, and an index of twelve chapters, each with a Roman numeral aligned right. The table of contents is the first-viewport content at both 1440 and 390.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "toc",
+        "hero",
+        "density"
+      ]
+    },
+    {
+      "id": "ref-002.components.home-a-sticky-chapter-index",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "sticky-chapter-index",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-scroll-25.jpg",
+          "sha256": "e9c82fd5b55af05db5d470f7158a9e778db69ce831478505c3e922cbef29510b"
+        },
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-scroll-50.jpg",
+          "sha256": "b4cc9eab4cf7703bdced342c9853d330dcfae93927289118831be9ab248510cd"
+        }
+      ],
+      "statement": "After the hero the chapter index persists as a sticky left column with the edition title above it; the current chapter is emphasised while others are greyed, and each chapter occupies the main area as one scene with a short headline, a paragraph and a help-doc link.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "sticky-nav",
+        "chapters",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "ref-002.color.home-a-painted-collage-scenes",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "painted-collage-scenes",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-top.jpg",
+          "sha256": "1f377310922dfdf1a0418c1977920948ff1e1dc64095c090dd6442b7415df9fd"
+        },
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-scroll-50.jpg",
+          "sha256": "b4cc9eab4cf7703bdced342c9853d330dcfae93927289118831be9ab248510cd"
+        }
+      ],
+      "statement": "Art direction mashes Renaissance-style paintings with modern commerce props (sneakers, a skateboard, a magenta shopping bag, a phone showing a chat assistant); chapters change the painted backdrop, while product UI appears as clean screenshots with concentric-circle hotspots.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "collage",
+        "generative-art"
+      ]
+    },
+    {
+      "id": "ref-002.typography.home-a-title-wordplay",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "title-wordplay",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/1440x900-top.jpg",
+          "sha256": "1f377310922dfdf1a0418c1977920948ff1e1dc64095c090dd6442b7415df9fd"
+        }
+      ],
+      "statement": "The title is set in a tight grotesk with one syllable swapped into an italic serif to embed a pun; subtitles use a serif text face, the index uses the grotesk in bold.",
+      "confidence": 0.8,
+      "assessment": "neutral",
+      "tags": [
+        "pairing",
+        "wordplay"
+      ]
+    },
+    {
+      "id": "ref-002.responsive.home-a-mobile-same-index",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-same-index",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-002/home/20261002T161755Z/390x844-top.jpg",
+          "sha256": "882376139ea40fb5c489f229b6220409688fbc843d2b1971fb0d93f7eb20f96e"
+        }
+      ],
+      "statement": "At 390 the bordered index box fills most of the viewport over a cropped painting; header keeps the logo, a filled 'start for free' pill and a menu icon.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-002.hierarchy.home-a-why-toc-for-density",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "why-toc-for-density",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-002.hierarchy.home-a-index-as-hero"
+        },
+        {
+          "observation": "ref-002.components.home-a-sticky-chapter-index"
+        }
+      ],
+      "statement": "A release with 150+ updates is made navigable by chaptering (12 numbered sections) and keeping the index visible: the spectacle never removes the reader's map. This is how an expressive page carries high information density; without the persistent index the same art direction would bury the content.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "density",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "ref-002.performance.home-a-why-cost",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "cross-viewport",
+      "category": "performance",
+      "property": "why-cost",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-002.color.home-a-painted-collage-scenes"
+        },
+        {
+          "observation": "ref-002.performance.home-390-transfer-bytes"
+        },
+        {
+          "observation": "ref-002.performance.home-1440-long-tasks"
+        },
+        {
+          "observation": "ref-002.accessibility.home-1440-axe-by-impact"
+        }
+      ],
+      "statement": "The painted scenes, WebGL/three.js and Rive animation cost ≈15.6 MB on mobile and 160+ long tasks in the lab, and text over paintings fails contrast on ~100 nodes; acceptable for a seasonal flagship campaign with a dedicated audience, not as a template for routine product pages.",
+      "confidence": 0.7,
+      "assessment": "trade-off",
+      "tags": [
+        "budget",
+        "contrast"
+      ]
+    },
+    {
+      "id": "ref-002.motion.home-a-reduced-motion-partial",
+      "ref_id": "ref-002",
+      "page": "home",
+      "source_url": "https://www.shopify.com/editions/winter2026",
+      "capture_id": "20261002T161755Z",
+      "captured_at": "2026-10-02T16:17:55.079Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "reduced-motion-partial",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-002.motion.home-1440-reduced-motion-response"
+        }
+      ],
+      "statement": "Under prefers-reduced-motion, running animations drop from 38 to 21 and animation-frame calls fall sharply, but motion is not removed — partial honouring of the preference.",
+      "confidence": 0.7,
+      "assessment": "trade-off",
+      "tags": [
+        "reduced-motion"
+      ]
+    }
+  ]
+}
