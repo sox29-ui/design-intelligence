@@ -1,0 +1,606 @@
+# DI v0.1 corpus — 18 references: 12 extraction (ref-*), 3 validation (val-*), 3 holdout (hol-*).
+# Methodology: docs/CORPUS-METHODOLOGY.md. Schema: schemas/corpus.schema.json.
+# `dimensions` are PRE-CAPTURE judgements (INFERRED) until `assessment: POST-CAPTURE-CHECKED`.
+# Award/curation facts: signal_status VERIFIED only when read from the cited page on checked_at.
+version: 1
+status: frozen
+frozen_at: 2026-10-02
+collected_through: 2026-10-02
+notes: >-
+  Split frozen before any evidence collection. Holdout references were selected from award/category metadata
+  only and are sealed (datasets/holdout/SEALED.md). Score scale 0-5; weighted_total uses report P9 weights.
+references:
+  # ------------------------------------------------------------------ extraction
+  - id: ref-001
+    name: Lando Norris
+    url: https://landonorris.com/
+    pages:
+      - { id: home, url: "https://landonorris.com/", purpose: "Immersive personal-brand home" }
+    split: extraction
+    discovery:
+      source: awwwards
+      source_url: https://www.awwwards.com/annual-awards/winners
+      signal: "Awwwards Site of the Year 2025 (+ Users' Choice); Site of the Day 2025-11-17 (8.18)"
+      signal_status: VERIFIED
+      signal_evidence: "annual-awards/winners and sites/lando-norris pages read via fetch service 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [portfolio]
+      archetypes: [cinematic, immersive-3d]
+      motion: high
+      objectives: [brand-expression, storytelling]
+      density: low
+      device_focus: desktop-immersive
+      languages: [en]
+      direction: ltr
+      scheme: dark
+      tech_hints: ["WebGL (award tag, unverified)", "GSAP (award tag, unverified)", "Webflow (award tag, unverified)"]
+      studio: OFF+BRAND
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 5, archetype_coverage: 4, interaction_diversity: 5, mobile_quality: 3, a11y_perf_contrast: 4, rtl_localization: 0, implementation_diversity: 4 }
+      weighted_total: 3.85
+      unique_contribution: "Top 2025 award winner; immersive WebGL personal brand. Uses dark background + lime accent (the combination the report warns about) — key case for when a 'trend' is justified by identity."
+      expected_weaknesses: "Likely heavy payload, motion-dependent content, weaker keyboard/screen-reader paths."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-002
+    name: Shopify Editions — The Renaissance Edition (Winter '26)
+    url: https://www.shopify.com/editions/winter2026
+    pages:
+      - { id: home, url: "https://www.shopify.com/editions/winter2026", purpose: "Product-release storytelling page (150+ updates)" }
+    split: extraction
+    discovery:
+      source: awwwards
+      source_url: https://www.awwwards.com/websites/sites_of_the_month/
+      signal: "Awwwards Site of the Month Feb 2026; Site of the Day 2026-02-09 (7.92)"
+      signal_status: VERIFIED
+      signal_evidence: "sites_of_the_month and sites/the-renaissance-edition read via fetch service 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [saas, ecommerce]
+      archetypes: [maximalist, illustrative]
+      motion: high
+      objectives: [information-consumption, conversion, storytelling]
+      density: high
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: saturated
+      tech_hints: ["WebGL (award tag, unverified)"]
+      studio: Shopify Design
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 5, interaction_diversity: 4, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.50
+      unique_contribution: "B2B SaaS communicating very high information density through an expressive, generative-art art direction — tension case between density and spectacle."
+      expected_weaknesses: "Spectacle may compete with scanning 150+ updates; heavy assets."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-003
+    name: Scout Motors
+    url: https://www.scoutmotors.com/
+    pages:
+      - { id: home, url: "https://www.scoutmotors.com/", purpose: "Automotive commerce home" }
+    split: extraction
+    discovery:
+      source: awwwards
+      source_url: https://www.awwwards.com/annual-awards/winners
+      signal: "Awwwards E-commerce of the Year 2025; Site of the Day 2025-01-16 (7.6) + Developer award"
+      signal_status: VERIFIED
+      signal_evidence: "annual-awards/winners and sites/scout-motors read via fetch service 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [ecommerce]
+      archetypes: [cinematic, editorial]
+      motion: medium
+      objectives: [conversion, storytelling]
+      density: medium
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: light
+      tech_hints: []
+      studio: Locomotive
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 5, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.35
+      unique_contribution: "Award-winning commerce: storytelling must coexist with conversion paths (reserve/configure). Two-colour brand palette."
+      expected_weaknesses: "Cinematic media weight; scroll mechanics may hide commerce actions."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-004
+    name: Dropbox Brand
+    url: https://brand.dropbox.com/
+    pages:
+      - { id: home, url: "https://brand.dropbox.com/", purpose: "Brand guidelines hub" }
+    split: extraction
+    discovery:
+      source: cssda
+      source_url: https://www.cssdesignawards.com/blog/2025-website-of-the-year-winners/430/
+      signal: "CSSDA Website of the Year 2025 winner and Best UX Site (reported by search of CSSDA blog); Awwwards Site of the Day 2025-02-12 (7.67)"
+      signal_status: VERIFIED
+      signal_evidence: "Awwwards SOTD read via fetch service 2026-10-02; CSSDA placing from web-search summary of the CSSDA blog (CSSDA page itself did not render)"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [enterprise]
+      archetypes: [editorial, playful, swiss-grid]
+      motion: medium
+      objectives: [information-consumption, brand-expression]
+      density: medium
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: saturated
+      tech_hints: []
+      studio: Daybreak Studio
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 5, archetype_coverage: 4, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 2 }
+      weighted_total: 3.50
+      unique_contribution: "Best-UX winner for an information system (guidelines) that is also expressive — how play coexists with reference-style navigation."
+      expected_weaknesses: "Playful interactions may slow reference lookup."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-005
+    name: Exat Typeface
+    url: https://exat.hottype.co/
+    pages:
+      - { id: home, url: "https://exat.hottype.co/", purpose: "Typeface specimen / kinetic microsite" }
+    split: extraction
+    discovery:
+      source: cssda
+      source_url: https://www.cssdesignawards.com/woty2025/sites/exat-typeface/
+      signal: "CSSDA Best UI Site 2025 (WOTY #2, reported by search); Awwwards SOTD 2025-04-03 (7.73); FWA of the Day March 2025"
+      signal_status: VERIFIED
+      signal_evidence: "Awwwards sites/exat-typeface via fetch service; FWA case page rendered in Chromium 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [type-foundry]
+      archetypes: [swiss-grid, maximalist]
+      motion: high
+      objectives: [brand-expression, conversion]
+      density: low
+      device_focus: desktop-immersive
+      languages: [en]
+      direction: ltr
+      scheme: saturated
+      tech_hints: []
+      studio: Studio Size + RISE2 Studio
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 5, archetype_coverage: 4, interaction_diversity: 4, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.55
+      unique_contribution: "Typography-first kinetic grid (modernist/EXAT 51 lineage) — primary evidence for display typography, grid systems and kinetic type."
+      expected_weaknesses: "Very long page; kinetic type vs reduced motion; specimen legibility on mobile."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-006
+    name: See What Eye See — Eye Condition Simulator
+    url: https://seewhateyesee.org/
+    pages:
+      - { id: home, url: "https://seewhateyesee.org/", purpose: "Interactive educational simulator" }
+    split: extraction
+    discovery:
+      source: fwa
+      source_url: https://thefwa.com/cases/see-what-eye-see-eye-condition-simulator
+      signal: "FWA of the Day, September 2026"
+      signal_status: VERIFIED
+      signal_evidence: "FWA case page rendered in Chromium 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [health, education, nonprofit]
+      archetypes: [immersive-3d, minimal]
+      motion: high
+      objectives: [task-completion, data-interaction, storytelling]
+      density: low
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: dark
+      tech_hints: ["three.js (FWA description, unverified)", "GSAP (FWA description, unverified)"]
+      studio: Built Kindly
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 3, interaction_diversity: 5, mobile_quality: 3, a11y_perf_contrast: 5, rtl_localization: 0, implementation_diversity: 4 }
+      weighted_total: 3.50
+      unique_contribution: "Interaction that carries the message (a slider that changes vision over time): motion/interaction with communication value rather than decoration; accessibility-themed content."
+      expected_weaknesses: "WebGL content opaque to assistive tech; reduced-motion handling unknown."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-007
+    name: GOV.UK
+    url: https://www.gov.uk/
+    pages:
+      - { id: home, url: "https://www.gov.uk/", purpose: "Public-sector portal home" }
+      - { id: task, url: "https://www.gov.uk/vehicle-tax", purpose: "Transactional start page" }
+    split: extraction
+    discovery:
+      source: counter-taste
+      source_url: null
+      signal: "Deliberately non-showy, task-first public service built on a widely referenced design system"
+      signal_status: UNVERIFIED
+      signal_evidence: "Recognition of the GOV.UK design system is general knowledge, not checked in this session"
+      checked_at: null
+    dimensions:
+      industry: [public-sector]
+      archetypes: [utilitarian]
+      motion: low
+      objectives: [task-completion, information-consumption]
+      density: high
+      device_focus: mobile-first
+      languages: [en]
+      direction: ltr
+      scheme: light
+      tech_hints: []
+      studio: Government Digital Service
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 5, interaction_diversity: 4, mobile_quality: 5, a11y_perf_contrast: 5, rtl_localization: 0, implementation_diversity: 4 }
+      weighted_total: 4.05
+      unique_contribution: "Counter-taste reference (report P6): functional excellence without spectacle — the accessibility, focus and content-design baseline against which award sites are judged."
+      expected_weaknesses: "Deliberately low expressiveness; not a model for brand-led pages."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-008
+    name: Our World in Data
+    url: https://ourworldindata.org/
+    pages:
+      - { id: home, url: "https://ourworldindata.org/", purpose: "Research publication home" }
+      - { id: chart, url: "https://ourworldindata.org/grapher/life-expectancy", purpose: "Interactive chart / data explorer" }
+    split: extraction
+    discovery:
+      source: real-world
+      source_url: null
+      signal: "Widely used data publication; substitute for the SiteInspire/Godly slot (unreachable)"
+      signal_status: UNVERIFIED
+      signal_evidence: "No curation listing verified in this session"
+      checked_at: null
+    dimensions:
+      industry: [data-information, editorial, nonprofit]
+      archetypes: [utilitarian, editorial]
+      motion: low
+      objectives: [information-consumption, data-interaction]
+      density: high
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: light
+      tech_hints: []
+      studio: Our World in Data
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 4, interaction_diversity: 4, mobile_quality: 4, a11y_perf_contrast: 4, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.30
+      unique_contribution: "Only data-interaction-first reference: charts, tables, controls; evidence for dense information hierarchy and B2B-dashboard-like patterns."
+      expected_weaknesses: "Chart accessibility; dense controls on mobile."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-009
+    name: Stripe
+    url: https://stripe.com/
+    pages:
+      - { id: home, url: "https://stripe.com/", purpose: "Fintech / SaaS marketing home" }
+    split: extraction
+    discovery:
+      source: real-world
+      source_url: null
+      signal: "Commercial product site frequently imitated in SaaS design; substitute for a Land-book slot (Land-book HTTP 403)"
+      signal_status: UNVERIFIED
+      signal_evidence: "Influence is general knowledge, not checked in this session"
+      checked_at: null
+    dimensions:
+      industry: [fintech, saas]
+      archetypes: [corporate, illustrative]
+      motion: medium
+      objectives: [conversion, information-consumption]
+      density: high
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: light
+      tech_hints: []
+      studio: Stripe
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.10
+      unique_contribution: "Commercial SaaS/fintech reference and a likely origin of widely copied 'premium SaaS' signatures (gradients, product UI imagery) — needed to tell principle from imitation."
+      expected_weaknesses: "Dense marketing; signature visuals easily over-generalized."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-010
+    name: Tabby
+    url: https://tabby.ai/ar-SA
+    pages:
+      - { id: home-ar, url: "https://tabby.ai/ar-SA", purpose: "Arabic RTL fintech home", locale: ar-SA, direction: rtl }
+      - { id: home-en, url: "https://tabby.ai/en-SA", purpose: "English counterpart for bilingual comparison", locale: en-SA, direction: ltr }
+    split: extraction
+    discovery:
+      source: ilham
+      source_url: https://ilham.io/
+      signal: "Featured in the Ilham Arabic web-design gallery"
+      signal_status: VERIFIED
+      signal_evidence: "tabby.ai/ar-SA present in ilham.io listing fetched 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [fintech]
+      archetypes: [illustrative, playful]
+      motion: medium
+      objectives: [conversion]
+      density: medium
+      device_focus: mobile-first
+      languages: [ar, en]
+      direction: bidi
+      scheme: saturated
+      tech_hints: []
+      studio: Tabby
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 4, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 5, implementation_diversity: 3 }
+      weighted_total: 3.55
+      unique_contribution: "Arabic/English bilingual fintech with an illustrative, saturated identity: RTL mirroring, Arabic display type, numerals, bilingual parity."
+      expected_weaknesses: "Bright saturated background contrast; illustration weight."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-011
+    name: Megaphone
+    url: https://megaphone.news/
+    pages:
+      - { id: home, url: "https://megaphone.news/", purpose: "Arabic independent news/editorial home", locale: ar, direction: rtl }
+    split: extraction
+    discovery:
+      source: ilham
+      source_url: https://ilham.io/
+      signal: "Featured in the Ilham Arabic web-design gallery"
+      signal_status: VERIFIED
+      signal_evidence: "megaphone.news present in ilham.io listing fetched 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [media, editorial]
+      archetypes: [editorial, maximalist, brutalist]
+      motion: low
+      objectives: [information-consumption]
+      density: high
+      device_focus: responsive-general
+      languages: [ar, en]
+      direction: rtl
+      scheme: mixed
+      tech_hints: []
+      studio: Megaphone
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 5, interaction_diversity: 3, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 5, implementation_diversity: 2 }
+      weighted_total: 3.55
+      unique_contribution: "Arabic editorial news with collage/halftone maximalism and mixed Arabic/English captions; high density RTL; a root `dir` that differs from the content direction (seen in preview, to verify)."
+      expected_weaknesses: "Image-heavy, text set inside images, possible contrast issues on collage."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: ref-012
+    name: Ounass
+    url: https://www.ounass.ae/
+    pages:
+      - { id: home-en, url: "https://www.ounass.ae/", purpose: "Luxury commerce home (English)", locale: en-AE, direction: ltr }
+      - { id: home-ar, url: "https://ar.ounass.ae/", purpose: "Arabic counterpart (hreflang ar-ae)", locale: ar-AE, direction: rtl }
+    split: extraction
+    discovery:
+      source: arabic-real-world
+      source_url: null
+      signal: "Large GCC luxury e-commerce platform with parallel Arabic/English storefronts (hreflang verified)"
+      signal_status: UNVERIFIED
+      signal_evidence: "Bilingual hreflang links read from page HTML 2026-10-02; market position is general knowledge"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [luxury, ecommerce]
+      archetypes: [minimal, editorial]
+      motion: low
+      objectives: [conversion, task-completion]
+      density: medium
+      device_focus: mobile-first
+      languages: [en, ar]
+      direction: bidi
+      scheme: light
+      tech_hints: []
+      studio: Ounass
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 5, implementation_diversity: 3 }
+      weighted_total: 3.35
+      unique_contribution: "Luxury + commerce + parallel AR/EN storefronts: the closest real reference for Arabic mobile-first commerce (benchmark brief C) and for bilingual state parity."
+      expected_weaknesses: "Merchandising density vs luxury restraint; app-install prompts."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  # ------------------------------------------------------------------ validation
+  - id: val-001
+    name: Oryzo AI
+    url: https://oryzo.ai/
+    pages:
+      - { id: home, url: "https://oryzo.ai/", purpose: "Cinematic product story (agency showcase)" }
+    split: validation
+    discovery:
+      source: awwwards
+      source_url: https://www.awwwards.com/websites/sites_of_the_month/
+      signal: "Awwwards Site of the Month Apr 2026; Site of the Day 2026-04-13 (7.86)"
+      signal_status: VERIFIED
+      signal_evidence: "sites_of_the_month and sites/oryzo-ai read via fetch service 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [agency, portfolio]
+      archetypes: [cinematic, immersive-3d]
+      motion: high
+      objectives: [storytelling, brand-expression]
+      density: low
+      device_focus: desktop-immersive
+      languages: [en]
+      direction: ltr
+      scheme: dark
+      tech_hints: ["WebGL/Three.js/GSAP (award tags, unverified)"]
+      studio: Lusion
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 3, interaction_diversity: 5, mobile_quality: 3, a11y_perf_contrast: 4, rtl_localization: 0, implementation_diversity: 4 }
+      weighted_total: 3.40
+      unique_contribution: "Tests immersive/high-motion candidate rules learned from ref-001/005/006 on a different studio and subject."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: absent }
+
+  - id: val-002
+    name: Mathaf — Arab Museum of Modern Art
+    url: https://mathaf.org.qa/ar/
+    pages:
+      - { id: home-ar, url: "https://mathaf.org.qa/ar/", purpose: "Arabic museum home", locale: ar, direction: rtl }
+    split: validation
+    discovery:
+      source: ilham
+      source_url: https://ilham.io/
+      signal: "Featured in the Ilham Arabic web-design gallery"
+      signal_status: VERIFIED
+      signal_evidence: "mathaf.org.qa/ar/ present in ilham.io listing fetched 2026-10-02"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [culture]
+      archetypes: [minimal, editorial]
+      motion: low
+      objectives: [information-consumption, brand-expression]
+      density: medium
+      device_focus: responsive-general
+      languages: [ar, en]
+      direction: rtl
+      scheme: monochrome
+      tech_hints: []
+      studio: Qatar Museums
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 5, implementation_diversity: 2 }
+      weighted_total: 3.15
+      unique_contribution: "Tests Arabic typography and cultural-editorial candidate rules (display Arabic, RTL navigation) on an institution site."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: absent }
+
+  - id: val-003
+    name: Nahdi Online
+    url: https://www.nahdionline.com/ar-sa
+    pages:
+      - { id: home-ar, url: "https://www.nahdionline.com/ar-sa", purpose: "Arabic mass-market pharmacy commerce", locale: ar-SA, direction: rtl }
+    split: validation
+    discovery:
+      source: arabic-real-world
+      source_url: null
+      signal: "High-traffic Saudi pharmacy/retail commerce (mass-market contrast to ref-012 luxury)"
+      signal_status: UNVERIFIED
+      signal_evidence: "Market position is general knowledge"
+      checked_at: null
+    dimensions:
+      industry: [ecommerce, health]
+      archetypes: [utilitarian]
+      motion: low
+      objectives: [conversion, task-completion]
+      density: high
+      device_focus: mobile-first
+      languages: [ar]
+      direction: rtl
+      scheme: light
+      tech_hints: []
+      studio: Nahdi
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 2, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 4, rtl_localization: 5, implementation_diversity: 3 }
+      weighted_total: 3.20
+      unique_contribution: "Tests Arabic commerce rules (product cards, prices, numerals, promos) learned from luxury/fintech references on dense mass-market commerce."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed, notes: "Single-page app; initial render small — capture must wait for content." }
+
+  # ------------------------------------------------------------------ holdout (SEALED)
+  - id: hol-001
+    name: ERA Residence
+    url: https://era-residence.com/
+    pages:
+      - { id: home, url: "https://era-residence.com/", purpose: "Luxury real-estate home" }
+    split: holdout
+    discovery:
+      source: awwwards
+      source_url: https://www.awwwards.com/websites/sites_of_the_month/
+      signal: "Awwwards Site of the Month Aug 2026"
+      signal_status: VERIFIED
+      signal_evidence: "sites_of_the_month list read via fetch service 2026-10-02 (no per-site details read: holdout)"
+      checked_at: 2026-10-02
+    dimensions:
+      industry: [luxury]
+      archetypes: [cinematic]
+      motion: high
+      objectives: [storytelling, conversion]
+      density: low
+      device_focus: desktop-immersive
+      languages: [en]
+      direction: ltr
+      scheme: mixed
+      tech_hints: []
+      studio: The First The Last
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 3, interaction_diversity: 4, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.10
+      unique_contribution: "Holdout for luxury/cinematic generalization (a studio absent from extraction)."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: hol-002
+    name: Al Jazeera Arabic
+    url: https://www.aljazeera.net/
+    pages:
+      - { id: home, url: "https://www.aljazeera.net/", purpose: "Arabic news portal home", locale: ar, direction: rtl }
+    split: holdout
+    discovery:
+      source: arabic-real-world
+      source_url: null
+      signal: "Major Arabic news portal (general knowledge)"
+      signal_status: UNVERIFIED
+      signal_evidence: "Not inspected (holdout)"
+      checked_at: null
+    dimensions:
+      industry: [media]
+      archetypes: [utilitarian, editorial]
+      motion: low
+      objectives: [information-consumption]
+      density: high
+      device_focus: responsive-general
+      languages: [ar]
+      direction: rtl
+      scheme: light
+      tech_hints: []
+      studio: Al Jazeera
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 3, archetype_coverage: 2, interaction_diversity: 3, mobile_quality: 3, a11y_perf_contrast: 3, rtl_localization: 5, implementation_diversity: 2 }
+      weighted_total: 2.95
+      unique_contribution: "Holdout for Arabic high-density editorial generalization."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }
+
+  - id: hol-003
+    name: Linear
+    url: https://linear.app/
+    pages:
+      - { id: home, url: "https://linear.app/", purpose: "B2B SaaS marketing home" }
+    split: holdout
+    discovery:
+      source: real-world
+      source_url: null
+      signal: "Widely referenced B2B SaaS product site; substitute for a Land-book slot (Land-book HTTP 403)"
+      signal_status: UNVERIFIED
+      signal_evidence: "Not inspected (holdout)"
+      checked_at: null
+    dimensions:
+      industry: [saas]
+      archetypes: [minimal]
+      motion: medium
+      objectives: [conversion]
+      density: medium
+      device_focus: responsive-general
+      languages: [en]
+      direction: ltr
+      scheme: dark
+      tech_hints: []
+      studio: Linear
+      assessment: PRE-CAPTURE-JUDGEMENT
+    selection:
+      scores: { quality_signal: 4, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 3, rtl_localization: 0, implementation_diversity: 3 }
+      weighted_total: 3.10
+      unique_contribution: "Holdout for B2B SaaS generalization (benchmark brief B family)."
+    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed }

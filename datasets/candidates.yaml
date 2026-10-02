@@ -1,0 +1,36 @@
+# Candidate pool considered for the DI v0.1 corpus (2026-10-02) and the reason each was not selected.
+# Access results are from this environment (egress proxy); "challenge" = bot-protection interstitial (not bypassed, D-010).
+selected: [ref-001, ref-002, ref-003, ref-004, ref-005, ref-006, ref-007, ref-008, ref-009, ref-010, ref-011, ref-012, val-001, val-002, val-003, hol-001, hol-002, hol-003]
+not_selected:
+  # --- inaccessible
+  - { name: Thmanyah, url: "https://thmanyah.com/", source: ilham, reason: "HTTP 429 (curl) / 502 (browser). Strong Arabic typography reference — retry in a future round." }
+  - { name: Salla, url: "https://salla.com/", source: ilham, reason: "Cloudflare challenge." }
+  - { name: Al-Jumhuriya, url: "https://aljumhuriya.net/ar/", source: ilham, reason: "Cloudflare challenge." }
+  - { name: Diriyah, url: "https://www.diriyah.sa/ar", source: ilham, reason: "Cloudflare challenge." }
+  - { name: Aesop, url: "https://www.aesop.com/", source: real-world, reason: "Cloudflare challenge." }
+  - { name: Rolex (Arabic), url: "https://www.rolex.com/ar", source: real-world, reason: "Access Denied (403)." }
+  - { name: Hermès, url: "https://www.hermes.com/", source: real-world, reason: "HTTP 403." }
+  - { name: noon (Arabic), url: "https://www.noon.com/saudi-ar/", source: arabic-real-world, reason: "502 through egress proxy." }
+  - { name: Land-book gallery, url: "https://land-book.com/", source: land-book, reason: "HTTP 403 to all clients — quota substituted (docs/CORPUS-METHODOLOGY.md §4)." }
+  - { name: SiteInspire gallery, url: "https://www.siteinspire.com/", source: siteinspire, reason: "HTTP 429." }
+  # --- redundant with a selected reference (diversity, studio cap)
+  - { name: Charles Leclerc, source: cssda, reason: "CSSDA WOTY 2025 nominee; same archetype/subject as ref-001 (driver personal brand)." }
+  - { name: Messenger (Abeto), source: awwwards, reason: "Developer Site of the Year 2025; WebGL game world overlaps ref-001/val-001 immersive slot." }
+  - { name: Bruno Simon portfolio, source: awwwards, reason: "SOTM Jan 2026 / CSSDA 2025; 3D game portfolio overlaps immersive slot." }
+  - { name: Floema, url: "https://www.floema.com/en", source: awwwards, reason: "SOTM May 2026; cinematic storytelling commerce overlaps ref-003. Good alternate." }
+  - { name: Son Daven, source: awwwards, reason: "SOTM Jun 2026; same studio as hol-001 (The First The Last)." }
+  - { name: Lama Lama, url: "https://lamalama.com/", source: awwwards, reason: "SOTM Jul 2026 agency site; agency slot covered by val-001 (agency showcase)." }
+  - { name: GQ & AP The Extraordinary Lab, source: awwwards, reason: "SOTM Mar 2026; sponsored immersive story overlaps immersive slot." }
+  - { name: Cyera — Secure the Unknown, url: "https://secure-the-unknown.cyera.com/", source: fwa, reason: "FWA of the Day Sep 2026 (Active Theory); immersive/high-motion slot already full (6/6/6 target)." }
+  - { name: Tamara, url: "https://tamara.co/ar-SA", source: ilham, reason: "Arabic BNPL fintech; overlaps ref-010." }
+  - { name: Sowt, url: "https://www.sowt.com/ar", source: ilham, reason: "Arabic media; overlaps ref-011 editorial slot." }
+  - { name: Jameel Arts Centre, url: "https://jameelartscentre.org/ar/", source: ilham, reason: "Arabic culture; overlaps val-002." }
+  - { name: Visit Qatar, url: "https://visitqatar.com/qa-ar", source: ilham, reason: "Tourism; no unique axis vs selected set." }
+  - { name: Foodics / Nashra / Rain, source: ilham, reason: "Arabic SaaS/fintech marketing; overlaps ref-010 and ref-009." }
+  - { name: The Guardian, url: "https://www.theguardian.com/international", source: real-world, reason: "Dense editorial; covered by ref-011 + hol-002 + ref-008. Good alternate for an English news reference." }
+  - { name: IBM, url: "https://www.ibm.com/", source: real-world, reason: "Enterprise Swiss grid; enterprise covered by ref-004, grid by ref-005/007." }
+  - { name: teenage engineering, url: "https://teenage.engineering/", source: real-world, reason: "Industrial/brutalist product; brutalist partially covered by ref-011. Alternate for brutalist gap." }
+  - { name: Pentagram, url: "https://www.pentagram.com/", source: real-world, reason: "Agency/portfolio minimal; covered." }
+  - { name: The Pudding, url: "https://pudding.cool/", source: real-world, reason: "Data storytelling; overlaps ref-008 + ref-006." }
+  - { name: Apple AirPods Pro, url: "https://www.apple.com/airpods-pro/", source: real-world, reason: "Cinematic scroll product page; cinematic covered by ref-001/003." }
+  - { name: MSCHF, url: "https://mschf.com/", source: real-world, reason: "Maximalist/brutalist; maximalism covered by ref-002/011. Alternate for brutalist gap." }
