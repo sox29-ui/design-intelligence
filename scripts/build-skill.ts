@@ -109,6 +109,19 @@ export function compile(): Map<string, string> {
     }
     out.set(file, L.join('\n').replace(/\n{3,}/g, '\n\n'));
   }
+  // Provenance index for the skill (rule → evidence summary).
+  const P: string[] = ['# Provenance index', '', '> Generated. Every compiled rule with its evidence base. Full chain (observations, pointers, screenshots hashes): `npm run why -- <rule-id>` in the DI repository.', ''];
+  P.push('| Rule | Kind | Conf. | Supporting refs | Counterexamples | Validation | Standards |');
+  P.push('|---|---|---|---|---|---|---|');
+  for (const r of rules.filter((x) => COMPILED_STATUSES.has(x.status) || x.kind === 'hypothesis').sort((a, b) => a.id.localeCompare(b.id))) {
+    const sup = (r.evidence.supporting ?? []).map((s: any) => s.ref).join(', ') || '—';
+    const cex = (r.evidence.counterexamples ?? []).map((s: any) => s.ref).join(', ') || '—';
+    const val = (r.evidence.validation ?? []).map((v: any) => `${v.ref}:${v.result}`).join(', ') || '—';
+    const ext = (r.evidence.external ?? []).map((x: any) => x.source_id).join(', ') || '—';
+    P.push(`| \`${r.id}\` | ${r.kind} | ${r.confidence} | ${sup} | ${cex} | ${val} | ${ext} |`);
+  }
+  P.push('', 'Reference IDs map to `datasets/corpus.yaml` (ref-* extraction, val-* validation). Holdout references never appear here.');
+  out.set('provenance.md', P.join('\n') + '\n');
   return out;
 }
 

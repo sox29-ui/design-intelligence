@@ -1,0 +1,253 @@
+{
+  "ref_id": "ref-004",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:29:16.393Z",
+  "notes": "Consent banner (with a Decline option) was not dismissed in this run and overlaps the lower left of shots.",
+  "observations": [
+    {
+      "id": "ref-004.layout.home-a-visible-grid-canvas",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "cross-viewport",
+      "category": "layout",
+      "property": "visible-grid-canvas",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-top.jpg",
+          "sha256": "54c3c464794b6a6ff1e0fa9c209b3b39cf5762d7dc50da48a84327201bdda595"
+        },
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/390x844-top.jpg",
+          "sha256": "341928aec24f47bbe6bfa48ad29b7dd07da048bc860aa5465fc1a12e73d71abe"
+        },
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-scroll-25.jpg",
+          "sha256": "901c3860a3d8fbedf7f04a726bf1856d1bd44f25edb850815431a9e53a916044"
+        }
+      ],
+      "statement": "The whole page is drawn on a visible grid of thin pale-blue lines dividing the canvas into irregular cells; content occupies single cells or spans several, and empty cells are left as white space.",
+      "confidence": 0.95,
+      "assessment": "strength",
+      "tags": [
+        "visible-grid",
+        "swiss"
+      ]
+    },
+    {
+      "id": "ref-004.hierarchy.home-a-statement-in-cell",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "statement-in-cell",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-top.jpg",
+          "sha256": "54c3c464794b6a6ff1e0fa9c209b3b39cf5762d7dc50da48a84327201bdda595"
+        }
+      ],
+      "statement": "First read is a four-line statement in a heavy sharp grotesk set in brand blue, placed top-left inside one grid cell with most of the first viewport left empty; a double-chevron scroll cue sits bottom-right of the same cell.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "hero",
+        "whitespace"
+      ]
+    },
+    {
+      "id": "ref-004.components.home-a-colour-tile-navigation",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "colour-tile-navigation",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-scroll-50.jpg",
+          "sha256": "2de54261eda7ba5bd4deb9954e9f177672ee9b7fce18b5fde3681cafb280cfd5"
+        },
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-scroll-25.jpg",
+          "sha256": "901c3860a3d8fbedf7f04a726bf1856d1bd44f25edb850815431a9e53a916044"
+        }
+      ],
+      "statement": "Guideline sections appear as saturated colour tiles (yellow quote marks, orange, blue, cyan, burgundy) that fill grid cells at different sizes, each with a section word in a tinted variant of its own colour; the tiles act as a mosaic of entry points.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "tiles",
+        "colour-system",
+        "navigation"
+      ]
+    },
+    {
+      "id": "ref-004.responsive.home-a-mobile-grid-scales",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-grid-scales",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/390x844-top.jpg",
+          "sha256": "341928aec24f47bbe6bfa48ad29b7dd07da048bc860aa5465fc1a12e73d71abe"
+        },
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/390x844-scroll-50.jpg",
+          "sha256": "ad069deee6be529fe3bee7fc85fa1768afd51aff9c56e92bd2c9a4a54d1ad55b"
+        }
+      ],
+      "statement": "At 390 the grid persists with fewer, larger cells; the statement keeps its own cell; colour tiles reflow into staggered single cells rather than a stacked list.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "grid",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-004.accessibility.home-a-focus-state-overlap",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "focus-state-overlap",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-004/home/20261002T162627Z/1440x900-focus.jpg",
+          "sha256": "e2b1926897f8498eec7bc2f57616e152fe347b8b9f8e87e722bf48e6cc4f4dff"
+        }
+      ],
+      "statement": "After keyboard tabbing the viewport shows the hero statement overlapping a partially hidden purple tile and the grid lines missing; no focused control is visibly marked in the shot.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "focus",
+        "scroll-animation"
+      ]
+    },
+    {
+      "id": "ref-004.layout.home-a-why-visible-grid",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "cross-viewport",
+      "category": "layout",
+      "property": "why-visible-grid",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-004.layout.home-a-visible-grid-canvas"
+        },
+        {
+          "observation": "ref-004.components.home-a-colour-tile-navigation"
+        }
+      ],
+      "statement": "Exposing the grid turns the brand system's own structure into the visual identity of a guidelines site — the layout explains that the brand is a system. It suits reference/brand-system content; on product or commerce pages the same device would read as decoration.",
+      "confidence": 0.65,
+      "assessment": "strength",
+      "tags": [
+        "visible-grid",
+        "context"
+      ]
+    },
+    {
+      "id": "ref-004.color.home-a-why-colour-as-wayfinding",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "why-colour-as-wayfinding",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-004.components.home-a-colour-tile-navigation"
+        },
+        {
+          "observation": "ref-004.color.home-1440-background-palette"
+        }
+      ],
+      "statement": "Each guideline area owns a palette colour, so colour does wayfinding (where am I, what section is this) rather than decoration; the system needs ≥ 4 distinguishable brand colours to work.",
+      "confidence": 0.6,
+      "assessment": "strength",
+      "tags": [
+        "colour-coding"
+      ]
+    },
+    {
+      "id": "ref-004.motion.home-a-why-motion-a11y-gap",
+      "ref_id": "ref-004",
+      "page": "home",
+      "source_url": "https://brand.dropbox.com/",
+      "capture_id": "20261002T162627Z",
+      "captured_at": "2026-10-02T16:26:27.272Z",
+      "viewport": "cross-viewport",
+      "category": "motion",
+      "property": "why-motion-a11y-gap",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-004.accessibility.home-a-focus-state-overlap"
+        },
+        {
+          "observation": "ref-004.motion.home-1440-reduced-motion-response"
+        },
+        {
+          "observation": "ref-004.accessibility.home-1440-focus-indicator-share"
+        },
+        {
+          "observation": "ref-004.motion.home-1440-scroll-linked-changes"
+        }
+      ],
+      "statement": "Scroll-linked tile animation (53 of 459 elements changed on a small scroll) keeps running under prefers-reduced-motion (4 running animations in both modes, no reduced-motion CSS), and only about half the tab stops show a visible focus indicator: the playful choreography is not matched by motion or keyboard accommodations. A best-UX award does not certify accessibility.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "reduced-motion",
+        "focus"
+      ]
+    }
+  ]
+}

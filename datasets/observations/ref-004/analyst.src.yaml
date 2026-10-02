@@ -1,0 +1,84 @@
+# Analyst observations — ref-004 Dropbox Brand (guidelines hub). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 1440-scroll-50, 390-scroll-50, 1440-focus.
+notes: "Consent banner (with a Decline option) was not dismissed in this run and overlaps the lower left of shots."
+items:
+  - key: visible-grid-canvas
+    page: home
+    viewport: cross-viewport
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top, 1440x900-scroll-25]
+    statement: "The whole page is drawn on a visible grid of thin pale-blue lines dividing the canvas into irregular cells; content occupies single cells or spans several, and empty cells are left as white space."
+    confidence: 0.95
+    assessment: strength
+    tags: [visible-grid, swiss]
+  - key: statement-in-cell
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "First read is a four-line statement in a heavy sharp grotesk set in brand blue, placed top-left inside one grid cell with most of the first viewport left empty; a double-chevron scroll cue sits bottom-right of the same cell."
+    confidence: 0.9
+    assessment: neutral
+    tags: [hero, whitespace]
+  - key: colour-tile-navigation
+    page: home
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 1440x900-scroll-25]
+    statement: "Guideline sections appear as saturated colour tiles (yellow quote marks, orange, blue, cyan, burgundy) that fill grid cells at different sizes, each with a section word in a tinted variant of its own colour; the tiles act as a mosaic of entry points."
+    confidence: 0.85
+    assessment: strength
+    tags: [tiles, colour-system, navigation]
+  - key: mobile-grid-scales
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 390x844-scroll-50]
+    statement: "At 390 the grid persists with fewer, larger cells; the statement keeps its own cell; colour tiles reflow into staggered single cells rather than a stacked list."
+    confidence: 0.85
+    assessment: neutral
+    tags: [grid, mobile]
+  - key: focus-state-overlap
+    page: home
+    viewport: 1440x900
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-focus]
+    statement: "After keyboard tabbing the viewport shows the hero statement overlapping a partially hidden purple tile and the grid lines missing; no focused control is visibly marked in the shot."
+    confidence: 0.7
+    assessment: weakness
+    tags: [focus, scroll-animation]
+  - key: why-visible-grid
+    page: home
+    viewport: cross-viewport
+    category: layout
+    type: INFERRED
+    based_on: [visible-grid-canvas, colour-tile-navigation]
+    statement: "Exposing the grid turns the brand system's own structure into the visual identity of a guidelines site — the layout explains that the brand is a system. It suits reference/brand-system content; on product or commerce pages the same device would read as decoration."
+    confidence: 0.65
+    assessment: strength
+    tags: [visible-grid, context]
+  - key: why-colour-as-wayfinding
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: INFERRED
+    based_on: [colour-tile-navigation, ref-004.color.home-1440-background-palette]
+    statement: "Each guideline area owns a palette colour, so colour does wayfinding (where am I, what section is this) rather than decoration; the system needs ≥ 4 distinguishable brand colours to work."
+    confidence: 0.6
+    assessment: strength
+    tags: [colour-coding]
+  - key: why-motion-a11y-gap
+    page: home
+    viewport: cross-viewport
+    category: motion
+    type: INFERRED
+    based_on: [focus-state-overlap, ref-004.motion.home-1440-reduced-motion-response, ref-004.accessibility.home-1440-focus-indicator-share, ref-004.motion.home-1440-scroll-linked-changes]
+    statement: "Scroll-linked tile animation (53 of 459 elements changed on a small scroll) keeps running under prefers-reduced-motion (4 running animations in both modes, no reduced-motion CSS), and only about half the tab stops show a visible focus indicator: the playful choreography is not matched by motion or keyboard accommodations. A best-UX award does not certify accessibility."
+    confidence: 0.7
+    assessment: weakness
+    tags: [reduced-motion, focus]

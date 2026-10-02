@@ -1,0 +1,5879 @@
+{
+  "ref_id": "ref-006",
+  "authorship": "normalizer",
+  "generator": "scripts/normalize.ts@0.1.0",
+  "generated_at": "2026-10-02T16:30:43.472Z",
+  "notes": "Generated deterministically from datasets/raw. Do not edit by hand (D-004).",
+  "observations": [
+    {
+      "id": "ref-006.typography.home-390-distinct-sizes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "distinct-sizes",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/distinctSizes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-390-weights",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "weights",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/distinctWeights"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-390-uppercase-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "uppercase-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/uppercaseShare"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-390-webfonts",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "webfonts",
+      "value": [
+        "exo-2-variable",
+        "brush-up-too"
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/fonts/loadedFamilies"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-390-font-display",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "font-display",
+      "value": {
+        "auto": 3
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/fonts/fontDisplayValues"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-390-h1-count",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "hierarchy",
+      "property": "h1-count",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/headings/h1Count"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "weakness",
+      "tags": [
+        "heading-structure"
+      ]
+    },
+    {
+      "id": "ref-006.hierarchy.home-390-heading-count",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "hierarchy",
+      "property": "heading-count",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/headings/count"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-390-heading-outline",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "hierarchy",
+      "property": "heading-outline",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/headings/outline"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-390-skipped-heading-levels",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "hierarchy",
+      "property": "skipped-heading-levels",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/headings/skippedLevels"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-dominant-container",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "dominant-container",
+      "value": 330,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/dominantContainer"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-widest-container",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "widest-container",
+      "value": 330,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/widestContainer"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-text-left-edges",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "text-left-edges",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/textLeftEdges"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-distinct-text-edges",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "distinct-text-edges",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/distinctTextEdges"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-grid-containers",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "grid-containers",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/gridContainers"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-grid-columns",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "grid-columns",
+      "value": [
+        {
+          "value": 1,
+          "count": 1
+        }
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/gridColumnCounts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-sticky-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "sticky-elements",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/stickyElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-fixed-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "fixed-elements",
+      "value": 7,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/fixedElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-page-height-vh",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "page-height-vh",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-section-padding-top",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "section-padding-top",
+      "value": {
+        "n": 3,
+        "min": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "max": 0
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/sections/paddingTop"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-text-over-media",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "text-over-media",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/textOverMedia"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-390-horizontal-overflow",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "horizontal-overflow",
+      "value": 0,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-10"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-390-scheme",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "scheme",
+      "value": "light",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/scheme"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-root-background",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "root-background",
+      "value": "#f9f3e9",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/rootBackground"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-background-palette",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "background-palette",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/backgroundPalette"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-text-colors",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "text-colors",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/textColors"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-button-backgrounds",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "button-backgrounds",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/buttonBackgrounds"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-gradient-area",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "gradient-area",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/gradientAreaRatio"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-low-contrast-normal-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "low-contrast-normal-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/contrast/lowContrastNormalShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-3"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-390-low-contrast-large-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "low-contrast-large-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/contrast/lowContrastLargeShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-3"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-390-contrast-uncertain-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "contrast-uncertain-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/color/contrast/uncertainShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-root-tokens",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "root-tokens",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/tokens/colorTokens"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-buttons",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "buttons",
+      "value": {
+        "count": 0,
+        "radius": null,
+        "pillShare": 0,
+        "height": null,
+        "fontSize": null,
+        "textTransform": {},
+        "fontWeight": {}
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/components/buttons"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-card-groups",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "card-groups",
+      "value": {
+        "count": 0,
+        "items": [],
+        "radius": null
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/components/cardGroups"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-media",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "media",
+      "value": {
+        "images": 0,
+        "imagesTotal": 1,
+        "lazyImages": 0,
+        "srcsetImages": 0,
+        "videos": 1,
+        "autoplayVideos": 1,
+        "videosWithControls": 0,
+        "inlineSvgs": 2,
+        "canvases": [
+          {
+            "w": 390,
+            "h": 844,
+            "fixed": true
+          },
+          {
+            "w": 390,
+            "h": 1266,
+            "fixed": false
+          }
+        ],
+        "iframes": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/components/media"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-forms",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "forms",
+      "value": {
+        "forms": 0,
+        "inputs": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/components/forms"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-effects",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "effects",
+      "value": {
+        "gradientAreaRatio": 0,
+        "backdropBlurElements": 0,
+        "filterBlurElements": 0,
+        "coloredGlowShadows": 0,
+        "textGradients": 0,
+        "blendModeElements": 0,
+        "boxedElements": 0,
+        "roundedBoxShare12": 0,
+        "roundedBoxShare24": 0,
+        "opacityZeroElements": 12,
+        "transformedElements": 5
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/effects"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-390-menu",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "menu",
+      "value": {
+        "found": false
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/interactions/menu"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-390-transition-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "motion",
+      "property": "transition-elements",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/motion/transitionElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-390-transition-duration",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "motion",
+      "property": "transition-duration",
+      "value": {
+        "n": 1,
+        "min": 300,
+        "p25": 300,
+        "median": 300,
+        "p75": 300,
+        "max": 300
+      },
+      "unit": "ms",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/motion/transitionDuration"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-390-transition-easing",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "motion",
+      "property": "transition-easing",
+      "value": {
+        "ease-out": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/motion/transitionEasing"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-390-animations",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "motion",
+      "property": "animations",
+      "value": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      },
+      "evidence_type": "VERIFIED",
+      "method": "web-animations-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/motion/animations"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-390-reduced-motion-css",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "motion",
+      "property": "reduced-motion-css",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/reducedMotionRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-landmarks",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "landmarks",
+      "value": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 0,
+        "aside": 0,
+        "search": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/landmarks"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-lang-present",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "lang-present",
+      "value": true,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/langPresent"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-3-1-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-images-missing-alt",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "images-missing-alt",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/images/missingAlt"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-1-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-links-without-name",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "links-without-name",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/linksWithoutName"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-4"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-buttons-without-name",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "buttons-without-name",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/buttonsWithoutName"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-4-1-2"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-inputs-without-label",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "inputs-without-label",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/inputsWithoutLabel"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-3-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-small-tap-targets",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "small-tap-targets",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/smallTapTargets"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-aria-hidden-focusable",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "aria-hidden-focusable",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/accessibility/ariaHiddenWithFocusable"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-axe-by-impact",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "axe-by-impact",
+      "value": {
+        "serious": 2,
+        "moderate": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "axe",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/axe/byImpact"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "weakness"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-axe-violations",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "axe-violations",
+      "value": [
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "impact": "moderate",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "axe",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/axe/violations"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-focus-indicator-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "focus-indicator-share",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/interactions/focus/indicatorShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-7"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-focus-offscreen",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "focus-offscreen",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/interactions/focus/offscreenOrHidden"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-11"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-390-skip-link-first",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "skip-link-first",
+      "value": false,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/interactions/focus/firstIsSkipLink"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-focus-visible-rules",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "focus-visible-rules",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/focusVisibleRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-390-aria-roles",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "aria-roles",
+      "value": {
+        "link": 3,
+        "img": 3,
+        "banner": 1,
+        "main": 1,
+        "heading": 1,
+        "paragraph": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "accessibility-tree",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/aria/roles"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-lcp",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "lcp",
+      "value": {
+        "time": 1144,
+        "element": "p",
+        "size": 28194
+      },
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/performance/lcp"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-cls-before-interaction",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "cls-before-interaction",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/preInteraction/cls"
+        }
+      ],
+      "statement": "layout shift accumulated before any capture interaction: 0",
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "core-web-vitals"
+      ]
+    },
+    {
+      "id": "ref-006.performance.home-390-cls-session",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "cls-session",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/performance/cls"
+        }
+      ],
+      "statement": "CLS over the capture session; includes shifts after DI consent/scroll interactions (>500 ms after input)",
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-long-tasks",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "long-tasks",
+      "value": {
+        "count": 73,
+        "totalMs": 5986
+      },
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/performance/longTasks"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-dom-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "dom-elements",
+      "value": 94,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/performance/domElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-transfer-bytes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "transfer-bytes",
+      "value": 2351675,
+      "unit": "bytes",
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/totalBytes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-requests",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "requests",
+      "value": 28,
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/requests"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-bytes-by-type",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "bytes-by-type",
+      "value": {
+        "image": {
+          "count": 4,
+          "bytes": 1540927
+        },
+        "font": {
+          "count": 2,
+          "bytes": 424872
+        },
+        "script": {
+          "count": 10,
+          "bytes": 368909
+        },
+        "document": {
+          "count": 1,
+          "bytes": 12158
+        },
+        "stylesheet": {
+          "count": 4,
+          "bytes": 2983
+        },
+        "fetch": {
+          "count": 4,
+          "bytes": 1306
+        },
+        "other": {
+          "count": 1,
+          "bytes": 520
+        },
+        "xhr": {
+          "count": 2,
+          "bytes": 0
+        }
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/byType"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-third-party",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "third-party",
+      "value": {
+        "requests": 6,
+        "bytes": 426462,
+        "hosts": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/thirdParty"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-390-console-errors",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "performance",
+      "property": "console-errors",
+      "value": {
+        "errors": 0,
+        "pageErrors": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/console"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.assets.home-390-image-formats",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "assets",
+      "property": "image-formats",
+      "value": {
+        "image/png": {
+          "count": 1,
+          "bytes": 43648
+        },
+        "image/jpeg": {
+          "count": 3,
+          "bytes": 1497279
+        }
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/imageFormats"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.assets.home-390-font-files",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "assets",
+      "property": "font-files",
+      "value": {
+        "count": 2,
+        "bytes": 424872,
+        "formats": [
+          "application/font-woff2"
+        ]
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/fonts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-library-evidence",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "library-evidence",
+      "value": {
+        "typekit": 6,
+        "nuxt": 13
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/network/libraryEvidence"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-globals",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "globals",
+      "value": {
+        "__NUXT__": true,
+        "__nuxt": true,
+        "__VUE__": true
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/globals"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-canvas-contexts",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "canvas-contexts",
+      "value": {
+        "webgl": 1,
+        "webgl2": 1,
+        "offscreen:2d": 1,
+        "2d": 6
+      },
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/canvasContexts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-js-observers",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "js-observers",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/intersectionObservers"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-scroll-listeners",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "scroll-listeners",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/scrollListeners"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-wheel-listeners",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "wheel-listeners",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/wheelListeners"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-raf-calls",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "raf-calls",
+      "value": 1080,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/rafCalls"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-media-queries-js",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "media-queries-js",
+      "value": {
+        "(prefers-reduced-motion: reduce)": 1,
+        "(max-width: 649px)": 2,
+        "(max-width: 1099px)": 2,
+        "(max-width: 1299px)": 2,
+        "(hover: hover) and (pointer: fine)": 3,
+        "(orientation: landscape)": 3,
+        "(hover: none), (pointer: coarse)": 1,
+        "(orientation: portrait)": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/implementation/instrumentation/matchMediaQueries"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-390-cssom-coverage",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "implementation",
+      "property": "cssom-coverage",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/inaccessibleSheets"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-390-breakpoints",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "breakpoints",
+      "value": {
+        "min:650px": 8,
+        "min:1100px": 4,
+        "min:1300px": 4,
+        "max:649px": 3,
+        "min:1400px": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/breakpoints"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-390-clamp-uses",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "clamp-uses",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/clampUses"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-390-vw-font-sizes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "vw-font-sizes",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/vwFontSizes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-390-container-queries",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "container-queries",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/containerRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-390-dark-scheme-css",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "color",
+      "property": "dark-scheme-css",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/cssom/colorSchemeRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-390-text-volume",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "content",
+      "property": "text-volume",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/totalChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-390-script-chars",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "content",
+      "property": "script-chars",
+      "value": {
+        "arabic": 0,
+        "latin": 0,
+        "westDigits": 0,
+        "arabicIndicDigits": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/scriptChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-body-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "body-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-max-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "max-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/maxSize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-scale-range",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "scale-range",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/scaleRange"
+        }
+      ],
+      "statement": "largest text is 1× the dominant body size",
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-display-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "display-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/displayText/size"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-display-size-vw",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "display-size-vw",
+      "value": 2.41,
+      "unit": "vw",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/displayText/sizeVw"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-768-display-lines",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "typography",
+      "property": "display-lines",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/displayText/lines"
+        }
+      ],
+      "confidence": 0.95,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-768-grid-columns",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "layout",
+      "property": "grid-columns",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/layout/gridColumnCounts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-768-page-height-vh",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "layout",
+      "property": "page-height-vh",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-768-horizontal-overflow",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "layout",
+      "property": "horizontal-overflow",
+      "value": 0,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-10"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-768-scheme",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "color",
+      "property": "scheme",
+      "value": "light",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/color/scheme"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-768-header",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "components",
+      "property": "header",
+      "value": {
+        "position": "fixed",
+        "height": 54,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 1,
+        "expandableToggles": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/components/header"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-768-text-volume",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "768x1024",
+      "category": "content",
+      "property": "text-volume",
+      "value": 204,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/totalChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-body-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "body-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-max-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "max-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/maxSize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-scale-range",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "scale-range",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/scaleRange"
+        }
+      ],
+      "statement": "largest text is 1× the dominant body size",
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-distinct-sizes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "distinct-sizes",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/distinctSizes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-family-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "family-share",
+      "value": {
+        "exo-2-variable": 0.529,
+        "brush-up-too": 0.471
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/familyShare"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-weights",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "weights",
+      "value": [
+        "400",
+        "500",
+        "700"
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/distinctWeights"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-uppercase-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "uppercase-share",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/uppercaseShare"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/size"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-size-vw",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-size-vw",
+      "value": 1.28,
+      "unit": "vw",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/sizeVw"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-line-height",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-line-height",
+      "value": 1.4,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/lineHeightRatio"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-tracking",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-tracking",
+      "value": 0,
+      "unit": "em",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/letterSpacingEm"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-weight",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-weight",
+      "value": "500",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/weight"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-lines",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-lines",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/lines"
+        }
+      ],
+      "confidence": 0.95,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-chars-per-line",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-chars-per-line",
+      "value": 27,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/charsPerLine"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-family",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-family",
+      "value": "brush-up-too",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/family"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-transform",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-transform",
+      "value": "uppercase",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/textTransform"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-wrap",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-wrap",
+      "value": "nowrap",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/textWrap"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-script",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-script",
+      "value": "latin",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/script"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-display-is-heading",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-is-heading",
+      "value": "text",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/tag"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-webfonts",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "webfonts",
+      "value": [
+        "exo-2-variable",
+        "brush-up-too"
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/fonts/loadedFamilies"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-font-display",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "font-display",
+      "value": {
+        "auto": 3
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/fonts/fontDisplayValues"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1440-rendered-fonts",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "rendered-fonts",
+      "value": {
+        "display-0": [
+          {
+            "family": "Brush Up",
+            "postScriptName": "BrushUpToo",
+            "custom": true,
+            "glyphs": 27
+          }
+        ],
+        "header-1": []
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/renderedFonts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-1440-h1-count",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "h1-count",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/headings/h1Count"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "weakness",
+      "tags": [
+        "heading-structure"
+      ]
+    },
+    {
+      "id": "ref-006.hierarchy.home-1440-heading-count",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "heading-count",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/headings/count"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-1440-heading-outline",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "heading-outline",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/headings/outline"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.hierarchy.home-1440-skipped-heading-levels",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "skipped-heading-levels",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/headings/skippedLevels"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-text-left-edges",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "text-left-edges",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/textLeftEdges"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-distinct-text-edges",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "distinct-text-edges",
+      "value": 6,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/distinctTextEdges"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-grid-containers",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "grid-containers",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/gridContainers"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-grid-columns",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "grid-columns",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/gridColumnCounts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-gaps",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "gaps",
+      "value": {
+        "n": 1,
+        "min": 20.25,
+        "p25": 20.25,
+        "median": 20.25,
+        "p75": 20.25,
+        "max": 20.25
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/gaps"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-sticky-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "sticky-elements",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/stickyElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-fixed-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "fixed-elements",
+      "value": 6,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/fixedElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-page-height-vh",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "page-height-vh",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-section-padding-top",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "section-padding-top",
+      "value": {
+        "n": 2,
+        "min": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "max": 0
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/sections/paddingTop"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-text-over-media",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "text-over-media",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/textOverMedia"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1440-horizontal-overflow",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "horizontal-overflow",
+      "value": 0,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-10"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-1440-scheme",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "scheme",
+      "value": "light",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/scheme"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-root-background",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "root-background",
+      "value": "#f9f3e9",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/rootBackground"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-background-palette",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "background-palette",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/backgroundPalette"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-text-colors",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "text-colors",
+      "value": [
+        {
+          "color": "#151412",
+          "share": 1
+        }
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/textColors"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-button-backgrounds",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "button-backgrounds",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/buttonBackgrounds"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-gradient-area",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "gradient-area",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/gradientAreaRatio"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-low-contrast-normal-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "low-contrast-normal-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/contrast/lowContrastNormalShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-3"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-1440-low-contrast-large-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "low-contrast-large-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/contrast/lowContrastLargeShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-3"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-1440-contrast-uncertain-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "contrast-uncertain-share",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/contrast/uncertainShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-contrast-ratio",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "contrast-ratio",
+      "value": {
+        "n": 14,
+        "min": 16.68,
+        "p25": 16.68,
+        "median": 16.68,
+        "p75": 16.68,
+        "max": 16.68
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/contrast/ratio"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-root-tokens",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "root-tokens",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/tokens/colorTokens"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-header",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "header",
+      "value": {
+        "position": "fixed",
+        "height": 101,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 1,
+        "expandableToggles": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/header"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-buttons",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "buttons",
+      "value": {
+        "count": 0,
+        "radius": null,
+        "pillShare": 0,
+        "height": null,
+        "fontSize": null,
+        "textTransform": {},
+        "fontWeight": {}
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/buttons"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-card-groups",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "card-groups",
+      "value": {
+        "count": 0,
+        "items": [],
+        "radius": null
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/cardGroups"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-media",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "media",
+      "value": {
+        "images": 1,
+        "imagesTotal": 1,
+        "lazyImages": 0,
+        "srcsetImages": 0,
+        "videos": 1,
+        "autoplayVideos": 1,
+        "videosWithControls": 0,
+        "inlineSvgs": 2,
+        "canvases": [
+          {
+            "w": 1440,
+            "h": 900,
+            "fixed": true
+          },
+          {
+            "w": 1440,
+            "h": 900,
+            "fixed": false
+          }
+        ],
+        "iframes": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/media"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-forms",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "forms",
+      "value": {
+        "forms": 0,
+        "inputs": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/forms"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-effects",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "effects",
+      "value": {
+        "gradientAreaRatio": 0,
+        "backdropBlurElements": 0,
+        "filterBlurElements": 0,
+        "coloredGlowShadows": 0,
+        "textGradients": 0,
+        "blendModeElements": 0,
+        "boxedElements": 0,
+        "roundedBoxShare12": 0,
+        "roundedBoxShare24": 0,
+        "opacityZeroElements": 8,
+        "transformedElements": 4
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/effects"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1440-menu",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "menu",
+      "value": {
+        "found": false
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/interactions/menu"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-transition-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "transition-elements",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/motion/transitionElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-transition-duration",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "transition-duration",
+      "value": {
+        "n": 1,
+        "min": 300,
+        "p25": 300,
+        "median": 300,
+        "p75": 300,
+        "max": 300
+      },
+      "unit": "ms",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/motion/transitionDuration"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-transition-easing",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "transition-easing",
+      "value": {
+        "ease-out": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/motion/transitionEasing"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-animations",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "animations",
+      "value": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      },
+      "evidence_type": "VERIFIED",
+      "method": "web-animations-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/motion/animations"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-hover-feedback",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "hover-feedback",
+      "value": {
+        "sampled": 3,
+        "withFeedback": 0,
+        "items": [
+          {
+            "tag": "a",
+            "changed": [],
+            "childTransformed": false,
+            "transitionDuration": "0.3s"
+          },
+          {
+            "tag": "a",
+            "changed": [],
+            "childTransformed": true,
+            "transitionDuration": "0s"
+          },
+          {
+            "tag": "a",
+            "changed": [],
+            "childTransformed": true,
+            "transitionDuration": "0s"
+          }
+        ]
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/interactions/hover"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-reduced-motion-css",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "reduced-motion-css",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/reducedMotionRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-landmarks",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "landmarks",
+      "value": {
+        "header": 1,
+        "nav": 0,
+        "main": 1,
+        "footer": 0,
+        "aside": 0,
+        "search": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/landmarks"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-lang-present",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "lang-present",
+      "value": true,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/langPresent"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-3-1-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-images-missing-alt",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "images-missing-alt",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/images/missingAlt"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-1-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-links-without-name",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "links-without-name",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/linksWithoutName"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-4"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-buttons-without-name",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "buttons-without-name",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/buttonsWithoutName"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-4-1-2"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-inputs-without-label",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "inputs-without-label",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/inputsWithoutLabel"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-3-1"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-small-tap-targets",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "small-tap-targets",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/smallTapTargets"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-aria-hidden-focusable",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "aria-hidden-focusable",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/accessibility/ariaHiddenWithFocusable"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-axe-by-impact",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "axe-by-impact",
+      "value": {
+        "serious": 2,
+        "moderate": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "axe",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/axe/byImpact"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "weakness"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-axe-violations",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "axe-violations",
+      "value": [
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "nodes": 2
+        },
+        {
+          "id": "meta-viewport",
+          "impact": "moderate",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1
+        }
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "axe",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/axe/violations"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-focus-indicator-share",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "focus-indicator-share",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/interactions/focus/indicatorShare"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-7"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-focus-offscreen",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "focus-offscreen",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/interactions/focus/offscreenOrHidden"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-2-4-11"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-skip-link-first",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "skip-link-first",
+      "value": false,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/interactions/focus/firstIsSkipLink"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-focus-visible-rules",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "focus-visible-rules",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/focusVisibleRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.accessibility.home-1440-aria-roles",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "aria-roles",
+      "value": {
+        "link": 3,
+        "img": 3,
+        "banner": 1,
+        "main": 1,
+        "heading": 1,
+        "paragraph": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "accessibility-tree",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/aria/roles"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-lcp",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "lcp",
+      "value": {
+        "time": 1124,
+        "element": "span",
+        "size": 97960
+      },
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/performance/lcp"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-cls-before-interaction",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "cls-before-interaction",
+      "value": 0.0042,
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/preInteraction/cls"
+        }
+      ],
+      "statement": "layout shift accumulated before any capture interaction: 0.0042",
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "core-web-vitals"
+      ]
+    },
+    {
+      "id": "ref-006.performance.home-1440-cls-session",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "cls-session",
+      "value": 0.0042,
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/performance/cls"
+        }
+      ],
+      "statement": "CLS over the capture session; includes shifts after DI consent/scroll interactions (>500 ms after input)",
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-long-tasks",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "long-tasks",
+      "value": {
+        "count": 43,
+        "totalMs": 8705
+      },
+      "evidence_type": "VERIFIED",
+      "method": "performance-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/performance/longTasks"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-dom-elements",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "dom-elements",
+      "value": 78,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/performance/domElements"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-transfer-bytes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "transfer-bytes",
+      "value": 2351176,
+      "unit": "bytes",
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/totalBytes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-requests",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "requests",
+      "value": 28,
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/requests"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-bytes-by-type",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "bytes-by-type",
+      "value": {
+        "image": {
+          "count": 4,
+          "bytes": 1540913
+        },
+        "font": {
+          "count": 2,
+          "bytes": 424872
+        },
+        "script": {
+          "count": 10,
+          "bytes": 368398
+        },
+        "document": {
+          "count": 1,
+          "bytes": 12160
+        },
+        "stylesheet": {
+          "count": 4,
+          "bytes": 2995
+        },
+        "fetch": {
+          "count": 4,
+          "bytes": 1318
+        },
+        "other": {
+          "count": 1,
+          "bytes": 520
+        },
+        "xhr": {
+          "count": 2,
+          "bytes": 0
+        }
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/byType"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-third-party",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "third-party",
+      "value": {
+        "requests": 6,
+        "bytes": 426461,
+        "hosts": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/thirdParty"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.performance.home-1440-console-errors",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "console-errors",
+      "value": {
+        "errors": 0,
+        "pageErrors": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/console"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.assets.home-1440-image-formats",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "assets",
+      "property": "image-formats",
+      "value": {
+        "image/png": {
+          "count": 1,
+          "bytes": 43649
+        },
+        "image/jpeg": {
+          "count": 3,
+          "bytes": 1497264
+        }
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/imageFormats"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.assets.home-1440-font-files",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "assets",
+      "property": "font-files",
+      "value": {
+        "count": 2,
+        "bytes": 424872,
+        "formats": [
+          "application/font-woff2"
+        ]
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/fonts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-library-evidence",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "library-evidence",
+      "value": {
+        "typekit": 6,
+        "nuxt": 13
+      },
+      "evidence_type": "VERIFIED",
+      "method": "network",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/network/libraryEvidence"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-globals",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "globals",
+      "value": {
+        "lenis": true,
+        "__NUXT__": true,
+        "__nuxt": true,
+        "__VUE__": true
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/globals"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-canvas-contexts",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "canvas-contexts",
+      "value": {
+        "webgl": 1,
+        "webgl2": 1,
+        "offscreen:2d": 1,
+        "2d": 6
+      },
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/canvasContexts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-js-observers",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "js-observers",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/intersectionObservers"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-scroll-listeners",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "scroll-listeners",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/scrollListeners"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-wheel-listeners",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "wheel-listeners",
+      "value": 2,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/wheelListeners"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-raf-calls",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "raf-calls",
+      "value": 926,
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/rafCalls"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-media-queries-js",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "media-queries-js",
+      "value": {
+        "(prefers-reduced-motion: reduce)": 1,
+        "(max-width: 649px)": 2,
+        "(max-width: 1099px)": 2,
+        "(max-width: 1299px)": 2,
+        "(hover: hover) and (pointer: fine)": 3,
+        "(orientation: landscape)": 2,
+        "(hover: none), (pointer: coarse)": 1,
+        "(orientation: portrait)": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "instrumentation",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/matchMediaQueries"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.implementation.home-1440-cssom-coverage",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "implementation",
+      "property": "cssom-coverage",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/inaccessibleSheets"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-1440-breakpoints",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "responsive",
+      "property": "breakpoints",
+      "value": {
+        "min:650px": 8,
+        "min:1100px": 4,
+        "min:1300px": 4,
+        "max:649px": 3,
+        "min:1400px": 2
+      },
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/breakpoints"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-1440-clamp-uses",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "responsive",
+      "property": "clamp-uses",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/clampUses"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-1440-vw-font-sizes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "responsive",
+      "property": "vw-font-sizes",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/vwFontSizes"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-1440-container-queries",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "responsive",
+      "property": "container-queries",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/containerRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-dark-scheme-css",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "dark-scheme-css",
+      "value": 0,
+      "evidence_type": "VERIFIED",
+      "method": "cssom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/cssom/colorSchemeRules"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-1440-text-volume",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "content",
+      "property": "text-volume",
+      "value": 204,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/totalChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-1440-script-chars",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "content",
+      "property": "script-chars",
+      "value": {
+        "arabic": 0,
+        "latin": 190,
+        "westDigits": 0,
+        "arabicIndicDigits": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/scriptChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-body-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "body-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-max-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "max-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/maxSize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-scale-range",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "scale-range",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/scaleRange"
+        }
+      ],
+      "statement": "largest text is 1× the dominant body size",
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-display-size",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "display-size",
+      "value": 18.5,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/displayText/size"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-display-size-vw",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "display-size-vw",
+      "value": 0.96,
+      "unit": "vw",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/displayText/sizeVw"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.typography.home-1920-display-lines",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "typography",
+      "property": "display-lines",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/displayText/lines"
+        }
+      ],
+      "confidence": 0.95,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1920-dominant-container",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "dominant-container",
+      "value": 1812,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/dominantContainer"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1920-widest-container",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "widest-container",
+      "value": 1812,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/widestContainer"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1920-grid-columns",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "grid-columns",
+      "value": [],
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/gridColumnCounts"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1920-page-height-vh",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "page-height-vh",
+      "value": 1,
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.layout.home-1920-horizontal-overflow",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "horizontal-overflow",
+      "value": 0,
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral",
+      "tags": [
+        "wcag-1-4-10"
+      ]
+    },
+    {
+      "id": "ref-006.color.home-1920-scheme",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "color",
+      "property": "scheme",
+      "value": "light",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/color/scheme"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.components.home-1920-header",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "components",
+      "property": "header",
+      "value": {
+        "position": "fixed",
+        "height": 135,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 1,
+        "expandableToggles": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/components/header"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.content.home-1920-text-volume",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1920x1080",
+      "category": "content",
+      "property": "text-volume",
+      "value": 204,
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/totalChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-display-size-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "display-size-curve",
+      "value": {
+        "768x1024": 18.5,
+        "1440x900": 18.5,
+        "1920x1080": 18.5
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/displayText/size"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/size"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/displayText/size"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-display-lines-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "display-lines-curve",
+      "value": {
+        "768x1024": 1,
+        "1440x900": 1,
+        "1920x1080": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/displayText/lines"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/displayText/lines"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/displayText/lines"
+        }
+      ],
+      "confidence": 0.95,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-body-size-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "body-size-curve",
+      "value": {
+        "768x1024": 18.5,
+        "1440x900": 18.5,
+        "1920x1080": 18.5
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/dominantBodySize"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-scale-range-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "scale-range-curve",
+      "value": {
+        "768x1024": 1,
+        "1440x900": 1,
+        "1920x1080": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/scaleRange"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/scaleRange"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/scaleRange"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-container-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "container-curve",
+      "value": {
+        "390x844": 330,
+        "1920x1080": 1812
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/widestContainer"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/widestContainer"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-page-height-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "page-height-curve",
+      "value": {
+        "390x844": 1,
+        "768x1024": 1,
+        "1440x900": 1,
+        "1920x1080": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/layout/pageHeightVh"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-header-toggles-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "header-toggles-curve",
+      "value": {
+        "768x1024": 0,
+        "1440x900": 0,
+        "1920x1080": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/components/header/expandableToggles"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/header/expandableToggles"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/components/header/expandableToggles"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-header-interactive-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "header-interactive-curve",
+      "value": {
+        "768x1024": 1,
+        "1440x900": 1,
+        "1920x1080": 1
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/components/header/visibleInteractive"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/header/visibleInteractive"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/components/header/visibleInteractive"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-header-position-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "header-position-curve",
+      "value": {
+        "768x1024": "fixed",
+        "1440x900": "fixed",
+        "1920x1080": "fixed"
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/components/header/position"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/components/header/position"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/components/header/position"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-text-volume-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "text-volume-curve",
+      "value": {
+        "390x844": 0,
+        "768x1024": 204,
+        "1440x900": 204,
+        "1920x1080": 204
+      },
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/typography/totalChars"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/typography/totalChars"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/typography/totalChars"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/typography/totalChars"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.responsive.home-xvp-overflow-curve",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "overflow-curve",
+      "value": {
+        "390x844": 0,
+        "768x1024": 0,
+        "1440x900": 0,
+        "1920x1080": 0
+      },
+      "unit": "px",
+      "evidence_type": "VERIFIED",
+      "method": "layout-measurement",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-390x844.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-768x1024.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1920x1080.json",
+          "pointer": "/metrics/document/horizontalOverflowPx"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-scroll-linked-changes",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "scroll-linked-changes",
+      "value": {
+        "sampledElements": 78,
+        "changedAfterScroll": 0
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/extras-1440x900.json",
+          "pointer": "/scrollLinked"
+        }
+      ],
+      "statement": "0 of 78 sampled elements changed transform/opacity/clip-path within 140 ms of a 300 px wheel scroll",
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-reduced-motion-response",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "reduced-motion-response",
+      "value": {
+        "runningAnimationsNormal": 0,
+        "runningAnimationsReduced": 0,
+        "cssReducedMotionRules": 0,
+        "jsReducedMotionQueries": 1,
+        "rafCallsReduced": 259,
+        "rafCallsNormal": 926
+      },
+      "evidence_type": "VERIFIED",
+      "method": "web-animations-api",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/motion/animations/running"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/extras-1440x900.json",
+          "pointer": "/reducedMotion/motion/animations/running"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/extras-1440x900.json",
+          "pointer": "/reducedMotion/cssom/reducedMotionRules"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/implementation/instrumentation/matchMediaQueries"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.color.home-1440-dark-scheme-response",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "dark-scheme-response",
+      "value": {
+        "bodyBackground": "rgba(0, 0, 0, 0)",
+        "rootBackground": "rgb(249, 243, 233)",
+        "bodyColor": "rgb(21, 20, 18)",
+        "colorSchemeProperty": "normal",
+        "lightRootBackground": "#f9f3e9",
+        "evaluated": true
+      },
+      "evidence_type": "VERIFIED",
+      "method": "computed-style",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/extras-1440x900.json",
+          "pointer": "/darkScheme"
+        },
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/viewport-1440x900.json",
+          "pointer": "/metrics/color/rootBackground"
+        }
+      ],
+      "confidence": 0.9,
+      "assessment": "neutral"
+    },
+    {
+      "id": "ref-006.motion.home-1440-entrance-frames-captured",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "entrance-frames-captured",
+      "value": [
+        400,
+        900,
+        1600,
+        4200
+      ],
+      "evidence_type": "VERIFIED",
+      "method": "dom",
+      "evidence": [
+        {
+          "path": "datasets/raw/ref-006/home/20261002T162818Z/extras-1440x900.json",
+          "pointer": "/entranceFrames"
+        }
+      ],
+      "confidence": 1,
+      "assessment": "neutral"
+    }
+  ]
+}

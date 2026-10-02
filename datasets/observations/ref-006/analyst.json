@@ -1,0 +1,252 @@
+{
+  "ref_id": "ref-006",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:31:17.795Z",
+  "notes": "The simulator itself (behind the entry buttons) was not entered by the capture; its slider interaction is UNVERIFIED. Observations cover the landing scene and scroll narrative.",
+  "observations": [
+    {
+      "id": "ref-006.accessibility.home-a-entry-disclosure",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "entry-disclosure",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-frame-entrance-4200.jpg",
+          "sha256": "e7a09728c7d62d2c012d1185c2e008837be1163a87f9af2757a2cb0b117cb083"
+        }
+      ],
+      "statement": "The landing scene offers two entry buttons bottom-left: one to enter the simulation with a sub-label warning that it includes distortion and motion, and one to explore without sound with a sub-label saying it is the same experience.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "content-warning",
+        "alternative-path",
+        "motion"
+      ]
+    },
+    {
+      "id": "ref-006.hierarchy.home-a-cinematic-landing",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "cinematic-landing",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-frame-entrance-4200.jpg",
+          "sha256": "e7a09728c7d62d2c012d1185c2e008837be1163a87f9af2757a2cb0b117cb083"
+        }
+      ],
+      "statement": "First read is a large brush-lettered uppercase headline in pink on a dark, warmly lit 3D scene; second read is a rendered character (an eyeball creature in an armchair) on the right; the small logo top-left and the low-contrast entry buttons are last.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "hero",
+        "3d",
+        "tone"
+      ]
+    },
+    {
+      "id": "ref-006.motion.home-a-scroll-captions",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "motion",
+      "property": "scroll-captions",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-top.jpg",
+          "sha256": "16299cb517b758114586c63f2fb1b914881606292205b0c44d32c8f8eb46b6ae"
+        },
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-scroll-50.jpg",
+          "sha256": "d38acf62478f942989667a6479705213654fb0a4fee2ebabbfc17fe753b3287b"
+        },
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/390x844-top.jpg",
+          "sha256": "d7ce64fb20926a77b51bcf624be1eec7e4178906aae60a1fcbb1b6f0a327b051"
+        },
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/390x844-scroll-75.jpg",
+          "sha256": "590a948d40f43b7ad7d30ecf0ccb7ef8ad9089f80847e2333fdf8bc401a3f45d"
+        }
+      ],
+      "statement": "Scrolling advances a narrative: two-line captions (first line pink, second white) replace each other centred over the darkened scene while the camera framing changes; the page shows one short sentence at a time.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "scrollytelling",
+        "narrative"
+      ]
+    },
+    {
+      "id": "ref-006.responsive.home-a-mobile-reframe",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-reframe",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/390x844-top.jpg",
+          "sha256": "d7ce64fb20926a77b51bcf624be1eec7e4178906aae60a1fcbb1b6f0a327b051"
+        },
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-top.jpg",
+          "sha256": "16299cb517b758114586c63f2fb1b914881606292205b0c44d32c8f8eb46b6ae"
+        }
+      ],
+      "statement": "At 390 the scene is reframed rather than scaled: the character fills the frame behind the centred caption, while at 1440 it sits at the right edge with the lamp and room visible.",
+      "confidence": 0.8,
+      "assessment": "strength",
+      "tags": [
+        "art-direction",
+        "reframing"
+      ]
+    },
+    {
+      "id": "ref-006.accessibility.home-a-low-contrast-entry-buttons",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "low-contrast-entry-buttons",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-006/home/20261002T162818Z/1440x900-frame-entrance-4200.jpg",
+          "sha256": "e7a09728c7d62d2c012d1185c2e008837be1163a87f9af2757a2cb0b117cb083"
+        }
+      ],
+      "statement": "The two entry buttons are small, dark-on-dark outlined pills with tiny sub-labels, far less prominent than the headline.",
+      "confidence": 0.8,
+      "assessment": "weakness",
+      "tags": [
+        "cta",
+        "contrast"
+      ]
+    },
+    {
+      "id": "ref-006.motion.home-a-why-disclosure",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "motion",
+      "property": "why-disclosure",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-006.accessibility.home-a-entry-disclosure"
+        },
+        {
+          "observation": "ref-006.motion.home-1440-reduced-motion-response"
+        }
+      ],
+      "statement": "When motion or visual distortion is the content itself, warning before entry and offering a reduced-intensity path respects users who are sensitive to motion; the site also lowers animation-frame activity under prefers-reduced-motion (≈926 → 259). A transferable pattern for any immersive or simulated experience.",
+      "confidence": 0.75,
+      "assessment": "strength",
+      "tags": [
+        "vestibular",
+        "consent-to-motion"
+      ]
+    },
+    {
+      "id": "ref-006.content.home-a-why-one-sentence-at-a-time",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "content",
+      "property": "why-one-sentence-at-a-time",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-006.motion.home-a-scroll-captions"
+        },
+        {
+          "observation": "ref-006.hierarchy.home-a-cinematic-landing"
+        }
+      ],
+      "statement": "An emotional, empathy-building message is paced one sentence per scroll step, so attention cannot skim ahead; this suits low-density storytelling and would frustrate users with a task or comparison goal.",
+      "confidence": 0.65,
+      "assessment": "trade-off",
+      "tags": [
+        "pacing",
+        "storytelling"
+      ]
+    },
+    {
+      "id": "ref-006.implementation.home-a-why-dom-thin",
+      "ref_id": "ref-006",
+      "page": "home",
+      "source_url": "https://seewhateyesee.org/",
+      "capture_id": "20261002T162818Z",
+      "captured_at": "2026-10-02T16:28:18.913Z",
+      "viewport": "cross-viewport",
+      "category": "implementation",
+      "property": "why-dom-thin",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-006.motion.home-a-scroll-captions"
+        },
+        {
+          "observation": "ref-006.implementation.home-1440-canvas-contexts"
+        },
+        {
+          "observation": "ref-006.performance.home-390-long-tasks"
+        }
+      ],
+      "statement": "Almost all content lives in WebGL/canvas (WebGL and WebGL2 contexts requested, ~78 DOM elements at 1440, no measured buttons), so the DOM exposes little to assistive technology and search; heavy main-thread work (73 long tasks on mobile in the lab) is the price of the cinematic scene.",
+      "confidence": 0.7,
+      "assessment": "trade-off",
+      "tags": [
+        "webgl",
+        "a11y-tree"
+      ]
+    }
+  ]
+}

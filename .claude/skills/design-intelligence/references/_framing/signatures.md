@@ -1,0 +1,1 @@
+These are distinctive moves of single references. They are recorded so DI can recognise them and **not** reuse them as templates. Reproducing a signature in another brand's page imitates its owner without its meaning. Learn the conditional principle behind it (linked where one exists), not the move itself.

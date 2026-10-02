@@ -1,0 +1,1 @@
+Cross-cutting process rules. They come from the research report's architecture and from patterns that recur across the whole corpus; they govern *how* DI makes decisions rather than *which* visual decision to make.

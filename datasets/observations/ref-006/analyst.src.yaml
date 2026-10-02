@@ -1,0 +1,84 @@
+# Analyst observations — ref-006 See What Eye See. Compiled by scripts/analyst.ts.
+# Inspected: 1440-frame-entrance-4200, 1440-top, 390-top, 1440-scroll-50, 390-scroll-75.
+notes: "The simulator itself (behind the entry buttons) was not entered by the capture; its slider interaction is UNVERIFIED. Observations cover the landing scene and scroll narrative."
+items:
+  - key: entry-disclosure
+    page: home
+    viewport: 1440x900
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-4200]
+    statement: "The landing scene offers two entry buttons bottom-left: one to enter the simulation with a sub-label warning that it includes distortion and motion, and one to explore without sound with a sub-label saying it is the same experience."
+    confidence: 0.9
+    assessment: strength
+    tags: [content-warning, alternative-path, motion]
+  - key: cinematic-landing
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-4200]
+    statement: "First read is a large brush-lettered uppercase headline in pink on a dark, warmly lit 3D scene; second read is a rendered character (an eyeball creature in an armchair) on the right; the small logo top-left and the low-contrast entry buttons are last."
+    confidence: 0.85
+    assessment: neutral
+    tags: [hero, 3d, tone]
+  - key: scroll-captions
+    page: home
+    viewport: cross-viewport
+    category: motion
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-50, 390x844-top, 390x844-scroll-75]
+    statement: "Scrolling advances a narrative: two-line captions (first line pink, second white) replace each other centred over the darkened scene while the camera framing changes; the page shows one short sentence at a time."
+    confidence: 0.85
+    assessment: neutral
+    tags: [scrollytelling, narrative]
+  - key: mobile-reframe
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "At 390 the scene is reframed rather than scaled: the character fills the frame behind the centred caption, while at 1440 it sits at the right edge with the lamp and room visible."
+    confidence: 0.8
+    assessment: strength
+    tags: [art-direction, reframing]
+  - key: low-contrast-entry-buttons
+    page: home
+    viewport: 1440x900
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-4200]
+    statement: "The two entry buttons are small, dark-on-dark outlined pills with tiny sub-labels, far less prominent than the headline."
+    confidence: 0.8
+    assessment: weakness
+    tags: [cta, contrast]
+  - key: why-disclosure
+    page: home
+    viewport: cross-viewport
+    category: motion
+    type: INFERRED
+    based_on: [entry-disclosure, ref-006.motion.home-1440-reduced-motion-response]
+    statement: "When motion or visual distortion is the content itself, warning before entry and offering a reduced-intensity path respects users who are sensitive to motion; the site also lowers animation-frame activity under prefers-reduced-motion (≈926 → 259). A transferable pattern for any immersive or simulated experience."
+    confidence: 0.75
+    assessment: strength
+    tags: [vestibular, consent-to-motion]
+  - key: why-one-sentence-at-a-time
+    page: home
+    viewport: cross-viewport
+    category: content
+    type: INFERRED
+    based_on: [scroll-captions, cinematic-landing]
+    statement: "An emotional, empathy-building message is paced one sentence per scroll step, so attention cannot skim ahead; this suits low-density storytelling and would frustrate users with a task or comparison goal."
+    confidence: 0.65
+    assessment: trade-off
+    tags: [pacing, storytelling]
+  - key: why-dom-thin
+    page: home
+    viewport: cross-viewport
+    category: implementation
+    type: INFERRED
+    based_on: [scroll-captions, ref-006.implementation.home-1440-canvas-contexts, ref-006.performance.home-390-long-tasks]
+    statement: "Almost all content lives in WebGL/canvas (WebGL and WebGL2 contexts requested, ~78 DOM elements at 1440, no measured buttons), so the DOM exposes little to assistive technology and search; heavy main-thread work (73 long tasks on mobile in the lab) is the price of the cinematic scene."
+    confidence: 0.7
+    assessment: trade-off
+    tags: [webgl, a11y-tree]
