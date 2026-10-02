@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reconciliation overview · Ledgerline</title>
+<meta name="description" content="Ledgerline reconciliation overview: yesterday's match health and the exception queue.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<script src="js/data.js" defer></script>
+<script src="js/chart.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/views.js" defer></script>
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-logo" viewBox="0 0 20 20"><rect width="20" height="20" rx="5" fill="currentColor"/><path d="M5 6.5h10M5 10h6M5 13.5h10" stroke="#fff" stroke-width="1.7" stroke-linecap="round" fill="none"/><circle cx="14.4" cy="10" r="1.45" fill="#fff"/></symbol>
+  <symbol id="i-overview" viewBox="0 0 20 20"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="11" y="3" width="6" height="6" rx="1.5"/><rect x="3" y="11" width="6" height="6" rx="1.5"/><rect x="11" y="11" width="6" height="6" rx="1.5"/></symbol>
+  <symbol id="i-exceptions" viewBox="0 0 20 20"><path d="M10 3.2 2.6 16.2h14.8z" stroke-linejoin="round"/><path d="M10 8.3v3.4M10 13.9v.2"/></symbol>
+  <symbol id="i-payouts" viewBox="0 0 20 20"><path d="M10 3v9M6.5 8.5 10 12l3.5-3.5"/><path d="M3.5 12.5V15A1.5 1.5 0 0 0 5 16.5h10a1.5 1.5 0 0 0 1.5-1.5v-2.5"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 20 20"><path d="M3 8 10 3.5 17 8z" stroke-linejoin="round"/><path d="M5 8.5v6M8.4 8.5v6M11.6 8.5v6M15 8.5v6M3 16.5h14"/></symbol>
+  <symbol id="i-rules" viewBox="0 0 20 20"><path d="M3.5 6h3M10.5 6h6M3.5 14h8M15.5 14h1"/><circle cx="8.5" cy="6" r="2"/><circle cx="13.5" cy="14" r="2"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2.4"/><circle cx="10" cy="10" r="5.2"/><path d="M10 2.6v2.2M10 15.2v2.2M2.6 10h2.2M15.2 10h2.2M4.8 4.8l1.5 1.5M13.7 13.7l1.5 1.5M4.8 15.2l1.5-1.5M13.7 6.3l1.5-1.5"/></symbol>
+  <symbol id="i-help" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M7.9 7.9a2.2 2.2 0 1 1 3 2c-.6.3-.9.7-.9 1.4v.3M10 14v.2"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 20 20"><path d="M5 13.5V9a5 5 0 0 1 10 0v4.5l1.4 1.5H3.6z" stroke-linejoin="round"/><path d="M8.3 17.2a1.8 1.8 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 20 20"><path d="M3.5 6h13M3.5 10h13M3.5 14h13"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 20 20"><path d="m6 8 4 4 4-4"/></symbol>
+  <symbol id="i-left" viewBox="0 0 20 20"><path d="M12 5 7 10l5 5"/></symbol>
+  <symbol id="i-right" viewBox="0 0 20 20"><path d="m8 5 5 5-5 5"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 20 20"><path d="m7 8 3-3 3 3M7 12l3 3 3-3"/></symbol>
+  <symbol id="i-sort-up" viewBox="0 0 20 20"><path d="M10 15V5M6 9l4-4 4 4"/></symbol>
+  <symbol id="i-sort-down" viewBox="0 0 20 20"><path d="M10 5v10M6 11l4 4 4-4"/></symbol>
+  <symbol id="i-caret-up" viewBox="0 0 20 20"><path d="M10 5.5 15.5 14h-11z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-caret-down" viewBox="0 0 20 20"><path d="M10 14.5 4.5 6h11z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 20 20"><path d="M5 17.5v-14M5 4h9.5l-2.2 3.6 2.2 3.6H5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 20 20"><circle cx="8.8" cy="8.8" r="5.2"/><path d="m12.6 12.6 4 4"/></symbol>
+  <symbol id="i-close" viewBox="0 0 20 20"><path d="m5.5 5.5 9 9M14.5 5.5l-9 9"/></symbol>
+  <symbol id="i-s-new" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6.5"/><circle cx="10" cy="10" r="2.6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-s-investigating" viewBox="0 0 20 20"><circle cx="9" cy="9" r="5"/><path d="m12.7 12.7 3.8 3.8"/></symbol>
+  <symbol id="i-s-waiting" viewBox="0 0 20 20"><path d="M6 3.5h8M6 16.5h8M7 3.5v1.8c0 1.7 3 3 3 4.7s-3 3-3 4.7v1.8M13 3.5v1.8c0 1.7-3 3-3 4.7s3 3 3 4.7v1.8"/></symbol>
+  <symbol id="i-s-resolved" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6.5"/><path d="m7 10.2 2.1 2.1 4-4.4"/></symbol>
+  <symbol id="i-download" viewBox="0 0 20 20"><path d="M10 3.5v9M6 9l4 4 4-4M4 16.5h12"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 20 20"><circle cx="10" cy="10" r="6.8"/><path d="M10 6.2v4l2.7 1.7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 20 20"><path d="M11 2.8 4.8 11h4.6l-.9 6.2 6.7-8.4h-4.6z" stroke-linejoin="round"/></symbol>
+  <symbol id="i-note" viewBox="0 0 20 20"><path d="M4 4.5h12v8.5H8.5L5 16v-3H4z" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 20 20"><path d="M4 10h11.5M11 5.5l4.5 4.5-4.5 4.5"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar" aria-label="Product navigation">
+    <a class="brand" href="#" aria-label="Ledgerline home">
+      <svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="brand-name">Ledgerline</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a class="nav-link" href="#" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-overview"/></svg><span class="nav-label">Overview</span></a></li>
+        <li><a class="nav-link" href="#exceptions" data-nav="exceptions"><svg class="icon" aria-hidden="true"><use href="#i-exceptions"/></svg><span class="nav-label">Exceptions</span><span class="nav-count" id="nav-count" aria-label="open exceptions"></span></a></li>
+        <li><a class="nav-link" href="#" data-soon="Payouts"><svg class="icon" aria-hidden="true"><use href="#i-payouts"/></svg><span class="nav-label">Payouts</span></a></li>
+        <li><a class="nav-link" href="#" data-soon="Bank feeds"><svg class="icon" aria-hidden="true"><use href="#i-bank"/></svg><span class="nav-label">Bank feeds</span></a></li>
+        <li><a class="nav-link" href="#" data-soon="Rules"><svg class="icon" aria-hidden="true"><use href="#i-rules"/></svg><span class="nav-label">Rules</span></a></li>
+        <li><a class="nav-link" href="#" data-soon="Settings"><svg class="icon" aria-hidden="true"><use href="#i-settings"/></svg><span class="nav-label">Settings</span></a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">
+      <a class="nav-link" href="#" data-soon="Help"><svg class="icon" aria-hidden="true"><use href="#i-help"/></svg><span class="nav-label">Help &amp; docs</span></a>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <header class="topbar">
+    <button class="icon-btn nav-toggle" id="nav-toggle" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+    <a class="brand brand-compact" href="#" aria-label="Ledgerline home"><svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg></a>
+
+    <div class="pop-wrap">
+      <button class="switcher-btn" id="switcher-btn" aria-expanded="false" aria-controls="switcher-pop" aria-label="Workspace and environment: Brightwater Group, Production">
+        <span class="org-mark" aria-hidden="true">BW</span>
+        <span class="switcher-org">Brightwater Group</span>
+        <span class="env-pill" id="env-pill" data-env="production">Production</span>
+        <svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+      </button>
+      <div class="popover" id="switcher-pop" hidden>
+        <div class="pop-head">
+          <span class="org-mark" aria-hidden="true">BW</span>
+          <div><strong>Brightwater Group</strong><span>3 legal entities · 4 payment providers</span></div>
+        </div>
+        <fieldset class="pop-group">
+          <legend>Environment</legend>
+          <label class="radio-row"><input type="radio" name="env" value="production" checked><span><strong>Production</strong><small>Live payouts and bank feeds</small></span></label>
+          <label class="radio-row"><input type="radio" name="env" value="sandbox"><span><strong>Sandbox</strong><small>Test data, safe to experiment</small></span></label>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="topbar-spacer"></div>
+    <p class="sync" id="sync"><span class="sync-dot" aria-hidden="true"></span><span>Bank feeds synced 08:30</span></p>
+    <button class="icon-btn" type="button" data-soon="Notifications" aria-label="Notifications">
+      <svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg>
+    </button>
+    <div class="pop-wrap">
+      <button class="user-btn" id="user-btn" aria-expanded="false" aria-controls="user-pop" aria-label="Account menu for Maren Schulz">
+        <span class="avatar avatar-me" aria-hidden="true">MS</span>
+        <span class="user-name">Maren Schulz</span>
+        <svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron"/></svg>
+      </button>
+      <div class="popover popover-end" id="user-pop" hidden>
+        <div class="pop-head pop-head-user">
+          <strong>Maren Schulz</strong><span>Finance Ops Manager</span><span>maren.schulz@brightwater.example</span>
+        </div>
+        <ul class="pop-list">
+          <li><a href="#" data-soon="Profile">Profile</a></li>
+          <li><a href="#" data-soon="Notification settings">Notification settings</a></li>
+          <li><a href="#" data-soon="Keyboard shortcuts">Keyboard shortcuts</a></li>
+          <li><a href="#" data-soon="Sign out">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" id="main" tabindex="-1">
+    <div class="env-banner" id="env-banner" hidden>
+      <strong>Sandbox.</strong> You are looking at test data; changes here never touch live books.
+      <button type="button" class="link-btn" id="env-back">Back to Production</button>
+    </div>
+
+    <div class="page-head">
+      <div class="page-title">
+        <h1>Reconciliation overview</h1>
+        <p class="page-sub"><span id="period-text">1 Oct 2026</span> <span class="sep" aria-hidden="true">·</span> <span id="run-text">Nightly run finished 06:27</span></p>
+      </div>
+      <form class="filters" id="filters" aria-label="Dashboard filters">
+        <div class="field">
+          <label for="f-period">Period</label>
+          <select id="f-period">
+            <option value="1">Yesterday</option>
+            <option value="7">Last 7 days</option>
+            <option value="14">Last 14 days</option>
+            <option value="30">Last 30 days</option>
+            <option value="custom">Custom range…</option>
+          </select>
+        </div>
+        <div class="field field-date" data-custom hidden><label for="f-from">From</label><input type="date" id="f-from"></div>
+        <div class="field field-date" data-custom hidden><label for="f-to">To</label><input type="date" id="f-to"></div>
+        <div class="field">
+          <label for="f-provider">Payment provider</label>
+          <select id="f-provider"><option value="all">All providers</option></select>
+        </div>
+        <div class="field field-wide">
+          <label for="f-entity">Account / entity</label>
+          <select id="f-entity"><option value="all">All entities</option></select>
+        </div>
+        <button type="button" class="btn btn-quiet" id="f-reset" hidden>Reset</button>
+      </form>
+    </div>
+
+    <section class="kpis" id="kpis" aria-label="Key metrics for the selected period"></section>
+    <p class="m-cmp" id="m-cmp"></p>
+
+    <div class="board" id="board">
+      <section class="card ex-card" id="exceptions" aria-labelledby="ex-title">
+        <div class="card-head">
+          <div>
+            <h2 class="card-title" id="ex-title">Exceptions</h2>
+            <p class="card-sub"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-flag"/></svg> Urgent = past the 3‑day SLA or ≥ €5,000</p>
+          </div>
+          <div class="card-actions">
+            <div class="search">
+              <label class="sr-only" for="f-q">Search exceptions</label>
+              <svg class="icon icon-sm" aria-hidden="true"><use href="#i-search"/></svg>
+              <input type="search" id="f-q" placeholder="Search ID, ref, amount" autocomplete="off" aria-keyshortcuts="/">
+            </div>
+            <button type="button" class="btn btn-quiet" id="export-btn"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-download"/></svg>Export CSV</button>
+          </div>
+        </div>
+        <div class="toolbar">
+          <fieldset class="segmented" id="views">
+            <legend class="sr-only">Quick view</legend>
+            <input type="radio" name="view" id="v-all" value="all" checked><label for="v-all">All <span class="seg-count" data-count="all"></span></label>
+            <input type="radio" name="view" id="v-urgent" value="urgent"><label for="v-urgent"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-flag"/></svg>Urgent <span class="seg-count" data-count="urgent"></span></label>
+            <input type="radio" name="view" id="v-unassigned" value="unassigned"><label for="v-unassigned">Unassigned <span class="seg-count" data-count="unassigned"></span></label>
+            <input type="radio" name="view" id="v-mine" value="mine"><label for="v-mine">Mine <span class="seg-count" data-count="mine"></span></label>
+          </fieldset>
+          <div class="field field-inline">
+            <label for="f-status">Status</label>
+            <select id="f-status">
+              <option value="open">All open</option>
+              <option value="new">New</option>
+              <option value="investigating">Investigating</option>
+              <option value="waiting">Waiting on provider</option>
+              <option value="resolved">Resolved in period</option>
+              <option value="all">All, incl. resolved in period</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-wrap" id="table-wrap">
+          <table class="table" id="ex-table" aria-describedby="table-help">
+            <caption class="sr-only">Exceptions</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="c-id" data-sort="id" aria-sort="none"><button type="button" class="sort-btn">ID<svg class="icon icon-xs" aria-hidden="true"><use href="#i-sort"/></svg></button></th>
+                <th scope="col" class="c-provider">Provider<span class="t-reason-h"> / reason</span></th>
+                <th scope="col" class="c-num" data-sort="amount" aria-sort="none"><button type="button" class="sort-btn" title="Sorted by EUR equivalent">Amount<svg class="icon icon-xs" aria-hidden="true"><use href="#i-sort"/></svg></button></th>
+                <th scope="col" class="c-cur"><abbr title="Currency">Cur.</abbr></th>
+                <th scope="col" class="c-num" data-sort="age" aria-sort="descending"><button type="button" class="sort-btn">Age<svg class="icon icon-xs" aria-hidden="true"><use href="#i-sort-down"/></svg></button></th>
+                <th scope="col" class="c-reason">Reason</th>
+                <th scope="col" class="c-status">Status</th>
+                <th scope="col" class="c-assignee">Assignee</th>
+              </tr>
+            </thead>
+            <tbody id="ex-body"></tbody>
+          </table>
+          <div class="empty" id="ex-empty" hidden>
+            <p><strong>Nothing matches these filters.</strong></p>
+            <button type="button" class="btn btn-quiet" id="empty-reset">Clear table filters</button>
+          </div>
+        </div>
+        <p class="table-foot" id="table-help"><span id="table-summary"></span> <span class="kbd-hint">Use <kbd>↑</kbd> <kbd>↓</kbd> to move, <kbd>Enter</kbd> to open, <kbd>Esc</kbd> to close.</span></p>
+      </section>
+
+      <div class="rail" id="rail">
+        <section class="card trend-card" aria-labelledby="trend-title">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title" id="trend-title">Matched vs unmatched volume</h2>
+              <p class="card-sub">Last 30 days · EUR equivalent</p>
+            </div>
+          </div>
+          <ul class="legend" aria-hidden="true">
+            <li><span class="swatch swatch-m"></span>Matched</li>
+            <li><span class="swatch swatch-u"></span>Unmatched</li>
+            <li><span class="swatch swatch-band"></span>Selected period</li>
+          </ul>
+          <p class="readout" id="trend-readout" aria-live="polite"></p>
+          <div class="chart" id="trend-chart" tabindex="0" role="group" aria-label="Daily matched and unmatched volume, last 30 days. Use left and right arrow keys to read each day." aria-describedby="trend-readout"></div>
+          <div class="sr-only"><table id="trend-table"><caption>Daily matched and unmatched volume, EUR</caption><thead><tr><th scope="col">Date</th><th scope="col">Matched</th><th scope="col">Unmatched</th><th scope="col">Matched rate</th></tr></thead><tbody></tbody></table></div>
+        </section>
+
+        <section class="card feed-card" aria-labelledby="feed-title">
+          <div class="card-head">
+            <h2 class="card-title" id="feed-title">Recent activity</h2>
+          </div>
+          <ol class="feed" id="feed"></ol>
+        </section>
+      </div>
+
+      <aside class="detail" id="detail" aria-labelledby="d-title" hidden></aside>
+    </div>
+
+    <section class="m-urgent" id="m-urgent" aria-labelledby="m-urgent-title">
+      <h2 class="card-title" id="m-urgent-title">Urgent exceptions</h2>
+      <ul class="m-list" id="m-list"></ul>
+      <p class="m-note">This is a read-only view. Open Ledgerline on a tablet or desktop to assign and resolve.</p>
+    </section>
+  </main>
+</div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>

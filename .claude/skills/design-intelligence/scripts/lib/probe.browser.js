@@ -382,6 +382,24 @@ async (opts) => {
   let gradientArea = 0;
   const gradientColorArea = {};
   let imageBgCount = 0;
+  // The canvas background comes from <html>, or from <body> when <html> has none (CSS propagation).
+  // It covers the whole document, so page-level gradients and colours count at full area (probe 0.1.2+).
+  {
+    const docArea = Math.max(1, doc.scrollHeight * vw);
+    const htmlS = cs(doc);
+    const bodyS = document.body ? cs(document.body) : null;
+    const htmlHas = (parseColor(htmlS.backgroundColor)?.a ?? 0) > 0 || htmlS.backgroundImage !== 'none';
+    const canvas = htmlHas || !bodyS ? htmlS : bodyS;
+    const c = parseColor(canvas.backgroundColor);
+    if (c && c.a > 0.5) bgArea[hex(c)] = (bgArea[hex(c)] || 0) + docArea;
+    if (/gradient\(/.test(canvas.backgroundImage)) {
+      gradientArea += docArea;
+      for (const m of canvas.backgroundImage.matchAll(/rgba?\([^)]*\)|oklch\([^)]*\)|color\([^)]*\)/g)) {
+        const gc = parseColor(m[0]);
+        if (gc && gc.a > 0.3) gradientColorArea[hex(gc)] = (gradientColorArea[hex(gc)] || 0) + docArea;
+      }
+    }
+  }
   for (const el of elements) {
     const s = cs(el);
     const r = el.getBoundingClientRect();

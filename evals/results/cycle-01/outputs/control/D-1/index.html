@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shade — Issue 14 — The Lighthouse Review</title>
+  <meta name="description" content="Issue 14 of The Lighthouse Review, an independent quarterly of architecture, cities and public space: how hot cities design for shade. Includes the opening of Leila Haddad’s cover essay, The Architecture of Shade.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121722" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23233049'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23EBD4A5' stroke-width='2'/%3E%3Cpath d='M16 7a9 9 0 0 1 0 18z' fill='%23EBD4A5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#essay">Skip to the cover essay</a>
+
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <path class="s-ink" d="M0 0v6" stroke-width=".8" stroke-opacity=".45"/>
+      </pattern>
+      <pattern id="earth" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+        <path class="s-ink" d="M0 0v4" stroke-width=".7" stroke-opacity=".5"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="masthead">
+    <div class="masthead__bar">
+      <div class="wrap masthead__bar-inner">
+        <p>An independent quarterly of architecture, cities &amp; public&nbsp;space</p>
+        <p class="masthead__issue">No.&nbsp;14 <span aria-hidden="true">·</span> Shade <span aria-hidden="true">·</span> Autumn&nbsp;2026</p>
+      </div>
+    </div>
+    <div class="wrap masthead__main">
+      <a class="wordmark" href="./">
+        <svg class="wordmark__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 3a13 13 0 0 1 0 26z" fill="currentColor"/>
+        </svg>
+        <span class="wordmark__name">The Lighthouse Review</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#contents">Contents</a></li>
+          <li><a href="#archive">Archive</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <a class="button button--ink button--small masthead__cta" href="#subscribe">Subscribe</a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ COVER / ISSUE IDENTITY ============ -->
+    <section class="cover" aria-labelledby="issue-title">
+      <div class="wrap">
+        <div class="cover__art" data-sundial>
+          <div class="cover__face cover__face--shade">
+            <p class="cover__kicker"><span>No.&nbsp;14</span><span>Autumn 2026</span></p>
+            <p class="cover__strap">On arcades, awnings, trees and the right to a cool place to&nbsp;stand</p>
+            <h1 class="cover__title" id="issue-title"><span class="visually-hidden">The Lighthouse Review, Issue 14: </span>Shade</h1>
+          </div>
+          <div class="cover__face cover__face--sun" aria-hidden="true">
+            <p class="cover__kicker"><span>No.&nbsp;14</span><span>Autumn 2026</span></p>
+            <p class="cover__strap">On arcades, awnings, trees and the right to a cool place to&nbsp;stand</p>
+            <p class="cover__title">Shade</p>
+          </div>
+        </div>
+        <p class="cover__caption" data-sundial-caption>Cover drawing: light falling through an arcade at <time datetime="14:00">14:00</time>, the hottest hour of the day.</p>
+
+        <div class="cover__intro">
+          <div class="cover__letter">
+            <h2 class="label">From the editor</h2>
+            <p class="cover__lede">Shade is the oldest form of climate control, and the most democratic: it costs nothing to stand in. This issue is about how hot cities made it, lost it, and are now learning&nbsp;— street by street, tree by tree&nbsp;— to make it again.</p>
+            <p class="cover__sign">Mateo Arrieta, <span>Editor</span></p>
+          </div>
+          <nav class="cover__lines" aria-labelledby="inside-label">
+            <h2 class="label" id="inside-label">Highlights</h2>
+            <ul>
+              <li>
+                <a href="#essay">
+                  <span class="cover__line-title">The Architecture of Shade</span>
+                  <span class="cover__line-dek">Leila Haddad on the line between sun and shadow</span>
+                </a>
+              </li>
+              <li>
+                <a href="#interview">
+                  <span class="cover__line-title">Plant the Shade First</span>
+                  <span class="cover__line-dek">Landscape architect Ana Lucía Benedetti in conversation</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contents">
+                  <span class="cover__line-title">Awnings, lattices &amp; a bus stop at 41°C</span>
+                  <span class="cover__line-dek">Six more pieces, from projects to the archive</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COVER ESSAY ============ -->
+    <article class="essay" id="essay" aria-labelledby="essay-title">
+      <div class="wrap">
+        <div class="essay__layout">
+          <header class="essay__head">
+            <p class="kicker"><span class="kicker__strong">Cover essay</span> <span class="kicker__sep" aria-hidden="true">/</span> Essays</p>
+            <h2 class="essay__title" id="essay-title">The Architecture of Shade</h2>
+            <p class="essay__standfirst">For most of history, cities in hot climates were built to make shadows. Then air-conditioning taught us to forget how. Leila Haddad walks the line between sun and shade&nbsp;— and asks who gets to stand on the cool side of&nbsp;it.</p>
+          </header>
+
+          <div class="essay__meta">
+            <p class="essay__author">By <span class="essay__author-name">Leila Haddad</span></p>
+            <dl class="meta-list">
+              <div><dt>Reading time</dt><dd>16 minutes</dd></div>
+              <div><dt>Drawings</dt><dd>Ines Achterberg</dd></div>
+              <div><dt>In print</dt><dd>Issue 14, pp.&nbsp;8–27</dd></div>
+            </dl>
+          </div>
+
+          <div class="essay__body prose">
+            <p class="prose__opening"><span class="lead-in">At two o’clock on a July afternoon,</span> the great square in front of the covered market in Ilmara is empty. Not quiet&nbsp;— empty. Its pale limestone paving, laid in the 1970s when the city decided it needed a plaza in the European manner, throws back so much heat that the air above it trembles. On the far side, under the market’s arcade, perhaps two hundred people are doing what people in hot cities have always done in the middle of the day: waiting it out. They sit on the stone ledge that runs between the columns, lean against the piers, sell cold water and phone credit, doze, argue about football. The square is the city’s showpiece. The arcade is where its life is.</p>
+
+            <p>I have spent much of the past three years thinking about the line that separates those two places: the hard, moving edge where sunlight becomes shadow. It runs through every city I visited for this essay, and through a great many I did not. It may be the most important line in the design of a hot city, and it almost never appears on a&nbsp;plan.</p>
+
+            <h3>A material without mass</h3>
+
+            <p>Shade is a strange thing to design. It has no weight, no cost per square metre and no line in a schedule of finishes. It is rarely photographed for award submissions&nbsp;— at least not at noon, when it matters. It moves: an arcade that lies deep in shadow at ten in the morning can be a strip of glare by four. Shade is less an object than an arrangement between a surface, the sun and the hour, and its success is measured not in the building but in the body: a lower skin temperature, a slower pulse, a decision to walk rather than drive.</p>
+
+            <p class="has-note">And yet for most of urban history, shade was among the first things a city was built to provide. The lanes of old desert towns are not narrow by accident; a street much narrower than its walls are tall stays in shadow for most of the day.<a class="note-ref" href="#note-1" id="note-1-ref" aria-describedby="note-1"><span class="visually-hidden">Note </span>1</a> Courtyards gather the cool of the night and hold it well into the afternoon. Arcades, loggias, colonnades, porticoes&nbsp;— the sheer number of words we have for them says something about how universal the idea is&nbsp;— wrap the public edge of a building in a band of shade that belongs to everyone who passes. The lattice screen, the awning, the pergola heavy with vine: none of these is decoration. Together they make up a climate technology refined over centuries, and that technology was, crucially, civic. Shade was something a city owed to the people walking through&nbsp;it.<span class="sidenote" id="note-1" role="note"><span class="sidenote__num" aria-hidden="true">1</span> Architects describe the proportion as H/W: the height of the street wall over the width of the street. In a north–south street at about 2&thinsp;:&thinsp;1, direct sun reaches the paving only in a short window either side of noon. See Fig.&nbsp;1.</span></p>
+
+            <figure class="figure figure--canyon" aria-labelledby="fig-1-caption">
+              <div class="canyon">
+                <div class="canyon__panel">
+                  <svg class="art" viewBox="0 0 200 206" aria-hidden="true" focusable="false">
+                    <rect class="f-sand2" x="10" y="60" width="60" height="120"/>
+                    <rect class="f-sand2" x="130" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="10" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="130" y="60" width="60" height="120"/>
+                    <path class="f-shade o-80" d="M70 60 130 110V180H70Z"/>
+                    <path class="s-terra" d="M24 14 70 52.6M52 14 108 61M80 14 140 64.4" stroke-dasharray="2 4"/>
+                    <path class="s-terra" d="M70 60 130 110"/>
+                    <rect fill="url(#earth)" x="0" y="180" width="200" height="10"/>
+                    <path class="s-ink w-15" d="M0 180H200M70 180V60H10V180M130 180V60H190V180"/>
+                    <circle class="f-terra" cx="16" cy="12" r="6"/>
+                  </svg>
+                  <p class="canyon__time">09:00</p>
+                </div>
+                <div class="canyon__panel">
+                  <svg class="art" viewBox="0 0 200 206" aria-hidden="true" focusable="false">
+                    <rect class="f-sand2" x="10" y="60" width="60" height="120"/>
+                    <rect class="f-sand2" x="130" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="10" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="130" y="60" width="60" height="120"/>
+                    <path class="f-shade o-80" d="M70 60 91 180H70Z"/>
+                    <rect class="f-sun" x="91" y="177" width="39" height="3"/>
+                    <path class="s-terra" d="M66 20 72.6 58M88 20 96 64M110 20 118 64" stroke-dasharray="2 4"/>
+                    <path class="s-terra" d="M70 60 91 180"/>
+                    <rect fill="url(#earth)" x="0" y="180" width="200" height="10"/>
+                    <path class="s-ink w-15" d="M0 180H200M70 180V60H10V180M130 180V60H190V180"/>
+                    <circle class="f-terra" cx="62" cy="12" r="6"/>
+                  </svg>
+                  <p class="canyon__time">12:00</p>
+                </div>
+                <div class="canyon__panel">
+                  <svg class="art" viewBox="0 0 200 206" aria-hidden="true" focusable="false">
+                    <rect class="f-sand2" x="10" y="60" width="60" height="120"/>
+                    <rect class="f-sand2" x="130" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="10" y="60" width="60" height="120"/>
+                    <rect fill="url(#hatch)" x="130" y="60" width="60" height="120"/>
+                    <path class="f-shade o-80" d="M130 60 70 110V180H130Z"/>
+                    <path class="s-terra" d="M176 14 130 52.6M148 14 92 61M120 14 60 64.4" stroke-dasharray="2 4"/>
+                    <path class="s-terra" d="M130 60 70 110"/>
+                    <rect fill="url(#earth)" x="0" y="180" width="200" height="10"/>
+                    <path class="s-ink w-15" d="M0 180H200M70 180V60H10V180M130 180V60H190V180"/>
+                    <circle class="f-terra" cx="184" cy="12" r="6"/>
+                  </svg>
+                  <p class="canyon__time">15:00</p>
+                </div>
+              </div>
+              <figcaption id="fig-1-caption"><span class="figure__num">Fig.&nbsp;1</span> Section through a canyon street with walls twice as tall as the street is wide, at three hours of a summer day. At 09:00 and 15:00 the paving lies wholly in shade; only around noon does the sun reach the ground.</figcaption>
+            </figure>
+
+            <blockquote class="pullquote" aria-hidden="true">
+              <p>Shade was something a city owed to the people walking through it. Somewhere in the twentieth century, we stopped&nbsp;paying.</p>
+            </blockquote>
+
+            <p>Somewhere in the twentieth century, we stopped paying. Air-conditioning moved comfort indoors and made it private: something you buy by the hour, behind a sealed facade. Streets were widened for cars, and the buildings along them retreated behind setbacks and car parks. The arcade, expensive to build and awkward to let, quietly disappeared from development codes. Mature trees were felled for sightlines, signage and buried cables, and replaced, if at all, by saplings that would need twenty years to cast a useful shadow.</p>
+
+            <h3>The shade gap</h3>
+
+            <p>The result, in many fast-growing hot cities, is a public realm that is not merely uncomfortable but, for several months of the year, genuinely dangerous&nbsp;— and dangerous above all for the people who cannot retreat into a cooled car or office: the bus rider, the street vendor, the delivery cyclist, the child walking home from school. Map the surface temperature of almost any such city from above and it will trace the outline of its tree canopy with depressing precision. Map the canopy, and you have traced its incomes. The shade map of a city is very often its wealth map, redrawn in a cooler&nbsp;ink.</p>
+
+            <p>This is why I have come to think of shade not as an amenity but as infrastructure: as basic, and as political, as drainage or street lighting. Nobody is expected to bring their own streetlight. Why should anyone have to bring their own shadow?</p>
+
+            <p>The good news is that the knowledge was never lost, only mislaid. In Sahrane, a small team in the city’s planning office has spent a decade quietly rewriting the building code, so that every new frontage on a main street must now give back a covered walkway at least three metres deep. Nobody there calls it an arcade; the developers call it the compliance strip. But walk along one at two in the afternoon and you will find a stone ledge, people leaning on the piers and, somewhere, an argument about&nbsp;football.</p>
+          </div>
+
+          <footer class="essay__foot">
+            <p class="essay__progress"><span class="essay__progress-bar" aria-hidden="true"><span></span></span>You have read the first 760 of 3,900 words. About 13 minutes remain.</p>
+            <a class="button button--ink" href="issue-14/the-architecture-of-shade.html">Continue reading <span class="visually-hidden">The Architecture of Shade</span><span aria-hidden="true" class="button__arrow">→</span></a>
+            <p class="essay__bio"><span class="essay__bio-name">Leila Haddad</span> is an architect and writer. She teaches at the School of the Built Environment in Ilmara; her book on the courtyard house, <cite>Cool Rooms</cite>, is published next spring.</p>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============ CONTENTS ============ -->
+    <section class="contents" id="contents" aria-labelledby="contents-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="contents-title">In this issue</h2>
+          <p class="section-head__note">Essays, projects, conversations and notes from the field. Page numbers refer to the print&nbsp;edition.</p>
+        </header>
+
+        <ol class="teasers">
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <defs>
+                    <pattern id="awning-stripes" width="12" height="12" patternUnits="userSpaceOnUse">
+                      <rect class="f-terra" width="6" height="12"/><rect class="f-paper" x="6" width="6" height="12"/>
+                    </pattern>
+                  </defs>
+                  <rect class="f-sand" width="160" height="120"/>
+                  <rect class="f-sand2" y="96" width="160" height="24"/>
+                  <path class="f-shadow" d="M18 55h124l18 30v11H40z"/>
+                  <path class="f-shadow" d="M40 96h120v13H53z"/>
+                  <rect class="f-shade" x="36" y="46" width="88" height="50"/>
+                  <path class="s-sand w-15" d="M65 46v50M95 46v50"/>
+                  <path fill="url(#awning-stripes)" d="M30 28h100l12 24H18z"/>
+                  <path class="f-terra" d="M18 52h124v3a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0a4.429 4.429 0 0 1-8.857 0z"/>
+                  <path class="s-ink w-15" d="M30 28h100"/>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Essays</span><span class="teaser__page">p.&nbsp;28</span></p>
+              <h3 class="teaser__title"><a href="issue-14/a-short-history-of-the-awning.html">A Short History of the Awning</a></h3>
+              <p class="teaser__dek">Canvas, a pole and a length of rope: how the humblest shade on the street outlived a century of modernisation&nbsp;— and why cities keep trying to ban it.</p>
+              <p class="teaser__meta">Tomás Ferrán <span aria-hidden="true">·</span> 9&nbsp;min read</p>
+            </article>
+          </li>
+
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <rect class="f-sand" width="160" height="120"/>
+                  <rect class="f-sand2" y="44" width="160" height="32"/>
+                  <path class="s-paper w-15" d="M0 60h160" stroke-dasharray="7 6"/>
+                  <g class="f-shadow">
+                    <circle cx="21" cy="44" r="14"/><circle cx="57" cy="44" r="14"/><circle cx="93" cy="44" r="14"/><circle cx="129" cy="44" r="14"/><circle cx="165" cy="44" r="14"/>
+                    <circle cx="39" cy="94" r="14"/><circle cx="75" cy="94" r="14"/><circle cx="111" cy="94" r="14"/><circle cx="147" cy="94" r="14"/><circle cx="3" cy="94" r="14"/>
+                  </g>
+                  <g class="f-green">
+                    <circle cx="12" cy="35" r="14"/><circle cx="48" cy="35" r="14"/><circle cx="84" cy="35" r="14"/><circle cx="120" cy="35" r="14"/><circle cx="156" cy="35" r="14"/>
+                    <circle cx="30" cy="85" r="14"/><circle cx="66" cy="85" r="14"/><circle cx="102" cy="85" r="14"/><circle cx="138" cy="85" r="14"/><circle cx="-6" cy="85" r="14"/>
+                  </g>
+                  <g class="f-sun o-80">
+                    <circle cx="44" cy="31" r="1.6"/><circle cx="88" cy="40" r="1.3"/><circle cx="117" cy="30" r="1.6"/><circle cx="27" cy="80" r="1.3"/><circle cx="70" cy="90" r="1.6"/><circle cx="135" cy="81" r="1.3"/><circle cx="104" cy="88" r="1.2"/>
+                  </g>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Projects</span><span class="teaser__page">p.&nbsp;40</span></p>
+              <h3 class="teaser__title"><a href="issue-14/ninety-one-trees-on-harbour-street.html">Ninety-one Trees on Harbour Street</a></h3>
+              <p class="teaser__dek">Ilmara replanted a two-kilometre boulevard with a canopy designed to close over the carriageway within eight years. We walked it at noon, in year&nbsp;three.</p>
+              <p class="teaser__meta">Priya Raman <span aria-hidden="true">·</span> 12&nbsp;min read</p>
+            </article>
+          </li>
+
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <rect class="f-sand" width="160" height="120"/>
+                  <path class="f-shadow" d="M0 120V78L160 38v82z"/>
+                  <g transform="rotate(-14 80 60)">
+                    <rect class="f-sun" x="-12" y="50" width="150" height="16"/>
+                    <path class="s-ink w-1" d="M-6 50v8M-1 50v4M4 50v4M9 50v4M14 50v4M19 50v8M24 50v4M29 50v4M34 50v4M39 50v4M44 50v8M49 50v4M54 50v4M59 50v4M64 50v4M69 50v8M74 50v4M79 50v4M84 50v4M89 50v4M94 50v8M99 50v4M104 50v4M109 50v4M114 50v4M119 50v8M124 50v4M129 50v4"/>
+                    <rect class="f-terra" x="126" y="40" width="36" height="34" rx="7"/>
+                    <circle class="f-paper" cx="144" cy="57" r="6"/>
+                  </g>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Interviews</span><span class="teaser__page">p.&nbsp;52</span></p>
+              <h3 class="teaser__title"><a href="issue-14/the-heat-officer.html">The Heat Officer</a></h3>
+              <p class="teaser__dek">Nuraya appointed its first chief heat officer three summers ago. Mariam Osei on budgets, bus stops and why her most useful tool is a tape&nbsp;measure.</p>
+              <p class="teaser__meta">Interview by Jonas Weller <span aria-hidden="true">·</span> 11&nbsp;min read</p>
+            </article>
+          </li>
+
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <rect class="f-glare" width="160" height="120"/>
+                  <circle class="f-terra" cx="128" cy="26" r="13"/>
+                  <rect class="f-sand2" y="98" width="160" height="22"/>
+                  <path class="f-shadow" d="M53 98h4l-9 9h-4z"/>
+                  <ellipse class="f-shadow" cx="44" cy="109" rx="9" ry="2.6"/>
+                  <path class="f-shadow" d="M74 98h44l-7 6H67z"/>
+                  <rect class="f-ink" x="54" y="36" width="3" height="62"/>
+                  <circle class="f-ink" cx="55.5" cy="32" r="9"/>
+                  <circle class="f-sun" cx="55.5" cy="32" r="5"/>
+                  <rect class="f-ink" x="74" y="82" width="44" height="4"/>
+                  <path class="s-ink w-25" d="M79 86v12M113 86v12"/>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Field notes</span><span class="teaser__page">p.&nbsp;74</span></p>
+              <h3 class="teaser__title"><a href="issue-14/six-hours-at-a-bus-stop.html">Six Hours at a Bus Stop, 41°C</a></h3>
+              <p class="teaser__dek">On the edge of Sahrane, a writer sits at an unshaded stop from ten until four, counting who waits, who gives up and who brings an&nbsp;umbrella.</p>
+              <p class="teaser__meta">Oumar Diallo <span aria-hidden="true">·</span> 6&nbsp;min read</p>
+            </article>
+          </li>
+
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <defs>
+                    <pattern id="lattice" width="10" height="10" patternUnits="userSpaceOnUse">
+                      <rect class="f-shade" width="10" height="10"/><circle class="f-sun" cx="5" cy="5" r="2.4"/>
+                    </pattern>
+                    <pattern id="lattice-cast" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="skewX(-40) scale(1 .6)">
+                      <rect class="f-shadow" width="10" height="10"/><circle class="f-sun" cx="5" cy="5" r="2.6"/>
+                    </pattern>
+                  </defs>
+                  <rect class="f-sand" width="160" height="120"/>
+                  <rect class="f-sand2" y="92" width="160" height="28"/>
+                  <path fill="url(#lattice-cast)" d="M62 92h72l26 28H76z"/>
+                  <rect fill="url(#lattice)" x="20" y="12" width="50" height="80"/>
+                  <path class="s-ink w-15" d="M20 12h50v80H20z"/>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Essays</span><span class="teaser__page">p.&nbsp;82</span></p>
+              <h3 class="teaser__title"><a href="issue-14/the-politics-of-the-lattice.html">The Politics of the Lattice</a></h3>
+              <p class="teaser__dek">The screens that cool a room also hide the people inside it. On latticework, privacy and who gets to look out at the&nbsp;street.</p>
+              <p class="teaser__meta">Hana Moradi <span aria-hidden="true">·</span> 10&nbsp;min read</p>
+            </article>
+          </li>
+
+          <li class="teaser">
+            <article>
+              <div class="teaser__plate">
+                <svg class="art" viewBox="0 0 160 120" aria-hidden="true" focusable="false">
+                  <rect class="f-sand" width="160" height="120"/>
+                  <rect class="f-paper" x="26" y="12" width="108" height="96"/>
+                  <rect class="f-sand2" x="56" y="38" width="48" height="44"/>
+                  <path class="f-shadow" d="M56 38h48v11H67v33H56z"/>
+                  <circle class="f-green" cx="88" cy="63" r="10"/>
+                  <circle class="s-ink w-1" cx="69" cy="68" r="4"/>
+                  <path class="s-ink w-15" d="M26 38h30M104 38h30M26 82h30M104 82h30M80 12v26M80 82v26"/>
+                  <path class="s-ink w-25" d="M56 38h48v44H56z"/>
+                  <path class="s-ink w-5" d="M72 108H26V12h108v96H88"/>
+                </svg>
+              </div>
+              <p class="teaser__kicker"><span>Archive</span><span class="teaser__page">p.&nbsp;96</span></p>
+              <h3 class="teaser__title"><a href="issue-14/the-courtyard-is-a-machine.html">The Courtyard Is a Machine</a></h3>
+              <p class="teaser__dek">From Issue&nbsp;3, our most requested essay: the thermal logic of the courtyard house, reprinted with new drawings and a postscript by the&nbsp;author.</p>
+              <p class="teaser__meta">Yusuf Demir <span aria-hidden="true">·</span> 15&nbsp;min read</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ INTERVIEW ============ -->
+    <section class="interview" id="interview" aria-labelledby="interview-title">
+      <div class="wrap interview__inner">
+        <figure class="interview__art">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+            <defs>
+              <filter id="soften" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.3"/></filter>
+              <pattern id="paving" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0V50H0" fill="none" stroke="#0B1512" stroke-opacity=".22" stroke-width="1"/></pattern>
+              <filter id="penumbra" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="2"/></filter>
+              <mask id="canopy-shadow" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><path fill="#fff" filter="url(#penumbra)" d="M-20 -20H234L238 0A21.9 21.9 0 0 0 245.0 28.8A18.2 18.2 0 0 0 269.4 32.7A23.2 23.2 0 0 0 297.0 59.4A15.5 15.5 0 0 0 306.2 83.8A22.4 22.4 0 0 0 333.6 98.7A16.1 16.1 0 0 0 350.1 120.3A12.9 12.9 0 0 0 371.0 131.2A18.1 18.1 0 0 0 379.2 161.0A15.8 15.8 0 0 0 400.0 176.0L420 172V520H136L132 500A16.3 16.3 0 0 0 116.7 476.5A15.4 15.4 0 0 0 97.6 468.6A11.2 11.2 0 0 0 83.0 459.2A27.1 27.1 0 0 0 49.8 438.5A9.5 9.5 0 0 0 45.3 426.3A15.5 15.5 0 0 0 21.4 408.8A15.8 15.8 0 0 0 0.0 392.0L-20 388Z"/></mask>
+            </defs>
+            <rect class="f-sunlit" width="400" height="500"/>
+            <g mask="url(#canopy-shadow)">
+              <rect class="f-canopy" width="400" height="500"/>
+              <g class="f-fleck" filter="url(#soften)" transform="rotate(-24 200 250)">
+                <ellipse cx="0" cy="421" rx="20" ry="13" opacity="0.92"/><ellipse cx="183" cy="33" rx="25" ry="16" opacity="0.93"/><ellipse cx="204" cy="43" rx="11" ry="7" opacity="0.90"/><ellipse cx="253" cy="242" rx="31" ry="20" opacity="0.92"/><ellipse cx="158" cy="54" rx="11" ry="7" opacity="1.00"/><ellipse cx="338" cy="307" rx="8" ry="5" opacity="0.86"/><ellipse cx="339" cy="189" rx="9" ry="6" opacity="0.88"/><ellipse cx="330" cy="408" rx="31" ry="20" opacity="0.96"/><ellipse cx="270" cy="332" rx="9" ry="6" opacity="0.94"/><ellipse cx="343" cy="295" rx="40" ry="26" opacity="0.87"/><ellipse cx="183" cy="378" rx="6" ry="4" opacity="0.94"/><ellipse cx="49" cy="9" rx="39" ry="25" opacity="0.91"/><ellipse cx="327" cy="55" rx="29" ry="19" opacity="0.96"/><ellipse cx="132" cy="424" rx="6" ry="4" opacity="0.91"/><ellipse cx="324" cy="284" rx="29" ry="19" opacity="0.98"/><ellipse cx="266" cy="32" rx="8" ry="5" opacity="0.92"/><ellipse cx="325" cy="458" rx="29" ry="19" opacity="0.90"/><ellipse cx="107" cy="16" rx="6" ry="4" opacity="0.91"/><ellipse cx="352" cy="397" rx="12" ry="8" opacity="0.93"/><ellipse cx="69" cy="351" rx="25" ry="16" opacity="0.97"/><ellipse cx="236" cy="378" rx="8" ry="5" opacity="0.95"/><ellipse cx="62" cy="407" rx="9" ry="6" opacity="0.88"/><ellipse cx="397" cy="220" rx="9" ry="6" opacity="0.90"/><ellipse cx="366" cy="93" rx="9" ry="6" opacity="0.98"/><ellipse cx="308" cy="391" rx="33" ry="21" opacity="0.98"/><ellipse cx="209" cy="275" rx="6" ry="4" opacity="0.93"/><ellipse cx="61" cy="2" rx="8" ry="5" opacity="0.92"/><ellipse cx="193" cy="489" rx="11" ry="7" opacity="0.93"/><ellipse cx="306" cy="235" rx="31" ry="20" opacity="0.97"/><ellipse cx="95" cy="489" rx="6" ry="4" opacity="0.98"/><ellipse cx="110" cy="422" rx="6" ry="4" opacity="0.97"/><ellipse cx="151" cy="469" rx="6" ry="4" opacity="0.91"/><ellipse cx="213" cy="223" rx="12" ry="8" opacity="0.87"/><ellipse cx="42" cy="269" rx="12" ry="8" opacity="0.92"/><ellipse cx="399" cy="33" rx="8" ry="5" opacity="0.98"/><ellipse cx="105" cy="188" rx="34" ry="22" opacity="0.87"/><ellipse cx="307" cy="361" rx="51" ry="33" opacity="0.99"/><ellipse cx="212" cy="420" rx="16" ry="10" opacity="0.92"/><ellipse cx="306" cy="398" rx="16" ry="10" opacity="0.97"/><ellipse cx="310" cy="59" rx="28" ry="18" opacity="0.89"/><ellipse cx="188" cy="335" rx="14" ry="9" opacity="0.98"/><ellipse cx="159" cy="312" rx="50" ry="32" opacity="1.00"/><ellipse cx="106" cy="372" rx="37" ry="24" opacity="0.92"/><ellipse cx="116" cy="135" rx="53" ry="34" opacity="0.87"/><ellipse cx="217" cy="446" rx="50" ry="32" opacity="0.91"/><ellipse cx="357" cy="166" rx="11" ry="7" opacity="0.86"/>
+              </g>
+            </g>
+            <rect width="400" height="500" fill="url(#paving)"/>
+          </svg>
+          <figcaption>Sunflecks under a canopy. Each patch of light is a pinhole image of the sun, which is why they fall as ellipses, never as leaf&nbsp;shapes.</figcaption>
+        </figure>
+
+        <div class="interview__text">
+          <p class="kicker"><span class="kicker__strong">Interview</span> <span class="kicker__sep" aria-hidden="true">/</span> p.&nbsp;60</p>
+          <h2 class="interview__title" id="interview-title">Plant the Shade First</h2>
+          <p class="interview__dek">Landscape architect Ana Lucía Benedetti has planted some thirty thousand trees across the dry south. She talks to Clara Sørensen about patience, water, and designing a canopy she may never sit&nbsp;under.</p>
+
+          <figure class="interview__quote">
+            <blockquote>
+              <p>“A tree is the only piece of city infrastructure that gets better every year you leave it&nbsp;alone.”</p>
+            </blockquote>
+            <figcaption>Ana Lucía Benedetti</figcaption>
+          </figure>
+
+          <div class="qa">
+            <p class="qa__q"><span class="qa__speaker">Clara Sørensen</span> What do cities get wrong when they plant for shade?</p>
+            <p class="qa__a"><span class="qa__speaker">Ana Lucía Benedetti</span> They plant for the photograph at the ribbon-cutting. A young tree in a pit the size of a suitcase is a decoration. Give it a trench, water and neighbours, and in fifteen years it becomes a&nbsp;roof.</p>
+          </div>
+
+          <div class="interview__foot">
+            <a class="button button--light" href="issue-14/plant-the-shade-first.html">Read the interview <span class="visually-hidden">with Ana Lucía Benedetti</span><span aria-hidden="true" class="button__arrow">→</span></a>
+            <p class="interview__meta">18&nbsp;min read</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARCHIVE ============ -->
+    <section class="archive" id="archive" aria-labelledby="archive-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="archive-title">From the archive</h2>
+          <p class="section-head__note">Every back issue is free to read online. Print copies while they&nbsp;last.</p>
+        </header>
+
+        <ul class="issues">
+          <li class="issue">
+            <div class="mini-cover mini-cover--thresholds" aria-hidden="true">
+              <svg class="mini-cover__art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect class="f-door" x="150" y="46" width="96" height="200"/>
+                <path class="f-door-light" d="M150 246h96l46 50H104z"/>
+                <rect class="f-door-step" x="138" y="242" width="120" height="7"/>
+              </svg>
+              <span class="mini-cover__kicker"><span>No.&nbsp;13</span><span>Summer 2026</span></span>
+              <span class="mini-cover__word">Thresholds</span>
+            </div>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="issues/13-thresholds.html">Thresholds</a></h3>
+              <p class="issue__meta">No.&nbsp;13 <span aria-hidden="true">·</span> Summer 2026</p>
+              <p class="issue__dek">Doorsteps, stoops, gates and porches: the architecture of the in-between.</p>
+              <p class="issue__buy"><a href="shop/issue-13.html">Buy in print <span class="visually-hidden">(Issue 13)</span></a> <span class="issue__price">€16</span></p>
+            </div>
+          </li>
+          <li class="issue">
+            <div class="mini-cover mini-cover--water" aria-hidden="true">
+              <svg class="mini-cover__art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <g class="s-ripple" fill="none">
+                  <ellipse cx="200" cy="170" rx="18" ry="7"/><ellipse cx="200" cy="170" rx="44" ry="17"/><ellipse cx="200" cy="170" rx="76" ry="29"/><ellipse cx="200" cy="170" rx="114" ry="44"/><ellipse cx="200" cy="170" rx="158" ry="61"/><ellipse cx="200" cy="170" rx="208" ry="80"/>
+                </g>
+                <circle class="f-drop" cx="200" cy="92" r="6"/>
+              </svg>
+              <span class="mini-cover__kicker"><span>No.&nbsp;12</span><span>Spring 2026</span></span>
+              <span class="mini-cover__word">Water</span>
+            </div>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="issues/12-water.html">Water</a></h3>
+              <p class="issue__meta">No.&nbsp;12 <span aria-hidden="true">·</span> Spring 2026</p>
+              <p class="issue__dek">Fountains, public baths, floods and the civic life of water.</p>
+              <p class="issue__buy"><a href="shop/issue-12.html">Buy in print <span class="visually-hidden">(Issue 12)</span></a> <span class="issue__price">€16</span></p>
+            </div>
+          </li>
+          <li class="issue">
+            <div class="mini-cover mini-cover--night" aria-hidden="true">
+              <svg class="mini-cover__art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <path class="f-moon" d="M236 58a30 30 0 1 0 22 50 24 24 0 1 1-22-50z"/>
+                <path class="f-block" d="M0 230h60v-60h50v90h40v-130h70v110h40v-40h40v175H0z"/>
+                <g class="f-window">
+                  <rect x="70" y="186" width="8" height="10"/><rect x="92" y="206" width="8" height="10"/><rect x="164" y="146" width="8" height="10"/><rect x="186" y="166" width="8" height="10"/><rect x="164" y="206" width="8" height="10"/><rect x="200" y="226" width="8" height="10"/><rect x="266" y="250" width="8" height="10"/><rect x="20" y="246" width="8" height="10"/><rect x="124" y="276" width="8" height="10"/>
+                </g>
+              </svg>
+              <span class="mini-cover__kicker"><span>No.&nbsp;11</span><span>Winter 2025</span></span>
+              <span class="mini-cover__word">Night</span>
+            </div>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="issues/11-night.html">Night</a></h3>
+              <p class="issue__meta">No.&nbsp;11 <span aria-hidden="true">·</span> Winter 2025</p>
+              <p class="issue__dek">Streetlights, night buses, curfews and the question of who the city belongs to after&nbsp;dark.</p>
+              <p class="issue__buy"><span class="issue__soldout">Print edition sold out</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER + PRINT ============ -->
+    <section class="support" aria-label="Newsletter and subscriptions">
+      <div class="wrap support__grid">
+        <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+          <p class="kicker"><span class="kicker__strong">Newsletter</span> <span class="kicker__sep" aria-hidden="true">/</span> Free</p>
+          <h2 class="support__title" id="newsletter-title">The Lighthouse Letter</h2>
+          <p class="support__text">One essay from the archive, one drawing and one public space worth standing in&nbsp;— every other Sunday&nbsp;morning.</p>
+
+          <form class="signup" action="#newsletter" method="get" data-signup>
+            <label class="signup__label" for="signup-email">Email address</label>
+            <div class="signup__row">
+              <input class="signup__input" id="signup-email" name="email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="signup-hint">
+              <button class="button button--ink signup__button" type="submit">Sign up</button>
+            </div>
+            <p class="signup__error" id="signup-error" hidden></p>
+            <p class="signup__hint" id="signup-hint">We only use your address to send the letter. No tracking pixels; leave whenever you&nbsp;like.</p>
+            <p class="signup__status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="print-offer" id="subscribe" aria-labelledby="subscribe-title">
+          <div class="print-offer__stack" aria-hidden="true">
+            <span class="stack-cover stack-cover--3"></span>
+            <span class="stack-cover stack-cover--2"></span>
+            <span class="stack-cover stack-cover--1">
+              <svg viewBox="0 0 120 150" focusable="false">
+                <defs>
+                  <clipPath id="stack-light"><path d="M7 150V96a13 13 0 0 1 26 0V150ZM47 150V96a13 13 0 0 1 26 0V150ZM87 150V96a13 13 0 0 1 26 0V150Z"/></clipPath>
+                </defs>
+                <rect class="f-cover-shade" width="120" height="150"/>
+                <path class="f-cover-sun" d="M7 150V96a13 13 0 0 1 26 0V150ZM47 150V96a13 13 0 0 1 26 0V150ZM87 150V96a13 13 0 0 1 26 0V150Z"/>
+                <text class="stack-cover__no" x="9" y="16">NO. 14</text>
+                <path class="s-cover-sun" d="M9 21.5H111"/>
+                <text class="stack-cover__word" x="6" y="137">Shade</text>
+                <g clip-path="url(#stack-light)"><text class="stack-cover__word stack-cover__word--inverse" x="6" y="137">Shade</text></g>
+              </svg>
+            </span>
+          </div>
+          <div class="print-offer__body">
+            <p class="kicker"><span class="kicker__strong">Print edition</span> <span class="kicker__sep" aria-hidden="true">/</span> Four issues a year</p>
+            <h2 class="support__title" id="subscribe-title">Subscribe in print</h2>
+            <p class="support__text">Around 180 pages an issue, printed on uncoated paper by a family press in Ilmara and posted in a paper sleeve. New subscriptions start with Issue&nbsp;14, <em>Shade</em>.</p>
+            <p class="price"><span class="price__amount">€58</span> <span class="price__per">a year, postage included</span></p>
+            <p class="price__alt">Students and unwaged €40 · Single issues €16</p>
+            <div class="actions">
+              <a class="button button--ink" href="shop/subscribe.html">Subscribe <span class="visually-hidden">to the print edition</span></a>
+              <a class="button button--ghost" href="shop/gift.html">Give a subscription</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="about">
+    <div class="wrap">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">The Lighthouse Review</p>
+        <p class="site-footer__tag">Architecture, cities &amp; the culture of public space. Quarterly, in print and&nbsp;online.</p>
+      </div>
+
+      <div class="site-footer__cols">
+        <section aria-labelledby="footer-about">
+          <h2 class="site-footer__heading" id="footer-about">About</h2>
+          <p>The Lighthouse Review is an independent quarterly founded in 2023. It is edited from a former net loft by the harbour in Ilmara, carries no advertising and is paid for by its&nbsp;readers.</p>
+        </section>
+
+        <section aria-labelledby="footer-contributors" id="contributors">
+          <h2 class="site-footer__heading" id="footer-contributors">Contributors</h2>
+          <p class="site-footer__list">Leila Haddad, Tomás Ferrán, Priya Raman, Jonas Weller, Mariam Osei, Oumar Diallo, Hana Moradi, Yusuf Demir, Ana Lucía Benedetti, Clara&nbsp;Sørensen.</p>
+          <p class="site-footer__small">Editor Mateo Arrieta · Art director and drawings Ines Achterberg · Copy Yasmin&nbsp;Kader</p>
+        </section>
+
+        <section aria-labelledby="footer-contact">
+          <h2 class="site-footer__heading" id="footer-contact">Contact</h2>
+          <ul class="site-footer__links">
+            <li>Letters <a href="mailto:letters@lighthousereview.example">letters@lighthousereview.example</a></li>
+            <li>Pitches <a href="mailto:pitches@lighthousereview.example">pitches@lighthousereview.example</a></li>
+            <li>Stockists <a href="mailto:trade@lighthousereview.example">trade@lighthousereview.example</a></li>
+          </ul>
+          <address>The Net Loft, 3 Quay Steps, Ilmara</address>
+        </section>
+
+        <section aria-labelledby="footer-colophon">
+          <h2 class="site-footer__heading" id="footer-colophon">Colophon</h2>
+          <p>Text and headlines are set in <span class="colophon-serif">Newsreader</span>, designed by Production Type; labels and captions in <span class="colophon-sans">Instrument Sans</span>, by Instrument. Drawings are hand-built SVG. No trackers, no&nbsp;autoplay.</p>
+          <p class="site-footer__small">All people and places in this issue are fictional.</p>
+        </section>
+      </div>
+
+      <div class="site-footer__base">
+        <p>© 2026 The Lighthouse Review <span aria-hidden="true">·</span> Issue 14, Autumn 2026</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verifier fixture — good</title>
+<style>
+  :root { --ink: #1b1b1b; --paper: #fbfaf7; --focus: #8a3b12; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body { margin: 0; font: 18px/1.6 system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+  .skip { position: absolute; inset-inline-start: 8px; inset-block-start: -60px; padding: 8px; background: #fff; }
+  .skip:focus { inset-block-start: 8px; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  header, main, footer { max-inline-size: 60rem; margin-inline: auto; padding: 16px; }
+  nav a { display: inline-block; padding: 10px 6px; color: var(--ink); }
+  h1 { font-size: clamp(2rem, 1.5rem + 2vw, 3rem); line-height: 1.15; margin-block: 24px; }
+  .spacer { block-size: 1600px; border-inline-start: 1px solid #ccc; }
+  .card { border: 1px solid #bbb; padding: 16px; margin-block: 16px; }
+  .card a { color: var(--ink); text-decoration: none; display: inline-block; padding-block: 8px; }
+  .card a:focus-visible { outline: none; }
+  .card:has(a:focus-visible) { outline: 3px solid var(--focus); outline-offset: 4px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav aria-label="Primary"><a href="#one">One</a> <a href="#two">Two</a> <a href="#three">Three</a></nav></header>
+<main id="main">
+  <h1>Fixture page with deliberate, verifiable properties</h1>
+  <p>Plain reading text at a comfortable size and measure.</p>
+  <div class="spacer"></div>
+  <article class="card"><h2>Card one</h2><a href="#one">Open card one</a></article>
+  <article class="card"><h2>Card two</h2><a href="#two">Open card two</a></article>
+  <div class="spacer"></div>
+  <article class="card"><h2>Card three</h2><a href="#three">Open card three</a></article>
+</main>
+<footer><p>Footer text.</p></footer>
+</body>
+</html>

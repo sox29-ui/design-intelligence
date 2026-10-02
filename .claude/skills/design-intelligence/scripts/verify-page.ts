@@ -1,7 +1,7 @@
 // DI verification for a built page: render → inspect → measure. Separates objective gates from
 // subjective review (screenshots are written for the model/human to look at).
 //
-// usage: node verify-page.ts <dir-with-index.html | url> [--out <dir>] [--quick] [--lighthouse]
+// usage: node verify-page.ts <dir-with-index.html | url> [--out <dir>] [--quick]
 // exit code 1 when a hard gate fails.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
@@ -82,44 +82,44 @@ function markdown(target: string, r: ReturnType<typeof evaluate>, artifactDir: s
   return lines.join('\n');
 }
 
+export async function verify(target: string, opts: { out?: string; quick?: boolean } = {}) {
+  const localDir = /^https?:\/\//.test(target) ? undefined : resolve(target);
+  const url = localDir ? `${LOCAL_ORIGIN}/index.html` : target;
+  const out = resolve(opts.out ?? join(/^https?:/.test(target) ? '.' : target, '.di-verify'));
+  const artifactDir = join(out, 'artifacts');
+  mkdirSync(artifactDir, { recursive: true });
+  const res = await inspectPage({
+    url,
+    outDir: out,
+    artifactDir,
+    viewports: opts.quick ? BENCHMARK_VIEWPORTS.filter((v) => v.name === 'mobile' || v.name === 'desktop') : BENCHMARK_VIEWPORTS,
+    extrasViewport: opts.quick ? null : 'desktop',
+    localDir,
+    log: () => {},
+  });
+  const vpData: Record<string, any> = {};
+  for (const f of res.files) {
+    const m = f.path.match(/^viewport-(\d+x\d+)\.json$/);
+    if (m) vpData[m[1]] = JSON.parse(readFileSync(join(out, f.path), 'utf8'));
+  }
+  const extrasFile = res.files.find((f) => f.path.startsWith('extras-'));
+  const extras = extrasFile ? JSON.parse(readFileSync(join(out, extrasFile.path), 'utf8')) : null;
+  const report = evaluate(vpData, extras);
+  writeFileSync(join(out, 'verify-report.json'), JSON.stringify({ target, url, ...report }, null, 2));
+  const md = markdown(target, report, artifactDir);
+  writeFileSync(join(out, 'verify-report.md'), md);
+  return { report, vpData, extras, out, artifactDir, markdown: md };
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
-  const target = args.find((a) => !a.startsWith('--'));
+  const target = args.find((a, i) => !a.startsWith('--') && args[i - 1] !== '--out');
   if (!target) {
     console.error('usage: node verify-page.ts <dir|url> [--out dir] [--quick]');
     process.exit(2);
   }
-  const get = (k: string) => {
-    const i = args.indexOf(k);
-    return i >= 0 ? args[i + 1] : undefined;
-  };
-  const quick = args.includes('--quick');
-  const localDir = /^https?:\/\//.test(target) ? undefined : resolve(target);
-  const url = localDir ? `${LOCAL_ORIGIN}/index.html` : target;
-  const out = resolve(get('--out') ?? join(/^https?:/.test(target) ? '.' : target, '.di-verify'));
-  const artifactDir = join(out, 'artifacts');
-  mkdirSync(artifactDir, { recursive: true });
-  {
-    const res = await inspectPage({
-      url,
-      outDir: out,
-      artifactDir,
-      viewports: quick ? BENCHMARK_VIEWPORTS.filter((v) => v.name === 'mobile' || v.name === 'desktop') : BENCHMARK_VIEWPORTS,
-      extrasViewport: quick ? null : 'desktop',
-      localDir,
-      log: () => {},
-    });
-    const vpData: Record<string, any> = {};
-    for (const f of res.files) {
-      const m = f.path.match(/^viewport-(\d+x\d+)\.json$/);
-      if (m) vpData[m[1]] = JSON.parse(readFileSync(join(out, f.path), 'utf8'));
-    }
-    const extrasFile = res.files.find((f) => f.path.startsWith('extras-'));
-    const extras = extrasFile ? JSON.parse(readFileSync(join(out, extrasFile.path), 'utf8')) : null;
-    const report = evaluate(vpData, extras);
-    writeFileSync(join(out, 'verify-report.json'), JSON.stringify({ target, url, ...report }, null, 2));
-    writeFileSync(join(out, 'verify-report.md'), markdown(target, report, artifactDir));
-    console.log(markdown(target, report, artifactDir));
-    process.exitCode = report.failed ? 1 : 0;
-  }
+  const i = args.indexOf('--out');
+  const r = await verify(target, { out: i >= 0 ? args[i + 1] : undefined, quick: args.includes('--quick') });
+  console.log(r.markdown);
+  process.exitCode = r.report.failed ? 1 : 0;
 }

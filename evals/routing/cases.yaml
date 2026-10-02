@@ -1,0 +1,51 @@
+# Routing cases for the design-intelligence skill.
+# `expect: trigger` — a request DI should handle; `expect: skip` — a request it should not.
+# tests/skill.test.ts runs a LEXICAL proxy: every trigger case must contain a surface term that also
+# appears in the skill description, and no skip case may contain one. Real routing is decided by the
+# model reading the description; the model-judged check lives in evals/routing/README.md.
+surface_terms:
+  - landing page
+  - website
+  - web page
+  - web interface
+  - dashboard
+  - e-commerce
+  - storefront
+  - editorial
+  - portfolio
+  - typography
+  - layout
+  - colour
+  - color
+  - motion
+  - responsive
+  - accessibility
+  - arabic
+  - rtl
+  - bilingual
+  - hero
+  - navigation
+  - ui
+cases:
+  - { expect: trigger, prompt: "Design a landing page for our climate-tech startup" }
+  - { expect: trigger, prompt: "Build an analytics dashboard UI for a B2B invoicing product" }
+  - { expect: trigger, prompt: "Critique this website's typography and visual hierarchy" }
+  - { expect: trigger, prompt: "Make our storefront work in Arabic, RTL and mobile-first" }
+  - { expect: trigger, prompt: "Our hero section looks generic, can you redesign it?" }
+  - { expect: trigger, prompt: "Review the responsive layout of this page at 390px" }
+  - { expect: trigger, prompt: "Pick a colour palette and type pairing for an editorial magazine site" }
+  - { expect: trigger, prompt: "Add tasteful motion to the navigation without hurting accessibility" }
+  - { expect: trigger, prompt: "Research a few award-winning portfolio websites and tell me what makes them work" }
+  - { expect: trigger, prompt: "صمم صفحة هبوط لمتجر قهوة باللغة العربية (RTL)" }
+  - { expect: trigger, prompt: "QA this e-commerce product page for accessibility before launch" }
+  - { expect: trigger, prompt: "Make this bilingual Arabic/English UI consistent" }
+  - { expect: skip, prompt: "Write a SQL query that returns monthly revenue per customer" }
+  - { expect: skip, prompt: "Fix the failing unit test in the payment service" }
+  - { expect: skip, prompt: "Design a database schema for an order management system" }
+  - { expect: skip, prompt: "Explain the difference between git rebase and git merge" }
+  - { expect: skip, prompt: "Write a Python CLI that converts CSV files to JSON" }
+  - { expect: skip, prompt: "Set up a GitHub Actions workflow to run tests on pull requests" }
+  - { expect: skip, prompt: "Design a REST API for a library lending system" }
+  - { expect: skip, prompt: "Profile and fix the memory leak in our Go worker" }
+  - { expect: skip, prompt: "Translate this contract clause from English to French" }
+  - { expect: skip, prompt: "Write unit tests for the date parsing helper" }

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tidewrack · a composition written by the tide · Lisbon, 14 Nov – 27 Dec 2026</title>
+<meta name="description" content="Tidewrack is a sound installation by Inês Varela that turns tide readings from the Tagus estuary into music for 40 suspended speakers. Armazém 7, Cais do Sodré, Lisbon. 14 Nov – 27 Dec 2026. Free timed entry.">
+<meta name="theme-color" content="#0b1113">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tidewrack, a composition written by the tide">
+<meta property="og:description" content="Performed by the room. Armazém 7, Cais do Sodré, Lisbon. 14 Nov – 27 Dec 2026. Free timed entry, limited capacity.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1113'/%3E%3Cpath d='M4 11h24M4 16h24M4 21h24' stroke='%23e9e4d8' stroke-opacity='.35'/%3E%3Cellipse cx='16' cy='16' rx='6' ry='4.4' transform='rotate(-20 16 16)' fill='%23f0a54a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap"></noscript>
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#reserve">Skip to reservation</a>
+
+<header class="site-header" id="top">
+  <div class="wrap site-header__inner">
+    <a class="wordmark" href="#top">Tidewrack</a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#work">The work</a></li>
+        <li><a href="#sessions">Low-tide sessions</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--line" href="#reserve"><span>Reserve<span class="sm-sr"> a free timed entry</span></span></a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__text">
+      <p class="eyebrow"><span>A sound installation by Inês Varela</span><span class="eyebrow__coords" aria-hidden="true">38°42′ N &nbsp;9°08′ W</span></p>
+      <h1 class="title" id="hero-title">
+        <span class="sr-only">Tidewrack</span>
+        <span class="title__letters" aria-hidden="true"><span style="--i:0;--y:-.02">T</span><span style="--i:1;--y:.012">i</span><span style="--i:2;--y:.026">d</span><span style="--i:3;--y:.008">e</span><span style="--i:4;--y:-.018">w</span><span style="--i:5;--y:-.026">r</span><span style="--i:6;--y:-.004">a</span><span style="--i:7;--y:.02">c</span><span style="--i:8;--y:.012">k</span></span>
+      </h1>
+      <div class="hero__row">
+        <p class="tagline">A composition written by the tide, performed by the room.</p>
+        <div class="hero__act">
+          <p class="hero__when"><span>14 Nov – 27 Dec 2026</span><span class="sr-only">, </span><span>Armazém 7, Cais do Sodré, Lisbon</span></p>
+          <a class="btn btn--primary" href="#reserve" data-hero-cta>Reserve a free timed entry <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+          <p class="hero__note"><span class="nowrap">Free · limited capacity</span> · <span class="nowrap">Tue–Sun 11:00–19:00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="score">
+      <div class="score__stage" data-score>
+        <canvas role="img" aria-label="An animated score: the tide drawn as a line across a musical staff, leaving notes behind it as the water rises and falls." aria-describedby="score-caption"></canvas>
+        <p class="score__readout" data-readout aria-hidden="true"></p>
+      </div>
+      <div class="wrap score__foot">
+        <p class="score__caption" id="score-caption">A sketch of the score. Each mark is one reading of the water, six minutes apart; where the tide turns, the music rests.</p>
+        <div class="score__controls" data-controls hidden>
+          <button type="button" class="ctl" data-motion-toggle>
+            <svg class="ctl__icon ctl__icon--pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3v10M11 3v10"/></svg>
+            <svg class="ctl__icon ctl__icon--play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3l8 5-8 5z"/></svg>
+            <span data-label>Pause motion</span>
+          </button>
+          <button type="button" class="ctl" data-sound-toggle>
+            <svg class="ctl__icon ctl__icon--sound" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 6h3l4-3v10l-4-3H2z"/><path d="M11.5 5.5a3.5 3.5 0 0 1 0 5M13.5 3.5a6.5 6.5 0 0 1 0 9"/></svg>
+            <svg class="ctl__icon ctl__icon--stop" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 4h8v8H4z"/></svg>
+            <span data-label>Listen to a sketch</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE WORK ============ -->
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="mark" aria-hidden="true">A</span>
+        <h2 id="work-title">The work</h2>
+      </div>
+
+      <article class="work__item" aria-labelledby="idea-title">
+        <h3 class="label" id="idea-title">The idea</h3>
+        <div class="work__body">
+          <p class="lede">Every six minutes, a tide gauge in the Tagus estuary records the height of the water. <em>Tidewrack</em> turns each reading into sound: the height sets the pitch, the speed of the rise or fall sets the density, and the slack water at high and low tide becomes silence. The tide never quite repeats, so neither does the piece.</p>
+          <ul class="legend" aria-label="How a reading becomes music">
+            <li>
+              <svg viewBox="0 0 120 56" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 12.5H120M0 20.5H120M0 28.5H120M0 36.5H120M0 44.5H120"/><path class="lg-curve" d="M4 46L6 46L8 45.9L10 45.7L12 45.5L14 45.3L16 45L18 44.6L20 44.2L22 43.8L24 43.2L26 42.7L28 42.1L30 41.4L32 40.7L34 40L36 39.2L38 38.4L40 37.6L42 36.7L44 35.8L46 34.9L48 33.9L50 33L52 32L54 31L56 30L58 29L60 28L62 27L64 26L66 25L68 24L70 23L72 22.1L74 21.1L76 20.2L78 19.3L80 18.4L82 17.6L84 16.8L86 16L88 15.3L90 14.6L92 13.9L94 13.3L96 12.8L98 12.2L100 11.8L102 11.4L104 11L106 10.7L108 10.5L110 10.3L112 10.1L114 10L116 10"/><ellipse cx="14" cy="44" rx="3.6" ry="2.6" transform="rotate(-20 14 44)"/><ellipse cx="32" cy="40" rx="3.6" ry="2.6" transform="rotate(-20 32 40)"/><ellipse cx="50" cy="32" rx="3.6" ry="2.6" transform="rotate(-20 50 32)"/><ellipse cx="68" cy="24" rx="3.6" ry="2.6" transform="rotate(-20 68 24)"/><ellipse cx="86" cy="16" rx="3.6" ry="2.6" transform="rotate(-20 86 16)"/><ellipse cx="104" cy="12" rx="3.6" ry="2.6" transform="rotate(-20 104 12)"/></svg>
+              <span>Height <span aria-hidden="true">→</span><span class="sr-only">becomes</span> pitch</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 120 56" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 12.5H120M0 20.5H120M0 28.5H120M0 36.5H120M0 44.5H120"/><path class="lg-curve" d="M4 40L6 39.9L8 39.7L10 39.6L12 39.4L14 39.3L16 39.2L18 39L20 38.9L22 38.7L24 38.6L26 38.5L28 38.3L30 38.2L32 38L34 37.9L36 37.8L38 37.6L40 37.5L42 37.3L44 37.2L46 37.1L48 36.9L50 36.8L52 36.6L54 36.5L56 36.4L58 36.2L60 36.1L62 36L64 35.7L66 35.3L68 34.9L70 34.3L72 33.7L74 33.1L76 32.3L78 31.5L80 30.7L82 29.8L84 28.9L86 27.9L88 26.9L90 25.8L92 24.7L94 23.5L96 22.3L98 21L100 19.8L102 18.4L104 17.1L106 15.7L108 14.2L110 12.7L112 11.2L114 9.7L116 8.1"/><ellipse cx="14" cy="40" rx="3.6" ry="2.6" transform="rotate(-20 14 40)"/><ellipse cx="44" cy="36" rx="3.6" ry="2.6" transform="rotate(-20 44 36)"/><ellipse cx="70" cy="36" rx="3.6" ry="2.6" transform="rotate(-20 70 36)"/><ellipse cx="70" cy="44" rx="3.6" ry="2.6" transform="rotate(-20 70 44)"/><ellipse cx="82" cy="28" rx="3.6" ry="2.6" transform="rotate(-20 82 28)"/><ellipse cx="82" cy="36" rx="3.6" ry="2.6" transform="rotate(-20 82 36)"/><ellipse cx="82" cy="44" rx="3.6" ry="2.6" transform="rotate(-20 82 44)"/><ellipse cx="94" cy="24" rx="3.6" ry="2.6" transform="rotate(-20 94 24)"/><ellipse cx="94" cy="32" rx="3.6" ry="2.6" transform="rotate(-20 94 32)"/><ellipse cx="94" cy="40" rx="3.6" ry="2.6" transform="rotate(-20 94 40)"/><ellipse cx="106" cy="16" rx="3.6" ry="2.6" transform="rotate(-20 106 16)"/><ellipse cx="106" cy="24" rx="3.6" ry="2.6" transform="rotate(-20 106 24)"/></svg>
+              <span>Speed <span aria-hidden="true">→</span><span class="sr-only">becomes</span> density</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 120 56" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 12.5H120M0 20.5H120M0 28.5H120M0 36.5H120M0 44.5H120"/><path class="lg-curve" d="M4 44L6 42.5L8 41.1L10 39.6L12 38.2L14 36.8L16 35.4L18 34.1L20 32.7L22 31.4L24 30.2L26 29L28 27.8L30 26.7L32 25.6L34 24.6L36 23.7L38 22.8L40 22L42 21.2L44 20.6L46 20L48 19.5L50 19L52 18.7L54 18.4L56 18.2L58 18L60 18L62 18L64 18.2L66 18.4L68 18.7L70 19L72 19.5L74 20L76 20.6L78 21.2L80 22L82 22.8L84 23.7L86 24.6L88 25.6L90 26.7L92 27.8L94 29L96 30.2L98 31.4L100 32.7L102 34.1L104 35.4L106 36.8L108 38.2L110 39.6L112 41.1L114 42.5L116 44"/><ellipse cx="12" cy="40" rx="3.6" ry="2.6" transform="rotate(-20 12 40)"/><ellipse cx="26" cy="28" rx="3.6" ry="2.6" transform="rotate(-20 26 28)"/><ellipse cx="94" cy="28" rx="3.6" ry="2.6" transform="rotate(-20 94 28)"/><ellipse cx="108" cy="40" rx="3.6" ry="2.6" transform="rotate(-20 108 40)"/><path class="lg-fermata" d="M53 9a7 7 0 0 1 14 0"/><circle cx="60" cy="7.6" r="1.5"/></svg>
+              <span>Slack water <span aria-hidden="true">→</span><span class="sr-only">becomes</span> silence</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="work__item" aria-labelledby="space-title">
+        <h3 class="label" id="space-title">The space</h3>
+        <div class="work__body">
+          <p class="lede">Forty speakers hang at different heights inside Armazém 7, a converted warehouse on the Cais do Sodré waterfront. There is no stage and no front row. As the water rises and falls outside, the sound gathers and drains through the room: walk through it, or sit and let it pass over you.</p>
+          <div class="elev">
+            <figure class="elev__fig">
+              <svg class="elev__svg" viewBox="0 0 360 196" role="img" aria-labelledby="elev-cap" focusable="false">
+                <g class="elev__building">
+                  <path d="M4 36 180 12 356 36"/>
+                  <path class="elev__truss" d="M180 12V36M92 24 136 36M268 24 224 36M92 24V36M268 24V36"/>
+                  <path d="M4 36H356M4 36V150M356 36V186M0 186H360"/>
+                </g>
+                <g class="elev__speakers">
+                  <g class="spk" style="--k:0"><path class="cable" d="M22 36V117.6"/><ellipse cx="22" cy="120.2" rx="3.7" ry="2.7" transform="rotate(-20 22 120.2)"/></g>
+                  <g class="spk" style="--k:0.026"><path class="cable" d="M30.1 36V110.7"/><ellipse cx="30.1" cy="113.3" rx="3.7" ry="2.7" transform="rotate(-20 30.1 113.3)"/></g>
+                  <g class="spk" style="--k:0.051"><path class="cable" d="M38.2 36V112.3"/><ellipse cx="38.2" cy="114.9" rx="3.7" ry="2.7" transform="rotate(-20 38.2 114.9)"/></g>
+                  <g class="spk" style="--k:0.077"><path class="cable" d="M46.3 36V108"/><ellipse cx="46.3" cy="110.6" rx="3.7" ry="2.7" transform="rotate(-20 46.3 110.6)"/></g>
+                  <g class="spk" style="--k:0.103"><path class="cable" d="M54.4 36V112"/><ellipse cx="54.4" cy="114.6" rx="3.7" ry="2.7" transform="rotate(-20 54.4 114.6)"/></g>
+                  <g class="spk" style="--k:0.128"><path class="cable" d="M62.5 36V117"/><ellipse cx="62.5" cy="119.6" rx="3.7" ry="2.7" transform="rotate(-20 62.5 119.6)"/></g>
+                  <g class="spk" style="--k:0.154"><path class="cable" d="M70.6 36V126.5"/><ellipse cx="70.6" cy="129.1" rx="3.7" ry="2.7" transform="rotate(-20 70.6 129.1)"/></g>
+                  <g class="spk" style="--k:0.179"><path class="cable" d="M78.7 36V124.6"/><ellipse cx="78.7" cy="127.2" rx="3.7" ry="2.7" transform="rotate(-20 78.7 127.2)"/></g>
+                  <g class="spk" style="--k:0.205"><path class="cable" d="M86.8 36V113.4"/><ellipse cx="86.8" cy="116" rx="3.7" ry="2.7" transform="rotate(-20 86.8 116)"/></g>
+                  <g class="spk" style="--k:0.231"><path class="cable" d="M94.9 36V98.8"/><ellipse cx="94.9" cy="101.4" rx="3.7" ry="2.7" transform="rotate(-20 94.9 101.4)"/></g>
+                  <g class="spk" style="--k:0.256"><path class="cable" d="M103 36V82.4"/><ellipse cx="103" cy="85" rx="3.7" ry="2.7" transform="rotate(-20 103 85)"/></g>
+                  <g class="spk" style="--k:0.282"><path class="cable" d="M111.1 36V73.8"/><ellipse cx="111.1" cy="76.4" rx="3.7" ry="2.7" transform="rotate(-20 111.1 76.4)"/></g>
+                  <g class="spk" style="--k:0.308"><path class="cable" d="M119.2 36V69.8"/><ellipse cx="119.2" cy="72.4" rx="3.7" ry="2.7" transform="rotate(-20 119.2 72.4)"/></g>
+                  <g class="spk" style="--k:0.333"><path class="cable" d="M127.3 36V80.1"/><ellipse cx="127.3" cy="82.7" rx="3.7" ry="2.7" transform="rotate(-20 127.3 82.7)"/></g>
+                  <g class="spk" style="--k:0.359"><path class="cable" d="M135.4 36V74.3"/><ellipse cx="135.4" cy="76.9" rx="3.7" ry="2.7" transform="rotate(-20 135.4 76.9)"/></g>
+                  <g class="spk" style="--k:0.385"><path class="cable" d="M143.5 36V76.4"/><ellipse cx="143.5" cy="79" rx="3.7" ry="2.7" transform="rotate(-20 143.5 79)"/></g>
+                  <g class="spk" style="--k:0.41"><path class="cable" d="M151.6 36V62.1"/><ellipse cx="151.6" cy="64.7" rx="3.7" ry="2.7" transform="rotate(-20 151.6 64.7)"/></g>
+                  <g class="spk" style="--k:0.436"><path class="cable" d="M159.7 36V54.4"/><ellipse cx="159.7" cy="57" rx="3.7" ry="2.7" transform="rotate(-20 159.7 57)"/></g>
+                  <g class="spk" style="--k:0.462"><path class="cable" d="M167.8 36V62.9"/><ellipse cx="167.8" cy="65.5" rx="3.7" ry="2.7" transform="rotate(-20 167.8 65.5)"/></g>
+                  <g class="spk" style="--k:0.487"><path class="cable" d="M175.9 36V66"/><ellipse cx="175.9" cy="68.6" rx="3.7" ry="2.7" transform="rotate(-20 175.9 68.6)"/></g>
+                  <g class="spk" style="--k:0.513"><path class="cable" d="M184.1 36V86.1"/><ellipse cx="184.1" cy="88.7" rx="3.7" ry="2.7" transform="rotate(-20 184.1 88.7)"/></g>
+                  <g class="spk" style="--k:0.538"><path class="cable" d="M192.2 36V94.7"/><ellipse cx="192.2" cy="97.3" rx="3.7" ry="2.7" transform="rotate(-20 192.2 97.3)"/></g>
+                  <g class="spk" style="--k:0.564"><path class="cable" d="M200.3 36V104.8"/><ellipse cx="200.3" cy="107.4" rx="3.7" ry="2.7" transform="rotate(-20 200.3 107.4)"/></g>
+                  <g class="spk" style="--k:0.59"><path class="cable" d="M208.4 36V109.1"/><ellipse cx="208.4" cy="111.7" rx="3.7" ry="2.7" transform="rotate(-20 208.4 111.7)"/></g>
+                  <g class="spk" style="--k:0.615"><path class="cable" d="M216.5 36V100.5"/><ellipse cx="216.5" cy="103.1" rx="3.7" ry="2.7" transform="rotate(-20 216.5 103.1)"/></g>
+                  <g class="spk" style="--k:0.641"><path class="cable" d="M224.6 36V103.1"/><ellipse cx="224.6" cy="105.7" rx="3.7" ry="2.7" transform="rotate(-20 224.6 105.7)"/></g>
+                  <g class="spk" style="--k:0.667"><path class="cable" d="M232.7 36V109.2"/><ellipse cx="232.7" cy="111.8" rx="3.7" ry="2.7" transform="rotate(-20 232.7 111.8)"/></g>
+                  <g class="spk" style="--k:0.692"><path class="cable" d="M240.8 36V118.1"/><ellipse cx="240.8" cy="120.7" rx="3.7" ry="2.7" transform="rotate(-20 240.8 120.7)"/></g>
+                  <g class="spk" style="--k:0.718"><path class="cable" d="M248.9 36V122.1"/><ellipse cx="248.9" cy="124.7" rx="3.7" ry="2.7" transform="rotate(-20 248.9 124.7)"/></g>
+                  <g class="spk" style="--k:0.744"><path class="cable" d="M257 36V122.3"/><ellipse cx="257" cy="124.9" rx="3.7" ry="2.7" transform="rotate(-20 257 124.9)"/></g>
+                  <g class="spk" style="--k:0.769"><path class="cable" d="M265.1 36V115.3"/><ellipse cx="265.1" cy="117.9" rx="3.7" ry="2.7" transform="rotate(-20 265.1 117.9)"/></g>
+                  <g class="spk" style="--k:0.795"><path class="cable" d="M273.2 36V103.7"/><ellipse cx="273.2" cy="106.3" rx="3.7" ry="2.7" transform="rotate(-20 273.2 106.3)"/></g>
+                  <g class="spk" style="--k:0.821"><path class="cable" d="M281.3 36V84.8"/><ellipse cx="281.3" cy="87.4" rx="3.7" ry="2.7" transform="rotate(-20 281.3 87.4)"/></g>
+                  <g class="spk" style="--k:0.846"><path class="cable" d="M289.4 36V80.6"/><ellipse cx="289.4" cy="83.2" rx="3.7" ry="2.7" transform="rotate(-20 289.4 83.2)"/></g>
+                  <g class="spk" style="--k:0.872"><path class="cable" d="M297.5 36V83.8"/><ellipse cx="297.5" cy="86.4" rx="3.7" ry="2.7" transform="rotate(-20 297.5 86.4)"/></g>
+                  <g class="spk" style="--k:0.897"><path class="cable" d="M305.6 36V79.8"/><ellipse cx="305.6" cy="82.4" rx="3.7" ry="2.7" transform="rotate(-20 305.6 82.4)"/></g>
+                  <g class="spk" style="--k:0.923"><path class="cable" d="M313.7 36V87.4"/><ellipse cx="313.7" cy="90" rx="3.7" ry="2.7" transform="rotate(-20 313.7 90)"/></g>
+                  <g class="spk" style="--k:0.949"><path class="cable" d="M321.8 36V71.9"/><ellipse cx="321.8" cy="74.5" rx="3.7" ry="2.7" transform="rotate(-20 321.8 74.5)"/></g>
+                  <g class="spk" style="--k:0.974"><path class="cable" d="M329.9 36V63.2"/><ellipse cx="329.9" cy="65.8" rx="3.7" ry="2.7" transform="rotate(-20 329.9 65.8)"/></g>
+                  <g class="spk" style="--k:1"><path class="cable" d="M338 36V59.4"/><ellipse cx="338" cy="62" rx="3.7" ry="2.7" transform="rotate(-20 338 62)"/></g>
+                </g>
+                <g class="elev__people">
+                  <circle cx="62" cy="158" r="3.6"/><rect x="58.2" y="163.5" width="7.6" height="22.5" rx="3.8"/>
+                  <circle cx="148" cy="157" r="3.6"/><rect x="144.2" y="162.5" width="7.6" height="23.5" rx="3.8"/>
+                  <circle cx="160" cy="159" r="3.4"/><rect x="156.4" y="164" width="7.2" height="22" rx="3.6"/>
+                  <circle cx="236" cy="158" r="3.6"/><rect x="232.2" y="163.5" width="7.6" height="22.5" rx="3.8"/>
+                  <circle cx="318" cy="161" r="3.5"/><rect x="314.3" y="166" width="7.4" height="12" rx="3.7"/>
+                </g>
+                <path class="elev__bench" d="M300 178H344M304 178V186M340 178V186"/>
+                <path class="elev__door" d="M4 150V186"/>
+              </svg>
+              <figcaption id="elev-cap" class="caption">Section through Armazém 7: forty speakers, each at its own height, above the people walking beneath. Seating along the wall; step-free entrance on the left.</figcaption>
+            </figure>
+            <div data-motion-controls hidden>
+              <button type="button" class="ctl" data-motion-toggle>
+                <svg class="ctl__icon ctl__icon--pause" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3v10M11 3v10"/></svg>
+                <svg class="ctl__icon ctl__icon--play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 3l8 5-8 5z"/></svg>
+                <span data-label>Pause motion</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="work__item" aria-labelledby="artist-title">
+        <h3 class="label" id="artist-title">The composer</h3>
+        <div class="work__body">
+          <p class="lede"><strong class="name">Inês Varela</strong> is a composer born in Setúbal, on the Sado estuary. She works with environmental data, treating measurements as a kind of notation: she writes the rules, and the water writes the music.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PRESS ============ -->
+  <section class="press" aria-labelledby="press-title">
+    <div class="wrap">
+      <h2 class="sr-only" id="press-title">Press</h2>
+      <div class="press__grid">
+        <figure class="quote">
+          <blockquote><p>Strange and exact. A room that rises and falls with the river outside.</p></blockquote>
+          <figcaption><cite lang="pt">Arquivo Sonoro</cite></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>The most patient music in Lisbon, and it is still being written while you listen.</p></blockquote>
+          <figcaption><cite>The Listening Post</cite></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOW-TIDE SESSIONS ============ -->
+  <section class="section sessions" id="sessions" aria-labelledby="sessions-title">
+    <div class="wrap">
+      <div class="section__head">
+        <span class="mark" aria-hidden="true">B</span>
+        <h2 id="sessions-title">Low<span class="hy">-</span>tide sessions</h2>
+      </div>
+      <p class="intro">On four evenings the warehouse reopens after hours for a performance timed to low water. As the estuary drains, the music thins toward silence, then returns when the tide turns.</p>
+
+      <ol class="sessions__list">
+        <li class="session">
+          <h3 class="session__date"><span aria-hidden="true"><span class="session__dow">Sat</span> 28 Nov</span><span class="sr-only">Saturday 28 November</span></h3>
+          <dl class="session__times">
+            <div><dt>Performance</dt><dd><time datetime="2026-11-28T20:30">20:30</time></dd></div>
+            <div><dt>Low water <span class="dim">(predicted)</span></dt><dd><time datetime="2026-11-28T20:42">20:42</time></dd></div>
+          </dl>
+          <svg class="session__glyph" viewBox="0 0 240 40" aria-hidden="true" focusable="false"><path class="g-water" d="M0 17.9L8 19L16 20.1L24 21.2L32 22.3L40 23.3L48 24.4L56 25.4L64 26.3L72 27.2L80 28L88 28.7L96 29.4L104 29.9L112 30.3L120 30.7L128 30.9L136 31L144 31L152 30.9L160 30.6L168 30.3L176 29.8L184 29.2L192 28.6L200 27.8L208 27L216 26.1L224 25.2L232 24.2L240 23.1L240 40L0 40Z"/><path class="g-line" d="M0 17.9L8 19L16 20.1L24 21.2L32 22.3L40 23.3L48 24.4L56 25.4L64 26.3L72 27.2L80 28L88 28.7L96 29.4L104 29.9L112 30.3L120 30.7L128 30.9L136 31L144 31L152 30.9L160 30.6L168 30.3L176 29.8L184 29.2L192 28.6L200 27.8L208 27L216 26.1L224 25.2L232 24.2L240 23.1"/><path class="g-axis" d="M0 39.5H240"/><path class="g-start" d="M120 0V40"/><path class="g-flag" d="M116 0h8l-4 5z"/><circle class="g-lw" cx="139.2" cy="31" r="3.2"/></svg>
+          <a class="session__cta" href="#reserve" data-session="2026-11-28">Reserve<span class="sr-only"> the low-tide session on Saturday 28 November</span> <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span aria-hidden="true"><span class="session__dow">Sun</span> 6 Dec</span><span class="sr-only">Sunday 6 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Performance</dt><dd><time datetime="2026-12-06T20:30">20:30</time></dd></div>
+            <div><dt>Low water <span class="dim">(predicted)</span></dt><dd><time datetime="2026-12-06T19:58">19:58</time></dd></div>
+          </dl>
+          <svg class="session__glyph" viewBox="0 0 240 40" aria-hidden="true" focusable="false"><path class="g-water" d="M0 27L8 27.8L16 28.6L24 29.2L32 29.8L40 30.3L48 30.6L56 30.9L64 31L72 31L80 30.9L88 30.7L96 30.3L104 29.9L112 29.4L120 28.7L128 28L136 27.2L144 26.3L152 25.4L160 24.4L168 23.3L176 22.3L184 21.2L192 20.1L200 19L208 17.9L216 16.8L224 15.8L232 14.9L240 14L240 40L0 40Z"/><path class="g-line" d="M0 27L8 27.8L16 28.6L24 29.2L32 29.8L40 30.3L48 30.6L56 30.9L64 31L72 31L80 30.9L88 30.7L96 30.3L104 29.9L112 29.4L120 28.7L128 28L136 27.2L144 26.3L152 25.4L160 24.4L168 23.3L176 22.3L184 21.2L192 20.1L200 19L208 17.9L216 16.8L224 15.8L232 14.9L240 14"/><path class="g-axis" d="M0 39.5H240"/><path class="g-start" d="M120 0V40"/><path class="g-flag" d="M116 0h8l-4 5z"/><circle class="g-lw" cx="68.8" cy="31" r="3.2"/></svg>
+          <a class="session__cta" href="#reserve" data-session="2026-12-06">Reserve<span class="sr-only"> the low-tide session on Sunday 6 December</span> <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span aria-hidden="true"><span class="session__dow">Sun</span> 13 Dec</span><span class="sr-only">Sunday 13 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Performance</dt><dd><time datetime="2026-12-13T20:30">20:30</time></dd></div>
+            <div><dt>Low water <span class="dim">(predicted)</span></dt><dd><time datetime="2026-12-13T20:16">20:16</time></dd></div>
+          </dl>
+          <svg class="session__glyph" viewBox="0 0 240 40" aria-hidden="true" focusable="false"><path class="g-water" d="M0 23.5L8 24.6L16 25.6L24 26.5L32 27.4L40 28.2L48 28.9L56 29.5L64 30L72 30.4L80 30.7L88 30.9L96 31L104 31L112 30.8L120 30.6L128 30.2L136 29.7L144 29.1L152 28.4L160 27.7L168 26.8L176 25.9L184 25L192 24L200 22.9L208 21.8L216 20.7L224 19.6L232 18.5L240 17.5L240 40L0 40Z"/><path class="g-line" d="M0 23.5L8 24.6L16 25.6L24 26.5L32 27.4L40 28.2L48 28.9L56 29.5L64 30L72 30.4L80 30.7L88 30.9L96 31L104 31L112 30.8L120 30.6L128 30.2L136 29.7L144 29.1L152 28.4L160 27.7L168 26.8L176 25.9L184 25L192 24L200 22.9L208 21.8L216 20.7L224 19.6L232 18.5L240 17.5"/><path class="g-axis" d="M0 39.5H240"/><path class="g-start" d="M120 0V40"/><path class="g-flag" d="M116 0h8l-4 5z"/><circle class="g-lw" cx="97.6" cy="31" r="3.2"/></svg>
+          <a class="session__cta" href="#reserve" data-session="2026-12-13">Reserve<span class="sr-only"> the low-tide session on Sunday 13 December</span> <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span aria-hidden="true"><span class="session__dow">Sun</span> 20 Dec</span><span class="sr-only">Sunday 20 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Performance</dt><dd><time datetime="2026-12-20T20:30">20:30</time></dd></div>
+            <div><dt>Low water <span class="dim">(predicted)</span></dt><dd><time datetime="2026-12-20T21:03">21:03</time></dd></div>
+          </dl>
+          <svg class="session__glyph" viewBox="0 0 240 40" aria-hidden="true" focusable="false"><path class="g-water" d="M0 13.8L8 14.7L16 15.6L24 16.6L32 17.7L40 18.7L48 19.8L56 20.9L64 22L72 23.1L80 24.2L88 25.2L96 26.1L104 27L112 27.8L120 28.6L128 29.2L136 29.8L144 30.3L152 30.6L160 30.9L168 31L176 31L184 30.9L192 30.7L200 30.3L208 29.9L216 29.4L224 28.7L232 28L240 27.2L240 40L0 40Z"/><path class="g-line" d="M0 13.8L8 14.7L16 15.6L24 16.6L32 17.7L40 18.7L48 19.8L56 20.9L64 22L72 23.1L80 24.2L88 25.2L96 26.1L104 27L112 27.8L120 28.6L128 29.2L136 29.8L144 30.3L152 30.6L160 30.9L168 31L176 31L184 30.9L192 30.7L200 30.3L208 29.9L216 29.4L224 28.7L232 28L240 27.2"/><path class="g-axis" d="M0 39.5H240"/><path class="g-start" d="M120 0V40"/><path class="g-flag" d="M116 0h8l-4 5z"/><circle class="g-lw" cx="172.8" cy="31" r="3.2"/></svg>
+          <a class="session__cta" href="#reserve" data-session="2026-12-20">Reserve<span class="sr-only"> the low-tide session on Sunday 20 December</span> <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+        </li>
+      </ol>
+      <p class="footnote">Predicted times for Lisbon (WET, UTC+0). In each diagram the vertical line is 20:30 and the dot is low water. The piece follows the real tide, not the forecast.</p>
+    </div>
+  </section>
+
+  <!-- ============ VISIT + RESERVE ============ -->
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit__grid">
+      <div class="visit__info">
+        <div class="section__head">
+          <span class="mark" aria-hidden="true">C</span>
+          <h2 id="visit-title">Visit</h2>
+        </div>
+        <dl class="facts">
+          <div><dt>Dates</dt><dd>14 November – 27 December 2026</dd></div>
+          <div><dt>Opening hours</dt><dd>Tuesday to Sunday, 11:00–19:00.<br>Closed on Mondays.</dd></div>
+          <div><dt>Address</dt><dd>Armazém 7, Cais do Sodré, Lisbon<br><a href="https://www.openstreetmap.org/search?query=Cais%20do%20Sodr%C3%A9%2C%20Lisboa">Find it on a map</a></dd></div>
+          <div><dt>Admission</dt><dd>Free, with a timed entry. Capacity is limited, so please reserve.</dd></div>
+          <div><dt>Accessibility</dt><dd>Step-free access. Seating is available. The room is dim; give your eyes a minute to adjust.</dd></div>
+        </dl>
+      </div>
+
+      <div class="reserve" id="reserve" tabindex="-1" role="region" aria-labelledby="reserve-title">
+        <h2 class="reserve__title" id="reserve-title">Reserve a free timed entry</h2>
+        <p class="reserve__intro">Choose a day and an entry time. Every slot has a limited number of places.</p>
+
+        <form class="form" data-form action="#reserve" novalidate>
+          <fieldset class="field" data-field="date" aria-describedby="date-hint date-err">
+            <legend>Day</legend>
+            <p class="hint" id="date-hint">Open Tuesday to Sunday, closed Mondays. Days with a dot have a low-tide session at 20:30.</p>
+            <div class="cal">
+              <div class="cal__dow" aria-hidden="true"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+              <div class="cal__grid">
+                <label class="day" style="grid-column:6"><input type="radio" name="date" value="2026-11-14" required><span class="day__n" aria-hidden="true"><span class="day__m">Nov</span>14</span><span class="sr-only">Saturday 14 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-15" required><span class="day__n" aria-hidden="true">15</span><span class="sr-only">Sunday 15 November</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">16</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-11-17" required><span class="day__n" aria-hidden="true">17</span><span class="sr-only">Tuesday 17 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-18" required><span class="day__n" aria-hidden="true">18</span><span class="sr-only">Wednesday 18 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-19" required><span class="day__n" aria-hidden="true">19</span><span class="sr-only">Thursday 19 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-20" required><span class="day__n" aria-hidden="true">20</span><span class="sr-only">Friday 20 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-21" required><span class="day__n" aria-hidden="true">21</span><span class="sr-only">Saturday 21 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-22" required><span class="day__n" aria-hidden="true">22</span><span class="sr-only">Sunday 22 November</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">23</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-11-24" required><span class="day__n" aria-hidden="true">24</span><span class="sr-only">Tuesday 24 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-25" required><span class="day__n" aria-hidden="true">25</span><span class="sr-only">Wednesday 25 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-26" required><span class="day__n" aria-hidden="true">26</span><span class="sr-only">Thursday 26 November</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-27" required><span class="day__n" aria-hidden="true">27</span><span class="sr-only">Friday 27 November</span></label>
+                <label class="day day--session"><input type="radio" name="date" value="2026-11-28" required><span class="day__n" aria-hidden="true">28</span><span class="sr-only">Saturday 28 November, low-tide session evening</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-11-29" required><span class="day__n" aria-hidden="true">29</span><span class="sr-only">Sunday 29 November</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">30</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-12-01" required><span class="day__n" aria-hidden="true"><span class="day__m">Dec</span>1</span><span class="sr-only">Tuesday 1 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-02" required><span class="day__n" aria-hidden="true">2</span><span class="sr-only">Wednesday 2 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-03" required><span class="day__n" aria-hidden="true">3</span><span class="sr-only">Thursday 3 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-04" required><span class="day__n" aria-hidden="true">4</span><span class="sr-only">Friday 4 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-05" required><span class="day__n" aria-hidden="true">5</span><span class="sr-only">Saturday 5 December</span></label>
+                <label class="day day--session"><input type="radio" name="date" value="2026-12-06" required><span class="day__n" aria-hidden="true">6</span><span class="sr-only">Sunday 6 December, low-tide session evening</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">7</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-12-08" required><span class="day__n" aria-hidden="true">8</span><span class="sr-only">Tuesday 8 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-09" required><span class="day__n" aria-hidden="true">9</span><span class="sr-only">Wednesday 9 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-10" required><span class="day__n" aria-hidden="true">10</span><span class="sr-only">Thursday 10 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-11" required><span class="day__n" aria-hidden="true">11</span><span class="sr-only">Friday 11 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-12" required><span class="day__n" aria-hidden="true">12</span><span class="sr-only">Saturday 12 December</span></label>
+                <label class="day day--session"><input type="radio" name="date" value="2026-12-13" required><span class="day__n" aria-hidden="true">13</span><span class="sr-only">Sunday 13 December, low-tide session evening</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">14</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-12-15" required><span class="day__n" aria-hidden="true">15</span><span class="sr-only">Tuesday 15 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-16" required><span class="day__n" aria-hidden="true">16</span><span class="sr-only">Wednesday 16 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-17" required><span class="day__n" aria-hidden="true">17</span><span class="sr-only">Thursday 17 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-18" required><span class="day__n" aria-hidden="true">18</span><span class="sr-only">Friday 18 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-19" required><span class="day__n" aria-hidden="true">19</span><span class="sr-only">Saturday 19 December</span></label>
+                <label class="day day--session"><input type="radio" name="date" value="2026-12-20" required><span class="day__n" aria-hidden="true">20</span><span class="sr-only">Sunday 20 December, low-tide session evening</span></label>
+                <span class="day day--closed" aria-hidden="true"><span class="day__n">21</span></span>
+                <label class="day"><input type="radio" name="date" value="2026-12-22" required><span class="day__n" aria-hidden="true">22</span><span class="sr-only">Tuesday 22 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-23" required><span class="day__n" aria-hidden="true">23</span><span class="sr-only">Wednesday 23 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-24" required><span class="day__n" aria-hidden="true">24</span><span class="sr-only">Thursday 24 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-25" required><span class="day__n" aria-hidden="true">25</span><span class="sr-only">Friday 25 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-26" required><span class="day__n" aria-hidden="true">26</span><span class="sr-only">Saturday 26 December</span></label>
+                <label class="day"><input type="radio" name="date" value="2026-12-27" required><span class="day__n" aria-hidden="true">27</span><span class="sr-only">Sunday 27 December</span></label>
+              </div>
+            </div>
+            <p class="err" id="date-err" hidden></p>
+          </fieldset>
+
+          <fieldset class="field" data-field="time" aria-describedby="time-err">
+            <legend>Entry time</legend>
+            <div class="chips chips--time">
+              <label class="chip"><input type="radio" name="time" value="11:00" required><span>11:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="12:00" required><span>12:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="13:00" required><span>13:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="14:00" required><span>14:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="15:00" required><span>15:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="16:00" required><span>16:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="17:00" required><span>17:00</span></label>
+              <label class="chip"><input type="radio" name="time" value="18:00" required><span>18:00</span></label>
+              <label class="chip chip--session" data-session-slot hidden><input type="radio" name="time" value="20:30" required><span>20:30 <small>Low-tide session</small></span></label>
+            </div>
+            <p class="err" id="time-err" hidden></p>
+          </fieldset>
+
+          <fieldset class="field" data-field="party">
+            <legend>Visitors</legend>
+            <div class="chips chips--party">
+              <label class="chip"><input type="radio" name="party" value="1" checked><span>1</span></label>
+              <label class="chip"><input type="radio" name="party" value="2"><span>2</span></label>
+              <label class="chip"><input type="radio" name="party" value="3"><span>3</span></label>
+              <label class="chip"><input type="radio" name="party" value="4"><span>4</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field" data-field="email">
+            <label class="field__label" for="email">Email for your ticket</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required aria-describedby="email-err">
+            <p class="err" id="email-err" hidden></p>
+          </div>
+
+          <div class="form__submit">
+            <p class="summary" data-summary>Choose a day and an entry time.</p>
+            <button class="btn btn--primary btn--block" type="submit">Reserve a free timed entry</button>
+            <p class="fine">Free. No payment details needed.</p>
+          </div>
+        </form>
+
+        <div class="ticket" data-ticket hidden>
+          <p class="label ticket__label">Reserved</p>
+          <h3 class="ticket__title" data-ticket-title tabindex="-1"></h3>
+          <dl class="ticket__details">
+            <div><dt>Entry</dt><dd data-t="entry"></dd></div>
+            <div><dt>Visitors</dt><dd data-t="party"></dd></div>
+            <div><dt>Ticket for</dt><dd data-t="email"></dd></div>
+            <div><dt>Where</dt><dd>Armazém 7, Cais do Sodré, Lisbon</dd></div>
+          </dl>
+          <p class="ticket__note">This page is a design prototype, so no ticket has been issued and no email has been sent.</p>
+          <div class="ticket__actions">
+            <button type="button" class="btn btn--line" data-ics>Add to calendar</button>
+            <button type="button" class="btn btn--quiet" data-again>Make another reservation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PARTNERS ============ -->
+  <section class="partners" aria-labelledby="partners-title">
+    <div class="wrap partners__inner">
+      <h2 class="label" id="partners-title">Partners</h2>
+      <ul class="partners__list">
+        <li><span lang="pt">Fundação Maré</span></li>
+        <li>Lisbon Port Authority<span class="sr-only">, </span> <span class="partners__role">Cultural programme</span></li>
+        <li><span lang="pt">Instituto Hidrográfico</span><span class="sr-only">, </span> <span class="partners__role">Data partner</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__top">
+      <div>
+        <p class="wordmark wordmark--footer">Tidewrack</p>
+        <p class="site-footer__meta">14 Nov – 27 Dec 2026<span class="sr-only">, </span><br>Armazém 7, Cais do Sodré, Lisbon</p>
+      </div>
+      <div class="site-footer__links">
+        <h2 class="label">Contact</h2>
+        <ul>
+          <li><a href="mailto:hello@tidewrack.example">hello@tidewrack.example</a></li>
+        </ul>
+        <h2 class="label">Follow</h2>
+        <ul class="site-footer__social">
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://vimeo.com/">Vimeo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <p>© 2026 Tidewrack</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" data-dock hidden>
+  <button type="button" class="dock__sound" data-sound-mini hidden aria-label="Stop sound" title="Stop sound"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 4h8v8H4z"/></svg></button>
+  <a class="btn btn--primary btn--dock" href="#reserve">Reserve a free timed entry <svg class="btn__arrow" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><path d="M0 6h18M13 1l5 5-5 5"/></svg></a>
+</div>
+</body>
+</html>

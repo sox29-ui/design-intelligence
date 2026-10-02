@@ -30,3 +30,40 @@ Concise, append-only. Records decisions, discoveries, rejected hypotheses, corpu
 **Noted for later:** the 2025 Site of the Year (ref-001) uses a near-black + lime palette — the exact pairing the report lists as "AI slop". This is a deliberate test case for context-justified vs. generic use of a trend.
 
 **Holdout discipline:** holdout picks were chosen from listing metadata only; no per-site award pages were opened for them. Disclosed exposure: before the split existed, a screening script loaded hol-002 (Al Jazeera) once and logged title, `lang`/`dir`, page height and text length; its screenshot was never viewed and has been deleted. hol-003 (Linear) was loaded once in the very first browser smoke test (page title only). No design observations of holdout sites were made.
+
+## 2026-10-02 — Phase C: evidence collection (extraction split)
+
+**Captured** all 12 extraction references (16 pages incl. AR/EN pairs and GOV.UK/OWID second pages) at 390×844, 768×1024, 1440×900, 1920×1080 with `scripts/collect.ts`; normalized to 230–544 VERIFIED observations per reference; analyst OBSERVED/INFERRED notes in `datasets/observations/ref-*/analyst.src.yaml`. Cross-reference summary: [`datasets/corpus-matrix.extraction.md`](../datasets/corpus-matrix.extraction.md).
+
+**Tooling fixes made during capture** (each changes what was measured — recorded so later comparisons are fair):
+- Consent click on GOV.UK inflated CLS → the probe now reports `cls-before-interaction` separately from the session total.
+- Focus walk started from wherever the consent click left focus → fixed (focus start reset). **Captures for ref-001, 002, 007–012 used the old start point**; focus-indicator shares for them sample a different subset of tab stops.
+- Consent banners with hashed class names were not dismissed → fallback "reject" search inside fixed/sticky layers. Banners stayed open on Tabby, Dropbox and Megaphone captures (visible in screenshots, may cover content).
+- Scout Motors reloaded the page on consent → `clickAndSettle`; recaptured.
+- Probe 0.1.0 counted text over `<img>` as text on white (Ounass showed 75 % "low contrast") → fixed in probe 0.1.1. **All extraction captures except ref-003 carry the legacy estimate**; it is tagged `legacy-contrast-estimate`, capped at confidence 0.9 and never used as a weakness signal. Contrast claims in rules use axe counts instead.
+
+**Known gaps (UNVERIFIED, not guessed):** Lando Norris WebGL hero did not render under software GL in headless Chromium (hero composition unknown; mobile menu probe inconclusive); See What Eye See simulator interior never entered (only the entry page); Shopify Editions 1440 capture was very slow (timings unreliable even relative to the corpus). Lab timings are proxy-relative (D-009) and 2–3 capture workers ran concurrently, adding noise. Lighthouse has not been run on the final captures.
+
+**Untrusted content:** no instruction-like content was found in stored data; none logged.
+
+## 2026-10-02 — Phase D: synthesis (v0.1 rule set)
+
+**Authored** 57 rules in `datasets/rules/` from extraction-split evidence only: 28 principles, 12 invariants, 8 anti-patterns, 7 signatures, 2 hypotheses (candidate, not compiled). Every rule cites observation IDs that `validate.ts` resolves; 25 rules carry counterexamples. Confidence: no rule exceeds `medium` because no validation evidence existed at authoring time (D-006). All rules are `provisional` — no human has reviewed them (D-007).
+
+**Audit before commit** (claims in rationales were re-checked against the corpus matrix): `typography.families-with-roles` claimed ten references but cited six → four supporting references added after checking rendered-font measurements. `accessibility.visible-focus` claimed "eleven of twelve" with full focus visibility → measured shares are 9 × 100 %, 2 × ≥ 93 %, 1 × 53 %; rationale corrected.
+
+**Choices worth revisiting:**
+- Signatures are compiled as *do-not-copy* knowledge, each pointing to the transferable principle behind it. This is the main mechanism against "copy the reference".
+- The dark + neon reference (ref-001, 2025 Site of the Year) became the counterexample that bounds `antipattern.dark-neon-without-identity` instead of evidence for it: the pairing is the subject's livery. The anti-pattern therefore rests on the report plus that boundary (confidence `low`).
+- Arabic invariants lean on W3C/practitioner sources because the corpus has only three Arabic references (ceiling `medium`).
+
+**Decision D-020 (benchmark leakage):** cycle-01 control outputs are *not* used as evidence for v0.1 rules, even though they visibly exhibit generic signatures. Using them would tune DI to the benchmark it is evaluated on. Their failures feed v0.2 candidate changes only (`datasets/candidates/`).
+
+## 2026-10-02 — Verifier fixes before release (inspect-page 0.1.2)
+
+Running `verify-page.ts` on the first control output exposed three measurement errors; each would have mis-scored benchmark outputs in *both* conditions:
+1. **Focus measured mid-scroll.** The focus walk read positions 140 ms after Tab; pages with `scroll-behavior: smooth` were still scrolling, so 5 stops counted as "off-screen". Now waits for the scroll position to settle.
+2. **Ancestor focus indicators missed.** `.card:has(a:focus-visible) { outline }` (a legitimate pattern) counted as "no indicator". When an element shows no indicator itself, the probe now compares its ancestors (4 levels) and pseudo-elements focused vs. blurred, with transitions disabled.
+3. **Page-level backgrounds ignored.** The colour pass scanned `body *` only, so a gradient or colour on `html`/`body` (the canvas) was invisible to the palette and to the `gradient-backgrounds` signature. The canvas background now counts at full document area.
+
+Guarded by new fixture tests (`npm run test:browser`: a known-good and a known-bad page). Captures made before 0.1.2 (all extraction references, validation captures started before the fix) keep their old values; palettes from 0.1.2 captures include the canvas colour, so palette shares are not directly comparable across versions.

@@ -1,0 +1,17 @@
+You are a senior product designer and front-end engineer. Design and build the following brief as a static website.
+
+Use the design-intelligence skill: first read /home/user/design-intelligence/.claude/skills/design-intelligence/SKILL.md and follow it, loading its references, workflows and scripts as it instructs.
+
+=== BRIEF ===
+{BRIEF}
+=== END BRIEF ===
+
+Output contract:
+- Write all files into OUTPUT_DIR = {OUTPUT_DIR}
+- Required: index.html (entry point), CSS/JS files as needed, and NOTES.md (at most 200 words: your key design decisions).
+- Only HTML, CSS and vanilla JavaScript. No build tools, frameworks or external JS/CSS libraries.
+- Web fonts only from Google Fonts, or system fonts.
+- No external images or media: use inline SVG, CSS or simple placeholders. No copyrighted material.
+- Work only inside OUTPUT_DIR; besides OUTPUT_DIR you may read only files under /home/user/design-intelligence/.claude/skills/design-intelligence/ (do not read other repository files such as datasets/, evals/ or docs/).
+- You may use the tools available to you to check your work (for example, render it in a browser with Playwright, which is installed at /home/user/design-intelligence/node_modules/playwright).
+- Finish with a short summary of what you built (files, key decisions).

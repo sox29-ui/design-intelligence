@@ -2,7 +2,7 @@
   "name": "design-intelligence",
   "version": "0.0.0",
   "private": true,
-  "description": "DI — Design Intelligence: an evidence-backed, versioned design decision system delivered as a Claude Code Skill.",
+  "description": "DI \u2014 Design Intelligence: an evidence-backed, versioned design decision system delivered as a Claude Code Skill.",
   "type": "module",
   "engines": {
     "node": ">=22.18"
@@ -18,7 +18,8 @@
     "skill:build": "node scripts/build-skill.ts",
     "skill:package": "node scripts/package-skill.ts",
     "why": "node scripts/why.ts",
-    "bench:score": "node scripts/score-benchmark.ts"
+    "bench:score": "node scripts/score-benchmark.ts",
+    "test:browser": "node --test tests/browser/*.test.ts"
   },
   "license": "UNLICENSED",
   "dependencies": {

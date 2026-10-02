@@ -16,7 +16,7 @@ const AxeBuilder = ((AxeBuilderModule as unknown as { default?: unknown }).defau
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PROBE_SRC = readFileSync(join(HERE, 'lib', 'probe.browser.js'), 'utf8').replace(/^\/\/.*$/gm, '');
 const INSTRUMENT_SRC = readFileSync(join(HERE, 'lib', 'instrument.browser.js'), 'utf8');
-export const TOOL_VERSION = '0.1.1';
+export const TOOL_VERSION = '0.1.2';
 
 export type ViewportSpec = { name: string; width: number; height: number; mobile?: boolean; touch?: boolean };
 export const BENCHMARK_VIEWPORTS: ViewportSpec[] = [
@@ -229,13 +229,13 @@ async function renderedFonts(page: Page, probeKeys: string[]) {
 async function focusWalk(page: Page, steps = 16) {
   await page.evaluate(() => {
     const props = ['outlineStyle', 'outlineWidth', 'outlineColor', 'boxShadow', 'borderTopColor', 'borderBottomWidth', 'backgroundColor', 'color', 'textDecorationLine'];
+    (document.activeElement as HTMLElement | null)?.blur?.();
     const base = new WeakMap();
     for (const el of document.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')) {
       const s = getComputedStyle(el);
       base.set(el, Object.fromEntries(props.map((p) => [p, (s as any)[p]])));
     }
     (window as any).__DI_FOCUS_BASE__ = { base, props };
-    (document.activeElement as HTMLElement | null)?.blur?.();
     // Reset the sequential focus navigation starting point to the document start
     // (consent clicks would otherwise make the walk begin mid-page).
     const start = document.createElement('span');
@@ -249,6 +249,16 @@ async function focusWalk(page: Page, steps = 16) {
   for (let i = 0; i < steps; i++) {
     await page.keyboard.press('Tab');
     await page.waitForTimeout(140);
+    // Focus may trigger (smooth) scrolling: measure only once the scroll position has settled.
+    await page.evaluate(async () => {
+      let last = -1;
+      for (let t = 0; t < 24; t++) {
+        const y = scrollY + scrollX * 1e6;
+        if (y === last) break;
+        last = y;
+        await new Promise((r) => setTimeout(r, 50));
+      }
+    });
     results.push(
       await page.evaluate(() => {
         const el = document.activeElement as HTMLElement | null;
@@ -258,6 +268,25 @@ async function focusWalk(page: Page, steps = 16) {
         const b = base.get(el) || {};
         const changed = props.filter((p: string) => b[p] !== undefined && b[p] !== (s as any)[p]);
         const outline = s.outlineStyle !== 'none' && parseFloat(s.outlineWidth) > 0;
+        if (!outline && changed.length === 0) {
+          // No indicator on the element itself: it may be drawn on an ancestor (:focus-within,
+          // :has(:focus-visible)) or a pseudo-element. Compare focused vs. blurred with transitions off.
+          const near = ['outlineStyle', 'outlineWidth', 'boxShadow', 'backgroundColor', 'opacity', 'borderTopColor', 'textDecorationLine'];
+          const key = (x: CSSStyleDeclaration) => near.map((p) => (x as any)[p]).join('|');
+          const anc: Element[] = [];
+          for (let a = el.parentElement, i = 0; a && i < 4; i++, a = a.parentElement) anc.push(a);
+          const snap = () => [key(getComputedStyle(el, '::before')), key(getComputedStyle(el, '::after')), ...anc.map((a) => key(getComputedStyle(a)))];
+          const st = document.createElement('style');
+          st.textContent = '*,*::before,*::after{transition:none!important}';
+          document.head.appendChild(st);
+          const focused = snap();
+          el.blur();
+          const blurred = snap();
+          el.focus({ preventScroll: true });
+          st.remove();
+          if (focused[0] !== blurred[0] || focused[1] !== blurred[1]) changed.push('pseudo-element');
+          if (focused.slice(2).some((k, i) => k !== blurred[i + 2])) changed.push('ancestor');
+        }
         const r = el.getBoundingClientRect();
         return {
           tag: el.tagName.toLowerCase(),

@@ -3,8 +3,9 @@ name: design-intelligence
 description: >-
   Evidence-backed design decision system for web interfaces. Use when designing, building, redesigning,
   critiquing or QA-ing web pages and UI: landing pages, marketing/product sites, SaaS dashboards and app
-  screens, e-commerce, editorial and cultural publications, portfolios; decisions about typography,
-  layout, hierarchy, colour, motion, components, responsive behaviour, accessibility and performance;
+  screens, e-commerce and storefronts, editorial and cultural publications, portfolios; decisions about
+  typography, layout, hierarchy, colour, motion, components (navigation, heroes, cards, forms, data
+  display), responsive behaviour, accessibility and performance;
   Arabic/RTL and bilingual design; and researching reference websites. Chooses context-appropriate
   decisions (not a house style), avoids generic "AI website" signatures, and verifies work in a real browser.
 metadata:

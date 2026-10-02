@@ -100,7 +100,7 @@ export function compile(): Map<string, string> {
       L.push(`## Rules (${guidance.length})`);
       L.push('');
       for (const r of guidance) L.push(card(r, names));
-    } else L.push('_No compiled rules in this domain yet._\n');
+    } else if (!framing) L.push('_No compiled rules in this domain yet._\n');
     if (hypotheses.length) {
       L.push('## Open questions (hypotheses — NOT guidance)');
       L.push('');

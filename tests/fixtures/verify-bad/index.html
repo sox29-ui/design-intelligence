@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verifier fixture — bad</title>
+<style>
+  * :focus { outline: none; }
+  body { margin: 0; font: 16px/1.4 system-ui, sans-serif; color: #fff;
+         background: linear-gradient(135deg, #3b1d8f 0%, #1f6feb 100%); min-block-size: 100vh; }
+  .nav { position: fixed; inset-block-start: 16px; inset-inline: 16px; border-radius: 999px; padding: 12px 20px;
+         background: rgba(255,255,255,.12); backdrop-filter: blur(16px); box-shadow: 0 0 40px rgba(120,80,255,.6); }
+  .nav a { color: #fff; margin-inline-end: 12px; }
+  .wide { inline-size: 900px; padding: 120px 24px 24px; }
+  h1 { font-size: 15vw; line-height: 1; margin: 0; }
+</style>
+</head>
+<body>
+<div class="nav"><a href="#a">المنتجات</a><a href="#b">الأسعار</a><a href="#c">تواصل</a></div>
+<div class="wide">
+  <h1>مستقبل</h1>
+  <p>هذا نص عربي طويل في صفحة لا تحدد الاتجاه ولا اللغة، وهي حالة يجب أن يكتشفها أداة التحقق بوضوح. نص إضافي لضمان أن معظم الأحرف عربية في هذه الصفحة التجريبية.</p>
+  <button type="button">ابدأ الآن</button>
+</div>
+</body>
+</html>
