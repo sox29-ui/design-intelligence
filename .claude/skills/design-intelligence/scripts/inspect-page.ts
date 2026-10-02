@@ -379,10 +379,11 @@ function contextOptions(vp: ViewportSpec, extra: Record<string, unknown> = {}) {
   };
 }
 
-function proxyFor(url: string) {
-  const host = new URL(url).hostname;
-  if (!process.env.HTTPS_PROXY || ['localhost', '127.0.0.1', '::1'].includes(host) || url.startsWith('file:')) return undefined;
-  return { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' };
+function proxyFor(_url: string) {
+  // Always route through the egress proxy when one is configured (web fonts on local pages need it);
+  // local pages bypass it.
+  if (!process.env.HTTPS_PROXY) return undefined;
+  return { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1,::1' };
 }
 
 export async function inspectPage(o: InspectOptions): Promise<InspectResult> {

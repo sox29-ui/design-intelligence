@@ -1,0 +1,76 @@
+# DI benchmark scorecard (report P26 weights; P23 accessibility split; P29 diversity).
+# Scores are 1–5 per dimension (1 = poor, 3 = acceptable, 5 = excellent) and weighted to 100.
+version: 1
+weights:
+  brief_fidelity: 25          # goals, audience, content, constraints of the brief actually served
+  hierarchy_usability: 20     # what is seen first/second/third; task paths; legibility; composition
+  originality_art_direction: 15  # context-specific identity; not a generic template; no unjustified AI signatures
+  responsive_quality: 15      # transformation (not shrinking) across 390/768/1440/1920; no overflow; tap targets
+  accessibility: 10           # automated (axe, focus, contrast, landmarks) + structure; human items listed below
+  performance: 10             # weight, requests, fonts, render cost (lab, environment-relative)
+  system_consistency: 5       # tokens: type scale, spacing, colour roles, radii, states
+diagnostic_subscores:          # reported separately, not double-weighted
+  - typography                # scale, measure, leading, pairing, script support
+  - composition               # grid, alignment, rhythm, density appropriate to brief
+  - generic_ai_signatures     # count of unjustified signatures (see signature list)
+anchors:
+  brief_fidelity:
+    1: "Ignores key goals/content/constraints; wrong product type feel (e.g. marketing page for a dashboard brief)."
+    3: "Covers required content; generic interpretation of goals; some constraints missed."
+    5: "Every goal, audience need and constraint visibly shapes decisions; content complete and well prioritised."
+  hierarchy_usability:
+    1: "Primary action/task hard to find; competing focal points; illegible or confusing."
+    3: "Clear primary path; secondary content adequate; minor friction."
+    5: "Unambiguous first/second/third read; task completion fast; density matches the task."
+  originality_art_direction:
+    1: "Template look or an obvious reproduction of a known site; multiple unjustified generic signatures."
+    3: "Coherent but familiar; identity weakly tied to the brief."
+    5: "Distinct, brief-derived identity; every expressive move has a reason; nothing that 'merely signals premium'."
+  responsive_quality:
+    1: "Broken layout, overflow, or unusable at 390."
+    3: "Works at all widths, mostly by stacking/shrinking."
+    5: "Composition deliberately transforms per viewport; priorities and interaction adapt."
+  accessibility:
+    1: "Critical axe violations, invisible focus, missing labels/landmarks."
+    3: "No critical/serious axe issues; basic structure; some gaps."
+    5: "Clean automated results, visible focus, full keyboard path, reduced motion honoured, correct lang/dir."
+  performance:
+    1: "Multi-MB payload or heavy main-thread work for little benefit."
+    3: "Reasonable weight; some avoidable cost."
+    5: "Lean (fonts subset/limited, no unnecessary scripts), fast first render."
+  system_consistency:
+    1: "Arbitrary values everywhere; inconsistent components/states."
+    3: "Mostly consistent with some drift."
+    5: "Clear token system; consistent states; few distinct sizes/radii/colours used purposefully."
+hard_gates:                    # FAIL regardless of score
+  - id: broken-mobile
+    rule: "horizontal overflow > 0 px at 390×844, or primary content/CTA unreachable on mobile"
+  - id: keyboard-unusable
+    rule: "focus indicator share < 0.5 in the focus walk, or keyboard trap, or primary action not reachable by keyboard"
+  - id: critical-a11y
+    rule: "axe 'critical' violations > 0"
+  - id: runtime-errors
+    rule: "uncaught page errors during load/interaction"
+  - id: copied-assets
+    rule: "proprietary assets/code from reference sites"
+  - id: near-clone
+    rule: "obvious near-clone of a reference website (critic/human judgement)"
+generic_ai_signatures:         # presence is measured automatically; *justification* is judged against the brief
+  - giant-hero-type            # display ≥ 6vw and ≥ 4× body at desktop
+  - gradient-backgrounds       # gradient area ratio ≥ 0.15
+  - glow-accents               # coloured large-blur shadows
+  - glassmorphism              # backdrop-filter blur on panels
+  - rounded-card-grid          # ≥ 2 card groups with radius ≥ 16px
+  - floating-nav               # fixed/sticky header inset from edges with radius/blur
+  - scroll-reveal              # opacity-0 pre-reveal elements + IntersectionObserver
+  - excessive-blur             # filter blur on ≥ 3 elements
+  - decorative-motion          # infinite running animations without content role
+  - dark-neon-default          # dark background + saturated neon accent without brand reason
+  - purple-blue-gradient-palette
+human_only_checks:             # report P23 — cannot be automated reliably
+  - keyboard-only walkthrough of the primary task
+  - screen-reader sanity check (headings, landmarks, names)
+  - reduced-motion experience
+  - meaningful alt text / accessible names (quality, not presence)
+  - content order and Arabic reading order (brief C)
+  - originality vs known references
