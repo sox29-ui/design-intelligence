@@ -42,3 +42,8 @@ sources:
     url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values
     accessed: 2026-10-02
     used_for: "logical properties map to physical sides by writing mode and direction; families: margin/padding/border/inset inline/block, start/end values"
+  - id: di-research-report
+    title: "Deep-research report: architecture of the design-intelligence skill (supplied with the DI mission, Arabic, 2026-10-02)"
+    url: "repository: docs/REPORT-EXTRACTION.md (structured extraction of the supplied report)"
+    accessed: 2026-10-02
+    used_for: "process rules (decision system not style library, multiple directions, verify-before-complete), generic 'Awwwards-flavoured AI slop' cluster (W11), evaluation design"

@@ -1,0 +1,83 @@
+# Analyst observations — ref-003 Scout Motors (home). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 390-menu-open.
+items:
+  - key: cinematic-hero-with-disclosure
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "First read is full-bleed footage of the vehicle off-road; second read is a short bold white statement near the bottom; third, below a hairline rule, a small centred line with starting price and production timing plus a disclaimer link, flanked by tiny monospace labels."
+    confidence: 0.9
+    assessment: strength
+    tags: [hero, video, disclosure]
+  - key: inset-header-bars
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top]
+    statement: "Navigation sits in two solid white rectangles inset from the edges and connected by short hairline 'ticks' (logo and model links; reserve and menu); no blur or transparency. On mobile the same two boxes shrink to logo | reserve + menu."
+    confidence: 0.9
+    assessment: neutral
+    tags: [floating-header, persistent-cta]
+  - key: heritage-collage
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-scroll-25]
+    statement: "A heritage section sets a three-line statement in letters several hundred pixels tall (navy, last line in brand orange) behind a ring of tilted, numbered vintage advertisement photographs on a grained off-white ground, with a small paragraph tucked at the top-left."
+    confidence: 0.85
+    assessment: neutral
+    tags: [storytelling, display, collage]
+  - key: menu-as-storefront
+    page: home
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-menu-open]
+    statement: "The mobile menu is a full-screen sheet: secondary links as a plain list, then two model tiles with photos and bracketed monospace type labels, then a large orange block with the reservation call to action."
+    confidence: 0.9
+    assessment: strength
+    tags: [navigation, conversion]
+  - key: mono-labels
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-menu-open]
+    statement: "Small uppercase monospace labels (origin, founding year, bracketed vehicle type) accompany a custom sans superfamily used in regular, wide and semi-condensed widths."
+    confidence: 0.85
+    assessment: neutral
+    tags: [superfamily, mono, labels]
+  - key: why-persistent-reserve
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: INFERRED
+    based_on: [inset-header-bars, menu-as-storefront, cinematic-hero-with-disclosure]
+    statement: "The single conversion action (reserve) is present in the header at every width and dominates the mobile menu, so cinematic storytelling never strands a ready-to-buy visitor; price and timing disclosure in the hero sets expectations before the story starts."
+    confidence: 0.7
+    assessment: strength
+    tags: [conversion, storytelling]
+  - key: why-weight
+    page: home
+    viewport: cross-viewport
+    category: performance
+    type: INFERRED
+    based_on: [cinematic-hero-with-disclosure, ref-003.performance.home-390-transfer-bytes]
+    statement: "About 35 MB transfers on the mobile home page in the lab (footage-led); cinematic video is defensible for a vehicle launch but is a heavy cost on mobile data, and the brief should state whether that audience accepts it."
+    confidence: 0.65
+    assessment: trade-off
+    tags: [video, budget]
+  - key: why-clean-a11y
+    page: home
+    viewport: 1440x900
+    category: accessibility
+    type: INFERRED
+    based_on: [ref-003.accessibility.home-1440-axe-violations, ref-003.accessibility.home-1440-focus-indicator-share]
+    statement: "Despite cinematic art direction, the desktop build shows no axe violations and visible focus on every sampled tab stop: spectacle and accessibility are not inherently in conflict."
+    confidence: 0.7
+    assessment: strength
+    tags: [axe, focus]

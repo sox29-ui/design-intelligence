@@ -1,0 +1,244 @@
+{
+  "ref_id": "ref-003",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:39:19.515Z",
+  "observations": [
+    {
+      "id": "ref-003.hierarchy.home-a-cinematic-hero-with-disclosure",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "cinematic-hero-with-disclosure",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/1440x900-top.jpg",
+          "sha256": "3adce2712550e6264bd41316c43e64327081d5ab3d1611be3fe71dd6cecd4203"
+        }
+      ],
+      "statement": "First read is full-bleed footage of the vehicle off-road; second read is a short bold white statement near the bottom; third, below a hairline rule, a small centred line with starting price and production timing plus a disclaimer link, flanked by tiny monospace labels.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "hero",
+        "video",
+        "disclosure"
+      ]
+    },
+    {
+      "id": "ref-003.components.home-a-inset-header-bars",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "inset-header-bars",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/1440x900-top.jpg",
+          "sha256": "3adce2712550e6264bd41316c43e64327081d5ab3d1611be3fe71dd6cecd4203"
+        },
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/390x844-top.jpg",
+          "sha256": "0739671f41af5dd25265453d787644f886b3fb89fcfed41ead9b2a4550b5857f"
+        }
+      ],
+      "statement": "Navigation sits in two solid white rectangles inset from the edges and connected by short hairline 'ticks' (logo and model links; reserve and menu); no blur or transparency. On mobile the same two boxes shrink to logo | reserve + menu.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "floating-header",
+        "persistent-cta"
+      ]
+    },
+    {
+      "id": "ref-003.layout.home-a-heritage-collage",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "heritage-collage",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/1440x900-scroll-25.jpg",
+          "sha256": "3616cdca2a87ccc58e5bc5a506765ee8ffc17d1b2707b32ea26990067da1c85b"
+        }
+      ],
+      "statement": "A heritage section sets a three-line statement in letters several hundred pixels tall (navy, last line in brand orange) behind a ring of tilted, numbered vintage advertisement photographs on a grained off-white ground, with a small paragraph tucked at the top-left.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "storytelling",
+        "display",
+        "collage"
+      ]
+    },
+    {
+      "id": "ref-003.components.home-a-menu-as-storefront",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "menu-as-storefront",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/390x844-menu-open.jpg",
+          "sha256": "a5183d5cc3ffd967e166bb6b851dd0a13babe7a1967576efeb24da35040ad067"
+        }
+      ],
+      "statement": "The mobile menu is a full-screen sheet: secondary links as a plain list, then two model tiles with photos and bracketed monospace type labels, then a large orange block with the reservation call to action.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "navigation",
+        "conversion"
+      ]
+    },
+    {
+      "id": "ref-003.typography.home-a-mono-labels",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "mono-labels",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/1440x900-top.jpg",
+          "sha256": "3adce2712550e6264bd41316c43e64327081d5ab3d1611be3fe71dd6cecd4203"
+        },
+        {
+          "artifact": "research-artifacts/ref-003/home/20261002T163316Z/390x844-menu-open.jpg",
+          "sha256": "a5183d5cc3ffd967e166bb6b851dd0a13babe7a1967576efeb24da35040ad067"
+        }
+      ],
+      "statement": "Small uppercase monospace labels (origin, founding year, bracketed vehicle type) accompany a custom sans superfamily used in regular, wide and semi-condensed widths.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "superfamily",
+        "mono",
+        "labels"
+      ]
+    },
+    {
+      "id": "ref-003.components.home-a-why-persistent-reserve",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "why-persistent-reserve",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-003.components.home-a-inset-header-bars"
+        },
+        {
+          "observation": "ref-003.components.home-a-menu-as-storefront"
+        },
+        {
+          "observation": "ref-003.hierarchy.home-a-cinematic-hero-with-disclosure"
+        }
+      ],
+      "statement": "The single conversion action (reserve) is present in the header at every width and dominates the mobile menu, so cinematic storytelling never strands a ready-to-buy visitor; price and timing disclosure in the hero sets expectations before the story starts.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "conversion",
+        "storytelling"
+      ]
+    },
+    {
+      "id": "ref-003.performance.home-a-why-weight",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "cross-viewport",
+      "category": "performance",
+      "property": "why-weight",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-003.hierarchy.home-a-cinematic-hero-with-disclosure"
+        },
+        {
+          "observation": "ref-003.performance.home-390-transfer-bytes"
+        }
+      ],
+      "statement": "About 35 MB transfers on the mobile home page in the lab (footage-led); cinematic video is defensible for a vehicle launch but is a heavy cost on mobile data, and the brief should state whether that audience accepts it.",
+      "confidence": 0.65,
+      "assessment": "trade-off",
+      "tags": [
+        "video",
+        "budget"
+      ]
+    },
+    {
+      "id": "ref-003.accessibility.home-a-why-clean-a11y",
+      "ref_id": "ref-003",
+      "page": "home",
+      "source_url": "https://www.scoutmotors.com/",
+      "capture_id": "20261002T163316Z",
+      "captured_at": "2026-10-02T16:33:16.730Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "why-clean-a11y",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-003.accessibility.home-1440-axe-violations"
+        },
+        {
+          "observation": "ref-003.accessibility.home-1440-focus-indicator-share"
+        }
+      ],
+      "statement": "Despite cinematic art direction, the desktop build shows no axe violations and visible focus on every sampled tab stop: spectacle and accessibility are not inherently in conflict.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "axe",
+        "focus"
+      ]
+    }
+  ]
+}
