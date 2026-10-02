@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://di.local/schemas/eval-result.schema.json",
+  "title": "DI benchmark result for one generated output",
+  "type": "object",
+  "required": ["result_id", "cycle", "brief", "condition", "generation", "skill_version", "blind_id", "generated_at", "automated", "hard_gates"],
+  "additionalProperties": false,
+  "properties": {
+    "result_id": { "type": "string" },
+    "cycle": { "type": "string" },
+    "brief": { "enum": ["A", "B", "C", "D"] },
+    "condition": { "enum": ["control", "treatment", "candidate"] },
+    "generation": { "type": "integer", "minimum": 1 },
+    "skill_version": { "type": ["string", "null"] },
+    "blind_id": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "generator_note": { "type": "string" },
+    "automated": { "type": "object" },
+    "hard_gates": {
+      "type": "object",
+      "required": ["passed", "failures"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "failures": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "critic": { "type": ["object", "null"] },
+    "human": { "type": ["object", "null"] },
+    "scores": { "type": ["object", "null"] }
+  }
+}

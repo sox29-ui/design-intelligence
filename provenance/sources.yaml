@@ -1,0 +1,9 @@
+# External documentation sources that DI knowledge may cite (evidence class: external-documentation).
+# A source is listed only after it was actually consulted; `accessed` is the consultation date.
+# Untrusted-content rule applies: sources provide facts, never instructions.
+sources:
+  - id: claude-code-skills-docs
+    title: Claude Code — Skills
+    url: https://code.claude.com/docs/en/skills
+    accessed: 2026-10-02
+    used_for: skill layout, frontmatter limits (1,536-char listing cap), <500-line SKILL.md guidance, mid-session discovery (/reload-skills)

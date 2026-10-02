@@ -1,0 +1,15 @@
+node_modules/
+# Third-party captures (screenshots, frame sequences, full aria/axe/lighthouse reports).
+# Research evidence of third-party sites is NOT redistributed in Git (see docs/RESEARCH-ETHICS.md).
+# Hashes of every artifact are committed in datasets/raw/**/manifest.json.
+research-artifacts/
+# Benchmark render artifacts (screenshots of DI's own generated outputs) are kept out of Git by default;
+# small approved summaries live in evals/results/.
+evals/results/**/artifacts/
+dist/*
+!dist/.gitkeep
+.lighthouseci/
+playwright-report/
+test-results/
+*.log
+.DS_Store

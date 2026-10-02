@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://di.local/schemas/candidate-change.schema.json",
+  "title": "DI candidate change (never applied automatically)",
+  "type": "object",
+  "required": ["id", "type", "targets", "summary", "motivation", "predicted_effect", "benchmark", "review", "created"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^cc-[0-9]{4}$" },
+    "type": { "enum": ["add-rule", "modify-rule", "weaken-rule", "remove-rule", "skill-behavior", "workflow", "tooling", "eval"] },
+    "targets": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "summary": { "type": "string" },
+    "motivation": {
+      "type": "object",
+      "required": ["source", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "enum": ["eval-failure", "research", "human-feedback", "critic-finding", "validation-check"] },
+        "evidence": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "recurrence": { "type": "string", "description": "Across which briefs/runs/models the defect recurred." }
+      }
+    },
+    "predicted_effect": { "type": "string" },
+    "benchmark": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["not-run", "improved", "no-change", "regressed", "mixed"] },
+        "before": { "type": ["string", "null"] },
+        "after": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["pending", "accepted-provisionally", "accepted", "rejected"] },
+        "reviewer": { "type": ["string", "null"] },
+        "date": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "created": { "type": "string", "format": "date" }
+  }
+}

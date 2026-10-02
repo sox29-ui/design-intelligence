@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://di.local/schemas/feedback.schema.json",
+  "title": "DI feedback log entry (human or critic)",
+  "type": "object",
+  "required": ["entries"],
+  "properties": {
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "finding", "observed_in", "severity", "source", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^fb-[0-9]{4}$" },
+          "finding": { "type": "string" },
+          "observed_in": { "type": "array", "items": { "type": "string" } },
+          "severity": { "enum": ["blocker", "high", "medium", "low", "subjective"] },
+          "source": { "enum": ["human", "critic", "automated"] },
+          "proposed_change": { "type": "string" },
+          "candidate": { "type": ["string", "null"] },
+          "status": { "enum": ["logged", "candidate", "local-only", "resolved", "rejected"] }
+        }
+      }
+    }
+  }
+}

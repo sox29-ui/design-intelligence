@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://di.local/schemas/principle.schema.json",
+  "title": "DI knowledge record (principle, invariant, anti-pattern, signature, hypothesis)",
+  "type": "object",
+  "required": ["id", "kind", "domain", "title", "status", "since", "statement", "when", "consider", "verify", "avoid_when", "evidence", "evidence_count", "confidence", "confidence_basis", "depends_on", "created", "updated", "history"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z]+(\\.[a-z0-9-]+)+$" },
+    "kind": { "enum": ["principle", "invariant", "anti-pattern", "signature", "hypothesis"] },
+    "domain": { "enum": ["typography", "layout", "responsive", "color", "hierarchy", "components", "motion", "accessibility", "performance", "rtl", "content", "process", "implementation"] },
+    "title": { "type": "string", "minLength": 5 },
+    "status": { "enum": ["candidate", "provisional", "accepted", "weakened", "rejected", "deprecated"] },
+    "since": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "statement": { "type": "string", "minLength": 10, "description": "One-sentence decision guidance." },
+    "when": {
+      "type": "object",
+      "description": "Context conditions under which the record applies. Keys are context dimensions; values are lists of allowed values or free-text conditions.",
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+    "consider": { "type": "array", "items": { "type": "string" } },
+    "verify": { "type": "array", "items": { "type": "string" } },
+    "avoid_when": { "type": "array", "items": { "type": "string" } },
+    "rationale": { "type": "string", "description": "Why it works. This is INFERRED reasoning unless the evidence is a standard." },
+    "trade_offs": { "type": "array", "items": { "type": "string" } },
+    "depends_on": {
+      "type": "array",
+      "items": { "enum": ["industry", "content-density", "user-intent", "language", "device", "brand-personality", "engineering-budget", "motion-budget", "none"] }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["supporting", "counterexamples"],
+      "additionalProperties": false,
+      "properties": {
+        "supporting": { "type": "array", "items": { "$ref": "#/$defs/refEvidence" } },
+        "counterexamples": { "type": "array", "items": { "$ref": "#/$defs/refEvidence" } },
+        "validation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["ref", "result", "observations"],
+            "additionalProperties": false,
+            "properties": {
+              "ref": { "type": "string", "pattern": "^val-[0-9]{3}$" },
+              "result": { "enum": ["consistent", "inconsistent", "inconclusive"] },
+              "observations": { "type": "array", "items": { "type": "string" } },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "external": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["source_id"],
+            "additionalProperties": false,
+            "properties": {
+              "source_id": { "type": "string" },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "benchmark": {
+          "type": "array",
+          "description": "Evaluation-derived evidence (benchmark outputs), e.g. for anti-patterns observed in control generations.",
+          "items": {
+            "type": "object",
+            "required": ["result_id", "note"],
+            "additionalProperties": false,
+            "properties": {
+              "result_id": { "type": "string" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "evidence_count": { "type": "integer", "minimum": 0, "description": "Independent supporting references (studio-deduplicated). Recomputed by validator." },
+    "confidence": { "enum": ["low", "medium", "high"] },
+    "confidence_basis": { "type": "string" },
+    "created": { "type": "string", "format": "date" },
+    "updated": { "type": "string", "format": "date" },
+    "history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["version", "date", "change"],
+        "additionalProperties": false,
+        "properties": {
+          "version": { "type": "string" },
+          "date": { "type": "string", "format": "date" },
+          "change": { "type": "string" },
+          "candidate": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "refEvidence": {
+      "type": "object",
+      "required": ["ref", "observations"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "pattern": "^(ref|val)-[0-9]{3}$" },
+        "observations": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}
