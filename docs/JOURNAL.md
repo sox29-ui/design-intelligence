@@ -29,4 +29,4 @@ Concise, append-only. Records decisions, discoveries, rejected hypotheses, corpu
 
 **Noted for later:** the 2025 Site of the Year (ref-001) uses a near-black + lime palette — the exact pairing the report lists as "AI slop". This is a deliberate test case for context-justified vs. generic use of a trend.
 
-**Holdout discipline:** holdout picks were chosen from listing metadata only; no screenshots or per-site award pages were opened for them.
+**Holdout discipline:** holdout picks were chosen from listing metadata only; no per-site award pages were opened for them. Disclosed exposure: before the split existed, a screening script loaded hol-002 (Al Jazeera) once and logged title, `lang`/`dir`, page height and text length; its screenshot was never viewed and has been deleted. hol-003 (Linear) was loaded once in the very first browser smoke test (page title only). No design observations of holdout sites were made.
