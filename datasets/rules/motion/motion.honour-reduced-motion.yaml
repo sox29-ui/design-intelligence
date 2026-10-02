@@ -1,0 +1,67 @@
+id: motion.honour-reduced-motion
+kind: invariant
+domain: motion
+title: Every motion layer honours prefers-reduced-motion
+status: provisional
+since: 0.1.0
+statement: "Put non-essential animation, smooth scrolling and scroll-linked effects behind prefers-reduced-motion: no-preference, and stop or shorten them under reduce — in CSS and in JavaScript animation loops."
+when:
+  motion_budget:
+    - subtle
+    - expressive
+consider:
+  - "@media (prefers-reduced-motion: no-preference) { … } as the default wrapper"
+  - matchMedia check before starting rAF/WebGL loops and smooth-scroll libraries
+  - shorten transitions to ≤ 100 ms or remove them
+verify:
+  - verify-page reduced-motion gate
+  - content fully visible with motion off (no opacity-0 leftovers)
+avoid_when: []
+rationale: Utilitarian and commercial references ship reduced-motion CSS (8–14 rules) or throttle JS animation under reduce (running animations 14 → 1; animation-frame calls −70–80%). The brand-guidelines site keeps its scroll choreography running unchanged.
+trade_offs:
+  - two motion states to design
+depends_on:
+  - motion-budget
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.motion.home-1440-reduced-motion-response
+    - ref: ref-008
+      observations:
+        - ref-008.motion.home-1440-reduced-motion-response
+    - ref: ref-010
+      observations:
+        - ref-010.motion.home-ar-1440-reduced-motion-response
+    - ref: ref-009
+      observations:
+        - ref-009.motion.home-1440-reduced-motion-response
+        - ref-009.motion.home-a-reduced-motion-honoured
+    - ref: ref-001
+      observations:
+        - ref-001.motion.home-a-reduced-motion-partial
+    - ref: ref-006
+      observations:
+        - ref-006.motion.home-1440-reduced-motion-response
+  counterexamples:
+    - ref: ref-004
+      observations:
+        - ref-004.motion.home-a-why-motion-a11y-gap
+      note: scroll-linked tiles keep running under reduce
+    - ref: ref-002
+      observations:
+        - ref-002.motion.home-a-reduced-motion-partial
+      note: "partial: 38 → 21 running animations"
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 2.3.3 animation from interactions; SC 2.2.2 pause, stop, hide
+evidence_count: 6
+confidence: medium
+confidence_basis: WCAG + 6 references that implement it; 2 counterexamples
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

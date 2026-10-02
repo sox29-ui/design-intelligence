@@ -1,0 +1,49 @@
+id: components.persistent-primary-action
+kind: principle
+domain: components
+title: Keep the one conversion action persistent
+status: provisional
+since: 0.1.0
+statement: On conversion pages, keep the single primary action (reserve, start, download, add to cart) visible in the header at every width and inside the mobile menu, so storytelling never strands a ready visitor.
+when:
+  page_goal:
+    - conversion
+consider:
+  - header CTA at 390 and 1440
+  - CTA repeated at the end of each story section
+  - pricing/terms disclosure near the first CTA
+verify:
+  - CTA visible in the first viewport at 390
+  - CTA reachable within the first 5 tab stops
+avoid_when:
+  - task tools where a persistent sales CTA distracts from work
+rationale: The automotive launch keeps "reserve" in the header and the mobile menu; the payments site pins both CTAs in its mobile menu and header; the fintech app keeps a single download CTA in each section.
+trade_offs:
+  - repetition can feel pushy if overused
+depends_on:
+  - user-intent
+evidence:
+  supporting:
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-a-inset-header-bars
+        - ref-003.components.home-a-why-persistent-reserve
+    - ref: ref-009
+      observations:
+        - ref-009.components.home-a-mobile-menu-drilldown
+        - ref-009.hierarchy.home-a-hero-first-read
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-en-a-english-counterpart
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent conversion references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

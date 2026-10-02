@@ -1,0 +1,50 @@
+id: typography.kicker-labels
+kind: principle
+domain: typography
+title: Small labels classify content; their form depends on script
+status: provisional
+since: 0.1.0
+statement: Use small, consistent labels above headlines to classify content (type, section, date); in Latin they may be uppercase and tracked, in Arabic use weight, size or colour instead.
+when:
+  content_density:
+    - medium
+    - high
+consider:
+  - one label style per classification axis
+  - label colour that still meets contrast
+verify:
+  - labels ≥ 11–12 px and ≥ 4.5:1
+  - no letter-spacing or case transforms on Arabic labels
+avoid_when:
+  - low-density single-message pages where labels add noise
+rationale: The data publication and the personal-brand site use small uppercase sans kickers; the Arabic news site uses small grey labels without case or tracking.
+trade_offs:
+  - tiny uppercase labels easily fail contrast
+depends_on:
+  - language
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-008
+      observations:
+        - ref-008.typography.home-a-kicker-labels
+    - ref: ref-003
+      observations:
+        - ref-003.typography.home-a-mono-labels
+    - ref: ref-011
+      observations:
+        - ref-011.components.home-a-content-type-skins
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: rtlstyling-shadeed
+      note: no letter-spacing for Arabic
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references, Latin and Arabic
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

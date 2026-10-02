@@ -1,0 +1,55 @@
+id: rtl.arabic-needs-more-leading
+kind: invariant
+domain: rtl
+title: Give Arabic more line-height than Latin at the same size
+status: provisional
+since: 0.1.0
+statement: "Set Arabic line-height higher than the Latin equivalent (≈ +15–20%: display ≈ 1.25–1.35, body ≈ 1.6–1.8) and check marks and descenders for collisions."
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - ":lang(ar) { line-height: … } overrides"
+  - per-language display tokens
+verify:
+  - no clipped diacritics or descenders at 390
+  - compare AR vs EN line counts
+avoid_when: []
+rationale: The bilingual fintech uses the same family and sizes in both languages but 1.27 vs 1.07 display and 1.6 vs 1.4 body line-height for Arabic. Arabic ascenders/descenders extend further than Latin (W3C alreq).
+trade_offs:
+  - taller blocks; layouts must allow vertical growth
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-display-line-height
+        - ref-010.typography.home-en-1440-display-line-height
+        - ref-010.typography.home-ar-1440-reading-line-height
+        - ref-010.typography.home-ar-a-why-shared-family-more-leading
+  counterexamples:
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-1440-display-line-height
+      note: same line-height in both languages; Arabic needs more lines
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-reading-line-height
+      note: tight 1.26–1.37 Arabic body (single-language page; not verified as harmful)
+  validation: []
+  external:
+    - source_id: w3c-alreq
+      note: Arabic ascenders and descenders extend further than Latin
+    - source_id: rtlstyling-shadeed
+      note: provide higher line-height for Arabic
+evidence_count: 1
+confidence: medium
+confidence_basis: W3C + practitioner guidance + 1 measured bilingual implementation
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

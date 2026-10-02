@@ -1,0 +1,61 @@
+id: layout.cap-content-width
+kind: principle
+domain: layout
+title: Cap the content container; let only backgrounds and media bleed
+status: provisional
+since: 0.1.0
+statement: Keep content containers capped (≈ 960–1300 px) and identical at 1440 and 1920; use full-bleed only for backgrounds, imagery or deliberate art direction.
+when:
+  page_goal:
+    - any
+consider:
+  - max-inline-size on a centred container
+  - full-bleed bands behind a capped inner column
+verify:
+  - container width at 1440 vs 1920 (verify-page)
+  - line lengths at 1920 do not exceed the reading-measure rule
+avoid_when:
+  - immersive canvases and galleries whose content is the image
+rationale: Five references hold the same container width at 1440 and 1920 (990, 1280, 1266, 1180, 798 px); the references that grow to ~1500–1800 px are illustration- or image-led.
+trade_offs:
+  - large empty margins on ultra-wide screens
+depends_on:
+  - device
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.responsive.home-xvp-container-curve
+    - ref: ref-008
+      observations:
+        - ref-008.responsive.home-xvp-container-curve
+    - ref: ref-009
+      observations:
+        - ref-009.responsive.home-xvp-container-curve
+    - ref: ref-012
+      observations:
+        - ref-012.responsive.home-en-xvp-container-curve
+    - ref: ref-004
+      observations:
+        - ref-004.responsive.home-xvp-container-curve
+  counterexamples:
+    - ref: ref-010
+      observations:
+        - ref-010.responsive.home-ar-xvp-container-curve
+      note: illustration-led page grows to 1824 px at 1920
+    - ref: ref-011
+      observations:
+        - ref-011.responsive.home-xvp-container-curve
+      note: image grid grows to 1546 px
+  validation: []
+  external: []
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references; counterexamples are image/illustration-led
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

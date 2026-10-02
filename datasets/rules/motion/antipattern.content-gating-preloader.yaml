@@ -1,0 +1,41 @@
+id: antipattern.content-gating-preloader
+kind: anti-pattern
+domain: motion
+title: Branded preloader that gates content
+status: provisional
+since: 0.1.0
+statement: A full-screen preloader that hides content for seconds hides cost rather than removing it; stream content progressively and reserve preloaders for experiences that cannot start without assets.
+when:
+  page_goal:
+    - any
+consider:
+  - progressive rendering; skeletons for real loading only
+  - poster frames for heavy media
+verify:
+  - "entrance frames: real content visible within ~1–2 s in the lab"
+  - LCP estimate
+avoid_when: []
+rationale: The personal-brand site still showed its full-screen lime preloader 4.2 s after navigation in the lab.
+trade_offs: []
+depends_on:
+  - engineering-budget
+evidence:
+  supporting:
+    - ref: ref-001
+      observations:
+        - ref-001.motion.home-a-preloader-gate
+        - ref-001.performance.home-a-why-spectacle-cost
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: webdev-vitals
+      note: LCP ≤ 2.5 s
+evidence_count: 1
+confidence: low
+confidence_basis: 1 reference + Web Vitals threshold
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

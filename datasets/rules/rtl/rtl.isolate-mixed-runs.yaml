@@ -1,0 +1,45 @@
+id: rtl.isolate-mixed-runs
+kind: invariant
+domain: rtl
+title: Isolate Latin and numeric runs inside Arabic text
+status: provisional
+since: 0.1.0
+statement: Wrap embedded Latin, numbers, URLs and product codes in <bdi> or elements with dir="ltr"/"auto", and check punctuation and percent/currency placement.
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - <bdi> for user-provided names
+  - dir="ltr" for codes and URLs
+  - test strings like "V60" and "%3" in context
+verify:
+  - mixed strings render in correct order at 390
+  - no punctuation jumping to the wrong side
+avoid_when: []
+rationale: The fintech renders a percentage inside an Arabic headline with correct bidi placement; the news site marks English captions with dir="ltr" (18 elements).
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-ar-a-mirrored-feature-rows
+    - ref: ref-011
+      observations:
+        - ref-011.rtl.home-1440-dir-attributes
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: w3c-i18n-html-dir
+      note: dir="auto" for inserted text
+evidence_count: 2
+confidence: medium
+confidence_basis: W3C + 2 references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

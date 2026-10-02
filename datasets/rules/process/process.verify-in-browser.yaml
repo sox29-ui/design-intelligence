@@ -1,0 +1,53 @@
+id: process.verify-in-browser
+kind: invariant
+domain: process
+title: Render and inspect before declaring done
+status: provisional
+since: 0.1.0
+statement: "Never treat compiled code as finished: render at 390, 768, 1440 and 1920, inspect screenshots, run objective gates, fix, and re-verify."
+when:
+  page_goal:
+    - any
+consider:
+  - verify-page.ts full run before delivery
+  - look at 390-top, 390-menu-open, 1440-top, focus and reduced-motion shots
+verify:
+  - no horizontal overflow at 390
+  - visible focus
+  - no axe critical issues
+  - no runtime errors
+  - lang/dir correct
+avoid_when: []
+rationale: Several defects in award-level references were only visible in rendered states (focus walk overlapping content, Arabic wrapping to more lines, a multi-second preloader). Code review would not have revealed them.
+trade_offs:
+  - adds a render/measure loop to every task
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-004
+      observations:
+        - ref-004.accessibility.home-a-focus-state-overlap
+      note: defect only visible after keyboard tabbing
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-a-arabic-type-swap
+      note: Arabic wraps to 3 lines vs 2 in English — visible only when rendered
+    - ref: ref-001
+      observations:
+        - ref-001.motion.home-a-preloader-gate
+      note: content gated for >4 s in the lab
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: P19–P23 verification loop; automated a11y checks are not sufficient (W8)
+evidence_count: 3
+confidence: medium
+confidence_basis: process invariant from the report, illustrated by 3 render-only defects in the corpus
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

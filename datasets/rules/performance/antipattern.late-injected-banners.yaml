@@ -1,0 +1,46 @@
+id: antipattern.late-injected-banners
+kind: anti-pattern
+domain: performance
+title: Banners inserted above content after first paint
+status: provisional
+since: 0.1.0
+statement: Consent, promo or app banners inserted at the top after first paint shift the whole page; reserve their space or overlay them without reflow.
+when:
+  page_goal:
+    - any
+consider:
+  - fixed bottom-anchored banners
+  - server-rendered reserved space
+verify:
+  - CLS before interaction ≤ 0.1 at 390 and 1440 (verify-page / Lighthouse)
+avoid_when: []
+rationale: Pre-interaction layout shift above 0.1 appeared on three otherwise careful references (public service 0.23 at desktop, brand guidelines 0.12, luxury commerce 0.11 on mobile), each with banners at the top or edge.
+trade_offs: []
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.performance.home-1440-cls-before-interaction
+        - ref-007.performance.home-a-consent-shift-hypothesis
+    - ref: ref-004
+      observations:
+        - ref-004.performance.home-1440-cls-before-interaction
+    - ref: ref-012
+      observations:
+        - ref-012.performance.home-ar-390-cls-before-interaction
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: webdev-vitals
+      note: CLS ≤ 0.1
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 references with measured pre-interaction CLS > 0.1 + Web Vitals
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

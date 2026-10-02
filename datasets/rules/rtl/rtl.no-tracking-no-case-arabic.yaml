@@ -1,0 +1,48 @@
+id: rtl.no-tracking-no-case-arabic
+kind: invariant
+domain: rtl
+title: No letter-spacing, case transforms or faux italics on Arabic
+status: provisional
+since: 0.1.0
+statement: Never apply letter-spacing, text-transform or synthetic italics to Arabic text; express emphasis with weight, size, colour or a different style of the family.
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - ":lang(ar) { letter-spacing: 0; text-transform: none; }"
+  - reset inherited Latin tracking tokens
+verify:
+  - computed letter-spacing 0 on Arabic runs
+avoid_when: []
+rationale: All Arabic references measure zero tracking; Arabic letters connect, and justification uses spacing/kashida rather than letter-spacing (W3C alreq).
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-display-tracking
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-display-tracking
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-1440-display-tracking
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: rtlstyling-shadeed
+      note: avoid letter-spacing on Arabic
+    - source_id: w3c-alreq
+      note: justification by inter-word space and kashida
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 references + 2 sources
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

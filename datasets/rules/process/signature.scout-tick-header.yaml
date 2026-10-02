@@ -1,0 +1,36 @@
+id: signature.scout-tick-header
+kind: signature
+domain: process
+title: Tick-connected inset header and vintage-ad ring
+status: provisional
+since: 0.1.0
+statement: Solid white inset header blocks joined by orange ticks and a ring of numbered vintage ads around giant type are one automotive brand's devices.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: components.persistent-primary-action."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-a-inset-header-bars
+        - ref-003.layout.home-a-heritage-collage
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

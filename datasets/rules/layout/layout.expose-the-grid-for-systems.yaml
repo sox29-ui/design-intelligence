@@ -1,0 +1,54 @@
+id: layout.expose-the-grid-for-systems
+kind: principle
+domain: layout
+title: Expose the grid when the subject is a system
+status: provisional
+since: 0.1.0
+statement: Making the grid visible (hairlines, modular cells) works when the content is itself a system — brand guidelines, type specimens, infrastructure — and reads as decoration elsewhere.
+when:
+  page_goal:
+    - brand-expression
+    - information-consumption
+  content_density:
+    - low
+    - medium
+consider:
+  - visible cell lines in a pale tint
+  - content snapped to cells; empty cells as rhythm
+verify:
+  - grid lines below 3:1 contrast so they do not compete with text
+  - mobile cell sizes keep text readable
+avoid_when:
+  - commerce listings
+  - long-form reading
+  - dashboards with their own data grid
+rationale: A brand-system site, a payments-infrastructure site and a type specimen expose their grids; each subject is about systems and structure.
+trade_offs:
+  - visual noise if the grid competes with content
+depends_on:
+  - brand-personality
+  - user-intent
+evidence:
+  supporting:
+    - ref: ref-004
+      observations:
+        - ref-004.layout.home-a-visible-grid-canvas
+        - ref-004.layout.home-a-why-visible-grid
+    - ref: ref-009
+      observations:
+        - ref-009.layout.home-a-exposed-grid-lines
+    - ref: ref-005
+      observations:
+        - ref-005.layout.home-a-poster-modules
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

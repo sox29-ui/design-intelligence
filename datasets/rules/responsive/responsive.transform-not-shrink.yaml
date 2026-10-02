@@ -1,0 +1,70 @@
+id: responsive.transform-not-shrink
+kind: principle
+domain: responsive
+title: At 390 px, transform priorities instead of shrinking the desktop
+status: provisional
+since: 0.1.0
+statement: "Design the mobile composition deliberately: drop or condense secondary content, move secondary controls behind a button, reframe art direction, and turn menus into task sheets — rather than scaling the desktop layout down."
+when:
+  device:
+    - mobile-first
+    - responsive-general
+consider:
+  - shorter headline variant on mobile
+  - side panels → button + sheet
+  - stats → one line
+  - footers → accordions
+  - crop/reframe imagery per viewport
+  - pinned primary CTA in the mobile menu
+verify:
+  - first viewport at 390 shows the primary action
+  - nothing essential only reachable on desktop
+  - "menu: aria-expanded toggles, Escape closes, focus moves in"
+avoid_when:
+  - already single-column, text-first pages, where stacking is sufficient
+rationale: "Six references change content and interaction at 390: trimmed headline and pinned CTAs, panel-to-button chart controls, rotated specimen word, reframed 3D scene, accordion footer, menu that doubles as storefront."
+trade_offs:
+  - two compositions to maintain
+  - risk of hiding content mobile users need
+depends_on:
+  - device
+evidence:
+  supporting:
+    - ref: ref-009
+      observations:
+        - ref-009.responsive.home-a-mobile-hero-trim
+        - ref-009.components.home-a-mobile-menu-drilldown
+    - ref: ref-008
+      observations:
+        - ref-008.responsive.chart-a-chart-mobile-panel-to-button
+        - ref-008.responsive.home-a-mobile-transform-carousels
+    - ref: ref-005
+      observations:
+        - ref-005.responsive.home-a-mobile-rotation
+    - ref: ref-006
+      observations:
+        - ref-006.responsive.home-a-mobile-reframe
+    - ref: ref-012
+      observations:
+        - ref-012.responsive.home-ar-a-mobile-footer-accordion
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-a-menu-as-storefront
+  counterexamples:
+    - ref: ref-007
+      observations:
+        - ref-007.responsive.home-a-responsive-stacking
+      note: stacks without transforming — works because the content is already a single task-first column
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 1.4.10 reflow
+evidence_count: 6
+confidence: medium
+confidence_basis: 6 independent references; validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,49 @@
+id: antipattern.gradient-hero-imitation
+kind: anti-pattern
+domain: color
+title: Gradient blob or ribbon hero as a default
+status: provisional
+since: 0.1.0
+statement: A multicolour gradient blob/ribbon behind the hero imitates a few brands' signatures; use it only when the gradient is an owned brand asset or encodes something.
+when:
+  page_goal:
+    - any
+consider:
+  - imagery, typography or a brand-derived graphic device instead
+  - flat colour fields
+verify:
+  - verify-page gradient-backgrounds / purple-blue-gradient-palette signatures justified
+avoid_when: []
+rationale: In the corpus the live gradient ribbon is one company's proprietary signature; every other reference achieves its hero without gradients.
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.color.home-1440-gradient-area
+    - ref: ref-008
+      observations:
+        - ref-008.color.home-1440-gradient-area
+    - ref: ref-010
+      observations:
+        - ref-010.color.home-ar-1440-gradient-area
+  counterexamples:
+    - ref: ref-009
+      observations:
+        - ref-009.color.home-a-why-ribbon-is-signature
+      note: owned brand signature
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: W11 gradient blob
+evidence_count: 3
+confidence: medium
+confidence_basis: report + 3 references with zero gradient area + 1 owned-signature counterexample
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

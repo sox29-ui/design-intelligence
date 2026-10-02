@@ -1,0 +1,69 @@
+id: performance.weight-follows-goal
+kind: principle
+domain: performance
+title: Page weight follows the goal
+status: provisional
+since: 0.1.0
+statement: Keep task, information and commerce pages light (well under ~3 MB on mobile, ideally < 1–2 MB); multi-megabyte video, WebGL or painted scenes need an explicit immersion goal and an audience that accepts the cost.
+when:
+  page_goal:
+    - task-completion
+    - information-consumption
+    - conversion
+  device:
+    - mobile-first
+    - responsive-general
+consider:
+  - system or subset fonts (≤ 2 families, woff2)
+  - responsive images (srcset, lazy)
+  - no autoplay video on mobile without purpose
+  - poster frames instead of video on reduced data
+verify:
+  - transfer bytes at 390 (verify-page)
+  - LCP lab estimate; CLS ≤ 0.1; long tasks
+  - Lighthouse mobile run
+avoid_when: []
+rationale: "Measured mobile transfer: 0.2 MB (public service), 1.7 MB (fintech), 2.7 MB (luxury commerce), ~3 MB (data, payments) versus 8.5–35 MB on immersive and video-led pages and 11 MB on an image-heavy news page."
+trade_offs:
+  - less imagery and motion
+depends_on:
+  - engineering-budget
+  - user-intent
+  - device
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.performance.home-390-transfer-bytes
+    - ref: ref-010
+      observations:
+        - ref-010.performance.home-ar-390-transfer-bytes
+    - ref: ref-012
+      observations:
+        - ref-012.performance.home-ar-390-transfer-bytes
+  counterexamples:
+    - ref: ref-003
+      observations:
+        - ref-003.performance.home-a-why-weight
+      note: ≈35 MB footage-led launch page — defensible only as a launch spectacle
+    - ref: ref-011
+      observations:
+        - ref-011.performance.home-a-why-heavy-images
+      note: ≈11 MB of images on a news home page
+    - ref: ref-002
+      observations:
+        - ref-002.performance.home-a-why-cost
+      note: ≈15.6 MB campaign page
+  validation: []
+  external:
+    - source_id: webdev-vitals
+      note: LCP ≤ 2.5 s, CLS ≤ 0.1 at p75
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references within budget; 3 heavy counterexamples with explicit trade-offs
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

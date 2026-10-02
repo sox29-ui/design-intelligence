@@ -1,0 +1,51 @@
+id: components.data-display-direct
+kind: principle
+domain: components
+title: "Data displays: label directly, offer a table, show values"
+status: provisional
+since: 0.1.0
+statement: In data views label series directly at the data, offer an equivalent table, show current values beside selections, and give KPIs large, light numerals with short captions.
+when:
+  page_goal:
+    - data-interaction
+    - information-consumption
+consider:
+  - end-of-line labels in series colour
+  - table toggle
+  - values with proportional bars in selection lists
+  - tabular figures for numbers
+verify:
+  - chart has a text alternative or table
+  - series distinguishable without colour
+  - numbers right-aligned in tables
+avoid_when: []
+rationale: The data publication labels lines directly, offers table/map/line/bar views and shows values beside each selectable region; the payments site presents KPIs as large light numerals with two-line captions.
+trade_offs:
+  - direct labels need right-margin space
+depends_on:
+  - user-intent
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-008
+      observations:
+        - ref-008.components.chart-a-direct-labels
+        - ref-008.components.chart-a-chart-tool-layout
+        - ref-008.accessibility.chart-a-table-alternative
+    - ref: ref-009
+      observations:
+        - ref-009.components.home-a-stat-row
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 1.4.1 use of colour
+evidence_count: 2
+confidence: low
+confidence_basis: 2 independent references; dashboards are under-represented in the corpus
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

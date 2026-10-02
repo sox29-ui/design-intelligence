@@ -1,0 +1,51 @@
+id: rtl.mirror-direction-not-identity
+kind: principle
+domain: rtl
+title: Mirror layout and directional cues, not identity or physics
+status: provisional
+since: 0.1.0
+statement: In RTL mirror layout order, navigation placement and directional icons (chevrons, back/forward arrows, progress direction); do not mirror logos, Latin wordmarks, media playback controls, clocks, checkmarks or digits.
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - logical properties for all inline spacing
+  - flip only icons whose meaning is directional
+  - keep brand marks as designed
+verify:
+  - header/nav order mirrored at 390 and 1440
+  - chevrons point left for "forward" in RTL
+  - play/pause and logos unchanged
+avoid_when: []
+rationale: All three Arabic references mirror header placement and directional chevrons while keeping Latin wordmarks unmirrored; practitioner guidance lists media controls and symmetric icons as non-flipping.
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-ar-a-mirrored-chrome
+        - ref-010.rtl.home-ar-a-rtl-chevrons
+        - ref-010.rtl.home-ar-a-mirrored-feature-rows
+    - ref: ref-012
+      observations:
+        - ref-012.rtl.home-ar-a-mirrored-commerce-header
+    - ref: ref-011
+      observations:
+        - ref-011.rtl.home-a-mobile-header-rtl
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: rtlstyling-shadeed
+      note: what to flip and what not to flip
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent Arabic references + practitioner source
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

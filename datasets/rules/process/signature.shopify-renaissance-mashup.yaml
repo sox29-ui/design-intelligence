@@ -1,0 +1,36 @@
+id: signature.shopify-renaissance-mashup
+kind: signature
+domain: process
+title: Renaissance painting × commerce props
+status: provisional
+since: 0.1.0
+statement: Generative Renaissance paintings with modern commerce props and a pun inside the title are a one-off campaign identity.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: hierarchy.give-dense-pages-a-map."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-002
+      observations:
+        - ref-002.color.home-a-painted-collage-scenes
+        - ref-002.typography.home-a-title-wordplay
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,57 @@
+id: hierarchy.give-dense-pages-a-map
+kind: principle
+domain: hierarchy
+title: Give dense or expressive pages a visible map
+status: provisional
+since: 0.1.0
+statement: When a page carries many items or long sections, give readers a persistent map — numbered chapters, a sticky index, colour-coded entry tiles or content-type forms — so expressive presentation never hides structure.
+when:
+  content_density:
+    - high
+  page_goal:
+    - information-consumption
+    - storytelling
+    - brand-expression
+consider:
+  - numbered chapter index that becomes sticky
+  - consistent visual form per content type
+  - colour assigned per section
+verify:
+  - the map is keyboard reachable and labelled (nav landmark)
+  - current section indicated
+  - colour is not the only cue (WCAG 1.4.1)
+avoid_when:
+  - single-message landing pages
+rationale: "A 150-update release keeps a chapter index visible beside every scene; a brand-guidelines hub uses colour tiles as section entry points; an Arabic news page encodes content type by card form. INFERRED: structure substitutes for scale when the type scale is narrow or the art direction is loud."
+trade_offs:
+  - sticky indexes consume horizontal space on tablets
+depends_on:
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-002
+      observations:
+        - ref-002.components.home-a-sticky-chapter-index
+        - ref-002.hierarchy.home-a-why-toc-for-density
+    - ref: ref-004
+      observations:
+        - ref-004.components.home-a-colour-tile-navigation
+        - ref-004.color.home-a-why-colour-as-wayfinding
+    - ref: ref-011
+      observations:
+        - ref-011.components.home-a-content-type-skins
+        - ref-011.components.home-a-why-type-skins
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 1.4.1 use of colour
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references; mechanisms differ but the function is shared
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

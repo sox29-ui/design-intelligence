@@ -1,0 +1,51 @@
+id: color.colour-from-content-or-identity
+kind: principle
+domain: color
+title: Let content or identity supply colour; keep the UI neutral otherwise
+status: provisional
+since: 0.1.0
+statement: When photography, data or collage already carries colour, keep the interface neutral; draw any saturated accent from a real brand asset or a semantic role, and use it sparingly.
+when:
+  page_goal:
+    - any
+consider:
+  - monochrome UI with photo-led colour (commerce, editorial)
+  - accent = brand livery or product colour
+  - semantic colours for status only
+verify:
+  - each saturated colour maps to a named role or brand asset
+  - accent area share is small outside brand moments
+avoid_when: []
+rationale: Luxury commerce and Arabic editorial keep UI greyscale while images carry colour; the data publication reserves colour for data series; the personal-brand site's neon is the driver's livery.
+trade_offs:
+  - neutral UI can feel generic if typography and imagery are weak
+depends_on:
+  - brand-personality
+  - industry
+evidence:
+  supporting:
+    - ref: ref-012
+      observations:
+        - ref-012.color.home-ar-a-monochrome-ui
+    - ref: ref-011
+      observations:
+        - ref-011.color.home-a-collage-imagery
+    - ref: ref-008
+      observations:
+        - ref-008.components.chart-a-direct-labels
+    - ref: ref-001
+      observations:
+        - ref-001.color.home-a-lime-identity-accent
+        - ref-001.color.home-a-why-lime-justified
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 4
+confidence: medium
+confidence_basis: 4 independent references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

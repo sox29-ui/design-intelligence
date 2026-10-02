@@ -1,0 +1,41 @@
+id: antipattern.dark-neon-without-identity
+kind: anti-pattern
+domain: color
+title: Dark background + neon accent without a brand reason
+status: provisional
+since: 0.1.0
+statement: A near-black ground with a neon (lime, cyan, magenta) accent is an anti-pattern unless the neon is a real brand or product colour that appears in the content.
+when:
+  page_goal:
+    - any
+consider:
+  - derive the accent from a brand asset, product photo or semantic role
+  - light or mid-tone grounds when the brief says calm/precise/trustworthy
+verify:
+  - verify-page dark-neon-default signature has a written justification
+avoid_when: []
+rationale: The one corpus reference with this pairing uses the subject's helmet livery colour, visible in its photographs.
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting: []
+  counterexamples:
+    - ref: ref-001
+      observations:
+        - ref-001.color.home-a-lime-identity-accent
+        - ref-001.color.home-a-why-lime-justified
+      note: justified by identity
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: "W11: dark background + lime accent in the generic cluster"
+evidence_count: 0
+confidence: low
+confidence_basis: report warning; corpus provides only the justified boundary case
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

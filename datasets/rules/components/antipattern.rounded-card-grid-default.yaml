@@ -1,0 +1,50 @@
+id: antipattern.rounded-card-grid-default
+kind: anti-pattern
+domain: components
+title: Three rounded cards as the default section
+status: provisional
+since: 0.1.0
+statement: A row of three soft-shadowed, large-radius cards is the default template section; use cards only when items are parallel and comparable, and style them from the brand system.
+when:
+  page_goal:
+    - any
+consider:
+  - lists, tables, editorial modules or a single strong feature instead
+  - square or small-radius cards with borders for dense content
+verify:
+  - verify-page rounded-card-grid signature justified
+avoid_when: []
+rationale: Card groups in information-led references are square-cornered and border- or rule-separated; the large-radius cards in the corpus belong to a playful illustrated identity.
+trade_offs: []
+depends_on:
+  - brand-personality
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-008
+      observations:
+        - ref-008.components.home-1440-card-groups
+    - ref: ref-012
+      observations:
+        - ref-012.components.home-ar-1440-card-groups
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-1440-card-groups
+  counterexamples:
+    - ref: ref-010
+      observations:
+        - ref-010.color.home-ar-a-illustration-identity
+      note: large radii are part of a playful illustrated identity
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: W11 three rounded cards
+evidence_count: 3
+confidence: medium
+confidence_basis: report + 3 references with square card groups
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

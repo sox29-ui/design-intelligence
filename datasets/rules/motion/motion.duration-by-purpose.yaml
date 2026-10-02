@@ -1,0 +1,63 @@
+id: motion.duration-by-purpose
+kind: principle
+domain: motion
+title: "Duration follows purpose: feedback fast, choreography slow"
+status: provisional
+since: 0.1.0
+statement: Use 100–300 ms for state feedback (hover, focus, open/close) and reserve 600–1500 ms for narrative choreography in story sections; never make task feedback wait on choreography.
+when:
+  motion_budget:
+    - subtle
+    - expressive
+consider:
+  - "tokens: --dur-fast 120ms, --dur-base 200–300ms, --dur-slow 700ms+ (story only)"
+  - ease-out for entrances, ease-in-out for state changes
+verify:
+  - transition-duration median ≤ 300 ms on interactive elements (verify-page)
+  - no interaction blocked by an animation
+avoid_when: []
+rationale: Median transition durations are 200–300 ms on task, editorial, commerce and conversion references; 750–1500 ms appears on the personal-brand and brand-guidelines sites for scroll choreography.
+trade_offs: []
+depends_on:
+  - motion-budget
+  - user-intent
+evidence:
+  supporting:
+    - ref: ref-008
+      observations:
+        - ref-008.motion.home-1440-transition-duration
+    - ref: ref-010
+      observations:
+        - ref-010.motion.home-ar-1440-transition-duration
+    - ref: ref-012
+      observations:
+        - ref-012.motion.home-ar-1440-transition-duration
+    - ref: ref-011
+      observations:
+        - ref-011.motion.home-1440-transition-duration
+    - ref: ref-009
+      observations:
+        - ref-009.motion.home-1440-transition-duration
+    - ref: ref-005
+      observations:
+        - ref-005.motion.home-1440-transition-duration
+    - ref: ref-001
+      observations:
+        - ref-001.motion.home-1440-transition-duration
+      note: "choreography: 750 ms"
+    - ref: ref-004
+      observations:
+        - ref-004.motion.home-1440-transition-duration
+      note: "choreography: p75 1500 ms"
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 8
+confidence: medium
+confidence_basis: 8 independent references (measured durations); validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

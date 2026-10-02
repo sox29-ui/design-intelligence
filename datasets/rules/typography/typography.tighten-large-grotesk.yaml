@@ -1,0 +1,63 @@
+id: typography.tighten-large-grotesk
+kind: principle
+domain: typography
+title: Tighten large grotesk display slightly; never track Arabic
+status: provisional
+since: 0.1.0
+statement: Large Latin grotesk display type reads better with slightly negative tracking (≈ −0.01 to −0.04 em); body text, small labels and all Arabic text keep zero tracking.
+when:
+  language:
+    - latin
+  page_goal:
+    - any
+consider:
+  - "letter-spacing: -0.02em on display sizes ≥ 40 px"
+  - reset tracking to 0 below ~24 px
+verify:
+  - no tracking on Arabic runs (see rtl.no-tracking-no-case-arabic)
+  - letter collisions at the heaviest weight
+avoid_when:
+  - serif or script display faces
+  - small sizes
+  - Arabic and other connected scripts
+rationale: Five references with grotesk display faces measure −0.02 to −0.04 em; utilitarian, serif-display and Arabic references stay at 0.
+trade_offs:
+  - too much negative tracking harms legibility at mid sizes
+depends_on:
+  - language
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-009
+      observations:
+        - ref-009.typography.home-1440-display-tracking
+    - ref: ref-004
+      observations:
+        - ref-004.typography.home-1440-display-tracking
+    - ref: ref-002
+      observations:
+        - ref-002.typography.home-1440-display-tracking
+    - ref: ref-005
+      observations:
+        - ref-005.typography.home-1440-display-tracking
+    - ref: ref-003
+      observations:
+        - ref-003.typography.home-1440-display-tracking
+  counterexamples:
+    - ref: ref-007
+      observations:
+        - ref-007.typography.home-1440-display-tracking
+      note: utilitarian system keeps 0 tracking at 64 px; legibility-first choice
+  validation: []
+  external:
+    - source_id: rtlstyling-shadeed
+      note: no letter-spacing on Arabic
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references (measured); validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

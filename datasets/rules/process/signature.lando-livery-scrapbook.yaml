@@ -1,0 +1,37 @@
+id: signature.lando-livery-scrapbook
+kind: signature
+domain: process
+title: Livery-lime scrapbook with script overlay
+status: provisional
+since: 0.1.0
+statement: Helmet-livery lime on near-black, topographic blob textures, scattered photo scrapbook and handwritten script over serif display belong to one personal brand.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: color.colour-from-content-or-identity."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-001
+      observations:
+        - ref-001.color.home-a-lime-identity-accent
+        - ref-001.layout.home-a-collage-composition
+        - ref-001.typography.home-a-display-type-mix
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

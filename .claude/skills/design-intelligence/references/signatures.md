@@ -5,4 +5,81 @@
 
 These are distinctive moves of single references. They are recorded so DI can recognise them and **not** reuse them as templates. Reproducing a signature in another brand's page imitates its owner without its meaning. Learn the conditional principle behind it (linked where one exists), not the move itself.
 
-_No compiled rules in this domain yet._
+## Rules (7)
+
+### Blueprint grid with colour-tile mosaic
+<!-- rule:signature.dropbox-grid-mosaic -->
+`signature.dropbox-grid-mosaic` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**Pale-blue blueprint grid with saturated section tiles is one brand system's self-portrait.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: layout.expose-the-grid-for-systems.
+- *Evidence:* supported by ref-004 (Dropbox Brand). Details: `npm run why -- signature.dropbox-grid-mosaic`.
+
+### Rotated giant specimen word and alphabet spiral
+<!-- rule:signature.exat-rotated-specimen -->
+`signature.exat-rotated-specimen` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**The 90°-rotated giant product name on mobile and the multicolour alphabet spiral are a type-specimen signature.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: typography.extreme-scale-needs-a-reason.
+- *Evidence:* supported by ref-005 (Exat Typeface). Details: `npm run why -- signature.exat-rotated-specimen`.
+
+### Livery-lime scrapbook with script overlay
+<!-- rule:signature.lando-livery-scrapbook -->
+`signature.lando-livery-scrapbook` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**Helmet-livery lime on near-black, topographic blob textures, scattered photo scrapbook and handwritten script over serif display belong to one personal brand.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: color.colour-from-content-or-identity.
+- *Evidence:* supported by ref-001 (Lando Norris). Details: `npm run why -- signature.lando-livery-scrapbook`.
+
+### Halftone political collage and paper-stack cards
+<!-- rule:signature.megaphone-halftone-collage -->
+`signature.megaphone-halftone-collage` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**Halftone cut-out collages, archival scans and paper-stack study cards are one newsroom's editorial voice.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: hierarchy.give-dense-pages-a-map.
+- *Evidence:* supported by ref-011 (Megaphone). Details: `npm run why -- signature.megaphone-halftone-collage`.
+
+### Tick-connected inset header and vintage-ad ring
+<!-- rule:signature.scout-tick-header -->
+`signature.scout-tick-header` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**Solid white inset header blocks joined by orange ticks and a ring of numbered vintage ads around giant type are one automotive brand's devices.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: components.persistent-primary-action.
+- *Evidence:* supported by ref-003 (Scout Motors). Details: `npm run why -- signature.scout-tick-header`.
+
+### Renaissance painting × commerce props
+<!-- rule:signature.shopify-renaissance-mashup -->
+`signature.shopify-renaissance-mashup` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**Generative Renaissance paintings with modern commerce props and a pun inside the title are a one-off campaign identity.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: hierarchy.give-dense-pages-a-map.
+- *Evidence:* supported by ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)). Details: `npm run why -- signature.shopify-renaissance-mashup`.
+
+### Live multicolour gradient ribbon hero
+<!-- rule:signature.stripe-gradient-ribbon -->
+`signature.stripe-gradient-ribbon` · signature · confidence **low** · evidence: 1 independent ref(s) · provisional
+
+**The WebGL multicolour ribbon bleeding off the hero is one company's brand signature.**
+
+- **WHEN:** page_goal ∈ {none — do not reuse}
+- **AVOID WHEN:** any brief that is not this brand
+- **WHY (inferred):** Transferable principle instead: antipattern.gradient-hero-imitation.
+- *Evidence:* supported by ref-009 (Stripe). Details: `npm run why -- signature.stripe-gradient-ribbon`.

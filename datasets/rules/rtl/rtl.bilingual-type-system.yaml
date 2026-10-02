@@ -1,0 +1,52 @@
+id: rtl.bilingual-type-system
+kind: principle
+domain: rtl
+title: Plan Arabic and Latin type as one system
+status: provisional
+since: 0.1.0
+statement: Choose the Arabic typeface together with the Latin one — a bilingual family or a deliberately matched pair with equivalent display and text roles — instead of letting Arabic fall back to a generic face.
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - bilingual superfamily
+  - matched Arabic display face for a Latin display serif
+  - professional Arabic text face, not a system default
+verify:
+  - both languages show the same hierarchy levels
+  - brand voice comparable in screenshots of both languages
+avoid_when: []
+rationale: The fintech uses one bilingual family for both scripts; the Arabic news site uses a professional Arabic family as its primary face; the luxury storefront's English display serif has no Arabic counterpart, so Arabic falls back to one plain Kufi.
+trade_offs:
+  - licensing and font weight for two scripts
+depends_on:
+  - language
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-a-why-shared-family-more-leading
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-family-share
+  counterexamples:
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-a-arabic-type-swap
+        - ref-012.typography.home-ar-a-why-bilingual-voice-loss
+      note: Latin display serif lost in Arabic
+  validation: []
+  external:
+    - source_id: rtlstyling-shadeed
+      note: choose the Arabic font deliberately
+evidence_count: 2
+confidence: low
+confidence_basis: 2 independent references + 1 counterexample
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

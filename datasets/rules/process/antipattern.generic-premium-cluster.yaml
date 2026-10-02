@@ -1,0 +1,60 @@
+id: antipattern.generic-premium-cluster
+kind: anti-pattern
+domain: process
+title: The generic "premium AI website" cluster
+status: provisional
+since: 0.1.0
+statement: Giant headline + dark background + neon accent + three rounded cards + gradient blob + floating nav + scroll reveal, used together without reasons from the brief, is a template, not a design.
+when:
+  page_goal:
+    - any
+consider:
+  - replace each element with a brief-derived decision
+  - keep an element only with a one-line justification
+verify:
+  - "verify-page signature scan: ≤ 1–2 signatures, each justified"
+avoid_when: []
+rationale: None of the twelve extraction references uses the full cluster; the two that use parts of it tie them to identity (driver livery, a long-standing brand gradient). Quality references reach distinctiveness through typography, structure, imagery and content.
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.components.home-1440-effects
+      note: zero gradients, blur, glow
+    - ref: ref-012
+      observations:
+        - ref-012.color.home-ar-a-monochrome-ui
+      note: monochrome UI; photography carries colour
+    - ref: ref-005
+      observations:
+        - ref-005.color.home-a-saturated-flat-palette
+      note: flat colour, no gradients/shadows/blur
+    - ref: ref-011
+      observations:
+        - ref-011.color.home-a-collage-imagery
+      note: collage identity without effects
+  counterexamples:
+    - ref: ref-001
+      observations:
+        - ref-001.color.home-a-why-lime-justified
+      note: dark + neon justified by livery
+    - ref: ref-009
+      observations:
+        - ref-009.color.home-a-why-ribbon-is-signature
+      note: gradient as owned brand signature
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: W11 "Awwwards-flavored AI slop" cluster
+evidence_count: 4
+confidence: medium
+confidence_basis: report warning + 4 references achieving quality without the cluster + 2 justified partial uses
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

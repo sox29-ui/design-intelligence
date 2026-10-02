@@ -5,4 +5,118 @@
 
 Arabic/RTL is not "the English page, mirrored". Load this file whenever any Arabic text exists. Invariants apply to every Arabic or bilingual page; principles apply when their WHEN matches. Typical failure modes found in the corpus: direction set per component instead of on the root, Latin typographic voice lost in Arabic, more line wraps in Arabic than in the Latin design was sized for, text burned into images.
 
-_No compiled rules in this domain yet._
+## Rules (9)
+
+### Give Arabic more line-height than Latin at the same size
+<!-- rule:rtl.arabic-needs-more-leading -->
+`rtl.arabic-needs-more-leading` · invariant · confidence **medium** · evidence: 1 independent ref(s) + 2 standard(s) · provisional
+
+**Set Arabic line-height higher than the Latin equivalent (≈ +15–20%: display ≈ 1.25–1.35, body ≈ 1.6–1.8) and check marks and descenders for collisions.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** :lang(ar) { line-height: … } overrides; per-language display tokens
+- **VERIFY:** no clipped diacritics or descenders at 390; compare AR vs EN line counts
+- **TRADE-OFFS:** taller blocks; layouts must allow vertical growth
+- **WHY (inferred):** The bilingual fintech uses the same family and sizes in both languages but 1.27 vs 1.07 display and 1.6 vs 1.4 body line-height for Arabic. Arabic ascenders/descenders extend further than Latin (W3C alreq).
+- *Evidence:* supported by ref-010 (Tabby) · counterexamples: ref-012 (Ounass) — same line-height in both languages; Arabic needs more lines; ref-011 (Megaphone) — tight 1.26–1.37 Arabic body (single-language page; not verified as harmful) · standards: w3c-alreq, rtlstyling-shadeed. Details: `npm run why -- rtl.arabic-needs-more-leading`.
+
+### Isolate Latin and numeric runs inside Arabic text
+<!-- rule:rtl.isolate-mixed-runs -->
+`rtl.isolate-mixed-runs` · invariant · confidence **medium** · evidence: 2 independent ref(s) + 1 standard(s) · provisional
+
+**Wrap embedded Latin, numbers, URLs and product codes in <bdi> or elements with dir="ltr"/"auto", and check punctuation and percent/currency placement.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** <bdi> for user-provided names; dir="ltr" for codes and URLs; test strings like "V60" and "%3" in context
+- **VERIFY:** mixed strings render in correct order at 390; no punctuation jumping to the wrong side
+- **WHY (inferred):** The fintech renders a percentage inside an Arabic headline with correct bidi placement; the news site marks English captions with dir="ltr" (18 elements).
+- *Evidence:* supported by ref-010 (Tabby), ref-011 (Megaphone) · standards: w3c-i18n-html-dir. Details: `npm run why -- rtl.isolate-mixed-runs`.
+
+### Write direction-agnostic CSS with logical properties
+<!-- rule:rtl.logical-properties -->
+`rtl.logical-properties` · invariant · confidence **medium** · evidence: 1 independent ref(s) + 2 standard(s) · provisional
+
+**Use logical properties and values (margin-inline, padding-inline, inset-inline, text-align: start/end, border-inline) so one stylesheet serves LTR and RTL.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** lint for physical left/right in new CSS; flip transforms only for directional icons
+- **VERIFY:** switch dir and diff screenshots: only mirroring changes
+- **WHY (inferred):** The bilingual fintech's readable CSS has ~170 logical vs ~51 physical declarations; the Arabic news site has ~5 logical vs ~403 physical and compensates element by element.
+- *Evidence:* supported by ref-010 (Tabby) · counterexamples: ref-011 (Megaphone) — physical properties dominate · standards: mdn-logical-properties, w3c-i18n-html-dir. Details: `npm run why -- rtl.logical-properties`.
+
+### Mirror layout and directional cues, not identity or physics
+<!-- rule:rtl.mirror-direction-not-identity -->
+`rtl.mirror-direction-not-identity` · principle · confidence **medium** · evidence: 3 independent ref(s) + 1 standard(s) · provisional
+
+**In RTL mirror layout order, navigation placement and directional icons (chevrons, back/forward arrows, progress direction); do not mirror logos, Latin wordmarks, media playback controls, clocks, checkmarks or digits.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** logical properties for all inline spacing; flip only icons whose meaning is directional; keep brand marks as designed
+- **VERIFY:** header/nav order mirrored at 390 and 1440; chevrons point left for "forward" in RTL; play/pause and logos unchanged
+- **WHY (inferred):** All three Arabic references mirror header placement and directional chevrons while keeping Latin wordmarks unmirrored; practitioner guidance lists media controls and symmetric icons as non-flipping.
+- *Evidence:* supported by ref-010 (Tabby), ref-012 (Ounass), ref-011 (Megaphone) · standards: rtlstyling-shadeed. Details: `npm run why -- rtl.mirror-direction-not-identity`.
+
+### No letter-spacing, case transforms or faux italics on Arabic
+<!-- rule:rtl.no-tracking-no-case-arabic -->
+`rtl.no-tracking-no-case-arabic` · invariant · confidence **medium** · evidence: 3 independent ref(s) + 2 standard(s) · provisional
+
+**Never apply letter-spacing, text-transform or synthetic italics to Arabic text; express emphasis with weight, size, colour or a different style of the family.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** :lang(ar) { letter-spacing: 0; text-transform: none; }; reset inherited Latin tracking tokens
+- **VERIFY:** computed letter-spacing 0 on Arabic runs
+- **WHY (inferred):** All Arabic references measure zero tracking; Arabic letters connect, and justification uses spacing/kashida rather than letter-spacing (W3C alreq).
+- *Evidence:* supported by ref-010 (Tabby), ref-011 (Megaphone), ref-012 (Ounass) · standards: rtlstyling-shadeed, w3c-alreq. Details: `npm run why -- rtl.no-tracking-no-case-arabic`.
+
+### Choose one numeral system deliberately and apply it everywhere
+<!-- rule:rtl.numerals-one-system -->
+`rtl.numerals-one-system` · principle · confidence **medium** · evidence: 3 independent ref(s) + 2 standard(s) · provisional
+
+**Decide between Western (0–9) and Arabic-Indic (٠–٩) digits for the audience and context, then use that system consistently for prices, dates, ratings and counts; digits always run left-to-right inside RTL text.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** Western digits are what the Gulf commerce/fintech references use; Arabic-Indic digits for traditional or editorial contexts if the audience expects them; Intl.NumberFormat with the chosen numbering system
+- **VERIFY:** no mixed numeral systems on one page; prices with currency read correctly in RTL (bidi)
+- **WHY (inferred):** All three Arabic references use Western digits consistently (VERIFIED zero Arabic-Indic digits); W3C notes several digit systems in use, including Arabic-Indic in parts of the region.
+- *Evidence:* supported by ref-010 (Tabby), ref-011 (Megaphone), ref-012 (Ounass) · standards: w3c-alreq, rtlstyling-shadeed. Details: `npm run why -- rtl.numerals-one-system`.
+
+### Set dir and lang on <html>, not per component
+<!-- rule:rtl.root-direction -->
+`rtl.root-direction` · invariant · confidence **medium** · evidence: 2 independent ref(s) + 1 standard(s) · provisional
+
+**For Arabic-primary pages put dir="rtl" and lang="ar" on the html element; use dir="ltr"/"auto" or <bdi> only for embedded opposite-direction runs.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** <html lang="ar" dir="rtl">; language switch swaps both lang and dir; dir="auto" on user-generated or inserted text
+- **VERIFY:** computed direction of html = rtl (verify-page rtl-direction gate); form controls and scroll containers follow RTL
+- **WHY (inferred):** The fintech and luxury storefronts set dir on the root and mirror cleanly; the Arabic news site sets dir on ~174 elements individually while the root stays LTR — fragile for any unmarked component.
+- *Evidence:* supported by ref-010 (Tabby), ref-012 (Ounass) · counterexamples: ref-011 (Megaphone) — root left LTR; direction applied element by element · standards: w3c-i18n-html-dir. Details: `npm run why -- rtl.root-direction`.
+
+### Plan Arabic and Latin type as one system
+<!-- rule:rtl.bilingual-type-system -->
+`rtl.bilingual-type-system` · principle · confidence **low** · evidence: 2 independent ref(s) + 1 standard(s) · provisional
+
+**Choose the Arabic typeface together with the Latin one — a bilingual family or a deliberately matched pair with equivalent display and text roles — instead of letting Arabic fall back to a generic face.**
+
+- **WHEN:** language ∈ {ar, bilingual}
+- **CONSIDER:** bilingual superfamily; matched Arabic display face for a Latin display serif; professional Arabic text face, not a system default
+- **VERIFY:** both languages show the same hierarchy levels; brand voice comparable in screenshots of both languages
+- **TRADE-OFFS:** licensing and font weight for two scripts
+- **WHY (inferred):** The fintech uses one bilingual family for both scripts; the Arabic news site uses a professional Arabic family as its primary face; the luxury storefront's English display serif has no Arabic counterpart, so Arabic falls back to one plain Kufi.
+- *Evidence:* supported by ref-010 (Tabby), ref-011 (Megaphone) · counterexamples: ref-012 (Ounass) — Latin display serif lost in Arabic · standards: rtlstyling-shadeed. Details: `npm run why -- rtl.bilingual-type-system`.
+
+### Size for the longer language and check each language's breaks
+<!-- rule:rtl.test-line-breaks-per-language -->
+`rtl.test-line-breaks-per-language` · principle · confidence **low** · evidence: 2 independent ref(s) · provisional
+
+**Do not assume line-count parity between Arabic and English: lay out display text and buttons for the longer language and verify breaks in each language at 390 and 1440.**
+
+- **WHEN:** language ∈ {bilingual}
+- **CONSIDER:** flexible heights for headlines and buttons; per-language line-break tweaks (text-wrap: balance)
+- **VERIFY:** line counts per language at 390/1440; no truncated CTA labels
+- **WHY (inferred):** Arabic needed three lines where English needed two on the luxury storefront; on the fintech, the Arabic headline fit one line at 1440 where English took two.
+- *Evidence:* supported by ref-012 (Ounass), ref-010 (Tabby). Details: `npm run why -- rtl.test-line-breaks-per-language`.
+
+## Open questions (hypotheses — NOT guidance)
+
+- `rtl.localized-logotype` — Bilingual brands with an Arabic logotype may want to use it consistently on Arabic pages at every width. _(insufficient evidence: single observation; intent unverified)_

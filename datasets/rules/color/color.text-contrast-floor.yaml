@@ -1,0 +1,63 @@
+id: color.text-contrast-floor
+kind: invariant
+domain: color
+title: Muted and tonal text still meets contrast
+status: provisional
+since: 0.1.0
+statement: Secondary, muted or tonal text must still reach 4.5:1 (3:1 for large text); hierarchy by lightness stops at the contrast floor.
+when:
+  page_goal:
+    - any
+consider:
+  - define a "muted" token that passes 4.5:1 on every background it is used on
+  - use size/weight/position for lower hierarchy levels
+verify:
+  - axe color-contrast = 0
+  - text over images has a scrim or solid backing
+avoid_when: []
+rationale: Most automated contrast failures in the corpus come from deliberately muted secondary text and captions over images, including on award-winning sites.
+trade_offs:
+  - narrower tonal range for hierarchy
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.accessibility.home-1440-axe-by-impact
+      note: only moderate findings; no contrast failures
+    - ref: ref-003
+      observations:
+        - ref-003.accessibility.home-1440-axe-violations
+        - ref-003.accessibility.home-a-why-clean-a11y
+      note: cinematic page with zero axe violations at 1440
+  counterexamples:
+    - ref: ref-009
+      observations:
+        - ref-009.accessibility.home-a-contrast-gap
+      note: "muted slate clauses and captions: 29 contrast nodes"
+    - ref: ref-001
+      observations:
+        - ref-001.accessibility.home-a-why-low-contrast-captions
+      note: pale captions over imagery
+    - ref: ref-005
+      observations:
+        - ref-005.accessibility.home-a-why-contrast-and-structure
+      note: poster modules and tight captions
+    - ref: ref-002
+      observations:
+        - ref-002.performance.home-a-why-cost
+      note: "text over paintings: ~100 nodes"
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 1.4.3 contrast minimum; 1.4.11 non-text contrast
+evidence_count: 2
+confidence: medium
+confidence_basis: WCAG requirement; corpus shows the failure mode on 4 references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

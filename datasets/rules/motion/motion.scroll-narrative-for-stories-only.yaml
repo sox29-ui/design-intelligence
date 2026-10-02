@@ -1,0 +1,53 @@
+id: motion.scroll-narrative-for-stories-only
+kind: principle
+domain: motion
+title: Scroll-driven narrative belongs to story pages
+status: provisional
+since: 0.1.0
+statement: Use scroll-linked reveals, pinned scenes and one-sentence-per-step pacing only for storytelling or brand moments; task and information pages scroll natively with content immediately visible.
+when:
+  page_goal:
+    - storytelling
+    - brand-expression
+  content_density:
+    - low
+consider:
+  - pace one idea per scroll step
+  - native scroll first; smooth-scroll libraries only with reduced-motion opt-out
+verify:
+  - content readable without scroll effects (reduced motion)
+  - no scroll hijacking on task pages (wheel listeners on window)
+avoid_when:
+  - task-completion, comparison, dashboards, editorial reading, commerce listings
+rationale: Scroll-linked changes were measured on the immersive simulator, brand-guidelines and personal-brand sites and were zero on the public-service, data and Arabic commerce/editorial references.
+trade_offs:
+  - prevents skimming
+  - harder to make accessible
+depends_on:
+  - user-intent
+  - motion-budget
+evidence:
+  supporting:
+    - ref: ref-006
+      observations:
+        - ref-006.motion.home-a-scroll-captions
+        - ref-006.content.home-a-why-one-sentence-at-a-time
+    - ref: ref-004
+      observations:
+        - ref-004.motion.home-1440-scroll-linked-changes
+    - ref: ref-001
+      observations:
+        - ref-001.motion.home-1440-scroll-linked-changes
+        - ref-001.layout.home-a-collage-composition
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 story references with measured scroll-linked change; task references measured at zero
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

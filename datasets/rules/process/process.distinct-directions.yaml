@@ -1,0 +1,44 @@
+id: process.distinct-directions
+kind: invariant
+domain: process
+title: Explore genuinely different directions before committing
+status: provisional
+since: 0.1.0
+statement: For creative work, sketch three directions with different central ideas (not colour variants), choose one, and state the trade-off.
+when:
+  page_goal:
+    - storytelling
+    - brand-expression
+    - conversion
+  content_density:
+    - low
+    - medium
+consider:
+  - "vary the central idea: typographic / data-led / editorial / spatial"
+  - run the anti-pattern check on the chosen direction before coding
+verify:
+  - the chosen direction can be stated in one sentence tied to the brief
+avoid_when:
+  - small fixes to an existing design system
+  - pure bug fixing
+rationale: Default generation converges on the most common template; forcing distinct central ideas surfaces brief-specific options. (Report proposal; to be tested by benchmark.)
+trade_offs:
+  - more planning tokens
+depends_on:
+  - user-intent
+evidence:
+  supporting: []
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: "P34 creation prompt: three genuinely different art directions"
+evidence_count: 0
+confidence: medium
+confidence_basis: report recommendation; benchmark evidence pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

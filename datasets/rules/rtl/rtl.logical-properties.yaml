@@ -1,0 +1,47 @@
+id: rtl.logical-properties
+kind: invariant
+domain: rtl
+title: Write direction-agnostic CSS with logical properties
+status: provisional
+since: 0.1.0
+statement: "Use logical properties and values (margin-inline, padding-inline, inset-inline, text-align: start/end, border-inline) so one stylesheet serves LTR and RTL."
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - lint for physical left/right in new CSS
+  - flip transforms only for directional icons
+verify:
+  - "switch dir and diff screenshots: only mirroring changes"
+avoid_when: []
+rationale: The bilingual fintech's readable CSS has ~170 logical vs ~51 physical declarations; the Arabic news site has ~5 logical vs ~403 physical and compensates element by element.
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-ar-1440-logical-properties
+        - ref-010.rtl.home-ar-a-why-logical-css
+  counterexamples:
+    - ref: ref-011
+      observations:
+        - ref-011.rtl.home-1440-logical-properties
+        - ref-011.rtl.home-1440-physical-inline-properties
+      note: physical properties dominate
+  validation: []
+  external:
+    - source_id: mdn-logical-properties
+    - source_id: w3c-i18n-html-dir
+      note: use start/end rather than left/right
+evidence_count: 1
+confidence: medium
+confidence_basis: MDN/W3C + 1 measured implementation
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

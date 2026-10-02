@@ -1,0 +1,36 @@
+id: signature.stripe-gradient-ribbon
+kind: signature
+domain: process
+title: Live multicolour gradient ribbon hero
+status: provisional
+since: 0.1.0
+statement: The WebGL multicolour ribbon bleeding off the hero is one company's brand signature.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: antipattern.gradient-hero-imitation."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-009
+      observations:
+        - ref-009.color.home-a-why-ribbon-is-signature
+        - ref-009.hierarchy.home-a-hero-first-read
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

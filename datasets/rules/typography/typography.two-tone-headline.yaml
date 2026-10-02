@@ -1,0 +1,38 @@
+id: typography.two-tone-headline
+kind: hypothesis
+domain: typography
+title: Two-tone headline for long value propositions
+status: candidate
+since: 0.1.0
+statement: A long headline whose first clause is dark and continuation muted may let one sentence carry both a punchy read and a detailed offer.
+when:
+  page_goal:
+    - conversion
+  content_density:
+    - high
+consider: []
+verify:
+  - muted part still meets 4.5:1
+avoid_when: []
+rationale: Seen in one reference only.
+trade_offs:
+  - muted clause easily fails contrast
+depends_on:
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-009
+      observations:
+        - ref-009.typography.home-a-why-two-tone-headline
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single reference — needs ≥ 2 independent studios before guidance
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

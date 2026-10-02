@@ -1,0 +1,64 @@
+id: typography.display-steps-then-caps
+kind: principle
+domain: typography
+title: Scale display type in steps and cap it at desktop
+status: provisional
+since: 0.1.0
+statement: Make the mobile display size roughly 0.6–0.75× the desktop size, reach the desktop size around 1440 px, and hold it (or grow very little) at 1920.
+when:
+  page_goal:
+    - any
+consider:
+  - clamp() with a max equal to the 1440 size
+  - or 2–3 breakpoint steps (390 / 768 / 1440)
+  - re-check line breaks at each step
+verify:
+  - display size curve at 390/768/1440/1920 (verify-page summary)
+  - no single word lines at 390
+  - line count does not explode at 768
+avoid_when:
+  - type-as-image pages that reorient instead of scale (see typography.extreme-scale-needs-a-reason)
+rationale: "Seven references show the same curve: e.g. 40→64→64, 34→48→48, 44→60→60, 24→32→32 px. Capping keeps measure and hierarchy stable on wide screens where containers are capped too."
+trade_offs:
+  - very wide screens get no extra drama
+depends_on:
+  - device
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.responsive.home-xvp-display-size-curve
+    - ref: ref-009
+      observations:
+        - ref-009.responsive.home-xvp-display-size-curve
+    - ref: ref-010
+      observations:
+        - ref-010.responsive.home-ar-xvp-display-size-curve
+    - ref: ref-008
+      observations:
+        - ref-008.responsive.home-xvp-display-size-curve
+    - ref: ref-012
+      observations:
+        - ref-012.responsive.home-en-xvp-display-size-curve
+    - ref: ref-011
+      observations:
+        - ref-011.responsive.home-xvp-display-size-curve
+    - ref: ref-004
+      observations:
+        - ref-004.responsive.home-xvp-display-size-curve
+  counterexamples:
+    - ref: ref-002
+      observations:
+        - ref-002.responsive.home-xvp-display-size-curve
+      note: above-the-fold text is an index box, smaller on desktop by design; the big type lives in chapter scenes
+  validation: []
+  external: []
+evidence_count: 7
+confidence: medium
+confidence_basis: 7 independent references with measured curves; validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

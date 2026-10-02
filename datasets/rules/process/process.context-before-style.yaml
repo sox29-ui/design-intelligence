@@ -1,0 +1,61 @@
+id: process.context-before-style
+kind: principle
+domain: process
+title: Decide from context keys, not from a house style
+status: provisional
+since: 0.1.0
+statement: Derive every expressive decision from the brief's context (goal, density, audience, language, device, budgets); the same move is right in one context and wrong in another.
+when:
+  page_goal:
+    - any
+consider:
+  - write the context keys before choosing visuals
+  - name which context key justifies each expressive move
+  - reuse a pattern only if its WHEN matches the brief
+verify:
+  - each signature present in verify-page output has a one-line brief-derived reason
+  - outputs for different briefs do not share one visual template
+avoid_when: []
+rationale: Across the corpus, decisions that look contradictory (search-first hero vs. giant specimen type; neon on black vs. monochrome luxury) are each explained by a different goal or identity. (INFERRED from analyst rationales.)
+trade_offs:
+  - "slower start: the thesis step costs time before any pixels"
+depends_on:
+  - user-intent
+  - content-density
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.hierarchy.home-a-why-search-hero
+      note: task intent → router hero
+    - ref: ref-012
+      observations:
+        - ref-012.hierarchy.home-en-a-why-router-hero
+      note: multi-department commerce → department router
+    - ref: ref-001
+      observations:
+        - ref-001.color.home-a-why-lime-justified
+      note: identity colour justifies dark + neon
+    - ref: ref-005
+      observations:
+        - ref-005.typography.home-a-why-type-as-image
+      note: product is a typeface → extreme scale
+    - ref: ref-002
+      observations:
+        - ref-002.hierarchy.home-a-why-toc-for-density
+      note: dense release → chaptered index
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: "P4: decision system, not style library"
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references whose distinctive moves are each explained by their context; no validation check yet
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

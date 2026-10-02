@@ -1,0 +1,50 @@
+id: antipattern.glass-floating-nav
+kind: anti-pattern
+domain: components
+title: Glassmorphism floating pill navigation by default
+status: provisional
+since: 0.1.0
+statement: A blurred, translucent, rounded navigation floating over content is a generic signature; prefer a solid, legible header unless the brief needs the content to show through.
+when:
+  page_goal:
+    - any
+consider:
+  - solid header bar or solid inset blocks
+  - sticky only when navigation is used repeatedly
+verify:
+  - verify-page floating-nav / glassmorphism signatures justified
+  - header text contrast over every section it floats over
+avoid_when: []
+rationale: No extraction reference uses a blurred floating pill nav; the automotive site floats solid white inset blocks with no blur; the payments site uses blur only on a few product-imagery elements.
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.components.home-1440-header
+    - ref: ref-012
+      observations:
+        - ref-012.components.home-ar-1440-header
+    - ref: ref-008
+      observations:
+        - ref-008.components.home-1440-header
+  counterexamples:
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-a-inset-header-bars
+      note: floating inset header, but solid and brand-shaped (no blur)
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: W11 floating nav
+evidence_count: 3
+confidence: medium
+confidence_basis: report + 3 references with solid headers + 1 instructive variant
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

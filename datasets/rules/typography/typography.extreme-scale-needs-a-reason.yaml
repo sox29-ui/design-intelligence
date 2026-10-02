@@ -1,0 +1,70 @@
+id: typography.extreme-scale-needs-a-reason
+kind: principle
+domain: typography
+title: Extreme display scale only when type is the message
+status: provisional
+since: 0.1.0
+statement: Use display text many times the body size (≥ 6×) only on low-density brand or story moments where the letters themselves carry the message — and transform it for mobile instead of shrinking it.
+when:
+  page_goal:
+    - brand-expression
+    - storytelling
+  content_density:
+    - low
+consider:
+  - oversized display for a single statement or product name
+  - narrow measure and intentional line breaks
+  - "mobile: reorient, crop or re-break rather than scale down linearly"
+verify:
+  - mobile wrapping and orphaned words at 390
+  - text remains real text with an accessible name
+  - font-loading layout shift
+  - localization expansion (Arabic/German)
+  - 200% zoom
+avoid_when:
+  - dashboards and tools
+  - transactional forms
+  - dense editorial/listing pages
+  - the conversion path of commerce pages
+rationale: The three references with ratios far above the dense-page range (specimen 41×, storytelling bands 14× and 36×) all use it where type is the subject or a single statement. Exat rotates its word on mobile to keep the scale relationship.
+trade_offs:
+  - pushes content below the fold
+  - heavy font files
+  - risk of the generic "giant hero" signature when unjustified
+depends_on:
+  - user-intent
+  - content-density
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-005
+      observations:
+        - ref-005.typography.home-a-type-as-image
+        - ref-005.responsive.home-a-mobile-rotation
+        - ref-005.typography.home-1440-scale-range
+    - ref: ref-003
+      observations:
+        - ref-003.layout.home-a-heritage-collage
+        - ref-003.typography.home-1440-scale-range
+    - ref: ref-002
+      observations:
+        - ref-002.typography.home-1440-scale-range
+      note: very large type used inside chapter scenes, not in the index
+    - ref: ref-001
+      observations:
+        - ref-001.typography.home-1440-scale-range
+        - ref-001.typography.home-a-display-type-mix
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: di-research-report
+      note: "example rule shape: oversized display WHEN low density + storytelling"
+evidence_count: 4
+confidence: medium
+confidence_basis: 4 independent references, all low-density brand/story contexts; validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,54 @@
+id: accessibility.semantic-skeleton
+kind: invariant
+domain: accessibility
+title: Language, landmarks, one h1, named controls
+status: provisional
+since: 0.1.0
+statement: Every page declares its language (and direction), has header/nav/main/footer landmarks, exactly one h1 with ordered headings, and accessible names for all links, buttons, inputs and informative images.
+when:
+  page_goal:
+    - any
+consider:
+  - visually hidden h1 when the visual title is an image or canvas
+  - aria-label on icon buttons
+  - alt="" for decorative images
+verify:
+  - "axe: no landmark, heading, name or image-alt violations"
+  - ARIA snapshot lists landmarks and one h1
+avoid_when: []
+rationale: The public-service reference has a complete skeleton; immersive and editorial references miss landmarks, h1 or link names (canvas-only content, image links without names).
+trade_offs: []
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.accessibility.home-1440-landmarks
+        - ref-007.hierarchy.home-1440-h1-count
+  counterexamples:
+    - ref: ref-001
+      observations:
+        - ref-001.accessibility.home-1440-landmarks
+      note: no header/nav landmarks
+    - ref: ref-011
+      observations:
+        - ref-011.accessibility.home-a-why-text-in-image-cost
+      note: 34 image links without names; no h1
+    - ref: ref-006
+      observations:
+        - ref-006.implementation.home-a-why-dom-thin
+      note: content in WebGL; thin DOM
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 3.1.1 language of page; structure and names per WCAG 2.2
+evidence_count: 1
+confidence: medium
+confidence_basis: WCAG-grounded invariant; corpus shows the failure modes
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

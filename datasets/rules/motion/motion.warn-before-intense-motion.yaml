@@ -1,0 +1,44 @@
+id: motion.warn-before-intense-motion
+kind: invariant
+domain: motion
+title: Disclose intense motion and offer a calmer path
+status: provisional
+since: 0.1.0
+statement: When motion, distortion or flashing is the content itself (simulations, immersive scenes), say so before entry and offer an equivalent lower-intensity path.
+when:
+  motion_budget:
+    - expressive
+  engineering_budget:
+    - heavy-webgl
+consider:
+  - entry screen with two labelled choices
+  - remember the choice
+  - respect reduced motion automatically
+verify:
+  - the warning is readable (contrast) and keyboard reachable before any motion starts
+avoid_when: []
+rationale: The eye-condition simulator labels its entry buttons with "includes distortion and motion" and offers a sound-free path.
+trade_offs:
+  - adds a step before the experience
+depends_on:
+  - motion-budget
+evidence:
+  supporting:
+    - ref: ref-006
+      observations:
+        - ref-006.accessibility.home-a-entry-disclosure
+        - ref-006.motion.home-a-why-disclosure
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 2.3.3 animation from interactions
+evidence_count: 1
+confidence: medium
+confidence_basis: WCAG-grounded; one corpus implementation
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,51 @@
+id: components.consent-with-real-choice
+kind: principle
+domain: components
+title: Consent UI offers a real, equal choice and does not block content
+status: provisional
+since: 0.1.0
+statement: Show reject next to accept with comparable size, keep the banner compact and anchored at an edge, and reserve its space so it does not shift layout.
+when:
+  page_goal:
+    - any
+consider:
+  - bottom-anchored compact banner
+  - equal-width accept/reject buttons
+  - space reserved or overlaid without reflow
+verify:
+  - CLS before interaction ≤ 0.1
+  - banner does not cover the primary action at 390
+avoid_when: []
+rationale: Three references offer reject/decline beside accept; the Arabic news site offers only accept in a dialog covering most of the mobile viewport; consent strips injected above content caused layout shift on the public portal.
+trade_offs: []
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.components.home-ar-a-consent-parity
+    - ref: ref-007
+      observations:
+        - ref-007.layout.home-a-consent-strip-cost
+    - ref: ref-004
+      observations:
+        - ref-004.hierarchy.home-a-statement-in-cell
+  counterexamples:
+    - ref: ref-011
+      observations:
+        - ref-011.components.home-a-consent-occlusion
+      note: accept-only dialog covering most of the first mobile viewport
+  validation: []
+  external:
+    - source_id: webdev-vitals
+      note: CLS ≤ 0.1
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references; 1 counterexample
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

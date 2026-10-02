@@ -1,0 +1,42 @@
+id: antipattern.text-in-images
+kind: anti-pattern
+domain: accessibility
+title: Headlines burned into images
+status: provisional
+since: 0.1.0
+statement: Text set inside images cannot be read by assistive technology, translated, resized or searched; keep headlines as live text over or beside imagery.
+when:
+  page_goal:
+    - any
+consider:
+  - live text with a scrim over images
+  - alt text that repeats meaningful in-image text only when unavoidable
+verify:
+  - links wrapping images have accessible names
+  - no essential text only in images
+avoid_when: []
+rationale: The Arabic news site's thumbnails carry their headlines as image text; dozens of image links have no accessible name.
+trade_offs:
+  - live text over photos needs scrims for contrast
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-011
+      observations:
+        - ref-011.accessibility.home-a-text-in-images
+        - ref-011.accessibility.home-a-why-text-in-image-cost
+  counterexamples: []
+  validation: []
+  external:
+    - source_id: wcag22
+      note: images of text are covered by SC 1.4.3 and require names
+evidence_count: 1
+confidence: low
+confidence_basis: 1 reference + WCAG
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

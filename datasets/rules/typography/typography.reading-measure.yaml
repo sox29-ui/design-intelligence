@@ -1,0 +1,58 @@
+id: typography.reading-measure
+kind: principle
+domain: typography
+title: Constrain the reading column
+status: provisional
+since: 0.1.0
+statement: Keep long-form reading text in a column of roughly 45–75 characters per line (≈ 30–40 em), narrower than the page container, at every width.
+when:
+  page_goal:
+    - information-consumption
+    - task-completion
+    - storytelling
+  content_density:
+    - medium
+    - high
+consider:
+  - a two-thirds or 60–70ch column inside a wider container
+  - max-inline-size on text blocks, not on the whole layout
+verify:
+  - median characters per line at 1440 between 45 and 75 (verify-page summary)
+  - no paragraph above ~90 cpl
+avoid_when:
+  - very short UI strings, captions and labels
+rationale: The public-service start page keeps a single reading column (~61 cpl at 1440); the data publication lets paragraphs run 70–110 cpl, which the eye has to track across a 1280 px container.
+trade_offs:
+  - empty space beside the column on wide screens
+depends_on:
+  - content-density
+  - device
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.typography.task-1440-reading-chars-per-line
+        - ref-007.typography.task-a-task-page-reading
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-reading-chars-per-line
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-reading-chars-per-line
+  counterexamples:
+    - ref: ref-008
+      observations:
+        - ref-008.typography.chart-1440-reading-chars-per-line
+        - ref-008.typography.home-1440-reading-chars-per-line
+      note: paragraphs reach 80–110 cpl in a 1280 px container
+  validation: []
+  external: []
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references; 1 counterexample with measured long lines
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

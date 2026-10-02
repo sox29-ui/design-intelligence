@@ -1,0 +1,36 @@
+id: signature.exat-rotated-specimen
+kind: signature
+domain: process
+title: Rotated giant specimen word and alphabet spiral
+status: provisional
+since: 0.1.0
+statement: The 90°-rotated giant product name on mobile and the multicolour alphabet spiral are a type-specimen signature.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: typography.extreme-scale-needs-a-reason."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-005
+      observations:
+        - ref-005.responsive.home-a-mobile-rotation
+        - ref-005.typography.home-a-why-not-general
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

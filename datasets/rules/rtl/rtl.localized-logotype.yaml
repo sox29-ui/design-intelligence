@@ -1,0 +1,35 @@
+id: rtl.localized-logotype
+kind: hypothesis
+domain: rtl
+title: Arabic logotype on Arabic pages
+status: candidate
+since: 0.1.0
+statement: Bilingual brands with an Arabic logotype may want to use it consistently on Arabic pages at every width.
+when:
+  language:
+    - ar
+consider: []
+verify: []
+avoid_when: []
+rationale: One storefront showed its Arabic logotype at 1440 but the Latin wordmark at 390 on the same Arabic page; intent unknown.
+trade_offs: []
+depends_on:
+  - language
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-012
+      observations:
+        - ref-012.rtl.home-ar-a-localized-logotype
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single observation; intent unverified
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

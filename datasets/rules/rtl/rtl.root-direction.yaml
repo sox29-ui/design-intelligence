@@ -1,0 +1,52 @@
+id: rtl.root-direction
+kind: invariant
+domain: rtl
+title: Set dir and lang on <html>, not per component
+status: provisional
+since: 0.1.0
+statement: For Arabic-primary pages put dir="rtl" and lang="ar" on the html element; use dir="ltr"/"auto" or <bdi> only for embedded opposite-direction runs.
+when:
+  language:
+    - ar
+    - bilingual
+consider:
+  - <html lang="ar" dir="rtl">
+  - language switch swaps both lang and dir
+  - dir="auto" on user-generated or inserted text
+verify:
+  - computed direction of html = rtl (verify-page rtl-direction gate)
+  - form controls and scroll containers follow RTL
+avoid_when: []
+rationale: The fintech and luxury storefronts set dir on the root and mirror cleanly; the Arabic news site sets dir on ~174 elements individually while the root stays LTR — fragile for any unmarked component.
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-ar-1440-html-dir
+        - ref-010.rtl.home-ar-a-mirrored-chrome
+    - ref: ref-012
+      observations:
+        - ref-012.rtl.home-ar-1440-html-dir
+        - ref-012.rtl.home-ar-a-mirrored-commerce-header
+  counterexamples:
+    - ref: ref-011
+      observations:
+        - ref-011.rtl.home-a-why-root-dir-risk
+        - ref-011.rtl.home-1440-computed-direction
+      note: root left LTR; direction applied element by element
+  validation: []
+  external:
+    - source_id: w3c-i18n-html-dir
+      note: add dir="rtl" to the html tag; do not use CSS for base direction
+evidence_count: 2
+confidence: medium
+confidence_basis: W3C guidance + 2 references; 1 counterexample
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

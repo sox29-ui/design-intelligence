@@ -1,0 +1,62 @@
+id: layout.structure-with-lines-not-shadows
+kind: principle
+domain: layout
+title: Structure dense layouts with hairlines, borders and space
+status: provisional
+since: 0.1.0
+statement: In dense or information-led layouts, separate content with hairlines, thin borders, background bands and spacing; avoid stacking soft shadows, glows and large radii on every container.
+when:
+  content_density:
+    - medium
+    - high
+consider:
+  - 1 px dividers and borders
+  - square or small-radius (0–8 px) containers
+  - tinted background bands for grouping
+verify:
+  - "verify-page signatures: rounded-card-grid, glow-accents absent or justified"
+  - grouping is still perceivable without colour
+avoid_when:
+  - playful illustrated brands may use large radii deliberately (record the reason)
+rationale: Information-led references measure zero coloured glows and few large radii; structure comes from rules, borders, visible grids and bands.
+trade_offs:
+  - can feel austere without strong typography or imagery
+depends_on:
+  - content-density
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.components.home-a-link-list-pattern
+        - ref-007.components.home-1440-effects
+    - ref: ref-008
+      observations:
+        - ref-008.layout.home-a-home-content-grid
+        - ref-008.components.home-1440-effects
+    - ref: ref-009
+      observations:
+        - ref-009.layout.home-a-exposed-grid-lines
+    - ref: ref-012
+      observations:
+        - ref-012.color.home-ar-a-monochrome-ui
+        - ref-012.components.home-ar-1440-effects
+    - ref: ref-004
+      observations:
+        - ref-004.layout.home-a-visible-grid-canvas
+  counterexamples:
+    - ref: ref-010
+      observations:
+        - ref-010.color.home-ar-a-illustration-identity
+      note: large-radius image cards are part of a deliberately playful illustrated identity
+  validation: []
+  external: []
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references (measured effects + observed structure)
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

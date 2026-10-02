@@ -1,0 +1,53 @@
+id: components.trust-next-to-the-ask
+kind: principle
+domain: components
+title: Put proof and promises next to the ask
+status: provisional
+since: 0.1.0
+statement: Place trust signals — ratings, customer logos, delivery promises, price and terms disclosure — immediately around the first call to action rather than in a later section.
+when:
+  page_goal:
+    - conversion
+consider:
+  - rating line above the headline
+  - logo strip closing the first viewport
+  - delivery/payment promise strip above the hero (MENA commerce)
+  - starting price + disclaimer under the hero statement
+verify:
+  - claims are factual and sourced in the brief
+  - small trust text still meets contrast
+avoid_when:
+  - editorial and public-service pages
+rationale: "Four conversion references put proof in the first viewport: ratings (fintech), customer logos (payments), delivery/gift/payment promises (luxury commerce), price and production timing (automotive)."
+trade_offs:
+  - clutter if every signal is shown at once
+depends_on:
+  - industry
+  - user-intent
+evidence:
+  supporting:
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-en-a-english-counterpart
+    - ref: ref-009
+      observations:
+        - ref-009.hierarchy.home-a-hero-first-read
+    - ref: ref-012
+      observations:
+        - ref-012.components.home-en-a-why-delivery-promise
+        - ref-012.layout.home-ar-a-desktop-department-tiles
+    - ref: ref-003
+      observations:
+        - ref-003.hierarchy.home-a-cinematic-hero-with-disclosure
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 4
+confidence: medium
+confidence_basis: 4 independent conversion references
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

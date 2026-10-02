@@ -1,0 +1,57 @@
+id: hierarchy.router-hero-for-task-intent
+kind: principle
+domain: hierarchy
+title: When visitors arrive with a task, the hero is a router
+status: provisional
+since: 0.1.0
+statement: If most visitors come to do or find something specific, make the first viewport a router — a search field, department choices or top tasks — instead of a slogan.
+when:
+  page_goal:
+    - task-completion
+    - information-consumption
+    - conversion
+  content_density:
+    - medium
+    - high
+consider:
+  - search field as the hero's primary action
+  - department or category buttons over imagery
+  - a short list of most-requested tasks right below
+verify:
+  - router visible without scrolling at 390
+  - keyboard reaches it first after skip link
+  - labels are explicit, not clever
+avoid_when:
+  - brand launch, storytelling or single-product pages
+  - pages where the visitor does not yet know what to choose
+rationale: "A public portal (search), a data publication (search + popular topics) and a luxury department store (department buttons over photography) all spend the first viewport on routing. INFERRED: intent is already formed, so persuasion copy delays the task."
+trade_offs:
+  - less room for brand storytelling above the fold
+depends_on:
+  - user-intent
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.hierarchy.home-a-hero-first-read
+        - ref-007.components.home-a-search-as-primary-action
+    - ref: ref-008
+      observations:
+        - ref-008.hierarchy.home-a-home-first-read
+    - ref: ref-012
+      observations:
+        - ref-012.hierarchy.home-en-a-department-router-hero
+        - ref-012.hierarchy.home-en-a-why-router-hero
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 3
+confidence: medium
+confidence_basis: 3 independent references in different industries and styles
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

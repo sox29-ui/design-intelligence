@@ -1,0 +1,59 @@
+id: accessibility.visible-focus
+kind: invariant
+domain: accessibility
+title: A strong, visible focus indicator on every interactive element
+status: provisional
+since: 0.1.0
+statement: Every focusable element shows a high-contrast focus indicator that does not rely on colour change alone, and focused elements are never hidden behind sticky UI.
+when:
+  page_goal:
+    - any
+consider:
+  - :focus-visible with outline ≥ 2 px plus offset, or background + underline (public-service pattern)
+  - test on every background colour
+verify:
+  - focus-walk indicator share = 1.0 (verify-page)
+  - no off-screen focus stops
+  - focus not obscured by sticky headers
+avoid_when: []
+rationale: Nine of twelve references show a visible indicator on every sampled tab stop and two more on ≥ 93%; the brand-guidelines site shows one on only ~53%, and its focused elements overlap content. (Focus walks on eight references used an older start point; see JOURNAL.)
+trade_offs: []
+depends_on:
+  - none
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.accessibility.home-a-focus-style
+        - ref-007.accessibility.home-1440-focus-indicator-share
+    - ref: ref-009
+      observations:
+        - ref-009.accessibility.home-1440-focus-indicator-share
+    - ref: ref-010
+      observations:
+        - ref-010.accessibility.home-ar-1440-focus-indicator-share
+    - ref: ref-008
+      observations:
+        - ref-008.accessibility.home-1440-focus-indicator-share
+    - ref: ref-003
+      observations:
+        - ref-003.accessibility.home-1440-focus-indicator-share
+  counterexamples:
+    - ref: ref-004
+      observations:
+        - ref-004.accessibility.home-1440-focus-indicator-share
+        - ref-004.accessibility.home-a-focus-state-overlap
+      note: indicator on ~53% of stops
+  validation: []
+  external:
+    - source_id: wcag22
+      note: SC 2.4.7 focus visible; SC 2.4.11 focus not obscured
+evidence_count: 5
+confidence: medium
+confidence_basis: WCAG + 5 cited references (11/12 measured compliant)
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,43 @@
+id: rtl.test-line-breaks-per-language
+kind: principle
+domain: rtl
+title: Size for the longer language and check each language's breaks
+status: provisional
+since: 0.1.0
+statement: "Do not assume line-count parity between Arabic and English: lay out display text and buttons for the longer language and verify breaks in each language at 390 and 1440."
+when:
+  language:
+    - bilingual
+consider:
+  - flexible heights for headlines and buttons
+  - "per-language line-break tweaks (text-wrap: balance)"
+verify:
+  - line counts per language at 390/1440
+  - no truncated CTA labels
+avoid_when: []
+rationale: Arabic needed three lines where English needed two on the luxury storefront; on the fintech, the Arabic headline fit one line at 1440 where English took two.
+trade_offs: []
+depends_on:
+  - language
+evidence:
+  supporting:
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-1440-display-lines
+        - ref-012.typography.home-en-1440-display-lines
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-display-lines
+        - ref-010.typography.home-en-1440-display-lines
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 2
+confidence: low
+confidence_basis: 2 independent bilingual references (opposite directions of difference)
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

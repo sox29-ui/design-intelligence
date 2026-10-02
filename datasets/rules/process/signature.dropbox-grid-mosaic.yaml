@@ -1,0 +1,36 @@
+id: signature.dropbox-grid-mosaic
+kind: signature
+domain: process
+title: Blueprint grid with colour-tile mosaic
+status: provisional
+since: 0.1.0
+statement: Pale-blue blueprint grid with saturated section tiles is one brand system's self-portrait.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: layout.expose-the-grid-for-systems."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-004
+      observations:
+        - ref-004.layout.home-a-visible-grid-canvas
+        - ref-004.components.home-a-colour-tile-navigation
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

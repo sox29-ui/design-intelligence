@@ -1,0 +1,73 @@
+id: typography.modest-scale-for-dense-pages
+kind: principle
+domain: typography
+title: Keep display scale modest on task, information and dense pages
+status: provisional
+since: 0.1.0
+statement: When the page serves tasks, information or many items, keep the largest text at roughly 2–3.5× the body size at desktop and let position, weight and space do the rest of the hierarchy.
+when:
+  page_goal:
+    - task-completion
+    - information-consumption
+    - data-interaction
+    - conversion
+  content_density:
+    - medium
+    - high
+consider:
+  - display ≈ 2–3.5× body at 1440 (corpus range 1.9–3.5)
+  - one display size per page; headings step down in 1–2 sizes
+  - search or primary CTA inside the first viewport at 390
+verify:
+  - display text ≤ 4 lines at 390
+  - primary task element visible without scrolling at 390
+  - heading levels match visual levels
+avoid_when:
+  - the type itself is the product or the message (see typography.extreme-scale-needs-a-reason)
+rationale: "Measured scale ranges stay between 1.9× and 3.5× on every task, information, commerce and conversion reference, independent of style (utilitarian, editorial, luxury, illustrative). INFERRED: large display steals the first viewport from the task."
+trade_offs:
+  - less drama; identity has to come from colour, imagery or composition
+depends_on:
+  - user-intent
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.typography.home-1440-scale-range
+        - ref-007.typography.task-1440-scale-range
+    - ref: ref-008
+      observations:
+        - ref-008.typography.home-1440-scale-range
+        - ref-008.typography.chart-1440-scale-range
+    - ref: ref-009
+      observations:
+        - ref-009.typography.home-1440-scale-range
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-scale-range
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-scale-range
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-en-1440-scale-range
+    - ref: ref-004
+      observations:
+        - ref-004.typography.home-1440-scale-range
+  counterexamples:
+    - ref: ref-003
+      observations:
+        - ref-003.typography.home-1440-scale-range
+      note: commerce page with a storytelling section reaches 36× — the giant type sits in a heritage-story band, not in the conversion path
+  validation: []
+  external: []
+evidence_count: 7
+confidence: medium
+confidence_basis: 7 independent references across 5 archetypes; validation pending (cannot be high before a validation check)
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

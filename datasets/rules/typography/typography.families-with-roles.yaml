@@ -1,0 +1,80 @@
+id: typography.families-with-roles
+kind: principle
+domain: typography
+title: One or two families (or one superfamily) with explicit roles
+status: provisional
+since: 0.1.0
+statement: Use one or two type families — or one superfamily in several widths — each with a declared role (display, text, label); add a third only for a functional role such as monospace data or a single accent.
+when:
+  page_goal:
+    - any
+consider:
+  - superfamily widths for display vs text
+  - monospace for labels/figures when it serves data or tone
+  - record roles as tokens
+verify:
+  - verify-page families list ≤ 2–3
+  - each family maps to one role
+avoid_when: []
+rationale: Ten of twelve references render one or two families, or one superfamily whose widths appear as separate family names (Scout, Exat, Tabby). The two exceptions are a campaign page and a bilingual news page that add Latin faces for captions or effects.
+trade_offs:
+  - fewer expressive accents
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.typography.home-a-single-family-hierarchy
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-family-share
+    - ref: ref-005
+      observations:
+        - ref-005.typography.home-1440-family-share
+      note: four weights/widths of one superfamily
+    - ref: ref-003
+      observations:
+        - ref-003.typography.home-a-mono-labels
+      note: superfamily + mono labels
+    - ref: ref-008
+      observations:
+        - ref-008.typography.home-1440-family-share
+    - ref: ref-009
+      observations:
+        - ref-009.typography.home-1440-family-share
+      note: one text face plus monospace for code
+    - ref: ref-001
+      observations:
+        - ref-001.typography.home-1440-family-share
+    - ref: ref-004
+      observations:
+        - ref-004.typography.home-1440-family-share
+    - ref: ref-006
+      observations:
+        - ref-006.typography.home-1440-family-share
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-en-1440-family-share
+        - ref-012.typography.home-ar-1440-family-share
+      note: one Latin pair; Arabic page uses one family
+  counterexamples:
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-family-share
+      note: "four families: one Arabic family plus three Latin faces for captions and display"
+    - ref: ref-002
+      observations:
+        - ref-002.typography.home-a-title-wordplay
+      note: campaign mixes grotesk, serif and system faces
+  validation: []
+  external: []
+evidence_count: 10
+confidence: medium
+confidence_basis: 10 independent references (rendered-font measurements); counterexamples are a campaign page and a bilingual news page; no validation yet
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

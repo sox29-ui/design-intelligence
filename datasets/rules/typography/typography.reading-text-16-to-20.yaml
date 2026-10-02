@@ -1,0 +1,66 @@
+id: typography.reading-text-16-to-20
+kind: principle
+domain: typography
+title: Running text at 16–20 px on every viewport
+status: provisional
+since: 0.1.0
+statement: Set the dominant running-text size between 16 and 20 px at all widths for reading, conversion and public pages; 13–14 px only for dense data UI or compact metadata, and never as the dominant size for Arabic.
+when:
+  page_goal:
+    - information-consumption
+    - conversion
+    - task-completion
+consider:
+  - 16 px minimum body; 18–20 px for public/editorial or Arabic body
+  - keep body size constant across breakpoints (scale display, not body)
+verify:
+  - verify-page tiny-text warning (< 12 px share) at 390
+  - Arabic glyph detail legible at 390
+avoid_when:
+  - dense data tables and dashboards may use 13–14 px with tabular figures and generous row height
+rationale: Body size is constant across viewports in every reference; reading-led sites use 16–20 px. The 12 px luxury storefront is the one reference where small text is the dominant size, and it pairs with small Arabic glyphs on phones.
+trade_offs:
+  - longer pages
+  - less density for merchandising
+depends_on:
+  - user-intent
+  - language
+  - content-density
+evidence:
+  supporting:
+    - ref: ref-007
+      observations:
+        - ref-007.typography.home-1440-body-size
+    - ref: ref-010
+      observations:
+        - ref-010.typography.home-ar-1440-body-size
+    - ref: ref-011
+      observations:
+        - ref-011.typography.home-1440-body-size
+    - ref: ref-009
+      observations:
+        - ref-009.typography.home-1440-body-size
+    - ref: ref-006
+      observations:
+        - ref-006.typography.home-1440-body-size
+  counterexamples:
+    - ref: ref-012
+      observations:
+        - ref-012.typography.home-ar-1440-body-size
+        - ref-012.accessibility.home-ar-a-why-small-text
+      note: 12 px dominant text in both languages; legibility weakness on phones
+    - ref: ref-008
+      observations:
+        - ref-008.typography.chart-1440-body-size
+      note: 13–14 px in a dense data tool — acceptable with tabular layout
+  validation: []
+  external: []
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references at 16–20 px; 2 counterexamples explained by density/merchandising
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

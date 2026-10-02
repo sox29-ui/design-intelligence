@@ -5,4 +5,44 @@
 
 Cross-cutting process rules. They come from the research report's architecture and from patterns that recur across the whole corpus; they govern *how* DI makes decisions rather than *which* visual decision to make.
 
-_No compiled rules in this domain yet._
+## Rules (3)
+
+### Decide from context keys, not from a house style
+<!-- rule:process.context-before-style -->
+`process.context-before-style` · principle · confidence **medium** · evidence: 5 independent ref(s) + 1 standard(s) · provisional
+
+**Derive every expressive decision from the brief's context (goal, density, audience, language, device, budgets); the same move is right in one context and wrong in another.**
+
+- **WHEN:** page_goal ∈ {any}
+- **CONSIDER:** write the context keys before choosing visuals; name which context key justifies each expressive move; reuse a pattern only if its WHEN matches the brief
+- **VERIFY:** each signature present in verify-page output has a one-line brief-derived reason; outputs for different briefs do not share one visual template
+- **TRADE-OFFS:** slower start: the thesis step costs time before any pixels
+- **WHY (inferred):** Across the corpus, decisions that look contradictory (search-first hero vs. giant specimen type; neon on black vs. monochrome luxury) are each explained by a different goal or identity. (INFERRED from analyst rationales.)
+- *Evidence:* supported by ref-007 (GOV.UK), ref-012 (Ounass), ref-001 (Lando Norris), ref-005 (Exat Typeface), ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) · standards: di-research-report. Details: `npm run why -- process.context-before-style`.
+
+### Explore genuinely different directions before committing
+<!-- rule:process.distinct-directions -->
+`process.distinct-directions` · invariant · confidence **medium** · evidence: 0 independent ref(s) + 1 standard(s) · provisional
+
+**For creative work, sketch three directions with different central ideas (not colour variants), choose one, and state the trade-off.**
+
+- **WHEN:** page_goal ∈ {storytelling, brand-expression, conversion}; content_density ∈ {low, medium}
+- **CONSIDER:** vary the central idea: typographic / data-led / editorial / spatial; run the anti-pattern check on the chosen direction before coding
+- **VERIFY:** the chosen direction can be stated in one sentence tied to the brief
+- **AVOID WHEN:** small fixes to an existing design system; pure bug fixing
+- **TRADE-OFFS:** more planning tokens
+- **WHY (inferred):** Default generation converges on the most common template; forcing distinct central ideas surfaces brief-specific options. (Report proposal; to be tested by benchmark.)
+- *Evidence:* standards: di-research-report. Details: `npm run why -- process.distinct-directions`.
+
+### Render and inspect before declaring done
+<!-- rule:process.verify-in-browser -->
+`process.verify-in-browser` · invariant · confidence **medium** · evidence: 3 independent ref(s) + 1 standard(s) · provisional
+
+**Never treat compiled code as finished: render at 390, 768, 1440 and 1920, inspect screenshots, run objective gates, fix, and re-verify.**
+
+- **WHEN:** page_goal ∈ {any}
+- **CONSIDER:** verify-page.ts full run before delivery; look at 390-top, 390-menu-open, 1440-top, focus and reduced-motion shots
+- **VERIFY:** no horizontal overflow at 390; visible focus; no axe critical issues; no runtime errors; lang/dir correct
+- **TRADE-OFFS:** adds a render/measure loop to every task
+- **WHY (inferred):** Several defects in award-level references were only visible in rendered states (focus walk overlapping content, Arabic wrapping to more lines, a multi-second preloader). Code review would not have revealed them.
+- *Evidence:* supported by ref-004 (Dropbox Brand), ref-012 (Ounass), ref-001 (Lando Norris) · standards: di-research-report. Details: `npm run why -- process.verify-in-browser`.

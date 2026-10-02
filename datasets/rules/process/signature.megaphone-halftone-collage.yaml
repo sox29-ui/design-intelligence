@@ -1,0 +1,36 @@
+id: signature.megaphone-halftone-collage
+kind: signature
+domain: process
+title: Halftone political collage and paper-stack cards
+status: provisional
+since: 0.1.0
+statement: Halftone cut-out collages, archival scans and paper-stack study cards are one newsroom's editorial voice.
+when:
+  page_goal:
+    - none — do not reuse
+consider: []
+verify: []
+avoid_when:
+  - any brief that is not this brand
+rationale: "Transferable principle instead: hierarchy.give-dense-pages-a-map."
+trade_offs: []
+depends_on:
+  - brand-personality
+evidence:
+  supporting:
+    - ref: ref-011
+      observations:
+        - ref-011.color.home-a-collage-imagery
+        - ref-011.components.home-a-content-type-skins
+  counterexamples: []
+  validation: []
+  external: []
+evidence_count: 1
+confidence: low
+confidence_basis: single-site signature by definition
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)

@@ -1,0 +1,63 @@
+id: components.mobile-menu-sheet
+kind: principle
+domain: components
+title: Mobile navigation as a full sheet or in-flow panel with real state
+status: provisional
+since: 0.1.0
+statement: On mobile, open navigation as a full-height sheet or an in-flow panel; expose aria-expanded, close on Escape, and keep the primary action reachable inside it.
+when:
+  device:
+    - mobile-first
+    - responsive-general
+consider:
+  - drill-down chevrons for nested sections
+  - primary CTA pinned at the bottom of the sheet
+  - model/category tiles inside the sheet for commerce
+verify:
+  - aria-expanded false → true
+  - Escape closes and returns focus
+  - body scroll locked only while a modal sheet is open
+  - "RTL: chevrons point left"
+avoid_when: []
+rationale: Five references implement measured aria-expanded state and Escape-to-close; the strongest also place the conversion action inside the sheet.
+trade_offs:
+  - full sheets hide page context
+depends_on:
+  - device
+evidence:
+  supporting:
+    - ref: ref-009
+      observations:
+        - ref-009.components.home-a-mobile-menu-drilldown
+        - ref-009.components.home-390-menu
+    - ref: ref-007
+      observations:
+        - ref-007.components.home-a-mobile-menu-inline-panel
+        - ref-007.components.home-390-menu
+    - ref: ref-010
+      observations:
+        - ref-010.rtl.home-ar-a-rtl-chevrons
+        - ref-010.components.home-ar-390-menu
+    - ref: ref-003
+      observations:
+        - ref-003.components.home-a-menu-as-storefront
+        - ref-003.components.home-390-menu
+    - ref: ref-002
+      observations:
+        - ref-002.components.home-390-menu
+  counterexamples:
+    - ref: ref-001
+      observations:
+        - ref-001.components.home-a-menu-probe-inconclusive
+      note: toggle exposed no state change in capture (inconclusive)
+  validation: []
+  external: []
+evidence_count: 5
+confidence: medium
+confidence_basis: 5 independent references with measured state; validation pending
+created: 2026-10-02
+updated: 2026-10-02
+history:
+  - version: 0.1.0
+    date: 2026-10-02
+    change: created from extraction-split evidence (Phase D synthesis)
