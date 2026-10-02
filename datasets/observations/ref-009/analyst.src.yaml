@@ -1,0 +1,103 @@
+# Analyst observations — ref-009 Stripe (home). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 390-menu-open.
+items:
+  - key: hero-first-read
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "First read is a long left-aligned sans headline set light with tight tracking whose first clause is near-black and whose continuation shifts to muted slate and violet; second read is a solid violet primary button beside an outlined secondary sign-up; third read is a multicolour flowing ribbon bleeding off the top-right edge. A small live-updating metric acts as a kicker above the headline; a logo strip closes the first viewport."
+    confidence: 0.9
+    assessment: strength
+    tags: [hero, two-tone-headline]
+  - key: exposed-grid-lines
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-25]
+    statement: "Thin vertical hairlines mark the edges of the content container through the hero and later sections, and hairline rules separate bands; the layout grid is made visible as a graphic device."
+    confidence: 0.85
+    assessment: neutral
+    tags: [grid, structure]
+  - key: mobile-hero-trim
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "At 390 only the first clause of the headline is shown (the longer continuation visible at 1440 is absent in the first viewport), and both calls to action become full-width stacked buttons; the ribbon shrinks to a diagonal band in the top-right corner."
+    confidence: 0.85
+    assessment: strength
+    tags: [content-priority, mobile]
+  - key: stat-row
+    page: home
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-scroll-25]
+    statement: "A centred section heading is followed by a four-up row of large light-weight numerals with two-line captions, the first numeral dark and the others grey; below, an abstract particle visualisation fills a soft blue-to-amber glow."
+    confidence: 0.85
+    assessment: neutral
+    tags: [stats, data-display]
+  - key: mobile-menu-drilldown
+    page: home
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-menu-open]
+    statement: "The mobile menu is a full-screen sheet: top-level items with chevrons for drill-down, dashed separators, a bordered 'all products' shortcut, and the two primary calls to action pinned at the bottom of the screen."
+    confidence: 0.9
+    assessment: strength
+    tags: [navigation, thumb-zone]
+  - key: why-two-tone-headline
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [hero-first-read, mobile-hero-trim]
+    statement: "Colouring the first clause dark and the continuation muted lets one long sentence carry both a punchy primary read and a detailed value proposition; on mobile the continuation is dropped rather than shrunk, which keeps the CTAs in the first viewport. Suited to high-density B2B marketing where the offer is complex."
+    confidence: 0.65
+    assessment: strength
+    tags: [hierarchy, density]
+  - key: why-ribbon-is-signature
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: INFERRED
+    based_on: [hero-first-read, ref-009.implementation.home-1440-canvas-contexts, ref-009.color.home-1440-gradient-area]
+    statement: "The WebGL gradient ribbon functions as a proprietary brand signature (it is the only saturated, multicolour element and is rendered as a live graphic). Reproducing a gradient ribbon or blob in another brand's page imitates this signature without its meaning — a likely source of the generic 'gradient hero' pattern."
+    confidence: 0.6
+    assessment: neutral
+    tags: [signature, anti-pattern-origin]
+  - key: why-glow-and-blur-here
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: INFERRED
+    based_on: [stat-row, ref-009.components.home-1440-effects]
+    statement: "Coloured glows, blurs and gradients are present (12 glow shadows, 4 blurred elements, gradient area 12–25%) but subordinated to a white, hairline-structured layout and dense factual content; the effects decorate product imagery rather than replace information."
+    confidence: 0.6
+    assessment: trade-off
+    tags: [effects, restraint]
+  - key: contrast-gap
+    page: home
+    viewport: cross-viewport
+    category: accessibility
+    type: INFERRED
+    based_on: [stat-row, ref-009.accessibility.home-1440-axe-by-impact]
+    statement: "Muted grey/slate text — used deliberately for secondary clauses and captions — produces the bulk of the automated contrast failures (29 nodes at 1440) plus an unnamed button; the tonal hierarchy device costs legibility at its lightest step."
+    confidence: 0.7
+    assessment: weakness
+    tags: [contrast, tonal-hierarchy]
+  - key: reduced-motion-honoured
+    page: home
+    viewport: 1440x900
+    category: motion
+    type: INFERRED
+    based_on: [ref-009.motion.home-1440-reduced-motion-response, ref-009.motion.home-1440-animations]
+    statement: "Script-driven animations are throttled under prefers-reduced-motion (running animations 14 → 1, animation-frame calls roughly halved), showing that a motion-rich commercial page can honour the preference."
+    confidence: 0.75
+    assessment: strength
+    tags: [reduced-motion]

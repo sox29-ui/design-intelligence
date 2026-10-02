@@ -1,0 +1,144 @@
+# Analyst observations — ref-007 GOV.UK (home + vehicle-tax start page). Compiled by scripts/analyst.ts.
+# Screenshots inspected: home 390-top, 1440-top, 390-menu-open, 1440-focus; task 390-top. No page copy reproduced.
+notes: "Captured after a privacy-preserving cookie rejection, so a consent-confirmation strip sits above the header in all shots."
+items:
+  - key: hero-first-read
+    page: home
+    viewport: cross-viewport
+    category: hierarchy
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "First read is a full-width saturated blue band holding a left-aligned bold statement; second read is a large search field directly beneath it inside the same band; third read is the list of popular tasks on white. Logo, Menu and Search toggles are small and quiet."
+    confidence: 0.9
+    assessment: strength
+    tags: [hero, search]
+  - key: search-as-primary-action
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "The hero's primary action is a search input (label above, attached square search button), not a promotional call-to-action; it is fully inside the first viewport at both 390 and 1440."
+    confidence: 0.95
+    assessment: strength
+    tags: [hero, search, task-first]
+  - key: desktop-restraint
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "At 1440 the hero text and search occupy roughly the left two thirds of a centred ~960–990 px container; the right third of the blue band is left empty. No imagery, illustration or decoration anywhere above the fold."
+    confidence: 0.9
+    assessment: neutral
+    tags: [whitespace, container]
+  - key: link-list-pattern
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top, 1440x900-focus]
+    statement: "Tasks and topics are presented as underlined text links with a short description, separated by hairline dividers and right-aligned chevrons; popular tasks use a circular arrow icon. Three columns at 1440, one at 390."
+    confidence: 0.9
+    assessment: strength
+    tags: [links, lists]
+  - key: mobile-menu-inline-panel
+    page: home
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-menu-open]
+    statement: "Opening Menu expands an in-flow panel below the header (no overlay, page not locked); the toggle switches to a pressed white state with an up-chevron; topics appear as a single-column bold link list."
+    confidence: 0.9
+    assessment: strength
+    tags: [navigation, mobile]
+  - key: focus-style
+    page: home
+    viewport: 1440x900
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-focus]
+    statement: "Keyboard focus renders as a solid yellow background behind the link text plus a thick black underline — a high-contrast indicator that does not rely on the link colour."
+    confidence: 0.95
+    assessment: strength
+    tags: [focus]
+  - key: single-family-hierarchy
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top, 390x844-menu-open]
+    statement: "One sans-serif family in two weights carries every level of hierarchy; differentiation comes from size, weight, colour (blue links vs black text) and underlines. No uppercase labels, no tracking changes."
+    confidence: 0.9
+    assessment: neutral
+    tags: [type-system]
+  - key: responsive-stacking
+    page: home
+    viewport: cross-viewport
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top]
+    statement: "Mobile keeps desktop order and pattern; the composition stacks rather than transforms: headline wraps to four lines, columns collapse to one, header keeps the same Menu/Search toggles at every width."
+    confidence: 0.85
+    assessment: neutral
+    tags: [stacking]
+  - key: consent-strip-cost
+    page: home
+    viewport: 390x844
+    category: layout
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "The consent confirmation strip takes about one fifth of the first mobile viewport above the masthead, pushing the hero statement and search downward."
+    confidence: 0.85
+    assessment: trade-off
+    tags: [consent, mobile]
+  - key: task-page-reading
+    page: task
+    viewport: 390x844
+    category: typography
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "The start page is a single reading column: breadcrumb, bold heading, short paragraphs, a bulleted list and inline links; no visual devices beyond type size, weight and link underline."
+    confidence: 0.9
+    assessment: strength
+    tags: [content-design, reading]
+  - key: why-search-hero
+    page: home
+    viewport: cross-viewport
+    category: hierarchy
+    type: INFERRED
+    based_on: [hero-first-read, search-as-primary-action]
+    statement: "Visitors arrive with a specific task, so the home page acts as a router: search and a list of the most requested tasks replace any narrative or brand storytelling. The pattern fits task-completion intent and high content volume; it would under-serve brand-expression or storytelling goals."
+    confidence: 0.75
+    assessment: strength
+    tags: [user-intent]
+  - key: why-plain-type
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [single-family-hierarchy, ref-007.typography.home-1440-weights, ref-007.typography.home-390-body-size]
+    statement: "A single family with two weights and a large 19 px body keeps every page legible and consistent for a very broad audience; expressive typography would compete with task completion. Conditional on: public/task context, high content volume, broad audience."
+    confidence: 0.7
+    assessment: strength
+    tags: [audience, legibility]
+  - key: why-consistent-header
+    page: home
+    viewport: cross-viewport
+    category: components
+    type: INFERRED
+    based_on: [mobile-menu-inline-panel, responsive-stacking, ref-007.responsive.home-xvp-header-toggles-curve]
+    statement: "Keeping the same Menu/Search toggles at all widths trades immediate visibility of topics on desktop for one learnable header pattern across devices; acceptable here because search is the primary route."
+    confidence: 0.55
+    assessment: trade-off
+    tags: [navigation]
+  - key: consent-shift-hypothesis
+    page: home
+    viewport: 1440x900
+    category: performance
+    type: INFERRED
+    based_on: [consent-strip-cost, ref-007.performance.home-1440-cls-before-interaction]
+    statement: "The pre-interaction layout shift measured at 1440 (0.23) is most likely caused by the consent strip being inserted above the masthead after first paint; even a utilitarian, accessibility-led site can fail CLS through consent UI."
+    confidence: 0.55
+    assessment: weakness
+    tags: [cls, consent]

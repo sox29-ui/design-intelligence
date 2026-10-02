@@ -6,7 +6,7 @@
 // Writes: viewport-<w>x<h>.json per viewport, extras-<w>x<h>.json, screenshots (JPEG) to artifacts.
 // Never stores page copy: probe returns measurements and text *scripts/lengths* only.
 import { createHash } from 'node:crypto';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium, devices, type Browser, type BrowserContext, type Page } from 'playwright';
@@ -39,8 +39,11 @@ export type InspectOptions = {
   consent?: 'reject' | 'none';
   settleMs?: number;
   locale?: string;
+  /** Serve this directory at LOCAL_ORIGIN via request interception (no local server, works behind the egress proxy). */
+  localDir?: string;
   log?: (m: string) => void;
 };
+export const LOCAL_ORIGIN = 'http://di-local.test';
 export type InspectResult = {
   finalUrl: string | null;
   blocked: boolean;
@@ -123,6 +126,31 @@ async function handleConsent(page: Page, policy: 'reject' | 'none'): Promise<{ a
       }
     }
   }
+  // Fallback: a reject control inside any fixed/sticky layer (hashed class names defeat the selectors above).
+  if (policy === 'reject') {
+    const tagged = await page.evaluate((reSrc) => {
+      const re = new RegExp(reSrc, 'i');
+      for (const b of document.querySelectorAll('button, a, [role="button"]')) {
+        const name = ((b.getAttribute('aria-label') || (b as HTMLElement).innerText || '') as string).trim();
+        if (!name || name.length > 60 || !re.test(name)) continue;
+        const r = b.getBoundingClientRect();
+        if (r.width < 1 || r.height < 1) continue;
+        for (let e: Element | null = b; e; e = e.parentElement) {
+          const pos = getComputedStyle(e).position;
+          if (pos === 'fixed' || pos === 'sticky') {
+            b.setAttribute('data-di-consent', 'reject');
+            return true;
+          }
+        }
+      }
+      return false;
+    }, REJECT_RE.source).catch(() => false);
+    if (tagged) {
+      await page.locator('[data-di-consent="reject"]').first().click({ timeout: 3000 }).catch(() => {});
+      await page.waitForTimeout(700);
+      return { action: 'rejected-nonessential', detail: 'clicked a reject/necessary-only control inside a fixed consent layer' };
+    }
+  }
   return bannerVisible ? { action: 'left-as-is', detail: 'consent-like container visible; no privacy-preserving control found' } : { action: 'none-found', detail: 'no visible consent container detected' };
 }
 
@@ -198,6 +226,13 @@ async function focusWalk(page: Page, steps = 16) {
     }
     (window as any).__DI_FOCUS_BASE__ = { base, props };
     (document.activeElement as HTMLElement | null)?.blur?.();
+    // Reset the sequential focus navigation starting point to the document start
+    // (consent clicks would otherwise make the walk begin mid-page).
+    const start = document.createElement('span');
+    start.tabIndex = -1;
+    document.body.prepend(start);
+    start.focus();
+    start.remove();
     window.scrollTo(0, 0);
   });
   const results: Array<Record<string, unknown>> = [];
@@ -379,6 +414,23 @@ function contextOptions(vp: ViewportSpec, extra: Record<string, unknown> = {}) {
   };
 }
 
+const LOCAL_MIME: Record<string, string> = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.avif': 'image/avif', '.woff2': 'font/woff2', '.woff': 'font/woff', '.txt': 'text/plain', '.md': 'text/plain' };
+
+async function prepareContext(ctx: BrowserContext, localDir?: string) {
+  await ctx.addInitScript({ content: INSTRUMENT_SRC });
+  if (!localDir) return;
+  const root = resolve(localDir);
+  await ctx.route(`${LOCAL_ORIGIN}/**`, async (route) => {
+    const u = new URL(route.request().url());
+    let file = join(root, decodeURIComponent(u.pathname));
+    if (!file.startsWith(root)) return route.fulfill({ status: 403, body: 'forbidden' });
+    if (existsSync(file) && statSync(file).isDirectory()) file = join(file, 'index.html');
+    if (!existsSync(file)) return route.fulfill({ status: 404, body: 'not found' });
+    const ext = (file.match(/\.[a-z0-9]+$/i) || [''])[0].toLowerCase();
+    return route.fulfill({ status: 200, contentType: LOCAL_MIME[ext] ?? 'application/octet-stream', body: readFileSync(file) });
+  });
+}
+
 function proxyFor(_url: string) {
   // Always route through the egress proxy when one is configured (web fonts on local pages need it);
   // local pages bypass it.
@@ -410,13 +462,13 @@ export async function inspectPage(o: InspectOptions): Promise<InspectResult> {
   const proxy = proxyFor(o.url);
   const browser: Browser = await chromium.launch({ ...(proxy ? { proxy } : {}) });
   const browserVersion = browser.version();
-  const pageHost = o.url.startsWith('file:') ? 'local' : new URL(o.url).hostname;
+  const pageHost = o.localDir ? 'di-local.test' : o.url.startsWith('file:') ? 'local' : new URL(o.url).hostname;
   try {
     for (const vp of viewports) {
       const tag = `${vp.width}x${vp.height}`;
       log(`  viewport ${tag}`);
       const ctx: BrowserContext = await browser.newContext(contextOptions(vp, o.locale ? { locale: o.locale } : {}));
-      await ctx.addInitScript({ content: INSTRUMENT_SRC });
+      await prepareContext(ctx, o.localDir);
       const page = await ctx.newPage();
       const net: NetEntry[] = [];
       let consoleErrors = 0;
@@ -532,7 +584,7 @@ export async function inspectPage(o: InspectOptions): Promise<InspectResult> {
           extras.scrollLinked = await scrollLinkedChanges(page, vp.height).catch((e) => ({ error: String(e.message).slice(0, 120) }));
           // Entrance choreography frames (fresh context).
           const fctx = await browser.newContext(contextOptions(vp));
-          await fctx.addInitScript({ content: INSTRUMENT_SRC });
+          await prepareContext(fctx, o.localDir);
           const fpage = await fctx.newPage();
           const t0 = Date.now();
           await fpage.goto(o.url, { waitUntil: 'commit', timeout: 60000 }).catch(() => null);
@@ -549,7 +601,7 @@ export async function inspectPage(o: InspectOptions): Promise<InspectResult> {
           await fctx.close();
           // Reduced motion.
           const rctx = await browser.newContext(contextOptions(vp, { reducedMotion: 'reduce' }));
-          await rctx.addInitScript({ content: INSTRUMENT_SRC });
+          await prepareContext(rctx, o.localDir);
           const rpage = await rctx.newPage();
           await rpage.goto(o.url, { waitUntil: 'load', timeout: 60000 }).catch(() => null);
           await settle(rpage, settleMs);
@@ -560,6 +612,7 @@ export async function inspectPage(o: InspectOptions): Promise<InspectResult> {
           await rctx.close();
           // Dark colour scheme.
           const dctx = await browser.newContext(contextOptions(vp, { colorScheme: 'dark' }));
+          await prepareContext(dctx, o.localDir);
           const dpage = await dctx.newPage();
           await dpage.goto(o.url, { waitUntil: 'load', timeout: 60000 }).catch(() => null);
           await settle(dpage, 1500);

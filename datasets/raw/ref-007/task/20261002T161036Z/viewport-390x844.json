@@ -1,0 +1,1554 @@
+{
+  "viewport": {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "mobileEmulation": true,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0,
+    "shifts": 0,
+    "atMs": 3897
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 5633,
+    "endHeight": 5633,
+    "reachedY": 4789,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 413,
+    "document": {
+      "lang": "en",
+      "dirAttr": null,
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 25,
+      "metaViewport": "width=device-width, initial-scale=1",
+      "themeColor": "#1d70b8",
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "docHeight": 5633,
+      "docWidth": 390,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "\"GDS Transport\", arial, sans-serif",
+        "size": 16,
+        "lineHeight": "normal"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "scroll",
+        "body": "visible"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 2,
+      "loadedFaces": 2,
+      "loadedFamilies": [
+        "GDS Transport"
+      ],
+      "loadedDetail": [
+        {
+          "family": "GDS Transport",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "GDS Transport",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "fallback": 2
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 129,
+      "totalChars": 3772,
+      "scriptChars": {
+        "arabic": 0,
+        "latin": 3103,
+        "westDigits": 18,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 1,
+      "familyShare": {
+        "GDS Transport": 1
+      },
+      "distinctSizes": 4,
+      "sizeShare": {
+        "16": 0.079,
+        "19": 0.877,
+        "21": 0.04,
+        "32": 0.004
+      },
+      "minSize": 16,
+      "maxSize": 32,
+      "dominantBodySize": 19,
+      "scaleRange": 1.68,
+      "distinctWeights": [
+        "400",
+        "700"
+      ],
+      "uppercaseShare": 0,
+      "clusters": [
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "400",
+          "lineHeightRatio": 1.32,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 3175,
+          "nodes": 105,
+          "firstDocY": 20,
+          "scripts": {
+            "latin": 3170,
+            "other": 5
+          },
+          "colors": {
+            "#0b0c0c": 2119,
+            "#1a65a6": 1056
+          },
+          "share": 0.842
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 16,
+          "weight": "400",
+          "lineHeightRatio": 1.45,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 231,
+          "nodes": 6,
+          "firstDocY": 3261,
+          "scripts": {
+            "latin": 231
+          },
+          "colors": {
+            "#1a65a6": 231
+          },
+          "share": 0.061
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 21,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 141,
+          "nodes": 5,
+          "firstDocY": 1152,
+          "scripts": {
+            "latin": 141
+          },
+          "colors": {
+            "#0b0c0c": 141
+          },
+          "share": 0.037
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 113,
+          "nodes": 6,
+          "firstDocY": 1192,
+          "scripts": {
+            "latin": 113
+          },
+          "colors": {
+            "#0b0c0c": 113
+          },
+          "share": 0.03
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 16,
+          "weight": "400",
+          "lineHeightRatio": 1.25,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 34,
+          "nodes": 2,
+          "firstDocY": 246,
+          "scripts": {
+            "latin": 34
+          },
+          "colors": {
+            "#0b0c0c": 34
+          },
+          "share": 0.009
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": 1.45,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 30,
+          "nodes": 1,
+          "firstDocY": 3592,
+          "scripts": {
+            "latin": 30
+          },
+          "colors": {
+            "#1a65a6": 30
+          },
+          "share": 0.008
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "400",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 19,
+          "nodes": 1,
+          "firstDocY": 110,
+          "scripts": {
+            "latin": 19
+          },
+          "colors": {
+            "#ffffff": 19
+          },
+          "share": 0.005
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 32,
+          "weight": "700",
+          "lineHeightRatio": 1.09,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 16,
+          "nodes": 1,
+          "firstDocY": 301,
+          "scripts": {
+            "latin": 16
+          },
+          "colors": {
+            "#0b0c0c": 16
+          },
+          "share": 0.004
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 21,
+          "weight": "700",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 9,
+          "nodes": 1,
+          "firstDocY": 1091,
+          "scripts": {
+            "latin": 9
+          },
+          "colors": {
+            "#ffffff": 9
+          },
+          "share": 0.002
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 4,
+          "nodes": 1,
+          "firstDocY": 186,
+          "scripts": {
+            "latin": 4
+          },
+          "colors": {
+            "#ffffff": 4
+          },
+          "share": 0.001
+        }
+      ]
+    },
+    "headings": {
+      "count": 12,
+      "h1Count": 1,
+      "outline": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h1",
+          "level": 1,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.09,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 16,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 15,
+            "y": 301,
+            "w": 360,
+            "h": 35
+          },
+          "aboveFold": true,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 19,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 19,
+          "box": {
+            "x": 15,
+            "y": 1152,
+            "w": 360,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 14,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": 15,
+            "y": 1192,
+            "w": 360,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 16,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 15,
+            "y": 1437,
+            "w": 360,
+            "h": 45
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 31,
+          "words": 6,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 31,
+          "box": {
+            "x": 15,
+            "y": 2227,
+            "w": 360,
+            "h": 45
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 30,
+          "words": 7,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 30,
+          "box": {
+            "x": 15,
+            "y": 2707,
+            "w": 360,
+            "h": 45
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 49,
+          "words": 9,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 24.5,
+          "box": {
+            "x": 15,
+            "y": 2867,
+            "w": 360,
+            "h": 70
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 15,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 15,
+          "box": {
+            "x": 15,
+            "y": 3219,
+            "w": 360,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 17,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 15,
+            "y": 3550,
+            "w": 360,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "left",
+          "textWrap": "wrap",
+          "chars": 20,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 20,
+          "box": {
+            "x": 15,
+            "y": 3753,
+            "w": 161,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 24,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 24,
+          "box": {
+            "x": 15,
+            "y": 3986,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 19,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 19,
+          "box": {
+            "x": 15,
+            "y": 4717,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "heading-0",
+      "tag": "h1",
+      "level": 1,
+      "family": "GDS Transport",
+      "size": 32,
+      "sizeVw": 8.21,
+      "weight": "700",
+      "lineHeightRatio": 1.09,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "pretty",
+      "chars": 16,
+      "words": 3,
+      "script": "latin",
+      "lines": 1,
+      "charsPerLine": 16,
+      "box": {
+        "x": 15,
+        "y": 301,
+        "w": 360,
+        "h": 35
+      },
+      "aboveFold": true,
+      "color": "#0b0c0c"
+    },
+    "reading": {
+      "sampled": 11,
+      "fontSize": {
+        "n": 11,
+        "min": 19,
+        "p25": 19,
+        "median": 19,
+        "p75": 19,
+        "max": 19
+      },
+      "lineHeightRatio": {
+        "n": 11,
+        "min": 1.32,
+        "p25": 1.32,
+        "median": 1.32,
+        "p75": 1.32,
+        "max": 1.32
+      },
+      "charsPerLine": {
+        "n": 11,
+        "min": 23.3,
+        "p25": 29,
+        "median": 35.5,
+        "p75": 37.3,
+        "max": 42
+      },
+      "widthEm": {
+        "n": 11,
+        "min": 17.4,
+        "p25": 18.1,
+        "median": 18.9,
+        "p75": 18.9,
+        "max": 18.9
+      },
+      "justified": 0,
+      "scripts": {
+        "latin": 11
+      }
+    },
+    "color": {
+      "rootBackground": "#ffffff",
+      "rootBackgroundLuminance": 1,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#f4f8fb",
+          "areaShare": 0.91,
+          "hsl": {
+            "h": 206,
+            "s": 0.47,
+            "l": 0.97
+          }
+        },
+        {
+          "color": "#1d70b8",
+          "areaShare": 0.059,
+          "hsl": {
+            "h": 208,
+            "s": 0.73,
+            "l": 0.42
+          }
+        },
+        {
+          "color": "#0f7a52",
+          "areaShare": 0.032,
+          "hsl": {
+            "h": 158,
+            "s": 0.78,
+            "l": 0.27
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#0b0c0c",
+          "share": 0.642
+        },
+        {
+          "color": "#1a65a6",
+          "share": 0.349
+        },
+        {
+          "color": "#ffffff",
+          "share": 0.008
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#0f7a52",
+          "count": 2
+        },
+        {
+          "color": "#1d70b8",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "imageBackgrounds": 0,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain",
+        "checkedChars": 3789,
+        "lowContrastNormalShare": 0,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0,
+        "ratio": {
+          "n": 112,
+          "min": 5.17,
+          "p25": 5.69,
+          "median": 6.08,
+          "p75": 19.59,
+          "max": 19.59
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 360,
+          "count": 18
+        },
+        {
+          "value": 156,
+          "count": 2
+        }
+      ],
+      "dominantContainer": 360,
+      "widestContainer": 360,
+      "textLeftEdges": [
+        {
+          "x": 16,
+          "n": 76
+        },
+        {
+          "x": 36,
+          "n": 12
+        },
+        {
+          "x": 44,
+          "n": 3
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 16,
+          "n": 45
+        },
+        {
+          "x": 92,
+          "n": 4
+        },
+        {
+          "x": 116,
+          "n": 3
+        },
+        {
+          "x": 124,
+          "n": 3
+        }
+      ],
+      "distinctTextEdges": 19,
+      "gridContainers": 0,
+      "flexContainers": 8,
+      "gridColumnCounts": [],
+      "gaps": null,
+      "stickyElements": 0,
+      "fixedElements": 0,
+      "sections": {
+        "count": 2,
+        "heightsVh": {
+          "n": 2,
+          "min": 0.1,
+          "p25": 0.1,
+          "median": 0.1,
+          "p75": 0.1,
+          "max": 3.69
+        },
+        "paddingTop": {
+          "n": 2,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 2,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      },
+      "pageHeightVh": 6.67,
+      "textOverMedia": 0
+    },
+    "components": {
+      "header": {
+        "position": "static",
+        "height": 62,
+        "top": 169,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 3,
+        "expandableToggles": 2
+      },
+      "navCount": 4,
+      "buttons": {
+        "count": 6,
+        "radius": {
+          "n": 6,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "pillShare": 0,
+        "height": {
+          "n": 6,
+          "min": 37,
+          "p25": 38,
+          "median": 40,
+          "p75": 42,
+          "max": 42
+        },
+        "fontSize": {
+          "n": 6,
+          "min": 19,
+          "p25": 19,
+          "median": 19,
+          "p75": 19,
+          "max": 30
+        },
+        "textTransform": {
+          "none": 6
+        },
+        "fontWeight": {
+          "400": 5,
+          "700": 1
+        }
+      },
+      "forms": {
+        "forms": 2,
+        "inputs": 0
+      },
+      "media": {
+        "images": 0,
+        "imagesTotal": 0,
+        "lazyImages": 0,
+        "srcsetImages": 0,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 7,
+        "canvases": [],
+        "iframes": 0
+      },
+      "cardGroups": {
+        "count": 0,
+        "items": [],
+        "radius": null
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 14,
+      "roundedBoxShare12": 0,
+      "roundedBoxShare24": 0,
+      "opacityZeroElements": 0,
+      "transformedElements": 0
+    },
+    "motion": {
+      "transitionElements": 0,
+      "transitionDuration": null,
+      "transitionEasing": {},
+      "transitionProperty": {},
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 1,
+      "inaccessibleSheets": 0,
+      "rules": 4323,
+      "mediaQueries": {
+        "print": 432,
+        "(min-width: 40.0625em)": 291,
+        "(-ms-high-contrast: active), screen and (forced-colors: active)": 45,
+        "(min-width: 48.0625em)": 43,
+        "(max-width: 40.0525em)": 23,
+        "(hover: hover) and (pointer: fine)": 17,
+        "(prefers-reduced-motion: no-preference)": 13,
+        "(forced-colors: active)": 10,
+        "(min-width: 22.5em)": 8,
+        "(max-width: 19.99em)": 7,
+        "(max-width: 48.0525em)": 6,
+        "print and (min-width: 40.0625em)": 5,
+        "screen and (forced-colors: active)": 4,
+        "screen and (forced-colors: active), (-ms-high-contrast: active)": 4,
+        "(min-width: 20em)": 3,
+        "print and (max-width: 40.0525em)": 3,
+        "screen": 2,
+        "(hover: none), (pointer: coarse)": 2,
+        "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": 2,
+        "(min-width: 1020px)": 1,
+        "(hover: none)": 1,
+        "screen�": 1,
+        "screen� and (min-width: 40.0625em)": 1,
+        "(min-width: 40.0625em) and (max-width: 48.0525em)": 1,
+        "(max-width: 40.0525em) and (min-width: 40.0625em)": 1
+      },
+      "breakpoints": {
+        "min:40.0625em": 302,
+        "min:48.0625em": 43,
+        "max:40.0525em": 27,
+        "min:22.5em": 8,
+        "max:48.0525em": 7,
+        "max:19.99em": 7,
+        "min:20em": 3,
+        "min:1020px": 1
+      },
+      "reducedMotionRules": 14,
+      "colorSchemeRules": 0,
+      "containerRules": 6,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 26,
+      "physicalInlineProps": 550,
+      "focusVisibleRules": 50,
+      "fontFaceRules": 2,
+      "scrollTimelineUses": 2,
+      "customPropertiesDeclared": 245,
+      "hoverMediaRules": 19
+    },
+    "tokens": {
+      "rootCustomProperties": 104,
+      "colorTokens": 46,
+      "lengthTokens": 43,
+      "colorSample": [
+        {
+          "name": "--focus-outline-color",
+          "value": "#ffdd00"
+        },
+        {
+          "name": "--tertiary-button-border-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--govuk-print-text-colour",
+          "value": "#000000"
+        },
+        {
+          "name": "--govuk-surface-border-colour",
+          "value": "#8eb8dc"
+        },
+        {
+          "name": "--app-border-color",
+          "value": "#cecece"
+        },
+        {
+          "name": "--govuk-link-visited-colour",
+          "value": "#54319f"
+        },
+        {
+          "name": "--primary-button-hover-color",
+          "value": "#005a30"
+        },
+        {
+          "name": "--govuk-template-background-colour",
+          "value": "#f4f8fb"
+        },
+        {
+          "name": "--govuk-error-colour",
+          "value": "#ca3535"
+        },
+        {
+          "name": "--govuk-focus-colour",
+          "value": "#ffdd00"
+        },
+        {
+          "name": "--govuk-success-colour",
+          "value": "#0f7a52"
+        },
+        {
+          "name": "--govuk-brand-colour",
+          "value": "#1d70b8"
+        },
+        {
+          "name": "--govuk-surface-text-colour",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--tooltip-hover-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--fixed-foreground-color",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--foreground-color",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--image-placeholder-color",
+          "value": "#b1b4b6"
+        },
+        {
+          "name": "--kbd-foreground-color",
+          "value": "#383F43"
+        },
+        {
+          "name": "--primary-button-color",
+          "value": "#00703c"
+        },
+        {
+          "name": "--content-link-color",
+          "value": "#1d70b8"
+        },
+        {
+          "name": "--secondary-text-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--govuk-hover-colour",
+          "value": "#cecece"
+        },
+        {
+          "name": "--govuk-focus-text-colour",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--govuk-link-hover-colour",
+          "value": "#0f385c"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--focus-box-shadow-width",
+          "value": "3px"
+        },
+        {
+          "name": "--focus-highlight-width",
+          "value": "4px"
+        },
+        {
+          "name": "--panel-margin",
+          "value": "15px"
+        },
+        {
+          "name": "--button-icon-label-offset",
+          "value": "7px"
+        },
+        {
+          "name": "--shadow-clip-size",
+          "value": "20px"
+        },
+        {
+          "name": "--banner-preferred-width",
+          "value": "280px"
+        },
+        {
+          "name": "--tooltip-arrow-size",
+          "value": "8px"
+        },
+        {
+          "name": "--govuk-breakpoint-tablet",
+          "value": "40.0625rem"
+        },
+        {
+          "name": "--modal-offset-top",
+          "value": "0px"
+        },
+        {
+          "name": "--action-bar-max-width",
+          "value": "calc(100% - (40px * 2) - (15px * 4))"
+        },
+        {
+          "name": "--focus-border-width",
+          "value": "4px"
+        },
+        {
+          "name": "--attributions-font-size",
+          "value": "12px"
+        },
+        {
+          "name": "--tooltip-font-size",
+          "value": "14px"
+        },
+        {
+          "name": "--icon-size",
+          "value": "24px"
+        },
+        {
+          "name": "--button-size",
+          "value": "40px"
+        },
+        {
+          "name": "--tooltip-border-radius",
+          "value": "3px"
+        },
+        {
+          "name": "--hover-outline-width",
+          "value": "2px"
+        },
+        {
+          "name": "--kbd-border-radius",
+          "value": "4px"
+        },
+        {
+          "name": "--govuk-breakpoint-mobile",
+          "value": "20rem"
+        },
+        {
+          "name": "--scrollable-outline-offset",
+          "value": "-3px"
+        },
+        {
+          "name": "--kbd-font-size",
+          "value": ".825rem"
+        },
+        {
+          "name": "--divider-gap",
+          "value": "10px"
+        },
+        {
+          "name": "--focus-outline-width",
+          "value": "3px"
+        },
+        {
+          "name": "--line-height",
+          "value": "1.25em"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 4,
+        "main": 1,
+        "footer": 1,
+        "aside": 0,
+        "search": 1
+      },
+      "langPresent": true,
+      "images": {
+        "total": 0,
+        "missingAlt": 0,
+        "emptyAlt": 0
+      },
+      "linksVisible": 60,
+      "linksWithoutName": 0,
+      "buttonsVisible": 7,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 0,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 42,
+      "focusableCount": 106
+    },
+    "rtl": {
+      "htmlDir": null,
+      "computedDirection": "ltr",
+      "mainDirection": "ltr",
+      "dirAttributes": {
+        "rtl": 0,
+        "ltr": 1,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "start": 105,
+        "center": 6,
+        "left": 1
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 18,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 5,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 761,
+      "load": 762,
+      "transferSize": 12285,
+      "firstContentfulPaint": 476,
+      "lcp": {
+        "time": 552,
+        "element": "p",
+        "size": 33696
+      },
+      "cls": 0,
+      "longTasks": {
+        "count": 0,
+        "totalMs": 0
+      },
+      "domElements": 413
+    },
+    "implementation": {
+      "globals": {},
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {},
+        "webgpuRequested": false,
+        "matchMediaQueries": {},
+        "intersectionObservers": 0,
+        "resizeObservers": 0,
+        "rafCalls": 0,
+        "rafFirstAt": null,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 0,
+        "wheelListeners": 0,
+        "touchmoveListeners": 0,
+        "pointermoveListeners": 0,
+        "startedAt": 1790957437210
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 16
+      }
+    ],
+    "heading-1": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 19
+      }
+    ],
+    "para-12": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 57
+      }
+    ],
+    "button-14": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 19
+      }
+    ],
+    "header-13": []
+  },
+  "interactions": {
+    "menu": {
+      "found": true,
+      "ariaExpandedBefore": "false",
+      "ariaExpandedAfter": "true",
+      "hasAriaControls": true,
+      "visibleLinksBefore": 7,
+      "visibleLinksAfter": 15,
+      "escapeCloses": true,
+      "bodyLocked": false,
+      "activeTag": "button",
+      "dialogs": 0
+    },
+    "focus": {
+      "steps": 16,
+      "focusedSteps": 16,
+      "withIndicator": 16,
+      "indicatorShare": 1,
+      "offscreenOrHidden": 0,
+      "firstIsSkipLink": false,
+      "indicatorProps": [
+        [
+          "outline",
+          16
+        ],
+        [
+          "outlineStyle",
+          16
+        ],
+        [
+          "outlineWidth",
+          16
+        ],
+        [
+          "outlineColor",
+          16
+        ],
+        [
+          "backgroundColor",
+          16
+        ],
+        [
+          "boxShadow",
+          15
+        ],
+        [
+          "borderTopColor",
+          14
+        ],
+        [
+          "color",
+          14
+        ],
+        [
+          "textDecorationLine",
+          14
+        ]
+      ],
+      "sequence": [
+        "button",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a[button]",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    }
+  },
+  "axe": {
+    "engine": "4.13.0",
+    "violations": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "nodes": 1
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2
+      }
+    ],
+    "counts": {
+      "violations": 2,
+      "incomplete": 0,
+      "passes": 42
+    },
+    "byImpact": {
+      "serious": 1,
+      "moderate": 2
+    }
+  },
+  "aria": {
+    "lines": 269,
+    "roles": {
+      "link": 59,
+      "listitem": 54,
+      "text": 29,
+      "paragraph": 21,
+      "heading": 14,
+      "list": 12,
+      "button": 7,
+      "navigation": 4,
+      "note": 2,
+      "region": 1,
+      "banner": 1,
+      "img": 1,
+      "main": 1,
+      "contentinfo": 1,
+      "separator": 1
+    }
+  },
+  "network": {
+    "requests": 10,
+    "failed": 0,
+    "totalBytes": 198227,
+    "byType": {
+      "font": {
+        "count": 2,
+        "bytes": 66260
+      },
+      "script": {
+        "count": 5,
+        "bytes": 57970
+      },
+      "stylesheet": {
+        "count": 1,
+        "bytes": 43278
+      },
+      "document": {
+        "count": 1,
+        "bytes": 15460
+      },
+      "image": {
+        "count": 1,
+        "bytes": 15259
+      }
+    },
+    "imageFormats": {
+      "image/svg+xml": {
+        "count": 1,
+        "bytes": 15259
+      }
+    },
+    "fonts": {
+      "count": 2,
+      "bytes": 66260,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 0,
+      "bytes": 0,
+      "hosts": 0
+    },
+    "topHosts": [
+      {
+        "host": "www.gov.uk",
+        "bytes": 198227
+      }
+    ],
+    "libraryEvidence": {}
+  },
+  "console": {
+    "errors": 0,
+    "pageErrors": 0
+  }
+}

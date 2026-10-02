@@ -1,0 +1,2264 @@
+{
+  "viewport": {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "mobileEmulation": true,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0,
+    "shifts": 0,
+    "atMs": 6324
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 7577,
+    "endHeight": 7577,
+    "reachedY": 6733,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 580,
+    "document": {
+      "lang": "en",
+      "dirAttr": null,
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 17,
+      "metaViewport": "width=device-width, initial-scale=1",
+      "themeColor": "#1d70b8",
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "docHeight": 7577,
+      "docWidth": 390,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "\"GDS Transport\", arial, sans-serif",
+        "size": 16,
+        "lineHeight": "normal"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "scroll",
+        "body": "visible"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 4,
+      "loadedFaces": 4,
+      "loadedFamilies": [
+        "GDS Transport"
+      ],
+      "loadedDetail": [
+        {
+          "family": "GDS Transport",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "GDS Transport",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "GDS Transport",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "GDS Transport",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "fallback",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "fallback": 4
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 125,
+      "totalChars": 3472,
+      "scriptChars": {
+        "arabic": 0,
+        "latin": 3004,
+        "westDigits": 2,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 2,
+      "familyShare": {
+        "GDS Transport": 0.996,
+        "Arial": 0.004
+      },
+      "distinctSizes": 6,
+      "sizeShare": {
+        "16": 0.001,
+        "19": 0.942,
+        "21": 0.012,
+        "32": 0.024,
+        "40": 0.017,
+        "13.3333": 0.004
+      },
+      "minSize": 13.3333,
+      "maxSize": 40,
+      "dominantBodySize": 19,
+      "scaleRange": 2.11,
+      "distinctWeights": [
+        "400",
+        "700"
+      ],
+      "uppercaseShare": 0,
+      "clusters": [
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "400",
+          "lineHeightRatio": 1.32,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 2229,
+          "nodes": 70,
+          "firstDocY": 20,
+          "scripts": {
+            "latin": 2229
+          },
+          "colors": {
+            "#0b0c0c": 1546,
+            "#1a65a6": 683
+          },
+          "share": 0.642
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 809,
+          "nodes": 38,
+          "firstDocY": 447,
+          "scripts": {
+            "latin": 809
+          },
+          "colors": {
+            "#ffffff": 6,
+            "#1a65a6": 783,
+            "#0b0c0c": 20
+          },
+          "share": 0.233
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "700",
+          "lineHeightRatio": 1.3,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 215,
+          "nodes": 6,
+          "firstDocY": 656,
+          "scripts": {
+            "latin": 215
+          },
+          "colors": {
+            "#1a65a6": 215
+          },
+          "share": 0.062
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 32,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 82,
+          "nodes": 5,
+          "firstDocY": 593,
+          "scripts": {
+            "latin": 82
+          },
+          "colors": {
+            "#0b0c0c": 82
+          },
+          "share": 0.024
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 40,
+          "weight": "700",
+          "lineHeightRatio": 1.07,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 58,
+          "nodes": 1,
+          "firstDocY": 246,
+          "scripts": {
+            "latin": 58
+          },
+          "colors": {
+            "#ffffff": 58
+          },
+          "share": 0.017
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 21,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 43,
+          "nodes": 2,
+          "firstDocY": 5930,
+          "scripts": {
+            "latin": 43
+          },
+          "colors": {
+            "#0b0c0c": 43
+          },
+          "share": 0.012
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 19,
+          "weight": "400",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 19,
+          "nodes": 1,
+          "firstDocY": 110,
+          "scripts": {
+            "latin": 19
+          },
+          "colors": {
+            "#ffffff": 19
+          },
+          "share": 0.005
+        },
+        {
+          "family": "Arial",
+          "stack": "Arial",
+          "size": 13.3333,
+          "weight": "400",
+          "lineHeightRatio": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 13,
+          "nodes": 1,
+          "firstDocY": 487,
+          "scripts": {
+            "latin": 13
+          },
+          "colors": {
+            "#1d70b8": 13
+          },
+          "share": 0.004
+        },
+        {
+          "family": "GDS Transport",
+          "stack": "\"GDS Transport\", arial, sans-serif",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 4,
+          "nodes": 1,
+          "firstDocY": 186,
+          "scripts": {
+            "latin": 4
+          },
+          "colors": {
+            "#ffffff": 4
+          },
+          "share": 0.001
+        }
+      ]
+    },
+    "headings": {
+      "count": 35,
+      "h1Count": 1,
+      "outline": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h1",
+          "level": 1,
+          "family": "GDS Transport",
+          "size": 40,
+          "sizeVw": 10.26,
+          "weight": "700",
+          "lineHeightRatio": 1.2,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 58,
+          "words": 9,
+          "script": "latin",
+          "lines": 4,
+          "charsPerLine": 14.5,
+          "box": {
+            "x": 24,
+            "y": 246,
+            "w": 342,
+            "h": 171
+          },
+          "aboveFold": true,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 17,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 24,
+            "y": 593,
+            "w": 342,
+            "h": 36
+          },
+          "aboveFold": true,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 24,
+          "words": 3,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 12,
+          "box": {
+            "x": 24,
+            "y": 1141,
+            "w": 342,
+            "h": 71
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 8,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 24,
+            "y": 1247,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 34,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 34,
+          "box": {
+            "x": 24,
+            "y": 1381,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 24,
+            "y": 1515,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 23,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 24,
+            "y": 1624,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 32,
+          "words": 6,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 32,
+          "box": {
+            "x": 24,
+            "y": 1783,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 24,
+            "y": 1917,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 15,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 15,
+          "box": {
+            "x": 24,
+            "y": 2051,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 21,
+          "box": {
+            "x": 24,
+            "y": 2185,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 22,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 22,
+          "box": {
+            "x": 24,
+            "y": 2319,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-12",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 16,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 16,
+          "box": {
+            "x": 24,
+            "y": 2453,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-13",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 27,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 27,
+          "box": {
+            "x": 24,
+            "y": 2587,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-14",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 24,
+            "y": 2721,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-15",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 13,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": 24,
+            "y": 2855,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-16",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 35,
+          "words": 5,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 35,
+          "box": {
+            "x": 24,
+            "y": 2964,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-17",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 21,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 21,
+          "box": {
+            "x": 24,
+            "y": 3098,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-18",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 26,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 26,
+          "box": {
+            "x": 24,
+            "y": 3232,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-19",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 8,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 24,
+            "y": 3421,
+            "w": 342,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-20",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 10,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 10,
+          "box": {
+            "x": 119,
+            "y": 3487,
+            "w": 247,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-21",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 18,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 18,
+          "box": {
+            "x": 119,
+            "y": 3602,
+            "w": 247,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-22",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 22,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 22,
+          "box": {
+            "x": 119,
+            "y": 3742,
+            "w": 247,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-23",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 18,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 18,
+          "box": {
+            "x": 119,
+            "y": 3936,
+            "w": 247,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-24",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 19,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 19,
+          "box": {
+            "x": 24,
+            "y": 4125,
+            "w": 342,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-25",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 11,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 11,
+          "box": {
+            "x": 24,
+            "y": 4230,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-26",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 4,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 4,
+          "box": {
+            "x": 24,
+            "y": 4364,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-27",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 23,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 24,
+            "y": 4498,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-28",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 23,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 23,
+          "box": {
+            "x": 24,
+            "y": 4632,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-29",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 31,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 31,
+          "box": {
+            "x": 24,
+            "y": 4766,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-30",
+          "tag": "h3",
+          "level": 3,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 22,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 22,
+          "box": {
+            "x": 24,
+            "y": 4875,
+            "w": 312,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-31",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 32,
+          "sizeVw": 8.21,
+          "weight": "700",
+          "lineHeightRatio": 1.11,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "pretty",
+          "chars": 14,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": 24,
+            "y": 5062,
+            "w": 342,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-32",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 19,
+          "sizeVw": 4.87,
+          "weight": "700",
+          "lineHeightRatio": 1.32,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "left",
+          "textWrap": "wrap",
+          "chars": 20,
+          "words": 4,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 20,
+          "box": {
+            "x": 15,
+            "y": 5697,
+            "w": 161,
+            "h": 25
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-33",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 24,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 24,
+          "box": {
+            "x": 15,
+            "y": 5930,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        },
+        {
+          "probe": "heading-34",
+          "tag": "h2",
+          "level": 2,
+          "family": "GDS Transport",
+          "size": 21,
+          "sizeVw": 5.38,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 19,
+          "words": 2,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 19,
+          "box": {
+            "x": 15,
+            "y": 6661,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#0b0c0c"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "display-35",
+      "tag": "span",
+      "level": null,
+      "family": "GDS Transport",
+      "size": 40,
+      "sizeVw": 10.26,
+      "weight": "700",
+      "lineHeightRatio": 1.07,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "balance",
+      "chars": 58,
+      "words": 9,
+      "script": "latin",
+      "lines": 4,
+      "charsPerLine": 14.5,
+      "box": {
+        "x": 24,
+        "y": 246,
+        "w": 342,
+        "h": 171
+      },
+      "aboveFold": true,
+      "color": "#ffffff"
+    },
+    "reading": {
+      "sampled": 8,
+      "fontSize": {
+        "n": 8,
+        "min": 16,
+        "p25": 16,
+        "median": 16,
+        "p75": 16,
+        "max": 19
+      },
+      "lineHeightRatio": {
+        "n": 2,
+        "min": 1.32,
+        "p25": 1.32,
+        "median": 1.32,
+        "p75": 1.32,
+        "max": 1.32
+      },
+      "charsPerLine": {
+        "n": 8,
+        "min": 20.5,
+        "p25": 20.5,
+        "median": 23,
+        "p75": 26,
+        "max": 29.3
+      },
+      "widthEm": {
+        "n": 8,
+        "min": 16.4,
+        "p25": 18.9,
+        "median": 21.4,
+        "p75": 21.4,
+        "max": 21.4
+      },
+      "justified": 0,
+      "scripts": {
+        "latin": 8
+      }
+    },
+    "color": {
+      "rootBackground": "#ffffff",
+      "rootBackgroundLuminance": 1,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#f4f8fb",
+          "areaShare": 0.663,
+          "hsl": {
+            "h": 206,
+            "s": 0.47,
+            "l": 0.97
+          }
+        },
+        {
+          "color": "#ffffff",
+          "areaShare": 0.176,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        },
+        {
+          "color": "#1d70b8",
+          "areaShare": 0.149,
+          "hsl": {
+            "h": 208,
+            "s": 0.73,
+            "l": 0.42
+          }
+        },
+        {
+          "color": "#0f7a52",
+          "areaShare": 0.011,
+          "hsl": {
+            "h": 158,
+            "s": 0.78,
+            "l": 0.27
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#0b0c0c",
+          "share": 0.487
+        },
+        {
+          "color": "#1a65a6",
+          "share": 0.484
+        },
+        {
+          "color": "#ffffff",
+          "share": 0.025
+        },
+        {
+          "color": "#1d70b8",
+          "share": 0.004
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#0f7a52",
+          "count": 1
+        },
+        {
+          "color": "#1d70b8",
+          "count": 1
+        },
+        {
+          "color": "#d2e2f1",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "imageBackgrounds": 0,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain",
+        "checkedChars": 3474,
+        "lowContrastNormalShare": 0.004,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0,
+        "ratio": {
+          "n": 123,
+          "min": 3.91,
+          "p25": 5.69,
+          "median": 6.08,
+          "p75": 19.59,
+          "max": 19.59
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 342,
+          "count": 30
+        },
+        {
+          "value": 360,
+          "count": 14
+        },
+        {
+          "value": 372,
+          "count": 5
+        },
+        {
+          "value": 156,
+          "count": 2
+        }
+      ],
+      "dominantContainer": 342,
+      "widestContainer": 372,
+      "textLeftEdges": [
+        {
+          "x": 24,
+          "n": 62
+        },
+        {
+          "x": 16,
+          "n": 38
+        },
+        {
+          "x": 120,
+          "n": 8
+        },
+        {
+          "x": 80,
+          "n": 6
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 56,
+          "n": 22
+        },
+        {
+          "x": 24,
+          "n": 13
+        },
+        {
+          "x": 16,
+          "n": 6
+        },
+        {
+          "x": 116,
+          "n": 5
+        },
+        {
+          "x": 152,
+          "n": 3
+        },
+        {
+          "x": 176,
+          "n": 3
+        },
+        {
+          "x": 184,
+          "n": 3
+        },
+        {
+          "x": 228,
+          "n": 3
+        }
+      ],
+      "distinctTextEdges": 13,
+      "gridContainers": 3,
+      "flexContainers": 10,
+      "gridColumnCounts": [
+        {
+          "value": 1,
+          "count": 3
+        }
+      ],
+      "gaps": {
+        "n": 6,
+        "min": 15,
+        "p25": 15,
+        "median": 15,
+        "p75": 15,
+        "max": 30
+      },
+      "stickyElements": 0,
+      "fixedElements": 0,
+      "sections": {
+        "count": 3,
+        "heightsVh": {
+          "n": 3,
+          "min": 0.4,
+          "p25": 0.4,
+          "median": 0.56,
+          "p75": 0.56,
+          "max": 5.36
+        },
+        "paddingTop": {
+          "n": 3,
+          "min": 0,
+          "p25": 0,
+          "median": 15,
+          "p75": 15,
+          "max": 28
+        },
+        "paddingBottom": {
+          "n": 3,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 28
+        }
+      },
+      "pageHeightVh": 8.98,
+      "textOverMedia": 0
+    },
+    "components": {
+      "header": {
+        "position": "static",
+        "height": 62,
+        "top": 169,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 3,
+        "expandableToggles": 2
+      },
+      "navCount": 1,
+      "buttons": {
+        "count": 6,
+        "radius": {
+          "n": 6,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "pillShare": 0,
+        "height": {
+          "n": 6,
+          "min": 37,
+          "p25": 38,
+          "median": 42,
+          "p75": 42,
+          "max": 50
+        },
+        "fontSize": {
+          "n": 6,
+          "min": 13.33,
+          "p25": 19,
+          "median": 19,
+          "p75": 19,
+          "max": 30
+        },
+        "textTransform": {
+          "none": 6
+        },
+        "fontWeight": {
+          "400": 6
+        }
+      },
+      "forms": {
+        "forms": 3,
+        "inputs": 1
+      },
+      "media": {
+        "images": 4,
+        "imagesTotal": 4,
+        "lazyImages": 4,
+        "srcsetImages": 0,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 13,
+        "canvases": [],
+        "iframes": 0
+      },
+      "cardGroups": {
+        "count": 0,
+        "items": [],
+        "radius": null
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 41,
+      "roundedBoxShare12": 0,
+      "roundedBoxShare24": 0,
+      "opacityZeroElements": 0,
+      "transformedElements": 1
+    },
+    "motion": {
+      "transitionElements": 0,
+      "transitionDuration": null,
+      "transitionEasing": {},
+      "transitionProperty": {},
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 2,
+      "inaccessibleSheets": 0,
+      "rules": 4421,
+      "mediaQueries": {
+        "print": 435,
+        "(min-width: 40.0625em)": 296,
+        "(min-width: 48.0625em)": 57,
+        "(-ms-high-contrast: active), screen and (forced-colors: active)": 45,
+        "(max-width: 40.0525em)": 31,
+        "(hover: hover) and (pointer: fine)": 17,
+        "(prefers-reduced-motion: no-preference)": 13,
+        "(forced-colors: active)": 10,
+        "(min-width: 22.5em)": 8,
+        "(max-width: 19.99em)": 7,
+        "(max-width: 48.0525em)": 7,
+        "print and (min-width: 40.0625em)": 5,
+        "screen and (forced-colors: active)": 4,
+        "screen and (forced-colors: active), (-ms-high-contrast: active)": 4,
+        "(min-width: 20em)": 4,
+        "(min-width: 1281px)": 4,
+        "print and (max-width: 40.0525em)": 3,
+        "screen": 2,
+        "(hover: none), (pointer: coarse)": 2,
+        "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": 2,
+        "(min-width: 1020px)": 1,
+        "(hover: none)": 1,
+        "screen�": 1,
+        "screen� and (min-width: 40.0625em)": 1,
+        "(min-width: 40.0625em) and (max-width: 48.0525em)": 1
+      },
+      "breakpoints": {
+        "min:40.0625em": 308,
+        "min:48.0625em": 57,
+        "max:40.0525em": 35,
+        "max:48.0525em": 8,
+        "min:22.5em": 8,
+        "max:19.99em": 7,
+        "min:20em": 5,
+        "min:1281px": 4,
+        "min:1020px": 1
+      },
+      "reducedMotionRules": 14,
+      "colorSchemeRules": 0,
+      "containerRules": 6,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 26,
+      "physicalInlineProps": 563,
+      "focusVisibleRules": 50,
+      "fontFaceRules": 4,
+      "scrollTimelineUses": 2,
+      "customPropertiesDeclared": 246,
+      "hoverMediaRules": 19
+    },
+    "tokens": {
+      "rootCustomProperties": 104,
+      "colorTokens": 46,
+      "lengthTokens": 43,
+      "colorSample": [
+        {
+          "name": "--focus-outline-color",
+          "value": "#ffdd00"
+        },
+        {
+          "name": "--tertiary-button-border-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--govuk-print-text-colour",
+          "value": "#000000"
+        },
+        {
+          "name": "--govuk-surface-border-colour",
+          "value": "#8eb8dc"
+        },
+        {
+          "name": "--app-border-color",
+          "value": "#cecece"
+        },
+        {
+          "name": "--govuk-link-visited-colour",
+          "value": "#54319f"
+        },
+        {
+          "name": "--primary-button-hover-color",
+          "value": "#005a30"
+        },
+        {
+          "name": "--govuk-template-background-colour",
+          "value": "#f4f8fb"
+        },
+        {
+          "name": "--govuk-error-colour",
+          "value": "#ca3535"
+        },
+        {
+          "name": "--govuk-focus-colour",
+          "value": "#ffdd00"
+        },
+        {
+          "name": "--govuk-success-colour",
+          "value": "#0f7a52"
+        },
+        {
+          "name": "--govuk-surface-text-colour",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--tooltip-hover-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--govuk-brand-colour",
+          "value": "#1d70b8"
+        },
+        {
+          "name": "--fixed-foreground-color",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--foreground-color",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--image-placeholder-color",
+          "value": "#b1b4b6"
+        },
+        {
+          "name": "--kbd-foreground-color",
+          "value": "#383F43"
+        },
+        {
+          "name": "--primary-button-color",
+          "value": "#00703c"
+        },
+        {
+          "name": "--content-link-color",
+          "value": "#1d70b8"
+        },
+        {
+          "name": "--secondary-text-color",
+          "value": "#505a5f"
+        },
+        {
+          "name": "--govuk-hover-colour",
+          "value": "#cecece"
+        },
+        {
+          "name": "--govuk-focus-text-colour",
+          "value": "#0b0c0c"
+        },
+        {
+          "name": "--govuk-link-hover-colour",
+          "value": "#0f385c"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--focus-box-shadow-width",
+          "value": "3px"
+        },
+        {
+          "name": "--panel-margin",
+          "value": "15px"
+        },
+        {
+          "name": "--focus-highlight-width",
+          "value": "4px"
+        },
+        {
+          "name": "--button-icon-label-offset",
+          "value": "7px"
+        },
+        {
+          "name": "--shadow-clip-size",
+          "value": "20px"
+        },
+        {
+          "name": "--banner-preferred-width",
+          "value": "280px"
+        },
+        {
+          "name": "--tooltip-arrow-size",
+          "value": "8px"
+        },
+        {
+          "name": "--govuk-breakpoint-tablet",
+          "value": "40.0625rem"
+        },
+        {
+          "name": "--modal-offset-top",
+          "value": "0px"
+        },
+        {
+          "name": "--action-bar-max-width",
+          "value": "calc(100% - (40px * 2) - (15px * 4))"
+        },
+        {
+          "name": "--focus-border-width",
+          "value": "4px"
+        },
+        {
+          "name": "--attributions-font-size",
+          "value": "12px"
+        },
+        {
+          "name": "--tooltip-font-size",
+          "value": "14px"
+        },
+        {
+          "name": "--icon-size",
+          "value": "24px"
+        },
+        {
+          "name": "--button-size",
+          "value": "40px"
+        },
+        {
+          "name": "--tooltip-border-radius",
+          "value": "3px"
+        },
+        {
+          "name": "--hover-outline-width",
+          "value": "2px"
+        },
+        {
+          "name": "--kbd-border-radius",
+          "value": "4px"
+        },
+        {
+          "name": "--govuk-breakpoint-mobile",
+          "value": "20rem"
+        },
+        {
+          "name": "--scrollable-outline-offset",
+          "value": "-3px"
+        },
+        {
+          "name": "--kbd-font-size",
+          "value": ".825rem"
+        },
+        {
+          "name": "--divider-gap",
+          "value": "10px"
+        },
+        {
+          "name": "--focus-outline-width",
+          "value": "3px"
+        },
+        {
+          "name": "--line-height",
+          "value": "1.25em"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 2,
+        "nav": 1,
+        "main": 1,
+        "footer": 1,
+        "aside": 0,
+        "search": 2
+      },
+      "langPresent": true,
+      "images": {
+        "total": 4,
+        "missingAlt": 0,
+        "emptyAlt": 4
+      },
+      "linksVisible": 78,
+      "linksWithoutName": 0,
+      "buttonsVisible": 7,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 1,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 71,
+      "focusableCount": 125
+    },
+    "rtl": {
+      "htmlDir": null,
+      "computedDirection": "ltr",
+      "mainDirection": "ltr",
+      "dirAttributes": {
+        "rtl": 0,
+        "ltr": 0,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "start": 116,
+        "center": 6,
+        "left": 1
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 2,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 4,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 944,
+      "load": 1032,
+      "transferSize": 11557,
+      "firstContentfulPaint": 532,
+      "lcp": {
+        "time": 616,
+        "element": "span",
+        "size": 56244
+      },
+      "cls": 0,
+      "longTasks": {
+        "count": 0,
+        "totalMs": 0
+      },
+      "domElements": 580
+    },
+    "implementation": {
+      "globals": {},
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {},
+        "webgpuRequested": false,
+        "matchMediaQueries": {},
+        "intersectionObservers": 0,
+        "resizeObservers": 0,
+        "rafCalls": 0,
+        "rafFirstAt": null,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 0,
+        "wheelListeners": 0,
+        "touchmoveListeners": 0,
+        "pointermoveListeners": 0,
+        "startedAt": 1790957359862
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 54
+      }
+    ],
+    "heading-1": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 17
+      }
+    ],
+    "display-35": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 54
+      }
+    ],
+    "para-36": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 57
+      }
+    ],
+    "button-38": [
+      {
+        "family": ".",
+        "postScriptName": "å½¿",
+        "custom": true,
+        "glyphs": 19
+      }
+    ],
+    "header-37": []
+  },
+  "interactions": {
+    "menu": {
+      "found": true,
+      "ariaExpandedBefore": "false",
+      "ariaExpandedAfter": "true",
+      "hasAriaControls": true,
+      "visibleLinksBefore": 6,
+      "visibleLinksAfter": 15,
+      "escapeCloses": true,
+      "bodyLocked": false,
+      "activeTag": "button",
+      "dialogs": 0
+    },
+    "focus": {
+      "steps": 16,
+      "focusedSteps": 16,
+      "withIndicator": 16,
+      "indicatorShare": 1,
+      "offscreenOrHidden": 0,
+      "firstIsSkipLink": false,
+      "indicatorProps": [
+        [
+          "outline",
+          16
+        ],
+        [
+          "outlineWidth",
+          16
+        ],
+        [
+          "outlineColor",
+          16
+        ],
+        [
+          "boxShadow",
+          15
+        ],
+        [
+          "outlineStyle",
+          14
+        ],
+        [
+          "borderTopColor",
+          14
+        ],
+        [
+          "backgroundColor",
+          14
+        ],
+        [
+          "color",
+          14
+        ],
+        [
+          "textDecorationLine",
+          13
+        ]
+      ],
+      "sequence": [
+        "button",
+        "input[combobox]",
+        "button",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a"
+      ]
+    }
+  },
+  "axe": {
+    "engine": "4.13.0",
+    "violations": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2
+      }
+    ],
+    "counts": {
+      "violations": 1,
+      "incomplete": 0,
+      "passes": 49
+    },
+    "byImpact": {
+      "moderate": 2
+    }
+  },
+  "aria": {
+    "lines": 330,
+    "roles": {
+      "listitem": 72,
+      "link": 71,
+      "heading": 37,
+      "paragraph": 24,
+      "text": 9,
+      "list": 8,
+      "button": 7,
+      "figure": 4,
+      "status": 2,
+      "region": 1,
+      "banner": 1,
+      "navigation": 1,
+      "img": 1,
+      "main": 1,
+      "search": 1,
+      "combobox": 1,
+      "contentinfo": 1,
+      "separator": 1
+    }
+  },
+  "network": {
+    "requests": 16,
+    "failed": 0,
+    "totalBytes": 211490,
+    "byType": {
+      "font": {
+        "count": 2,
+        "bytes": 66258
+      },
+      "script": {
+        "count": 5,
+        "bytes": 57969
+      },
+      "stylesheet": {
+        "count": 2,
+        "bytes": 45436
+      },
+      "image": {
+        "count": 6,
+        "bytes": 27097
+      },
+      "document": {
+        "count": 1,
+        "bytes": 14730
+      }
+    },
+    "imageFormats": {
+      "image/svg+xml": {
+        "count": 2,
+        "bytes": 16126
+      },
+      "image/png": {
+        "count": 4,
+        "bytes": 10971
+      }
+    },
+    "fonts": {
+      "count": 2,
+      "bytes": 66258,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 0,
+      "bytes": 0,
+      "hosts": 0
+    },
+    "topHosts": [
+      {
+        "host": "www.gov.uk",
+        "bytes": 211490
+      }
+    ],
+    "libraryEvidence": {}
+  },
+  "console": {
+    "errors": 0,
+    "pageErrors": 0
+  }
+}

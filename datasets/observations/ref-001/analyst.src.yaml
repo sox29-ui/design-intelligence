@@ -1,0 +1,127 @@
+# Analyst observations — ref-001 Lando Norris. Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 1440-scroll-50, 1440-frame-entrance-4200, 390-menu-open, 390-scroll-50.
+notes: >-
+  CAPTURE LIMITATION: the WebGL hero did not render in headless Chromium (software GL) within the capture window —
+  top-of-page shots show only the background texture and a small loading indicator. Hero composition is therefore
+  UNVERIFIED; observations below cover chrome, later sections and behaviour.
+items:
+  - key: preloader-gate
+    page: home
+    viewport: 1440x900
+    category: motion
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-4200]
+    statement: "A full-screen saturated lime preloader with a small centred label still covers the page 4.2 s after navigation began (lab, proxied network, software rendering)."
+    confidence: 0.85
+    assessment: weakness
+    tags: [preloader, entrance]
+  - key: chrome-hierarchy
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "With the hero empty in capture, the strongest element is the lime 'store' pill top-right; the stacked serif/sans wordmark top-left and a monogram centre-top are secondary; a small outlined 'next race' card sits bottom-left. Header elements float over the page without a bar."
+    confidence: 0.75
+    assessment: neutral
+    tags: [header, accent]
+  - key: lime-identity-accent
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 390x844-scroll-50, 1440x900-scroll-25]
+    statement: "The neon lime used for CTAs, year labels and a handwritten script overlay is the same hue as the driver's helmet livery visible in the photography; lime appears in small doses against near-black, warm off-white and olive-grey grounds."
+    confidence: 0.85
+    assessment: strength
+    tags: [brand-colour, accent]
+  - key: collage-composition
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-scroll-25]
+    statement: "Mid-page, photographs of different sizes are scattered asymmetrically across the width with small uppercase place/year captions, like a scrapbook; text blocks sit partly off-canvas while animating in."
+    confidence: 0.8
+    assessment: neutral
+    tags: [asymmetry, editorial]
+  - key: display-type-mix
+    page: home
+    viewport: 1440x900
+    category: typography
+    type: OBSERVED
+    shots: [1440x900-scroll-50, 390x844-scroll-50]
+    statement: "Display moments mix a high-contrast serif in large uppercase, a heavy grotesk, and a lime handwritten script laid over the serif; labels are tiny uppercase sans."
+    confidence: 0.8
+    assessment: neutral
+    tags: [display, pairing, script]
+  - key: mobile-grid-cards
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-scroll-50]
+    statement: "At 390 the helmet gallery becomes a two-column grid of outlined cards with a chamfered corner notch, label bottom-right with the year in lime; heading block splits into two columns (title left, short paragraph right) even at phone width."
+    confidence: 0.8
+    assessment: neutral
+    tags: [cards, mobile]
+  - key: mobile-hero-empty
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 390x844-menu-open]
+    statement: "At 390 the first viewport shows the centred wordmark and tagline over the texture, a lime store button top-left, a menu toggle top-right and a lime touch-gesture button bottom-right; the main visual area is empty in capture."
+    confidence: 0.75
+    assessment: neutral
+    tags: [mobile, hero]
+  - key: menu-probe-inconclusive
+    page: home
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-menu-open]
+    statement: "Activating the top-right toggle produced no visible menu in capture and aria-expanded stayed false; the probe may have hit a different control. Mobile navigation behaviour is UNVERIFIED."
+    confidence: 0.6
+    assessment: neutral
+    tags: [navigation, unverified]
+  - key: why-lime-justified
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: INFERRED
+    based_on: [lime-identity-accent, ref-001.color.home-1440-button-backgrounds, ref-001.color.home-1440-background-palette]
+    statement: "Dark ground + neon lime is not a generic 'premium' choice here: the lime is the subject's personal livery colour and appears in the photographs, so the accent carries identity. The same pairing without such a brand anchor would be an unjustified generic signature."
+    confidence: 0.75
+    assessment: strength
+    tags: [anti-pattern-boundary, brand]
+  - key: why-spectacle-cost
+    page: home
+    viewport: cross-viewport
+    category: performance
+    type: INFERRED
+    based_on: [preloader-gate, ref-001.performance.home-1440-transfer-bytes, ref-001.performance.home-1440-long-tasks, ref-001.implementation.home-1440-canvas-contexts]
+    statement: "WebGL scenes, smooth-scroll and Rive animations (≈8 MB transferred, tens of seconds of long tasks in the lab) are acceptable for a fan-facing personal brand whose goal is immersion, but the same budget would be indefensible for task or conversion pages; the preloader hides the cost rather than removing it."
+    confidence: 0.7
+    assessment: trade-off
+    tags: [budget, webgl]
+  - key: why-low-contrast-captions
+    page: home
+    viewport: cross-viewport
+    category: accessibility
+    type: INFERRED
+    based_on: [collage-composition, ref-001.color.home-1440-low-contrast-normal-share, ref-001.accessibility.home-1440-axe-by-impact]
+    statement: "About 38% of measured text falls below 4.5:1, mostly tiny pale captions over light or photographic grounds; the scrapbook aesthetic is bought with legibility of secondary text."
+    confidence: 0.7
+    assessment: weakness
+    tags: [contrast, captions]
+  - key: reduced-motion-partial
+    page: home
+    viewport: 1440x900
+    category: motion
+    type: INFERRED
+    based_on: [ref-001.motion.home-1440-reduced-motion-response]
+    statement: "The site queries prefers-reduced-motion in JavaScript and its animation-frame activity drops by roughly 80% under the reduce setting, so reduced motion is partially honoured even on a motion-heavy build."
+    confidence: 0.7
+    assessment: strength
+    tags: [reduced-motion]

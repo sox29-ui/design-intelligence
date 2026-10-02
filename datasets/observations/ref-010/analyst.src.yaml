@@ -1,0 +1,104 @@
+# Analyst observations — ref-010 Tabby (ar-SA and en-SA home). Compiled by scripts/analyst.ts.
+# Inspected: home-ar 390-top, 1440-scroll-25, 390-menu-open; home-en 390-top.
+notes: "Consent dialog was not dismissed (hashed class names defeated the consent selectors in this capture run); it overlaps the lower part of mobile shots."
+items:
+  - key: mirrored-chrome
+    page: home-ar
+    viewport: 390x844
+    category: rtl
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "In Arabic the header is mirrored relative to English: wordmark at the right edge, language switch and menu toggle at the left; the Latin wordmark itself is not mirrored or translated."
+    confidence: 0.95
+    assessment: strength
+    tags: [mirroring, logo]
+  - key: english-counterpart
+    page: home-en
+    viewport: 390x844
+    category: rtl
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "The English page keeps the same composition with left/right swapped back: wordmark left, language and menu right; hero copy, rating line, headline, paragraph and dark pill CTA are centred in both languages."
+    confidence: 0.95
+    assessment: strength
+    tags: [bilingual-parity]
+  - key: rtl-chevrons
+    page: home-ar
+    viewport: 390x844
+    category: rtl
+    type: OBSERVED
+    shots: [390x844-menu-open]
+    statement: "The Arabic mobile menu is a full-screen sheet with right-aligned items; drill-down chevrons point left (the reading-forward direction in RTL) and the close control sits at the left."
+    confidence: 0.9
+    assessment: strength
+    tags: [icons, mirroring, navigation]
+  - key: mirrored-feature-rows
+    page: home-ar
+    viewport: 1440x900
+    category: rtl
+    type: OBSERVED
+    shots: [1440x900-scroll-25]
+    statement: "Desktop feature rows are mirrored: text block right-aligned on the right half, illustration card on the left; a numeric percentage inside an Arabic headline renders with the percent sign on the visual left of the digit, following the bidi algorithm."
+    confidence: 0.85
+    assessment: strength
+    tags: [mirroring, bidi, numerals]
+  - key: illustration-identity
+    page: home-ar
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-scroll-25]
+    statement: "Identity is carried by flat line-art characters with heavy black outlines on saturated mint and lilac fields, large-radius image cards, dark pill buttons and no gradients, glows or blur."
+    confidence: 0.9
+    assessment: strength
+    tags: [illustration, palette]
+  - key: why-shared-family-more-leading
+    page: home-ar
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [english-counterpart, ref-010.typography.home-ar-1440-display-line-height, ref-010.typography.home-en-1440-display-line-height, ref-010.typography.home-ar-1440-display-family]
+    statement: "Both languages use the same bilingual display family at the same sizes (44 → 60 px), but Arabic headlines get ~1.27 line-height versus ~1.07–1.09 in English. Arabic letterforms need more vertical room (tall ascenders, deep descenders, marks); copying Latin display leading to Arabic would make lines collide."
+    confidence: 0.8
+    assessment: strength
+    tags: [arabic-leading, bilingual-type]
+  - key: why-western-digits
+    page: home-ar
+    viewport: cross-viewport
+    category: rtl
+    type: INFERRED
+    based_on: [mirrored-feature-rows, ref-010.rtl.home-ar-1440-digits]
+    statement: "The Arabic page uses Western Arabic digits only (no Arabic-Indic digits measured), matching what Gulf fintech and payment UIs commonly show; numeral choice is a deliberate locale decision, not a default to copy blindly."
+    confidence: 0.6
+    assessment: neutral
+    tags: [numerals]
+  - key: why-logical-css
+    page: home-ar
+    viewport: cross-viewport
+    category: rtl
+    type: INFERRED
+    based_on: [mirrored-chrome, ref-010.rtl.home-ar-1440-logical-properties, ref-010.rtl.home-ar-1440-text-align]
+    statement: "Readable stylesheets contain ~170 logical-property declarations versus ~51 physical left/right ones, and text alignment uses 'start' alongside explicit right alignment; one codebase serving both directions is consistent with logical-first CSS."
+    confidence: 0.65
+    assessment: strength
+    tags: [logical-properties]
+  - key: consent-parity
+    page: home-ar
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "The consent dialog offers accept (filled brand green) and reject-optional (outlined, same width and height) in both languages; reject is visible without a second layer but carries less visual weight."
+    confidence: 0.85
+    assessment: neutral
+    tags: [consent]
+  - key: mobile-a11y-gap
+    page: home-ar
+    viewport: 390x844
+    category: accessibility
+    type: INFERRED
+    based_on: [ref-010.accessibility.home-ar-390-axe-by-impact, ref-010.color.home-ar-390-low-contrast-normal-share]
+    statement: "Mobile builds show serious automated issues (focusable content inside aria-hidden regions, a contrast failure) that the desktop build mostly does not; mobile-specific components need their own accessibility verification."
+    confidence: 0.7
+    assessment: weakness
+    tags: [mobile, aria-hidden]

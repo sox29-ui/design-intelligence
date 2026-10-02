@@ -1,0 +1,298 @@
+{
+  "ref_id": "ref-010",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:22:14.415Z",
+  "notes": "Consent dialog was not dismissed (hashed class names defeated the consent selectors in this capture run); it overlaps the lower part of mobile shots.",
+  "observations": [
+    {
+      "id": "ref-010.rtl.home-ar-a-mirrored-chrome",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "390x844",
+      "category": "rtl",
+      "property": "mirrored-chrome",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/390x844-top.jpg",
+          "sha256": "8db0accbd14df1f73907bac2f98c8727d7634b8b1e99b6ff0495beedd9c0912d"
+        }
+      ],
+      "statement": "In Arabic the header is mirrored relative to English: wordmark at the right edge, language switch and menu toggle at the left; the Latin wordmark itself is not mirrored or translated.",
+      "confidence": 0.95,
+      "assessment": "strength",
+      "tags": [
+        "mirroring",
+        "logo"
+      ]
+    },
+    {
+      "id": "ref-010.rtl.home-en-a-english-counterpart",
+      "ref_id": "ref-010",
+      "page": "home-en",
+      "source_url": "https://tabby.ai/en-SA",
+      "capture_id": "20261002T161858Z",
+      "captured_at": "2026-10-02T16:18:58.510Z",
+      "viewport": "390x844",
+      "category": "rtl",
+      "property": "english-counterpart",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-en/20261002T161858Z/390x844-top.jpg",
+          "sha256": "9f3d5dca761e49452e15e77821b356281343474217c6ca189c73c812b3509203"
+        }
+      ],
+      "statement": "The English page keeps the same composition with left/right swapped back: wordmark left, language and menu right; hero copy, rating line, headline, paragraph and dark pill CTA are centred in both languages.",
+      "confidence": 0.95,
+      "assessment": "strength",
+      "tags": [
+        "bilingual-parity"
+      ]
+    },
+    {
+      "id": "ref-010.rtl.home-ar-a-rtl-chevrons",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "390x844",
+      "category": "rtl",
+      "property": "rtl-chevrons",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/390x844-menu-open.jpg",
+          "sha256": "ad1493387f3ee0ad3fe8e6fbbc063e76c42a364744035ccf2bf62b8f9767f2cb"
+        }
+      ],
+      "statement": "The Arabic mobile menu is a full-screen sheet with right-aligned items; drill-down chevrons point left (the reading-forward direction in RTL) and the close control sits at the left.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "icons",
+        "mirroring",
+        "navigation"
+      ]
+    },
+    {
+      "id": "ref-010.rtl.home-ar-a-mirrored-feature-rows",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "1440x900",
+      "category": "rtl",
+      "property": "mirrored-feature-rows",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/1440x900-scroll-25.jpg",
+          "sha256": "500ade8a5a14ded1f37430d27618295fe7fc22b1110df80517bbb757a2314a60"
+        }
+      ],
+      "statement": "Desktop feature rows are mirrored: text block right-aligned on the right half, illustration card on the left; a numeric percentage inside an Arabic headline renders with the percent sign on the visual left of the digit, following the bidi algorithm.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "mirroring",
+        "bidi",
+        "numerals"
+      ]
+    },
+    {
+      "id": "ref-010.color.home-ar-a-illustration-identity",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "illustration-identity",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/390x844-top.jpg",
+          "sha256": "8db0accbd14df1f73907bac2f98c8727d7634b8b1e99b6ff0495beedd9c0912d"
+        },
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/1440x900-scroll-25.jpg",
+          "sha256": "500ade8a5a14ded1f37430d27618295fe7fc22b1110df80517bbb757a2314a60"
+        }
+      ],
+      "statement": "Identity is carried by flat line-art characters with heavy black outlines on saturated mint and lilac fields, large-radius image cards, dark pill buttons and no gradients, glows or blur.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "illustration",
+        "palette"
+      ]
+    },
+    {
+      "id": "ref-010.typography.home-ar-a-why-shared-family-more-leading",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "why-shared-family-more-leading",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-010.rtl.home-en-a-english-counterpart"
+        },
+        {
+          "observation": "ref-010.typography.home-ar-1440-display-line-height"
+        },
+        {
+          "observation": "ref-010.typography.home-en-1440-display-line-height"
+        },
+        {
+          "observation": "ref-010.typography.home-ar-1440-display-family"
+        }
+      ],
+      "statement": "Both languages use the same bilingual display family at the same sizes (44 → 60 px), but Arabic headlines get ~1.27 line-height versus ~1.07–1.09 in English. Arabic letterforms need more vertical room (tall ascenders, deep descenders, marks); copying Latin display leading to Arabic would make lines collide.",
+      "confidence": 0.8,
+      "assessment": "strength",
+      "tags": [
+        "arabic-leading",
+        "bilingual-type"
+      ]
+    },
+    {
+      "id": "ref-010.rtl.home-ar-a-why-western-digits",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "cross-viewport",
+      "category": "rtl",
+      "property": "why-western-digits",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-010.rtl.home-ar-a-mirrored-feature-rows"
+        },
+        {
+          "observation": "ref-010.rtl.home-ar-1440-digits"
+        }
+      ],
+      "statement": "The Arabic page uses Western Arabic digits only (no Arabic-Indic digits measured), matching what Gulf fintech and payment UIs commonly show; numeral choice is a deliberate locale decision, not a default to copy blindly.",
+      "confidence": 0.6,
+      "assessment": "neutral",
+      "tags": [
+        "numerals"
+      ]
+    },
+    {
+      "id": "ref-010.rtl.home-ar-a-why-logical-css",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "cross-viewport",
+      "category": "rtl",
+      "property": "why-logical-css",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-010.rtl.home-ar-a-mirrored-chrome"
+        },
+        {
+          "observation": "ref-010.rtl.home-ar-1440-logical-properties"
+        },
+        {
+          "observation": "ref-010.rtl.home-ar-1440-text-align"
+        }
+      ],
+      "statement": "Readable stylesheets contain ~170 logical-property declarations versus ~51 physical left/right ones, and text alignment uses 'start' alongside explicit right alignment; one codebase serving both directions is consistent with logical-first CSS.",
+      "confidence": 0.65,
+      "assessment": "strength",
+      "tags": [
+        "logical-properties"
+      ]
+    },
+    {
+      "id": "ref-010.components.home-ar-a-consent-parity",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "consent-parity",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-010/home-ar/20261002T161718Z/390x844-top.jpg",
+          "sha256": "8db0accbd14df1f73907bac2f98c8727d7634b8b1e99b6ff0495beedd9c0912d"
+        }
+      ],
+      "statement": "The consent dialog offers accept (filled brand green) and reject-optional (outlined, same width and height) in both languages; reject is visible without a second layer but carries less visual weight.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "consent"
+      ]
+    },
+    {
+      "id": "ref-010.accessibility.home-ar-a-mobile-a11y-gap",
+      "ref_id": "ref-010",
+      "page": "home-ar",
+      "source_url": "https://tabby.ai/ar-SA",
+      "capture_id": "20261002T161718Z",
+      "captured_at": "2026-10-02T16:17:18.253Z",
+      "viewport": "390x844",
+      "category": "accessibility",
+      "property": "mobile-a11y-gap",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-010.accessibility.home-ar-390-axe-by-impact"
+        },
+        {
+          "observation": "ref-010.color.home-ar-390-low-contrast-normal-share"
+        }
+      ],
+      "statement": "Mobile builds show serious automated issues (focusable content inside aria-hidden regions, a contrast failure) that the desktop build mostly does not; mobile-specific components need their own accessibility verification.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "mobile",
+        "aria-hidden"
+      ]
+    }
+  ]
+}

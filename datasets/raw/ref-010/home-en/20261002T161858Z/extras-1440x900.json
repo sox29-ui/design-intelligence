@@ -1,0 +1,113 @@
+{
+  "scrollLinked": {
+    "sampledElements": 864,
+    "changedAfterScroll": 1
+  },
+  "entranceFrames": [
+    400,
+    900,
+    1600,
+    2600,
+    4200
+  ],
+  "reducedMotion": {
+    "motion": {
+      "transitionElements": 36,
+      "transitionDuration": {
+        "n": 36,
+        "min": 1,
+        "p25": 1,
+        "median": 100,
+        "p75": 100,
+        "max": 300
+      },
+      "transitionEasing": {
+        "ease-out": 15,
+        "cubic-bezier(0.32, 0.72, 0, 1)": 11,
+        "ease": 7,
+        "cubic-bezier(0, 0, 0.2, 1)": 2,
+        "cubic-bezier(0.4, 0, 0.2, 1)": 1
+      },
+      "transitionProperty": {
+        "all": 15,
+        "transform": 13,
+        "opacity": 5,
+        "width": 2,
+        "box-shadow": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 42,
+      "roundedBoxShare12": 0.476,
+      "roundedBoxShare24": 0.214,
+      "opacityZeroElements": 9,
+      "transformedElements": 151
+    },
+    "instrumentation": {
+      "canvasContexts": {
+        "2d": 5
+      },
+      "webgpuRequested": false,
+      "matchMediaQueries": {
+        "(min-width:1024px)": 31,
+        "(min-width:768px) and (max-width:1023.95px)": 31,
+        "(min-width:768px)": 8,
+        "(max-width:767.95px)": 1,
+        "(pointer: coarse)": 1
+      },
+      "intersectionObservers": 3,
+      "resizeObservers": 0,
+      "rafCalls": 508,
+      "rafFirstAt": 654,
+      "waapiAnimate": 0,
+      "waapiDurations": [],
+      "scrollListeners": 5,
+      "wheelListeners": 4,
+      "touchmoveListeners": 6,
+      "pointermoveListeners": 9,
+      "startedAt": 1790958010986
+    },
+    "media": {
+      "images": 11,
+      "imagesTotal": 13,
+      "lazyImages": 0,
+      "srcsetImages": 27,
+      "videos": 0,
+      "autoplayVideos": 0,
+      "videosWithControls": 0,
+      "inlineSvgs": 26,
+      "canvases": [
+        {
+          "w": 1440,
+          "h": 980,
+          "fixed": false
+        }
+      ],
+      "iframes": 0
+    },
+    "cssom": {
+      "reducedMotionRules": 9
+    }
+  },
+  "darkScheme": {
+    "bodyBackground": "rgb(255, 255, 255)",
+    "rootBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(26, 25, 25)",
+    "colorSchemeProperty": "normal"
+  }
+}

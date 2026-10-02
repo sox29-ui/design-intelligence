@@ -1,0 +1,416 @@
+{
+  "capture_id": "20261002T161318Z",
+  "ref_id": "ref-008",
+  "page_id": "chart",
+  "url": "https://ourworldindata.org/grapher/life-expectancy",
+  "final_url": "https://ourworldindata.org/grapher/life-expectancy",
+  "started_at": "2026-10-02T16:13:18.085Z",
+  "finished_at": "2026-10-02T16:14:56.465Z",
+  "tool": {
+    "name": "di-collect",
+    "version": "0.1.0",
+    "playwright": "1.56.1",
+    "browser": "chromium 141.0.7390.37",
+    "axe": "4.13.0"
+  },
+  "environment": {
+    "proxy": true,
+    "platform": "linux",
+    "note": "Chromium via egress proxy; DPR 1; lab timings environment-relative (D-009)"
+  },
+  "robots": {
+    "status": "allowed",
+    "checked_url": "https://ourworldindata.org/robots.txt",
+    "matched_rule": null
+  },
+  "consent": {
+    "action": "rejected-nonessential",
+    "detail": "clicked a visible reject/necessary-only control inside a consent container"
+  },
+  "blocked": false,
+  "blocked_reason": null,
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    }
+  ],
+  "files": [
+    {
+      "path": "viewport-390x844.json",
+      "sha256": "6b2b46a1b1a9ddef20343f704e2bea0830c4e62c2eaa269a39fc4d948cae1a4a",
+      "bytes": 55312
+    },
+    {
+      "path": "viewport-768x1024.json",
+      "sha256": "15773d89279213db8449f014829f1b97aa6c625614a85976a27180fdbd61e1f4",
+      "bytes": 53373
+    },
+    {
+      "path": "viewport-1440x900.json",
+      "sha256": "09e25e0e74848cc9e70c2e6cf3d63cbd01cce2dc053a1ee5f371dd2594828145",
+      "bytes": 58896
+    },
+    {
+      "path": "extras-1440x900.json",
+      "sha256": "e9f1490cec25a29fa88f5a06424b6f29503ce07b0fd9f87de76727b7d340eb61",
+      "bytes": 2293
+    },
+    {
+      "path": "viewport-1920x1080.json",
+      "sha256": "7aa6060417e94363f374d93e6b506b8920e480b8871d68d77c1c58990bc729ae",
+      "bytes": 54717
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-top.jpg",
+      "sha256": "9c16dd3cff4e1b20238dbcf99186341a6471b56acaa9e33fdae07de0a36f813a",
+      "bytes": 43061,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-scroll-25.jpg",
+      "sha256": "1e1ded753cdfc8762f9a46ea8087777ee7dd3688c955da60579196c141b0fc03",
+      "bytes": 40444,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-scroll-50.jpg",
+      "sha256": "fe43275b420cc1105da6390dcd600e474a9f54a2d6d6e4aa211d8f977cb937ed",
+      "bytes": 43476,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-scroll-75.jpg",
+      "sha256": "cafc8385ab24c7d1b863b467ab2e3cc6fb73d316337aeb531164db008121e08b",
+      "bytes": 45340,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-scroll-100.jpg",
+      "sha256": "3975c6ae48fe2291e890cd19668d6fd548597297972ec461c4d3da450ed00208",
+      "bytes": 18923,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-long.jpg",
+      "sha256": "517b65ee39ac7c950f085532766fb5f1f946b659e0ea0106e4df8f1b11032cd1",
+      "bytes": 245195,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-menu-open.jpg",
+      "sha256": "5433d9309ecf346bcae9235029bf1a7c112f390e77921e3d3f38c0dffd637fbf",
+      "bytes": 25662,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-focus.jpg",
+      "sha256": "d83c85a3e5ad47a05e440e75f514b0cf74ffeb3dd1577608554d740215aa8f3a",
+      "bytes": 44240,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-axe.json",
+      "sha256": "94283c557c6caacd0ebfeb7a7502f82eb56bef6149239e1d4f599725b83bc655",
+      "bytes": 1147532,
+      "kind": "axe-full",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-aria.yml",
+      "sha256": "56c93682fa074fe4fed3c7dba89bc94d1a2a696fc3c3a3d58b0a1fb1e71c1d91",
+      "bytes": 17258,
+      "kind": "aria-snapshot",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-top.jpg",
+      "sha256": "bac9dc6bf22ae4bd03eb6a7e7ab60d885a1a195c0c53b79920de191a63625562",
+      "bytes": 63234,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-scroll-25.jpg",
+      "sha256": "bb4201937d346cab30cd1d7b86879fbea6ef40bc71326406691d27a9ef88bc47",
+      "bytes": 72885,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-scroll-50.jpg",
+      "sha256": "2be32a1da3faa59ff7dff7e40b9a6075082c38130a0955190bb80e0df3ea96b7",
+      "bytes": 87132,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-scroll-75.jpg",
+      "sha256": "d114d1b4d8ce384be64eff5d45801c5243ca453f8c4f793a1b31c19da973de48",
+      "bytes": 65498,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-scroll-100.jpg",
+      "sha256": "7986b1ba8f55edb38c51df4f02ab109c5b36d2b322d7e702e269c0f5b64a3127",
+      "bytes": 43881,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/768x1024-long.jpg",
+      "sha256": "7890e0101aaa126fc8631945e5bd8339a47ef065146a620437d679d26047cc26",
+      "bytes": 349337,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-top.jpg",
+      "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5",
+      "bytes": 99683,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-scroll-25.jpg",
+      "sha256": "a529255f8772de61fca24b291b36a9f2037b14386fe80e81aa8633fbc35ddf90",
+      "bytes": 65914,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-scroll-50.jpg",
+      "sha256": "1562bb809ed68601e48253fda1b32dcde497cf45a5bb9e03b6f4b305f07e053a",
+      "bytes": 108351,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-scroll-75.jpg",
+      "sha256": "47f5bc08486068e060c25b311fee706ce91c6486224bfaf8bcf1932fb8656cb8",
+      "bytes": 71009,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-scroll-100.jpg",
+      "sha256": "2e3cc9140acabf4af002436a7b53f2f996f6f1359117c02e8581ed88bf821b61",
+      "bytes": 81832,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-long.jpg",
+      "sha256": "e57461b15879f734bd137e68511da02eb2a17dffdcc904ab4d1f05df4948e525",
+      "bytes": 450570,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-menu-open.jpg",
+      "sha256": "4b83d94650f81f128890432b3e4dcd1b0a5b38c72304967e0c91afe61062385d",
+      "bytes": 78243,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-focus.jpg",
+      "sha256": "58c7b25aa99147087eaa4454f8212577a880b12c258a54f450bf75bb2b37ef11",
+      "bytes": 100379,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-hover.jpg",
+      "sha256": "58c7b25aa99147087eaa4454f8212577a880b12c258a54f450bf75bb2b37ef11",
+      "bytes": 100379,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "hover"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-axe.json",
+      "sha256": "2e09e9329bc398145b53e5356a96f4ca85aeccff2453a7e57ca8b5109c856244",
+      "bytes": 3525470,
+      "kind": "axe-full",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-aria.yml",
+      "sha256": "209206ff81805e3b083611d483d8e4d0e5d96d178712f19b84d2801d8165d0f2",
+      "bytes": 41924,
+      "kind": "aria-snapshot",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-frame-entrance-400.jpg",
+      "sha256": "b9592e2777c2e3fab0cfdcee145909d5fa5327cecacae709afbf48aec97bd4da",
+      "bytes": 31608,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-400"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-frame-entrance-900.jpg",
+      "sha256": "b9592e2777c2e3fab0cfdcee145909d5fa5327cecacae709afbf48aec97bd4da",
+      "bytes": 31608,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-900"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-frame-entrance-1600.jpg",
+      "sha256": "1d7f1f1a0e7c57b0b00c93229cffe72116978172fbf3789d35c544ba90e554fb",
+      "bytes": 33872,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-1600"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-frame-entrance-2600.jpg",
+      "sha256": "4df8b717db65f7369d2e0fd2747b23c6142c95c694a14e9f8d2d2ee60aad6b67",
+      "bytes": 102886,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-2600"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-frame-entrance-4200.jpg",
+      "sha256": "d36fa53fff8103508c3fc587fe0db6920701c291e79d5859275efd096a824596",
+      "bytes": 103908,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-4200"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-reduced-motion-top.jpg",
+      "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5",
+      "bytes": 99683,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "reduced-motion-top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-dark-scheme-top.jpg",
+      "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5",
+      "bytes": 99683,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "dark-scheme-top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-top.jpg",
+      "sha256": "7977cfde1cd7ffe301bd101842600a73100cec44a6a63aab0b8eab2df22f4a85",
+      "bytes": 130642,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-scroll-25.jpg",
+      "sha256": "bd6bdcf4a744d1b5f724eb90249bda1d2063503190abe4291710900728101db5",
+      "bytes": 114424,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-scroll-50.jpg",
+      "sha256": "231edf4c7eedc207aedf4fccebf90d999868f1efa35849bbcfb1740f30b369ab",
+      "bytes": 135474,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-scroll-75.jpg",
+      "sha256": "2344833da11ce4123c49c1bbd177580a8207e8b52c904ff7bb2942bb146e83b7",
+      "bytes": 104533,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-scroll-100.jpg",
+      "sha256": "7525f73f395fc81f2ab65511d0869faa1960fb0907d6ee513ddc578894f1623d",
+      "bytes": 104561,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-008/chart/20261002T161318Z/1920x1080-long.jpg",
+      "sha256": "b265e270c275b67c0780b1ebe52edb785f464033f3f18f7f6b21fafc9d9f93b2",
+      "bytes": 464814,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "long"
+    }
+  ],
+  "errors": []
+}

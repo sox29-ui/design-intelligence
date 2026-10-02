@@ -380,6 +380,7 @@ async (opts) => {
   const bgArea = {};
   const vpArea = vw * vh;
   let gradientArea = 0;
+  const gradientColorArea = {};
   let imageBgCount = 0;
   for (const el of elements) {
     const s = cs(el);
@@ -391,7 +392,16 @@ async (opts) => {
       const k = hex(c);
       bgArea[k] = (bgArea[k] || 0) + area;
     }
-    if (/gradient\(/.test(s.backgroundImage)) gradientArea += area;
+    if (/gradient\(/.test(s.backgroundImage)) {
+      gradientArea += area;
+      for (const m of s.backgroundImage.matchAll(/rgba?\([^)]*\)|oklch\([^)]*\)|color\([^)]*\)/g)) {
+        const c = parseColor(m[0]);
+        if (c && c.a > 0.3) {
+          const k = hex(c);
+          gradientColorArea[k] = (gradientColorArea[k] || 0) + area;
+        }
+      }
+    }
     else if (/url\(/.test(s.backgroundImage)) imageBgCount++;
   }
   const rootBg = effectiveBg(document.body || doc).color;
@@ -441,6 +451,7 @@ async (opts) => {
     textColors: Object.entries(textColorChars).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, v]) => ({ color: k, share: round(v / Math.max(1, totalChars), 3) })),
     buttonBackgrounds: Object.entries(accentCandidates).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, n]) => ({ color: k, count: n })),
     gradientAreaRatio: round(gradientArea / Math.max(1, doc.scrollHeight * vw), 3),
+    gradientColors: Object.entries(gradientColorArea).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k]) => k),
     imageBackgrounds: imageBgCount,
     contrast: {
       method: 'computed colour vs nearest opaque ancestor background; text over images/gradients counted as uncertain',

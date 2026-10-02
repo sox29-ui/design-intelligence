@@ -1,0 +1,160 @@
+{
+  "scrollLinked": {
+    "sampledElements": 2060,
+    "changedAfterScroll": 13
+  },
+  "entranceFrames": [
+    400,
+    900,
+    1600,
+    2600,
+    4200
+  ],
+  "reducedMotion": {
+    "motion": {
+      "transitionElements": 111,
+      "transitionDuration": {
+        "n": 111,
+        "min": 100,
+        "p25": 750,
+        "median": 750,
+        "p75": 750,
+        "max": 750
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.65, 0.05, 0, 1)": 101,
+        "cubic-bezier(0.19, 1, 0.22, 1)": 4,
+        "ease-in-out": 4,
+        "ease": 2
+      },
+      "transitionProperty": {
+        "opacity": 53,
+        "color": 21,
+        "clip-path": 17,
+        "transform": 16,
+        "fill": 2,
+        "border-color": 1,
+        "height": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0.071,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 11,
+      "boxedElements": 87,
+      "roundedBoxShare12": 0,
+      "roundedBoxShare24": 0,
+      "opacityZeroElements": 62,
+      "transformedElements": 156
+    },
+    "instrumentation": {
+      "canvasContexts": {
+        "webgl2": 3,
+        "offscreen:2d": 1,
+        "2d": 19
+      },
+      "webgpuRequested": false,
+      "matchMediaQueries": {
+        "(prefers-reduced-motion: reduce)": 1,
+        "(hover: none), (pointer: coarse)": 1,
+        "(orientation: portrait)": 1,
+        "(resolution: 1dppx)": 1
+      },
+      "intersectionObservers": 1,
+      "resizeObservers": 72,
+      "rafCalls": 224,
+      "rafFirstAt": 814,
+      "waapiAnimate": 0,
+      "waapiDurations": [],
+      "scrollListeners": 7,
+      "wheelListeners": 4,
+      "touchmoveListeners": 6,
+      "pointermoveListeners": 6,
+      "startedAt": 1790957647412
+    },
+    "media": {
+      "images": 55,
+      "imagesTotal": 133,
+      "lazyImages": 131,
+      "srcsetImages": 95,
+      "videos": 0,
+      "autoplayVideos": 0,
+      "videosWithControls": 0,
+      "inlineSvgs": 85,
+      "canvases": [
+        {
+          "w": 60,
+          "h": 60,
+          "fixed": false
+        },
+        {
+          "w": 37,
+          "h": 37,
+          "fixed": false
+        },
+        {
+          "w": 0,
+          "h": 0,
+          "fixed": false
+        },
+        {
+          "w": 0,
+          "h": 0,
+          "fixed": false
+        },
+        {
+          "w": 1440,
+          "h": 900,
+          "fixed": false
+        },
+        {
+          "w": 73,
+          "h": 63,
+          "fixed": false
+        },
+        {
+          "w": 81,
+          "h": 43,
+          "fixed": false
+        },
+        {
+          "w": 800,
+          "h": 571,
+          "fixed": false
+        },
+        {
+          "w": 81,
+          "h": 43,
+          "fixed": false
+        },
+        {
+          "w": 213,
+          "h": 162,
+          "fixed": false
+        }
+      ],
+      "iframes": 0
+    },
+    "cssom": {
+      "reducedMotionRules": 0
+    }
+  },
+  "darkScheme": {
+    "bodyBackground": "rgb(40, 44, 32)",
+    "rootBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(244, 244, 237)",
+    "colorSchemeProperty": "normal"
+  }
+}

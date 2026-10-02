@@ -1,0 +1,416 @@
+{
+  "capture_id": "20261002T161456Z",
+  "ref_id": "ref-009",
+  "page_id": "home",
+  "url": "https://stripe.com/",
+  "final_url": "https://stripe.com/",
+  "started_at": "2026-10-02T16:14:56.466Z",
+  "finished_at": "2026-10-02T16:17:18.252Z",
+  "tool": {
+    "name": "di-collect",
+    "version": "0.1.0",
+    "playwright": "1.56.1",
+    "browser": "chromium 141.0.7390.37",
+    "axe": "4.13.0"
+  },
+  "environment": {
+    "proxy": true,
+    "platform": "linux",
+    "note": "Chromium via egress proxy; DPR 1; lab timings environment-relative (D-009)"
+  },
+  "robots": {
+    "status": "allowed",
+    "checked_url": "https://stripe.com/robots.txt",
+    "matched_rule": null
+  },
+  "consent": {
+    "action": "none-found",
+    "detail": "no visible consent container detected"
+  },
+  "blocked": false,
+  "blocked_reason": null,
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    }
+  ],
+  "files": [
+    {
+      "path": "viewport-390x844.json",
+      "sha256": "243a17a02135eec0dc9732b75351d4381bc2783ebe2b8eba80480a9e85fe313d",
+      "bytes": 72631
+    },
+    {
+      "path": "viewport-768x1024.json",
+      "sha256": "bacd3c1d1ae97d1da3acbe3b9ae8a188768243bd3699c95174e26f241f25c7c5",
+      "bytes": 72208
+    },
+    {
+      "path": "viewport-1440x900.json",
+      "sha256": "dd4fc99475343a22aedef6800e5122f3addcd53eefff96b0a00da36fb28f4fbb",
+      "bytes": 76146
+    },
+    {
+      "path": "extras-1440x900.json",
+      "sha256": "b58723862137703cbdcdd5997cc9f5bf07bca705402d638a16c88677aa3d7989",
+      "bytes": 3794
+    },
+    {
+      "path": "viewport-1920x1080.json",
+      "sha256": "fa721e36148c7179bf964a1d5cb287562bedccf5393e649129299fd66e5b1e48",
+      "bytes": 73154
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-top.jpg",
+      "sha256": "fa170faaba5352078709caff43f7eee342efa714cb3dc1f16aab6a45518d5d97",
+      "bytes": 39818,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-scroll-25.jpg",
+      "sha256": "f30e4ac8f9668537ed0eeae663076b53e245f68d73206c8a6b2139a011e4631e",
+      "bytes": 42602,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-scroll-50.jpg",
+      "sha256": "5679f59349c78e0b5b4e73b1c5ad3962e8e854a2d852707c12fbb0678c321952",
+      "bytes": 24119,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-scroll-75.jpg",
+      "sha256": "ae13d847731771b4ad50014b91c6e3f9759af56689395422fc3522bc89e08f85",
+      "bytes": 35849,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-scroll-100.jpg",
+      "sha256": "7731f39a6aa637fa7aaf132ec14e147e25b5e29effd02ce68b6a707e44d10f95",
+      "bytes": 23590,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-long.jpg",
+      "sha256": "8350323e08a805143962567f9ccde0598789638d5786c46ffcae9c39455084e3",
+      "bytes": 186105,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-menu-open.jpg",
+      "sha256": "ab1f6b0e7b67499ff2de6f1c05f7accc73f382e9b8aa8a8bd6a862968727b186",
+      "bytes": 16246,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-focus.jpg",
+      "sha256": "9998f8fcf941690edd2e9a10156753f13f303c10b5d378352fad1e2cdd36818c",
+      "bytes": 40290,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-axe.json",
+      "sha256": "fd360e5038b6d3cf10686320af354b321b90feba8df1dfc2d12473d7ab632b12",
+      "bytes": 1890338,
+      "kind": "axe-full",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/390x844-aria.yml",
+      "sha256": "8ccc401566a34f3af9ec10a2b261b6b3fb4ba58dd56dfe3f37789d5af05bad3e",
+      "bytes": 31858,
+      "kind": "aria-snapshot",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-top.jpg",
+      "sha256": "b31ceeaf4627ea5229f54e730028a5a3377b5f5e2f8cc7563d8d905702899841",
+      "bytes": 73991,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-scroll-25.jpg",
+      "sha256": "5b9924771b3584a84dd4d433d8d5a8635b73a0dd8ca599a7db91b9adf7c63471",
+      "bytes": 80253,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-scroll-50.jpg",
+      "sha256": "989e7aff42ae3f40385e98c33dd9b65958a74dc084e146917d1486f4e99919af",
+      "bytes": 49932,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-scroll-75.jpg",
+      "sha256": "2cb5b5c4b1b9f7f95d0bc164a44ece04d2e20444973af19374497fadbf5ea9d4",
+      "bytes": 68090,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-scroll-100.jpg",
+      "sha256": "efbc0b9e2c065627906982d4d9d9ed3e7fb9bdfa4f1ac0dbb59191c14b917c20",
+      "bytes": 52188,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/768x1024-long.jpg",
+      "sha256": "3de6b63bbb97368de3fc50c43d5d82c9e22cd9b5421fb77b32ddbd64c2085097",
+      "bytes": 412605,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-top.jpg",
+      "sha256": "3efc9efd0c8d7300f8d5ab36f36dccfe0d1728c5dc2f9c95a783d432b7e0c312",
+      "bytes": 99981,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-scroll-25.jpg",
+      "sha256": "7a50330d7cf66788de13b2fccb1f78718551a88131016cb6979e08da19040d0c",
+      "bytes": 77948,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-scroll-50.jpg",
+      "sha256": "423bb7f6eedd0979a44895c93a6538e0159c45cb8d77bc40e53730fd001f3427",
+      "bytes": 76126,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-scroll-75.jpg",
+      "sha256": "980a2da34f28055ea6287b1cdbcd547162674f461914f2091e92d18bb257c6d4",
+      "bytes": 99224,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-scroll-100.jpg",
+      "sha256": "b8bbb2a850609052aabd64c067bff77dc3d4c05a997106d2e302e3a44f775936",
+      "bytes": 74729,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-long.jpg",
+      "sha256": "40d16e59f870c26c7dfbc4a2563ced947c9494c74448243123a689f52c1cc777",
+      "bytes": 510445,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-menu-open.jpg",
+      "sha256": "09415ca2283c5c6fbfb6698ac4888fd4b5157c709ef97cb12cdb7cc2aae6444b",
+      "bytes": 93869,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-focus.jpg",
+      "sha256": "250f404d30d4f45d4d49848fd236a0da78387af32a1c92c0cf03f8b68b101f24",
+      "bytes": 100895,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-hover.jpg",
+      "sha256": "a03bb57de3ed5492c4d12716ec3a52304d6c8c7449abe9f4f3e7a4b2208a56ad",
+      "bytes": 100779,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "hover"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-axe.json",
+      "sha256": "7006ff8f0e0221972762c8212936d19d265ac113604bbc20a7e69965a5074308",
+      "bytes": 1919205,
+      "kind": "axe-full",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-aria.yml",
+      "sha256": "3b9429222373ec88852eaae73dbe2aad58a90b521895f446d07476b2e9f3f45a",
+      "bytes": 29532,
+      "kind": "aria-snapshot",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-frame-entrance-400.jpg",
+      "sha256": "1805b1c331c8322462cb20420552aa54144ada240629b0d0595581f793b3d947",
+      "bytes": 94069,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-400"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-frame-entrance-900.jpg",
+      "sha256": "1805b1c331c8322462cb20420552aa54144ada240629b0d0595581f793b3d947",
+      "bytes": 94069,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-900"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-frame-entrance-1600.jpg",
+      "sha256": "1805b1c331c8322462cb20420552aa54144ada240629b0d0595581f793b3d947",
+      "bytes": 94069,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-1600"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-frame-entrance-2600.jpg",
+      "sha256": "1805b1c331c8322462cb20420552aa54144ada240629b0d0595581f793b3d947",
+      "bytes": 94069,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-2600"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-frame-entrance-4200.jpg",
+      "sha256": "fbf4024cba21a44c28ee2d7c17e0c24083e3114d9b8787065a100e49522c70aa",
+      "bytes": 96243,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-4200"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-reduced-motion-top.jpg",
+      "sha256": "5982e5d9323a28759b8d8f9eaa1a389b40bdd3952e2ac44343f74de0bc960677",
+      "bytes": 99307,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "reduced-motion-top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1440x900-dark-scheme-top.jpg",
+      "sha256": "2c811818095b93f1ab9d400cf30129836e231cb840d48cdb77c463bc7faa6109",
+      "bytes": 99741,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "dark-scheme-top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-top.jpg",
+      "sha256": "64bf83ef0fa0117a7fa762698eff45d8d1776868a85b92bfe4d2b146a9cdd057",
+      "bytes": 122105,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-scroll-25.jpg",
+      "sha256": "23d746731d58bd2acb0ea5dc503f304640a0bfc2a087414b6d9b4fdf9af367f6",
+      "bytes": 133919,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-scroll-50.jpg",
+      "sha256": "1eddc05efc6f04ab53878f49ed887a3593f02fafc0cc75ae7ccd14825da2decc",
+      "bytes": 91269,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-scroll-75.jpg",
+      "sha256": "562603e5e0a16fe7ecf9964c5dcceb430e83f9ff0962ed0ea1da12a8280486fd",
+      "bytes": 120636,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-scroll-100.jpg",
+      "sha256": "183144a2262f067b3a89c29d1df2ab1d90951cd531dbee591a574dd26afd0cb3",
+      "bytes": 101473,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/ref-009/home/20261002T161456Z/1920x1080-long.jpg",
+      "sha256": "d06eb449b0b12ff35d6a686fa0d56b75a4cdc4046339d177b58d3af5d92f37fb",
+      "bytes": 660186,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "long"
+    }
+  ],
+  "errors": []
+}

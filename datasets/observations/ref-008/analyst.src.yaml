@@ -1,0 +1,133 @@
+# Analyst observations — ref-008 Our World in Data (home + life-expectancy chart). Compiled by scripts/analyst.ts.
+# Screenshots inspected: home 1440-top, 390-top; chart 1440-top, 390-top. No page copy reproduced.
+items:
+  - key: home-first-read
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "First read is a centred two-line serif headline in gold on a deep navy band (with a faint world-map texture); second read is a wide search field directly below; third, a row of four outlined count pills (charts, topics, explorers, articles). A secondary band of pill-shaped 'popular pages' links sits between header and hero."
+    confidence: 0.9
+    assessment: strength
+    tags: [hero, search]
+  - key: home-content-grid
+    page: home
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "Below the hero, a four-column grid mixes content types: two bordered article cards with chart thumbnails, a list column of dated data updates, and a tinted newsletter panel with checkboxes and an email field. Cards use square corners and thin borders, not shadows."
+    confidence: 0.85
+    assessment: neutral
+    tags: [grid, density]
+  - key: mobile-transform-carousels
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "At 390 the header collapses to a menu icon, centred logo and one icon; the popular-pages pill row is clipped at the right edge (horizontal scroll strip); the four count pills collapse to one line of text; the card grid becomes a horizontal strip with the next card peeking at the edge."
+    confidence: 0.85
+    assessment: neutral
+    tags: [carousel, nav-mutation]
+  - key: kicker-labels
+    page: home
+    viewport: 1440x900
+    category: typography
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "Small uppercase, letter-spaced sans labels act as kickers above headlines (content type and recency); serif headlines; sans body text and UI. Italic serif for author lines."
+    confidence: 0.85
+    assessment: strength
+    tags: [kicker, pairing]
+  - key: chart-tool-layout
+    page: chart
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "The chart page is a tool: serif title, one-sentence definition, a segmented switch (table / map / line / bar), the line chart, a time slider with play control, source citation and download/share/full-screen actions; a right-hand panel lists selectable regions with their latest values and proportional background bars."
+    confidence: 0.9
+    assessment: strength
+    tags: [data-viz, controls]
+  - key: direct-labels
+    page: chart
+    viewport: cross-viewport
+    category: components
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top]
+    statement: "Series are labelled directly at the line ends in matching colours (no separate legend box), at both 1440 and 390; gridlines are light dashed lines; axis labels include units."
+    confidence: 0.9
+    assessment: strength
+    tags: [data-viz, labelling]
+  - key: chart-mobile-panel-to-button
+    page: chart
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "At 390 the region-selection side panel is replaced by an 'edit' button, the view switch becomes icon-only, the slider keeps play and both end years, and actions collapse to three icon buttons; the chart keeps nearly full width."
+    confidence: 0.9
+    assessment: strength
+    tags: [progressive-disclosure, mobile]
+  - key: table-alternative
+    page: chart
+    viewport: 1440x900
+    category: accessibility
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "A table view is offered as one of the four representations of the same data alongside line, map and bar views."
+    confidence: 0.9
+    assessment: strength
+    tags: [data-viz, alternative]
+  - key: why-direct-labels
+    page: chart
+    viewport: cross-viewport
+    category: components
+    type: INFERRED
+    based_on: [direct-labels, chart-tool-layout]
+    statement: "Direct end-of-line labels remove legend look-ups, which matters most when users compare several series quickly; they keep working at 390 because labels sit in the right margin rather than in a legend that would wrap. Appropriate for data-interaction tasks and dashboards."
+    confidence: 0.7
+    assessment: strength
+    tags: [data-viz]
+  - key: why-progressive-controls
+    page: chart
+    viewport: 390x844
+    category: responsive
+    type: INFERRED
+    based_on: [chart-mobile-panel-to-button, ref-008.responsive.chart-xvp-container-curve]
+    statement: "On small screens the data itself keeps priority and secondary controls move behind a button; the tool transforms rather than shrinking the desktop side panel. A pattern transferable to dashboards that need a read-mostly mobile view."
+    confidence: 0.7
+    assessment: strength
+    tags: [dashboard, mobile]
+  - key: why-serif-sans
+    page: home
+    viewport: cross-viewport
+    category: typography
+    type: INFERRED
+    based_on: [kicker-labels, ref-008.typography.home-1440-family-share, ref-008.typography.home-1440-display-family]
+    statement: "A serif display face for headlines with a neutral sans for body/UI signals a research publication (authority, editorial voice) while keeping dense UI legible; the display scale stays modest (24–32 px) because the page is a hub for many items, not a single message."
+    confidence: 0.6
+    assessment: neutral
+    tags: [pairing, density]
+  - key: a11y-gap-images-links
+    page: chart
+    viewport: cross-viewport
+    category: accessibility
+    type: INFERRED
+    based_on: [table-alternative, ref-008.accessibility.chart-1440-axe-by-impact, ref-008.accessibility.home-390-axe-by-impact]
+    statement: "Despite a table alternative, automated checks report critical image-alt and serious link-name/contrast issues on both pages; a data publication can be strong in information design yet weak in accessible naming. Information-design quality does not imply accessibility."
+    confidence: 0.75
+    assessment: weakness
+    tags: [axe, contrast]
+  - key: weight-cost
+    page: home
+    viewport: cross-viewport
+    category: performance
+    type: INFERRED
+    based_on: [home-content-grid, ref-008.performance.home-390-transfer-bytes]
+    statement: "Roughly 3 MB transferred for a hub page (chart thumbnails, scripts) in the lab; the visual restraint of the design does not by itself make a page light."
+    confidence: 0.6
+    assessment: trade-off
+    tags: [weight]

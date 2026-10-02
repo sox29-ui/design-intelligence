@@ -1,0 +1,425 @@
+{
+  "ref_id": "ref-007",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:15:40.075Z",
+  "notes": "Captured after a privacy-preserving cookie rejection, so a consent-confirmation strip sits above the header in all shots.",
+  "observations": [
+    {
+      "id": "ref-007.hierarchy.home-a-hero-first-read",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "hero-first-read",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        }
+      ],
+      "statement": "First read is a full-width saturated blue band holding a left-aligned bold statement; second read is a large search field directly beneath it inside the same band; third read is the list of popular tasks on white. Logo, Menu and Search toggles are small and quiet.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "hero",
+        "search"
+      ]
+    },
+    {
+      "id": "ref-007.components.home-a-search-as-primary-action",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "search-as-primary-action",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        }
+      ],
+      "statement": "The hero's primary action is a search input (label above, attached square search button), not a promotional call-to-action; it is fully inside the first viewport at both 390 and 1440.",
+      "confidence": 0.95,
+      "assessment": "strength",
+      "tags": [
+        "hero",
+        "search",
+        "task-first"
+      ]
+    },
+    {
+      "id": "ref-007.layout.home-a-desktop-restraint",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "desktop-restraint",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        }
+      ],
+      "statement": "At 1440 the hero text and search occupy roughly the left two thirds of a centred ~960–990 px container; the right third of the blue band is left empty. No imagery, illustration or decoration anywhere above the fold.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "whitespace",
+        "container"
+      ]
+    },
+    {
+      "id": "ref-007.components.home-a-link-list-pattern",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "link-list-pattern",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-focus.jpg",
+          "sha256": "b51a752796506e3eb2d479d586e0ebfa37722c0da69ca847ae1f695ab8a4e6ed"
+        }
+      ],
+      "statement": "Tasks and topics are presented as underlined text links with a short description, separated by hairline dividers and right-aligned chevrons; popular tasks use a circular arrow icon. Three columns at 1440, one at 390.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "links",
+        "lists"
+      ]
+    },
+    {
+      "id": "ref-007.components.home-a-mobile-menu-inline-panel",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "mobile-menu-inline-panel",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-menu-open.jpg",
+          "sha256": "8e5a1e1ad5ce33580dc79cef97eaf730229302c5aba83274151ee984834949da"
+        }
+      ],
+      "statement": "Opening Menu expands an in-flow panel below the header (no overlay, page not locked); the toggle switches to a pressed white state with an up-chevron; topics appear as a single-column bold link list.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "navigation",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-007.accessibility.home-a-focus-style",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "focus-style",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-focus.jpg",
+          "sha256": "b51a752796506e3eb2d479d586e0ebfa37722c0da69ca847ae1f695ab8a4e6ed"
+        }
+      ],
+      "statement": "Keyboard focus renders as a solid yellow background behind the link text plus a thick black underline — a high-contrast indicator that does not rely on the link colour.",
+      "confidence": 0.95,
+      "assessment": "strength",
+      "tags": [
+        "focus"
+      ]
+    },
+    {
+      "id": "ref-007.typography.home-a-single-family-hierarchy",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "single-family-hierarchy",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-menu-open.jpg",
+          "sha256": "8e5a1e1ad5ce33580dc79cef97eaf730229302c5aba83274151ee984834949da"
+        }
+      ],
+      "statement": "One sans-serif family in two weights carries every level of hierarchy; differentiation comes from size, weight, colour (blue links vs black text) and underlines. No uppercase labels, no tracking changes.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "type-system"
+      ]
+    },
+    {
+      "id": "ref-007.responsive.home-a-responsive-stacking",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "responsive-stacking",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        },
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "453d671e04e6e84f458abdd3d8e17acb0be27d275b2bfda4978ee3921bfd9ac1"
+        }
+      ],
+      "statement": "Mobile keeps desktop order and pattern; the composition stacks rather than transforms: headline wraps to four lines, columns collapse to one, header keeps the same Menu/Search toggles at every width.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "stacking"
+      ]
+    },
+    {
+      "id": "ref-007.layout.home-a-consent-strip-cost",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "390x844",
+      "category": "layout",
+      "property": "consent-strip-cost",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "b31d0eb7890b9fe2faa99bc550236d243360dfe4b9f0e8d10b70b44866ef6290"
+        }
+      ],
+      "statement": "The consent confirmation strip takes about one fifth of the first mobile viewport above the masthead, pushing the hero statement and search downward.",
+      "confidence": 0.85,
+      "assessment": "trade-off",
+      "tags": [
+        "consent",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-007.typography.task-a-task-page-reading",
+      "ref_id": "ref-007",
+      "page": "task",
+      "source_url": "https://www.gov.uk/vehicle-tax",
+      "capture_id": "20261002T161036Z",
+      "captured_at": "2026-10-02T16:10:36.694Z",
+      "viewport": "390x844",
+      "category": "typography",
+      "property": "task-page-reading",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-007/task/20261002T161036Z/390x844-top.jpg",
+          "sha256": "b406f8c2aebebff57ce7053fdd28b70260aae4642db2985525aa9c9aa84534b5"
+        }
+      ],
+      "statement": "The start page is a single reading column: breadcrumb, bold heading, short paragraphs, a bulleted list and inline links; no visual devices beyond type size, weight and link underline.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "content-design",
+        "reading"
+      ]
+    },
+    {
+      "id": "ref-007.hierarchy.home-a-why-search-hero",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "why-search-hero",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-007.hierarchy.home-a-hero-first-read"
+        },
+        {
+          "observation": "ref-007.components.home-a-search-as-primary-action"
+        }
+      ],
+      "statement": "Visitors arrive with a specific task, so the home page acts as a router: search and a list of the most requested tasks replace any narrative or brand storytelling. The pattern fits task-completion intent and high content volume; it would under-serve brand-expression or storytelling goals.",
+      "confidence": 0.75,
+      "assessment": "strength",
+      "tags": [
+        "user-intent"
+      ]
+    },
+    {
+      "id": "ref-007.typography.home-a-why-plain-type",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "why-plain-type",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-007.typography.home-a-single-family-hierarchy"
+        },
+        {
+          "observation": "ref-007.typography.home-1440-weights"
+        },
+        {
+          "observation": "ref-007.typography.home-390-body-size"
+        }
+      ],
+      "statement": "A single family with two weights and a large 19 px body keeps every page legible and consistent for a very broad audience; expressive typography would compete with task completion. Conditional on: public/task context, high content volume, broad audience.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "audience",
+        "legibility"
+      ]
+    },
+    {
+      "id": "ref-007.components.home-a-why-consistent-header",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "why-consistent-header",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-007.components.home-a-mobile-menu-inline-panel"
+        },
+        {
+          "observation": "ref-007.responsive.home-a-responsive-stacking"
+        },
+        {
+          "observation": "ref-007.responsive.home-xvp-header-toggles-curve"
+        }
+      ],
+      "statement": "Keeping the same Menu/Search toggles at all widths trades immediate visibility of topics on desktop for one learnable header pattern across devices; acceptable here because search is the primary route.",
+      "confidence": 0.55,
+      "assessment": "trade-off",
+      "tags": [
+        "navigation"
+      ]
+    },
+    {
+      "id": "ref-007.performance.home-a-consent-shift-hypothesis",
+      "ref_id": "ref-007",
+      "page": "home",
+      "source_url": "https://www.gov.uk/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.993Z",
+      "viewport": "1440x900",
+      "category": "performance",
+      "property": "consent-shift-hypothesis",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-007.layout.home-a-consent-strip-cost"
+        },
+        {
+          "observation": "ref-007.performance.home-1440-cls-before-interaction"
+        }
+      ],
+      "statement": "The pre-interaction layout shift measured at 1440 (0.23) is most likely caused by the consent strip being inserted above the masthead after first paint; even a utilitarian, accessibility-led site can fail CLS through consent UI.",
+      "confidence": 0.55,
+      "assessment": "weakness",
+      "tags": [
+        "cls",
+        "consent"
+      ]
+    }
+  ]
+}

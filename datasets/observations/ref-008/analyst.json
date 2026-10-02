@@ -1,0 +1,377 @@
+{
+  "ref_id": "ref-008",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:16:37.153Z",
+  "observations": [
+    {
+      "id": "ref-008.hierarchy.home-a-home-first-read",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "home-first-read",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/home/20261002T161149Z/1440x900-top.jpg",
+          "sha256": "40e7910430d8979565c7d45a37cbbe010681216ba64f6634a618e1841a80603e"
+        }
+      ],
+      "statement": "First read is a centred two-line serif headline in gold on a deep navy band (with a faint world-map texture); second read is a wide search field directly below; third, a row of four outlined count pills (charts, topics, explorers, articles). A secondary band of pill-shaped 'popular pages' links sits between header and hero.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "hero",
+        "search"
+      ]
+    },
+    {
+      "id": "ref-008.layout.home-a-home-content-grid",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "home-content-grid",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/home/20261002T161149Z/1440x900-top.jpg",
+          "sha256": "40e7910430d8979565c7d45a37cbbe010681216ba64f6634a618e1841a80603e"
+        }
+      ],
+      "statement": "Below the hero, a four-column grid mixes content types: two bordered article cards with chart thumbnails, a list column of dated data updates, and a tinted newsletter panel with checkboxes and an email field. Cards use square corners and thin borders, not shadows.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "grid",
+        "density"
+      ]
+    },
+    {
+      "id": "ref-008.responsive.home-a-mobile-transform-carousels",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-transform-carousels",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/home/20261002T161149Z/390x844-top.jpg",
+          "sha256": "d1aaaa41a05a15ae73a9b8153c8453093a3480c6d2ad57bf56d8efdba0bc4e0f"
+        }
+      ],
+      "statement": "At 390 the header collapses to a menu icon, centred logo and one icon; the popular-pages pill row is clipped at the right edge (horizontal scroll strip); the four count pills collapse to one line of text; the card grid becomes a horizontal strip with the next card peeking at the edge.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "carousel",
+        "nav-mutation"
+      ]
+    },
+    {
+      "id": "ref-008.typography.home-a-kicker-labels",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "kicker-labels",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/home/20261002T161149Z/1440x900-top.jpg",
+          "sha256": "40e7910430d8979565c7d45a37cbbe010681216ba64f6634a618e1841a80603e"
+        }
+      ],
+      "statement": "Small uppercase, letter-spaced sans labels act as kickers above headlines (content type and recency); serif headlines; sans body text and UI. Italic serif for author lines.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "kicker",
+        "pairing"
+      ]
+    },
+    {
+      "id": "ref-008.components.chart-a-chart-tool-layout",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "chart-tool-layout",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-top.jpg",
+          "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5"
+        }
+      ],
+      "statement": "The chart page is a tool: serif title, one-sentence definition, a segmented switch (table / map / line / bar), the line chart, a time slider with play control, source citation and download/share/full-screen actions; a right-hand panel lists selectable regions with their latest values and proportional background bars.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "data-viz",
+        "controls"
+      ]
+    },
+    {
+      "id": "ref-008.components.chart-a-direct-labels",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "direct-labels",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-top.jpg",
+          "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5"
+        },
+        {
+          "artifact": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-top.jpg",
+          "sha256": "9c16dd3cff4e1b20238dbcf99186341a6471b56acaa9e33fdae07de0a36f813a"
+        }
+      ],
+      "statement": "Series are labelled directly at the line ends in matching colours (no separate legend box), at both 1440 and 390; gridlines are light dashed lines; axis labels include units.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "data-viz",
+        "labelling"
+      ]
+    },
+    {
+      "id": "ref-008.responsive.chart-a-chart-mobile-panel-to-button",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "chart-mobile-panel-to-button",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/chart/20261002T161318Z/390x844-top.jpg",
+          "sha256": "9c16dd3cff4e1b20238dbcf99186341a6471b56acaa9e33fdae07de0a36f813a"
+        }
+      ],
+      "statement": "At 390 the region-selection side panel is replaced by an 'edit' button, the view switch becomes icon-only, the slider keeps play and both end years, and actions collapse to three icon buttons; the chart keeps nearly full width.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "progressive-disclosure",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-008.accessibility.chart-a-table-alternative",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "1440x900",
+      "category": "accessibility",
+      "property": "table-alternative",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-008/chart/20261002T161318Z/1440x900-top.jpg",
+          "sha256": "ef623a75b18c1f318418e38e8e6b8da6336357a17c9485f477beb90ddf60adf5"
+        }
+      ],
+      "statement": "A table view is offered as one of the four representations of the same data alongside line, map and bar views.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "data-viz",
+        "alternative"
+      ]
+    },
+    {
+      "id": "ref-008.components.chart-a-why-direct-labels",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "cross-viewport",
+      "category": "components",
+      "property": "why-direct-labels",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-008.components.chart-a-direct-labels"
+        },
+        {
+          "observation": "ref-008.components.chart-a-chart-tool-layout"
+        }
+      ],
+      "statement": "Direct end-of-line labels remove legend look-ups, which matters most when users compare several series quickly; they keep working at 390 because labels sit in the right margin rather than in a legend that would wrap. Appropriate for data-interaction tasks and dashboards.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "data-viz"
+      ]
+    },
+    {
+      "id": "ref-008.responsive.chart-a-why-progressive-controls",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "why-progressive-controls",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-008.responsive.chart-a-chart-mobile-panel-to-button"
+        },
+        {
+          "observation": "ref-008.responsive.chart-xvp-container-curve"
+        }
+      ],
+      "statement": "On small screens the data itself keeps priority and secondary controls move behind a button; the tool transforms rather than shrinking the desktop side panel. A pattern transferable to dashboards that need a read-mostly mobile view.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "dashboard",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-008.typography.home-a-why-serif-sans",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "why-serif-sans",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-008.typography.home-a-kicker-labels"
+        },
+        {
+          "observation": "ref-008.typography.home-1440-family-share"
+        },
+        {
+          "observation": "ref-008.typography.home-1440-display-family"
+        }
+      ],
+      "statement": "A serif display face for headlines with a neutral sans for body/UI signals a research publication (authority, editorial voice) while keeping dense UI legible; the display scale stays modest (24–32 px) because the page is a hub for many items, not a single message.",
+      "confidence": 0.6,
+      "assessment": "neutral",
+      "tags": [
+        "pairing",
+        "density"
+      ]
+    },
+    {
+      "id": "ref-008.accessibility.chart-a-a11y-gap-images-links",
+      "ref_id": "ref-008",
+      "page": "chart",
+      "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+      "capture_id": "20261002T161318Z",
+      "captured_at": "2026-10-02T16:13:18.085Z",
+      "viewport": "cross-viewport",
+      "category": "accessibility",
+      "property": "a11y-gap-images-links",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-008.accessibility.chart-a-table-alternative"
+        },
+        {
+          "observation": "ref-008.accessibility.chart-1440-axe-by-impact"
+        },
+        {
+          "observation": "ref-008.accessibility.home-390-axe-by-impact"
+        }
+      ],
+      "statement": "Despite a table alternative, automated checks report critical image-alt and serious link-name/contrast issues on both pages; a data publication can be strong in information design yet weak in accessible naming. Information-design quality does not imply accessibility.",
+      "confidence": 0.75,
+      "assessment": "weakness",
+      "tags": [
+        "axe",
+        "contrast"
+      ]
+    },
+    {
+      "id": "ref-008.performance.home-a-weight-cost",
+      "ref_id": "ref-008",
+      "page": "home",
+      "source_url": "https://ourworldindata.org/",
+      "capture_id": "20261002T161149Z",
+      "captured_at": "2026-10-02T16:11:49.462Z",
+      "viewport": "cross-viewport",
+      "category": "performance",
+      "property": "weight-cost",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-008.layout.home-a-home-content-grid"
+        },
+        {
+          "observation": "ref-008.performance.home-390-transfer-bytes"
+        }
+      ],
+      "statement": "Roughly 3 MB transferred for a hub page (chart thumbnails, scripts) in the lab; the visual restraint of the design does not by itself make a page light.",
+      "confidence": 0.6,
+      "assessment": "trade-off",
+      "tags": [
+        "weight"
+      ]
+    }
+  ]
+}

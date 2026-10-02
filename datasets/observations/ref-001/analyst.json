@@ -1,0 +1,366 @@
+{
+  "ref_id": "ref-001",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-02T16:20:35.751Z",
+  "notes": "CAPTURE LIMITATION: the WebGL hero did not render in headless Chromium (software GL) within the capture window — top-of-page shots show only the background texture and a small loading indicator. Hero composition is therefore UNVERIFIED; observations below cover chrome, later sections and behaviour.",
+  "observations": [
+    {
+      "id": "ref-001.motion.home-a-preloader-gate",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "preloader-gate",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-frame-entrance-4200.jpg",
+          "sha256": "e94096090c945a2e25d8906e9b9fdbad9dcf46158ce3050f46b67342407ed4ab"
+        }
+      ],
+      "statement": "A full-screen saturated lime preloader with a small centred label still covers the page 4.2 s after navigation began (lab, proxied network, software rendering).",
+      "confidence": 0.85,
+      "assessment": "weakness",
+      "tags": [
+        "preloader",
+        "entrance"
+      ]
+    },
+    {
+      "id": "ref-001.hierarchy.home-a-chrome-hierarchy",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "chrome-hierarchy",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-top.jpg",
+          "sha256": "40ed7b6d7f2d7dcbf4eac3f60787aa623b5871e587125df95ddfc1945e473f46"
+        }
+      ],
+      "statement": "With the hero empty in capture, the strongest element is the lime 'store' pill top-right; the stacked serif/sans wordmark top-left and a monogram centre-top are secondary; a small outlined 'next race' card sits bottom-left. Header elements float over the page without a bar.",
+      "confidence": 0.75,
+      "assessment": "neutral",
+      "tags": [
+        "header",
+        "accent"
+      ]
+    },
+    {
+      "id": "ref-001.color.home-a-lime-identity-accent",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "lime-identity-accent",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-scroll-50.jpg",
+          "sha256": "048cc3acbc9d57d952091001f26f4bea8afad08886c0aaf9715eec2f35c6da51"
+        },
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-scroll-50.jpg",
+          "sha256": "c61958e87d94a0818291a0db91cdddbd1afc6432a6c1e595b0177a5162b3649e"
+        },
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-scroll-25.jpg",
+          "sha256": "ebd27e2307995330960e38ebbe1b4d3429c9d0df064b6d4af26a3d11f8937689"
+        }
+      ],
+      "statement": "The neon lime used for CTAs, year labels and a handwritten script overlay is the same hue as the driver's helmet livery visible in the photography; lime appears in small doses against near-black, warm off-white and olive-grey grounds.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "brand-colour",
+        "accent"
+      ]
+    },
+    {
+      "id": "ref-001.layout.home-a-collage-composition",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "collage-composition",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-scroll-25.jpg",
+          "sha256": "ebd27e2307995330960e38ebbe1b4d3429c9d0df064b6d4af26a3d11f8937689"
+        }
+      ],
+      "statement": "Mid-page, photographs of different sizes are scattered asymmetrically across the width with small uppercase place/year captions, like a scrapbook; text blocks sit partly off-canvas while animating in.",
+      "confidence": 0.8,
+      "assessment": "neutral",
+      "tags": [
+        "asymmetry",
+        "editorial"
+      ]
+    },
+    {
+      "id": "ref-001.typography.home-a-display-type-mix",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "1440x900",
+      "category": "typography",
+      "property": "display-type-mix",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/1440x900-scroll-50.jpg",
+          "sha256": "048cc3acbc9d57d952091001f26f4bea8afad08886c0aaf9715eec2f35c6da51"
+        },
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-scroll-50.jpg",
+          "sha256": "c61958e87d94a0818291a0db91cdddbd1afc6432a6c1e595b0177a5162b3649e"
+        }
+      ],
+      "statement": "Display moments mix a high-contrast serif in large uppercase, a heavy grotesk, and a lime handwritten script laid over the serif; labels are tiny uppercase sans.",
+      "confidence": 0.8,
+      "assessment": "neutral",
+      "tags": [
+        "display",
+        "pairing",
+        "script"
+      ]
+    },
+    {
+      "id": "ref-001.responsive.home-a-mobile-grid-cards",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-grid-cards",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-scroll-50.jpg",
+          "sha256": "c61958e87d94a0818291a0db91cdddbd1afc6432a6c1e595b0177a5162b3649e"
+        }
+      ],
+      "statement": "At 390 the helmet gallery becomes a two-column grid of outlined cards with a chamfered corner notch, label bottom-right with the year in lime; heading block splits into two columns (title left, short paragraph right) even at phone width.",
+      "confidence": 0.8,
+      "assessment": "neutral",
+      "tags": [
+        "cards",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ref-001.responsive.home-a-mobile-hero-empty",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-hero-empty",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-top.jpg",
+          "sha256": "a1aa39b3b14bb8eb867ff1dbe0c50d59aaf10b4012933870990de50db692598d"
+        },
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-menu-open.jpg",
+          "sha256": "b58a64f53806392c2d6ae3399748a46ea905f1b15e95e3f4ba71afed043fbf14"
+        }
+      ],
+      "statement": "At 390 the first viewport shows the centred wordmark and tagline over the texture, a lime store button top-left, a menu toggle top-right and a lime touch-gesture button bottom-right; the main visual area is empty in capture.",
+      "confidence": 0.75,
+      "assessment": "neutral",
+      "tags": [
+        "mobile",
+        "hero"
+      ]
+    },
+    {
+      "id": "ref-001.components.home-a-menu-probe-inconclusive",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "menu-probe-inconclusive",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "interaction",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/ref-001/home/20261002T160918Z/390x844-menu-open.jpg",
+          "sha256": "b58a64f53806392c2d6ae3399748a46ea905f1b15e95e3f4ba71afed043fbf14"
+        }
+      ],
+      "statement": "Activating the top-right toggle produced no visible menu in capture and aria-expanded stayed false; the probe may have hit a different control. Mobile navigation behaviour is UNVERIFIED.",
+      "confidence": 0.6,
+      "assessment": "neutral",
+      "tags": [
+        "navigation",
+        "unverified"
+      ]
+    },
+    {
+      "id": "ref-001.color.home-a-why-lime-justified",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "why-lime-justified",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-001.color.home-a-lime-identity-accent"
+        },
+        {
+          "observation": "ref-001.color.home-1440-button-backgrounds"
+        },
+        {
+          "observation": "ref-001.color.home-1440-background-palette"
+        }
+      ],
+      "statement": "Dark ground + neon lime is not a generic 'premium' choice here: the lime is the subject's personal livery colour and appears in the photographs, so the accent carries identity. The same pairing without such a brand anchor would be an unjustified generic signature.",
+      "confidence": 0.75,
+      "assessment": "strength",
+      "tags": [
+        "anti-pattern-boundary",
+        "brand"
+      ]
+    },
+    {
+      "id": "ref-001.performance.home-a-why-spectacle-cost",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "cross-viewport",
+      "category": "performance",
+      "property": "why-spectacle-cost",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-001.motion.home-a-preloader-gate"
+        },
+        {
+          "observation": "ref-001.performance.home-1440-transfer-bytes"
+        },
+        {
+          "observation": "ref-001.performance.home-1440-long-tasks"
+        },
+        {
+          "observation": "ref-001.implementation.home-1440-canvas-contexts"
+        }
+      ],
+      "statement": "WebGL scenes, smooth-scroll and Rive animations (≈8 MB transferred, tens of seconds of long tasks in the lab) are acceptable for a fan-facing personal brand whose goal is immersion, but the same budget would be indefensible for task or conversion pages; the preloader hides the cost rather than removing it.",
+      "confidence": 0.7,
+      "assessment": "trade-off",
+      "tags": [
+        "budget",
+        "webgl"
+      ]
+    },
+    {
+      "id": "ref-001.accessibility.home-a-why-low-contrast-captions",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "cross-viewport",
+      "category": "accessibility",
+      "property": "why-low-contrast-captions",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-001.layout.home-a-collage-composition"
+        },
+        {
+          "observation": "ref-001.color.home-1440-low-contrast-normal-share"
+        },
+        {
+          "observation": "ref-001.accessibility.home-1440-axe-by-impact"
+        }
+      ],
+      "statement": "About 38% of measured text falls below 4.5:1, mostly tiny pale captions over light or photographic grounds; the scrapbook aesthetic is bought with legibility of secondary text.",
+      "confidence": 0.7,
+      "assessment": "weakness",
+      "tags": [
+        "contrast",
+        "captions"
+      ]
+    },
+    {
+      "id": "ref-001.motion.home-a-reduced-motion-partial",
+      "ref_id": "ref-001",
+      "page": "home",
+      "source_url": "https://landonorris.com/",
+      "capture_id": "20261002T160918Z",
+      "captured_at": "2026-10-02T16:09:18.961Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "reduced-motion-partial",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "ref-001.motion.home-1440-reduced-motion-response"
+        }
+      ],
+      "statement": "The site queries prefers-reduced-motion in JavaScript and its animation-frame activity drops by roughly 80% under the reduce setting, so reduced motion is partially honoured even on a motion-heavy build.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "reduced-motion"
+      ]
+    }
+  ]
+}
