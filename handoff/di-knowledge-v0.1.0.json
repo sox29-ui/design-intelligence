@@ -220,11 +220,400 @@
         ".claude/skills/design-intelligence/scripts/inspect-page.ts"
       ],
       "type": "tooling"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": "sameness 0.704 (treatment), 0.486 (control)",
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0009",
+      "motivation": {
+        "evidence": [
+          "evals/results/cycle-01/automated.json#diversity",
+          "evals/results/cycle-01/REPORT.md#the-house-style-problem"
+        ],
+        "recurrence": "all 8 DI outputs used light paper-like grounds and small radii; critics described 7 of 8 DI ideas (1 of 9 baseline) with paper/ink/ledger/print/rules vocabulary across briefs A–D; baseline brief A was dark in 3/3 runs, DI in 0/2.",
+        "source": "eval-failure"
+      },
+      "predicted_effect": "Lower cross-brief sameness without losing the measured gains (gates, signatures, consistency); to be checked with the cross-brief diversity metric (cc-0010) and a per-cycle side-by-side human review.",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "Counter DI's house style — require that the three directions differ in scheme, material metaphor and type voice; add an explicit \"is this DI's default look?\" check (light paper, ink, hairline rules, ledger/print metaphor, small radii) to the anti-pattern review, and allow dark or expressive directions when the brief's context supports them.",
+      "targets": [
+        ".claude/skills/design-intelligence/SKILL.md",
+        ".claude/skills/design-intelligence/workflows/create.md",
+        "process.distinct-directions"
+      ],
+      "type": "skill-behavior"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": null,
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0010",
+      "motivation": {
+        "evidence": [
+          "evals/results/cycle-01/REPORT.md#the-house-style-problem"
+        ],
+        "recurrence": "cycle 01 (the only cycle).",
+        "source": "eval-failure"
+      },
+      "predicted_effect": "The benchmark rewards brief-specific identity instead of only per-brief polish.",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "Make cross-brief diversity a scored outcome — per-brief critics cannot see a house style. Add a cross-brief critic pass (one reviewer sees one output per brief from the same condition, blind) and keep the automated sameness metric (fonts, palette, scheme, radius) with a target that DI must not exceed the baseline.",
+      "targets": [
+        "evals/rubrics/scorecard.yaml",
+        "scripts/score-benchmark.ts",
+        "evals/rubrics/critic-prompt.md"
+      ],
+      "type": "eval"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": null,
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0011",
+      "motivation": {
+        "evidence": [
+          "evals/results/cycle-01/RUNLOG.md",
+          "evals/results/cycle-01/critic-D.json",
+          "evals/results/cycle-01/critic-B.json"
+        ],
+        "recurrence": "all four critic runs noted missing states or truncated captures; two baseline agents named themselves \"the control run\".",
+        "source": "eval-failure"
+      },
+      "predicted_effect": "An effect estimate that does not depend on the verifier's own report or on condition awareness.",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "Reduce benchmark confounds — (1) run the critic twice, with and without the automated report, because DI runs optimise against the same verifier whose report the critic sees; (2) hide condition names from prompt files and output paths; (3) capture full-length pages and interaction states (selected rows, open panels) for the critic; (4) generate both conditions in one session so skill discovery cannot differ.",
+      "targets": [
+        "evals/harness/PROTOCOL.md",
+        "scripts/score-benchmark.ts"
+      ],
+      "type": "eval"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": null,
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0012",
+      "motivation": {
+        "evidence": [
+          "handoff/INTEGRATION.md#3-selecting-rules-for-a-task-the-decision-interface"
+        ],
+        "recurrence": "found while preparing the Framework handoff.",
+        "source": "tooling-audit"
+      },
+      "predicted_effect": "Deterministic rule selection by the Framework without a translation table.",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "Unify the context vocabulary — SKILL.md lists language/direction as ltr · rtl · bilingual while rules use latin · ar · bilingual; pick one set, update SKILL.md, the export vocabulary and the matcher together.",
+      "targets": [
+        ".claude/skills/design-intelligence/SKILL.md",
+        "evals/routing/cases.yaml"
+      ],
+      "type": "skill-behavior"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": null,
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0013",
+      "motivation": {
+        "evidence": [
+          "evals/results/cycle-01/critic-A.json",
+          "evals/results/cycle-01/critic-C.json",
+          "evals/results/cycle-01/critic-D.json"
+        ],
+        "recurrence": "three of four critics.",
+        "source": "critic-finding"
+      },
+      "predicted_effect": "Brief fidelity can be judged on the whole page.",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "Long screenshots stop before the end of tall pages (critics saw 45–85 % of some pages); capture the full height (tiled if needed) so footers and lower sections can be reviewed.",
+      "targets": [
+        ".claude/skills/design-intelligence/scripts/inspect-page.ts"
+      ],
+      "type": "tooling"
     }
   ],
   "di_version": "0.1.0",
   "evaluation": {
-    "benchmark_cycle_01": null,
+    "benchmark_cycle_01": {
+      "byBrief": {
+        "A": {
+          "control": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 75.2,
+            "dims": {
+              "accessibility": 3.67,
+              "brief_fidelity": 3.83,
+              "hierarchy_usability": 3.83,
+              "originality_art_direction": 3.67,
+              "performance": 3.83,
+              "responsive_quality": 3.83,
+              "system_consistency": 3.17
+            },
+            "kb": 161,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.99,
+            "meanRank": 4,
+            "n": 3,
+            "signaturesPresent": 3,
+            "unjustifiedSignatures": 1.33
+          },
+          "treatment": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 85,
+            "dims": {
+              "accessibility": 4.5,
+              "brief_fidelity": 4.25,
+              "hierarchy_usability": 4.5,
+              "originality_art_direction": 4,
+              "performance": 4.25,
+              "responsive_quality": 4,
+              "system_consistency": 4.25
+            },
+            "kb": 148.8,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.99,
+            "meanRank": 1.5,
+            "n": 2,
+            "signaturesPresent": 0.5,
+            "unjustifiedSignatures": 0
+          }
+        },
+        "B": {
+          "control": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 69.8,
+            "dims": {
+              "accessibility": 3.25,
+              "brief_fidelity": 3.75,
+              "hierarchy_usability": 3.75,
+              "originality_art_direction": 2.75,
+              "performance": 4,
+              "responsive_quality": 3.5,
+              "system_consistency": 2.75
+            },
+            "kb": 171.4,
+            "lhAccessibility": 0.99,
+            "lhPerformance": 0.95,
+            "meanRank": 3.5,
+            "n": 2,
+            "signaturesPresent": 1,
+            "unjustifiedSignatures": 0
+          },
+          "treatment": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 82.8,
+            "dims": {
+              "accessibility": 4.5,
+              "brief_fidelity": 4.25,
+              "hierarchy_usability": 4.25,
+              "originality_art_direction": 3.75,
+              "performance": 4,
+              "responsive_quality": 4,
+              "system_consistency": 4.25
+            },
+            "kb": 173.8,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.98,
+            "meanRank": 1.5,
+            "n": 2,
+            "signaturesPresent": 0,
+            "unjustifiedSignatures": 0
+          }
+        },
+        "C": {
+          "control": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 69,
+            "dims": {
+              "accessibility": 3,
+              "brief_fidelity": 4,
+              "hierarchy_usability": 3.5,
+              "originality_art_direction": 3,
+              "performance": 3.5,
+              "responsive_quality": 3.5,
+              "system_consistency": 2.5
+            },
+            "kb": 254,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.96,
+            "meanRank": 3.5,
+            "n": 2,
+            "signaturesPresent": 2.5,
+            "unjustifiedSignatures": 2.5
+          },
+          "treatment": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 81.8,
+            "dims": {
+              "accessibility": 4.5,
+              "brief_fidelity": 4,
+              "hierarchy_usability": 4,
+              "originality_art_direction": 4,
+              "performance": 4.5,
+              "responsive_quality": 3.75,
+              "system_consistency": 4.5
+            },
+            "kb": 235.3,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.99,
+            "meanRank": 1.5,
+            "n": 2,
+            "signaturesPresent": 0,
+            "unjustifiedSignatures": 0
+          }
+        },
+        "D": {
+          "control": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 75.5,
+            "dims": {
+              "accessibility": 4,
+              "brief_fidelity": 4,
+              "hierarchy_usability": 4,
+              "originality_art_direction": 4,
+              "performance": 3,
+              "responsive_quality": 3.5,
+              "system_consistency": 3
+            },
+            "kb": 251.7,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.83,
+            "meanRank": 3.5,
+            "n": 2,
+            "signaturesPresent": 1,
+            "unjustifiedSignatures": 0
+          },
+          "treatment": {
+            "automatedGateFailures": 0,
+            "axeSeriousCritical": 0,
+            "criticGateFailures": 0,
+            "criticTotal": 85.5,
+            "dims": {
+              "accessibility": 5,
+              "brief_fidelity": 4,
+              "hierarchy_usability": 4.5,
+              "originality_art_direction": 4,
+              "performance": 4.5,
+              "responsive_quality": 4,
+              "system_consistency": 4.5
+            },
+            "kb": 326.9,
+            "lhAccessibility": 1,
+            "lhPerformance": 0.99,
+            "meanRank": 1.5,
+            "n": 2,
+            "signaturesPresent": 0.5,
+            "unjustifiedSignatures": 0
+          }
+        }
+      },
+      "byCondition": {
+        "control": {
+          "automatedGateFailures": 0,
+          "axeSeriousCritical": 0,
+          "criticGateFailures": 0,
+          "criticTotal": 72.7,
+          "dims": {
+            "accessibility": 3.5,
+            "brief_fidelity": 3.89,
+            "hierarchy_usability": 3.78,
+            "originality_art_direction": 3.39,
+            "performance": 3.61,
+            "responsive_quality": 3.61,
+            "system_consistency": 2.89
+          },
+          "kb": 204.1,
+          "lhAccessibility": 1,
+          "lhPerformance": 0.94,
+          "meanRank": 3.67,
+          "n": 9,
+          "signaturesPresent": 2,
+          "unjustifiedSignatures": 1
+        },
+        "treatment": {
+          "automatedGateFailures": 0,
+          "axeSeriousCritical": 0,
+          "criticGateFailures": 0,
+          "criticTotal": 83.8,
+          "dims": {
+            "accessibility": 4.63,
+            "brief_fidelity": 4.13,
+            "hierarchy_usability": 4.31,
+            "originality_art_direction": 3.94,
+            "performance": 4.31,
+            "responsive_quality": 3.94,
+            "system_consistency": 4.38
+          },
+          "kb": 221.2,
+          "lhAccessibility": 1,
+          "lhPerformance": 0.99,
+          "meanRank": 1.5,
+          "n": 8,
+          "signaturesPresent": 0.25,
+          "unjustifiedSignatures": 0
+        }
+      },
+      "diversity": {
+        "control": {
+          "crossBriefPairs": 12,
+          "meanSameness": 0.486
+        },
+        "treatment": {
+          "crossBriefPairs": 12,
+          "meanSameness": 0.704
+        }
+      }
+    },
     "freeze_commit": "e012194",
     "holdout": {
       "byConfidence": {
@@ -6452,7 +6841,7 @@
     "name": "design-intelligence",
     "version": "0.1.0"
   },
-  "source_commit": "d54be0fb95de63e350288e63ad36f9f51f79cd60",
+  "source_commit": "054db8a284f2a9362274ce0fc838c122cb5bfc0d",
   "sources": [
     {
       "accessed": "2026-10-02",

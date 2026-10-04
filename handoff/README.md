@@ -4,7 +4,8 @@ This folder is the entry point for moving **DI (Design Intelligence)** into the 
 
 | Item | Where |
 |---|---|
-| Knowledge export (rules, provenance, corpus, candidates, evaluation summaries) | [`di-knowledge-v0.1.0.json`](di-knowledge-v0.1.0.json) — schema [`../schemas/knowledge-export.schema.json`](../schemas/knowledge-export.schema.json) |
+| Knowledge export (rules, provenance, corpus, candidates, evaluation summaries) | [`di-knowledge-v0.1.0.json`](di-knowledge-v0.1.0.json) (≈ 0.2 MB) — schema [`../schemas/knowledge-export.schema.json`](../schemas/knowledge-export.schema.json) |
+| Same, plus all 5,534 observations (for "why" answers and re-validation) | [`di-knowledge-v0.1.0.full.json`](di-knowledge-v0.1.0.full.json) (≈ 4.8 MB) |
 | Integration guide (components, APIs, data contracts, migration steps) | [`INTEGRATION.md`](INTEGRATION.md) |
 | File manifest with checksums, grouped by component | [`MANIFEST.json`](MANIFEST.json) |
 | Packaged skill (deterministic ZIP) | [`design-intelligence-v0.1.0.zip`](design-intelligence-v0.1.0.zip) (+ `.sha256`) |
