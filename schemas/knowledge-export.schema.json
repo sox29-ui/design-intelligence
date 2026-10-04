@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://di.local/schemas/knowledge-export.schema.json",
+  "title": "DI knowledge export (one self-contained JSON document per DI version)",
+  "type": "object",
+  "required": ["format", "format_version", "di_version", "source_commit", "skill", "vocabulary", "rules", "references", "sources", "candidates", "evaluation"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "di-knowledge" },
+    "format_version": { "const": 1 },
+    "di_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "source_commit": { "type": "string", "description": "Git commit the knowledge was exported from (rules are frozen at the release commit named in evaluation.freeze_commit)." },
+    "skill": {
+      "type": "object",
+      "required": ["name", "version", "description", "entrypoint"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "description": { "type": "string" },
+        "entrypoint": { "type": "string" }
+      }
+    },
+    "vocabulary": {
+      "type": "object",
+      "description": "Closed value lists. `context` keys are what rule `when` clauses are conditioned on.",
+      "required": ["context", "kinds", "statuses", "confidence", "domains", "depends_on", "evidence_classes", "compiled_statuses"],
+      "additionalProperties": false,
+      "properties": {
+        "context": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
+        "kinds": { "type": "array", "items": { "type": "string" } },
+        "statuses": { "type": "array", "items": { "type": "string" } },
+        "compiled_statuses": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "array", "items": { "type": "string" } },
+        "domains": { "type": "array", "items": { "type": "string" } },
+        "depends_on": { "type": "array", "items": { "type": "string" } },
+        "evidence_classes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "domain", "title", "status", "compiled", "confidence", "statement", "when", "consider", "verify", "avoid_when", "evidence", "history"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "domain": { "type": "string" },
+          "title": { "type": "string" },
+          "status": { "type": "string" },
+          "compiled": { "type": "boolean", "description": "true when the rule is part of the shipped skill guidance" },
+          "confidence": { "type": "string" },
+          "statement": { "type": "string" },
+          "when": { "type": "object" },
+          "consider": { "type": "array", "items": { "type": "string" } },
+          "verify": { "type": "array", "items": { "type": "string" } },
+          "avoid_when": { "type": "array", "items": { "type": "string" } },
+          "evidence": { "type": "object" },
+          "history": { "type": "array" }
+        }
+      }
+    },
+    "references": { "type": "array", "items": { "type": "object", "required": ["id", "name", "url", "split"] } },
+    "sources": { "type": "array", "items": { "type": "object", "required": ["id"] } },
+    "candidates": { "type": "array", "items": { "type": "object", "required": ["id", "type", "summary"] } },
+    "evaluation": { "type": "object" },
+    "observations": { "type": "array", "description": "Optional (--with-observations): every VERIFIED/OBSERVED/INFERRED observation, without raw capture data." }
+  }
+}
