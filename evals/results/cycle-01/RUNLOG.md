@@ -21,3 +21,6 @@ Compliance with "work only inside OUTPUT_DIR" is **self-reported, not enforced**
 | A-2 | treatment | 388,589 | 93 | 42.7 min | Skill files only (audit). Applied the cultural-home-page exception to keep a 4.7× title; reports the verifier console-error artifact (cc-0008). `.di-verify/` not copied. |
 | D-2 | treatment | 405,813 | 118 | 47.8 min | Skill files only (audit). Self-reported slip: one command copied a temporary file into the skill's `scripts/` folder and deleted it in the same command; verified afterwards — the skill folder is identical to the v0.1.0 release (no diff, no extra files). Rejected the giant-type cover as a generic signature. `.di-verify/` not copied. |
 | B-2 | treatment | 412,829 | 82 | 50.4 min | Skill files only (audit); reports one directory listing of the bench folder at the start (names only — control folders and prompt files were visible as names, not opened). `.di-verify/` not copied. |
+| C-2 | treatment | 501,159 | 127 | 68.5 min | Skill files only (audit); reports the verifier console-error artifact (cc-0008). `.di-verify/` not copied. |
+
+**All generations complete (2026-10-04 ~10:25 UTC):** 9 control, 8 treatment. Skill folder identical to the v0.1.0 release at the end of generation (`git diff e012194 -- .claude/skills` empty). Scoring runs sequentially afterwards with no other jobs on the container.
