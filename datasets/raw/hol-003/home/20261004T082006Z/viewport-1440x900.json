@@ -1,0 +1,2385 @@
+{
+  "viewport": {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "mobileEmulation": false,
+    "touch": false,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0,
+    "shifts": 0,
+    "atMs": 12141
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 9960,
+    "endHeight": 9960,
+    "reachedY": 9060,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 4698,
+    "document": {
+      "lang": "en",
+      "dirAttr": null,
+      "dirComputed": "ltr",
+      "bodyDir": "ltr",
+      "titleLength": 43,
+      "metaViewport": "width=device-width, height=device-height, initial-scale=1, viewport-fit=cover",
+      "themeColor": "#08090a",
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "docHeight": 9960,
+      "docWidth": 1440,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+        "size": 16,
+        "lineHeight": "24px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "auto"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loading",
+      "declaredFaces": 3,
+      "loadedFaces": 2,
+      "loadedFamilies": [
+        "Inter Variable",
+        "Berkeley Mono"
+      ],
+      "loadedDetail": [
+        {
+          "family": "Inter Variable",
+          "weight": "100 900",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Berkeley Mono",
+          "weight": "100 900",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 3
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 632,
+      "totalChars": 8349,
+      "scriptChars": {
+        "arabic": 0,
+        "latin": 6763,
+        "westDigits": 340,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 2,
+      "familyShare": {
+        "Inter Variable": 0.829,
+        "Berkeley Mono": 0.171
+      },
+      "distinctSizes": 14,
+      "sizeShare": {
+        "10": 0.025,
+        "11": 0.002,
+        "12": 0.201,
+        "13": 0.212,
+        "14": 0.178,
+        "15": 0.249,
+        "16": 0.005,
+        "18": 0.002,
+        "20": 0.002,
+        "24": 0.066,
+        "32": 0.02,
+        "48": 0.029,
+        "64": 0.006,
+        "72": 0.005
+      },
+      "minSize": 10,
+      "maxSize": 72,
+      "dominantBodySize": 15,
+      "scaleRange": 4.8,
+      "distinctWeights": [
+        "300",
+        "400",
+        "500",
+        "510",
+        "590"
+      ],
+      "uppercaseShare": 0.013,
+      "clusters": [
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 15,
+          "weight": "400",
+          "lineHeightRatio": 1.6,
+          "letterSpacing": "-0.165px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 1594,
+          "nodes": 50,
+          "firstDocY": 432,
+          "scripts": {
+            "latin": 1587,
+            "other": 7
+          },
+          "colors": {
+            "#8a8f98": 1519,
+            "#62666d": 38,
+            "#6d78d5": 7,
+            "#d0d6e0": 30
+          },
+          "share": 0.191
+        },
+        {
+          "family": "Berkeley Mono",
+          "stack": "\"Berkeley Mono\", ui-monospace, \"SF Mono\", Menlo, monospace",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.71,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 1221,
+          "nodes": 172,
+          "firstDocY": 6739,
+          "scripts": {
+            "latin": 1107,
+            "other": 114
+          },
+          "colors": {
+            "#f79ce0": 157,
+            "#f7bf8b": 231,
+            "#e2e4e7": 97,
+            "#ffdf9f": 130,
+            "#83dcdc": 78,
+            "#8fa6ff": 68,
+            "#000000": 460
+          },
+          "share": 0.146
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 24,
+          "weight": "400",
+          "lineHeightRatio": 1.33,
+          "letterSpacing": "-0.288px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 547,
+          "nodes": 4,
+          "firstDocY": 2675,
+          "scripts": {
+            "latin": 547
+          },
+          "colors": {
+            "#d0d6e0": 547
+          },
+          "share": 0.066
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 12,
+          "weight": "510",
+          "lineHeightRatio": 1.4,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 529,
+          "nodes": 18,
+          "firstDocY": 1052,
+          "scripts": {
+            "latin": 529
+          },
+          "colors": {
+            "#d0d6e0": 514,
+            "#8a8f98": 15
+          },
+          "share": 0.063
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 13,
+          "weight": "400",
+          "lineHeightRatio": 1.54,
+          "letterSpacing": "-0.039px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 505,
+          "nodes": 6,
+          "firstDocY": 769,
+          "scripts": {
+            "latin": 505
+          },
+          "colors": {
+            "#f7f8f8": 404,
+            "#d0d6e0": 101
+          },
+          "share": 0.06
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 13,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "-0.13px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 492,
+          "nodes": 23,
+          "firstDocY": 1050,
+          "scripts": {
+            "latin": 489,
+            "digits": 3
+          },
+          "colors": {
+            "#d0d6e0": 451,
+            "#8a8f98": 3,
+            "#f7f8f8": 38
+          },
+          "share": 0.059
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 12,
+          "weight": "510",
+          "lineHeightRatio": 1.17,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 365,
+          "nodes": 55,
+          "firstDocY": 721,
+          "scripts": {
+            "latin": 305,
+            "digits": 60
+          },
+          "colors": {
+            "#62666d": 88,
+            "#d0d6e0": 51,
+            "#8a8f98": 178,
+            "#626366": 24,
+            "#000000": 24
+          },
+          "share": 0.044
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 13,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "-0.13px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 361,
+          "nodes": 48,
+          "firstDocY": 6730,
+          "scripts": {
+            "latin": 361
+          },
+          "colors": {
+            "#8a8f98": 343,
+            "#62666d": 18
+          },
+          "share": 0.043
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.17,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 345,
+          "nodes": 47,
+          "firstDocY": 797,
+          "scripts": {
+            "latin": 319,
+            "other": 6,
+            "digits": 20
+          },
+          "colors": {
+            "#62666d": 155,
+            "#8a8f98": 89,
+            "#f7f8f8": 28,
+            "#27a644": 3,
+            "#f34e52": 3,
+            "#d0d6e0": 67
+          },
+          "share": 0.041
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 15,
+          "weight": "300",
+          "lineHeightRatio": 1.33,
+          "letterSpacing": "-0.06px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 314,
+          "nodes": 3,
+          "firstDocY": 3025,
+          "scripts": {
+            "latin": 314
+          },
+          "colors": {
+            "#d0d6e0": 314
+          },
+          "share": 0.038
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 48,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacing": "-1.056px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 246,
+          "nodes": 11,
+          "firstDocY": 1590,
+          "scripts": {
+            "latin": 246
+          },
+          "colors": {
+            "#f7f8f8": 122,
+            "#8a8f98": 124
+          },
+          "share": 0.029
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "-0.182px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 172,
+          "nodes": 4,
+          "firstDocY": 678,
+          "scripts": {
+            "latin": 172
+          },
+          "colors": {
+            "#8a8f98": 116,
+            "#08090a": 56
+          },
+          "share": 0.021
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 32,
+          "weight": "400",
+          "lineHeightRatio": 1.13,
+          "letterSpacing": "-0.704px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 164,
+          "nodes": 2,
+          "firstDocY": 8262,
+          "scripts": {
+            "latin": 164
+          },
+          "colors": {
+            "#08090a": 164
+          },
+          "share": 0.02
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 15,
+          "weight": "510",
+          "lineHeightRatio": 1.6,
+          "letterSpacing": "-0.165px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 150,
+          "nodes": 9,
+          "firstDocY": 433,
+          "scripts": {
+            "latin": 144,
+            "digits": 6
+          },
+          "colors": {
+            "#d0d6e0": 150
+          },
+          "share": 0.018
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.33,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 136,
+          "nodes": 44,
+          "firstDocY": 550,
+          "scripts": {
+            "digits": 52,
+            "latin": 84
+          },
+          "colors": {
+            "#8a8f98": 85,
+            "#62666d": 51
+          },
+          "share": 0.016
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.4,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 136,
+          "nodes": 21,
+          "firstDocY": 884,
+          "scripts": {
+            "other": 4,
+            "latin": 132
+          },
+          "colors": {
+            "#62666d": 80,
+            "#8a8f98": 56
+          },
+          "share": 0.016
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 10,
+          "weight": "400",
+          "lineHeightRatio": 1.4,
+          "letterSpacing": "-0.15px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 126,
+          "nodes": 16,
+          "firstDocY": 3014,
+          "scripts": {
+            "latin": 126
+          },
+          "colors": {
+            "#62666d": 126
+          },
+          "share": 0.015
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 13,
+          "weight": "400",
+          "lineHeightRatio": 1.23,
+          "letterSpacing": "-0.13px",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 120,
+          "nodes": 2,
+          "firstDocY": 909,
+          "scripts": {
+            "latin": 120
+          },
+          "colors": {
+            "#8a8f98": 120
+          },
+          "share": 0.014
+        },
+        {
+          "family": "Berkeley Mono",
+          "stack": "\"Berkeley Mono\", ui-monospace, \"SF Mono\", Menlo, monospace",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1.4,
+          "letterSpacing": "normal",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 110,
+          "nodes": 8,
+          "firstDocY": 1483,
+          "scripts": {
+            "latin": 110
+          },
+          "colors": {
+            "#62666d": 89,
+            "#8a8f98": 21
+          },
+          "share": 0.013
+        },
+        {
+          "family": "Inter Variable",
+          "stack": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"O",
+          "size": 13,
+          "weight": "510",
+          "lineHeightRatio": "normal",
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 101,
+          "nodes": 11,
+          "firstDocY": 593,
+          "scripts": {
+            "latin": 101
+          },
+          "colors": {
+            "#d0d6e0": 101
+          },
+          "share": 0.012
+        }
+      ]
+    },
+    "headings": {
+      "count": 15,
+      "h1Count": 1,
+      "outline": [
+        1,
+        3,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "skippedLevels": 1,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h1",
+          "level": 1,
+          "family": "Inter Variable",
+          "size": 64,
+          "sizeVw": 4.44,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 152,
+          "words": 21,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 76,
+          "box": {
+            "x": 78,
+            "y": 272,
+            "w": 1282,
+            "h": 128
+          },
+          "aboveFold": true,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 20,
+          "sizeVw": 1.39,
+          "weight": "590",
+          "lineHeightRatio": 1.33,
+          "letterSpacingEm": -0.012,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 17,
+          "words": 3,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 373,
+            "y": 643,
+            "w": 630,
+            "h": 27
+          },
+          "aboveFold": true,
+          "color": "#d0d6e0"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h4",
+          "level": 4,
+          "family": "Inter Variable",
+          "size": 16,
+          "sizeVw": 1.11,
+          "weight": "590",
+          "lineHeightRatio": 1.75,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 8,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 373,
+            "y": 744,
+            "w": 630,
+            "h": 28
+          },
+          "aboveFold": true,
+          "color": "#d0d6e0"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 155,
+          "words": 26,
+          "script": "latin",
+          "lines": 3,
+          "charsPerLine": 51.7,
+          "box": {
+            "x": 46,
+            "y": 1596,
+            "w": 1250,
+            "h": 144
+          },
+          "aboveFold": false,
+          "color": "#8a8f98"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "balance",
+          "chars": 22,
+          "words": 2,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 11,
+          "box": {
+            "x": 78,
+            "y": 2674,
+            "w": 540,
+            "h": 83
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "balance",
+          "chars": 22,
+          "words": 2,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 11,
+          "box": {
+            "x": 78,
+            "y": 3910,
+            "w": 540,
+            "h": 83
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "balance",
+          "chars": 17,
+          "words": 2,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 8.5,
+          "box": {
+            "x": 78,
+            "y": 5149,
+            "w": 540,
+            "h": 83
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "balance",
+          "chars": 22,
+          "words": 3,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 11,
+          "box": {
+            "x": 78,
+            "y": 6391,
+            "w": 540,
+            "h": 83
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 48,
+          "sizeVw": 3.33,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 9,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 9,
+          "box": {
+            "x": 78,
+            "y": 7644,
+            "w": 228,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h2",
+          "level": 2,
+          "family": "Inter Variable",
+          "size": 72,
+          "sizeVw": 5,
+          "weight": "510",
+          "lineHeightRatio": 1,
+          "letterSpacingEm": -0.022,
+          "textTransform": "none",
+          "textAlign": "center",
+          "textWrap": "balance",
+          "chars": 38,
+          "words": 6,
+          "script": "latin",
+          "lines": 2,
+          "charsPerLine": 19,
+          "box": {
+            "x": 360,
+            "y": 9014,
+            "w": 720,
+            "h": 144
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 13,
+          "sizeVw": 0.9,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": -0.01,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 7,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 7,
+          "box": {
+            "x": 304,
+            "y": 9523,
+            "w": 160,
+            "h": 20
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 13,
+          "sizeVw": 0.9,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": -0.01,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 8,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 8,
+          "box": {
+            "x": 528,
+            "y": 9523,
+            "w": 160,
+            "h": 20
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-12",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 13,
+          "sizeVw": 0.9,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": -0.01,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 7,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 7,
+          "box": {
+            "x": 752,
+            "y": 9523,
+            "w": 160,
+            "h": 20
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-13",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 13,
+          "sizeVw": 0.9,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": -0.01,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 9,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 9,
+          "box": {
+            "x": 976,
+            "y": 9523,
+            "w": 160,
+            "h": 20
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        },
+        {
+          "probe": "heading-14",
+          "tag": "h3",
+          "level": 3,
+          "family": "Inter Variable",
+          "size": 13,
+          "sizeVw": 0.9,
+          "weight": "510",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": -0.01,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 7,
+          "words": 1,
+          "script": "latin",
+          "lines": 1,
+          "charsPerLine": 7,
+          "box": {
+            "x": 1200,
+            "y": 9523,
+            "w": 160,
+            "h": 20
+          },
+          "aboveFold": false,
+          "color": "#f7f8f8"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "display-15",
+      "tag": "span",
+      "level": null,
+      "family": "Inter Variable",
+      "size": 64,
+      "sizeVw": 4.44,
+      "weight": "510",
+      "lineHeightRatio": 1,
+      "letterSpacingEm": -0.022,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "wrap",
+      "chars": 23,
+      "words": 3,
+      "script": "latin",
+      "lines": 1,
+      "charsPerLine": 23,
+      "box": {
+        "x": 48,
+        "y": 242,
+        "w": 770,
+        "h": 124
+      },
+      "aboveFold": true,
+      "color": "#f7f8f8"
+    },
+    "reading": {
+      "sampled": 12,
+      "fontSize": {
+        "n": 12,
+        "min": 13,
+        "p25": 13,
+        "median": 15,
+        "p75": 24,
+        "max": 32
+      },
+      "lineHeightRatio": {
+        "n": 12,
+        "min": 1.13,
+        "p25": 1.33,
+        "median": 1.5,
+        "p75": 1.54,
+        "max": 1.6
+      },
+      "charsPerLine": {
+        "n": 12,
+        "min": 35.3,
+        "p25": 42,
+        "median": 44.3,
+        "p75": 49.7,
+        "max": 86
+      },
+      "widthEm": {
+        "n": 12,
+        "min": 16.6,
+        "p25": 22.2,
+        "median": 24.1,
+        "p75": 26.3,
+        "max": 40.3
+      },
+      "justified": 0,
+      "scripts": {
+        "latin": 12
+      }
+    },
+    "color": {
+      "rootBackground": "#08090a",
+      "rootBackgroundLuminance": 0.003,
+      "scheme": "dark",
+      "backgroundPalette": [
+        {
+          "color": "#08090a",
+          "areaShare": 0.803,
+          "hsl": {
+            "h": 210,
+            "s": 0.11,
+            "l": 0.04
+          }
+        },
+        {
+          "color": "#0f1011",
+          "areaShare": 0.132,
+          "hsl": {
+            "h": 210,
+            "s": 0.06,
+            "l": 0.06
+          }
+        },
+        {
+          "color": "#090a0b",
+          "areaShare": 0.026,
+          "hsl": {
+            "h": 210,
+            "s": 0.1,
+            "l": 0.04
+          }
+        },
+        {
+          "color": "#101112",
+          "areaShare": 0.026,
+          "hsl": {
+            "h": 210,
+            "s": 0.06,
+            "l": 0.07
+          }
+        },
+        {
+          "color": "#161718",
+          "areaShare": 0.007,
+          "hsl": {
+            "h": 210,
+            "s": 0.04,
+            "l": 0.09
+          }
+        },
+        {
+          "color": "#e4f222",
+          "areaShare": 0.006,
+          "hsl": {
+            "h": 64,
+            "s": 0.89,
+            "l": 0.54
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#8a8f98",
+          "share": 0.329
+        },
+        {
+          "color": "#d0d6e0",
+          "share": 0.303
+        },
+        {
+          "color": "#62666d",
+          "share": 0.095
+        },
+        {
+          "color": "#f7f8f8",
+          "share": 0.084
+        },
+        {
+          "color": "#000000",
+          "share": 0.058
+        },
+        {
+          "color": "#08090a",
+          "share": 0.031
+        },
+        {
+          "color": "#f7bf8b",
+          "share": 0.028
+        },
+        {
+          "color": "#f79ce0",
+          "share": 0.019
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#e5e5e6",
+          "count": 2
+        },
+        {
+          "color": "#e4f222",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0.246,
+      "gradientColors": [
+        "#08090a",
+        "#d0d6e0",
+        "#ffffff",
+        "#b2d5ff",
+        "#dfd1ff",
+        "#0b0b0b",
+        "#161718"
+      ],
+      "imageBackgrounds": 5,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over CSS images/gradients or overlapping img/video/canvas/svg counted as uncertain (probe 0.1.1+)",
+        "checkedChars": 8362,
+        "lowContrastNormalShare": 0.094,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0.453,
+        "ratio": {
+          "n": 400,
+          "min": 1,
+          "p25": 3.45,
+          "median": 5.86,
+          "p75": 13.04,
+          "max": 18.73
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 1344,
+          "count": 23
+        },
+        {
+          "value": 1320,
+          "count": 3
+        },
+        {
+          "value": 1326,
+          "count": 3
+        },
+        {
+          "value": 1282,
+          "count": 1
+        },
+        {
+          "value": 1318,
+          "count": 1
+        },
+        {
+          "value": 1324,
+          "count": 1
+        },
+        {
+          "value": 720,
+          "count": 1
+        }
+      ],
+      "dominantContainer": 1344,
+      "widestContainer": 1344,
+      "textLeftEdges": [
+        {
+          "x": 752,
+          "n": 30
+        },
+        {
+          "x": 80,
+          "n": 19
+        },
+        {
+          "x": 1200,
+          "n": 15
+        },
+        {
+          "x": 124,
+          "n": 13
+        },
+        {
+          "x": 1088,
+          "n": 13
+        },
+        {
+          "x": 228,
+          "n": 11
+        },
+        {
+          "x": 1272,
+          "n": 11
+        },
+        {
+          "x": 1308,
+          "n": 11
+        },
+        {
+          "x": 560,
+          "n": 9
+        },
+        {
+          "x": 1120,
+          "n": 9
+        },
+        {
+          "x": 104,
+          "n": 8
+        },
+        {
+          "x": 336,
+          "n": 8
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 92,
+          "n": 13
+        },
+        {
+          "x": 272,
+          "n": 11
+        },
+        {
+          "x": 1244,
+          "n": 11
+        },
+        {
+          "x": 172,
+          "n": 10
+        },
+        {
+          "x": 80,
+          "n": 7
+        },
+        {
+          "x": 824,
+          "n": 7
+        },
+        {
+          "x": 180,
+          "n": 6
+        },
+        {
+          "x": 832,
+          "n": 6
+        },
+        {
+          "x": 256,
+          "n": 5
+        },
+        {
+          "x": 612,
+          "n": 5
+        },
+        {
+          "x": 752,
+          "n": 5
+        },
+        {
+          "x": 156,
+          "n": 4
+        }
+      ],
+      "distinctTextEdges": 134,
+      "gridContainers": 182,
+      "flexContainers": 583,
+      "gridColumnCounts": [
+        {
+          "value": 1,
+          "count": 159
+        },
+        {
+          "value": 2,
+          "count": 14
+        },
+        {
+          "value": 5,
+          "count": 1
+        },
+        {
+          "value": 12,
+          "count": 1
+        },
+        {
+          "value": 4,
+          "count": 1
+        },
+        {
+          "value": 6,
+          "count": 1
+        }
+      ],
+      "gaps": {
+        "n": 271,
+        "min": 2,
+        "p25": 4,
+        "median": 6,
+        "p75": 8,
+        "max": 64
+      },
+      "stickyElements": 0,
+      "fixedElements": 3,
+      "sections": {
+        "count": 1,
+        "heightsVh": {
+          "n": 1,
+          "min": 10.44,
+          "p25": 10.44,
+          "median": 10.44,
+          "p75": 10.44,
+          "max": 10.44
+        },
+        "paddingTop": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      },
+      "pageHeightVh": 11.07,
+      "textOverMedia": 3
+    },
+    "components": {
+      "header": {
+        "position": "fixed",
+        "height": 73,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": "blur(20px)",
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 9,
+        "expandableToggles": 2
+      },
+      "navCount": 2,
+      "buttons": {
+        "count": 6,
+        "radius": {
+          "n": 6,
+          "min": 8,
+          "p25": 16,
+          "median": 16,
+          "p75": 9999,
+          "max": 9999
+        },
+        "pillShare": 0.83,
+        "height": {
+          "n": 6,
+          "min": 24,
+          "p25": 24,
+          "median": 28,
+          "p75": 32,
+          "max": 480
+        },
+        "fontSize": {
+          "n": 6,
+          "min": 12,
+          "p25": 12,
+          "median": 13,
+          "p75": 13.33,
+          "max": 16
+        },
+        "textTransform": {
+          "none": 6
+        },
+        "fontWeight": {
+          "400": 4,
+          "510": 2
+        }
+      },
+      "forms": {
+        "forms": 0,
+        "inputs": 1
+      },
+      "media": {
+        "images": 34,
+        "imagesTotal": 39,
+        "lazyImages": 32,
+        "srcsetImages": 0,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 231,
+        "canvases": [],
+        "iframes": 0
+      },
+      "cardGroups": {
+        "count": 14,
+        "items": [
+          {
+            "items": 5,
+            "width": 208,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 4,
+            "width": 208,
+            "radius": 8,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 3,
+            "width": 208,
+            "radius": 8,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 4,
+            "width": 208,
+            "radius": 8,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 3,
+            "width": 427,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 4,
+            "width": 300,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 4,
+            "width": 300,
+            "radius": 9,
+            "shadow": false,
+            "border": true,
+            "filled": true
+          },
+          {
+            "items": 4,
+            "width": 300,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 3,
+            "width": 300,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 5,
+            "width": 300,
+            "radius": 9,
+            "shadow": false,
+            "border": true,
+            "filled": true
+          },
+          {
+            "items": 3,
+            "width": 432,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          },
+          {
+            "items": 4,
+            "width": 400,
+            "radius": 12,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          }
+        ],
+        "radius": {
+          "n": 14,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 8,
+          "max": 12
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0.246,
+      "backdropBlurElements": 3,
+      "filterBlurElements": 26,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 18,
+      "boxedElements": 118,
+      "roundedBoxShare12": 0.593,
+      "roundedBoxShare24": 0.424,
+      "opacityZeroElements": 7,
+      "transformedElements": 526
+    },
+    "motion": {
+      "transitionElements": 404,
+      "transitionDuration": {
+        "n": 404,
+        "min": 100,
+        "p25": 100,
+        "median": 100,
+        "p75": 160,
+        "max": 700
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.25, 0.46, 0.45, 0.94)": 307,
+        "ease": 42,
+        "cubic-bezier(0.32, 0.72, 0, 1)": 30,
+        "ease-out": 25
+      },
+      "transitionProperty": {
+        "color": 282,
+        "filter": 40,
+        "background": 32,
+        "transform": 22,
+        "stroke": 10,
+        "background-color": 8,
+        "border": 7,
+        "all": 2,
+        "border-color": 1
+      },
+      "animations": {
+        "total": 522,
+        "running": 84,
+        "infinite": 84,
+        "scrollDriven": 0,
+        "byType": {
+          "CSSAnimation": 522
+        },
+        "duration": {
+          "n": 522,
+          "min": 420,
+          "p25": 420,
+          "median": 420,
+          "p75": 420,
+          "max": 3200
+        },
+        "easing": {
+          "linear": 522
+        }
+      }
+    },
+    "cssom": {
+      "sheets": 113,
+      "inaccessibleSheets": 49,
+      "rules": 7913,
+      "mediaQueries": {
+        "(max-width: 640px)": 137,
+        "(max-width: 768px)": 85,
+        "(max-width: 1024px)": 50,
+        "(any-hover: hover)": 30,
+        "(prefers-reduced-motion: no-preference)": 19,
+        "(any-hover: hover) and (any-pointer: fine)": 19,
+        "(max-width: 1280px)": 16,
+        "(prefers-reduced-motion: reduce)": 5,
+        "(max-width: 900px)": 4,
+        "(max-width: 1120px)": 4,
+        "(max-width: 1100px)": 3,
+        "(max-width: 1160px)": 3,
+        "(any-hover: none)": 2,
+        "(max-width: 560px)": 2,
+        "(max-width: 700px)": 2,
+        "(min-width: 1536px)": 2,
+        "(min-width: 1792px)": 2,
+        "(hover: none) and (pointer: coarse)": 1,
+        "(max-width: 600px)": 1,
+        "(prefers-reduced-motion)": 1,
+        "(hover: hover) and (pointer: fine)": 1,
+        "(pointer: fine)": 1,
+        "(min-aspect-ratio: 16 / 9)": 1,
+        "(min-aspect-ratio: 4 / 3)": 1,
+        "(prefers-color-scheme: dark)": 1
+      },
+      "breakpoints": {
+        "max:640px": 138,
+        "max:768px": 85,
+        "max:1024px": 50,
+        "max:1280px": 16,
+        "max:900px": 4,
+        "max:1120px": 4,
+        "max:1100px": 3,
+        "max:1160px": 3,
+        "max:560px": 2,
+        "max:700px": 2,
+        "min:1536px": 2,
+        "min:1792px": 2,
+        "max:600px": 1,
+        "max:1052px": 1,
+        "max:880px": 1,
+        "min:1601px": 1,
+        "max:1400px": 1
+      },
+      "reducedMotionRules": 26,
+      "colorSchemeRules": 1,
+      "containerRules": 7,
+      "clampUses": 10,
+      "vwFontSizes": 0,
+      "logicalProps": 175,
+      "physicalInlineProps": 495,
+      "focusVisibleRules": 22,
+      "fontFaceRules": 0,
+      "scrollTimelineUses": 2,
+      "customPropertiesDeclared": 612,
+      "hoverMediaRules": 50
+    },
+    "tokens": {
+      "rootCustomProperties": 419,
+      "colorTokens": 182,
+      "lengthTokens": 96,
+      "colorSample": [
+        {
+          "name": "--sx-ljw4h1",
+          "value": "#393a3e"
+        },
+        {
+          "name": "--sx-1urpf9d",
+          "value": "#ffffff0d"
+        },
+        {
+          "name": "--sx-1stx5uy",
+          "value": "#74e3ff"
+        },
+        {
+          "name": "--sx-7ide1",
+          "value": "#747ee9"
+        },
+        {
+          "name": "--sx-1ijrdvx",
+          "value": "#ff8849"
+        },
+        {
+          "name": "--sx-1uv3w6h",
+          "value": "#2c2d32"
+        },
+        {
+          "name": "--sx-138kmyo",
+          "value": "#424449"
+        },
+        {
+          "name": "--sx-1ltkoa",
+          "value": "#626467"
+        },
+        {
+          "name": "--color-text-secondary",
+          "value": "#d0d6e0"
+        },
+        {
+          "name": "--sx-1mc3c6y",
+          "value": "#1e2022"
+        },
+        {
+          "name": "--sx-1dcvabv",
+          "value": "#382225"
+        },
+        {
+          "name": "--color-text-tertiary",
+          "value": "#8a8f98"
+        },
+        {
+          "name": "--sx-18yrgu8",
+          "value": "#ffffff8b"
+        },
+        {
+          "name": "--sx-91u3ar",
+          "value": "#ffcc00"
+        },
+        {
+          "name": "--sx-18uyzu6",
+          "value": "#008a2a"
+        },
+        {
+          "name": "--sx-ot17o6",
+          "value": "#00cee2"
+        },
+        {
+          "name": "--sx-1gm0lru",
+          "value": "#222427"
+        },
+        {
+          "name": "--sx-9pdekr",
+          "value": "#8f9197"
+        },
+        {
+          "name": "--sx-34xdpc",
+          "value": "#d9343f"
+        },
+        {
+          "name": "--sx-1gxylln",
+          "value": "#27282c"
+        },
+        {
+          "name": "--sx-tw6awd",
+          "value": "#ffe7de"
+        },
+        {
+          "name": "--color-line-tertiary",
+          "value": "#18191a"
+        },
+        {
+          "name": "--color-white",
+          "value": "#fff"
+        },
+        {
+          "name": "--sx-kthb5v",
+          "value": "#6c76e0"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--editor-block-spacing-large",
+          "value": "calc(1.375 * 1rem)"
+        },
+        {
+          "name": "--header-height",
+          "value": "72px"
+        },
+        {
+          "name": "--editor-todolist-checkbox-width",
+          "value": "14px"
+        },
+        {
+          "name": "--font-size-title1",
+          "value": "2.25rem"
+        },
+        {
+          "name": "--text-micro-size",
+          "value": ".75rem"
+        },
+        {
+          "name": "--title-3-letter-spacing",
+          "value": "-.012em"
+        },
+        {
+          "name": "--editor-block-menu-size",
+          "value": "20px"
+        },
+        {
+          "name": "--sx-138rywl",
+          "value": "13vh"
+        },
+        {
+          "name": "--editor-last-invisible-paragraph-spacin",
+          "value": "10px"
+        },
+        {
+          "name": "--scrollbar-size-active",
+          "value": "10px"
+        },
+        {
+          "name": "--text-mini-letter-spacing",
+          "value": "-.01em"
+        },
+        {
+          "name": "--text-regular-size",
+          "value": ".9375rem"
+        },
+        {
+          "name": "--font-size-miniPlus",
+          "value": ".75rem"
+        },
+        {
+          "name": "--text-regular-letter-spacing",
+          "value": "-.011em"
+        },
+        {
+          "name": "--editor-block-spacing-small",
+          "value": "calc(.375 * 1rem)"
+        },
+        {
+          "name": "--font-size-microPlus",
+          "value": ".6875rem"
+        },
+        {
+          "name": "--editor-block-radius",
+          "value": "6px"
+        },
+        {
+          "name": "--text-small-line-height",
+          "value": "calc(21 / 14)"
+        },
+        {
+          "name": "--title-7-size",
+          "value": "3.5rem"
+        },
+        {
+          "name": "--text-tiny-letter-spacing",
+          "value": "-.015em"
+        },
+        {
+          "name": "--text-small-size",
+          "value": ".875rem"
+        },
+        {
+          "name": "--editor-font-size",
+          "value": ".9375rem"
+        },
+        {
+          "name": "--title-2-letter-spacing",
+          "value": "-.012em"
+        },
+        {
+          "name": "--page-padding-block",
+          "value": "64px"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 9,
+        "nav": 2,
+        "main": 1,
+        "footer": 1,
+        "aside": 0,
+        "search": 0
+      },
+      "langPresent": true,
+      "images": {
+        "total": 39,
+        "missingAlt": 0,
+        "emptyAlt": 27
+      },
+      "linksVisible": 61,
+      "linksWithoutName": 1,
+      "buttonsVisible": 72,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 1,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": true,
+      "smallTapTargets": 14,
+      "focusableCount": 148
+    },
+    "rtl": {
+      "htmlDir": null,
+      "computedDirection": "ltr",
+      "mainDirection": "ltr",
+      "dirAttributes": {
+        "rtl": 0,
+        "ltr": 0,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "center": 99,
+        "start": 324,
+        "left": 185,
+        "right": 11
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 340,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 82,
+      "horizontallyMirroredIcons": 0
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 1790,
+      "load": 1886,
+      "transferSize": 172595,
+      "firstContentfulPaint": 1664,
+      "lcp": {
+        "time": 7480,
+        "element": "div",
+        "size": 135818
+      },
+      "cls": 0,
+      "longTasks": {
+        "count": 32,
+        "totalMs": 3855
+      },
+      "domElements": 4698
+    },
+    "implementation": {
+      "globals": {},
+      "reactRoot": false,
+      "nextRoot": true,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {},
+        "webgpuRequested": false,
+        "matchMediaQueries": {
+          "only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi)": 1,
+          "(display-mode: standalone)": 1,
+          "(prefers-reduced-motion: reduce)": 6,
+          "(pointer: coarse)": 1,
+          "(prefers-reduced-motion)": 1,
+          "(max-width: 640px)": 1,
+          "(prefers-color-scheme: dark)": 2
+        },
+        "intersectionObservers": 5,
+        "resizeObservers": 6,
+        "rafCalls": 182,
+        "rafFirstAt": 6096,
+        "waapiAnimate": 61,
+        "waapiDurations": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1500,
+          1500,
+          1500,
+          500,
+          1500,
+          1500,
+          1500,
+          1300,
+          500,
+          350,
+          350,
+          300,
+          300,
+          200,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          800,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "scrollListeners": 9,
+        "wheelListeners": 2,
+        "touchmoveListeners": 2,
+        "pointermoveListeners": 4,
+        "startedAt": 1791102055431
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": "Inter Variable",
+        "postScriptName": "InterVariable",
+        "custom": true,
+        "glyphs": 51
+      }
+    ],
+    "heading-1": [
+      {
+        "family": "Inter Variable",
+        "postScriptName": "InterVariable",
+        "custom": true,
+        "glyphs": 17
+      }
+    ],
+    "display-15": [
+      {
+        "family": "Inter Variable",
+        "postScriptName": "InterVariable",
+        "custom": true,
+        "glyphs": 23
+      }
+    ],
+    "header-17": [],
+    "button-18": [
+      {
+        "family": "Inter Variable",
+        "postScriptName": "InterVariable",
+        "custom": true,
+        "glyphs": 7
+      }
+    ],
+    "para-16": [
+      {
+        "family": "Inter Variable",
+        "postScriptName": "InterVariable",
+        "custom": true,
+        "glyphs": 117
+      }
+    ]
+  },
+  "interactions": {
+    "menu": {
+      "found": true,
+      "ariaExpandedBefore": "false",
+      "ariaExpandedAfter": "true",
+      "hasAriaControls": false,
+      "visibleLinksBefore": 8,
+      "visibleLinksAfter": 17,
+      "escapeCloses": true,
+      "bodyLocked": false,
+      "activeTag": "button",
+      "dialogs": 0
+    },
+    "focus": {
+      "steps": 16,
+      "focusedSteps": 16,
+      "withIndicator": 16,
+      "indicatorShare": 1,
+      "offscreenOrHidden": 0,
+      "firstIsSkipLink": true,
+      "indicatorProps": [
+        [
+          "outline",
+          16
+        ],
+        [
+          "outlineStyle",
+          16
+        ],
+        [
+          "outlineWidth",
+          16
+        ],
+        [
+          "outlineColor",
+          16
+        ],
+        [
+          "boxShadow",
+          1
+        ]
+      ],
+      "sequence": [
+        "a",
+        "a",
+        "button",
+        "button",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "button",
+        "button",
+        "button",
+        "button",
+        "button"
+      ]
+    },
+    "hover": {
+      "sampled": 5,
+      "withFeedback": 3,
+      "items": [
+        {
+          "tag": "a",
+          "changed": [],
+          "childTransformed": false,
+          "transitionDuration": "0s"
+        },
+        {
+          "tag": "a",
+          "changed": [],
+          "childTransformed": false,
+          "transitionDuration": "0s"
+        },
+        {
+          "tag": "button",
+          "changed": [
+            "color",
+            "backgroundColor",
+            "borderTopColor"
+          ],
+          "childTransformed": false,
+          "transitionDuration": "0.1s"
+        },
+        {
+          "tag": "button",
+          "changed": [
+            "color",
+            "backgroundColor",
+            "borderTopColor"
+          ],
+          "childTransformed": false,
+          "transitionDuration": "0.1s"
+        },
+        {
+          "tag": "a",
+          "changed": [
+            "color",
+            "backgroundColor",
+            "borderTopColor"
+          ],
+          "childTransformed": false,
+          "transitionDuration": "0.1s"
+        }
+      ]
+    }
+  },
+  "axe": {
+    "engine": "4.13.0",
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 1
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 17
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": 1
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "nodes": 2
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1
+      }
+    ],
+    "counts": {
+      "violations": 5,
+      "incomplete": 2,
+      "passes": 45
+    },
+    "byImpact": {
+      "critical": 1,
+      "serious": 18,
+      "moderate": 3
+    }
+  },
+  "aria": {
+    "lines": 488,
+    "roles": {
+      "text": 95,
+      "img": 88,
+      "button": 68,
+      "link": 60,
+      "listitem": 50,
+      "paragraph": 25,
+      "heading": 15,
+      "list": 9,
+      "code": 3,
+      "region": 2,
+      "navigation": 2,
+      "strong": 2,
+      "banner": 1,
+      "main": 1,
+      "group": 1,
+      "textbox": 1,
+      "combobox": 1,
+      "contentinfo": 1
+    }
+  },
+  "network": {
+    "requests": 673,
+    "failed": 2,
+    "totalBytes": 6113204,
+    "byType": {
+      "script": {
+        "count": 386,
+        "bytes": 1922085
+      },
+      "image": {
+        "count": 29,
+        "bytes": 1671156
+      },
+      "fetch": {
+        "count": 47,
+        "bytes": 1348799
+      },
+      "font": {
+        "count": 3,
+        "bytes": 555411
+      },
+      "stylesheet": {
+        "count": 155,
+        "bytes": 435846
+      },
+      "document": {
+        "count": 1,
+        "bytes": 179330
+      },
+      "other": {
+        "count": 3,
+        "bytes": 577
+      },
+      "xhr": {
+        "count": 49,
+        "bytes": 0
+      }
+    },
+    "imageFormats": {
+      "image/avif": {
+        "count": 26,
+        "bytes": 466253
+      },
+      "image/webp": {
+        "count": 1,
+        "bytes": 26693
+      },
+      "image/png": {
+        "count": 1,
+        "bytes": 1057969
+      },
+      "image/jpeg": {
+        "count": 1,
+        "bytes": 120241
+      }
+    },
+    "fonts": {
+      "count": 3,
+      "bytes": 555411,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 0,
+      "bytes": 0,
+      "hosts": 0
+    },
+    "topHosts": [
+      {
+        "host": "linear.app",
+        "bytes": 3072605
+      },
+      {
+        "host": "static.linear.app",
+        "bytes": 3032477
+      },
+      {
+        "host": "webassets.linear.app",
+        "bytes": 3353
+      },
+      {
+        "host": "constellation.linear.app",
+        "bytes": 2236
+      },
+      {
+        "host": "e.linear.app",
+        "bytes": 1956
+      },
+      {
+        "host": "api.linear.app",
+        "bytes": 577
+      }
+    ],
+    "libraryEvidence": {
+      "next.js": 589
+    }
+  },
+  "console": {
+    "errors": 0,
+    "pageErrors": 0
+  }
+}

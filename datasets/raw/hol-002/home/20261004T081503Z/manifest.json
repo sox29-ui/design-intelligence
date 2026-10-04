@@ -1,0 +1,416 @@
+{
+  "capture_id": "20261004T081503Z",
+  "ref_id": "hol-002",
+  "page_id": "home",
+  "url": "https://www.aljazeera.net/",
+  "final_url": "https://www.aljazeera.net/",
+  "started_at": "2026-10-04T08:15:03.656Z",
+  "finished_at": "2026-10-04T08:20:06.827Z",
+  "tool": {
+    "name": "di-collect",
+    "version": "0.1.2",
+    "playwright": "1.56.1",
+    "browser": "chromium 141.0.7390.37",
+    "axe": "4.13.0"
+  },
+  "environment": {
+    "proxy": true,
+    "platform": "linux",
+    "note": "Chromium via egress proxy; DPR 1; lab timings environment-relative (D-009)"
+  },
+  "robots": {
+    "status": "allowed",
+    "checked_url": "https://www.aljazeera.net/robots.txt",
+    "matched_rule": null
+  },
+  "consent": {
+    "action": "rejected-nonessential",
+    "detail": "clicked a visible reject/necessary-only control inside a consent container"
+  },
+  "blocked": false,
+  "blocked_reason": null,
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "status": "ok",
+      "http_status": 200,
+      "error": null
+    }
+  ],
+  "files": [
+    {
+      "path": "viewport-390x844.json",
+      "sha256": "0d3dc26f61bf0158e34b2f9d5f431b6a5bdbfe990eb5f322463544beff081eae",
+      "bytes": 64511
+    },
+    {
+      "path": "viewport-768x1024.json",
+      "sha256": "c01d2a05e6dd2ebf0ca72bb466064530ae725b4bc7b53671e54e7f2788c5f4d6",
+      "bytes": 62309
+    },
+    {
+      "path": "viewport-1440x900.json",
+      "sha256": "9d3a6e285f0fea39da0b7f06d0246370e2c7cdb7a854d4a855e652d1a77bd726",
+      "bytes": 67072
+    },
+    {
+      "path": "extras-1440x900.json",
+      "sha256": "090ea49bce738386aae633f8b144b10cfde64fe5c8b65909b83f6d5dfcf385b5",
+      "bytes": 2629
+    },
+    {
+      "path": "viewport-1920x1080.json",
+      "sha256": "15bc9b08d5420aa5cc9d5619315462b1c0ca8f10152c9f50442ffdf003383464",
+      "bytes": 64313
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-top.jpg",
+      "sha256": "15937a3abbd21d07943bd49e111779bf288b473dc3044cdeb126fc6c2644808c",
+      "bytes": 43933,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-scroll-25.jpg",
+      "sha256": "2cd8577b37f3f03e1f4d56064334a82831f319b4ba775475e38304a641520ad8",
+      "bytes": 41387,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-scroll-50.jpg",
+      "sha256": "13c8a2b89e916dd20e507a7a53763d7e6f8f6c220c521c816a171ebd938fe417",
+      "bytes": 25785,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-scroll-75.jpg",
+      "sha256": "5866bac34759e225c7e693641c527127f8c9de16903ba90597630c430c506df2",
+      "bytes": 41516,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-scroll-100.jpg",
+      "sha256": "9abef18357cb6e7c67061736de373d5a991781b0edbb35aba1d478fbb158866e",
+      "bytes": 54831,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-long.jpg",
+      "sha256": "fc5a8df41a48b60ddc320cb3f22ddd6463567e7b29e4c2eeda5ec55e9c827ed6",
+      "bytes": 224785,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-menu-open.jpg",
+      "sha256": "4e30dd73ef55409fb4551d6d498a3435f91f91707abc8088e3105159469a7843",
+      "bytes": 17479,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-focus.jpg",
+      "sha256": "5f021ad7a480e62c2b25975c7466b85cb33b214f54c13f6fd2f40130396d655f",
+      "bytes": 43866,
+      "kind": "screenshot",
+      "viewport": "390x844",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-axe.json",
+      "sha256": "31db1e992aa2140ac3021c86e63e6572bfcd096a28cb6e41470548a332087644",
+      "bytes": 2010903,
+      "kind": "axe-full",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/390x844-aria.yml",
+      "sha256": "ce09091334dce7c034be27a5a3a085dd0320ff2d7c4207ae7636ef77798712c5",
+      "bytes": 64673,
+      "kind": "aria-snapshot",
+      "viewport": "390x844",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-top.jpg",
+      "sha256": "a13500e4681f15b5bc084728260ead5b943a17ca49cfe32f5d64c068231e1ea9",
+      "bytes": 74785,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-scroll-25.jpg",
+      "sha256": "4cee5c539d10a66556cd9f80ad4bd070cb294cb9ed20bb872156a11ce5078ccc",
+      "bytes": 54660,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-scroll-50.jpg",
+      "sha256": "6f728d2c6325aec05e18657d8411862166884623dfa165c8e405d43d9a8391b5",
+      "bytes": 29532,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-scroll-75.jpg",
+      "sha256": "6a35bd3e66712a5a6db135dbb9ab72c3e42fa30735f293cd7f2d2d0b5af651d0",
+      "bytes": 75492,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-scroll-100.jpg",
+      "sha256": "1e2eb617c0f12472e26281daf2e985a2e0f95f572c066d3e7ece67b80637d6c5",
+      "bytes": 65958,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/768x1024-long.jpg",
+      "sha256": "6df3506340c4dac9067a91b181eded795163aae3c8d3a403de0415118aeb7179",
+      "bytes": 365887,
+      "kind": "screenshot",
+      "viewport": "768x1024",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-top.jpg",
+      "sha256": "623413832dc53ad5d842c08a062a439c3fd8279a023d8e33bf60daa32ae8c37d",
+      "bytes": 107929,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-scroll-25.jpg",
+      "sha256": "3b6e436d9e5a9554c3e0bb3bbb9fe4595b326d57d667f496f76a82afd2c4156f",
+      "bytes": 98338,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-scroll-50.jpg",
+      "sha256": "21b88b2965cf641423d5f7d7072d36531941087a30d76c2c90ccfe200793185a",
+      "bytes": 96240,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-scroll-75.jpg",
+      "sha256": "37e025aa721782e885b5f8808c8c21424cf314e076b734fffaef518f3d2bfb05",
+      "bytes": 96480,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-scroll-100.jpg",
+      "sha256": "b417411a6bbdf5d1f3b429b5ee2f0c1449c57c867a7721fbb64eb0b4ec9aca87",
+      "bytes": 82265,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-long.jpg",
+      "sha256": "ac813152894c802b8766a21aec9610b2881c8d5c33733cbb9339bf5b91137c0d",
+      "bytes": 614446,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "long"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-menu-open.jpg",
+      "sha256": "018ef1e3e90edf5a84d37f4c5cbdc3cbed3ff3189f43e9c5da5741b55d21665e",
+      "bytes": 109582,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "menu-open"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-focus.jpg",
+      "sha256": "4e288e5e0a0fca5fba54d41ae9a734bcf0a09bf9e58231b149ff57da4bcb5079",
+      "bytes": 110043,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "focus"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-hover.jpg",
+      "sha256": "b98d0a194034cf100776981684dce2d6007e3ed31f158467862b6bd4143aac1e",
+      "bytes": 109582,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "hover"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-axe.json",
+      "sha256": "9ae5d83fdecb0bbb8c6fac7d61c4f916fae01ea754cf8cdce1ea3a5ab665df4f",
+      "bytes": 2088562,
+      "kind": "axe-full",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-aria.yml",
+      "sha256": "413801994484863079016bf5b8c03cafb80bd361554f5ff48c01153e697caa5e",
+      "bytes": 84047,
+      "kind": "aria-snapshot",
+      "viewport": "1440x900",
+      "state": null
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-frame-entrance-400.jpg",
+      "sha256": "be90d372e7332fd25016fc079ace8760068868cc7c76fc8a801aab139424a0e6",
+      "bytes": 81224,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-400"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-frame-entrance-900.jpg",
+      "sha256": "b782506b0ee01be8f14807ef1f3e14d6747d56601129f7568b232ca076a0e588",
+      "bytes": 86092,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-900"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-frame-entrance-1600.jpg",
+      "sha256": "d7c882d26342b55c199ca5a3e487dff2fcd5821a3d296d8339975e2237ccec76",
+      "bytes": 90756,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-1600"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-frame-entrance-2600.jpg",
+      "sha256": "d8cf27411fb17c9f43b279bc351e3a53b110da20dba63c25361f5b359ed46ebc",
+      "bytes": 89012,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-2600"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-frame-entrance-4200.jpg",
+      "sha256": "e2db0538432b93584d02e89c74a3152c87005b4b9c0cb8e72340b00083b43159",
+      "bytes": 98923,
+      "kind": "frame",
+      "viewport": "1440x900",
+      "state": "frame-entrance-4200"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-reduced-motion-top.jpg",
+      "sha256": "f15d7e453d312e64639ec5a6b745b41ce48cbbd801704d0d86d04d2498fd7d15",
+      "bytes": 108488,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "reduced-motion-top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1440x900-dark-scheme-top.jpg",
+      "sha256": "38036cdd734fd0c8fcd6a96cc63380693124d5a5269a0add8597d2a20c825eb2",
+      "bytes": 108769,
+      "kind": "screenshot",
+      "viewport": "1440x900",
+      "state": "dark-scheme-top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-top.jpg",
+      "sha256": "48046dc6fdf12208cfb5572c44c69630fb1b5b470d96245c0e48ae4984f23190",
+      "bytes": 163194,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "top"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-scroll-25.jpg",
+      "sha256": "c38414cc42d5631087003d494e039c622d5b7951ca232203ebfb9829a552815e",
+      "bytes": 148469,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-25"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-scroll-50.jpg",
+      "sha256": "fe4d2ebfe52c412862ace9e959cb100a20f4dfaa1e4e0319b503ea3784a4133d",
+      "bytes": 71241,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-50"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-scroll-75.jpg",
+      "sha256": "45d0912f20ddfbef3f55e9756f0173c6a1ad8074b889c78750b459d4ca0fdf34",
+      "bytes": 131824,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-75"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-scroll-100.jpg",
+      "sha256": "63d165fe713c1f31d49211c0f61b14c79d0e7b700b11fefae8773b31b33fc95a",
+      "bytes": 108404,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "scroll-100"
+    },
+    {
+      "file": "research-artifacts/hol-002/home/20261004T081503Z/1920x1080-long.jpg",
+      "sha256": "49322cc66db5166ce24b2123cb07b85fb59aa58bfa4654ea6ecb6fc25a16f8dc",
+      "bytes": 749300,
+      "kind": "screenshot",
+      "viewport": "1920x1080",
+      "state": "long"
+    }
+  ],
+  "errors": []
+}

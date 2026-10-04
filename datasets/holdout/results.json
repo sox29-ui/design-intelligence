@@ -1,0 +1,653 @@
+{
+  "note": "Pre-registered predictions (predictions.json, commit befde0b) vs. measured checks on holdout captures. Never used as rule evidence.",
+  "byRef": {
+    "hol-001": {
+      "inconsistent": 3,
+      "consistent": 7,
+      "inconclusive": 2,
+      "no-measurement": 3
+    },
+    "hol-002": {
+      "inconsistent": 7,
+      "inconclusive": 1,
+      "consistent": 15,
+      "no-measurement": 1
+    },
+    "hol-003": {
+      "consistent": 9,
+      "inconclusive": 3,
+      "inconsistent": 4
+    }
+  },
+  "byConfidence": {
+    "medium": {
+      "inconsistent": 11,
+      "inconclusive": 5,
+      "no-measurement": 4,
+      "consistent": 19
+    },
+    "high": {
+      "consistent": 12,
+      "inconsistent": 3,
+      "inconclusive": 1
+    }
+  },
+  "rows": [
+    {
+      "ref": "hol-001",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "h1 × 1; landmarks {\"header\":0,\"nav\":0,\"main\":1,\"footer\":0,\"aside\":0,\"search\":0}",
+      "observations": [
+        "hol-001.hierarchy.home-1440-h1-count",
+        "hol-001.accessibility.home-1440-landmarks"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "visible indicator on 100% of sampled tab stops",
+      "observations": [
+        "hol-001.accessibility.home-1440-focus-indicator-share"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "gradient area 0.647: analyst must judge whether it is identity or imitation",
+      "observations": [
+        "hol-001.color.home-1440-gradient-area"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "axe color-contrast nodes: 0 at 1440, 1 at 390",
+      "observations": [
+        "hol-001.accessibility.home-1440-axe-violations",
+        "hol-001.accessibility.home-390-axe-violations"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "no-measurement",
+      "note": null,
+      "observations": []
+    },
+    {
+      "ref": "hol-001",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "0 large-radius card groups",
+      "observations": [
+        "hol-001.components.home-1440-card-groups"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "AVOID WHEN case (immersive/image-led page): container 1355 → 1805 px from 1440 to 1920",
+      "observations": [
+        "hol-001.responsive.home-xvp-container-curve"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "median transition 800 ms on a story/brand page",
+      "observations": [
+        "hol-001.motion.home-1440-transition-duration"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "reduced-motion handling detected ({\"runningAnimationsNormal\":3,\"runningAnimationsReduced\":8,\"cssReducedMotionRules\":0,\"jsReducedMotionQueries\":1,\"rafCallsReduced\":1030,\"rafCallsNormal\":2882})",
+      "observations": [
+        "hol-001.motion.home-1440-reduced-motion-response"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "14 of 3831 sampled elements change with scroll",
+      "observations": [
+        "hol-001.motion.home-1440-scroll-linked-changes"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "no-measurement",
+      "note": null,
+      "observations": []
+    },
+    {
+      "ref": "hol-001",
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "extreme scale 29.85× used in a low-density brand/story context",
+      "observations": [
+        "hol-001.typography.home-1440-scale-range"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "2 rendered family group(s) ≥ 2% (maison 70%, ambroise 29%)",
+      "observations": [
+        "hol-001.typography.home-1440-family-share"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "dominant body size 11.7–24 px across viewports (rule: 16–20 px, constant)",
+      "observations": [
+        "hol-001.responsive.home-xvp-body-size-curve"
+      ]
+    },
+    {
+      "ref": "hol-001",
+      "rule": "typography.tighten-large-grotesk",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "no-measurement",
+      "note": null,
+      "observations": []
+    },
+    {
+      "ref": "hol-002",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "h1 × 0; landmarks {\"header\":1,\"nav\":3,\"main\":1,\"footer\":72,\"aside\":1,\"search\":0}",
+      "observations": [
+        "hol-002.hierarchy.home-1440-h1-count",
+        "hol-002.accessibility.home-1440-landmarks"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "visible indicator on 88% of sampled tab stops",
+      "observations": [
+        "hol-002.accessibility.home-1440-focus-indicator-share"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "gradient area 0 of the page: no gradient-led hero",
+      "observations": [
+        "hol-002.color.home-1440-gradient-area"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "axe color-contrast nodes: 0 at 1440, 0 at 390",
+      "observations": [
+        "hol-002.accessibility.home-1440-axe-violations",
+        "hol-002.accessibility.home-390-axe-violations"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "no-measurement",
+      "note": null,
+      "observations": []
+    },
+    {
+      "ref": "hol-002",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "0 large-radius card groups",
+      "observations": [
+        "hol-002.components.home-1440-card-groups"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "components.mobile-menu-sheet",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "menu: aria-expanded false→true, dialogs 0, Escape closes: false",
+      "observations": [
+        "hol-002.components.home-390-menu"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "dominant container 1200 → 1200 px from 1440 to 1920",
+      "observations": [
+        "hol-002.responsive.home-xvp-container-curve"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "median transition 150 ms on a task/information/commerce page (rule: ≈200–300 ms)",
+      "observations": [
+        "hol-002.motion.home-1440-transition-duration"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "reduced-motion handling detected ({\"runningAnimationsNormal\":0,\"runningAnimationsReduced\":24,\"cssReducedMotionRules\":8,\"jsReducedMotionQueries\":1,\"rafCallsReduced\":13,\"rafCallsNormal\":75})",
+      "observations": [
+        "hol-002.motion.home-1440-reduced-motion-response"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "confidence": "medium",
+      "basis": "AVOID WHEN context",
+      "result": "inconsistent",
+      "note": "avoid context (dense or task page): 1 of 2523 sampled elements change with scroll",
+      "observations": [
+        "hol-002.motion.home-1440-scroll-linked-changes"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "performance.weight-follows-goal",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "11.6 MB transferred on mobile for a task/information/commerce goal (rule: keep it light)",
+      "observations": [
+        "hol-002.performance.home-390-transfer-bytes"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.arabic-needs-more-leading",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "Arabic line-height: reading n/a, display 1.5 (rule: body ≈1.6–1.8, display ≈1.25–1.35)",
+      "observations": [
+        "hol-002.typography.home-1440-reading-line-height",
+        "hol-002.typography.home-1440-display-line-height"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.isolate-mixed-runs",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "3 mixed runs; 0 isolating elements (dir=ltr/auto, bdi/bdo)",
+      "observations": [
+        "hol-002.rtl.home-1440-mixed-runs",
+        "hol-002.rtl.home-1440-dir-attributes",
+        "hol-002.rtl.home-1440-bdi-bdo"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.logical-properties",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "27 logical vs 1621 physical inline declarations (readable CSS)",
+      "observations": [
+        "hol-002.rtl.home-1440-logical-properties",
+        "hol-002.rtl.home-1440-physical-inline-properties"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.no-tracking-no-case-arabic",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "Arabic display tracking 0em",
+      "observations": [
+        "hol-002.typography.home-1440-display-tracking",
+        "hol-002.typography.home-1440-display-script"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.numerals-one-system",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "digits: 143 Western, 0 Arabic-Indic",
+      "observations": [
+        "hol-002.rtl.home-1440-digits"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "rtl.root-direction",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "html dir = \"rtl\"",
+      "observations": [
+        "hol-002.rtl.home-1440-html-dir"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "390/1440 = 0.81, 1920/1440 = 1.00 (rule: ≈0.6–0.75 and ≈1.0)",
+      "observations": [
+        "hol-002.responsive.home-xvp-display-size-curve"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "confidence": "medium",
+      "basis": "AVOID WHEN context",
+      "result": "consistent",
+      "note": "avoid context (dense or task page): scale 3× at 1440",
+      "observations": [
+        "hol-002.typography.home-1440-scale-range"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "1 rendered family group(s) ≥ 2% (al 100%)",
+      "observations": [
+        "hol-002.typography.home-1440-family-share"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.modest-scale-for-dense-pages",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "scale range 3× at 1440 (rule: ≈2–3.5×)",
+      "observations": [
+        "hol-002.typography.home-1440-scale-range"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.reading-measure",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "median reading measure 76 characters per line at 1440 (rule: ≈45–80)",
+      "observations": [
+        "hol-002.typography.home-1440-reading-chars-per-line"
+      ]
+    },
+    {
+      "ref": "hol-002",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "dominant body size 16–18 px across viewports (rule: 16–20 px, constant)",
+      "observations": [
+        "hol-002.responsive.home-xvp-body-size-curve"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "h1 × 1; landmarks {\"header\":9,\"nav\":2,\"main\":1,\"footer\":1,\"aside\":0,\"search\":0}",
+      "observations": [
+        "hol-003.hierarchy.home-1440-h1-count",
+        "hol-003.accessibility.home-1440-landmarks"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "visible indicator on 100% of sampled tab stops",
+      "observations": [
+        "hol-003.accessibility.home-1440-focus-indicator-share"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "gradient area 0.246: analyst must judge whether it is identity or imitation",
+      "observations": [
+        "hol-003.color.home-1440-gradient-area"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "axe color-contrast nodes: 17 at 1440, 1 at 390",
+      "observations": [
+        "hol-003.accessibility.home-1440-axe-violations",
+        "hol-003.accessibility.home-390-axe-violations"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "blurred floating header present — justification needs analyst review",
+      "observations": [
+        "hol-003.components.home-1440-header",
+        "hol-003.components.home-1440-effects"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "0 large-radius card groups",
+      "observations": [
+        "hol-003.components.home-1440-card-groups"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "components.mobile-menu-sheet",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "menu: aria-expanded false→true, dialogs 1, Escape closes: true",
+      "observations": [
+        "hol-003.components.home-390-menu"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "dominant container 1344 → 1636 px from 1440 to 1920",
+      "observations": [
+        "hol-003.responsive.home-xvp-container-curve"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "median transition 100 ms on a task/information/commerce page (rule: ≈200–300 ms)",
+      "observations": [
+        "hol-003.motion.home-1440-transition-duration"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "reduced-motion handling detected ({\"runningAnimationsNormal\":84,\"runningAnimationsReduced\":76,\"cssReducedMotionRules\":6,\"jsReducedMotionQueries\":2,\"rafCallsReduced\":18,\"rafCallsNormal\":182})",
+      "observations": [
+        "hol-003.motion.home-1440-reduced-motion-response"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "performance.weight-follows-goal",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconclusive",
+      "note": "6.0 MB transferred on mobile for a task/information/commerce goal (rule: keep it light)",
+      "observations": [
+        "hol-003.performance.home-390-transfer-bytes"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "390/1440 = 0.59, 1920/1440 = 1.00 (rule: ≈0.6–0.75 and ≈1.0)",
+      "observations": [
+        "hol-003.responsive.home-xvp-display-size-curve"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "2 rendered family group(s) ≥ 2% (inter 83%, berkeley 17%)",
+      "observations": [
+        "hol-003.typography.home-1440-family-share"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "typography.modest-scale-for-dense-pages",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "scale range 4.8× at 1440 (rule: ≈2–3.5×)",
+      "observations": [
+        "hol-003.typography.home-1440-scale-range"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "basis": "WHEN applies",
+      "result": "inconsistent",
+      "note": "dominant body size 15 px across viewports (rule: 16–20 px, constant)",
+      "observations": [
+        "hol-003.responsive.home-xvp-body-size-curve"
+      ]
+    },
+    {
+      "ref": "hol-003",
+      "rule": "typography.tighten-large-grotesk",
+      "confidence": "medium",
+      "basis": "WHEN applies",
+      "result": "consistent",
+      "note": "display 64px tracked -0.022em",
+      "observations": [
+        "hol-003.typography.home-1440-display-tracking",
+        "hol-003.typography.home-1440-display-size"
+      ]
+    }
+  ],
+  "overall": {
+    "predictions": 55,
+    "decided": 45,
+    "consistent": 31,
+    "hitRate": 0.689
+  }
+}

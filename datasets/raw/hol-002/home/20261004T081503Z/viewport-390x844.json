@@ -1,0 +1,2781 @@
+{
+  "viewport": {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "mobileEmulation": true,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0.0028,
+    "shifts": 1,
+    "atMs": 16142
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 9622,
+    "endHeight": 23675,
+    "reachedY": 20270,
+    "heightGrowth": 14053,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 2498,
+    "document": {
+      "lang": "ar",
+      "dirAttr": "rtl",
+      "dirComputed": "rtl",
+      "bodyDir": "rtl",
+      "titleLength": 38,
+      "metaViewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+      "themeColor": null,
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scrollY": 0,
+      "docHeight": 23675,
+      "docWidth": 390,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "size": 16,
+        "lineHeight": "24px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "visible"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 12,
+      "loadedFaces": 4,
+      "loadedFamilies": [
+        "Al-Jazeera"
+      ],
+      "loadedDetail": [
+        {
+          "family": "Al-Jazeera",
+          "weight": "200",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Al-Jazeera",
+          "weight": "400",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Al-Jazeera",
+          "weight": "700",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Al-Jazeera",
+          "weight": "900",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 9,
+        "auto": 3
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 189,
+      "totalChars": 9717,
+      "scriptChars": {
+        "arabic": 8007,
+        "latin": 13,
+        "westDigits": 80,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 1,
+      "distinctFamilies": 1,
+      "familyShare": {
+        "Al-Jazeera": 1
+      },
+      "distinctSizes": 11,
+      "sizeShare": {
+        "11": 0.002,
+        "12": 0.002,
+        "14": 0.02,
+        "15": 0.014,
+        "16": 0.355,
+        "18": 0.578,
+        "20": 0.003,
+        "24": 0.004,
+        "26": 0.02,
+        "12.8": 0.001,
+        "14.4": 0.001
+      },
+      "minSize": 11,
+      "maxSize": 26,
+      "dominantBodySize": 18,
+      "scaleRange": 1.44,
+      "distinctWeights": [
+        "300",
+        "400",
+        "500",
+        "700",
+        "900"
+      ],
+      "uppercaseShare": 0.008,
+      "clusters": [
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 18,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 5566,
+          "nodes": 91,
+          "firstDocY": 830,
+          "scripts": {
+            "arabic": 5566
+          },
+          "colors": {
+            "#000000": 5549,
+            "#595959": 17
+          },
+          "share": 0.573
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 16,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 3410,
+          "nodes": 47,
+          "firstDocY": 554,
+          "scripts": {
+            "arabic": 3210,
+            "mixed": 200
+          },
+          "colors": {
+            "#595959": 2786,
+            "#000000": 624
+          },
+          "share": 0.351
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 26,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 142,
+          "nodes": 3,
+          "firstDocY": 407,
+          "scripts": {
+            "arabic": 142
+          },
+          "colors": {
+            "#ffffff": 142
+          },
+          "share": 0.015
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 15,
+          "weight": "400",
+          "lineHeightRatio": 1.07,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 88,
+          "nodes": 1,
+          "firstDocY": 4562,
+          "scripts": {
+            "arabic": 88
+          },
+          "colors": {
+            "#333333": 88
+          },
+          "share": 0.009
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 57,
+          "nodes": 8,
+          "firstDocY": 144,
+          "scripts": {
+            "arabic": 57
+          },
+          "colors": {
+            "#000000": 57
+          },
+          "share": 0.006
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "500",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 48,
+          "nodes": 4,
+          "firstDocY": 4047,
+          "scripts": {
+            "arabic": 48
+          },
+          "colors": {
+            "#595959": 48
+          },
+          "share": 0.005
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 15,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 48,
+          "nodes": 1,
+          "firstDocY": 23591,
+          "scripts": {
+            "arabic": 48
+          },
+          "colors": {
+            "#595959": 48
+          },
+          "share": 0.005
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 18,
+          "weight": "500",
+          "lineHeightRatio": 2,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 46,
+          "nodes": 2,
+          "firstDocY": 95,
+          "scripts": {
+            "arabic": 46
+          },
+          "colors": {
+            "#000000": 46
+          },
+          "share": 0.005
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "400",
+          "lineHeightRatio": 1.14,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 43,
+          "nodes": 1,
+          "firstDocY": 4766,
+          "scripts": {
+            "arabic": 43
+          },
+          "colors": {
+            "#333333": 43
+          },
+          "share": 0.004
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 24,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 42,
+          "nodes": 4,
+          "firstDocY": 1823,
+          "scripts": {
+            "arabic": 42
+          },
+          "colors": {
+            "#595959": 42
+          },
+          "share": 0.004
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 26,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 35,
+          "nodes": 4,
+          "firstDocY": 3901,
+          "scripts": {
+            "arabic": 35
+          },
+          "colors": {
+            "#000000": 35
+          },
+          "share": 0.004
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 20,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 29,
+          "nodes": 4,
+          "firstDocY": 23011,
+          "scripts": {
+            "arabic": 29
+          },
+          "colors": {
+            "#595959": 29
+          },
+          "share": 0.003
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 25,
+          "nodes": 2,
+          "firstDocY": 20812,
+          "scripts": {
+            "arabic": 25
+          },
+          "colors": {
+            "#c31833": 12,
+            "#595959": 13
+          },
+          "share": 0.003
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "700",
+          "lineHeightRatio": 1.14,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 21,
+          "nodes": 1,
+          "firstDocY": 4762,
+          "scripts": {
+            "arabic": 21
+          },
+          "colors": {
+            "#333333": 21
+          },
+          "share": 0.002
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 14,
+          "weight": "700",
+          "lineHeightRatio": 2.14,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 20,
+          "nodes": 4,
+          "firstDocY": 3485,
+          "scripts": {
+            "arabic": 20
+          },
+          "colors": {
+            "#595959": 20
+          },
+          "share": 0.002
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 11,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 19,
+          "nodes": 2,
+          "firstDocY": 4829,
+          "scripts": {
+            "arabic": 10,
+            "latin": 9
+          },
+          "colors": {
+            "#000000": 19
+          },
+          "share": 0.002
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 26,
+          "weight": "400",
+          "lineHeightRatio": 1.17,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 15,
+          "nodes": 1,
+          "firstDocY": 4512,
+          "scripts": {
+            "arabic": 15
+          },
+          "colors": {
+            "#333333": 15
+          },
+          "share": 0.002
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 12,
+          "weight": "400",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 10,
+          "nodes": 2,
+          "firstDocY": 2,
+          "scripts": {
+            "arabic": 5,
+            "digits": 5
+          },
+          "colors": {
+            "#595959": 5,
+            "#ffffff": 5
+          },
+          "share": 0.001
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 16,
+          "weight": "400",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 10,
+          "nodes": 1,
+          "firstDocY": 4692,
+          "scripts": {
+            "arabic": 10
+          },
+          "colors": {
+            "#ffffff": 10
+          },
+          "share": 0.001
+        },
+        {
+          "family": "Al-Jazeera",
+          "stack": "Al-Jazeera, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+          "size": 12.8,
+          "weight": "400",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 10,
+          "nodes": 1,
+          "firstDocY": 12005,
+          "scripts": {
+            "arabic": 10
+          },
+          "colors": {
+            "#595959": 10
+          },
+          "share": 0.001
+        }
+      ]
+    },
+    "headings": {
+      "count": 120,
+      "h1Count": 0,
+      "outline": [
+        2,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 26,
+          "sizeVw": 6.67,
+          "weight": "700",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 64,
+          "words": 9,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 21.3,
+          "box": {
+            "x": 15,
+            "y": 409,
+            "w": 360,
+            "h": 117
+          },
+          "aboveFold": true,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 51,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 25.5,
+          "box": {
+            "x": 20,
+            "y": 585,
+            "w": 325,
+            "h": 48
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 49,
+          "words": 9,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 24.5,
+          "box": {
+            "x": 20,
+            "y": 677,
+            "w": 325,
+            "h": 48
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 51,
+          "words": 9,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 25.5,
+          "box": {
+            "x": 20,
+            "y": 769,
+            "w": 325,
+            "h": 48
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 77,
+          "words": 13,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 25.7,
+          "box": {
+            "x": 155,
+            "y": 832,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 67,
+          "words": 9,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 22.3,
+          "box": {
+            "x": 155,
+            "y": 960,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 65,
+          "words": 10,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 21.7,
+          "box": {
+            "x": 155,
+            "y": 1088,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-7",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 72,
+          "words": 13,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 24,
+          "box": {
+            "x": 155,
+            "y": 1205,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-8",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 43,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 21.5,
+          "box": {
+            "x": 155,
+            "y": 1323,
+            "w": 220,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-9",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 66,
+          "words": 10,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 22,
+          "box": {
+            "x": 155,
+            "y": 1441,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-10",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 51,
+          "words": 10,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 25.5,
+          "box": {
+            "x": 155,
+            "y": 1558,
+            "w": 220,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-11",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 38,
+          "words": 7,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 19,
+          "box": {
+            "x": 155,
+            "y": 1705,
+            "w": 220,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-12",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "uppercase",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 5,
+          "words": 1,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 5,
+          "box": {
+            "x": 0,
+            "y": 1823,
+            "w": 375,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#595959"
+        },
+        {
+          "probe": "heading-13",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 34,
+          "words": 5,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 17,
+          "box": {
+            "x": 150,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-14",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 40,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 20,
+          "box": {
+            "x": -95,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-15",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 40,
+          "words": 7,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 20,
+          "box": {
+            "x": -340,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-16",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 39,
+          "words": 6,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 19.5,
+          "box": {
+            "x": -585,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-17",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 32,
+          "words": 7,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 16,
+          "box": {
+            "x": -830,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-18",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 37,
+          "words": 5,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 18.5,
+          "box": {
+            "x": -1075,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-19",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 13,
+          "words": 4,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 13,
+          "box": {
+            "x": -1320,
+            "y": 2289,
+            "w": 225,
+            "h": 24
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-20",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 47,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 23.5,
+          "box": {
+            "x": -1565,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-21",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 51,
+          "words": 7,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 25.5,
+          "box": {
+            "x": -1810,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-22",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 16,
+          "sizeVw": 4.1,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 43,
+          "words": 6,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 21.5,
+          "box": {
+            "x": -2055,
+            "y": 2289,
+            "w": 225,
+            "h": 48
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-23",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "uppercase",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 17,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 17,
+          "box": {
+            "x": 15,
+            "y": 2377,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#595959"
+        },
+        {
+          "probe": "heading-24",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 30,
+          "words": 4,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 30,
+          "box": {
+            "x": 155,
+            "y": 2433,
+            "w": 220,
+            "h": 27
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-25",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 70,
+          "words": 10,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 35,
+          "box": {
+            "x": 15,
+            "y": 2550,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-26",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 53,
+          "words": 9,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 26.5,
+          "box": {
+            "x": 15,
+            "y": 2635,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-27",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "uppercase",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 14,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": 15,
+            "y": 2749,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#595959"
+        },
+        {
+          "probe": "heading-28",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 69,
+          "words": 12,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 23,
+          "box": {
+            "x": 155,
+            "y": 2805,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-29",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 60,
+          "words": 9,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 30,
+          "box": {
+            "x": 15,
+            "y": 2923,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-30",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 75,
+          "words": 12,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 37.5,
+          "box": {
+            "x": 15,
+            "y": 3008,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-31",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 24,
+          "sizeVw": 6.15,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "uppercase",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 6,
+          "words": 1,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 6,
+          "box": {
+            "x": 15,
+            "y": 3122,
+            "w": 360,
+            "h": 36
+          },
+          "aboveFold": false,
+          "color": "#595959"
+        },
+        {
+          "probe": "heading-32",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 72,
+          "words": 12,
+          "script": "arabic",
+          "lines": 3,
+          "charsPerLine": 24,
+          "box": {
+            "x": 155,
+            "y": 3178,
+            "w": 220,
+            "h": 81
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-33",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 65,
+          "words": 12,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 32.5,
+          "box": {
+            "x": 15,
+            "y": 3296,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-34",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 69,
+          "words": 11,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 34.5,
+          "box": {
+            "x": 15,
+            "y": 3381,
+            "w": 360,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-35",
+          "tag": "h2",
+          "level": 2,
+          "family": "Al-Jazeera",
+          "size": 26,
+          "sizeVw": 6.67,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 12,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 12,
+          "box": {
+            "x": 239,
+            "y": 3901,
+            "w": 136,
+            "h": 39
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-36",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 38,
+          "words": 7,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 19,
+          "box": {
+            "x": 15,
+            "y": 3983,
+            "w": 290,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-37",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 42,
+          "words": 6,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 21,
+          "box": {
+            "x": 15,
+            "y": 4099,
+            "w": 290,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-38",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 61,
+          "words": 11,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 30.5,
+          "box": {
+            "x": 15,
+            "y": 4215,
+            "w": 290,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-39",
+          "tag": "h3",
+          "level": 3,
+          "family": "Al-Jazeera",
+          "size": 18,
+          "sizeVw": 4.62,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 57,
+          "words": 10,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 28.5,
+          "box": {
+            "x": 15,
+            "y": 4331,
+            "w": 290,
+            "h": 54
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "display-40",
+      "tag": "span",
+      "level": null,
+      "family": "Al-Jazeera",
+      "size": 26,
+      "sizeVw": 6.67,
+      "weight": "700",
+      "lineHeightRatio": 1.5,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "start",
+      "textWrap": "wrap",
+      "chars": 64,
+      "words": 9,
+      "script": "arabic",
+      "lines": 3,
+      "charsPerLine": 21.3,
+      "box": {
+        "x": 31,
+        "y": 407,
+        "w": 344,
+        "h": 121
+      },
+      "aboveFold": true,
+      "color": "#ffffff"
+    },
+    "reading": {
+      "sampled": 51,
+      "fontSize": {
+        "n": 51,
+        "min": 16,
+        "p25": 16,
+        "median": 16,
+        "p75": 16,
+        "max": 22
+      },
+      "lineHeightRatio": {
+        "n": 51,
+        "min": 1,
+        "p25": 1.5,
+        "median": 1.5,
+        "p75": 1.5,
+        "max": 1.5
+      },
+      "charsPerLine": {
+        "n": 51,
+        "min": 20.3,
+        "p25": 44.7,
+        "median": 66.8,
+        "p75": 96.3,
+        "max": 166
+      },
+      "widthEm": {
+        "n": 51,
+        "min": 15,
+        "p25": 18.8,
+        "median": 22.5,
+        "p75": 22.5,
+        "max": 22.5
+      },
+      "justified": 0,
+      "scripts": {
+        "mixed": 30,
+        "arabic": 21
+      }
+    },
+    "color": {
+      "rootBackground": "#ffffff",
+      "rootBackgroundLuminance": 1,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#ffffff",
+          "areaShare": 0.727,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        },
+        {
+          "color": "#e0e0e0",
+          "areaShare": 0.25,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.88
+          }
+        },
+        {
+          "color": "#f0f0f0",
+          "areaShare": 0.01,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.94
+          }
+        },
+        {
+          "color": "#000000",
+          "areaShare": 0.007,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          }
+        },
+        {
+          "color": "#c31833",
+          "areaShare": 0.004,
+          "hsl": {
+            "h": 351,
+            "s": 0.78,
+            "l": 0.43
+          }
+        },
+        {
+          "color": "#e5e5e5",
+          "areaShare": 0.002,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.9
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#000000",
+          "share": 0.653
+        },
+        {
+          "color": "#595959",
+          "share": 0.311
+        },
+        {
+          "color": "#333333",
+          "share": 0.018
+        },
+        {
+          "color": "#ffffff",
+          "share": 0.017
+        },
+        {
+          "color": "#c31833",
+          "share": 0.001
+        }
+      ],
+      "buttonBackgrounds": [
+        {
+          "color": "#000000",
+          "count": 1
+        }
+      ],
+      "gradientAreaRatio": 0,
+      "gradientColors": [],
+      "imageBackgrounds": 0,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over CSS images/gradients or overlapping img/video/canvas/svg counted as uncertain (probe 0.1.1+)",
+        "checkedChars": 9717,
+        "lowContrastNormalShare": 0,
+        "lowContrastLargeShare": 0,
+        "uncertainShare": 0.012,
+        "ratio": {
+          "n": 189,
+          "min": 1,
+          "p25": 7,
+          "median": 21,
+          "p75": 21,
+          "max": 21
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 360,
+          "count": 134
+        },
+        {
+          "value": 300,
+          "count": 22
+        },
+        {
+          "value": 330,
+          "count": 10
+        },
+        {
+          "value": 328,
+          "count": 4
+        },
+        {
+          "value": 346,
+          "count": 1
+        },
+        {
+          "value": 316,
+          "count": 1
+        }
+      ],
+      "dominantContainer": 360,
+      "widestContainer": 360,
+      "textLeftEdges": [
+        {
+          "x": 16,
+          "n": 24
+        },
+        {
+          "x": 156,
+          "n": 11
+        },
+        {
+          "x": 32,
+          "n": 9
+        },
+        {
+          "x": 44,
+          "n": 9
+        },
+        {
+          "x": 160,
+          "n": 8
+        },
+        {
+          "x": 172,
+          "n": 7
+        },
+        {
+          "x": 164,
+          "n": 5
+        },
+        {
+          "x": 168,
+          "n": 5
+        },
+        {
+          "x": 176,
+          "n": 5
+        },
+        {
+          "x": 20,
+          "n": 4
+        },
+        {
+          "x": 192,
+          "n": 4
+        },
+        {
+          "x": 264,
+          "n": 4
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 16,
+          "n": 111
+        },
+        {
+          "x": 44,
+          "n": 20
+        },
+        {
+          "x": 32,
+          "n": 12
+        },
+        {
+          "x": 84,
+          "n": 9
+        },
+        {
+          "x": 64,
+          "n": 6
+        }
+      ],
+      "distinctTextEdges": 58,
+      "gridContainers": 2,
+      "flexContainers": 315,
+      "gridColumnCounts": [
+        {
+          "value": 1,
+          "count": 1
+        },
+        {
+          "value": 12,
+          "count": 1
+        }
+      ],
+      "gaps": {
+        "n": 70,
+        "min": 3,
+        "p25": 5,
+        "median": 8,
+        "p75": 10,
+        "max": 24
+      },
+      "stickyElements": 2,
+      "fixedElements": 6,
+      "sections": {
+        "count": 1,
+        "heightsVh": {
+          "n": 1,
+          "min": 3.86,
+          "p25": 3.86,
+          "median": 3.86,
+          "p75": 3.86,
+          "max": 3.86
+        },
+        "paddingTop": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      },
+      "pageHeightVh": 28.05,
+      "textOverMedia": 5
+    },
+    "components": {
+      "header": {
+        "position": "relative",
+        "height": 60,
+        "top": 74,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 6,
+        "expandableToggles": 1
+      },
+      "navCount": 3,
+      "buttons": {
+        "count": 1,
+        "radius": {
+          "n": 1,
+          "min": 100,
+          "p25": 100,
+          "median": 100,
+          "p75": 100,
+          "max": 100
+        },
+        "pillShare": 1,
+        "height": {
+          "n": 1,
+          "min": 44,
+          "p25": 44,
+          "median": 44,
+          "p75": 44,
+          "max": 44
+        },
+        "fontSize": {
+          "n": 1,
+          "min": 16,
+          "p25": 16,
+          "median": 16,
+          "p75": 16,
+          "max": 16
+        },
+        "textTransform": {
+          "none": 1
+        },
+        "fontWeight": {
+          "400": 1
+        }
+      },
+      "forms": {
+        "forms": 2,
+        "inputs": 1
+      },
+      "media": {
+        "images": 105,
+        "imagesTotal": 130,
+        "lazyImages": 83,
+        "srcsetImages": 94,
+        "videos": 0,
+        "autoplayVideos": 0,
+        "videosWithControls": 0,
+        "inlineSvgs": 55,
+        "canvases": [],
+        "iframes": 40
+      },
+      "cardGroups": {
+        "count": 1,
+        "items": [
+          {
+            "items": 10,
+            "width": 225,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          }
+        ],
+        "radius": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 210,
+      "roundedBoxShare12": 0.067,
+      "roundedBoxShare24": 0.048,
+      "opacityZeroElements": 14,
+      "transformedElements": 37
+    },
+    "motion": {
+      "transitionElements": 200,
+      "transitionDuration": {
+        "n": 200,
+        "min": 100,
+        "p25": 150,
+        "median": 150,
+        "p75": 200,
+        "max": 400
+      },
+      "transitionEasing": {
+        "linear": 180,
+        "ease-in-out": 15,
+        "ease": 3,
+        "ease-in": 2
+      },
+      "transitionProperty": {
+        "text-decoration": 93,
+        "color": 73,
+        "all": 16,
+        "opacity": 11,
+        "fill": 5,
+        "visibility": 1,
+        "right": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 18,
+      "inaccessibleSheets": 0,
+      "rules": 7888,
+      "mediaQueries": {
+        "(min-width: 992px)": 724,
+        "(max-width: 991.98px)": 270,
+        "not all and (min-resolution: 0.001dpcm)": 34,
+        "screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)": 33,
+        "(pointer: coarse)": 33,
+        "(-ms-high-contrast:none), screen and (-ms-high-contrast:active)": 31,
+        "(max-width: 991px)": 8,
+        "(prefers-reduced-motion)": 8,
+        "(max-width: 991.98px) and (min-width: 992px)": 6,
+        "(min-width: 992px) and (min-width: 992px)": 5,
+        "(-ms-high-contrast:none) and (min-width: 992px), screen and (-ms-high-contrast:a": 4,
+        "(max-width: 349.98px)": 4,
+        "(min-width: 992px) and (max-width: 1092px)": 4,
+        "screen and (max-width: 820px)": 3,
+        "(min-width: 576px)": 3,
+        "(min-width: 1200px)": 3,
+        "(max-width: 1159px)": 2,
+        "(max-width: 420px)": 2,
+        "(min-width: 550px)": 2,
+        "(max-width: 991.98px) and (max-width: 356px)": 2,
+        "print": 1,
+        "screen and (max-width: 640px)": 1,
+        "(max-width: 600px), (max-height: 250px)": 1,
+        "(min-height: 860px)": 1,
+        "(min-width: 600px)": 1
+      },
+      "breakpoints": {
+        "min:992px": 751,
+        "max:991.98px": 281,
+        "max:991px": 8,
+        "min:1200px": 4,
+        "max:349.98px": 4,
+        "max:1092px": 4,
+        "max:820px": 3,
+        "min:576px": 3,
+        "min:550px": 3,
+        "max:600px": 2,
+        "max:1159px": 2,
+        "max:420px": 2,
+        "min:426px": 2,
+        "max:896px": 2,
+        "max:550px": 2,
+        "max:992px": 2,
+        "max:356px": 2,
+        "max:640px": 1,
+        "min:600px": 1,
+        "min:400px": 1,
+        "max:425px": 1,
+        "min:425px": 1,
+        "min:769px": 1,
+        "min:897px": 1,
+        "max:1023px": 1
+      },
+      "reducedMotionRules": 8,
+      "colorSchemeRules": 0,
+      "containerRules": 3,
+      "clampUses": 1,
+      "vwFontSizes": 0,
+      "logicalProps": 27,
+      "physicalInlineProps": 1687,
+      "focusVisibleRules": 84,
+      "fontFaceRules": 12,
+      "scrollTimelineUses": 4,
+      "customPropertiesDeclared": 264,
+      "hoverMediaRules": 0
+    },
+    "tokens": {
+      "rootCustomProperties": 24,
+      "colorTokens": 9,
+      "lengthTokens": 7,
+      "colorSample": [
+        {
+          "name": "--ticker-color",
+          "value": "#d71c45"
+        },
+        {
+          "name": "--primary-color",
+          "value": "#32a2ef"
+        },
+        {
+          "name": "--primary-dark-color",
+          "value": "#118add"
+        },
+        {
+          "name": "--secondary-color",
+          "value": "#fec300"
+        },
+        {
+          "name": "--hyperlink-color",
+          "value": "#145587"
+        },
+        {
+          "name": "--original-color",
+          "value": "#011f75"
+        },
+        {
+          "name": "--primary-light-color",
+          "value": "#9fc9e6"
+        },
+        {
+          "name": "--swiper-theme-color",
+          "value": "#007aff"
+        },
+        {
+          "name": "--main-grey-color",
+          "value": "#595959"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--clientWidth",
+          "value": "390px"
+        },
+        {
+          "name": "--vh",
+          "value": "8.44px"
+        },
+        {
+          "name": "--article-body-font-size-m",
+          "value": "1.25rem"
+        },
+        {
+          "name": "--sticky-nav-header-offset",
+          "value": "60px"
+        },
+        {
+          "name": "--article-body-font-size-d",
+          "value": "1.375rem"
+        },
+        {
+          "name": "--swiper-navigation-size",
+          "value": "44px"
+        },
+        {
+          "name": "--article-source-font-size",
+          "value": "1.25rem"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 3,
+        "main": 1,
+        "footer": 72,
+        "aside": 1,
+        "search": 1
+      },
+      "langPresent": true,
+      "images": {
+        "total": 130,
+        "missingAlt": 2,
+        "emptyAlt": 24
+      },
+      "linksVisible": 165,
+      "linksWithoutName": 0,
+      "buttonsVisible": 14,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 1,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 11,
+      "focusableCount": 289
+    },
+    "rtl": {
+      "htmlDir": "rtl",
+      "computedDirection": "rtl",
+      "mainDirection": "rtl",
+      "dirAttributes": {
+        "rtl": 3,
+        "ltr": 0,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "center": 13,
+        "start": 171,
+        "left": 2,
+        "right": 3
+      },
+      "mixedRunNodes": 1,
+      "digits": {
+        "western": 80,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 93,
+      "horizontallyMirroredIcons": 5
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 2024,
+      "load": 5480,
+      "transferSize": 205995,
+      "firstContentfulPaint": 1508,
+      "lcp": {
+        "time": 1516,
+        "element": "img",
+        "size": 85410
+      },
+      "cls": 0.015,
+      "longTasks": {
+        "count": 41,
+        "totalMs": 3988
+      },
+      "domElements": 2498
+    },
+    "implementation": {
+      "globals": {
+        "gtag": true,
+        "dataLayer": true
+      },
+      "reactRoot": true,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {
+          "webgl": 1,
+          "webgl2": 1
+        },
+        "webgpuRequested": false,
+        "matchMediaQueries": {
+          "(prefers-reduced-motion)": 2,
+          "only all": 1,
+          "not all and (min-width: 992px)": 46,
+          "not all and (min-width: 991.8px)": 8
+        },
+        "intersectionObservers": 24,
+        "resizeObservers": 29,
+        "rafCalls": 87,
+        "rafFirstAt": 1773,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 22,
+        "wheelListeners": 0,
+        "touchmoveListeners": 5,
+        "pointermoveListeners": 12,
+        "startedAt": 1791101704544
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": "Al Jazeera-Bold",
+        "postScriptName": "AlJazeera-Bold",
+        "custom": true,
+        "glyphs": 60
+      }
+    ],
+    "heading-1": [
+      {
+        "family": "Al Jazeera-Regular",
+        "postScriptName": "AlJazeera-Regular",
+        "custom": true,
+        "glyphs": 49
+      }
+    ],
+    "display-40": [
+      {
+        "family": "Al Jazeera-Bold",
+        "postScriptName": "AlJazeera-Bold",
+        "custom": true,
+        "glyphs": 60
+      }
+    ],
+    "header-42": [],
+    "para-41": [
+      {
+        "family": "Al Jazeera-Regular",
+        "postScriptName": "AlJazeera-Regular",
+        "custom": true,
+        "glyphs": 12
+      }
+    ],
+    "button-43": [
+      {
+        "family": "Al Jazeera-Regular",
+        "postScriptName": "AlJazeera-Regular",
+        "custom": true,
+        "glyphs": 9
+      }
+    ]
+  },
+  "interactions": {
+    "menu": {
+      "found": true,
+      "ariaExpandedBefore": "false",
+      "ariaExpandedAfter": "true",
+      "hasAriaControls": false,
+      "visibleLinksBefore": 16,
+      "visibleLinksAfter": 22,
+      "escapeCloses": false,
+      "bodyLocked": true,
+      "activeTag": "button",
+      "dialogs": 0
+    },
+    "focus": {
+      "steps": 16,
+      "focusedSteps": 16,
+      "withIndicator": 13,
+      "indicatorShare": 0.81,
+      "offscreenOrHidden": 0,
+      "firstIsSkipLink": false,
+      "indicatorProps": [
+        [
+          "outline",
+          13
+        ],
+        [
+          "outlineStyle",
+          13
+        ],
+        [
+          "outlineWidth",
+          13
+        ],
+        [
+          "outlineColor",
+          13
+        ],
+        [
+          "textDecorationLine",
+          2
+        ]
+      ],
+      "sequence": [
+        "iframe!",
+        "iframe!",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "button",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "a",
+        "iframe!"
+      ]
+    }
+  },
+  "axe": {
+    "engine": "4.13.0",
+    "violations": [
+      {
+        "id": "aria-allowed-attr",
+        "impact": "critical",
+        "nodes": 1
+      },
+      {
+        "id": "aria-command-name",
+        "impact": "serious",
+        "nodes": 5
+      },
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": 1
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "nodes": 4
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "nodes": 1
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "nodes": 2
+      }
+    ],
+    "counts": {
+      "violations": 6,
+      "incomplete": 5,
+      "passes": 51
+    },
+    "byImpact": {
+      "critical": 1,
+      "serious": 11,
+      "moderate": 2
+    }
+  },
+  "aria": {
+    "lines": 745,
+    "roles": {
+      "link": 148,
+      "heading": 107,
+      "article": 91,
+      "listitem": 70,
+      "text": 33,
+      "img": 25,
+      "paragraph": 17,
+      "list": 15,
+      "button": 12,
+      "group": 10,
+      "iframe": 6,
+      "navigation": 2,
+      "region": 2,
+      "banner": 1,
+      "strong": 1,
+      "main": 1,
+      "textbox": 1,
+      "complementary": 1,
+      "contentinfo": 1
+    }
+  },
+  "network": {
+    "requests": 3133,
+    "failed": 162,
+    "totalBytes": 11568101,
+    "byType": {
+      "script": {
+        "count": 179,
+        "bytes": 5538102
+      },
+      "image": {
+        "count": 1689,
+        "bytes": 3447226
+      },
+      "document": {
+        "count": 927,
+        "bytes": 1595142
+      },
+      "fetch": {
+        "count": 222,
+        "bytes": 426682
+      },
+      "stylesheet": {
+        "count": 19,
+        "bytes": 268759
+      },
+      "font": {
+        "count": 7,
+        "bytes": 172557
+      },
+      "xhr": {
+        "count": 54,
+        "bytes": 66584
+      },
+      "other": {
+        "count": 3,
+        "bytes": 37607
+      },
+      "ping": {
+        "count": 29,
+        "bytes": 15442
+      },
+      "media": {
+        "count": 4,
+        "bytes": 0
+      }
+    },
+    "imageFormats": {
+      "image/webp": {
+        "count": 89,
+        "bytes": 1987673
+      },
+      "image/gif": {
+        "count": 378,
+        "bytes": 261131
+      },
+      "image/svg+xml": {
+        "count": 4,
+        "bytes": 5677
+      },
+      "image/jpeg": {
+        "count": 15,
+        "bytes": 298342
+      },
+      "unknown": {
+        "count": 647,
+        "bytes": 413078
+      },
+      "gif": {
+        "count": 81,
+        "bytes": 97470
+      },
+      "text/html": {
+        "count": 289,
+        "bytes": 271629
+      },
+      "image/png": {
+        "count": 53,
+        "bytes": 39397
+      },
+      "text/plain": {
+        "count": 18,
+        "bytes": 9605
+      },
+      "application/javascript": {
+        "count": 96,
+        "bytes": 48428
+      },
+      "image/avif": {
+        "count": 3,
+        "bytes": 1505
+      },
+      "application/json": {
+        "count": 7,
+        "bytes": 5973
+      },
+      "-": {
+        "count": 1,
+        "bytes": 598
+      },
+      "aspx": {
+        "count": 5,
+        "bytes": 5084
+      },
+      "jpg": {
+        "count": 1,
+        "bytes": 922
+      },
+      "image/": {
+        "count": 2,
+        "bytes": 714
+      }
+    },
+    "fonts": {
+      "count": 7,
+      "bytes": 172557,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 2993,
+      "bytes": 8245703,
+      "hosts": 355
+    },
+    "topHosts": [
+      {
+        "host": "www.aljazeera.net",
+        "bytes": 3322398
+      },
+      {
+        "host": "www.youtube.com",
+        "bytes": 1100285
+      },
+      {
+        "host": "www.youtube-nocookie.com",
+        "bytes": 1023217
+      },
+      {
+        "host": "www.gstatic.com",
+        "bytes": 404991
+      },
+      {
+        "host": "a.pub.network",
+        "bytes": 377169
+      },
+      {
+        "host": "securepubads.g.doubleclick.net",
+        "bytes": 359391
+      },
+      {
+        "host": "cdn.cookielaw.org",
+        "bytes": 308406
+      },
+      {
+        "host": "imasdk.googleapis.com",
+        "bytes": 294136
+      }
+    ],
+    "libraryEvidence": {
+      "wordpress": 89,
+      "google-tag-manager": 1,
+      "youtube": 5,
+      "google-fonts": 3
+    }
+  },
+  "console": {
+    "errors": 36,
+    "pageErrors": 2
+  }
+}
