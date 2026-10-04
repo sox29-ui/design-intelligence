@@ -2531,16 +2531,16 @@
         },
         {
           "path": "handoff/di-knowledge-v0.1.0.full.json",
-          "bytes": 4767063,
-          "sha256": "ac151242e29b239c2b6d22e38733992148ca9c57bff89ec6c290c78567a65220"
+          "bytes": 4768200,
+          "sha256": "bf3a2e7ac400ac81d67af770365259cfc70f39a8f9b9da46a2e5f4ca1721bf3f"
         },
         {
           "path": "handoff/di-knowledge-v0.1.0.json",
-          "bytes": 225712,
-          "sha256": "c7fc1fb76697271f59907705fc81b3b05d50fe8d7da4c9512369bb26cbc3a853"
+          "bytes": 226849,
+          "sha256": "8fc8d8e250fb93bceaef2ad958d6efb7540bdf30b6a6f392d5f16a5cb78a99a0"
         }
       ],
-      "total_bytes": 5091601
+      "total_bytes": 5093875
     },
     "tests": {
       "description": "Unit, integrity, contract and browser fixture tests",

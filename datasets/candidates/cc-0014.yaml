@@ -1,0 +1,13 @@
+id: cc-0014
+type: tooling
+targets: [scripts/*.ts, .claude/skills/design-intelligence/scripts/verify-page.ts]
+summary: CLI entry-point guard `import.meta.url === file://${process.argv[1]}` never matches on Windows (file:///C:/… vs C:\…), so 17 scripts (validate, collect, verify-page CLI, …) exit silently without running. Use pathToFileURL(process.argv[1]).href. Library imports (verify(), validateAll(), buildExport()) and `npm test` are unaffected.
+motivation:
+  source: tooling-audit
+  evidence:
+    - handoff/SETUP-AR.md#windows-warning
+  recurrence: all CLI scripts; found while preparing the Windows handoff (not run on Windows in this session).
+predicted_effect: CLIs work on Windows; no silent false "validation passed".
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

@@ -366,6 +366,34 @@
         ".claude/skills/design-intelligence/scripts/inspect-page.ts"
       ],
       "type": "tooling"
+    },
+    {
+      "benchmark": {
+        "after": null,
+        "before": null,
+        "status": "not-run"
+      },
+      "created": "2026-10-04",
+      "id": "cc-0014",
+      "motivation": {
+        "evidence": [
+          "handoff/SETUP-AR.md#windows-warning"
+        ],
+        "recurrence": "all CLI scripts; found while preparing the Windows handoff (not run on Windows in this session).",
+        "source": "tooling-audit"
+      },
+      "predicted_effect": "CLIs work on Windows; no silent false \"validation passed\".",
+      "review": {
+        "date": null,
+        "reviewer": null,
+        "status": "pending"
+      },
+      "summary": "CLI entry-point guard `import.meta.url === file://${process.argv[1]}` never matches on Windows (file:///C:/… vs C:\\…), so 17 scripts (validate, collect, verify-page CLI, …) exit silently without running. Use pathToFileURL(process.argv[1]).href. Library imports (verify(), validateAll(), buildExport()) and `npm test` are unaffected.",
+      "targets": [
+        "scripts/*.ts",
+        ".claude/skills/design-intelligence/scripts/verify-page.ts"
+      ],
+      "type": "tooling"
     }
   ],
   "di_version": "0.1.0",
@@ -6841,7 +6869,7 @@
     "name": "design-intelligence",
     "version": "0.1.0"
   },
-  "source_commit": "054db8a284f2a9362274ce0fc838c122cb5bfc0d",
+  "source_commit": "d837cceb601455ccd20b2c974da58f4b50f9abcc",
   "sources": [
     {
       "accessed": "2026-10-02",
