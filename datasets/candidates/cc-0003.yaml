@@ -1,0 +1,13 @@
+id: cc-0003
+type: tooling
+targets: [scripts/validation-check.ts]
+summary: The scroll-narrative AVOID WHEN check should ignore isolated scroll-linked elements (e.g. one shrinking sticky header); require at least ~1% of sampled elements or ≥ 10 elements.
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-002.motion.home-1440-scroll-linked-changes   # 1 of 2523 sampled elements changed with scroll
+  recurrence: one holdout page.
+predicted_effect: The check would measure scroll narrative rather than any scroll-reactive UI.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

@@ -1,0 +1,13 @@
+id: cc-0001
+type: tooling
+targets: [scripts/validation-check.ts, .claude/skills/design-intelligence/scripts/verify-page.ts]
+summary: Count reduced motion as honoured only when an effect is measured (fewer running animations or animation-frame calls under reduce), not when the page merely queries the preference.
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-001.motion.home-1440-reduced-motion-response   # JS queries prefers-reduced-motion; running animations 3 → 8 under reduce
+  recurrence: one holdout page; the same lenient logic exists in verify-page's reduced-motion warning.
+predicted_effect: Fewer false "honours reduced motion" results; the holdout prediction for hol-001 would flip to inconsistent (it must not be re-scored — the holdout is spent).
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

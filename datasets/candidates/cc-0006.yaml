@@ -1,0 +1,14 @@
+id: cc-0006
+type: modify-rule
+targets: [rtl.logical-properties]
+summary: Keep the rule as a standards-based recommendation but stop presenting it as what quality Arabic sites do — large Arabic news sites (Megaphone, Al Jazeera) use physical properties with element-level direction; only one reference uses logical properties at scale.
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-002.rtl.home-1440-logical-properties        # 27 logical vs 1621 physical
+    - ref-011.rtl.home-1440-logical-properties
+  recurrence: one extraction counterexample and one holdout page.
+predicted_effect: Clearer rationale (maintainability, mirroring safety) instead of a descriptive claim the corpus does not support.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

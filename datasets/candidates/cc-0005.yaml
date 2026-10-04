@@ -1,0 +1,14 @@
+id: cc-0005
+type: modify-rule
+targets: [typography.modest-scale-for-dense-pages]
+summary: Re-examine the ≈2–3.5× range for conversion marketing pages of medium density — Linear's home (4.8×) and Mathaf (7.9×, already an AVOID WHEN case) exceed it; consider limiting WHEN to task, data and dense information pages.
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-003.typography.home-1440-scale-range
+    - val-002.typography.home-ar-1440-scale-range
+  recurrence: one validation page and one holdout page (different contexts).
+predicted_effect: A rule that predicts task/data/dense-reading pages well without forcing small headlines onto marketing pages.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

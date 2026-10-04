@@ -1,0 +1,13 @@
+id: cc-0007
+type: eval
+targets: [datasets/corpus.yaml]
+summary: Find capturable Arabic commerce references for the next validation split — Nahdi and Whites served error pages to the headless browser and Al-Dawaa a challenge; commerce and RTL-commerce rules are unvalidated.
+motivation:
+  source: validation-check
+  evidence:
+    - datasets/corpus.yaml#val-003
+  recurrence: three Saudi commerce sites in a row.
+predicted_effect: Validation coverage for the rules that matter most to brief C.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

@@ -1,0 +1,13 @@
+id: cc-0002
+type: tooling
+targets: [.claude/skills/design-intelligence/scripts/lib/signatures.ts]
+summary: The dark-neon-default signature should need neon on more than a single small control (count ≥ 2 or a minimum area), so one icon button in a product screenshot does not trigger it.
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-003.color.home-1440-button-backgrounds   # #e4f222 on one small control (a favourite toggle inside a product UI image)
+  recurrence: one holdout page.
+predicted_effect: Fewer false positives on dark product pages; unchanged detection of neon accent systems.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

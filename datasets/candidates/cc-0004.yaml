@@ -1,0 +1,15 @@
+id: cc-0004
+type: modify-rule
+targets: [typography.reading-text-16-to-20]
+summary: Narrow WHEN to pages whose primary goal is reading or a task; cinematic storytelling pages with a conversion co-goal set small, viewport-scaled text (hol-001), and dense commerce/SaaS chrome uses 13–15 px (Ounass, Linear).
+motivation:
+  source: holdout-check
+  evidence:
+    - hol-001.responsive.home-xvp-body-size-curve   # 12.2 / 24 / 11.7 / 15.6 px
+    - hol-003.responsive.home-xvp-body-size-curve   # 15 px everywhere
+    - ref-012.responsive.home-en-xvp-body-size-curve
+  recurrence: 2 of 3 holdout pages plus one extraction counterexample; the rule was at high confidence when it failed.
+predicted_effect: Fewer misapplications; the rule keeps its force on reading pages. Its confidence should drop to medium until new validation.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

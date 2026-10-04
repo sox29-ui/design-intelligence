@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Issue 14: Shade — The Lighthouse Review</title>
+  <meta name="description" content="Issue 14 of The Lighthouse Review, an independent quarterly about architecture, cities and public space. Autumn 2026: Shade — how hot cities design for shade, opening with Leila Haddad’s essay “The Architecture of Shade”.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161B" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23F3E6CC'/%3E%3Crect y='20' width='32' height='12' fill='%23E3CDA2'/%3E%3Ccircle cx='21' cy='11' r='6' fill='%23C55A2E'/%3E%3Cpath d='M7 8h5v12H7z' fill='%231C1B19'/%3E%3Cpath d='M7 20h5l-9 7H-2z' fill='%232A3768'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..600&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,16,400&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared SVG definitions (hatching used by the diagrams) -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <line class="hatch-line" x1="0" y1="0" x2="0" y2="5"/>
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="masthead wrap">
+      <p class="masthead__issue">Issue 14 <span aria-hidden="true">—</span> Shade <span aria-hidden="true">—</span> Autumn 2026</p>
+      <a class="wordmark" href="./"><span class="wordmark__the">The</span> Lighthouse Review</a>
+      <a class="button button--small masthead__cta" href="#subscribe">Subscribe</a>
+    </div>
+    <nav class="site-nav" aria-label="Sections">
+      <ul class="site-nav__list">
+        <li><a href="./" aria-current="page">Current issue</a></li>
+        <li><a href="/essays/">Essays</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/interviews/">Interviews</a></li>
+        <li><a href="/field-notes/">Field notes</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============================================================
+         ISSUE COVER
+         ============================================================ -->
+    <section class="cover" aria-labelledby="issue-title">
+      <div class="wrap cover__grid">
+
+        <div class="cover__object">
+          <div class="cover__panel" data-cover>
+            <div class="cover__sky" aria-hidden="true"><span class="cover__sun"></span></div>
+            <svg class="cover__ground" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <path class="cover__paving" d="M19.2 0L-174 100M21.4 0L-158 100M23.6 0L-142 100M25.8 0L-126 100M28 0L-110 100M30.2 0L-94 100M32.4 0L-78 100M34.6 0L-62 100M36.8 0L-46 100M39 0L-30 100M41.2 0L-14 100M43.4 0L2 100M45.6 0L18 100M47.8 0L34 100M52.2 0L66 100M54.4 0L82 100M56.6 0L98 100M58.8 0L114 100M61 0L130 100M63.2 0L146 100M65.4 0L162 100M67.6 0L178 100M69.8 0L194 100M72 0L210 100M74.2 0L226 100M76.4 0L242 100M78.6 0L258 100M80.8 0L274 100M50 0V100"/>
+              <path class="cover__paving cover__paving--courses" d="M0 4H100M0 10H100M0 19H100M0 32H100M0 52H100M0 82H100"/>
+            </svg>
+            <span class="cover__masthead" aria-hidden="true">The Lighthouse Review</span>
+            <h1 class="cover__title" id="issue-title">
+              <span class="cover__issue">Issue 14<span class="visually-hidden">,</span></span>
+              <span class="cover__season">Autumn 2026<span class="visually-hidden">:</span></span>
+              <span class="cover__word">Shade<span class="cover__shadow" aria-hidden="true">Shade</span></span>
+            </h1>
+            <span class="cover__strap" aria-hidden="true">Architecture, cities <br>&amp; public space</span>
+          </div>
+
+          <div class="cover__caption">
+            <p class="cover__note" id="cover-note">Cover: the title casts its own shadow, drawn for <span data-cover-time>four in the afternoon</span>.</p>
+            <div class="sun-control" data-sun-control hidden>
+              <label class="sun-control__label" for="sun-time">Move the sun</label>
+              <input class="sun-control__input" id="sun-time" type="range" min="6" max="19" step="0.25" value="16" aria-describedby="cover-note">
+              <span class="sun-control__value" data-sun-value aria-hidden="true">16:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cover__aside">
+          <div class="editor-note">
+            <p class="kicker">From the editor</p>
+            <p class="editor-note__text">For a magazine named after a light, this is an issue about its absence. Over a long, hot summer we asked architects, gardeners, sailmakers and city officials how hot cities make shade — with arcades and awnings, courtyards and trees — and why the rest of us will soon need to learn.</p>
+            <p class="editor-note__sign">Clara Nwosu-Bell, <span class="editor-note__role">Editor</span></p>
+            <p class="editor-note__links">
+              <a class="text-link" href="#cover-essay">Start with the cover essay <span aria-hidden="true">↓</span></a>
+            </p>
+          </div>
+
+          <nav class="toc" aria-labelledby="toc-title">
+            <h2 class="kicker toc__title" id="toc-title">Contents</h2>
+            <ol class="toc__list">
+              <li><a href="#cover-essay"><span class="toc__num">01</span><span class="toc__name">The Architecture of Shade</span><span class="toc__by">Leila Haddad</span></a></li>
+              <li><a href="#piece-02"><span class="toc__num">02</span><span class="toc__name">Against the Bare Plaza</span><span class="toc__by">Yusuf Demirel</span></a></li>
+              <li><a href="#piece-03"><span class="toc__num">03</span><span class="toc__name">A Roof for the Car Park</span><span class="toc__by">Hana Iwata</span></a></li>
+              <li><a href="#piece-04"><span class="toc__num">04</span><span class="toc__name">Six Kilometres in the Shade</span><span class="toc__by">Kwame Adjei</span></a></li>
+              <li><a href="#piece-05"><span class="toc__num">05</span><span class="toc__name">Stitching the Sky</span><span class="toc__by">Priya Raman</span></a></li>
+              <li><a href="#piece-06"><span class="toc__num">06</span><span class="toc__name">Who Owns a Tree?</span><span class="toc__by">Marisol Etxeberria</span></a></li>
+              <li><a href="#piece-07"><span class="toc__num">07</span><span class="toc__name">The Arcade Ordinance</span><span class="toc__by">R. M. Castellanos</span></a></li>
+              <li><a href="#interview"><span class="toc__num">08</span><span class="toc__name">A Tree Is a Slow Building</span><span class="toc__by">Ama Ofori-Lund</span></a></li>
+            </ol>
+          </nav>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COVER ESSAY (opening)
+         ============================================================ -->
+    <article class="essay" id="cover-essay" aria-labelledby="essay-title">
+      <div class="wrap essay__grid">
+
+        <header class="essay__header">
+          <p class="kicker"><span class="kicker__num">01</span> Cover essay</p>
+          <h2 class="essay__title" id="essay-title">The Architecture of Shade</h2>
+          <p class="essay__standfirst">For most of history, the hottest cities on earth were organised around a resource nobody thought to measure. As the summers lengthen, we will have to learn to design it again — not as an amenity, but as infrastructure.</p>
+          <div class="byline">
+            <p class="byline__author">By <a href="/contributors/leila-haddad/" rel="author">Leila Haddad</a></p>
+            <p class="byline__meta"><span>24&nbsp;min&nbsp;read</span> <span class="byline__sep" aria-hidden="true">·</span> <span>Diagrams by the author</span> <span class="byline__sep" aria-hidden="true">·</span> <time datetime="2026-09-22">22 September 2026</time></p>
+          </div>
+        </header>
+
+        <div class="prose essay__body">
+          <p class="dropcap"><span class="lead-in">At two o’clock</span> on a July afternoon, the old cloth market in Qasr Ambar is eleven degrees cooler than the car park four hundred metres away. Nobody who works there needs a thermometer to tell them so. The spice sellers set out their sacks along the north wall, where the shadow arrives first; the boy who carries tea times his rounds by the narrowing strip of sun on the paving; and at around four, when the light finally slides off the far roofs, the whole street exhales and the shutters go up again. The street is not air-conditioned. It is simply drawn — its width, its height, its turns and the reed mats strung between its upper windows — so that the sun touches the ground for less than an hour a day.</p>
+
+          <figure class="essay-figure" aria-labelledby="fig-1-caption">
+            <div class="sections">
+              <div class="section-diagram">
+                <svg viewBox="0 0 200 180" aria-hidden="true" focusable="false">
+                  <polygon class="sd-shadow" points="60,130 88,170 60,170"/>
+                  <line class="sd-ray" x1="18" y1="70" x2="88" y2="170"/>
+                  <rect class="sd-mass" x="10" y="130" width="50" height="40"/>
+                  <rect class="sd-mass" x="140" y="130" width="50" height="40"/>
+                  <line class="sd-ground sd-ground--shade" x1="60" y1="170" x2="88" y2="170"/>
+                  <line class="sd-ground sd-ground--sun" x1="88" y1="170" x2="140" y2="170"/>
+                </svg>
+                <p class="section-diagram__label"><span class="section-diagram__ratio">1 : 2</span> about a third in shade</p>
+              </div>
+              <div class="section-diagram">
+                <svg viewBox="0 0 200 180" aria-hidden="true" focusable="false">
+                  <polygon class="sd-shadow" points="60,90 116,170 60,170"/>
+                  <line class="sd-ray" x1="18" y1="30" x2="116" y2="170"/>
+                  <rect class="sd-mass" x="10" y="90" width="50" height="80"/>
+                  <rect class="sd-mass" x="140" y="90" width="50" height="80"/>
+                  <line class="sd-ground sd-ground--shade" x1="60" y1="170" x2="116" y2="170"/>
+                  <line class="sd-ground sd-ground--sun" x1="116" y1="170" x2="140" y2="170"/>
+                </svg>
+                <p class="section-diagram__label"><span class="section-diagram__ratio">1 : 1</span> two-thirds in shade</p>
+              </div>
+              <div class="section-diagram">
+                <svg viewBox="0 0 200 180" aria-hidden="true" focusable="false">
+                  <polygon class="sd-shadow" points="60,10 140,124 140,170 60,170"/>
+                  <line class="sd-ray" x1="53" y1="0" x2="140" y2="124"/>
+                  <rect class="sd-mass" x="10" y="10" width="50" height="160"/>
+                  <rect class="sd-mass" x="140" y="10" width="50" height="160"/>
+                  <line class="sd-ground sd-ground--shade" x1="60" y1="170" x2="140" y2="170"/>
+                  <line class="sd-wall-shade" x1="140" y1="124" x2="140" y2="170"/>
+                </svg>
+                <p class="section-diagram__label"><span class="section-diagram__ratio">2 : 1</span> all of it, and the wall</p>
+              </div>
+            </div>
+            <figcaption id="fig-1-caption"><span class="fig-label">Fig. 1</span> Three street sections with the sun at 55°, mid-morning in high summer. As the walls rise from half the street’s width to twice it, the shaded share of the ground grows from about a third to all of it — and the shadow begins to climb the opposite façade.</figcaption>
+          </figure>
+
+          <p>I have spent much of the past three years walking streets like this one, a notebook in one hand and a cheap infrared thermometer in the other, trying to understand what their builders knew. The short answer is that they treated shade as a material. It could be heaped up, channelled, rationed and shared. It was argued over in court, written into deeds and passed down to children. A neighbour who raised his wall and took the afternoon shadow from your courtyard had taken something from you, as surely as if he had moved your boundary stone.</p>
+
+          <p>We have forgotten most of this. For a century or so, cheap energy allowed us to treat heat as a problem to be solved indoors, by machines, one sealed room at a time. Streets were widened for traffic and for light; trees were cut back to protect façades and power lines; squares were paved from edge to edge and left bare in the name of openness. The result, in a great many hot cities, is a public realm that is pleasant for eight months of the year and close to uninhabitable for the other four — and those four months are getting longer.</p>
+
+          <h3 class="prose__subhead">A shadow you could own</h3>
+
+          <div class="has-note">
+            <p>The idea that a shadow might be property sounds faintly absurd until you read the old building codes. Jurists around the Mediterranean argued at length over the right to shade, and the precedents they set were remarkably precise. An upper storey could project over the street only so far as a laden camel could still pass beneath it. An awning could be tied to a neighbour’s wall but never nailed into it. A covered passage — the <i lang="ar-Latn">sabat</i>, which bridges a lane and turns it into a cool tunnel — needed the consent of everyone whose door opened beneath it, because everyone beneath it would share both its relief and its gloom.<sup class="note-ref"><a href="#note-1" id="note-1-ref"><span class="visually-hidden">Note </span>1</a></sup></p>
+            <p class="sidenote" id="note-1" role="note"><span class="sidenote__num" aria-hidden="true">1</span> Clearances were rarely given in fixed units. They were measured by what had to pass beneath: a rider, a loaded animal, a funeral bier.</p>
+          </div>
+
+          <p>What strikes me about these rules is less their ingenuity than their assumption. They take for granted that shade is collective: it is made by private buildings, but it is consumed in public, and the city therefore has a stake in how it is made. A merchant who built tall along a narrow lane was obliged, in effect, to cool it.</p>
+
+          <!-- Pull quote repeats a sentence from the text, so it is hidden from assistive technology to avoid reading it twice. -->
+          <aside class="pullquote" aria-hidden="true">
+            <p>Shade is made by private buildings, but it is consumed in&nbsp;public.</p>
+          </aside>
+
+          <p>Contemporary planning has almost no vocabulary for this. We measure sunlight obsessively — the hours of sun a new tower will steal from a park, the patch of sky visible from a ground-floor window — because our codes were written in cold, damp cities where sunlight was scarce and therefore precious. In hot cities the arithmetic is reversed, but the instruments have never been recalibrated. A planning officer in a desert city can tell you exactly how much sun a new building will block. She will rarely be asked how much shade it will give.</p>
+
+          <div class="has-note">
+            <p>There are signs that this is changing. A handful of municipalities now publish shade maps alongside their flood maps, and a few have begun to treat street trees as infrastructure — with asset registers, maintenance budgets and replacement schedules — rather than as decoration. In Valdorra, where summer afternoons now pass forty-four degrees with grim regularity, the council last year revived a sixteenth-century ordinance obliging shops on the main streets to hang canvas awnings from June to September.<sup class="note-ref"><a href="#note-2" id="note-2-ref"><span class="visually-hidden">Note </span>2</a></sup> It is, one officer told me, the cheapest cooling programme the city has ever run.</p>
+            <p class="sidenote" id="note-2" role="note"><span class="sidenote__num" aria-hidden="true">2</span> Ordinance 14 of 1563, “On the hanging of cloths over the streets”, was repealed in 1911 to make way for tram wires. Its successor, the council admits, is a near-verbatim copy.</p>
+          </div>
+
+          <p>But awnings and tree registers are the easy part. The harder question, and the one this issue keeps returning to, is what it would mean to design a city around the shadows it casts — to draw the shade first, and the buildings second.</p>
+        </div>
+
+        <footer class="essay__end">
+          <p class="essay__end-note">You have read the opening of a 4,900-word essay. The rest — on courtyards, colonnades and the case for a municipal “shade budget” — continues online and on pages 12–31 of the print edition.</p>
+          <p class="essay__end-actions">
+            <a class="button" href="/14/the-architecture-of-shade/#continue">Continue reading <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5"/></svg></a>
+            <span class="essay__end-time">About 19 minutes to go</span>
+          </p>
+          <p class="essay__bio"><strong>Leila Haddad</strong> is an architect and writer. She teaches environmental design and is working on a book about the shaded streets of the Mediterranean and the Gulf.</p>
+        </footer>
+
+      </div>
+    </article>
+
+    <!-- ============================================================
+         ALSO IN THIS ISSUE
+         ============================================================ -->
+    <section class="contents" id="contents" aria-labelledby="contents-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="contents-title">Also in this issue</h2>
+          <p class="section-head__dek">Six more pieces on shade — from the canopy to the courtroom.</p>
+        </header>
+
+        <ol class="teasers">
+          <li class="teaser" id="piece-02">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">02</span> Essays</p>
+              <h3 class="teaser__title"><a href="/14/against-the-bare-plaza/">Against the Bare Plaza</a></h3>
+              <p class="teaser__dek">The open, paved civic square was imported from cooler climates, and it fails every summer in hot ones. The case for a shaded commons instead.</p>
+              <p class="teaser__meta">Yusuf Demirel <span aria-hidden="true">·</span> 11&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-ground" width="100" height="100"/>
+              <g class="pl-grid">
+                <path d="M0 20H100M0 40H100M0 60H100M0 80H100M20 0V100M40 0V100M60 0V100M80 0V100"/>
+              </g>
+              <circle class="pl-sun" cx="100" cy="0" r="30"/>
+              <g class="pl-move">
+                <polygon class="pl-shade pl-soft" points="44,66 56,66 49,74 37,74"/>
+              </g>
+              <rect class="pl-ink" x="44" y="62" width="12" height="4"/>
+            </svg>
+          </li>
+
+          <li class="teaser" id="piece-03">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">03</span> Projects</p>
+              <h3 class="teaser__title"><a href="/14/a-roof-for-the-car-park/">A Roof for the Car Park</a></h3>
+              <p class="teaser__dek">In Port Aurel, a timber-and-canvas canopy turned an asphalt lot into the city’s busiest public room. We visited at noon, in August.</p>
+              <p class="teaser__meta">Hana Iwata <span aria-hidden="true">·</span> 9&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-ground" width="100" height="100"/>
+              <g class="pl-bays">
+                <path d="M8 96 18 78M30 96 40 78M52 96 62 78M74 96 84 78"/>
+              </g>
+              <g class="pl-move">
+                <path class="pl-shade" d="M18 74Q36 70 50 60Q66 70 90 78Q68 80 52 90Q36 80 18 74Z"/>
+              </g>
+              <path class="pl-post" d="M12 30V76M90 38V80M52 52V90"/>
+              <path class="pl-sail" d="M12 30Q34 26 50 10Q66 28 90 38Q68 40 52 52Q34 38 12 30Z"/>
+              <path class="pl-seam" d="M31 25Q41 33 51 46M50 10Q58 30 70 41"/>
+            </svg>
+          </li>
+
+          <li class="teaser" id="piece-04">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">04</span> Field notes</p>
+              <h3 class="teaser__title"><a href="/14/six-kilometres-in-the-shade/">Six Kilometres in the Shade</a></h3>
+              <p class="teaser__dek">Forty-one degrees and a single rule: never step into the sun. A walk across Qasr Ambar, navigated by shadows alone.</p>
+              <p class="teaser__meta">Kwame Adjei <span aria-hidden="true">·</span> 7&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-paper" width="100" height="100"/>
+              <g class="pl-blocks">
+                <rect x="4" y="6" width="34" height="20"/>
+                <rect x="46" y="6" width="22" height="28"/>
+                <rect x="76" y="6" width="20" height="18"/>
+                <rect x="4" y="38" width="24" height="24"/>
+                <rect x="36" y="44" width="30" height="16"/>
+                <rect x="74" y="34" width="22" height="30"/>
+                <rect x="4" y="74" width="40" height="20"/>
+                <rect x="54" y="72" width="42" height="22"/>
+              </g>
+              <g class="pl-move">
+                <path class="pl-shade" d="M4 26h34v5H4zM46 34h22v5H46zM76 24h20v5H76zM4 62h24v5H4zM36 60h30v5H36zM74 64h22v5H74z"/>
+              </g>
+              <path class="pl-route" d="M6 64H70V27H94"/>
+              <circle class="pl-sun" cx="6" cy="64" r="3"/>
+              <circle class="pl-sun" cx="94" cy="27" r="3"/>
+            </svg>
+          </li>
+
+          <li class="teaser" id="piece-05">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">05</span> Interviews</p>
+              <h3 class="teaser__title"><a href="/14/stitching-the-sky/">Stitching the Sky</a></h3>
+              <p class="teaser__dek">Bastien Corre made racing sails for twenty years. Now he makes canopies for streets. On wind loads, seams and the art of a shadow that moves.</p>
+              <p class="teaser__meta">Interview by Priya Raman <span aria-hidden="true">·</span> 13&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-sky" width="100" height="100"/>
+              <circle class="pl-sun" cx="78" cy="22" r="11"/>
+              <path class="pl-shade" d="M12 88 48 10Q62 54 92 82Q52 72 12 88Z"/>
+              <path class="pl-stitch" d="M20 80Q52 68 84 78M28 64Q48 55 72 63M36 47Q48 41 62 46M43 31Q49 28 55 30"/>
+            </svg>
+          </li>
+
+          <li class="teaser" id="piece-06">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">06</span> Essays</p>
+              <h3 class="teaser__title"><a href="/14/who-owns-a-tree/">Who Owns a Tree?</a></h3>
+              <p class="teaser__dek">Tree canopy tracks income almost everywhere. Any plan to plant our way out of the heat has to begin with the ledger.</p>
+              <p class="teaser__meta">Marisol Etxeberria <span aria-hidden="true">·</span> 15&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-ground" width="100" height="100"/>
+              <path class="pl-ledger" d="M0 12H100M0 22H100M0 32H100M0 42H100M0 52H100M0 62H100M0 72H100M0 82H100M0 92H100"/>
+              <g class="pl-move">
+                <ellipse class="pl-shade pl-soft" cx="22" cy="82" rx="17" ry="4"/>
+                <ellipse class="pl-shade pl-soft" cx="50" cy="82" rx="12" ry="3"/>
+                <ellipse class="pl-shade pl-soft" cx="72" cy="82" rx="7" ry="2"/>
+                <ellipse class="pl-shade pl-soft" cx="89" cy="82" rx="3.5" ry="1.2"/>
+              </g>
+              <path class="pl-trunk" d="M20 80V56M48 80V64M70 80V71M88 80V76"/>
+              <circle class="pl-leaf" cx="20" cy="44" r="15"/>
+              <circle class="pl-leaf" cx="48" cy="56" r="10"/>
+              <circle class="pl-leaf" cx="70" cy="66" r="6"/>
+              <circle class="pl-leaf" cx="88" cy="73.5" r="3.5"/>
+            </svg>
+          </li>
+
+          <li class="teaser" id="piece-07">
+            <div class="teaser__text">
+              <p class="teaser__section"><span class="teaser__num">07</span> Archive</p>
+              <h3 class="teaser__title"><a href="/14/the-arcade-ordinance/">The Arcade Ordinance</a></h3>
+              <p class="teaser__dek">From 1931: a city engineer’s forgotten report arguing that every new street should be colonnaded. Reprinted with new notes.</p>
+              <p class="teaser__meta">R. M. Castellanos, introduced by Oren Dahl <span aria-hidden="true">·</span> 10&nbsp;min&nbsp;read</p>
+            </div>
+            <svg class="plate" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect class="pl-aged" width="100" height="100"/>
+              <rect class="pl-ink" x="6" y="18" width="88" height="5"/>
+              <rect class="pl-paper" x="8" y="23" width="84" height="61"/>
+              <path class="pl-shade" d="M14 84V48A9 9 0 0 1 32 48V84ZM41 84V48A9 9 0 0 1 59 48V84ZM68 84V48A9 9 0 0 1 86 48V84Z"/>
+              <g class="pl-move">
+                <polygon class="pl-shade pl-soft" points="8,84 92,84 98,94 14,94"/>
+              </g>
+            </svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTERVIEW
+         ============================================================ -->
+    <section class="interview" id="interview" aria-labelledby="interview-title">
+      <div class="wrap interview__grid">
+        <div class="interview__art">
+          <svg viewBox="0 0 400 320" aria-hidden="true" focusable="false">
+            <rect class="iv-sky" width="400" height="320"/>
+            <rect class="iv-ground" y="206" width="400" height="114"/>
+            <path class="iv-paving" d="M0 222H400M0 244H400M0 274H400M0 312H400"/>
+            <ellipse class="iv-pool" cx="214" cy="248" rx="176" ry="30"/>
+            <g class="iv-fleck">
+              <ellipse cx="86" cy="246" rx="9" ry="2.4"/>
+              <ellipse cx="122" cy="256" rx="6" ry="1.8"/>
+              <ellipse cx="150" cy="238" rx="11" ry="2.6"/>
+              <ellipse cx="178" cy="262" rx="7" ry="2"/>
+              <ellipse cx="246" cy="236" rx="8" ry="2.2"/>
+              <ellipse cx="270" cy="258" rx="12" ry="2.8"/>
+              <ellipse cx="304" cy="244" rx="6" ry="1.8"/>
+              <ellipse cx="334" cy="254" rx="9" ry="2.4"/>
+              <ellipse cx="108" cy="266" rx="5" ry="1.5"/>
+              <ellipse cx="222" cy="270" rx="10" ry="2.4"/>
+              <ellipse cx="362" cy="240" rx="5" ry="1.5"/>
+            </g>
+            <path class="iv-trunk" d="M194 250 199 150h8l5 100z"/>
+            <path class="iv-branch" d="M202 168 160 128M204 160 252 122M203 176 300 134M201 180 112 138"/>
+            <path class="iv-crown" d="M40 140C40 104 84 88 118 92 136 62 178 52 206 64 236 50 280 58 298 84 336 82 370 104 362 136 366 150 344 158 320 154 300 162 120 162 86 156 58 158 38 152 40 140Z"/>
+            <path class="iv-crown-shade" d="M44 146C90 138 150 136 206 138 262 136 318 136 362 140 360 152 344 158 320 154 300 162 120 162 86 156 58 158 40 154 44 146Z"/>
+            <g class="iv-gap">
+              <circle cx="150" cy="104" r="4"/>
+              <circle cx="232" cy="96" r="3.5"/>
+              <circle cx="288" cy="118" r="3"/>
+              <circle cx="96" cy="124" r="2.5"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="interview__text">
+          <p class="kicker kicker--on-dark"><span class="kicker__num">08</span> Interview</p>
+          <h2 class="interview__title" id="interview-title">A tree is a slow building</h2>
+          <p class="interview__dek">The landscape architect Ama Ofori-Lund plants streets for the summers of 2070. She talks to Sami Rahal about soil, patience and why the best shade is the kind nobody notices.</p>
+
+          <div class="qa">
+            <p class="qa__q"><span class="visually-hidden">Sami Rahal: </span> You often say the problem with street trees isn’t the trees.</p>
+            <p class="qa__a"><span class="qa__who">Ama Ofori-Lund</span> It’s the ground. We plant a tree that wants to be twelve metres tall in a pit the size of a fridge, pave over it, and then blame it for dying young. Under every good shade tree there’s a hidden structure — soil, water, room for roots to travel beneath the pavement. That’s where the money should go.</p>
+            <p class="qa__q"><span class="visually-hidden">Sami Rahal: </span> And above ground?</p>
+            <p class="qa__a"><span class="qa__who">Ama Ofori-Lund</span> Patience. A tree is a slow building. It takes twenty years to finish, and then it works for a hundred — quietly, and for free.</p>
+          </div>
+
+          <p class="interview__meta">Interview by Sami Rahal <span aria-hidden="true">·</span> 16&nbsp;min&nbsp;read</p>
+          <a class="button button--on-dark" href="/14/a-tree-is-a-slow-building/">Read the interview <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FROM THE ARCHIVE
+         ============================================================ -->
+    <section class="archive" id="archive" aria-labelledby="archive-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="archive-title">From the archive</h2>
+          <p class="section-head__dek">Thirteen issues since the summer of 2023. Every back issue can be read online; most are still in print.</p>
+        </header>
+
+        <ol class="issues">
+          <li class="issue">
+            <svg class="issue__cover" viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+              <rect width="200" height="250" fill="#EBCDB9"/>
+              <rect y="168" width="200" height="82" fill="#B65A3F"/>
+              <path d="M156 168V104a16 16 0 0 1 32 0v64z" fill="#3E2620"/>
+              <rect x="150" y="168" width="44" height="6" fill="#F4E6D6"/>
+              <path d="M14 33.5H186" stroke="#3E2620" stroke-width=".75" opacity=".5"/>
+              <text class="mc-mast" x="14" y="26" fill="#3E2620">The Lighthouse Review</text>
+              <text class="mc-num" x="186" y="26" text-anchor="end" fill="#3E2620">ISSUE 13</text>
+              <text class="mc-word" x="12" y="167" font-size="31" fill="#2A1813">Thresholds</text>
+              <text class="mc-num" x="14" y="234" fill="#F4E6D6">SUMMER 2026</text>
+            </svg>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="/issues/13/"><span class="issue__no">Issue 13</span> Thresholds</a></h3>
+              <p class="issue__season">Summer 2026</p>
+              <p class="issue__dek">Doors, stoops, gates and steps: the places where private life spills into the street.</p>
+            </div>
+          </li>
+
+          <li class="issue">
+            <svg class="issue__cover" viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+              <rect width="200" height="250" fill="#D3E3DD"/>
+              <circle cx="150" cy="104" r="22" fill="#E9A66B"/>
+              <rect y="150" width="200" height="100" fill="#2F6B70"/>
+              <path d="M0 172q12-6 25 0t25 0 25 0 25 0 25 0 25 0 25 0 25 0M0 194q12-6 25 0t25 0 25 0 25 0 25 0 25 0 25 0 25 0M0 216q12-6 25 0t25 0 25 0 25 0 25 0 25 0 25 0 25 0" fill="none" stroke="#7FB3AE" stroke-width="1.6"/>
+              <path d="M136 160h28M140 168h20M144 176h12" stroke="#E9A66B" stroke-width="2"/>
+              <path d="M14 33.5H186" stroke="#16393C" stroke-width=".75" opacity=".5"/>
+              <text class="mc-mast" x="14" y="26" fill="#16393C">The Lighthouse Review</text>
+              <text class="mc-num" x="186" y="26" text-anchor="end" fill="#16393C">ISSUE 12</text>
+              <text class="mc-word" x="12" y="149" font-size="46" fill="#16393C">Water</text>
+              <text class="mc-num" x="14" y="238" fill="#D3E3DD">SPRING 2026</text>
+            </svg>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="/issues/12/"><span class="issue__no">Issue 12</span> Water</a></h3>
+              <p class="issue__season">Spring 2026</p>
+              <p class="issue__dek">Fountains, floodplains and the slow return of rivers to the cities that buried them.</p>
+            </div>
+          </li>
+
+          <li class="issue">
+            <svg class="issue__cover" viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+              <rect width="200" height="250" fill="#1B2040"/>
+              <rect y="176" width="200" height="74" fill="#12152C"/>
+              <polygon points="134,72 104,176 176,176 142,72" fill="#F3D88E" opacity=".2"/>
+              <ellipse cx="140" cy="178" rx="40" ry="6" fill="#F3D88E" opacity=".35"/>
+              <path d="M170 176V58h-32" fill="none" stroke="#8D93B5" stroke-width="3"/>
+              <circle cx="138" cy="66" r="5.5" fill="#F3D88E"/>
+              <path d="M14 33.5H186" stroke="#C9CCE0" stroke-width=".75" opacity=".4"/>
+              <text class="mc-mast" x="14" y="26" fill="#C9CCE0">The Lighthouse Review</text>
+              <text class="mc-num" x="186" y="26" text-anchor="end" fill="#C9CCE0">ISSUE 11</text>
+              <text class="mc-word" x="12" y="175" font-size="46" fill="#F3D88E">Night</text>
+              <text class="mc-num" x="14" y="234" fill="#C9CCE0">WINTER 2025</text>
+            </svg>
+            <div class="issue__text">
+              <h3 class="issue__title"><a href="/issues/11/"><span class="issue__no">Issue 11</span> Night</a></h3>
+              <p class="issue__season">Winter 2025</p>
+              <p class="issue__dek">Street lamps, night buses, curfews and the long argument about who the city belongs to after dark.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="archive__more"><a class="text-link" href="/issues/">Browse all thirteen back issues <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5"/></svg></a></p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SUBSCRIBE
+         ============================================================ -->
+    <section class="subscribe" id="subscribe" aria-labelledby="subscribe-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="subscribe-title">Stay in the shade</h2>
+          <p class="section-head__dek">A letter between issues, and the quarterly itself on paper.</p>
+        </header>
+
+        <div class="subscribe__grid">
+          <div class="offer offer--letter">
+            <h3 class="offer__title">The Lighthouse Letter</h3>
+            <p class="offer__text">A short letter every other Sunday from the editors: what we are reading, drawing and arguing about between issues. Written by people, never automated.</p>
+
+            <form class="signup" action="/newsletter/subscribe" method="post" data-signup>
+              <label class="signup__label" for="signup-email">Email address</label>
+              <div class="signup__row">
+                <input class="signup__input" id="signup-email" name="email" type="email" autocomplete="email" spellcheck="false" required aria-describedby="signup-error signup-hint">
+                <button class="button signup__button" type="submit">Sign me up</button>
+              </div>
+              <p class="signup__error" id="signup-error" data-signup-error hidden></p>
+              <p class="signup__hint" id="signup-hint">We use your address only to send the letter. Unsubscribe in one click.</p>
+              <p class="signup__status" data-signup-status role="status"></p>
+            </form>
+          </div>
+
+          <div class="offer offer--print">
+            <h3 class="offer__title">The print edition</h3>
+            <p class="offer__text">Four issues a year, around 180 pages each, printed on uncoated paper and sewn to lie flat on a café table.</p>
+            <svg class="spines" viewBox="0 0 280 150" aria-hidden="true" focusable="false">
+              <g class="spine-text">
+                <rect x="22" y="126" width="232" height="18" fill="#7B5E86"/><text x="32" y="138.5" fill="#F4EDF5">THE LIGHTHOUSE REVIEW</text><text x="244" y="138.5" text-anchor="end" fill="#F4EDF5">09 · STAIRS</text>
+                <rect x="10" y="106" width="232" height="18" fill="#C49A3C"/><text x="20" y="118.5" fill="#2B2110">THE LIGHTHOUSE REVIEW</text><text x="232" y="118.5" text-anchor="end" fill="#2B2110">10 · MARKETS</text>
+                <rect x="28" y="86" width="232" height="18" fill="#1B2040"/><text x="38" y="98.5" fill="#F3D88E">THE LIGHTHOUSE REVIEW</text><text x="250" y="98.5" text-anchor="end" fill="#F3D88E">11 · NIGHT</text>
+                <rect x="16" y="66" width="232" height="18" fill="#2F6B70"/><text x="26" y="78.5" fill="#E6F0EC">THE LIGHTHOUSE REVIEW</text><text x="238" y="78.5" text-anchor="end" fill="#E6F0EC">12 · WATER</text>
+                <rect x="24" y="46" width="232" height="18" fill="#B65A3F"/><text x="34" y="58.5" fill="#FBEFE6">THE LIGHTHOUSE REVIEW</text><text x="246" y="58.5" text-anchor="end" fill="#FBEFE6">13 · THRESHOLDS</text>
+                <rect x="12" y="20" width="232" height="24" fill="#2A3768"/><text x="22" y="35.5" fill="#F3E6CC">THE LIGHTHOUSE REVIEW</text><text x="234" y="35.5" text-anchor="end" fill="#F3E6CC">14 · SHADE</text>
+              </g>
+            </svg>
+            <ul class="offer__list">
+              <li>Posted anywhere, postage included</li>
+              <li>The complete online archive</li>
+              <li>Students and teachers: €40 a year</li>
+            </ul>
+            <p class="price"><span class="price__amount">€64</span> <span class="price__term">a year</span></p>
+            <p class="offer__actions">
+              <a class="button" href="/subscribe/print/">Subscribe in print <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5"/></svg></a>
+              <a class="text-link" href="/shop/issue-14/">Or buy Issue 14 on its own, €18</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__top">
+        <p class="site-footer__mark"><span class="wordmark__the">The</span> Lighthouse Review</p>
+        <p class="site-footer__tag">An independent quarterly of architecture, cities &amp; the culture of public space.</p>
+      </div>
+
+      <div class="site-footer__grid">
+        <div class="site-footer__col" id="about">
+          <h2 class="site-footer__heading">About</h2>
+          <p>The Lighthouse Review was founded in 2023 by a small group of architects and editors who wanted to write about cities slowly. It is published four times a year, in print and online, and is funded entirely by its readers. We take no advertising.</p>
+          <p>Edited by Clara Nwosu-Bell. Art direction by Noor Belkadi.</p>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Contributors to Issue 14</h2>
+          <ul class="site-footer__list site-footer__list--names">
+            <li>Leila Haddad</li>
+            <li>Yusuf Demirel</li>
+            <li>Hana Iwata</li>
+            <li>Kwame Adjei</li>
+            <li>Priya Raman</li>
+            <li>Marisol Etxeberria</li>
+            <li>Oren Dahl</li>
+            <li>Sami Rahal</li>
+          </ul>
+          <p><a class="text-link" href="/contributors/">All contributors</a></p>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Contact</h2>
+          <address>
+            <ul class="site-footer__list">
+              <li>Letters to the editor<br><a href="mailto:letters@lighthouse.example">letters@lighthouse.example</a></li>
+              <li>Pitches<br><a href="mailto:pitches@lighthouse.example">pitches@lighthouse.example</a></li>
+              <li>Subscriptions<br><a href="mailto:readers@lighthouse.example">readers@lighthouse.example</a></li>
+              <li>4 Harbour Steps, Port Aurel</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__heading">Colophon</h2>
+          <p>Text and headlines are set in <strong>Newsreader</strong>, by Production Type; navigation, captions and notes in <strong>Instrument Sans</strong>. Both are served by Google Fonts.</p>
+          <p>Covers and diagrams are drawn in code. This page uses no trackers and works without JavaScript; without it, the cover’s sun simply stays at four o’clock.</p>
+        </div>
+      </div>
+
+      <div class="site-footer__base">
+        <p>© 2026 The Lighthouse Review <span aria-hidden="true">·</span> Issue 14 — Shade — Autumn 2026</p>
+        <p><a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
