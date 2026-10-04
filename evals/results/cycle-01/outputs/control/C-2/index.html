@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>دكّان القهوة | قهوة مختصة محمّصة في الرياض</title>
+  <meta name="description" content="دكّان القهوة: محمصة قهوة مختصة في الرياض. حبوب القهوة وأكياس التقطير وأدوات التحضير وصناديق الهدايا، مع توصيل في اليوم نفسه داخل الرياض وتوصيل مجاني للطلبات فوق 199&nbsp;ر.س.">
+  <meta name="theme-color" content="#2A1F18">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23A13E1F'/%3E%3Cg transform='translate(16 16) rotate(35)'%3E%3Cellipse rx='6.5' ry='9' fill='%23FBF3E8'/%3E%3Cpath d='M0-7.5C-3-3 3 2.5 0 7.5' stroke='%23A13E1F' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&family=Reem+Kufi:wght@700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- SVG sprite: UI icons (24px grid) + product illustrations (120px grid). No external images. -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4.5 4.5"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2.5 4h2.2l2.2 10.3a1.6 1.6 0 0 0 1.6 1.2h8.4a1.6 1.6 0 0 0 1.5-1.1L20.6 8H5.6"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l.9 12.1a1.6 1.6 0 0 0 1.6 1.4h6a1.6 1.6 0 0 0 1.6-1.4L17.5 7"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.3a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.7" r="2.5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11V16h-11zM13.5 9.5h4.2l3.3 3.6V16h-7.5"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17.2" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5zM3.5 7.5 12 12l8.5-4.5M12 12v9M7.8 5.3l8.5 4.5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15zM10 20.5a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.5 4.2-2 1.4a11 11 0 0 0 6.2 6.2l1.4-2 4.2 1.5v2.6a1.6 1.6 0 0 1-1.7 1.6C11 18.4 5.6 13 5 5.2a1.6 1.6 0 0 1 1.6-1.7z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+
+    <symbol id="bean" viewBox="-12 -16 24 32"><ellipse rx="11" ry="15" fill="currentColor"/><path d="M0-12.5C-5.5-4.5 5.5 4.5 0 12.5" fill="none" stroke="#24140D" stroke-opacity=".55" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="art-beans" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="104" rx="34" ry="4" fill="#2A1F18" opacity=".12"/>
+      <use href="#bean" x="-12" y="-16" width="24" height="32" transform="translate(45 52) rotate(-25) scale(1.45)" style="color:#7A4A2E"/>
+      <use href="#bean" x="-12" y="-16" width="24" height="32" transform="translate(78 57) rotate(22) scale(1.45)" style="color:#5E3622"/>
+      <use href="#bean" x="-12" y="-16" width="24" height="32" transform="translate(61 84) rotate(78) scale(1.35)" style="color:#6B3E26"/>
+    </symbol>
+    <symbol id="art-bag" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="31" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M37 27h46l6 77c-19.3 2.6-38.7 2.6-58 0z" style="fill:var(--kraft,#D6B48C)"/>
+      <path d="M77 27h6l6 77c-2 .3-4 .5-6 .7z" fill="#2A1F18" opacity=".1"/>
+      <rect x="35" y="17" width="50" height="11" rx="2" style="fill:var(--seal,#C29B70)"/>
+      <path d="M39 22.5h42" fill="none" stroke="#fff" stroke-opacity=".45" stroke-dasharray="2.5 2.5"/>
+      <circle cx="60" cy="38.5" r="3.4" fill="none" stroke="#2A1F18" stroke-opacity=".28" stroke-width="1.5"/>
+      <rect x="40" y="50" width="40" height="40" rx="3" style="fill:var(--label,#8E2C48)"/>
+      <path d="M60 56.5 67 66H53z" fill="#fff" opacity=".9"/>
+      <path d="M48 74h24M52 81h16" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    </symbol>
+    <symbol id="art-drip" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="42" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M18 46h50v58H18z" style="fill:var(--label,#2B5743)"/>
+      <path d="M18 46l9-9h50l-9 9z" style="fill:var(--label,#2B5743)"/>
+      <path d="M18 46l9-9h50l-9 9z" fill="#fff" opacity=".22"/>
+      <path d="M68 46l9-9v58l-9 9z" style="fill:var(--label,#2B5743)"/>
+      <path d="M68 46l9-9v58l-9 9z" fill="#000" opacity=".22"/>
+      <path d="M26 60h22M26 67.5h14" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+      <g transform="rotate(-7 82 74)">
+        <path d="M64 37h36l-3 9H67z" fill="#EADFCF"/>
+        <rect x="60" y="45" width="44" height="56" rx="2" fill="#FFFDF8"/>
+        <path d="M60 49.5h44M60 96.5h44" fill="none" stroke="#E0D3C0" stroke-width="1.4" stroke-dasharray="2 2"/>
+        <rect x="67" y="62" width="30" height="17" rx="2" style="fill:var(--label,#2B5743)"/>
+        <path d="M73 70.5h18" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+    </symbol>
+    <symbol id="art-v60" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="28" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M41 76h38l-3.2 26.5a4 4 0 0 1-4 3.5H48.2a4 4 0 0 1-4-3.5z" fill="#fff" fill-opacity=".6" stroke="#93A9B8" stroke-width="1.5"/>
+      <path d="M45.6 88h28.8l-1.7 14.2a2 2 0 0 1-2 1.8H49.3a2 2 0 0 1-2-1.8z" fill="#5B3422"/>
+      <path d="M89 37c13-1 15 15 3.5 19.5" fill="none" stroke="#CFC6B9" stroke-width="9" stroke-linecap="round"/>
+      <path d="M89 37c13-1 15 15 3.5 19.5" fill="none" style="stroke:var(--ceramic,#fff)" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="60" cy="74" rx="23" ry="4.5" style="fill:var(--ceramic,#fff)" stroke="#CFC6B9" stroke-width="1.3"/>
+      <path d="M27 31h66L68 72H52z" style="fill:var(--ceramic,#fff)" stroke="#CFC6B9" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M39 38l14 30M49 38l7 30M71 38l-7 30M81 38 67 68" fill="none" stroke="#E7E0D5" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="60" cy="31" rx="33" ry="6" style="fill:var(--ceramic,#fff)" stroke="#CFC6B9" stroke-width="1.3"/>
+      <ellipse cx="60" cy="31.5" rx="27" ry="3.8" fill="#6B3E26"/>
+    </symbol>
+    <symbol id="art-kettle" viewBox="0 0 120 120">
+      <ellipse cx="63" cy="107" rx="34" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M85 50c14 0 18 10 18 22s-5 20-16 22" fill="none" stroke="#2F2A26" stroke-width="7" stroke-linecap="round"/>
+      <path d="M40 92C25 89 25 69 19 53l-6-12" fill="none" stroke="#2F2A26" stroke-width="5" stroke-linecap="round"/>
+      <path d="M43 46h40a5 5 0 0 1 5 4.6l3.6 47.4a5 5 0 0 1-5 5.4H39.4a5 5 0 0 1-5-5.4L38 50.6a5 5 0 0 1 5-4.6z" fill="#2F2A26"/>
+      <path d="M45 46c4-6.5 11.5-10 18-10s14 3.5 18 10z" fill="#3D3631"/>
+      <circle cx="63" cy="34" r="4.2" fill="#C9A27A"/>
+      <path d="M43 56l-2.4 38" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="74" cy="60" r="5" fill="#E9E3DA" stroke="#9B9186" stroke-width="1"/>
+      <path d="M74 60l2.5-2.5" fill="none" stroke="#A13E1F" stroke-width="1.3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="art-gift" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="42" ry="4" fill="#2A1F18" opacity=".12"/>
+      <rect x="22" y="55" width="76" height="49" rx="3" style="fill:var(--box,#2A1F18)"/>
+      <rect x="18" y="43" width="84" height="15" rx="3" style="fill:var(--box,#2A1F18)"/>
+      <rect x="18" y="43" width="84" height="15" rx="3" fill="#fff" opacity=".12"/>
+      <path d="M30 92l8-9 8 9M74 92l8-9 8 9" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="54" y="43" width="12" height="61" style="fill:var(--label,#A13E1F)"/>
+      <path d="M60 43c-5-12-20-17-23.5-9.5C34 40 46 43 60 43zM60 43c5-12 20-17 23.5-9.5C86 40 74 43 60 43z" style="fill:var(--label,#A13E1F)"/>
+    </symbol>
+    <symbol id="art-filters" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="106" rx="32" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M27 30h66L67 100H53z" fill="#EDE5D8" stroke="#D6CBBB" stroke-width="1.2" stroke-linejoin="round" transform="rotate(-9 60 66)"/>
+      <path d="M27 30h66L67 100H53z" fill="#F6F1E8" stroke="#D6CBBB" stroke-width="1.2" stroke-linejoin="round" transform="rotate(5 60 66)"/>
+      <path d="M28 32h64L67 100H53z" fill="#FFFDF9" stroke="#CFC4B3" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M86 36 65.5 96" fill="none" stroke="#E0D6C6" stroke-width="1.6" stroke-dasharray="2.5 2.5"/>
+      <path d="M38.5 58h43l-4 11h-35z" style="fill:var(--label,#A13E1F)"/>
+      <path d="M47 63.5h26" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="art-aeropress" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="30" ry="4" fill="#2A1F18" opacity=".12"/>
+      <path d="M37 84h46v16a5 5 0 0 1-5 5H42a5 5 0 0 1-5-5z" fill="#A13E1F"/>
+      <path d="M83 88h4a6 6 0 0 1 0 12h-4" fill="none" stroke="#A13E1F" stroke-width="4"/>
+      <rect x="48" y="13" width="24" height="28" rx="2" fill="#4A555D"/>
+      <rect x="42" y="11" width="36" height="5" rx="2" fill="#39434A"/>
+      <rect x="44" y="38" width="32" height="44" rx="3" fill="#DCE4E9" stroke="#7F8E99" stroke-width="1.5"/>
+      <path d="M46 64h28v15a1 1 0 0 1-1 1H47a1 1 0 0 1-1-1z" fill="#6B3E26"/>
+      <path d="M44 52h6M44 58h4" fill="none" stroke="#7F8E99" stroke-width="1.2"/>
+      <rect x="39" y="80" width="42" height="5" rx="2" fill="#39434A"/>
+    </symbol>
+    <symbol id="art-coldbrew" viewBox="0 0 120 120">
+      <ellipse cx="60" cy="107" rx="28" ry="4" fill="#2A1F18" opacity=".12"/>
+      <rect x="36" y="30" width="48" height="74" rx="10" fill="#fff" fill-opacity=".55" stroke="#8FA6B4" stroke-width="1.6"/>
+      <path d="M38.5 50h43v43a9 9 0 0 1-9 9h-25a9 9 0 0 1-9-9z" fill="#4A2A1A"/>
+      <rect x="45" y="55" width="13" height="13" rx="2.5" fill="#fff" opacity=".5" transform="rotate(12 51.5 61.5)"/>
+      <rect x="61" y="61" width="12" height="12" rx="2.5" fill="#fff" opacity=".4" transform="rotate(-10 67 67)"/>
+      <rect x="40" y="21" width="40" height="11" rx="2.5" fill="#C9A27A"/>
+      <path d="M44 26.5h32" fill="none" stroke="#fff" stroke-opacity=".4" stroke-dasharray="2 2"/>
+    </symbol>
+  </svg>
+
+  <div class="announce">
+    <p class="container">
+      <svg class="i" aria-hidden="true"><use href="#i-package"/></svg>
+      <span>توصيل مجاني للطلبات فوق <strong>199&nbsp;ر.س</strong></span>
+      <span class="announce__sep" aria-hidden="true">·</span>
+      <span class="announce__extra">داخل الرياض: يصلك اليوم</span>
+    </p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <button class="icon-btn menu-btn" type="button" aria-label="القائمة" aria-haspopup="dialog" aria-controls="menu-sheet" data-open="menu-sheet">
+        <svg class="i flip" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="9" fill="#A13E1F"/><g transform="translate(16 16) rotate(35)"><ellipse rx="6.5" ry="9" fill="#FBF3E8"/><path d="M0-7.5C-3-3 3 2.5 0 7.5" stroke="#A13E1F" stroke-width="1.8" fill="none" stroke-linecap="round"/></g></svg>
+        <span>دكّان القهوة</span>
+      </a>
+      <nav class="desk-nav" aria-label="أقسام المتجر">
+        <ul role="list">
+          <li><a href="#shop" data-cat-link="beans">حبوب القهوة</a></li>
+          <li><a href="#shop" data-cat-link="drip">أكياس التقطير</a></li>
+          <li><a href="#shop" data-cat-link="tools">أدوات التحضير</a></li>
+          <li><a href="#shop" data-cat-link="gifts">صناديق الهدايا</a></li>
+          <li><a href="#brew">دليل التحضير</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" id="search-toggle" aria-label="بحث" aria-expanded="false" aria-controls="search-panel">
+          <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" type="button" id="cart-toggle" aria-label="السلة، فارغة" aria-haspopup="dialog" aria-controls="cart-sheet" data-open="cart-sheet">
+          <svg class="i flip" aria-hidden="true"><use href="#i-cart"/></svg>
+          <span class="badge is-empty" data-cart-count aria-hidden="true">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <div class="container">
+        <form class="search-form" id="search-form" role="search" action="#shop">
+          <label class="sr-only" for="q">ابحث في المتجر</label>
+          <div class="search-field">
+            <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="q" name="q" type="search" dir="auto" placeholder="غوجي، V60، أكياس تقطير…" autocomplete="off" enterkeyhint="search" aria-describedby="search-status">
+          </div>
+          <button class="btn btn--primary" type="submit">بحث</button>
+        </form>
+        <div class="search-hints">
+          <p id="hints-label">الأكثر بحثًا:</p>
+          <ul role="list" aria-labelledby="hints-label">
+            <li><button class="pill" type="button" data-q="غوجي">غوجي</button></li>
+            <li><button class="pill" type="button" data-q="V60"><span lang="en" dir="ltr">V60</span></button></li>
+            <li><button class="pill" type="button" data-q="أكياس تقطير">أكياس تقطير</button></li>
+            <li><button class="pill" type="button" data-q="هدية">هدية</button></li>
+          </ul>
+        </div>
+        <p class="search-status" id="search-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <h1 class="sr-only">دكّان القهوة — محمصة قهوة مختصة في الرياض</h1>
+
+    <!-- Seasonal promotion -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__card">
+          <p class="eyebrow">موسم الحصاد 2026 · كميات محدودة</p>
+          <h2 class="hero__title" id="hero-title">وصل محصول إثيوبيا الجديد</h2>
+          <p class="hero__lede">غوجي ويرغاتشيفي، حمّصناهما هذا الأسبوع في الرياض: توت أزرق وياسمين ولمسة ليمون. <strong>خصم 20% على غوجي حتى 31&nbsp;أكتوبر.</strong></p>
+          <a class="btn btn--hero" href="#shop" data-filter-tag="new">
+            <span>تسوّق المحصول الجديد</span>
+            <svg class="i flip" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <svg class="hero__art" viewBox="0 0 200 160" aria-hidden="true" focusable="false">
+              <circle cx="114" cy="80" r="64" fill="#264A3A"/>
+              <use href="#art-bag" x="52" y="6" width="134" height="134" style="--label:#8E2C48;--kraft:#DDBB92;--seal:#C69F73"/>
+              <path d="M14 116c18-9 36-9 56 1" fill="none" stroke="#6E9A72" stroke-width="3" stroke-linecap="round"/>
+              <path d="M38 109c-6-14-22-18-30-12 6 12 18 16 30 12z" fill="#5D8C66"/>
+              <path d="M57 107c4-14 20-20 30-14-4 12-16 18-30 14z" fill="#4E7D58"/>
+              <circle cx="34" cy="128" r="11" fill="#B9322A"/>
+              <circle cx="54" cy="132" r="12" fill="#D2483A"/>
+              <circle cx="73" cy="126" r="10" fill="#A82A23"/>
+              <circle cx="50" cy="127" r="3.2" fill="#fff" opacity=".35"/>
+              <circle cx="30" cy="123" r="2.6" fill="#fff" opacity=".3"/>
+              <circle cx="70" cy="121" r="2.4" fill="#fff" opacity=".3"/>
+              <use href="#bean" x="-12" y="-16" width="24" height="32" transform="translate(178 136) rotate(62) scale(.62)" style="color:#7A4A2E"/>
+              <use href="#bean" x="-12" y="-16" width="24" height="32" transform="translate(160 148) rotate(-18) scale(.58)" style="color:#5A3320"/>
+          </svg>
+          <span class="najdi hero__band" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery promise: Riyadh vs other cities + free-shipping threshold -->
+    <section class="delivery" aria-labelledby="delivery-title">
+      <div class="container">
+        <h2 class="mini-title" id="delivery-title">متى يصلك طلبك؟</h2>
+        <ul class="delivery__grid" role="list">
+          <li class="delivery__item">
+            <p class="delivery__where"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>داخل الرياض</p>
+            <p class="delivery__when">يصلك اليوم</p>
+            <p class="delivery__note">للطلبات قبل 2&nbsp;ظهرًا، وبعدها صباح الغد</p>
+          </li>
+          <li class="delivery__item">
+            <p class="delivery__where"><svg class="i flip" aria-hidden="true"><use href="#i-truck"/></svg>باقي مدن المملكة</p>
+            <p class="delivery__when">خلال 2 إلى 4&nbsp;أيام عمل</p>
+            <p class="delivery__note">مع رقم تتبّع لكل شحنة</p>
+          </li>
+          <li class="delivery__free">
+            <svg class="i" aria-hidden="true"><use href="#i-package"/></svg>
+            <p><strong>التوصيل مجاني للطلبات فوق 199&nbsp;ر.س</strong> <span>وتحتها: 19&nbsp;ر.س في الرياض، و29&nbsp;ر.س لباقي المدن</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Categories + products -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="shop-title" tabindex="-1">تسوّق من الدكّان</h2>
+          <p>نحمّص كل أسبوع في الرياض، وتاريخ التحميص مطبوع على كل كيس.</p>
+        </div>
+
+        <div class="cats" role="group" aria-label="تصفية المنتجات حسب الفئة">
+          <button class="cat" type="button" data-cat="all" aria-pressed="true">
+            <span class="cat__art" style="--tint:#EFE4D6"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-beans"/></svg></span>
+            <span class="cat__label">الكل</span>
+          </button>
+          <button class="cat" type="button" data-cat="beans" aria-pressed="false">
+            <span class="cat__art" style="--tint:#F5E3E1;--label:#8E2C48"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg></span>
+            <span class="cat__label">حبوب القهوة</span>
+          </button>
+          <button class="cat" type="button" data-cat="drip" aria-pressed="false">
+            <span class="cat__art" style="--tint:#E4EEE6;--label:#2B5743"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-drip"/></svg></span>
+            <span class="cat__label">أكياس التقطير</span>
+          </button>
+          <button class="cat" type="button" data-cat="tools" aria-pressed="false">
+            <span class="cat__art" style="--tint:#E4ECF1"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-v60"/></svg></span>
+            <span class="cat__label">أدوات التحضير</span>
+          </button>
+          <button class="cat" type="button" data-cat="gifts" aria-pressed="false">
+            <span class="cat__art" style="--tint:#F6E4DA;--box:#2A1F18;--label:#A13E1F"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-gift"/></svg></span>
+            <span class="cat__label">صناديق الهدايا</span>
+          </button>
+        </div>
+
+        <div class="toolbar">
+          <p class="toolbar__count" id="result-count" tabindex="-1">12&nbsp;منتجًا</p>
+          <div class="select">
+            <label class="sr-only" for="sort">ترتيب المنتجات</label>
+            <svg class="i select__icon" aria-hidden="true"><use href="#i-sort"/></svg>
+            <select id="sort">
+              <option value="popular">الأكثر طلبًا</option>
+              <option value="price-asc">السعر: من الأقل</option>
+              <option value="price-desc">السعر: من الأعلى</option>
+              <option value="rating">الأعلى تقييمًا</option>
+            </select>
+            <svg class="i select__chev" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+          </div>
+        </div>
+        <div class="active-filters" id="active-filters" hidden></div>
+
+        <ul class="grid" id="grid" role="list">
+          <li class="card" data-id="guji" data-cat="beans" data-tags="new sale" data-price="68" data-rating="4.9" data-rank="1" data-keywords="guji natural ethiopia قوجي جوجي اثيوبي طبيعي محصول جديد عرض خصم بن" style="--tint:#F5E3E1;--label:#8E2C48">
+            <article class="card__inner" aria-labelledby="n-guji">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+                <span class="tag tag--sale">خصم 20%</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-guji">إثيوبيا غوجي&nbsp;– <span lang="en" dir="ltr">Natural</span></h3>
+                <p class="card__notes">توت أزرق · فراولة · كاكاو</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">250&nbsp;غ</span><span class="sr-only">الوزن 250 غرامًا</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9 <span class="rating__count">(214)</span></span><span class="sr-only">التقييم 4.9 من 5، عدد المراجعات 214</span></span></p>
+                <p class="price"><span class="sr-only">السعر بعد الخصم</span> <span class="price__now is-sale">68 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span> <s class="price__was"><span class="sr-only">بدلًا من</span> 85 <span aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></s></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: إثيوبيا غوجي Natural"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="yirga" data-cat="beans" data-tags="new" data-price="79" data-rating="4.8" data-rank="2" data-keywords="yirgacheffe washed ethiopia يرقاتشيفي يرجاتشيفي يرغا اثيوبي مغسول محصول جديد بن" style="--tint:#F6EDCF;--label:#B7861B">
+            <article class="card__inner" aria-labelledby="n-yirga">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+                <span class="tag tag--new">محصول جديد</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-yirga">إثيوبيا يرغاتشيفي&nbsp;– <span lang="en" dir="ltr">Washed</span></h3>
+                <p class="card__notes">ياسمين · ليمون · شاي أسود</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">250&nbsp;غ</span><span class="sr-only">الوزن 250 غرامًا</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8 <span class="rating__count">(163)</span></span><span class="sr-only">التقييم 4.8 من 5، عدد المراجعات 163</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">79 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: إثيوبيا يرغاتشيفي Washed"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="drip-eth" data-cat="drip" data-tags="new" data-price="49" data-rating="4.8" data-rank="3" data-keywords="drip bags ethiopia guji اكياس تقطير درب قوجي اثيوبي محصول جديد" style="--tint:#E4EEE6;--label:#2B5743">
+            <article class="card__inner" aria-labelledby="n-drip-eth">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-drip"/></svg>
+                <span class="tag tag--new">محصول جديد</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-drip-eth">أكياس تقطير إثيوبيا غوجي</h3>
+                <p class="card__notes">كوب مختص خلال دقيقتين</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">10 × 12&nbsp;غ</span><span class="sr-only">10 أكياس، 12 غرامًا لكل كيس</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8 <span class="rating__count">(187)</span></span><span class="sr-only">التقييم 4.8 من 5، عدد المراجعات 187</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">49 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: أكياس تقطير إثيوبيا غوجي"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="espresso" data-cat="beans" data-tags="" data-price="189" data-rating="4.7" data-rank="4" data-keywords="espresso blend اسبريسو اسبرسو خلطه حليب لاتيه كابتشينو بن" style="--tint:#EDE3D9;--label:#F2B84B;--kraft:#3A302A;--seal:#4A3F38">
+            <article class="card__inner" aria-labelledby="n-espresso">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-espresso">خلطة الدكّان&nbsp;– <span lang="en" dir="ltr">Espresso</span></h3>
+                <p class="card__notes">شوكولاتة بالحليب · بندق</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">1&nbsp;كغ</span><span class="sr-only">الوزن 1 كيلوغرام</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7 <span class="rating__count">(302)</span></span><span class="sr-only">التقييم 4.7 من 5، عدد المراجعات 302</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">189 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: خلطة الدكّان Espresso"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="v60" data-cat="tools" data-tags="" data-price="95" data-rating="4.9" data-rank="5" data-keywords="v60 hario dripper هاريو قمع فلتر ترشيح في60 سيراميك اداه" style="--tint:#E4ECF1">
+            <article class="card__inner" aria-labelledby="n-v60">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-v60"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-v60">قمع ترشيح <span lang="en" dir="ltr">V60</span> سيراميك</h3>
+                <p class="card__notes">يحضّر من 1 إلى 4&nbsp;أكواب</p>
+                <p class="card__meta"><span class="card__size">مقاس 02</span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9 <span class="rating__count">(140)</span></span><span class="sr-only">التقييم 4.9 من 5، عدد المراجعات 140</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">95 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: قمع ترشيح V60 سيراميك"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="colombia" data-cat="beans" data-tags="" data-price="72" data-rating="4.7" data-rank="6" data-keywords="colombia huila washed كولومبي كولمبيا هويلا مغسول بن" style="--tint:#F7E8D8;--label:#C0652A">
+            <article class="card__inner" aria-labelledby="n-colombia">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-colombia">كولومبيا هويلا&nbsp;– <span lang="en" dir="ltr">Washed</span></h3>
+                <p class="card__notes">كراميل · تفاح أحمر · كاكاو</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">250&nbsp;غ</span><span class="sr-only">الوزن 250 غرامًا</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7 <span class="rating__count">(98)</span></span><span class="sr-only">التقييم 4.7 من 5، عدد المراجعات 98</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">72 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: كولومبيا هويلا Washed"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card is-out" data-id="yemen" data-cat="beans" data-tags="" data-price="149" data-rating="4.9" data-rank="7" data-stock="out" data-keywords="yemen haraz يمني يمنيه حرازي حراز بن" style="--tint:#E9E5EF;--label:#4A3F7A">
+            <article class="card__inner" aria-labelledby="n-yemen">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+                <span class="tag tag--out">نفدت الكمية</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-yemen">اليمن حراز&nbsp;– <span lang="en" dir="ltr">Natural</span></h3>
+                <p class="card__notes">زبيب · قرفة · كاكاو</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">250&nbsp;غ</span><span class="sr-only">الوزن 250 غرامًا</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9 <span class="rating__count">(61)</span></span><span class="sr-only">التقييم 4.9 من 5، عدد المراجعات 61</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">149 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--notify" type="button" data-notify aria-pressed="false" aria-label="أعلمني عند التوفر: اليمن حراز Natural"><svg class="i" aria-hidden="true"><use href="#i-bell"/></svg><span>أعلمني عند التوفر</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="filters" data-cat="tools" data-tags="" data-price="25" data-rating="4.8" data-rank="8" data-keywords="v60 paper filters فلتر فلاتر ورق ورقيه في60 اداه" style="--tint:#F3EEE6;--label:#A13E1F">
+            <article class="card__inner" aria-labelledby="n-filters">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-filters"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-filters">فلاتر ورقية <span lang="en" dir="ltr">V60</span></h3>
+                <p class="card__notes">بيضاء · لا تترك طعمًا ورقيًا</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">100 فلتر</span><span class="sr-only">100 فلتر، مقاس 02</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8 <span class="rating__count">(211)</span></span><span class="sr-only">التقييم 4.8 من 5، عدد المراجعات 211</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">25 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: فلاتر ورقية V60"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="drip-mix" data-cat="drip" data-tags="" data-price="42" data-rating="4.7" data-rank="9" data-keywords="drip bags discovery mix sampler اكياس تقطير مشكله تشكيله تجربه" style="--tint:#F6E6D6;--label:#B5562E">
+            <article class="card__inner" aria-labelledby="n-drip-mix">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-drip"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-drip-mix">أكياس تقطير مشكّلة&nbsp;– <span lang="en" dir="ltr">Discovery</span></h3>
+                <p class="card__notes">4&nbsp;محاصيل لتختار مفضّلتك</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">8 × 12&nbsp;غ</span><span class="sr-only">8 أكياس، 12 غرامًا لكل كيس</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7 <span class="rating__count">(88)</span></span><span class="sr-only">التقييم 4.7 من 5، عدد المراجعات 88</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">42 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: أكياس تقطير مشكّلة Discovery"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="kettle" data-cat="tools" data-tags="" data-price="139" data-rating="4.6" data-rank="10" data-keywords="kettle gooseneck غلايه ابريق كيتل جوزنك تقطير اداه" style="--tint:#ECE6DF">
+            <article class="card__inner" aria-labelledby="n-kettle">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-kettle"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-kettle">غلاية تقطير <span lang="en" dir="ltr">Gooseneck</span></h3>
+                <p class="card__notes">ستانلس ستيل · مقياس حرارة</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">600&nbsp;مل</span><span class="sr-only">السعة 600 ملليلتر</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.6 <span class="rating__count">(57)</span></span><span class="sr-only">التقييم 4.6 من 5، عدد المراجعات 57</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">139 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: غلاية تقطير Gooseneck"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="gift-trio" data-cat="gifts" data-tags="" data-price="149" data-rating="4.9" data-rank="11" data-keywords="gift box tasting هديه هدايا صندوق ذوق تذوق" style="--tint:#F6E4DA;--box:#2A1F18;--label:#A13E1F">
+            <article class="card__inner" aria-labelledby="n-gift-trio">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-gift"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-gift-trio">صندوق «ذوق»&nbsp;– 3&nbsp;محاصيل</h3>
+                <p class="card__notes">إثيوبيا · كولومبيا · رواندا</p>
+                <p class="card__meta"><span class="card__size"><span aria-hidden="true">3 × 125&nbsp;غ</span><span class="sr-only">3 أكياس، 125 غرامًا لكل كيس</span></span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9 <span class="rating__count">(76)</span></span><span class="sr-only">التقييم 4.9 من 5، عدد المراجعات 76</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">149 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: صندوق ذوق، 3 محاصيل"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="card" data-id="gift-starter" data-cat="gifts" data-tags="" data-price="179" data-rating="4.8" data-rank="12" data-keywords="starter kit gift v60 هديه هدايا بدايه طقم مبتدئ صندوق" style="--tint:#E4EEE6;--box:#2B5743;--label:#F2B84B">
+            <article class="card__inner" aria-labelledby="n-gift-starter">
+              <div class="card__media">
+                <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-gift"/></svg>
+              </div>
+              <div class="card__body">
+                <h3 class="card__name" id="n-gift-starter">صندوق بداية التقطير&nbsp;– <span lang="en" dir="ltr">V60 Kit</span></h3>
+                <p class="card__notes">قمع <span lang="en" dir="ltr">V60</span> وفلاتر وكيس قهوة</p>
+                <p class="card__meta"><span class="card__size">طقم كامل</span><span class="rating"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8 <span class="rating__count">(49)</span></span><span class="sr-only">التقييم 4.8 من 5، عدد المراجعات 49</span></span></p>
+                <p class="price"><span class="sr-only">السعر</span> <span class="price__now">179 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only">ريال</span></span></p>
+                <div class="card__action">
+                  <button class="btn btn--add" type="button" data-add aria-label="أضف للسلة: صندوق بداية التقطير V60 Kit"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg><span>أضف للسلة</span></button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <div class="empty" id="empty" hidden>
+          <p class="empty__title">لا توجد منتجات تطابق اختيارك.</p>
+          <p>جرّب كلمة أخرى مثل «غوجي» أو «أكياس تقطير».</p>
+          <button class="btn btn--ghost" type="button" data-clear-all>عرض كل المنتجات</button>
+        </div>
+        <p class="vat-note">الأسعار بالريال السعودي وتشمل ضريبة القيمة المضافة 15%.</p>
+      </div>
+    </section>
+
+    <!-- Brew guide teaser (swipe rail on mobile, 3 columns on desktop) -->
+    <section class="brew" id="brew" aria-labelledby="brew-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <h2 id="brew-title">دليل التحضير</h2>
+            <p>ثلاث طرق نحبها في الدكّان، بمقادير جرّبناها.</p>
+          </div>
+          <div class="rail-nav">
+            <button class="icon-btn icon-btn--outline" type="button" data-rail-prev aria-controls="brew-rail" aria-label="الطريقة السابقة"><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+            <button class="icon-btn icon-btn--outline" type="button" data-rail-next aria-controls="brew-rail" aria-label="الطريقة التالية"><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          </div>
+        </div>
+
+        <ul class="rail" id="brew-rail" role="list">
+          <li class="brew-card" style="--tint:#E4ECF1">
+            <div class="brew-card__head">
+              <span class="brew-card__art"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-v60"/></svg></span>
+              <div>
+                <p class="brew-card__kicker">ترشيح يدوي · للمبتدئين</p>
+                <h3><span lang="en" dir="ltr">V60</span></h3>
+              </div>
+            </div>
+            <p class="brew-card__desc">كوب صافٍ يُبرز الزهور والحمضيات في قهوة إثيوبيا.</p>
+            <dl class="specs">
+              <div><dt>النسبة</dt><dd>1:16</dd></div>
+              <div><dt>الطحنة</dt><dd>متوسطة</dd></div>
+              <div><dt>الوقت</dt><dd>3&nbsp;دقائق</dd></div>
+            </dl>
+            <a class="link-arrow" href="#">اقرأ الخطوات<span class="sr-only">: طريقة V60</span><svg class="i flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="brew-card" style="--tint:#F7E5DC">
+            <div class="brew-card__head">
+              <span class="brew-card__art"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-aeropress"/></svg></span>
+              <div>
+                <p class="brew-card__kicker">ضغط · مثالية للسفر</p>
+                <h3>إيروبرس <span lang="en" dir="ltr">AeroPress</span></h3>
+              </div>
+            </div>
+            <p class="brew-card__desc">قوام ناعم وكوب مركّز، ويتحمّل أخطاء البداية.</p>
+            <dl class="specs">
+              <div><dt>النسبة</dt><dd>1:12</dd></div>
+              <div><dt>الطحنة</dt><dd>ناعمة</dd></div>
+              <div><dt>الوقت</dt><dd>دقيقتان</dd></div>
+            </dl>
+            <a class="link-arrow" href="#">اقرأ الخطوات<span class="sr-only">: طريقة إيروبرس</span><svg class="i flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="brew-card" style="--tint:#EDE3D9">
+            <div class="brew-card__head">
+              <span class="brew-card__art"><svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><use href="#art-coldbrew"/></svg></span>
+              <div>
+                <p class="brew-card__kicker">تخمير بارد · لصيف الرياض</p>
+                <h3>كولد برو <span lang="en" dir="ltr">Cold Brew</span></h3>
+              </div>
+            </div>
+            <p class="brew-card__desc">منعشة وحلوة بلا مرارة، وتُحفظ في الثلاجة حتى أسبوع.</p>
+            <dl class="specs">
+              <div><dt>النسبة</dt><dd>1:8</dd></div>
+              <div><dt>الطحنة</dt><dd>خشنة</dd></div>
+              <div><dt>الوقت</dt><dd>16&nbsp;ساعة</dd></div>
+            </dl>
+            <a class="link-arrow" href="#">اقرأ الخطوات<span class="sr-only">: طريقة كولد برو</span><svg class="i flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </li>
+        </ul>
+        <div class="rail-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <!-- Trust: payments, returns, customer service -->
+    <section class="trust" id="trust" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="trust-title">تسوّق وأنت مطمئن</h2>
+        </div>
+        <div class="trust__grid">
+          <article class="trust__item">
+            <span class="trust__icon" aria-hidden="true"><svg class="i"><use href="#i-card"/></svg></span>
+            <h3>ادفع بالطريقة التي تناسبك</h3>
+            <ul class="pay" role="list" aria-label="طرق الدفع المتاحة">
+              <li>مدى <span lang="en" dir="ltr">mada</span></li>
+              <li lang="en" dir="ltr">Apple Pay</li>
+              <li>تابي <span lang="en" dir="ltr">Tabby</span></li>
+              <li lang="en" dir="ltr">Visa</li>
+              <li lang="en" dir="ltr">Mastercard</li>
+            </ul>
+            <p>قسّم طلبك على 4&nbsp;دفعات بلا فوائد مع <span lang="en" dir="ltr">Tabby</span>. بيانات بطاقتك مشفّرة ولا نحتفظ بها.</p>
+          </article>
+          <article class="trust__item">
+            <span class="trust__icon" aria-hidden="true"><svg class="i flip"><use href="#i-return"/></svg></span>
+            <h3>استرجاع واستبدال بلا تعقيد</h3>
+            <ul class="ticks" role="list">
+              <li><strong>الأدوات:</strong> استرجاع خلال 7&nbsp;أيام من الاستلام إذا كانت غير مستخدمة وفي تغليفها.</li>
+              <li><strong>القهوة:</strong> إن وصلتك تالفة أو بخطأ منّا نستبدلها مجانًا.</li>
+              <li>نعيد المبلغ إلى وسيلة الدفع نفسها خلال 5&nbsp;أيام عمل.</li>
+            </ul>
+            <a class="link-arrow" href="#">سياسة الاسترجاع كاملة<svg class="i flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="trust__item">
+            <span class="trust__icon" aria-hidden="true"><svg class="i"><use href="#i-clock"/></svg></span>
+            <h3>خدمة العملاء</h3>
+            <p>يوميًا من 9&nbsp;صباحًا حتى 11&nbsp;مساءً، والجمعة من 4&nbsp;عصرًا.</p>
+            <ul class="contact" role="list">
+              <li><a href="tel:+966110000000"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span>اتصل بنا: <bdi dir="ltr">+966 11 000 0000</bdi></span></a></li>
+              <li><a href="mailto:care@dukkan.example"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><bdi dir="ltr">care@dukkan.example</bdi></a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo logo--light" href="index.html">
+            <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="9" fill="#A13E1F"/><g transform="translate(16 16) rotate(35)"><ellipse rx="6.5" ry="9" fill="#FBF3E8"/><path d="M0-7.5C-3-3 3 2.5 0 7.5" stroke="#A13E1F" stroke-width="1.8" fill="none" stroke-linecap="round"/></g></svg>
+            <span>دكّان القهوة</span>
+          </a>
+          <p>محمصة قهوة مختصة صغيرة في شمال الرياض. نحمّص بكميات صغيرة منذ 2019، ونشحن إلى كل مدن المملكة.</p>
+          <p class="footer-latin"><span lang="en" dir="ltr">Dukkan Al-Qahwa · Riyadh</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="روابط الموقع">
+          <div>
+            <h2 class="footer-h">تسوّق</h2>
+            <ul role="list">
+              <li><a href="#shop" data-cat-link="beans">حبوب القهوة</a></li>
+              <li><a href="#shop" data-cat-link="drip">أكياس التقطير</a></li>
+              <li><a href="#shop" data-cat-link="tools">أدوات التحضير</a></li>
+              <li><a href="#shop" data-cat-link="gifts">صناديق الهدايا</a></li>
+              <li><a href="#">الاشتراك الشهري</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-h">المساعدة</h2>
+            <ul role="list">
+              <li><a href="#">تتبّع طلبك</a></li>
+              <li><a href="#trust">الشحن والتوصيل</a></li>
+              <li><a href="#trust">الاسترجاع والاستبدال</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+              <li><a href="#trust">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer-h">الدكّان</h2>
+            <ul role="list">
+              <li><a href="#">من نحن</a></li>
+              <li><a href="#brew">دليل التحضير</a></li>
+              <li><a href="#">للمقاهي والشركات</a></li>
+              <li><a href="#">الشروط والأحكام</a></li>
+              <li><a href="#">سياسة الخصوصية</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-social">
+          <h2 class="footer-h">تابعنا</h2>
+          <ul class="social" role="list">
+            <li><a href="#">إنستغرام</a></li>
+            <li><a href="#">سناب شات</a></li>
+            <li><a href="#">تيك توك</a></li>
+            <li><a href="#">إكس</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <p>© 2026 دكّان القهوة. جميع الحقوق محفوظة.</p>
+        <p>السجل التجاري: <bdi dir="ltr">1010XXXXXX</bdi></p>
+        <p>الرقم الضريبي: <bdi dir="ltr">3XXXXXXXXXXXXX3</bdi></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Thumb-zone cart summary (mobile, appears once the cart has items) -->
+  <div class="cart-bar" id="cart-bar" hidden>
+    <div class="container cart-bar__inner">
+      <div class="cart-bar__ship">
+        <p class="ship-msg" data-ship-msg></p>
+        <span class="meter" aria-hidden="true"><span data-ship-meter></span></span>
+      </div>
+      <button class="btn btn--primary cart-bar__btn" type="button" aria-haspopup="dialog" aria-controls="cart-sheet" data-open="cart-sheet">
+        <span>عرض السلة</span>
+        <span class="cart-bar__total" data-cart-total>0&nbsp;ر.س</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu drawer (opens from the inline-start edge: right in RTL) -->
+  <dialog class="sheet sheet--start" id="menu-sheet" aria-labelledby="menu-title">
+    <div class="sheet__inner">
+      <div class="sheet__head">
+        <h2 class="sheet__title" id="menu-title">تصفّح الدكّان</h2>
+        <button class="icon-btn" type="button" data-close aria-label="إغلاق القائمة"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <nav class="sheet__body" aria-label="القائمة الرئيسية">
+        <ul class="menu-list" role="list">
+          <li><a href="#shop" data-cat-link="beans"><span>حبوب القهوة</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#shop" data-cat-link="drip"><span>أكياس التقطير</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#shop" data-cat-link="tools"><span>أدوات التحضير</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#shop" data-cat-link="gifts"><span>صناديق الهدايا</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#brew"><span>دليل التحضير</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#trust"><span>الشحن والدفع والاسترجاع</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+          <li><a href="#"><span>الاشتراك الشهري</span><svg class="i flip" aria-hidden="true"><use href="#i-chevron"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="sheet__foot menu-foot">
+        <p>خدمة العملاء يوميًا من 9&nbsp;صباحًا حتى 11&nbsp;مساءً</p>
+        <a href="tel:+966110000000"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><bdi dir="ltr">+966 11 000 0000</bdi></a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Cart drawer (opens from the inline-end edge: left in RTL, next to the cart icon) -->
+  <dialog class="sheet sheet--end" id="cart-sheet" aria-labelledby="cart-title">
+    <div class="sheet__inner">
+      <div class="sheet__head">
+        <h2 class="sheet__title" id="cart-title">سلتك <span class="sheet__count" data-cart-heading-count></span></h2>
+        <button class="icon-btn" type="button" data-close aria-label="إغلاق السلة"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="sheet__ship">
+        <p class="ship-msg" data-ship-msg></p>
+        <span class="meter" aria-hidden="true"><span data-ship-meter></span></span>
+      </div>
+      <div class="sheet__body">
+        <ul class="cart-list" id="cart-list" role="list"></ul>
+        <div class="cart-empty" id="cart-empty">
+          <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false" style="--label:#8E2C48"><use href="#art-bag"/></svg>
+          <p class="cart-empty__title">سلتك فارغة</p>
+          <p>ابدأ بمحصول إثيوبيا الجديد أو اختر أداة تحضير.</p>
+          <a class="btn btn--primary" href="#shop" data-close>تسوّق الآن</a>
+        </div>
+      </div>
+      <div class="sheet__foot" id="cart-foot" hidden>
+        <dl class="totals">
+          <div><dt>المجموع الفرعي</dt><dd data-cart-subtotal>0&nbsp;ر.س</dd></div>
+          <div><dt>التوصيل</dt><dd data-cart-shipping>—</dd></div>
+        </dl>
+        <a class="btn btn--primary btn--block" href="#">إتمام الطلب</a>
+        <p class="sheet__fine">أو 4&nbsp;دفعات بقيمة <span data-tabby>0</span> ر.س مع <span lang="en" dir="ltr">Tabby</span> · الأسعار شاملة الضريبة</p>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+</body>
+</html>
