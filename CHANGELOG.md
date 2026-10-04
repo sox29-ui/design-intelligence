@@ -4,7 +4,12 @@ DI versions describe **skill behavior and knowledge**, not package code. Format 
 
 ## Unreleased
 
-- Benchmark cycle 01 (baseline vs. DI) and holdout check run against v0.1.0 — results in `evals/results/cycle-01/`.
+No knowledge or skill changes after 0.1.0. Evaluation of 0.1.0 and the Framework handoff:
+
+- **Benchmark cycle 01** (`evals/results/cycle-01/REPORT.md`): 9 baseline vs 8 DI outputs on 4 fixed briefs. Blind critics scored DI higher in every brief (83.8 vs 72.7 /100; both DI outputs ranked 1–2 in all briefs); fewer verifier warnings (0 vs 1.2), generic signatures (0.25 vs 2.0) and MEDIUM+ findings (5 vs 30); better lab performance. **Problem found: DI imposes a house style** — cross-brief sameness 0.70 vs 0.49; light paper-and-ink pages across all briefs. Confounds: DI runs optimised against the same verifier whose report the critics saw; one critic pass per brief; no human review.
+- **Holdout check:** 31/45 pre-registered predictions held on 3 sealed sites (69 %; high-confidence rules 12/15). Holdout now spent.
+- **v0.2 backlog:** candidate changes cc-0001…cc-0013 in `datasets/candidates/` (house style, benchmark confounds, verifier fixes, rule-scope refinements, vocabulary) — proposed, not implemented.
+- **Handoff:** `handoff/` — knowledge export (`di-knowledge-v0.1.0.json`, schema `schemas/knowledge-export.schema.json`), integration guide, file manifest with checksums, packaged skill.
 
 ## 0.1.0 — 2026-10-04 (first release; rule set frozen for holdout and benchmark)
 

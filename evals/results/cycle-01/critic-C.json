@@ -1,0 +1,431 @@
+{
+  "brief": "C: Arabic RTL mobile-first e-commerce home page for Dukkan Al-Qahwa (Riyadh specialty coffee roaster)",
+  "outputs": [
+    {
+      "blind_id": "C-44AD05",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 3,
+        "responsive_quality": 4,
+        "accessibility": 3,
+        "performance": 3,
+        "system_consistency": 3
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "generic_ai_signatures": 2
+      },
+      "unjustified_signatures": [
+        "glassmorphism: backdrop-filter blur on the sticky header (automated backdropBlurElements=1; the header is translucent over scrolling cards in 1440x900-scroll-50.jpg). The brief gives no reason for it.",
+        "rounded-card-grid: automated roundedCardGroups=2. The product grid itself follows from the brief, but the same 16px+ soft-card treatment is repeated on the delivery, trust and brew-guide modules (390x844-top.jpg, 1440x900-long.jpg) with no brief-derived reason; the 6px-radius cards in C-664C03 and C-C49BB2 show it was not needed."
+      ],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "dimension": "accessibility",
+          "title": "No page-level h1",
+          "evidence": "automated.json gates: h1-count WARN at 390x844 and 1440x900 ('0 h1 elements'); axe reports 2 moderate issues at both widths (rule ids are not in the report; a missing h1 is the most likely one). The hero headline 'وصل محصول إثيوبيا الجديد' (390x844-top.jpg) is visually the h1 but is not marked up as one. The other three outputs raise no h1 warning.",
+          "why_it_matters": "Screen-reader users get no top-level heading to orient from or jump to; it also weakens page semantics and SEO.",
+          "smallest_fix": "Make the hero headline the single h1 (change the tag, keep the class)."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "accessibility",
+          "title": "Menu toggle does not expose its state",
+          "evidence": "summary.menu: ariaExpandedBefore=null and ariaExpandedAfter=null while hasAriaControls=true (drawer in 390x844-menu-open.jpg). C-664C03 and C-C49BB2 toggle false -> true.",
+          "why_it_matters": "WCAG 4.1.2 (Level A): assistive tech cannot tell whether the navigation drawer is open or closed.",
+          "smallest_fix": "Set aria-expanded on the toggle in the open/close handler."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "performance",
+          "title": "Largest layout shift of the four outputs",
+          "evidence": "Lighthouse mobile CLS 0.157 (above the 0.1 'good' limit; the other outputs score 0.008-0.011) and performance 0.92 versus 0.99 for the rest. The report does not name the cause; un-sized hero/product art or the display-font swap are the usual sources.",
+          "why_it_matters": "Content moving under the thumb on a shopping page causes mis-taps on the add-to-cart button and feels unstable on a 390 px phone.",
+          "smallest_fix": "Give hero and product SVG/img explicit width/height or aspect-ratio, and use a size-adjusted fallback (or font-display: optional) for Reem Kufi."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "hierarchy_usability",
+          "title": "Shopping starts late on mobile and delivery promises are shown twice",
+          "evidence": "At 390 the first 'أضف للسلة' button sits about 1,330 px down (1.6 viewports): 390x844-top.jpg is spent on the hero, two delivery cards and a free-shipping tile (y 497-708) and the grid only starts in the second screen (390x844-long.jpg). The same two promises (free over 199 SAR, Riyadh same day) already sit in the announcement bar at y 0-55. C-664C03 reaches its first Add at about 790 px.",
+          "why_it_matters": "The brief's goal is to browse and add to cart quickly; the duplicated block pushes the products out of the first viewport.",
+          "smallest_fix": "Collapse the three cards into one compact strip (or drop the announcement duplicate) so the first product row enters the first viewport."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "brief_fidelity",
+          "title": "Search is an icon at every width",
+          "evidence": "Header in 390x844-top.jpg, 768x1024-top.jpg and 1440x900-top.jpg shows only a magnifier (x~220 at 1440, no input) even where the header has free room; C-664C03, C-C49BB2 and C-F4122C show an input from 768 px.",
+          "why_it_matters": "The brief lists search as a header element for shoppers who compare; an icon adds a tap and hides the affordance on desktop.",
+          "smallest_fix": "Render a visible search field from 768 px up and keep the icon only on phones."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "typography",
+          "title": "Secondary product text is about 12 px on phones",
+          "evidence": "Measured digit height of 8 px in the weight/notes lines of 390x844-long.jpg (about 11-12 px font; C-C49BB2 measures 10 px) while bodySize is 15. Notes and review counts are the facts shoppers compare.",
+          "why_it_matters": "Arabic script at 12 px is hard to read on a phone.",
+          "smallest_fix": "Raise notes and weight lines to 13-14 px."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "brief_fidelity",
+          "title": "Product notes truncated at 390",
+          "evidence": "The Gooseneck card in 390x844-long.jpg (about y 2,700) ends 'ستانلس ستيل · مقياس حر..' with an ellipsis (verified at 4x zoom); the 1440 capture shows the full 'مقياس حرارة'.",
+          "why_it_matters": "Spec information is lost exactly where comparison happens.",
+          "smallest_fix": "Allow two lines (line-clamp: 2) or shorten the copy."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "accessibility",
+          "title": "Label-in-name audit fails",
+          "evidence": "lighthouseMobile.failedAccessibilityAudits = ['label-content-name-mismatch']; the accessibility score still reads 1.0 because the audit is unscored.",
+          "why_it_matters": "WCAG 2.5.3 (Level A): a voice-control user saying the visible label will not activate the control.",
+          "smallest_fix": "Start each aria-label with the exact visible text (for example 'أضف للسلة: إثيوبيا غوجي')."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "composition",
+          "title": "Header polish at 390",
+          "evidence": "390x844-top.jpg: the announcement bar wraps to two lines and leaves a dangling separator dot at the end of line 1; the cart badge disc covers the left edge of the basket glyph, which is smaller (about 18 px) than the 24 px magnifier (4-6x zoom of the header).",
+          "why_it_matters": "Small signs of unfinished responsive polish on the very first screen.",
+          "smallest_fix": "Drop the separator when the two messages stack; offset the badge to the icon's top inline-end corner and equalise icon sizes."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "evidence_gap",
+          "title": "EVIDENCE GAP (not a defect): mobile footer and reduced-motion not visible",
+          "evidence": "390x844-long.jpg is capped at 5,064 px (6 viewports) while the page is about 5,714 px (pageHeightVh 6.77), so the mobile footer/CR/social block is unseen; the 1440 capture shows it. 1440x900-reduced-motion-top.jpg is byte-identical to the normal top capture, so only the static reducedMotion=true flag supports that criterion.",
+          "why_it_matters": "Limits confidence in the mobile footer and the reduced-motion judgement.",
+          "smallest_fix": "Capture the full-height mobile page and a motion-active state in the next cycle."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "originality_art_direction",
+          "title": "Template-led identity",
+          "evidence": "Inset forest-green hero card, pastel icon tiles for categories, soft 16px cards for delivery/trust/brew modules and the Reem Kufi + IBM Plex Sans Arabic pairing (390x844-top.jpg, 1440x900-top.jpg, 1440x900-long.jpg); the zigzag footer edge is the only local pattern reference.",
+          "why_it_matters": "Identity rests on palette rather than a brief-specific device, so the page could sell any roaster.",
+          "smallest_fix": "Pick one Saudi/roastery-specific device and carry it through hero, badges and footer."
+        }
+      ],
+      "central_idea": "A harvest-season storefront that leads with a forest-green Ethiopian-crop hero and answers 'when will it arrive / is delivery free' straight away before a filterable two-up card grid; derived from the brief's promo-plus-delivery priorities, though executed in a stock soft-card e-commerce template.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "C-664C03",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 4,
+        "performance": 4,
+        "system_consistency": 4
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "generic_ai_signatures": 0
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "dimension": "hierarchy_usability",
+          "title": "No sort or filter for 12 mixed products",
+          "evidence": "390x844-top.jpg and 390x844-long.jpg show only the label 'كل المنتجات · 12 منتجًا' above one undivided list of about 1,950 px (beans, drip bags, tools and boxes mixed); the four category cards above show no active state; 1440x900-top.jpg shows the same label over the grid.",
+          "why_it_matters": "The audience compares prices; they cannot order by price or jump to a category without scrolling the whole list.",
+          "smallest_fix": "Add a sticky row with category chips and a price sort above the list."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "accessibility",
+          "title": "Label-in-name audit fails",
+          "evidence": "lighthouseMobile.failedAccessibilityAudits = ['label-content-name-mismatch'] (accessibility score 1.0 because the audit is unscored). axe itself is clean at 390 and 1440.",
+          "why_it_matters": "WCAG 2.5.3 (Level A): voice-control users saying the visible label (for example 'أضف') may not hit the control; C-C49BB2 passes this audit with the same pattern.",
+          "smallest_fix": "Start each aria-label with the exact visible text."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "performance",
+          "title": "Heaviest font payload and one unexplained best-practices deduction",
+          "evidence": "fonts 193,801 B in 6 woff2 files (62% of the 310,480 B transfer) while the display family Kufam sets only 2.7% of the text; Lighthouse best-practices 0.96 (the other outputs score 1.0) and Lighthouse counted 12 requests versus 11 in the lab summary. The failing audit is not named in the report.",
+          "why_it_matters": "First-render bytes on mobile are spent on a small share of glyphs, and an unresolved audit/extra request remains.",
+          "smallest_fix": "Subset Kufam to the heading glyphs (or one weight) and open DevTools to find the failing best-practices audit or extra request."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "hierarchy_usability",
+          "title": "Mobile row scanning cost",
+          "evidence": "In the single-column rows of 390x844-long.jpg the rating (for example '4.9 (214)') sits at the far left of the row, detached from the weight/roast line at the right, and thumbnails are only about 76 x 106 px.",
+          "why_it_matters": "Comparing rows makes the eye cross the full width, and the small imagery carries little weight.",
+          "smallest_fix": "Group the rating with the weight/roast line and enlarge the thumbnail to about 96 px."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "evidence_gap",
+          "title": "EVIDENCE GAP (not a defect): mobile footer tail and reduced-motion not visible",
+          "evidence": "390x844-long.jpg is capped at 5,064 px while the page is about 5,283 px (pageHeightVh 6.26), so the last ~220 px of the mobile footer (copyright/CR) is unseen; the 1440 capture shows the CR/VAT placeholders. 1440x900-reduced-motion-top.jpg is byte-identical to the normal top capture.",
+          "why_it_matters": "Limits confidence in the mobile footer and the reduced-motion judgement.",
+          "smallest_fix": "Capture the full-height mobile page and a motion-active state in the next cycle."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "composition",
+          "title": "Hero looks under-filled on large screens",
+          "evidence": "1440x900-top.jpg and 1920x1080-top.jpg: a ~265 px circle illustration floats at the far left with roughly 300 px of empty rust before the text column.",
+          "why_it_matters": "The hero's visual weight sits on the text side only, leaving the illustration decorative.",
+          "smallest_fix": "Enlarge or re-anchor the illustration, or narrow the hero container."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "originality_art_direction",
+          "title": "Brand colour is limited to the hero and badges",
+          "evidence": "Add buttons are black at all widths (390x844-focus.jpg, 1440x900-scroll-50.jpg) and the Najdi-merlon mark is small; the rest is neutral editorial (hairlines, black type). The add button label is just 'أضف' with a plus.",
+          "why_it_matters": "The page reads as well-made but could sell any roaster outside the hero.",
+          "smallest_fix": "Carry the merlon motif or the rust accent into the primary add control and section headers."
+        }
+      ],
+      "central_idea": "A rust-red roastery price-ledger marked with a Najdi-merlon motif: a flat terracotta hero that puts a from-price and city delivery times beside the CTA, then price-first list rows (grid on desktop) and ruled trust and brew tables built for phone-side price comparison; derived directly from the brief's audience.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "C-C49BB2",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 3.5,
+        "accessibility": 5,
+        "performance": 5,
+        "system_consistency": 5
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 3.5,
+        "generic_ai_signatures": 0
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "dimension": "responsive_quality",
+          "title": "Desktop product rows are sparse and separate the name from the Add button",
+          "evidence": "1440x900-scroll-50.jpg and 1440x900-long.jpg: each product row is about 576 px wide with a 120 px thumbnail, the Add button sits at the opposite end of the row (roughly 160-440 px from the product title) with a wide empty band between; the grid stays at 2 columns even at 1920x1080-top.jpg.",
+          "why_it_matters": "Weak name-to-CTA proximity and undersized imagery slow desktop scanning, and the main content block barely transforms between 390 and 1920 while every other module does.",
+          "smallest_fix": "From 1024 px use a 3-4 column card grid, or keep rows but group price and button beside the title at the inline-start."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "hierarchy_usability",
+          "title": "Late start and no sort or filter",
+          "evidence": "390x844-long.jpg: the first 'أضف' button is about 1,045 px down (hero, delivery strip and 2x2 category cards come first) and the catalog is four stacked sections of about 2,000 px with no price sort or all-products view.",
+          "why_it_matters": "Cross-category price comparison needs a full scroll, although the section headings give some structure.",
+          "smallest_fix": "Add a sticky chip row for the four sections and a price sort."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "brief_fidelity",
+          "title": "Brew-guide 'teaser' is a full block on mobile",
+          "evidence": "390x844-long.jpg: the three methods open as stacked spec grids plus accordions, about 1,100 px (1.3 viewports) before the footer.",
+          "why_it_matters": "The brief asks for a short teaser; the length pushes the footer far down and makes the section hard to skim.",
+          "smallest_fix": "Show one summary line per method and keep the spec grid inside the accordion, or use a compact carousel."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "performance",
+          "title": "Fonts still dominate the payload",
+          "evidence": "fonts 153,723 B in 6 woff2 files = 61% of the 250,765 B transfer (more than 3x the CSS and JS together) while Reem Kufi sets 4.6% of the text.",
+          "why_it_matters": "A display face for a handful of headings is the largest single cost on a mobile first render.",
+          "smallest_fix": "Subset Reem Kufi to the heading glyphs or load a single weight."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "evidence_gap",
+          "title": "EVIDENCE GAP (not a defect): mobile footer and reduced-motion not visible",
+          "evidence": "390x844-long.jpg is capped at 5,064 px while the page is about 5,967 px (pageHeightVh 7.07), so roughly 900 px of mobile footer (links, social, CR/VAT) is unseen; the 1440 capture shows it. 1440x900-reduced-motion-top.jpg is byte-identical to the normal top capture.",
+          "why_it_matters": "Limits confidence in the mobile footer and the reduced-motion judgement.",
+          "smallest_fix": "Capture the full-height mobile page and a motion-active state in the next cycle."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "composition",
+          "title": "Austere product presentation",
+          "evidence": "Thumbnails are 96 px at 390 and 120 px at 1440/1920 with near-monochrome tiles (390x844-long.jpg, 1440x900-scroll-50.jpg); the hero gift offer is a three-line dashed cream outline on burgundy (390x844-top.jpg, y~295-380) that is quiet next to the price and CTA.",
+          "why_it_matters": "It reads as a price list rather than a shop window, which suits comparison but under-sells the coffee.",
+          "smallest_fix": "Enlarge thumbnails and give the gift offer a solid fill."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "originality_art_direction",
+          "title": "Distinctive concept, shared type pairing",
+          "evidence": "The menu/ledger structure is distinctive, but the Reem Kufi + IBM Plex Sans Arabic pairing is identical to two other outputs, and Saudi specificity is limited to the dallah method.",
+          "why_it_matters": "The structure carries the identity; the surface vocabulary is common.",
+          "smallest_fix": "Add one local visual device (pattern, mark) to the logo or footer."
+        }
+      ],
+      "central_idea": "A printed roaster's price list: burgundy hero on paper-cream, black rules and category-grouped menu rows, with a brew guide that cross-links each method to the products it needs; derived from the brief's compare-and-trust audience.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "C-F4122C",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 3,
+        "originality_art_direction": 3,
+        "responsive_quality": 3,
+        "accessibility": 3,
+        "performance": 4,
+        "system_consistency": 2
+      },
+      "diagnostic": {
+        "typography": 3,
+        "composition": 3,
+        "generic_ai_signatures": 3
+      },
+      "unjustified_signatures": [
+        "glow-accents: automated coloredGlowShadows=3; no glow is visible in the static captures (hero CTA and badges checked at 2.5x zoom), so it is likely hover/focus or a very soft CTA shadow; the brief gives no reason for it.",
+        "glassmorphism: 1 backdrop-blur element, the translucent sticky header (1440x900-scroll-50.jpg shows cards tinting through it); not brief-derived.",
+        "rounded-card-grid: automated roundedCardGroups=2; 14-20px radii on the hero, delivery card, trust cards and brew cards beyond the product grid (390x844-top.jpg, 1440x900-long.jpg) with no brief-derived reason."
+      ],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "dimension": "responsive_quality",
+          "title": "Hero artwork is sliced by a hard seam at 390 and 768",
+          "evidence": "390x844-top.jpg: the sun is flat-topped and leaves are cut at y~513 where the text panel's opaque background ends; 768x1024-top.jpg: cherry and leaf slivers poke out under the panel edge at y~540 (both verified at 3x zoom). 1440x900-top.jpg shows the art intact, so it is a narrow-width layering bug.",
+          "why_it_matters": "It is the first image on the primary 390 px viewport and reads as a rendering fault.",
+          "smallest_fix": "Give the art its own row (static position, fixed aspect-ratio) below the text under 1024 px, or lift the SVG above the panel and clip it with overflow:hidden on the hero."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "typography",
+          "title": "Type is small and the scale is fragmented",
+          "evidence": "summary.bodySize=13 at every width; 16 distinct computed font sizes (the others have 8-11) and 22 declared; measured digit height of 8 px in the notes/rating lines of 390x844-long.jpg (about 11-12 px font).",
+          "why_it_matters": "Arabic at 11-13 px is tiring on phones in daylight, and extra sizes blur the hierarchy and the token system.",
+          "smallest_fix": "Set the base to 15-16 px and notes to 13-14 px, and collapse to an 8-step scale."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "hierarchy_usability",
+          "title": "Longest path to the first Add, under heavy sticky chrome",
+          "evidence": "390x844-long.jpg: the first 'أضف إلى السلة' is about 1,600 px down (1.9 viewports) after the hero (ends y~647), delivery card, category tiles, then heading, chips and sort; category entry is repeated four times (drawer, tiles, chips, nav). 390x844-focus.jpg: header plus search stay sticky at ~110 px (13% of the viewport); at 1440 the two-tier header is ~112 px sticky (1440x900-scroll-50.jpg).",
+          "why_it_matters": "The brief's goal is to browse and add quickly; the duplicates and sticky chrome cost scroll distance and screen space.",
+          "smallest_fix": "Drop the category tile row (the chips already filter) and collapse the search row to an icon after the hero."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "brief_fidelity",
+          "title": "English toggle present but unverified",
+          "evidence": "An 'English' control appears in the header (390x844-top.jpg), drawer (390x844-menu-open.jpg) and footer (1440x900-long.jpg); the evidence pack has no English-state capture, js is 41,478 B (2-3x the others) and static.physicalInlineProps=4 (the others have 0-1), which would not mirror when dir flips.",
+          "why_it_matters": "The brief says that if present the toggle must actually switch direction and language; a half-working toggle is worse than none.",
+          "smallest_fix": "Verify that the toggle sets html lang and dir and re-test the page in LTR; replace the 4 physical left/right declarations with logical properties."
+        },
+        {
+          "severity": "MEDIUM",
+          "dimension": "accessibility",
+          "title": "Menu toggle does not expose its state",
+          "evidence": "summary.menu: ariaExpandedBefore=null and ariaExpandedAfter=null while hasAriaControls=true (390x844-menu-open.jpg). C-664C03 and C-C49BB2 toggle false -> true.",
+          "why_it_matters": "WCAG 4.1.2 (Level A): assistive tech cannot tell whether the drawer is open or closed.",
+          "smallest_fix": "Set aria-expanded on the toggle in the open/close handler."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "accessibility",
+          "title": "Label-in-name audit fails, one moderate axe issue, SEO 0.9",
+          "evidence": "lighthouseMobile.failedAccessibilityAudits = ['label-content-name-mismatch']; axe moderate=1 at 390 and 1440 (rule not named); Lighthouse SEO 0.9 (the other outputs score 1.0).",
+          "why_it_matters": "WCAG 2.5.3 (Level A) for voice-control users; the axe and SEO items remain unresolved and the report does not say what they are.",
+          "smallest_fix": "Align aria-labels with the visible text; inspect the moderate axe issue and the SEO audit in DevTools."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "accessibility",
+          "title": "Focused filter chip is partly outside the viewport",
+          "evidence": "390x844-focus.jpg: the focused 'أكياس التقطير' chip is cut by the left edge (label reads 'أكياس التق').",
+          "why_it_matters": "A keyboard or switch user sees a half-hidden target.",
+          "smallest_fix": "Add scroll-padding-inline to the chip scroller or call scrollIntoView with inline: 'nearest' on focus."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "typography",
+          "title": "Mixed-script heading mismatch",
+          "evidence": "1440x900-scroll-50.jpg: 'Cold Brew' in the brew-card heading is set small and regular beside bold Kufi Arabic, while 'V60' in the sibling heading uses the display face (3x zoom).",
+          "why_it_matters": "Inconsistent Latin treatment in mixed Arabic/Latin text, which the brief lists as a constraint.",
+          "smallest_fix": "Apply one font-family and weight to Latin runs in headings (a lang='en' span with the display face or a matched weight)."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "composition",
+          "title": "Misaligned price rows and a dead cell in the delivery strip",
+          "evidence": "390x844-long.jpg (first card row): price baselines differ by about 30 px (89 versus 68/85) because titles wrap to 1 versus 2 lines; 1440x900-top.jpg: the free-delivery cell leaves roughly 390 px blank to its left.",
+          "why_it_matters": "Uneven baselines slow price comparison and the empty cell unbalances the strip.",
+          "smallest_fix": "Reserve two title lines or pin price and button to the card bottom; size the free-delivery cell to its content."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "hierarchy_usability",
+          "title": "Section title duplicates the sort label",
+          "evidence": "390x844-focus.jpg: the grid is titled 'الأكثر طلبًا' while chips filter by category and the select beside it also reads 'الأكثر طلبًا'. Whether the title changes with filter/sort is not visible in the pack.",
+          "why_it_matters": "The title becomes wrong once the shopper filters or re-sorts, if it is static.",
+          "smallest_fix": "Title the section 'المنتجات' and leave the sort to the select."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "performance",
+          "title": "Heaviest page of the four",
+          "evidence": "js 41,478 B (others 14-21 KB), transferBytes 316,643, TBT 10 ms, bootup 87 ms and LCP 1,861 ms (slowest); all still green (performance 0.99).",
+          "why_it_matters": "The cost is mostly bilingual and filter logic; small but non-zero on mid-range phones.",
+          "smallest_fix": "Lazy-load the translation dictionary until the toggle is used."
+        },
+        {
+          "severity": "LOW",
+          "dimension": "evidence_gap",
+          "title": "EVIDENCE GAP (not a defect): mobile footer and reduced-motion not visible",
+          "evidence": "390x844-long.jpg is capped at 5,064 px while the page is about 5,807 px (pageHeightVh 6.88), so roughly 740 px of the mobile page (rest of the service card and the footer) is unseen; the 1440 capture shows the footer, CR/VAT placeholders and social links. 1440x900-reduced-motion-top.jpg is byte-identical to the normal top capture.",
+          "why_it_matters": "Limits confidence in the mobile footer and the reduced-motion judgement.",
+          "smallest_fix": "Capture the full-height mobile page and a motion-active state in the next cycle."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "dimension": "originality_art_direction",
+          "title": "Pastel tile rainbow outside the coffee palette",
+          "evidence": "390x844-long.jpg and 1440x900-long.jpg: a lavender 'أكياس التقطير' tile and purple drip-bag artwork sit beside peach, pink and mint tiles, outside the warm green/brown/amber palette used elsewhere.",
+          "why_it_matters": "It reads as a template colour-coding scheme rather than a roastery identity.",
+          "smallest_fix": "Restrict tile tints to two or three roast-derived colours."
+        }
+      ],
+      "central_idea": "An illustrated harvest-landscape hero (sun, hills, coffee branch) over a feature-complete shop shell with persistent search, filter chips, sort and an English toggle; the landscape follows the brief's Ethiopian-harvest promo while the tool-heavy shell is generic marketplace convention.",
+      "idea_from_brief": true
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "blind_id": "C-C49BB2",
+      "justification": "Cleanest objective record (axe clean, no failing Lighthouse accessibility audit, 251 KB and 10 requests, 8 font sizes, 7 radii) with a brief-derived price-list identity; docked for sparse desktop rows and no sort, and within a point of #2."
+    },
+    {
+      "rank": 2,
+      "blind_id": "C-664C03",
+      "justification": "Best mobile browsing (first Add inside the first viewport, price-first list, 17 px body) and a brief-derived Najdi/ledger identity; trails #1 on the label-in-name failure, heavier fonts and the missing sort/filter."
+    },
+    {
+      "rank": 3,
+      "blind_id": "C-44AD05",
+      "justification": "Polished, complete grid storefront but template-like (2 unjustified signatures), with no h1, no aria-expanded, CLS 0.157, icon-only search and a first Add about 1,330 px down."
+    },
+    {
+      "rank": 4,
+      "blind_id": "C-F4122C",
+      "justification": "Most features (search, chips, sort, English toggle) but weakest execution: hero art sliced at 390 and 768, 13 px body with 16 font sizes, first Add about 1,600 px down under ~110 px sticky chrome, 3 unjustified signatures, unverified bilingual flip."
+    }
+  ],
+  "ranking_confidence": "medium"
+}

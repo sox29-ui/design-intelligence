@@ -1,0 +1,13 @@
+id: cc-0012
+type: skill-behavior
+targets: [.claude/skills/design-intelligence/SKILL.md, evals/routing/cases.yaml]
+summary: Unify the context vocabulary — SKILL.md lists language/direction as ltr · rtl · bilingual while rules use latin · ar · bilingual; pick one set, update SKILL.md, the export vocabulary and the matcher together.
+motivation:
+  source: tooling-audit
+  evidence:
+    - handoff/INTEGRATION.md#3-selecting-rules-for-a-task-the-decision-interface
+  recurrence: found while preparing the Framework handoff.
+predicted_effect: Deterministic rule selection by the Framework without a translation table.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

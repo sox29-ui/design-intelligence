@@ -1,0 +1,74 @@
+{
+  "note": "Do not open before critic and human scoring are complete.",
+  "seedSha256": "de9de5ab116381096dfd736fc4d3d01c0bc6206bf919b37c64935af6f9482e19",
+  "key": {
+    "A-50EF2E": {
+      "condition": "control",
+      "run": "A-1"
+    },
+    "A-52FBF5": {
+      "condition": "control",
+      "run": "A-2"
+    },
+    "A-B46EA2": {
+      "condition": "control",
+      "run": "A-3"
+    },
+    "B-644E29": {
+      "condition": "control",
+      "run": "B-1"
+    },
+    "B-4F5097": {
+      "condition": "control",
+      "run": "B-2"
+    },
+    "C-F4122C": {
+      "condition": "control",
+      "run": "C-1"
+    },
+    "C-44AD05": {
+      "condition": "control",
+      "run": "C-2"
+    },
+    "D-F9F116": {
+      "condition": "control",
+      "run": "D-1"
+    },
+    "D-62C7C3": {
+      "condition": "control",
+      "run": "D-2"
+    },
+    "A-17B383": {
+      "condition": "treatment",
+      "run": "A-1"
+    },
+    "A-326DE8": {
+      "condition": "treatment",
+      "run": "A-2"
+    },
+    "B-80746E": {
+      "condition": "treatment",
+      "run": "B-1"
+    },
+    "B-849635": {
+      "condition": "treatment",
+      "run": "B-2"
+    },
+    "C-C49BB2": {
+      "condition": "treatment",
+      "run": "C-1"
+    },
+    "C-664C03": {
+      "condition": "treatment",
+      "run": "C-2"
+    },
+    "D-9BC93D": {
+      "condition": "treatment",
+      "run": "D-1"
+    },
+    "D-44E09D": {
+      "condition": "treatment",
+      "run": "D-2"
+    }
+  }
+}

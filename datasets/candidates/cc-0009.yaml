@@ -1,0 +1,14 @@
+id: cc-0009
+type: skill-behavior
+targets: [.claude/skills/design-intelligence/SKILL.md, .claude/skills/design-intelligence/workflows/create.md, process.distinct-directions]
+summary: Counter DI's house style — require that the three directions differ in scheme, material metaphor and type voice; add an explicit "is this DI's default look?" check (light paper, ink, hairline rules, ledger/print metaphor, small radii) to the anti-pattern review, and allow dark or expressive directions when the brief's context supports them.
+motivation:
+  source: eval-failure
+  evidence:
+    - evals/results/cycle-01/automated.json#diversity   # cross-brief sameness 0.70 (DI) vs 0.49 (baseline)
+    - evals/results/cycle-01/REPORT.md#the-house-style-problem
+  recurrence: all 8 DI outputs used light paper-like grounds and small radii; critics described 7 of 8 DI ideas (1 of 9 baseline) with paper/ink/ledger/print/rules vocabulary across briefs A–D; baseline brief A was dark in 3/3 runs, DI in 0/2.
+predicted_effect: Lower cross-brief sameness without losing the measured gains (gates, signatures, consistency); to be checked with the cross-brief diversity metric (cc-0010) and a per-cycle side-by-side human review.
+benchmark: { status: not-run, before: "sameness 0.704 (treatment), 0.486 (control)", after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

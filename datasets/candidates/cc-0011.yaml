@@ -1,0 +1,15 @@
+id: cc-0011
+type: eval
+targets: [evals/harness/PROTOCOL.md, scripts/score-benchmark.ts]
+summary: Reduce benchmark confounds — (1) run the critic twice, with and without the automated report, because DI runs optimise against the same verifier whose report the critic sees; (2) hide condition names from prompt files and output paths; (3) capture full-length pages and interaction states (selected rows, open panels) for the critic; (4) generate both conditions in one session so skill discovery cannot differ.
+motivation:
+  source: eval-failure
+  evidence:
+    - evals/results/cycle-01/RUNLOG.md
+    - evals/results/cycle-01/critic-D.json   # long captures stop at 45–85 % of the page
+    - evals/results/cycle-01/critic-B.json   # no capture of detail panels or sort/filter states
+  recurrence: all four critic runs noted missing states or truncated captures; two baseline agents named themselves "the control run".
+predicted_effect: An effect estimate that does not depend on the verifier's own report or on condition awareness.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

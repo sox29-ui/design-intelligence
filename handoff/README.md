@@ -21,7 +21,7 @@ DI is an evidence-backed design **decision system** for web interfaces. It studi
 
 - **Knowledge:** 57 rules (28 principles, 12 invariants, 8 anti-patterns, 7 do-not-copy signatures, 2 uncompiled hypotheses) from 12 extraction references; checked on 2 validation references; 6 rules at `high` confidence; all `provisional` (no human review).
 - **Generalization:** on 3 sealed holdout sites, 31 of 45 decided pre-registered predictions held (69 %; high-confidence rules 12/15). The holdout is now spent.
-- **Benchmark (cycle 01):** 9 baseline vs 8 DI outputs on 4 fixed briefs, scored automatically and by blind critics — see the report. DI improved measured quality signals and reduced generic AI-design signatures, but produced a recognisable **house style** across briefs (the main open problem for v0.2).
+- **Benchmark (cycle 01):** 9 baseline vs 8 DI outputs on 4 fixed briefs. Blind critics scored DI 83.8 vs 72.7 (/100) and ranked both DI outputs first and second in every brief; DI had no verifier warnings, almost no generic signatures and better lab performance. Caveats: DI runs optimised against the same verifier whose report the critics saw; one critic pass per brief; no human review. **Open problem:** DI produced a recognisable house style across briefs (cross-brief sameness 0.70 vs 0.49) — see the report and cc-0009/cc-0010.
 - **Tooling:** capture → normalize → analyst → validate → build → package → verify → score, all scripted and tested (`npm test`, `npm run test:browser`).
 
 ## Quick start (in this repository)

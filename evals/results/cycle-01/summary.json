@@ -1,0 +1,1158 @@
+{
+  "cycle": "cycle-01",
+  "generated": "2026-10-04T10:54:08.995Z",
+  "byCondition": {
+    "control": {
+      "n": 9,
+      "criticTotal": 72.7,
+      "dims": {
+        "brief_fidelity": 3.89,
+        "hierarchy_usability": 3.78,
+        "originality_art_direction": 3.39,
+        "responsive_quality": 3.61,
+        "accessibility": 3.5,
+        "performance": 3.61,
+        "system_consistency": 2.89
+      },
+      "meanRank": 3.67,
+      "unjustifiedSignatures": 1,
+      "criticGateFailures": 0,
+      "automatedGateFailures": 0,
+      "signaturesPresent": 2,
+      "axeSeriousCritical": 0,
+      "lhPerformance": 0.94,
+      "lhAccessibility": 1,
+      "kb": 204.1
+    },
+    "treatment": {
+      "n": 8,
+      "criticTotal": 83.8,
+      "dims": {
+        "brief_fidelity": 4.13,
+        "hierarchy_usability": 4.31,
+        "originality_art_direction": 3.94,
+        "responsive_quality": 3.94,
+        "accessibility": 4.63,
+        "performance": 4.31,
+        "system_consistency": 4.38
+      },
+      "meanRank": 1.5,
+      "unjustifiedSignatures": 0,
+      "criticGateFailures": 0,
+      "automatedGateFailures": 0,
+      "signaturesPresent": 0.25,
+      "axeSeriousCritical": 0,
+      "lhPerformance": 0.99,
+      "lhAccessibility": 1,
+      "kb": 221.2
+    }
+  },
+  "byBrief": {
+    "A": {
+      "control": {
+        "n": 3,
+        "criticTotal": 75.2,
+        "dims": {
+          "brief_fidelity": 3.83,
+          "hierarchy_usability": 3.83,
+          "originality_art_direction": 3.67,
+          "responsive_quality": 3.83,
+          "accessibility": 3.67,
+          "performance": 3.83,
+          "system_consistency": 3.17
+        },
+        "meanRank": 4,
+        "unjustifiedSignatures": 1.33,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 3,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.99,
+        "lhAccessibility": 1,
+        "kb": 161
+      },
+      "treatment": {
+        "n": 2,
+        "criticTotal": 85,
+        "dims": {
+          "brief_fidelity": 4.25,
+          "hierarchy_usability": 4.5,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 4.5,
+          "performance": 4.25,
+          "system_consistency": 4.25
+        },
+        "meanRank": 1.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 0.5,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.99,
+        "lhAccessibility": 1,
+        "kb": 148.8
+      }
+    },
+    "B": {
+      "control": {
+        "n": 2,
+        "criticTotal": 69.8,
+        "dims": {
+          "brief_fidelity": 3.75,
+          "hierarchy_usability": 3.75,
+          "originality_art_direction": 2.75,
+          "responsive_quality": 3.5,
+          "accessibility": 3.25,
+          "performance": 4,
+          "system_consistency": 2.75
+        },
+        "meanRank": 3.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 1,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.95,
+        "lhAccessibility": 0.99,
+        "kb": 171.4
+      },
+      "treatment": {
+        "n": 2,
+        "criticTotal": 82.8,
+        "dims": {
+          "brief_fidelity": 4.25,
+          "hierarchy_usability": 4.25,
+          "originality_art_direction": 3.75,
+          "responsive_quality": 4,
+          "accessibility": 4.5,
+          "performance": 4,
+          "system_consistency": 4.25
+        },
+        "meanRank": 1.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 0,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.98,
+        "lhAccessibility": 1,
+        "kb": 173.8
+      }
+    },
+    "C": {
+      "control": {
+        "n": 2,
+        "criticTotal": 69,
+        "dims": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 3.5,
+          "originality_art_direction": 3,
+          "responsive_quality": 3.5,
+          "accessibility": 3,
+          "performance": 3.5,
+          "system_consistency": 2.5
+        },
+        "meanRank": 3.5,
+        "unjustifiedSignatures": 2.5,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 2.5,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.96,
+        "lhAccessibility": 1,
+        "kb": 254
+      },
+      "treatment": {
+        "n": 2,
+        "criticTotal": 81.8,
+        "dims": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 3.75,
+          "accessibility": 4.5,
+          "performance": 4.5,
+          "system_consistency": 4.5
+        },
+        "meanRank": 1.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 0,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.99,
+        "lhAccessibility": 1,
+        "kb": 235.3
+      }
+    },
+    "D": {
+      "control": {
+        "n": 2,
+        "criticTotal": 75.5,
+        "dims": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 3.5,
+          "accessibility": 4,
+          "performance": 3,
+          "system_consistency": 3
+        },
+        "meanRank": 3.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 1,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.83,
+        "lhAccessibility": 1,
+        "kb": 251.7
+      },
+      "treatment": {
+        "n": 2,
+        "criticTotal": 85.5,
+        "dims": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4.5,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 5,
+          "performance": 4.5,
+          "system_consistency": 4.5
+        },
+        "meanRank": 1.5,
+        "unjustifiedSignatures": 0,
+        "criticGateFailures": 0,
+        "automatedGateFailures": 0,
+        "signaturesPresent": 0.5,
+        "axeSeriousCritical": 0,
+        "lhPerformance": 0.99,
+        "lhAccessibility": 1,
+        "kb": 326.9
+      }
+    }
+  },
+  "diversity": {
+    "control": {
+      "crossBriefPairs": 12,
+      "meanSameness": 0.486
+    },
+    "treatment": {
+      "crossBriefPairs": 12,
+      "meanSameness": 0.704
+    }
+  },
+  "rows": [
+    {
+      "blind_id": "A-50EF2E",
+      "brief": "A",
+      "condition": "control",
+      "run": "A-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 3.5,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 3.5,
+          "responsive_quality": 4,
+          "accessibility": 4,
+          "performance": 4,
+          "system_consistency": 3.5
+        },
+        "total": 75.5,
+        "unjustified": 2,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 4,
+        "of": 5,
+        "findings": {
+          "MEDIUM": 3,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [
+          "giant-hero-type",
+          "scroll-reveal",
+          "decorative-motion",
+          "dark-neon-default"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1488,
+        "bytes": 135607,
+        "families": [
+          "Instrument Serif"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.5,
+        "customProps": 21,
+        "distinctFontSizes": 13
+      }
+    },
+    {
+      "blind_id": "A-52FBF5",
+      "brief": "A",
+      "condition": "control",
+      "run": "A-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 3.5,
+          "performance": 4,
+          "system_consistency": 3.5
+        },
+        "total": 78.5,
+        "unjustified": 2,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 3,
+        "of": 5,
+        "findings": {
+          "MEDIUM": 2,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "tap-targets",
+          "tiny-text"
+        ],
+        "signatures": [
+          "giant-hero-type",
+          "gradient-backgrounds",
+          "scroll-reveal"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1427,
+        "bytes": 171922,
+        "families": [
+          "Fragment Mono",
+          "Instrument Serif"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0,
+        "customProps": 27,
+        "distinctFontSizes": 13
+      }
+    },
+    {
+      "blind_id": "A-B46EA2",
+      "brief": "A",
+      "condition": "control",
+      "run": "A-3",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 3.5,
+          "originality_art_direction": 3.5,
+          "responsive_quality": 3.5,
+          "accessibility": 3.5,
+          "performance": 3.5,
+          "system_consistency": 2.5
+        },
+        "total": 71.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 5,
+        "of": 5,
+        "findings": {
+          "MEDIUM": 3,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "tap-targets",
+          "tiny-text"
+        ],
+        "signatures": [
+          "giant-hero-type",
+          "decorative-motion"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1437,
+        "bytes": 187012,
+        "families": [
+          "Newsreader"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.42,
+        "customProps": 22,
+        "distinctFontSizes": 39
+      }
+    },
+    {
+      "blind_id": "B-644E29",
+      "brief": "B",
+      "condition": "control",
+      "run": "B-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 3.5,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 2.5,
+          "responsive_quality": 4,
+          "accessibility": 3,
+          "performance": 4.5,
+          "system_consistency": 2.5
+        },
+        "total": 70.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": false,
+        "rank": 3,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 4,
+          "LOW": 6,
+          "SUBJECTIVE": 1
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "focus-hidden"
+        ],
+        "signatures": [
+          "glow-accents"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 0.98,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "lcpMs": 1789,
+        "bytes": 169254,
+        "families": [
+          "Inter"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.03,
+        "customProps": 42,
+        "distinctFontSizes": 16
+      }
+    },
+    {
+      "blind_id": "B-4F5097",
+      "brief": "B",
+      "condition": "control",
+      "run": "B-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 3.5,
+          "originality_art_direction": 3,
+          "responsive_quality": 3,
+          "accessibility": 3.5,
+          "performance": 3.5,
+          "system_consistency": 3
+        },
+        "total": 69,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 4,
+        "of": 4,
+        "findings": {
+          "HIGH": 1,
+          "MEDIUM": 1,
+          "LOW": 8,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [
+          "glow-accents"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.9,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "lcpMs": 2865,
+        "bytes": 181744,
+        "families": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.06,
+        "customProps": 37,
+        "distinctFontSizes": 18
+      }
+    },
+    {
+      "blind_id": "C-F4122C",
+      "brief": "C",
+      "condition": "control",
+      "run": "C-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 3,
+          "originality_art_direction": 3,
+          "responsive_quality": 3,
+          "accessibility": 3,
+          "performance": 4,
+          "system_consistency": 2
+        },
+        "total": 66,
+        "unjustified": 3,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 4,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 5,
+          "LOW": 7,
+          "SUBJECTIVE": 1
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [
+          "glow-accents",
+          "glassmorphism",
+          "rounded-card-grid"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.9
+        },
+        "lcpMs": 1861,
+        "bytes": 285521,
+        "families": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.98,
+        "customProps": 31,
+        "distinctFontSizes": 22
+      }
+    },
+    {
+      "blind_id": "C-44AD05",
+      "brief": "C",
+      "condition": "control",
+      "run": "C-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 3,
+          "responsive_quality": 4,
+          "accessibility": 3,
+          "performance": 3,
+          "system_consistency": 3
+        },
+        "total": 72,
+        "unjustified": 2,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 3,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 4,
+          "LOW": 6,
+          "SUBJECTIVE": 1
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "h1-count",
+          "h1-count"
+        ],
+        "signatures": [
+          "glassmorphism",
+          "rounded-card-grid"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1774,
+        "bytes": 234756,
+        "families": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 30,
+        "distinctFontSizes": 13
+      }
+    },
+    {
+      "blind_id": "D-F9F116",
+      "brief": "D",
+      "condition": "control",
+      "run": "D-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 4,
+          "performance": 3,
+          "system_consistency": 3
+        },
+        "total": 77,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 3,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 3,
+          "LOW": 3,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "tap-targets"
+        ],
+        "signatures": [
+          "giant-hero-type"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.84,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 3423,
+        "bytes": 239831,
+        "families": [
+          "Instrument Sans",
+          "Newsreader"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.53,
+        "customProps": 52,
+        "distinctFontSizes": 36
+      }
+    },
+    {
+      "blind_id": "D-62C7C3",
+      "brief": "D",
+      "condition": "control",
+      "run": "D-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 3,
+          "accessibility": 4,
+          "performance": 3,
+          "system_consistency": 3
+        },
+        "total": 74,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 4,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 4,
+          "LOW": 4,
+          "SUBJECTIVE": 1
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [
+          "h1-count",
+          "tap-targets",
+          "h1-count"
+        ],
+        "signatures": [
+          "giant-hero-type"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.82,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 3423,
+        "bytes": 275652,
+        "families": [
+          "Instrument Sans",
+          "Newsreader"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.43,
+        "customProps": 58,
+        "distinctFontSizes": 5
+      }
+    },
+    {
+      "blind_id": "A-17B383",
+      "brief": "A",
+      "condition": "treatment",
+      "run": "A-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4.5,
+          "originality_art_direction": 3.5,
+          "responsive_quality": 3.5,
+          "accessibility": 4.5,
+          "performance": 4.5,
+          "system_consistency": 4.5
+        },
+        "total": 81.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 2,
+        "of": 5,
+        "findings": {
+          "MEDIUM": 1,
+          "LOW": 2,
+          "SUBJECTIVE": 3
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [
+          "giant-hero-type"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1773,
+        "bytes": 141370,
+        "families": [
+          "Public Sans",
+          "Spectral"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 41,
+        "distinctFontSizes": 11
+      }
+    },
+    {
+      "blind_id": "A-326DE8",
+      "brief": "A",
+      "condition": "treatment",
+      "run": "A-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4.5,
+          "hierarchy_usability": 4.5,
+          "originality_art_direction": 4.5,
+          "responsive_quality": 4.5,
+          "accessibility": 4.5,
+          "performance": 4,
+          "system_consistency": 4
+        },
+        "total": 88.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 1,
+        "of": 5,
+        "findings": {
+          "LOW": 7,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1632,
+        "bytes": 163329,
+        "families": [
+          "DM Mono",
+          "Newsreader"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 57,
+        "distinctFontSizes": 13
+      }
+    },
+    {
+      "blind_id": "B-80746E",
+      "brief": "B",
+      "condition": "treatment",
+      "run": "B-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 3.5,
+          "responsive_quality": 4,
+          "accessibility": 4.5,
+          "performance": 4,
+          "system_consistency": 4
+        },
+        "total": 79.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 2,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 1,
+          "LOW": 5,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "lcpMs": 1943,
+        "bytes": 172214,
+        "families": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.99,
+        "customProps": 64,
+        "distinctFontSizes": 10
+      }
+    },
+    {
+      "blind_id": "B-849635",
+      "brief": "B",
+      "condition": "treatment",
+      "run": "B-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4.5,
+          "hierarchy_usability": 4.5,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 4.5,
+          "performance": 4,
+          "system_consistency": 4.5
+        },
+        "total": 86,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 1,
+        "of": 4,
+        "findings": {
+          "LOW": 7,
+          "SUBJECTIVE": 1
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "lcpMs": 1977,
+        "bytes": 183777,
+        "families": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 57,
+        "distinctFontSizes": 13
+      }
+    },
+    {
+      "blind_id": "C-C49BB2",
+      "brief": "C",
+      "condition": "treatment",
+      "run": "C-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 3.5,
+          "accessibility": 5,
+          "performance": 5,
+          "system_consistency": 5
+        },
+        "total": 83.5,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 1,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 1,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1777,
+        "bytes": 221370,
+        "families": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 45,
+        "distinctFontSizes": 10
+      }
+    },
+    {
+      "blind_id": "C-664C03",
+      "brief": "C",
+      "condition": "treatment",
+      "run": "C-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 4,
+          "performance": 4,
+          "system_consistency": 4
+        },
+        "total": 80,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 2,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 1,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "lcpMs": 1785,
+        "bytes": 260601,
+        "families": [
+          "IBM Plex Sans Arabic",
+          "Kufam"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 49,
+        "distinctFontSizes": 14
+      }
+    },
+    {
+      "blind_id": "D-9BC93D",
+      "brief": "D",
+      "condition": "treatment",
+      "run": "D-1",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 5,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 5,
+          "performance": 5,
+          "system_consistency": 5
+        },
+        "total": 89,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 1,
+        "of": 4,
+        "findings": {
+          "LOW": 5,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [
+          "giant-hero-type"
+        ],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1621,
+        "bytes": 291990,
+        "families": [
+          "Literata",
+          "Schibsted Grotesk"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 0.99,
+        "customProps": 55,
+        "distinctFontSizes": 12
+      }
+    },
+    {
+      "blind_id": "D-44E09D",
+      "brief": "D",
+      "condition": "treatment",
+      "run": "D-2",
+      "critic": {
+        "scores": {
+          "brief_fidelity": 4,
+          "hierarchy_usability": 4,
+          "originality_art_direction": 4,
+          "responsive_quality": 4,
+          "accessibility": 5,
+          "performance": 4,
+          "system_consistency": 4
+        },
+        "total": 82,
+        "unjustified": 0,
+        "gates": [],
+        "idea_from_brief": true,
+        "rank": 2,
+        "of": 4,
+        "findings": {
+          "MEDIUM": 1,
+          "LOW": 4,
+          "SUBJECTIVE": 2
+        }
+      },
+      "automated": {
+        "failedGates": [],
+        "warnings": [],
+        "signatures": [],
+        "axeSeriousCritical": 0,
+        "focusMin": 1,
+        "lighthouse": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "lcpMs": 1623,
+        "bytes": 377581,
+        "families": [
+          "Archivo",
+          "Newsreader"
+        ],
+        "reducedMotion": true,
+        "logicalShare": 1,
+        "customProps": 45,
+        "distinctFontSizes": 21
+      }
+    }
+  ]
+}

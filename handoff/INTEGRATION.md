@@ -105,7 +105,7 @@ Known vocabulary inconsistency to fix in v0.2: `SKILL.md` describes `language/di
 
 ## 7. Known limitations at handoff
 
-See the report's limitations section and `CHANGELOG.md` → *Known weaknesses*. Most relevant for integration: house-style convergence under DI; thin validation (no Arabic-commerce validation site); all rules provisional (no human review); verifier false positives (`dark-neon-default` on single small controls, lenient reduced-motion check); real skill triggering untested.
+See [`../evals/results/cycle-01/REPORT.md`](../evals/results/cycle-01/REPORT.md) (limitations) and `CHANGELOG.md` → *Known weaknesses*. Most relevant for integration: **house-style convergence under DI** (cross-brief sameness 0.70 vs 0.49 baseline); thin validation (no Arabic-commerce validation site); all rules provisional (no human review); verifier false positives (`dark-neon-default` on single small controls, lenient reduced-motion check); real skill triggering untested.
 
 ## 8. v0.2 backlog (proposed, not implemented)
 
@@ -122,7 +122,13 @@ Recorded as candidate changes in `datasets/candidates/` (each with motivation, e
 | cc-0007 | eval | Capturable Arabic-commerce validation references |
 | cc-0008 | tooling | Verifier stylesheet re-request → proxy 405 console error |
 
-Benchmark-derived candidates (house style and others) are listed in the cycle-01 report.
+| cc-0009 | skill-behavior | Counter DI's house style: directions must differ in scheme, material and type voice; self-check for DI's own default look |
+| cc-0010 | eval | Score cross-brief diversity (cross-brief critic pass + sameness target) |
+| cc-0011 | eval | Reduce benchmark confounds (critic without the verifier report; hidden condition names; full captures and interaction states; single-session generation) |
+| cc-0012 | skill-behavior | Unify the context vocabulary (`ltr/rtl/bilingual` vs `latin/ar/bilingual`) |
+| cc-0013 | tooling | Full-height page captures for review |
+
+Priority for the Framework integration: cc-0012 (vocabulary) before wiring rule selection; cc-0009/cc-0010 before relying on DI for multi-client work; cc-0008/cc-0013 when the verifier runs behind the Framework's network setup.
 
 ## 9. Open questions for the Framework team
 

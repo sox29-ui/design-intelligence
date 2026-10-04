@@ -37,7 +37,7 @@ function main() {
     const n = ranking.length || null;
     rows.push({
       blind_id: bid, brief, condition: k.condition, run: k.run,
-      critic: co ? { scores: co.scores, total: r1(weightedTotal(co.scores, card.weights)), unjustified: (co.unjustified_signatures ?? []).length, gates: co.hard_gate_failures ?? [], idea_from_brief: co.idea_from_brief, rank, of: n, findings: (co.findings ?? []).reduce((m: Record<string, number>, f: any) => ((m[f.level] = (m[f.level] ?? 0) + 1), m), {}) } : null,
+      critic: co ? { scores: co.scores, total: r1(weightedTotal(co.scores, card.weights)), unjustified: (co.unjustified_signatures ?? []).length, gates: co.hard_gate_failures ?? [], idea_from_brief: co.idea_from_brief, rank, of: n, findings: (co.findings ?? []).reduce((m: Record<string, number>, f: any) => ((m[f.level ?? f.severity] = (m[f.level ?? f.severity] ?? 0) + 1), m), {}) } : null,
       automated: a ? {
         failedGates: a.gates.filter((g: any) => g.level === 'FAIL').map((g: any) => g.id),
         warnings: a.gates.filter((g: any) => g.level === 'WARN').map((g: any) => g.id),

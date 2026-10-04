@@ -1,0 +1,13 @@
+id: cc-0010
+type: eval
+targets: [evals/rubrics/scorecard.yaml, scripts/score-benchmark.ts, evals/rubrics/critic-prompt.md]
+summary: Make cross-brief diversity a scored outcome — per-brief critics cannot see a house style. Add a cross-brief critic pass (one reviewer sees one output per brief from the same condition, blind) and keep the automated sameness metric (fonts, palette, scheme, radius) with a target that DI must not exceed the baseline.
+motivation:
+  source: eval-failure
+  evidence:
+    - evals/results/cycle-01/REPORT.md#the-house-style-problem
+  recurrence: cycle 01 (the only cycle).
+predicted_effect: The benchmark rewards brief-specific identity instead of only per-brief polish.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

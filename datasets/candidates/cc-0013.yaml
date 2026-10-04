@@ -1,0 +1,15 @@
+id: cc-0013
+type: tooling
+targets: [.claude/skills/design-intelligence/scripts/inspect-page.ts]
+summary: Long screenshots stop before the end of tall pages (critics saw 45–85 % of some pages); capture the full height (tiled if needed) so footers and lower sections can be reviewed.
+motivation:
+  source: critic-finding
+  evidence:
+    - evals/results/cycle-01/critic-A.json
+    - evals/results/cycle-01/critic-C.json
+    - evals/results/cycle-01/critic-D.json
+  recurrence: three of four critics.
+predicted_effect: Brief fidelity can be judged on the whole page.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04

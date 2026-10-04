@@ -97,3 +97,13 @@ Guarded by new fixture tests (`npm run test:browser`: a known-good and a known-b
 - A treatment run briefly copied a temporary file into the skill's `scripts/` folder and deleted it in the same command; the skill folder was verified identical to the release afterwards.
 
 **Process note.** The analysis plan (`evals/results/cycle-01/ANALYSIS-PLAN.md`) was committed before scoring; scoring runs sequentially on an idle container.
+
+## 2026-10-04 — Phase F results; scope closed; handoff
+
+**Benchmark results** (`evals/results/cycle-01/REPORT.md`): blind critics (one per brief, a different model, condition-neutral packets) scored DI 83.8 vs baseline 72.7; DI won every brief and both DI outputs ranked 1–2 in each. Gains concentrate in system consistency, accessibility and performance; brief fidelity barely moved (+0.24). Automated: no hard-gate failures in either condition; DI had no verifier warnings and almost no generic signatures — partly because DI runs used the same verifier (teaching to the test, recorded as a confound).
+
+**House style (new problem).** Cross-brief sameness 0.70 (DI) vs 0.49 (baseline); all DI outputs light, paper-and-ink, hairline rules, small radii; critics' one-line "central idea" for 7 of 8 DI outputs uses paper/ink/ledger/print/rules vocabulary (baseline 1 of 9). Brief A (a night installation) was dark in all baseline runs and light in both DI runs. Per-brief critics cannot see this, so the scores do not penalise it. Hypothesis: avoiding the "AI website" cluster (dark-neon, glass, glow, rounded card grids) plus lines-not-shadows and neutral-UI rules produced a new default. Proposed responses: cc-0009 (directions must differ in scheme, material, voice; self-check for DI's own default) and cc-0010 (score cross-brief diversity).
+
+**Scope decision (user, 2026-10-04):** no further benchmark runs, critics or research cycles; DI v0.1.0 preserved; v0.2 improvements recorded as candidates only; next objective is integrating DI into the team's local AI Framework. Handoff prepared in `handoff/` (knowledge export with schema, integration guide, manifest with checksums, packaged skill).
+
+**Phase G status:** candidates cc-0001…cc-0013 written with motivation and evidence; none implemented, none benchmarked (by decision). Weaknesses documented in `CHANGELOG.md`, the cycle-01 report and `handoff/INTEGRATION.md`.
