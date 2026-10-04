@@ -1,12 +1,12 @@
 id: cc-0008
 type: tooling
 targets: [.claude/skills/design-intelligence/scripts/inspect-page.ts]
-summary: Investigate a console error that a treatment run attributed to verify-page re-fetching an external stylesheet; the agent inlined its CSS to silence it. A verifier must not push authors toward worse structure.
+summary: verify-page logs one console error per viewport on any output with an external stylesheet — its font check (DevTools CSS domain) makes Chromium re-request the stylesheet outside Playwright routing and the egress proxy answers 405. Ignore those requests or serve local pages from a real loopback server. One treatment run inlined its CSS to silence the error; a verifier must not push authors toward worse structure.
 motivation:
   source: tooling-audit
   evidence:
     - evals/results/cycle-01/RUNLOG.md#A-1-treatment
-  recurrence: one run so far; check other treatment runs.
+  recurrence: reproduced on control D-1 with an instrumented copy of the verifier; reported independently by treatment runs A-1 and C-1. Not used by any gate (gates count uncaught page errors only).
 predicted_effect: No spurious console errors from the harness on multi-file outputs.
 benchmark: { status: not-run, before: null, after: null }
 review: { status: pending, reviewer: null, date: null }
