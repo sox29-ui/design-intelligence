@@ -30,7 +30,12 @@ evidence:
       observations:
         - ref-011.rtl.home-1440-dir-attributes
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconclusive
+      observations:
+        - val-002.rtl.home-ar-1440-mixed-runs
+      note: "auto (home-ar): no mixed-direction runs detected"
   external:
     - source_id: w3c-i18n-html-dir
       note: dir="auto" for inserted text
@@ -38,8 +43,11 @@ evidence_count: 2
 confidence: medium
 confidence_basis: W3C + 2 references
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 0 inconsistent, 1 inconclusive"

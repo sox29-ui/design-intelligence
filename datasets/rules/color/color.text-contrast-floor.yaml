@@ -48,7 +48,19 @@ evidence:
       observations:
         - ref-002.performance.home-a-why-cost
       note: "text over paintings: ~100 nodes"
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.accessibility.home-1440-axe-violations
+        - val-001.accessibility.home-390-axe-violations
+      note: "auto (home): axe color-contrast nodes: 0 at 1440, 0 at 390"
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.accessibility.home-ar-1440-axe-violations
+        - val-002.accessibility.home-ar-390-axe-violations
+      note: "auto (home-ar): axe color-contrast nodes: 3 at 1440, 2 at 390"
   external:
     - source_id: wcag22
       note: SC 1.4.3 contrast minimum; 1.4.11 non-text contrast
@@ -56,8 +68,11 @@ evidence_count: 2
 confidence: medium
 confidence_basis: WCAG requirement; corpus shows the failure mode on 4 references
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 1 inconsistent, 0 inconclusive"

@@ -28,10 +28,10 @@
 - **WHEN:** page_goal ∈ {task-completion, information-consumption, conversion}; content_density ∈ {medium, high}
 - **CONSIDER:** search field as the hero's primary action; department or category buttons over imagery; a short list of most-requested tasks right below
 - **VERIFY:** router visible without scrolling at 390; keyboard reaches it first after skip link; labels are explicit, not clever
-- **AVOID WHEN:** brand launch, storytelling or single-product pages; pages where the visitor does not yet know what to choose
+- **AVOID WHEN:** brand launch, storytelling or single-product pages; pages where the visitor does not yet know what to choose; cultural or institutional home pages that lead with a welcome statement — then route through a visible navigation bar and keep the top task (e.g. tickets) visible at 390
 - **TRADE-OFFS:** less room for brand storytelling above the fold
 - **WHY (inferred):** A public portal (search), a data publication (search + popular topics) and a luxury department store (department buttons over photography) all spend the first viewport on routing. INFERRED: intent is already formed, so persuasion copy delays the task.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-012 (Ounass). Details: `npm run why -- hierarchy.router-hero-for-task-intent`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-012 (Ounass) · validation: val-002: inconsistent. Details: `npm run why -- hierarchy.router-hero-for-task-intent`.
 
 ### Cap the content container; let only backgrounds and media bleed
 <!-- rule:layout.cap-content-width -->
@@ -45,7 +45,7 @@
 - **AVOID WHEN:** immersive canvases and galleries whose content is the image
 - **TRADE-OFFS:** large empty margins on ultra-wide screens
 - **WHY (inferred):** Five references hold the same container width at 1440 and 1920 (990, 1280, 1266, 1180, 798 px); the references that grow to ~1500–1800 px are illustration- or image-led.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-010 (Tabby) — illustration-led page grows to 1824 px at 1920; ref-011 (Megaphone) — image grid grows to 1546 px. Details: `npm run why -- layout.cap-content-width`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-010 (Tabby) — illustration-led page grows to 1824 px at 1920; ref-011 (Megaphone) — image grid grows to 1546 px · validation: val-001: inconclusive, val-002: inconclusive. Details: `npm run why -- layout.cap-content-width`.
 
 ### Expose the grid when the subject is a system
 <!-- rule:layout.expose-the-grid-for-systems -->
@@ -73,7 +73,7 @@
 - **AVOID WHEN:** playful illustrated brands may use large radii deliberately (record the reason)
 - **TRADE-OFFS:** can feel austere without strong typography or imagery
 - **WHY (inferred):** Information-led references measure zero coloured glows and few large radii; structure comes from rules, borders, visible grids and bands.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-010 (Tabby) — large-radius image cards are part of a deliberately playful illustrated identity. Details: `npm run why -- layout.structure-with-lines-not-shadows`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-010 (Tabby) — large-radius image cards are part of a deliberately playful illustrated identity · validation: val-002: consistent. Details: `npm run why -- layout.structure-with-lines-not-shadows`.
 
 ### At 390 px, transform priorities instead of shrinking the desktop
 <!-- rule:responsive.transform-not-shrink -->
@@ -87,4 +87,4 @@
 - **AVOID WHEN:** already single-column, text-first pages, where stacking is sufficient
 - **TRADE-OFFS:** two compositions to maintain; risk of hiding content mobile users need
 - **WHY (inferred):** Six references change content and interaction at 390: trimmed headline and pinned CTAs, panel-to-button chart controls, rotated specimen word, reframed 3D scene, accordion footer, menu that doubles as storefront.
-- *Evidence:* supported by ref-009 (Stripe), ref-008 (Our World in Data), ref-005 (Exat Typeface), ref-006 (See What Eye See — Eye Condition Simulator), ref-012 (Ounass), ref-003 (Scout Motors) · counterexamples: ref-007 (GOV.UK) — stacks without transforming — works because the content is already a single task-first column · standards: wcag22. Details: `npm run why -- responsive.transform-not-shrink`.
+- *Evidence:* supported by ref-009 (Stripe), ref-008 (Our World in Data), ref-005 (Exat Typeface), ref-006 (See What Eye See — Eye Condition Simulator), ref-012 (Ounass), ref-003 (Scout Motors) · counterexamples: ref-007 (GOV.UK) — stacks without transforming — works because the content is already a single task-first column · validation: val-002: inconclusive · standards: wcag22. Details: `npm run why -- responsive.transform-not-shrink`.

@@ -40,7 +40,7 @@ evidence_count: 1
 confidence: medium
 confidence_basis: MDN/W3C + 1 measured implementation
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02

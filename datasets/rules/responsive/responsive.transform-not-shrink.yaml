@@ -55,16 +55,25 @@ evidence:
       observations:
         - ref-007.responsive.home-a-responsive-stacking
       note: stacks without transforming — works because the content is already a single task-first column
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconclusive
+      observations:
+        - val-002.responsive.home-ar-a-mobile-stacking
+        - val-002.components.home-ar-a-tickets-persist-on-mobile
+      note: "analyst (home-ar): mostly stacking of card lists (AVOID WHEN: stacking sufficient); tickets kept visible next to the menu button"
   external:
     - source_id: wcag22
       note: SC 1.4.10 reflow
 evidence_count: 6
 confidence: medium
-confidence_basis: 6 independent references; validation pending
+confidence_basis: "6 independent references; validation: 0 consistent, 0 inconsistent, 1 inconclusive"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 0 inconsistent, 1 inconclusive"

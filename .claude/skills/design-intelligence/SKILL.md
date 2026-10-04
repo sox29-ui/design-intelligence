@@ -63,7 +63,7 @@ Read only what the task needs. Do **not** load every reference by default.
 - **Design thesis** (≤ 12 lines): audience, primary goal, personality, hierarchy (1st/2nd/3rd read), typography, composition, colour, motion budget, responsive strategy, accessibility and performance constraints.
 - **Directions**: genuinely different central ideas, not colour variants. Pick one; state the trade-off in ≤ 5 sentences; run the anti-pattern check before coding.
 - **System**: tokens for type scale, spacing, colour roles, radii, motion; semantic HTML; logical CSS properties; motion behind `prefers-reduced-motion: no-preference`; ≤ 2 type families unless a role demands a third.
-- **Verify** (Node ≥ 22.18 + Playwright):
+- **Verify** (Node ≥ 22.18 + Playwright; `${CLAUDE_SKILL_DIR}` is the directory containing this SKILL.md):
 
 ```bash
 node ${CLAUDE_SKILL_DIR}/scripts/verify-page.ts <output-dir>          # 4 viewports + reduced motion + dark scheme
@@ -71,6 +71,10 @@ node ${CLAUDE_SKILL_DIR}/scripts/verify-page.ts <output-dir> --quick  # 390 + 14
 ```
 
   Then look at the listed screenshots. Gates: no overflow at 390, visible focus, no critical axe issues, no runtime errors, `lang`/`dir` correct.
+
+## How much to trust a rule
+
+Every rule card shows kind, confidence (low · medium · high), status and its evidence. In v0.1 all rules are `provisional` (not yet reviewed by a human), learned from 12 reference sites and checked against 2 more; treat them as informed defaults that must survive the brief, not as laws. Signatures in `references/signatures.md` are things *not* to copy. `references/provenance.md` summarises each rule's evidence (maintainers trace the full trail with `npm run why -- <rule-id>` in the DI repository).
 
 ## When rules conflict
 
@@ -82,4 +86,4 @@ Thesis · chosen direction and why · rule IDs applied (and rules deliberately n
 
 ## Capability fallbacks
 
-No browser → reason over code, mark visual and a11y checks UNVERIFIED, give the user the verify command. No vision → rely on `verify-report.json` metrics and ask for human visual review. Limited context → load one reference at a time. No repo write → output a patch or candidate-change file.
+No browser or no Playwright → reason over code, mark visual and a11y checks UNVERIFIED, give the user the verify command (a packaged copy of this skill ships a `package.json`: run `npm install` in the skill directory first). No vision → rely on `verify-report.json` metrics and ask for human visual review. Limited context → load one reference at a time. No repo write → output a patch or candidate-change file.

@@ -1,0 +1,318 @@
+{
+  "ref_id": "val-002",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-04T08:06:30.820Z",
+  "notes": "Hero background media did not render in capture (grey gradient where an image or video is expected).",
+  "observations": [
+    {
+      "id": "val-002.hierarchy.home-ar-a-welcome-statement-hero",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "welcome-statement-hero",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-top.jpg",
+          "sha256": "c822fd6e11fcbec968dab30ac7c4fae8f947202680fb7493bffa71d268e6d145"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/390x844-top.jpg",
+          "sha256": "3a24a7678d8f2b18a9c91ea98a6f1fd70dacfde7478d1679ec19348c772591c9"
+        }
+      ],
+      "statement": "The first viewport holds a notice strip, a dark utility bar with the parent organisation's bilingual logotype, the main navigation (events, visit planning, learning, encyclopedia, tickets) and a very large white, underlined Arabic welcome statement naming the museum; there is no search field or task picker.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "hero",
+        "statement",
+        "display"
+      ]
+    },
+    {
+      "id": "val-002.components.home-ar-a-tickets-persist-on-mobile",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "390x844",
+      "category": "components",
+      "property": "tickets-persist-on-mobile",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/390x844-top.jpg",
+          "sha256": "3a24a7678d8f2b18a9c91ea98a6f1fd70dacfde7478d1679ec19348c772591c9"
+        }
+      ],
+      "statement": "At 390 the navigation collapses to a menu button and the tickets link stays visible next to it.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "navigation",
+        "persistent-cta"
+      ]
+    },
+    {
+      "id": "val-002.layout.home-ar-a-bands-and-square-cards",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "1440x900",
+      "category": "layout",
+      "property": "bands-and-square-cards",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-25.jpg",
+          "sha256": "a1acc45b6af618384dd73bc47b86563ebd4aa2ea0ec04243d912043415909cb3"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-50.jpg",
+          "sha256": "1186123405c125b7e30dbcac919aa3a472356f010d6425e7c7c88fc17321d341"
+        }
+      ],
+      "statement": "Sections alternate full-width black and white bands; cards are square-cornered photographs with underlined titles and arrow links; no shadows, glows or rounded containers.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "structure",
+        "cards"
+      ]
+    },
+    {
+      "id": "val-002.color.home-ar-a-greyscale-ui-colour-from-art",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "greyscale-ui-colour-from-art",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-25.jpg",
+          "sha256": "a1acc45b6af618384dd73bc47b86563ebd4aa2ea0ec04243d912043415909cb3"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-50.jpg",
+          "sha256": "1186123405c125b7e30dbcac919aa3a472356f010d6425e7c7c88fc17321d341"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-top.jpg",
+          "sha256": "c822fd6e11fcbec968dab30ac7c4fae8f947202680fb7493bffa71d268e6d145"
+        }
+      ],
+      "statement": "The interface is black, white and grey; colour comes from artworks and event photography, plus one saturated green used for a large animated marquee band with a check-marked list of the museum's offers.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "palette",
+        "accent"
+      ]
+    },
+    {
+      "id": "val-002.rtl.home-ar-a-rtl-mirroring",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "cross-viewport",
+      "category": "rtl",
+      "property": "rtl-mirroring",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-top.jpg",
+          "sha256": "c822fd6e11fcbec968dab30ac7c4fae8f947202680fb7493bffa71d268e6d145"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-25.jpg",
+          "sha256": "a1acc45b6af618384dd73bc47b86563ebd4aa2ea0ec04243d912043415909cb3"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-50.jpg",
+          "sha256": "1186123405c125b7e30dbcac919aa3a472356f010d6425e7c7c88fc17321d341"
+        }
+      ],
+      "statement": "The layout is mirrored: logo at the right edge, menu at the left; link arrows point left (forward in Arabic); the parent organisation's bilingual logotype and the check marks in the marquee are not mirrored.",
+      "confidence": 0.9,
+      "assessment": "strength",
+      "tags": [
+        "mirroring",
+        "icons"
+      ]
+    },
+    {
+      "id": "val-002.typography.home-ar-a-arabic-category-labels",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "cross-viewport",
+      "category": "typography",
+      "property": "arabic-category-labels",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1920x1080-scroll-25.jpg",
+          "sha256": "93a54196abe29370ddaace02dfd9deb62fe89a34e7217d537f010c0cef027ed3"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/390x844-scroll-25.jpg",
+          "sha256": "3cf51699b2916ebdd9dbbd62bb64166e027bdd959782c1aeed26821bc17dc481"
+        }
+      ],
+      "statement": "Event cards carry small bold Arabic category labels (talk, film screening, exhibitions, adults) beside a lighter date line; the labels differ by weight, not by case or letter-spacing.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "labels",
+        "kicker"
+      ]
+    },
+    {
+      "id": "val-002.components.home-ar-a-consent-reject-as-link",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "consent-reject-as-link",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-frame-entrance-900.jpg",
+          "sha256": "31d8ed6ff2656458918fccba0d22c77b2cc80dad3a2468fde0810f7c879341a6"
+        }
+      ],
+      "statement": "A cookie banner anchored at the bottom edge shows 'agree' as a bold control with an arrow, while 'reject' is a small underlined text link next to 'learn more' and 'change settings'.",
+      "confidence": 0.85,
+      "assessment": "weakness",
+      "tags": [
+        "consent"
+      ]
+    },
+    {
+      "id": "val-002.layout.home-ar-a-full-width-card-grid",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "1920x1080",
+      "category": "layout",
+      "property": "full-width-card-grid",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1920x1080-scroll-25.jpg",
+          "sha256": "93a54196abe29370ddaace02dfd9deb62fe89a34e7217d537f010c0cef027ed3"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-25.jpg",
+          "sha256": "a1acc45b6af618384dd73bc47b86563ebd4aa2ea0ec04243d912043415909cb3"
+        }
+      ],
+      "statement": "At 1920 the three-column event grid spans almost the whole viewport width with about 10 px side margins, as it does at 1440; card images grow with the viewport.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "container",
+        "wide-screen"
+      ]
+    },
+    {
+      "id": "val-002.responsive.home-ar-a-mobile-stacking",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-stacking",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/390x844-scroll-25.jpg",
+          "sha256": "3cf51699b2916ebdd9dbbd62bb64166e027bdd959782c1aeed26821bc17dc481"
+        },
+        {
+          "artifact": "research-artifacts/val-002/home-ar/20261002T170806Z/1440x900-scroll-25.jpg",
+          "sha256": "a1acc45b6af618384dd73bc47b86563ebd4aa2ea0ec04243d912043415909cb3"
+        }
+      ],
+      "statement": "At 390 the three-column card rows become one column of the same cards; headings and descriptions keep their roles and little content is dropped.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "mobile"
+      ]
+    },
+    {
+      "id": "val-002.hierarchy.home-ar-a-why-statement-first",
+      "ref_id": "val-002",
+      "page": "home-ar",
+      "source_url": "https://mathaf.org.qa/ar/",
+      "capture_id": "20261002T170806Z",
+      "captured_at": "2026-10-02T17:08:06.061Z",
+      "viewport": "cross-viewport",
+      "category": "hierarchy",
+      "property": "why-statement-first",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "val-002.hierarchy.home-ar-a-welcome-statement-hero"
+        },
+        {
+          "observation": "val-002.components.home-ar-a-tickets-persist-on-mobile"
+        },
+        {
+          "observation": "val-002.typography.home-ar-1440-scale-range"
+        }
+      ],
+      "statement": "On a cultural institution's home page, brand expression is a co-primary goal: the first viewport is spent on a welcome statement in very large type (about 8× body) while routing is delegated to the navigation bar, with tickets kept visible. Rules that tie information goals to a modest, router-like first viewport do not hold in this context.",
+      "confidence": 0.7,
+      "assessment": "neutral",
+      "tags": [
+        "context-boundary"
+      ]
+    }
+  ]
+}

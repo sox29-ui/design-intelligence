@@ -16,7 +16,7 @@
 - **VERIFY:** each saturated colour maps to a named role or brand asset; accent area share is small outside brand moments
 - **TRADE-OFFS:** neutral UI can feel generic if typography and imagery are weak
 - **WHY (inferred):** Luxury commerce and Arabic editorial keep UI greyscale while images carry colour; the data publication reserves colour for data series; the personal-brand site's neon is the driver's livery.
-- *Evidence:* supported by ref-012 (Ounass), ref-011 (Megaphone), ref-008 (Our World in Data), ref-001 (Lando Norris). Details: `npm run why -- color.colour-from-content-or-identity`.
+- *Evidence:* supported by ref-012 (Ounass), ref-011 (Megaphone), ref-008 (Our World in Data), ref-001 (Lando Norris) · validation: val-001: consistent, val-002: consistent. Details: `npm run why -- color.colour-from-content-or-identity`.
 
 ### Muted and tonal text still meets contrast
 <!-- rule:color.text-contrast-floor -->
@@ -29,4 +29,4 @@
 - **VERIFY:** axe color-contrast = 0; text over images has a scrim or solid backing
 - **TRADE-OFFS:** narrower tonal range for hierarchy
 - **WHY (inferred):** Most automated contrast failures in the corpus come from deliberately muted secondary text and captions over images, including on award-winning sites.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-003 (Scout Motors) · counterexamples: ref-009 (Stripe) — muted slate clauses and captions: 29 contrast nodes; ref-001 (Lando Norris) — pale captions over imagery; ref-005 (Exat Typeface) — poster modules and tight captions; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — text over paintings: ~100 nodes · standards: wcag22. Details: `npm run why -- color.text-contrast-floor`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-003 (Scout Motors) · counterexamples: ref-009 (Stripe) — muted slate clauses and captions: 29 contrast nodes; ref-001 (Lando Norris) — pale captions over imagery; ref-005 (Exat Typeface) — poster modules and tight captions; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — text over paintings: ~100 nodes · validation: val-001: consistent, val-002: inconsistent · standards: wcag22. Details: `npm run why -- color.text-contrast-floor`.

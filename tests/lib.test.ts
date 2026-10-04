@@ -34,3 +34,13 @@ test('confidence ceiling follows D-006 (studio de-duplication, validation, count
     'medium',
   );
 });
+
+test('soft error pages served with HTTP 200 are recognised (text tested, never stored)', async () => {
+  const { SOFT_ERROR_RE } = await import('../.claude/skills/design-intelligence/scripts/inspect-page.ts');
+  for (const t of ['500\nحدث خطأ غير متوقع.\nيرجى المحاولة لاحقًا.', 'عذرًا! حدث خطأ ما', 'Oops, something went wrong', 'Error 503: Service Unavailable', 'Internal Server Error']) {
+    assert.ok(SOFT_ERROR_RE.test(t), t);
+  }
+  for (const t of ['Shop 500+ products with free delivery', 'خصم 50% على العطور', 'Errors and omissions excepted']) {
+    assert.ok(!SOFT_ERROR_RE.test(t), t);
+  }
+});

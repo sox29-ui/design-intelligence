@@ -24,6 +24,7 @@ verify:
   - heading levels match visual levels
 avoid_when:
   - the type itself is the product or the message (see typography.extreme-scale-needs-a-reason)
+  - a cultural or institutional home page whose first viewport is a single welcome statement (brand expression as co-primary goal) — keep the content below it modest
 rationale: "Measured scale ranges stay between 1.9× and 3.5× on every task, information, commerce and conversion reference, independent of style (utilitarian, editorial, luxury, illustrative). INFERRED: large display steals the first viewport from the task."
 trade_offs:
   - less drama; identity has to come from colour, imagery or composition
@@ -60,14 +61,25 @@ evidence:
       observations:
         - ref-003.typography.home-1440-scale-range
       note: commerce page with a storytelling section reaches 36× — the giant type sits in a heritage-story band, not in the conversion path
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.typography.home-ar-1440-scale-range
+      note: "auto (home-ar): scale range 7.89× at 1440 (rule: ≈2–3.5×)"
   external: []
 evidence_count: 7
 confidence: medium
-confidence_basis: 7 independent references across 5 archetypes; validation pending (cannot be high before a validation check)
+confidence_basis: "7 independent references across 5 archetypes; validation: 0 consistent, 1 inconsistent, 0 inconclusive (cannot be high before a validation check)"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 1 inconsistent, 0 inconclusive"
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "refined after val-002 (museum home: 7.9× welcome statement): AVOID WHEN extended; the extension rests on one site and is unvalidated"

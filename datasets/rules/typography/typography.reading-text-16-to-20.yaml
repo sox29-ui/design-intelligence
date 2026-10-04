@@ -53,14 +53,22 @@ evidence:
       observations:
         - ref-008.typography.chart-1440-body-size
       note: 13–14 px in a dense data tool — acceptable with tabular layout
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.responsive.home-ar-xvp-body-size-curve
+      note: "auto (home-ar): dominant body size 18 px across viewports (rule: 16–20 px, constant)"
   external: []
 evidence_count: 5
-confidence: medium
-confidence_basis: 5 independent references at 16–20 px; 2 counterexamples explained by density/merchandising
+confidence: high
+confidence_basis: 5 references, counterexamples explained (dense commerce/tables); consistent on val-002 (measured); not testable on val-001 (no reading text)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation: confidence medium → high (D-006 criteria met; measured validation consistent, D-021)"

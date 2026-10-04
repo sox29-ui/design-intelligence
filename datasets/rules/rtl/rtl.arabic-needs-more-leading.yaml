@@ -38,7 +38,13 @@ evidence:
       observations:
         - ref-011.typography.home-1440-reading-line-height
       note: tight 1.26–1.37 Arabic body (single-language page; not verified as harmful)
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.typography.home-ar-1440-reading-line-height
+        - val-002.typography.home-ar-1440-display-line-height
+      note: "auto (home-ar): Arabic line-height: reading n/a, display 1.43 (rule: body ≈1.6–1.8, display ≈1.25–1.35)"
   external:
     - source_id: w3c-alreq
       note: Arabic ascenders and descenders extend further than Latin
@@ -48,8 +54,11 @@ evidence_count: 1
 confidence: medium
 confidence_basis: W3C + practitioner guidance + 1 measured bilingual implementation
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

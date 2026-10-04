@@ -39,7 +39,19 @@ evidence:
       observations:
         - ref-006.implementation.home-a-why-dom-thin
       note: content in WebGL; thin DOM
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconsistent
+      observations:
+        - val-001.hierarchy.home-1440-h1-count
+        - val-001.accessibility.home-1440-landmarks
+      note: 'auto (home): h1 × 0; landmarks {"header":1,"nav":1,"main":0,"footer":1,"aside":0,"search":0}'
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.hierarchy.home-ar-1440-h1-count
+        - val-002.accessibility.home-ar-1440-landmarks
+      note: 'auto (home-ar): h1 × 0; landmarks {"header":1,"nav":4,"main":1,"footer":1,"aside":0,"search":0}'
   external:
     - source_id: wcag22
       note: SC 3.1.1 language of page; structure and names per WCAG 2.2
@@ -47,8 +59,11 @@ evidence_count: 1
 confidence: medium
 confidence_basis: WCAG-grounded invariant; corpus shows the failure modes
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 2 inconsistent, 0 inconclusive"

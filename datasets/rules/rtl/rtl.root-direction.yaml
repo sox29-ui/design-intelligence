@@ -37,16 +37,24 @@ evidence:
         - ref-011.rtl.home-a-why-root-dir-risk
         - ref-011.rtl.home-1440-computed-direction
       note: root left LTR; direction applied element by element
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.rtl.home-ar-1440-html-dir
+      note: 'auto (home-ar): html dir = "rtl"'
   external:
     - source_id: w3c-i18n-html-dir
       note: add dir="rtl" to the html tag; do not use CSS for base direction
 evidence_count: 2
-confidence: medium
-confidence_basis: W3C guidance + 2 references; 1 counterexample
+confidence: high
+confidence_basis: W3C guidance + 2 references; consistent on val-002 (measured html dir)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation: confidence medium → high (D-006 criteria met; measured validation consistent, D-021)"

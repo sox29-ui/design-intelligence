@@ -1,0 +1,410 @@
+{
+  "ref": "val-002",
+  "generated_by": "scripts/validation-check.ts",
+  "context": {
+    "home-ar": {
+      "page_goal": [
+        "information-consumption",
+        "brand-expression"
+      ],
+      "content_density": [
+        "medium"
+      ],
+      "language": [
+        "ar"
+      ],
+      "device": [
+        "responsive-general"
+      ],
+      "motion_budget": [
+        "subtle"
+      ],
+      "engineering_budget": [
+        "light-js"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "rule": "accessibility.semantic-skeleton",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconsistent",
+      "observations": [
+        "val-002.hierarchy.home-ar-1440-h1-count",
+        "val-002.accessibility.home-ar-1440-landmarks"
+      ],
+      "note": "h1 × 0; landmarks {\"header\":1,\"nav\":4,\"main\":1,\"footer\":1,\"aside\":0,\"search\":0}"
+    },
+    {
+      "rule": "accessibility.visible-focus",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.accessibility.home-ar-1440-focus-indicator-share"
+      ],
+      "note": "visible indicator on 100% of sampled tab stops"
+    },
+    {
+      "rule": "antipattern.text-in-images",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.dark-neon-without-identity",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.gradient-hero-imitation",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.color.home-ar-1440-gradient-area"
+      ],
+      "note": "gradient area 0 of the page: no gradient-led hero"
+    },
+    {
+      "rule": "color.colour-from-content-or-identity",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "color.text-contrast-floor",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconsistent",
+      "observations": [
+        "val-002.accessibility.home-ar-1440-axe-violations",
+        "val-002.accessibility.home-ar-390-axe-violations"
+      ],
+      "note": "axe color-contrast nodes: 3 at 1440, 2 at 390"
+    },
+    {
+      "rule": "antipattern.glass-floating-nav",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.components.home-ar-1440-header",
+        "val-002.components.home-ar-1440-effects"
+      ],
+      "note": "header relative, backdrop none: the generic pattern is absent"
+    },
+    {
+      "rule": "antipattern.rounded-card-grid-default",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.components.home-ar-1440-card-groups"
+      ],
+      "note": "0 large-radius card groups"
+    },
+    {
+      "rule": "components.consent-with-real-choice",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "components.data-display-direct",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "components.mobile-menu-sheet",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconsistent",
+      "observations": [
+        "val-002.components.home-ar-390-menu"
+      ],
+      "note": "menu: aria-expanded null→null, dialogs 0, Escape closes: true"
+    },
+    {
+      "rule": "components.persistent-primary-action",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "components.trust-next-to-the-ask",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "hierarchy.give-dense-pages-a-map",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "hierarchy.router-hero-for-task-intent",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "layout.cap-content-width",
+      "page": "home-ar",
+      "applies": true,
+      "result": "no-measurement"
+    },
+    {
+      "rule": "layout.expose-the-grid-for-systems",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "layout.structure-with-lines-not-shadows",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.content-gating-preloader",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "motion.duration-by-purpose",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.motion.home-ar-1440-transition-duration"
+      ],
+      "note": "median transition 350 ms on a task/information/commerce page (rule: ≈200–300 ms)"
+    },
+    {
+      "rule": "motion.honour-reduced-motion",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.motion.home-ar-1440-reduced-motion-response"
+      ],
+      "note": "reduced-motion handling detected ({\"runningAnimationsNormal\":0,\"runningAnimationsReduced\":0,\"cssReducedMotionRules\":0,\"jsReducedMotionQueries\":1,\"rafCallsReduced\":639,\"rafCallsNormal\":1660})"
+    },
+    {
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "motion.warn-before-intense-motion",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "antipattern.late-injected-banners",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-002.performance.home-ar-390-cls-before-interaction",
+        "val-002.performance.home-ar-1440-cls-before-interaction"
+      ],
+      "note": "layout shift before interaction 0.127; cause not verified"
+    },
+    {
+      "rule": "performance.weight-follows-goal",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.performance.home-ar-390-transfer-bytes"
+      ],
+      "note": "1.7 MB transferred on mobile for a task/information/commerce goal (rule: keep it light)"
+    },
+    {
+      "rule": "antipattern.generic-premium-cluster",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.context-before-style",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.distinct-directions",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.verify-in-browser",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "responsive.transform-not-shrink",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "rtl.arabic-needs-more-leading",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.typography.home-ar-1440-reading-line-height",
+        "val-002.typography.home-ar-1440-display-line-height"
+      ],
+      "note": "Arabic line-height: reading n/a, display 1.43 (rule: body ≈1.6–1.8, display ≈1.25–1.35)"
+    },
+    {
+      "rule": "rtl.bilingual-type-system",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "rtl.isolate-mixed-runs",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-002.rtl.home-ar-1440-mixed-runs"
+      ],
+      "note": "no mixed-direction runs detected"
+    },
+    {
+      "rule": "rtl.localized-logotype",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "rtl.logical-properties",
+      "page": "home-ar",
+      "applies": true,
+      "result": "no-measurement"
+    },
+    {
+      "rule": "rtl.mirror-direction-not-identity",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "rtl.no-tracking-no-case-arabic",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.typography.home-ar-1440-display-tracking",
+        "val-002.typography.home-ar-1440-display-script"
+      ],
+      "note": "Arabic display tracking 0em"
+    },
+    {
+      "rule": "rtl.numerals-one-system",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.rtl.home-ar-1440-digits"
+      ],
+      "note": "digits: 36 Western, 0 Arabic-Indic"
+    },
+    {
+      "rule": "rtl.root-direction",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.rtl.home-ar-1440-html-dir"
+      ],
+      "note": "html dir = \"rtl\""
+    },
+    {
+      "rule": "rtl.test-line-breaks-per-language",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "typography.display-steps-then-caps",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.responsive.home-ar-xvp-display-size-curve"
+      ],
+      "note": "390/1440 = 0.51, 1920/1440 = 1.00 (rule: ≈0.6–0.75 and ≈1.0)"
+    },
+    {
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "typography.families-with-roles",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.typography.home-ar-1440-family-share"
+      ],
+      "note": "3 rendered family group(s) ≥ 2% (helvetica 86%, din 10%, mathaf 4%)"
+    },
+    {
+      "rule": "typography.kicker-labels",
+      "page": "home-ar",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "typography.modest-scale-for-dense-pages",
+      "page": "home-ar",
+      "applies": true,
+      "result": "inconsistent",
+      "observations": [
+        "val-002.typography.home-ar-1440-scale-range"
+      ],
+      "note": "scale range 7.89× at 1440 (rule: ≈2–3.5×)"
+    },
+    {
+      "rule": "typography.reading-measure",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.typography.home-ar-1440-reading-chars-per-line"
+      ],
+      "note": "median reading measure 63 characters per line at 1440 (rule: ≈45–80)"
+    },
+    {
+      "rule": "typography.reading-text-16-to-20",
+      "page": "home-ar",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-002.responsive.home-ar-xvp-body-size-curve"
+      ],
+      "note": "dominant body size 18 px across viewports (rule: 16–20 px, constant)"
+    },
+    {
+      "rule": "typography.tighten-large-grotesk",
+      "page": "home-ar",
+      "applies": false
+    },
+    {
+      "rule": "typography.two-tone-headline",
+      "page": "home-ar",
+      "applies": false
+    }
+  ]
+}

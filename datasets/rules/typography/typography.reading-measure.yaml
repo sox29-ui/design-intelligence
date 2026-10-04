@@ -45,14 +45,22 @@ evidence:
         - ref-008.typography.chart-1440-reading-chars-per-line
         - ref-008.typography.home-1440-reading-chars-per-line
       note: paragraphs reach 80–110 cpl in a 1280 px container
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.typography.home-ar-1440-reading-chars-per-line
+      note: "auto (home-ar): median reading measure 63 characters per line at 1440 (rule: ≈45–80)"
   external: []
 evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references; 1 counterexample with measured long lines
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

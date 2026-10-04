@@ -7,6 +7,18 @@ Accessibility invariants override every other rule. Automated results (axe = 0, 
 
 ## Rules (3)
 
+### A strong, visible focus indicator on every interactive element
+<!-- rule:accessibility.visible-focus -->
+`accessibility.visible-focus` · invariant · confidence **high** · evidence: 5 independent ref(s) + 1 standard(s) · provisional
+
+**Every focusable element shows a high-contrast focus indicator that does not rely on colour change alone, and focused elements are never hidden behind sticky UI.**
+
+- **WHEN:** page_goal ∈ {any}
+- **CONSIDER:** :focus-visible with outline ≥ 2 px plus offset, or background + underline (public-service pattern); test on every background colour
+- **VERIFY:** focus-walk indicator share = 1.0 (verify-page); no off-screen focus stops; focus not obscured by sticky headers
+- **WHY (inferred):** Nine of twelve references show a visible indicator on every sampled tab stop and two more on ≥ 93%; the brand-guidelines site shows one on only ~53%, and its focused elements overlap content. (Focus walks on eight references used an older start point; see JOURNAL.)
+- *Evidence:* supported by ref-007 (GOV.UK), ref-009 (Stripe), ref-010 (Tabby), ref-008 (Our World in Data), ref-003 (Scout Motors) · counterexamples: ref-004 (Dropbox Brand) — indicator on ~53% of stops · validation: val-001: inconclusive, val-002: consistent · standards: wcag22. Details: `npm run why -- accessibility.visible-focus`.
+
 ### Language, landmarks, one h1, named controls
 <!-- rule:accessibility.semantic-skeleton -->
 `accessibility.semantic-skeleton` · invariant · confidence **medium** · evidence: 1 independent ref(s) + 1 standard(s) · provisional
@@ -17,19 +29,7 @@ Accessibility invariants override every other rule. Automated results (axe = 0, 
 - **CONSIDER:** visually hidden h1 when the visual title is an image or canvas; aria-label on icon buttons; alt="" for decorative images
 - **VERIFY:** axe: no landmark, heading, name or image-alt violations; ARIA snapshot lists landmarks and one h1
 - **WHY (inferred):** The public-service reference has a complete skeleton; immersive and editorial references miss landmarks, h1 or link names (canvas-only content, image links without names).
-- *Evidence:* supported by ref-007 (GOV.UK) · counterexamples: ref-001 (Lando Norris) — no header/nav landmarks; ref-011 (Megaphone) — 34 image links without names; no h1; ref-006 (See What Eye See — Eye Condition Simulator) — content in WebGL; thin DOM · standards: wcag22. Details: `npm run why -- accessibility.semantic-skeleton`.
-
-### A strong, visible focus indicator on every interactive element
-<!-- rule:accessibility.visible-focus -->
-`accessibility.visible-focus` · invariant · confidence **medium** · evidence: 5 independent ref(s) + 1 standard(s) · provisional
-
-**Every focusable element shows a high-contrast focus indicator that does not rely on colour change alone, and focused elements are never hidden behind sticky UI.**
-
-- **WHEN:** page_goal ∈ {any}
-- **CONSIDER:** :focus-visible with outline ≥ 2 px plus offset, or background + underline (public-service pattern); test on every background colour
-- **VERIFY:** focus-walk indicator share = 1.0 (verify-page); no off-screen focus stops; focus not obscured by sticky headers
-- **WHY (inferred):** Nine of twelve references show a visible indicator on every sampled tab stop and two more on ≥ 93%; the brand-guidelines site shows one on only ~53%, and its focused elements overlap content. (Focus walks on eight references used an older start point; see JOURNAL.)
-- *Evidence:* supported by ref-007 (GOV.UK), ref-009 (Stripe), ref-010 (Tabby), ref-008 (Our World in Data), ref-003 (Scout Motors) · counterexamples: ref-004 (Dropbox Brand) — indicator on ~53% of stops · standards: wcag22. Details: `npm run why -- accessibility.visible-focus`.
+- *Evidence:* supported by ref-007 (GOV.UK) · counterexamples: ref-001 (Lando Norris) — no header/nav landmarks; ref-011 (Megaphone) — 34 image links without names; no h1; ref-006 (See What Eye See — Eye Condition Simulator) — content in WebGL; thin DOM · validation: val-001: inconsistent, val-002: inconsistent · standards: wcag22. Details: `npm run why -- accessibility.semantic-skeleton`.
 
 ### Page weight follows the goal
 <!-- rule:performance.weight-follows-goal -->
@@ -42,4 +42,4 @@ Accessibility invariants override every other rule. Automated results (axe = 0, 
 - **VERIFY:** transfer bytes at 390 (verify-page); LCP lab estimate; CLS ≤ 0.1; long tasks; Lighthouse mobile run
 - **TRADE-OFFS:** less imagery and motion
 - **WHY (inferred):** Measured mobile transfer: 0.2 MB (public service), 1.7 MB (fintech), 2.7 MB (luxury commerce), ~3 MB (data, payments) versus 8.5–35 MB on immersive and video-led pages and 11 MB on an image-heavy news page.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-012 (Ounass) · counterexamples: ref-003 (Scout Motors) — ≈35 MB footage-led launch page — defensible only as a launch spectacle; ref-011 (Megaphone) — ≈11 MB of images on a news home page; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — ≈15.6 MB campaign page · standards: webdev-vitals. Details: `npm run why -- performance.weight-follows-goal`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-012 (Ounass) · counterexamples: ref-003 (Scout Motors) — ≈35 MB footage-led launch page — defensible only as a launch spectacle; ref-011 (Megaphone) — ≈11 MB of images on a news home page; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — ≈15.6 MB campaign page · validation: val-002: consistent · standards: webdev-vitals. Details: `npm run why -- performance.weight-follows-goal`.

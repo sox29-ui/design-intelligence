@@ -19,7 +19,8 @@
     "skill:package": "node scripts/package-skill.ts",
     "why": "node scripts/why.ts",
     "bench:score": "node scripts/score-benchmark.ts",
-    "test:browser": "node --test tests/browser/*.test.ts"
+    "test:browser": "node --test tests/browser/*.test.ts",
+    "validation:check": "node scripts/validation-check.ts"
   },
   "license": "UNLICENSED",
   "dependencies": {

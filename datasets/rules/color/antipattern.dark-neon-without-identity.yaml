@@ -26,7 +26,13 @@ evidence:
         - ref-001.color.home-a-lime-identity-accent
         - ref-001.color.home-a-why-lime-justified
       note: justified by identity
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.color.home-a-ai-parody-glow
+        - val-001.color.home-a-why-parody-is-justified
+      note: "analyst (home): dark ground with a saturated glow appears once, motivated by copy that parodies AI marketing; elsewhere colour comes from the product"
   external:
     - source_id: di-research-report
       note: "W11: dark background + lime accent in the generic cluster"
@@ -34,8 +40,11 @@ evidence_count: 0
 confidence: low
 confidence_basis: report warning; corpus provides only the justified boundary case
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

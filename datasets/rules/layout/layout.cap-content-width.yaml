@@ -48,14 +48,27 @@ evidence:
       observations:
         - ref-011.responsive.home-xvp-container-curve
       note: image grid grows to 1546 px
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconclusive
+      observations:
+        - val-001.responsive.home-xvp-container-curve
+      note: "auto (home): AVOID WHEN case (immersive/image-led page): container 1350 → 1800 px from 1440 to 1920"
+    - ref: val-002
+      result: inconclusive
+      observations:
+        - val-002.layout.home-ar-a-full-width-card-grid
+      note: "analyst (home-ar): AVOID WHEN case — image-led event grid spans the full width at 1440 and 1920"
   external: []
 evidence_count: 5
 confidence: medium
 confidence_basis: 5 independent references; counterexamples are image/illustration-led
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 0 inconsistent, 2 inconclusive"

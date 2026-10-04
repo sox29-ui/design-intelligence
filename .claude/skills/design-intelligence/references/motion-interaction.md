@@ -7,7 +7,7 @@
 
 ### Duration follows purpose: feedback fast, choreography slow
 <!-- rule:motion.duration-by-purpose -->
-`motion.duration-by-purpose` · principle · confidence **medium** · evidence: 8 independent ref(s) · provisional
+`motion.duration-by-purpose` · principle · confidence **high** · evidence: 8 independent ref(s) · provisional
 
 **Use 100–300 ms for state feedback (hover, focus, open/close) and reserve 600–1500 ms for narrative choreography in story sections; never make task feedback wait on choreography.**
 
@@ -15,11 +15,11 @@
 - **CONSIDER:** tokens: --dur-fast 120ms, --dur-base 200–300ms, --dur-slow 700ms+ (story only); ease-out for entrances, ease-in-out for state changes
 - **VERIFY:** transition-duration median ≤ 300 ms on interactive elements (verify-page); no interaction blocked by an animation
 - **WHY (inferred):** Median transition durations are 200–300 ms on task, editorial, commerce and conversion references; 750–1500 ms appears on the personal-brand and brand-guidelines sites for scroll choreography.
-- *Evidence:* supported by ref-008 (Our World in Data), ref-010 (Tabby), ref-012 (Ounass), ref-011 (Megaphone), ref-009 (Stripe), ref-005 (Exat Typeface), ref-001 (Lando Norris), ref-004 (Dropbox Brand). Details: `npm run why -- motion.duration-by-purpose`.
+- *Evidence:* supported by ref-008 (Our World in Data), ref-010 (Tabby), ref-012 (Ounass), ref-011 (Megaphone), ref-009 (Stripe), ref-005 (Exat Typeface), ref-001 (Lando Norris), ref-004 (Dropbox Brand) · validation: val-001: consistent, val-002: consistent. Details: `npm run why -- motion.duration-by-purpose`.
 
 ### Every motion layer honours prefers-reduced-motion
 <!-- rule:motion.honour-reduced-motion -->
-`motion.honour-reduced-motion` · invariant · confidence **medium** · evidence: 6 independent ref(s) + 1 standard(s) · provisional
+`motion.honour-reduced-motion` · invariant · confidence **high** · evidence: 6 independent ref(s) + 1 standard(s) · provisional
 
 **Put non-essential animation, smooth scrolling and scroll-linked effects behind prefers-reduced-motion: no-preference, and stop or shorten them under reduce — in CSS and in JavaScript animation loops.**
 
@@ -28,7 +28,7 @@
 - **VERIFY:** verify-page reduced-motion gate; content fully visible with motion off (no opacity-0 leftovers)
 - **TRADE-OFFS:** two motion states to design
 - **WHY (inferred):** Utilitarian and commercial references ship reduced-motion CSS (8–14 rules) or throttle JS animation under reduce (running animations 14 → 1; animation-frame calls −70–80%). The brand-guidelines site keeps its scroll choreography running unchanged.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-010 (Tabby), ref-009 (Stripe), ref-001 (Lando Norris), ref-006 (See What Eye See — Eye Condition Simulator) · counterexamples: ref-004 (Dropbox Brand) — scroll-linked tiles keep running under reduce; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — partial: 38 → 21 running animations · standards: wcag22. Details: `npm run why -- motion.honour-reduced-motion`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-010 (Tabby), ref-009 (Stripe), ref-001 (Lando Norris), ref-006 (See What Eye See — Eye Condition Simulator) · counterexamples: ref-004 (Dropbox Brand) — scroll-linked tiles keep running under reduce; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — partial: 38 → 21 running animations · validation: val-001: consistent, val-002: consistent · standards: wcag22. Details: `npm run why -- motion.honour-reduced-motion`.
 
 ### Scroll-driven narrative belongs to story pages
 <!-- rule:motion.scroll-narrative-for-stories-only -->
@@ -42,7 +42,7 @@
 - **AVOID WHEN:** task-completion, comparison, dashboards, editorial reading, commerce listings
 - **TRADE-OFFS:** prevents skimming; harder to make accessible
 - **WHY (inferred):** Scroll-linked changes were measured on the immersive simulator, brand-guidelines and personal-brand sites and were zero on the public-service, data and Arabic commerce/editorial references.
-- *Evidence:* supported by ref-006 (See What Eye See — Eye Condition Simulator), ref-004 (Dropbox Brand), ref-001 (Lando Norris). Details: `npm run why -- motion.scroll-narrative-for-stories-only`.
+- *Evidence:* supported by ref-006 (See What Eye See — Eye Condition Simulator), ref-004 (Dropbox Brand), ref-001 (Lando Norris) · validation: val-001: consistent. Details: `npm run why -- motion.scroll-narrative-for-stories-only`.
 
 ### Disclose intense motion and offer a calmer path
 <!-- rule:motion.warn-before-intense-motion -->

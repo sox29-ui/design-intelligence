@@ -67,14 +67,27 @@ evidence:
       observations:
         - ref-002.typography.home-a-title-wordplay
       note: campaign mixes grotesk, serif and system faces
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.typography.home-1440-family-share
+      note: "auto (home): 2 rendered family group(s) ≥ 2% (halyard 98%, arial 2%)"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.typography.home-ar-1440-family-share
+      note: "auto (home-ar): 3 rendered family group(s) ≥ 2% (helvetica 86%, din 10%, mathaf 4%)"
   external: []
 evidence_count: 10
-confidence: medium
-confidence_basis: 10 independent references (rendered-font measurements); counterexamples are a campaign page and a bilingual news page; no validation yet
+confidence: high
+confidence_basis: 10 independent references (rendered-font measurements); counterexamples explained; consistent on val-001 and val-002 (measured)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation: confidence medium → high (D-006 criteria met; measured validation consistent, D-021)"

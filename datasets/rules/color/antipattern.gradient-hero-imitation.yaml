@@ -34,7 +34,17 @@ evidence:
       observations:
         - ref-009.color.home-a-why-ribbon-is-signature
       note: owned brand signature
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.color.home-1440-gradient-area
+      note: "auto (home): gradient area 0 of the page: no gradient-led hero"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.color.home-ar-1440-gradient-area
+      note: "auto (home-ar): gradient area 0 of the page: no gradient-led hero"
   external:
     - source_id: di-research-report
       note: W11 gradient blob
@@ -42,8 +52,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: report + 3 references with zero gradient area + 1 owned-signature counterexample
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 2 consistent, 0 inconsistent, 0 inconclusive"

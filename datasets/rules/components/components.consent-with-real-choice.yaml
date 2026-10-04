@@ -36,7 +36,13 @@ evidence:
       observations:
         - ref-011.components.home-a-consent-occlusion
       note: accept-only dialog covering most of the first mobile viewport
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.components.home-ar-a-consent-reject-as-link
+        - val-002.performance.home-ar-390-cls-before-interaction
+      note: "analyst (home-ar): reject is offered but as a small text link, not comparable in size to accept; 0.127 layout shift before interaction at 390 (cause not verified)"
   external:
     - source_id: webdev-vitals
       note: CLS ≤ 0.1
@@ -44,8 +50,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references; 1 counterexample
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 1 inconsistent, 0 inconclusive"

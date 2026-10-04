@@ -44,16 +44,29 @@ evidence:
         - ref-004.accessibility.home-1440-focus-indicator-share
         - ref-004.accessibility.home-a-focus-state-overlap
       note: indicator on ~53% of stops
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconclusive
+      observations:
+        - val-001.accessibility.home-1440-focus-indicator-share
+      note: "auto (home): visible indicator on 94% of sampled tab stops"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.accessibility.home-ar-1440-focus-indicator-share
+      note: "auto (home-ar): visible indicator on 100% of sampled tab stops"
   external:
     - source_id: wcag22
       note: SC 2.4.7 focus visible; SC 2.4.11 focus not obscured
 evidence_count: 5
-confidence: medium
-confidence_basis: WCAG + 5 cited references (11/12 measured compliant)
+confidence: high
+confidence_basis: WCAG 2.4.7/2.4.11 + 5 references; consistent on val-002 (measured focus walk), inconclusive on val-001 (94%)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation: confidence medium → high (D-006 criteria met; measured validation consistent, D-021)"

@@ -15,7 +15,7 @@
 - **CONSIDER:** bottom-anchored compact banner; equal-width accept/reject buttons; space reserved or overlaid without reflow
 - **VERIFY:** CLS before interaction ≤ 0.1; banner does not cover the primary action at 390
 - **WHY (inferred):** Three references offer reject/decline beside accept; the Arabic news site offers only accept in a dialog covering most of the mobile viewport; consent strips injected above content caused layout shift on the public portal.
-- *Evidence:* supported by ref-010 (Tabby), ref-007 (GOV.UK), ref-004 (Dropbox Brand) · counterexamples: ref-011 (Megaphone) — accept-only dialog covering most of the first mobile viewport · standards: webdev-vitals. Details: `npm run why -- components.consent-with-real-choice`.
+- *Evidence:* supported by ref-010 (Tabby), ref-007 (GOV.UK), ref-004 (Dropbox Brand) · counterexamples: ref-011 (Megaphone) — accept-only dialog covering most of the first mobile viewport · validation: val-002: inconsistent · standards: webdev-vitals. Details: `npm run why -- components.consent-with-real-choice`.
 
 ### Mobile navigation as a full sheet or in-flow panel with real state
 <!-- rule:components.mobile-menu-sheet -->
@@ -28,7 +28,7 @@
 - **VERIFY:** aria-expanded false → true; Escape closes and returns focus; body scroll locked only while a modal sheet is open; RTL: chevrons point left
 - **TRADE-OFFS:** full sheets hide page context
 - **WHY (inferred):** Five references implement measured aria-expanded state and Escape-to-close; the strongest also place the conversion action inside the sheet.
-- *Evidence:* supported by ref-009 (Stripe), ref-007 (GOV.UK), ref-010 (Tabby), ref-003 (Scout Motors), ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) · counterexamples: ref-001 (Lando Norris) — toggle exposed no state change in capture (inconclusive). Details: `npm run why -- components.mobile-menu-sheet`.
+- *Evidence:* supported by ref-009 (Stripe), ref-007 (GOV.UK), ref-010 (Tabby), ref-003 (Scout Motors), ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) · counterexamples: ref-001 (Lando Norris) — toggle exposed no state change in capture (inconclusive) · validation: val-002: inconsistent. Details: `npm run why -- components.mobile-menu-sheet`.
 
 ### Keep the one conversion action persistent
 <!-- rule:components.persistent-primary-action -->

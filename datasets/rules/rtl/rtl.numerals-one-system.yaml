@@ -35,7 +35,12 @@ evidence:
       observations:
         - ref-012.rtl.home-ar-1440-digits
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.rtl.home-ar-1440-digits
+      note: "auto (home-ar): digits: 36 Western, 0 Arabic-Indic"
   external:
     - source_id: w3c-alreq
       note: digit systems; digits laid out left-to-right
@@ -45,8 +50,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references + 2 sources
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

@@ -1,0 +1,1654 @@
+{
+  "viewport": {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "mobileEmulation": false,
+    "touch": true,
+    "dpr": 1
+  },
+  "http_status": 200,
+  "preInteraction": {
+    "cls": 0.0818,
+    "shifts": 5,
+    "atMs": 8982
+  },
+  "scroll": {
+    "method": "wheel",
+    "marksCaptured": 4,
+    "startHeight": 12742,
+    "endHeight": 12742,
+    "reachedY": 11718,
+    "heightGrowth": 0,
+    "documentScrolls": true
+  },
+  "metrics": {
+    "truncated": false,
+    "elementCount": 869,
+    "document": {
+      "lang": "ar",
+      "dirAttr": "rtl",
+      "dirComputed": "rtl",
+      "bodyDir": "rtl",
+      "titleLength": 40,
+      "metaViewport": "width=device-width, minimum-scale=1.0",
+      "themeColor": "#fff",
+      "colorSchemeMeta": null,
+      "generator": null,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "scrollY": 0,
+      "docHeight": 12742,
+      "docWidth": 768,
+      "horizontalOverflowPx": 0,
+      "rootFontSize": 16,
+      "bodyFont": {
+        "family": "\"Times New Roman\"",
+        "size": 16,
+        "lineHeight": "24px"
+      },
+      "scrollBehavior": "auto",
+      "overflowY": {
+        "html": "visible",
+        "body": "visible"
+      }
+    },
+    "fonts": {
+      "documentFontsStatus": "loaded",
+      "declaredFaces": 22,
+      "loadedFaces": 8,
+      "loadedFamilies": [
+        "DIN Next LT Arabic Webfont",
+        "Helvetica Neue LT Pro Webfont",
+        "Helvetica Neue LT Arabic Webfont",
+        "Mathaf Script Arabic Webfont"
+      ],
+      "loadedDetail": [
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "weight": "300",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Helvetica Neue LT Pro Webfont",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "weight": "300",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "weight": "bold",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        },
+        {
+          "family": "Mathaf Script Arabic Webfont",
+          "weight": "normal",
+          "style": "normal",
+          "status": "loaded",
+          "display": "swap",
+          "unicodeRange": "U+0-10FFFF"
+        }
+      ],
+      "fontDisplayValues": {
+        "swap": 21,
+        "auto": 1
+      },
+      "arabicSubsetFaces": 0
+    },
+    "typography": {
+      "textNodes": 135,
+      "totalChars": 2954,
+      "scriptChars": {
+        "arabic": 2498,
+        "latin": 33,
+        "westDigits": 36,
+        "arabicIndicDigits": 0
+      },
+      "mixedRunNodes": 0,
+      "distinctFamilies": 3,
+      "familyShare": {
+        "Helvetica Neue LT Arabic Webfont": 0.86,
+        "DIN Next LT Arabic Webfont": 0.103,
+        "Mathaf Script Arabic Webfont": 0.038
+      },
+      "distinctSizes": 15,
+      "sizeShare": {
+        "14": 0.002,
+        "16": 0.004,
+        "17": 0.044,
+        "18": 0.695,
+        "20": 0.005,
+        "26": 0.03,
+        "28": 0.1,
+        "32": 0.015,
+        "34": 0.005,
+        "40": 0.017,
+        "62": 0.015,
+        "98": 0.004,
+        "105": 0.034,
+        "15.504": 0.008,
+        "19.008": 0.023
+      },
+      "minSize": 14,
+      "maxSize": 105,
+      "dominantBodySize": 18,
+      "scaleRange": 5.83,
+      "distinctWeights": [
+        "300",
+        "400",
+        "500",
+        "600",
+        "700"
+      ],
+      "uppercaseShare": 0.03,
+      "clusters": [
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 18,
+          "weight": "300",
+          "lineHeightRatio": 1.19,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 2012,
+          "nodes": 60,
+          "firstDocY": 10,
+          "scripts": {
+            "arabic": 1982,
+            "digits": 14,
+            "latin": 16
+          },
+          "colors": {
+            "#000000": 604,
+            "#ffffff": 924,
+            "#33e100": 484
+          },
+          "share": 0.681
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 28,
+          "weight": "400",
+          "lineHeightRatio": 1.3,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 267,
+          "nodes": 13,
+          "firstDocY": 1780,
+          "scripts": {
+            "arabic": 267
+          },
+          "colors": {
+            "#000000": 149,
+            "#ffffff": 118
+          },
+          "share": 0.09
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 17,
+          "weight": "300",
+          "lineHeightRatio": 1.47,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 129,
+          "nodes": 9,
+          "firstDocY": 12532,
+          "scripts": {
+            "arabic": 129
+          },
+          "colors": {
+            "#ffffff": 129
+          },
+          "share": 0.044
+        },
+        {
+          "family": "Mathaf Script Arabic Webfont",
+          "stack": "\"Mathaf Script Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Hel",
+          "size": 105,
+          "weight": "400",
+          "lineHeightRatio": 0.98,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 99,
+          "nodes": 11,
+          "firstDocY": 6801,
+          "scripts": {
+            "arabic": 99
+          },
+          "colors": {
+            "#33e100": 99
+          },
+          "share": 0.034
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 26,
+          "weight": "500",
+          "lineHeightRatio": 1,
+          "letterSpacing": "normal",
+          "textTransform": "uppercase",
+          "fontStyle": "normal",
+          "chars": 88,
+          "nodes": 9,
+          "firstDocY": 11576,
+          "scripts": {
+            "arabic": 88
+          },
+          "colors": {
+            "#ffffff": 88
+          },
+          "share": 0.03
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 40,
+          "weight": "400",
+          "lineHeightRatio": 1.16,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 49,
+          "nodes": 4,
+          "firstDocY": 3843,
+          "scripts": {
+            "arabic": 49
+          },
+          "colors": {
+            "#ffffff": 38,
+            "#000000": 11
+          },
+          "share": 0.017
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 62,
+          "weight": "400",
+          "lineHeightRatio": 1.1,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 44,
+          "nodes": 1,
+          "firstDocY": 612,
+          "scripts": {
+            "arabic": 44
+          },
+          "colors": {
+            "#ffffff": 44
+          },
+          "share": 0.015
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 32,
+          "weight": "400",
+          "lineHeightRatio": 1.03,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 43,
+          "nodes": 4,
+          "firstDocY": 11832,
+          "scripts": {
+            "arabic": 43
+          },
+          "colors": {
+            "#000000": 43
+          },
+          "share": 0.015
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 18,
+          "weight": "700",
+          "lineHeightRatio": 1.19,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 32,
+          "nodes": 4,
+          "firstDocY": 11831,
+          "scripts": {
+            "arabic": 32
+          },
+          "colors": {
+            "#000000": 32
+          },
+          "share": 0.011
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 19.008,
+          "weight": "400",
+          "lineHeightRatio": 1.68,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 31,
+          "nodes": 5,
+          "firstDocY": 134,
+          "scripts": {
+            "arabic": 31
+          },
+          "colors": {
+            "#ffffff": 12,
+            "#000000": 19
+          },
+          "share": 0.01
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 28,
+          "weight": "300",
+          "lineHeightRatio": 1.43,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 27,
+          "nodes": 2,
+          "firstDocY": 11576,
+          "scripts": {
+            "arabic": 27
+          },
+          "colors": {
+            "#ffffff": 27
+          },
+          "share": 0.009
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 15.504,
+          "weight": "300",
+          "lineHeightRatio": 1.18,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 25,
+          "nodes": 4,
+          "firstDocY": 12242,
+          "scripts": {
+            "arabic": 25
+          },
+          "colors": {
+            "#000000": 25
+          },
+          "share": 0.008
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 19.008,
+          "weight": "700",
+          "lineHeightRatio": 1.68,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 20,
+          "nodes": 1,
+          "firstDocY": 1168,
+          "scripts": {
+            "arabic": 20
+          },
+          "colors": {
+            "#000000": 20
+          },
+          "share": 0.007
+        },
+        {
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "stack": "\"Helvetica Neue LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\",",
+          "size": 19.008,
+          "weight": "400",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 16,
+          "nodes": 2,
+          "firstDocY": 1682,
+          "scripts": {
+            "arabic": 16
+          },
+          "colors": {
+            "#000000": 16
+          },
+          "share": 0.005
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 20,
+          "weight": "300",
+          "lineHeightRatio": 1.25,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 16,
+          "nodes": 1,
+          "firstDocY": 12697,
+          "scripts": {
+            "arabic": 16
+          },
+          "colors": {
+            "#ffffff": 16
+          },
+          "share": 0.005
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 34,
+          "weight": "300",
+          "lineHeightRatio": 1.25,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 15,
+          "nodes": 1,
+          "firstDocY": 11502,
+          "scripts": {
+            "arabic": 15
+          },
+          "colors": {
+            "#ffffff": 15
+          },
+          "share": 0.005
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 16,
+          "weight": "700",
+          "lineHeightRatio": 1.69,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 13,
+          "nodes": 1,
+          "firstDocY": 11474,
+          "scripts": {
+            "latin": 13
+          },
+          "colors": {
+            "#ffffff": 13
+          },
+          "share": 0.004
+        },
+        {
+          "family": "Mathaf Script Arabic Webfont",
+          "stack": "\"Mathaf Script Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Hel",
+          "size": 98,
+          "weight": "400",
+          "lineHeightRatio": 1.25,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 12,
+          "nodes": 1,
+          "firstDocY": 971,
+          "scripts": {
+            "arabic": 12
+          },
+          "colors": {
+            "#000000": 12
+          },
+          "share": 0.004
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 18,
+          "weight": "300",
+          "lineHeightRatio": 1.5,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 9,
+          "nodes": 1,
+          "firstDocY": 11474,
+          "scripts": {
+            "latin": 9
+          },
+          "colors": {
+            "#ffffff": 9
+          },
+          "share": 0.003
+        },
+        {
+          "family": "DIN Next LT Arabic Webfont",
+          "stack": "\"DIN Next LT Arabic Webfont\", \"Helvetica Neue Condensed\", \"Helvetica Condensed\", \"Arial Narrow\", \"Helvetica Neue\", Helve",
+          "size": 14,
+          "weight": "600",
+          "lineHeightRatio": 2.29,
+          "letterSpacing": "normal",
+          "textTransform": "none",
+          "fontStyle": "normal",
+          "chars": 7,
+          "nodes": 1,
+          "firstDocY": 84,
+          "scripts": {
+            "arabic": 7
+          },
+          "colors": {
+            "#ffffff": 7
+          },
+          "share": 0.002
+        }
+      ]
+    },
+    "headings": {
+      "count": 7,
+      "h1Count": 0,
+      "outline": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "skippedLevels": 0,
+      "items": [
+        {
+          "probe": "heading-0",
+          "tag": "h2",
+          "level": 2,
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "size": 62,
+          "sizeVw": 8.07,
+          "weight": "400",
+          "lineHeightRatio": 1.1,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 44,
+          "words": 8,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 22,
+          "box": {
+            "x": 16,
+            "y": 612,
+            "w": 736,
+            "h": 136
+          },
+          "aboveFold": true,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-1",
+          "tag": "h2",
+          "level": 2,
+          "family": "Mathaf Script Arabic Webfont",
+          "size": 98,
+          "sizeVw": 12.76,
+          "weight": "400",
+          "lineHeightRatio": 1.25,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "center",
+          "textWrap": "wrap",
+          "chars": 12,
+          "words": 2,
+          "script": "arabic",
+          "lines": 2,
+          "charsPerLine": 6,
+          "box": {
+            "x": 226,
+            "y": 971,
+            "w": 532,
+            "h": 245
+          },
+          "aboveFold": true,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-2",
+          "tag": "h2",
+          "level": 2,
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "size": 40,
+          "sizeVw": 5.21,
+          "weight": "400",
+          "lineHeightRatio": 1.16,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 18,
+          "words": 3,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 18,
+          "box": {
+            "x": 458,
+            "y": 3843,
+            "w": 300,
+            "h": 110
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-3",
+          "tag": "h2",
+          "level": 2,
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "size": 40,
+          "sizeVw": 5.21,
+          "weight": "400",
+          "lineHeightRatio": 1.16,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 11,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 11,
+          "box": {
+            "x": 560,
+            "y": 6366,
+            "w": 198,
+            "h": 46
+          },
+          "aboveFold": false,
+          "color": "#000000"
+        },
+        {
+          "probe": "heading-4",
+          "tag": "h2",
+          "level": 2,
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "size": 40,
+          "sizeVw": 5.21,
+          "weight": "400",
+          "lineHeightRatio": 1.16,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 6,
+          "words": 2,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 6,
+          "box": {
+            "x": 640,
+            "y": 7122,
+            "w": 118,
+            "h": 110
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-5",
+          "tag": "h2",
+          "level": 2,
+          "family": "Helvetica Neue LT Arabic Webfont",
+          "size": 40,
+          "sizeVw": 5.21,
+          "weight": "400",
+          "lineHeightRatio": 1.16,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 14,
+          "words": 3,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 14,
+          "box": {
+            "x": 503,
+            "y": 9645,
+            "w": 255,
+            "h": 110
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        },
+        {
+          "probe": "heading-6",
+          "tag": "h2",
+          "level": 2,
+          "family": "DIN Next LT Arabic Webfont",
+          "size": 34,
+          "sizeVw": 4.43,
+          "weight": "300",
+          "lineHeightRatio": 1.25,
+          "letterSpacingEm": 0,
+          "textTransform": "none",
+          "textAlign": "start",
+          "textWrap": "wrap",
+          "chars": 15,
+          "words": 3,
+          "script": "arabic",
+          "lines": 1,
+          "charsPerLine": 15,
+          "box": {
+            "x": 15,
+            "y": 11502,
+            "w": 738,
+            "h": 43
+          },
+          "aboveFold": false,
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "displayText": {
+      "probe": "heading-1",
+      "tag": "h2",
+      "level": 2,
+      "family": "Mathaf Script Arabic Webfont",
+      "size": 98,
+      "sizeVw": 12.76,
+      "weight": "400",
+      "lineHeightRatio": 1.25,
+      "letterSpacingEm": 0,
+      "textTransform": "none",
+      "textAlign": "center",
+      "textWrap": "wrap",
+      "chars": 12,
+      "words": 2,
+      "script": "arabic",
+      "lines": 2,
+      "charsPerLine": 6,
+      "box": {
+        "x": 226,
+        "y": 971,
+        "w": 532,
+        "h": 245
+      },
+      "aboveFold": true,
+      "color": "#000000"
+    },
+    "reading": {
+      "sampled": 5,
+      "fontSize": {
+        "n": 5,
+        "min": 0,
+        "p25": 18,
+        "median": 18,
+        "p75": 18,
+        "max": 18
+      },
+      "lineHeightRatio": {
+        "n": 4,
+        "min": 1.19,
+        "p25": 1.19,
+        "median": 1.19,
+        "p75": 1.19,
+        "max": 1.19
+      },
+      "charsPerLine": {
+        "n": 5,
+        "min": 17.2,
+        "p25": 24.6,
+        "median": 41.7,
+        "p75": 67.5,
+        "max": 81
+      },
+      "widthEm": {
+        "n": 4,
+        "min": 20.2,
+        "p25": 20.2,
+        "median": 20.2,
+        "p75": 40.9,
+        "max": 41.6
+      },
+      "justified": 0,
+      "scripts": {
+        "arabic": 5
+      }
+    },
+    "color": {
+      "rootBackground": "#ffffff",
+      "rootBackgroundLuminance": 1,
+      "scheme": "light",
+      "backgroundPalette": [
+        {
+          "color": "#000000",
+          "areaShare": 0.845,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0
+          }
+        },
+        {
+          "color": "#ffffff",
+          "areaShare": 0.115,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 1
+          }
+        },
+        {
+          "color": "#464646",
+          "areaShare": 0.041,
+          "hsl": {
+            "h": 0,
+            "s": 0,
+            "l": 0.27
+          }
+        }
+      ],
+      "textColors": [
+        {
+          "color": "#ffffff",
+          "share": 0.487
+        },
+        {
+          "color": "#000000",
+          "share": 0.315
+        },
+        {
+          "color": "#33e100",
+          "share": 0.197
+        }
+      ],
+      "buttonBackgrounds": [],
+      "gradientAreaRatio": 0,
+      "gradientColors": [],
+      "imageBackgrounds": 0,
+      "contrast": {
+        "method": "computed colour vs nearest opaque ancestor background; text over CSS images/gradients or overlapping img/video/canvas/svg counted as uncertain (probe 0.1.1+)",
+        "checkedChars": 2960,
+        "lowContrastNormalShare": 0.164,
+        "lowContrastLargeShare": 0.033,
+        "uncertainShare": 0.046,
+        "ratio": {
+          "n": 129,
+          "min": 1,
+          "p25": 1.76,
+          "median": 9.44,
+          "p75": 21,
+          "max": 21
+        }
+      }
+    },
+    "layout": {
+      "containerWidths": [
+        {
+          "value": 736,
+          "count": 1
+        }
+      ],
+      "dominantContainer": 736,
+      "widestContainer": 736,
+      "textLeftEdges": [
+        {
+          "x": 84,
+          "n": 16
+        },
+        {
+          "x": 16,
+          "n": 6
+        },
+        {
+          "x": 88,
+          "n": 6
+        },
+        {
+          "x": 12,
+          "n": 5
+        },
+        {
+          "x": 400,
+          "n": 4
+        },
+        {
+          "x": 560,
+          "n": 3
+        }
+      ],
+      "textRightEdges": [
+        {
+          "x": 12,
+          "n": 38
+        },
+        {
+          "x": 16,
+          "n": 10
+        },
+        {
+          "x": 396,
+          "n": 8
+        },
+        {
+          "x": 268,
+          "n": 3
+        },
+        {
+          "x": 416,
+          "n": 3
+        }
+      ],
+      "distinctTextEdges": 86,
+      "gridContainers": 18,
+      "flexContainers": 126,
+      "gridColumnCounts": [
+        {
+          "value": 6,
+          "count": 9
+        },
+        {
+          "value": 1,
+          "count": 4
+        },
+        {
+          "value": 9,
+          "count": 1
+        },
+        {
+          "value": 2,
+          "count": 1
+        }
+      ],
+      "gaps": {
+        "n": 2,
+        "min": 16,
+        "p25": 16,
+        "median": 16,
+        "p75": 16,
+        "max": 16
+      },
+      "stickyElements": 0,
+      "fixedElements": 4,
+      "sections": {
+        "count": 8,
+        "heightsVh": {
+          "n": 8,
+          "min": 0.27,
+          "p25": 0.35,
+          "median": 0.75,
+          "p75": 2.46,
+          "max": 2.89
+        },
+        "paddingTop": {
+          "n": 8,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "paddingBottom": {
+          "n": 8,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 80
+        }
+      },
+      "pageHeightVh": 12.44,
+      "textOverMedia": 1
+    },
+    "components": {
+      "header": {
+        "position": "relative",
+        "height": 182,
+        "top": 0,
+        "background": "#000000",
+        "backgroundAlpha": 0,
+        "backdropFilter": null,
+        "borderRadius": 0,
+        "insetFromEdges": false,
+        "visibleInteractive": 5,
+        "expandableToggles": 0
+      },
+      "navCount": 4,
+      "buttons": {
+        "count": 12,
+        "radius": {
+          "n": 12,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        },
+        "pillShare": 0,
+        "height": {
+          "n": 12,
+          "min": 50,
+          "p25": 50,
+          "median": 50,
+          "p75": 50,
+          "max": 59.59
+        },
+        "fontSize": {
+          "n": 12,
+          "min": 19.01,
+          "p25": 19.01,
+          "median": 26,
+          "p75": 26,
+          "max": 26
+        },
+        "textTransform": {
+          "uppercase": 9,
+          "none": 3
+        },
+        "fontWeight": {
+          "500": 9,
+          "700": 3
+        }
+      },
+      "forms": {
+        "forms": 0,
+        "inputs": 0
+      },
+      "media": {
+        "images": 11,
+        "imagesTotal": 12,
+        "lazyImages": 12,
+        "srcsetImages": 17,
+        "videos": 1,
+        "autoplayVideos": 1,
+        "videosWithControls": 0,
+        "inlineSvgs": 42,
+        "canvases": [],
+        "iframes": 0
+      },
+      "cardGroups": {
+        "count": 1,
+        "items": [
+          {
+            "items": 4,
+            "width": 364,
+            "radius": 0,
+            "shadow": false,
+            "border": false,
+            "filled": false
+          }
+        ],
+        "radius": {
+          "n": 1,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 0,
+          "max": 0
+        }
+      }
+    },
+    "effects": {
+      "gradientAreaRatio": 0,
+      "backdropBlurElements": 0,
+      "filterBlurElements": 0,
+      "coloredGlowShadows": 0,
+      "textGradients": 0,
+      "blendModeElements": 0,
+      "boxedElements": 43,
+      "roundedBoxShare12": 0,
+      "roundedBoxShare24": 0,
+      "opacityZeroElements": 13,
+      "transformedElements": 36
+    },
+    "motion": {
+      "transitionElements": 99,
+      "transitionDuration": {
+        "n": 99,
+        "min": 350,
+        "p25": 350,
+        "median": 350,
+        "p75": 350,
+        "max": 1500
+      },
+      "transitionEasing": {
+        "cubic-bezier(0.26, 0.88, 0.57, 0.9)": 99
+      },
+      "transitionProperty": {
+        "color": 54,
+        "opacity": 24,
+        "height": 11,
+        "background-color": 9,
+        "transform": 1
+      },
+      "animations": {
+        "total": 0,
+        "running": 0,
+        "infinite": 0,
+        "scrollDriven": 0,
+        "byType": {},
+        "duration": null,
+        "easing": {}
+      }
+    },
+    "cssom": {
+      "sheets": 2,
+      "inaccessibleSheets": 2,
+      "rules": 0,
+      "mediaQueries": {},
+      "breakpoints": {},
+      "reducedMotionRules": 0,
+      "colorSchemeRules": 0,
+      "containerRules": 0,
+      "clampUses": 0,
+      "vwFontSizes": 0,
+      "logicalProps": 0,
+      "physicalInlineProps": 0,
+      "focusVisibleRules": 0,
+      "fontFaceRules": 0,
+      "scrollTimelineUses": 0,
+      "customPropertiesDeclared": 0,
+      "hoverMediaRules": 0
+    },
+    "tokens": {
+      "rootCustomProperties": 443,
+      "colorTokens": 72,
+      "lengthTokens": 164,
+      "colorSample": [
+        {
+          "name": "--atcb-close-text",
+          "value": "#777"
+        },
+        {
+          "name": "--color-mathaf-pastel-dark-pink",
+          "value": "#e21d51"
+        },
+        {
+          "name": "--atcb-modal-btn-border",
+          "value": "#dfdfdf"
+        },
+        {
+          "name": "--micrio-color",
+          "value": "#000"
+        },
+        {
+          "name": "--color-mathaf-pastel-turquoise",
+          "value": "#009080"
+        },
+        {
+          "name": "--color-mathaf-pastel-light-pink",
+          "value": "#f6bcb1"
+        },
+        {
+          "name": "--transparency-overlay",
+          "value": "rgba(255, 255, 255, 0.8)"
+        },
+        {
+          "name": "--atcb-shadow-list-modal",
+          "value": "rgba(0 0 0 / 60%) 3px 6px 40px -5px, rgba(0 0 0 / 60%) 3px 3"
+        },
+        {
+          "name": "--atcb-background",
+          "value": "#f5f5f5"
+        },
+        {
+          "name": "--color-mal-lawal-blue",
+          "value": "#40afdd"
+        },
+        {
+          "name": "--color-white",
+          "value": "#fff"
+        },
+        {
+          "name": "--atcb-keyboard-focus",
+          "value": "#1e90ff"
+        },
+        {
+          "name": "--color-mal-lawal-green",
+          "value": "#247a2e"
+        },
+        {
+          "name": "--transparency-background",
+          "value": "rgba(0, 0, 0, 0.55)"
+        },
+        {
+          "name": "--color-info",
+          "value": "#000"
+        },
+        {
+          "name": "--color-mathaf-pastel-olive-green",
+          "value": "#939600"
+        },
+        {
+          "name": "--atcb-shadow-modal-button-primary",
+          "value": "rgba(0 0 0 / 40%) 2px 3px 10px -1px, rgba(0 0 0 / 35%) 2px 2"
+        },
+        {
+          "name": "--atcb-modal-btn-text-2",
+          "value": "#161616"
+        },
+        {
+          "name": "--color-mal-lawal-aqua",
+          "value": "#0ff"
+        },
+        {
+          "name": "--color-mathaf-pastel-purple",
+          "value": "#68009e"
+        },
+        {
+          "name": "--atcb-text-2",
+          "value": "#000"
+        },
+        {
+          "name": "--atcb-border",
+          "value": "#d2d2d2"
+        },
+        {
+          "name": "--color-grey-lighter",
+          "value": "#ebebeb"
+        },
+        {
+          "name": "--color-magenta",
+          "value": "#e83082"
+        }
+      ],
+      "lengthSample": [
+        {
+          "name": "--heading-3-margin-bottom",
+          "value": "-0.75rem"
+        },
+        {
+          "name": "--heading-6-ar-font-size",
+          "value": "1rem"
+        },
+        {
+          "name": "--heading-2-ar-margin-top",
+          "value": "2.5rem"
+        },
+        {
+          "name": "--mal-lawal-game-line-height",
+          "value": "1em"
+        },
+        {
+          "name": "--block-margin",
+          "value": "30px"
+        },
+        {
+          "name": "--heading-5-ar-font-size",
+          "value": "1.125rem"
+        },
+        {
+          "name": "--heading-4-ar-margin-bottom",
+          "value": "-0.25rem"
+        },
+        {
+          "name": "--introduction-ar-font-size",
+          "value": "1.77rem"
+        },
+        {
+          "name": "--caption-ar-margin-top",
+          "value": "0.45rem"
+        },
+        {
+          "name": "--caption-line-height",
+          "value": "1.5em"
+        },
+        {
+          "name": "--actual-vw",
+          "value": "calc(100vw - 2 * 10px)"
+        },
+        {
+          "name": "--micrio-button-size",
+          "value": "42px"
+        },
+        {
+          "name": "--ticker-bar-title-letter-spacing",
+          "value": "-0.05em"
+        },
+        {
+          "name": "--base-font-size",
+          "value": "16px"
+        },
+        {
+          "name": "--button-ar-font-size",
+          "value": "1rem"
+        },
+        {
+          "name": "--ticker-bar-text-ar-line-height",
+          "value": "1.25em"
+        },
+        {
+          "name": "--filter-dropdown-font-size",
+          "value": "1rem"
+        },
+        {
+          "name": "--ticker-bar-title-ar-font-size",
+          "value": "calc(3.75rem * 1.75)"
+        },
+        {
+          "name": "--filter-dropdown-line-height",
+          "value": "1.1em"
+        },
+        {
+          "name": "--breakpoint-desktop-large",
+          "value": "2260px"
+        },
+        {
+          "name": "--paragraph-line-height",
+          "value": "1.5em"
+        },
+        {
+          "name": "--heading-2-line-height",
+          "value": "1.1em"
+        },
+        {
+          "name": "--footer-bar-link-line-height",
+          "value": "1.25rem"
+        },
+        {
+          "name": "--introduction-margin-bottom",
+          "value": "0.5rem"
+        }
+      ]
+    },
+    "accessibility": {
+      "landmarks": {
+        "header": 1,
+        "nav": 4,
+        "main": 1,
+        "footer": 1,
+        "aside": 0,
+        "search": 0
+      },
+      "langPresent": true,
+      "images": {
+        "total": 12,
+        "missingAlt": 0,
+        "emptyAlt": 0
+      },
+      "linksVisible": 51,
+      "linksWithoutName": 1,
+      "buttonsVisible": 2,
+      "buttonsWithoutName": 0,
+      "inputsVisible": 0,
+      "inputsWithoutLabel": 0,
+      "placeholderOnlyLabels": 0,
+      "positiveTabindex": 0,
+      "ariaHiddenWithFocusable": 0,
+      "skipLinkFirst": false,
+      "smallTapTargets": 5,
+      "focusableCount": 92
+    },
+    "rtl": {
+      "htmlDir": "rtl",
+      "computedDirection": "rtl",
+      "mainDirection": "rtl",
+      "dirAttributes": {
+        "rtl": 1,
+        "ltr": 1,
+        "auto": 0
+      },
+      "bdiBdo": 0,
+      "textAlign": {
+        "start": 123,
+        "center": 6
+      },
+      "mixedRunNodes": 0,
+      "digits": {
+        "western": 36,
+        "arabicIndic": 0
+      },
+      "iconsInControls": 52,
+      "horizontallyMirroredIcons": 11
+    },
+    "performance": {
+      "caveat": "lab values in DI capture environment (egress proxy); compare only within the same environment",
+      "domContentLoaded": 3952,
+      "load": 5242,
+      "transferSize": 187515,
+      "firstContentfulPaint": 3796,
+      "lcp": {
+        "time": 7764,
+        "element": "h2",
+        "size": 126087
+      },
+      "cls": 0.1021,
+      "longTasks": {
+        "count": 2,
+        "totalMs": 183
+      },
+      "domElements": 869
+    },
+    "implementation": {
+      "globals": {
+        "ScrollTrigger": true,
+        "dataLayer": true
+      },
+      "reactRoot": false,
+      "nextRoot": false,
+      "nuxtRoot": false,
+      "astroIslands": 0,
+      "webflowAttr": false,
+      "framerAttr": false,
+      "generator": null,
+      "instrumentation": {
+        "canvasContexts": {},
+        "webgpuRequested": false,
+        "matchMediaQueries": {
+          "(prefers-reduced-motion: reduce)": 20,
+          "screen": 22,
+          "(min-width: 2260px)": 2,
+          "(min-width: 1480px) and (max-width: 2559px)": 2,
+          "(min-width: 1180px) and (max-width: 1479px)": 2,
+          "(min-width: 800px) and (max-width: 1179px)": 2,
+          "(min-width: 530px) and (max-width: 799px)": 2,
+          "screen and (max-width: 529px)": 1,
+          "(hover: none), (pointer: coarse)": 1,
+          "(orientation: portrait)": 1,
+          "screen and (min-width: 2260px)": 24,
+          "screen and (min-width: 1480px) and (max-width: 2259)": 24,
+          "screen and (min-width: 1180px) and (max-width: 1479)": 24,
+          "screen and (min-width: 800px) and (max-width: 1179)": 24,
+          "screen and (min-width: 530px) and (max-width: 799)": 24
+        },
+        "intersectionObservers": 0,
+        "resizeObservers": 1,
+        "rafCalls": 1617,
+        "rafFirstAt": 2147,
+        "waapiAnimate": 0,
+        "waapiDurations": [],
+        "scrollListeners": 3,
+        "wheelListeners": 3,
+        "touchmoveListeners": 2,
+        "pointermoveListeners": 0,
+        "startedAt": 1790960919904
+      }
+    }
+  },
+  "renderedFonts": {
+    "heading-0": [
+      {
+        "family": "HelveticaNeueLT Arabic 55 Roman",
+        "postScriptName": "HelveticaNeueLTArabic-Roman",
+        "custom": true,
+        "glyphs": 42
+      }
+    ],
+    "heading-1": [
+      {
+        "family": "mathafscript",
+        "postScriptName": "mathafscript",
+        "custom": true,
+        "glyphs": 11
+      }
+    ],
+    "header-8": [],
+    "para-7": [
+      {
+        "family": "HelveticaNeueLT Arabic 45 Light",
+        "postScriptName": "HelveticaNeueLTArabic-Light",
+        "custom": true,
+        "glyphs": 132
+      }
+    ],
+    "button-9": [
+      {
+        "family": "HelveticaNeueLT Arabic 55 Roman",
+        "postScriptName": "HelveticaNeueLTArabic-Roman",
+        "custom": true,
+        "glyphs": 7
+      }
+    ]
+  },
+  "interactions": {},
+  "axe": null,
+  "aria": null,
+  "network": {
+    "requests": 37,
+    "failed": 5,
+    "totalBytes": 1675069,
+    "byType": {
+      "script": {
+        "count": 6,
+        "bytes": 579777
+      },
+      "image": {
+        "count": 11,
+        "bytes": 386414
+      },
+      "font": {
+        "count": 10,
+        "bytes": 379850
+      },
+      "document": {
+        "count": 1,
+        "bytes": 188189
+      },
+      "stylesheet": {
+        "count": 2,
+        "bytes": 139761
+      },
+      "xhr": {
+        "count": 2,
+        "bytes": 1078
+      },
+      "fetch": {
+        "count": 4,
+        "bytes": 0
+      },
+      "media": {
+        "count": 1,
+        "bytes": 0
+      }
+    },
+    "imageFormats": {
+      "image/jpeg": {
+        "count": 11,
+        "bytes": 386414
+      }
+    },
+    "fonts": {
+      "count": 10,
+      "bytes": 379850,
+      "formats": [
+        "woff2"
+      ]
+    },
+    "thirdParty": {
+      "requests": 36,
+      "bytes": 1486880,
+      "hosts": 7
+    },
+    "topHosts": [
+      {
+        "host": "static.qm.org.qa",
+        "bytes": 1079729
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "bytes": 376081
+      },
+      {
+        "host": "mathaf.org.qa",
+        "bytes": 188189
+      },
+      {
+        "host": "js-agent.newrelic.com",
+        "bytes": 22893
+      },
+      {
+        "host": "static.hotjar.com",
+        "bytes": 7099
+      },
+      {
+        "host": "bam.nr-data.net",
+        "bytes": 1078
+      },
+      {
+        "host": "www.google-analytics.com",
+        "bytes": 0
+      },
+      {
+        "host": "pagead2.googlesyndication.com",
+        "bytes": 0
+      }
+    ],
+    "libraryEvidence": {
+      "google-tag-manager": 2,
+      "gsap": 1
+    }
+  },
+  "console": {
+    "errors": 0,
+    "pageErrors": 0
+  }
+}

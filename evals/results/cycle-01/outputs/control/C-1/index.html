@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>دكّان القهوة | قهوة مختصة محمّصة في الرياض</title>
+  <meta name="description" content="دكّان القهوة: محمصة قهوة مختصة في الرياض. حبوب طازجة وأكياس تقطير وأدوات تحضير وصناديق هدايا، توصيل في اليوم نفسه داخل الرياض ومجاني للطلبات فوق 199 ر.س.">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#FAF6F0">
+  <link rel="alternate" hreflang="ar" href="./">
+  <link rel="alternate" hreflang="en" href="./?lang=en">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23A4471F'/%3E%3Cg transform='translate(20 20) rotate(-28)'%3E%3Cellipse rx='8' ry='11.5' fill='%23FFF4E2'/%3E%3Cpath d='M0-10.5C-4-4 4 4 0 10.5' fill='none' stroke='%23A4471F' stroke-width='2.6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&amp;family=Reem+Kufi:wght@500..700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى الرئيسي</a>
+
+<!-- Icon + illustration sprite (one request-free sheet; directional icons get .icon--dir and mirror in RTL) -->
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+  <symbol id="i-basket" viewBox="0 0 24 24"><path d="M3.5 10h17l-1.6 8.1a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="M8.5 10 11 4.5M15.5 10 13 4.5M9.5 13.5v3M14.5 13.5v3"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M10 4h4M6.5 7l.8 11.2A2 2 0 0 0 9.3 20h5.4a2 2 0 0 0 2-1.8L17.5 7M10 11v5M14 11v5"/></symbol>
+  <symbol id="i-chev-fwd" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+  <symbol id="i-chev-back" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+  <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6.5 9.5 5.5 5.5 5.5-5.5"/></symbol>
+  <symbol id="i-arrow-fwd" viewBox="0 0 24 24"><path d="M5 12h14M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L12 16.5l-5.4 2.9 1.2-5.9L3.4 9.4l6-.7z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3.2v2.8h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5v7h14v-7M12 8.5v11M12 8.5c-1.5-3.5-5.5-4-5.5-1.5 0 1.3 1.6 1.5 5.5 1.5zM12 8.5c1.5-3.5 5.5-4 5.5-1.5 0 1.3-1.6 1.5-5.5 1.5z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 5 6v5.5c0 4.4 3 7.6 7 9 4-1.4 7-4.6 7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path d="M9 6.5 4.5 11 9 15.5"/><path d="M4.5 11H15a4.5 4.5 0 0 1 0 9h-2.5"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2"/><rect x="3.5" y="13" width="4" height="6" rx="1.5"/><rect x="16.5" y="13" width="4" height="6" rx="1.5"/><path d="M18.5 19c0 1.2-1.3 2-3 2H13"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5S9.6 5.9 12 3.5z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.3a10.5 10.5 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4.4A8 8 0 1 1 20.5 11.5z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19l8-8"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4.5V19.5M8 19.5h8M5 7.5h14"/><path d="M5 7.5 2.8 13M5 7.5 7.2 13M19 7.5 16.8 13M19 7.5l2.2 5.5M2.6 13a2.4 2.4 0 0 0 4.8 0M16.6 13a2.4 2.4 0 0 0 4.8 0"/></symbol>
+  <symbol id="i-grind" viewBox="0 0 24 24"><path d="M7.5 10.5h9v8a2.5 2.5 0 0 1-2.5 2.5h-4a2.5 2.5 0 0 1-2.5-2.5z"/><path d="M6.5 10.5h11M12 10.5V5.5h5.5"/><circle cx="18.5" cy="5.5" r="1.6"/><path d="M7.5 15h9"/></symbol>
+  <symbol id="i-bean" viewBox="0 0 24 24"><g transform="translate(12 12) rotate(-30)"><ellipse rx="5.6" ry="8"/><path d="M0-7.6C-2.6-2.6 2.6 2.6 0 7.6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+
+  <symbol id="logo-mark" viewBox="0 0 40 40"><rect width="40" height="40" rx="12" style="fill:#A4471F"/><path d="M6 9.5l3.5-4 3.5 4 3.5-4 3.5 4 3.5-4 3.5 4 3.5-4 3.5 4" style="fill:none;stroke:#F0B54A;stroke-width:1.6;stroke-linejoin:round;opacity:.9"/><g transform="translate(20 22.5) rotate(-28)"><ellipse rx="7.4" ry="10.4" style="fill:#FFF4E2"/><path d="M0-9.6C-3.6-3.6 3.6 3.6 0 9.6" style="fill:none;stroke:#A4471F;stroke-width:2.4;stroke-linecap:round"/></g></symbol>
+
+  <!-- Category line icons -->
+  <symbol id="c-beans" viewBox="0 0 48 48"><g transform="translate(19 22) rotate(-24)"><ellipse rx="8" ry="11.5"/><path d="M0-11C-4.4-4 4.4 4 0 11"/></g><g transform="translate(31.5 28.5) rotate(32)"><ellipse rx="6.8" ry="9.6"/><path d="M0-9.2C-3.6-3.4 3.6 3.4 0 9.2"/></g></symbol>
+  <symbol id="c-drip" viewBox="0 0 48 48"><path d="M15 6h18v19H15z"/><path d="M15 11.5h18" stroke-dasharray="2.6 2.6"/><path d="M15 25l-3.5 5M33 25l3.5 5"/><path d="M10.5 30h27l-2.6 10.4A2.5 2.5 0 0 1 32.5 42.3h-17a2.5 2.5 0 0 1-2.4-1.9z"/></symbol>
+  <symbol id="c-tools" viewBox="0 0 48 48"><path d="M9 11h30l-10 17H19z"/><path d="M39 14c5.5 0 5.5 9.5 0 10"/><path d="M16.5 28h15v3.5h-15z"/><path d="M24 34v3M18 41h12"/></symbol>
+  <symbol id="c-gift" viewBox="0 0 48 48"><rect x="8.5" y="17" width="31" height="7.5" rx="1.5"/><path d="M11 24.5v15h26v-15M24 17v22.5M24 17c-2-6.5-10.5-7.5-10.5-3 0 2.6 4 3 10.5 3zM24 17c2-6.5 10.5-7.5 10.5-3 0 2.6-4 3-10.5 3z"/></symbol>
+
+  <!-- Product placeholder illustrations (colours come from --a / --b on each card) -->
+  <symbol id="art-bag" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="104" rx="31" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <path d="M34 25h52l3 76c-19 4-39 4-58 0z" style="fill:var(--a)"/>
+    <path d="M34 25h52v8H34z" style="fill:#000;opacity:.2"/>
+    <path d="M34 25h9l-1.6 77c-3.6-.2-6.8-.6-10.4-1z" style="fill:#fff;opacity:.09"/>
+    <rect x="43" y="45" width="34" height="42" rx="4" style="fill:#FFF9F1"/>
+    <path d="M43 49a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v7H43z" style="fill:var(--b)"/>
+    <g transform="translate(60 70) rotate(-28)"><ellipse rx="6.2" ry="9" style="fill:var(--a)"/><path d="M.4-8.2C-3.4-3 3.4 3 -.4 8.2" style="fill:none;stroke:#FFF9F1;stroke-width:1.8;stroke-linecap:round"/></g>
+    <rect x="50" y="81.5" width="20" height="2.4" rx="1.2" style="fill:var(--a);opacity:.4"/>
+    <circle cx="75" cy="39" r="2.6" style="fill:#000;opacity:.25"/>
+  </symbol>
+  <symbol id="art-drip" viewBox="0 0 120 120">
+    <ellipse cx="62" cy="104" rx="33" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <rect x="52" y="20" width="40" height="58" rx="3" transform="rotate(9 72 49)" style="fill:var(--b)"/>
+    <rect x="29" y="27" width="46" height="66" rx="3" style="fill:#FFFDF9"/>
+    <rect x="29" y="27" width="46" height="66" rx="3" style="fill:none;stroke:#2A1A12;stroke-opacity:.12;stroke-width:1.2"/>
+    <path d="M29 37h46" style="fill:none;stroke:var(--a);stroke-width:1.4;stroke-dasharray:3 3"/>
+    <path d="M36 46h12M36 51.5h20" style="fill:none;stroke:#2A1A12;stroke-opacity:.22;stroke-width:2.2;stroke-linecap:round"/>
+    <rect x="29" y="62" width="46" height="17" style="fill:var(--a)"/>
+    <g transform="translate(52 70.5) rotate(-60)"><ellipse rx="3.6" ry="5.2" style="fill:#FFFDF9"/></g>
+  </symbol>
+  <symbol id="art-v60" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="106" rx="30" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <path d="M40 70h40l-2 28a6 6 0 0 1-6 5.5H48a6 6 0 0 1-6-5.5z" style="fill:#fff;opacity:.75"/>
+    <path d="M41.2 85h37.6l-.9 13a6 6 0 0 1-6 5.5H48.1a6 6 0 0 1-6-5.5z" style="fill:#5A3520"/>
+    <path d="M40 70h40l-2 28a6 6 0 0 1-6 5.5H48a6 6 0 0 1-6-5.5z" style="fill:none;stroke:#2A1A12;stroke-opacity:.2;stroke-width:1.5"/>
+    <path d="M60 71v8" style="stroke:#5A3520;stroke-width:2.6;stroke-linecap:round"/>
+    <rect x="38" y="63" width="44" height="7" rx="2" style="fill:var(--a)"/>
+    <path d="M29 24h62L71 64H49z" style="fill:var(--a)"/>
+    <path d="M90 30c11 0 12 16 1 18" style="fill:none;stroke:var(--a);stroke-width:5;stroke-linecap:round"/>
+    <rect x="27" y="20" width="66" height="7" rx="3.5" style="fill:var(--a)"/>
+    <path d="M42 30l9 30M54 30l3 30M66 30l-3 30M78 30l-9 30" style="fill:none;stroke:#000;opacity:.13;stroke-width:2.2;stroke-linecap:round"/>
+  </symbol>
+  <symbol id="art-kettle" viewBox="0 0 120 120">
+    <ellipse cx="62" cy="106" rx="35" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <rect x="34" y="96" width="58" height="6" rx="3" style="fill:#2A1A12;opacity:.85"/>
+    <path d="M42 50h42l6 40a6 6 0 0 1-6 6H42a6 6 0 0 1-6-6z" style="fill:var(--a)"/>
+    <path d="M46 50c2-9 32-9 34 0z" style="fill:var(--a)"/>
+    <circle cx="63" cy="40" r="4" style="fill:#2A1A12"/>
+    <path d="M40 86C26 84 24 62 16 44" style="fill:none;stroke:var(--a);stroke-width:5;stroke-linecap:round"/>
+    <path d="M16 44l-7-3" style="fill:none;stroke:var(--a);stroke-width:4;stroke-linecap:round"/>
+    <path d="M86 56c14 2 15 30 1 34" style="fill:none;stroke:#2A1A12;stroke-width:6;stroke-linecap:round"/>
+    <path d="M46 58v28" style="stroke:#fff;opacity:.2;stroke-width:4;stroke-linecap:round"/>
+    <rect x="53" y="71" width="22" height="10" rx="2.5" style="fill:#0F1A1E;opacity:.6"/>
+    <path d="M57.5 76h3M63 76h3M68.5 76h3" style="stroke:var(--b);stroke-width:2;stroke-linecap:round"/>
+  </symbol>
+  <symbol id="art-grinder" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="106" rx="26" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <rect x="44" y="46" width="32" height="58" rx="7" style="fill:var(--a)"/>
+    <rect x="44" y="78" width="32" height="12" style="fill:var(--b)"/>
+    <path d="M50 54v18M70 54v18" style="stroke:#fff;opacity:.18;stroke-width:3;stroke-linecap:round"/>
+    <rect x="42" y="40" width="36" height="9" rx="3" style="fill:#2A1A12"/>
+    <path d="M60 40V27h24" style="fill:none;stroke:#2A1A12;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"/>
+    <circle cx="88" cy="27" r="6.5" style="fill:var(--b)"/>
+  </symbol>
+  <symbol id="art-box" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="104" rx="36" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <rect x="28" y="56" width="64" height="45" rx="3" style="fill:var(--a)"/>
+    <rect x="28" y="56" width="64" height="6" style="fill:#000;opacity:.16"/>
+    <path d="M31 94l4-6 4 6 4-6 4 6 4-6 4 6M66 94l4-6 4 6 4-6 4 6 4-6 4 6" style="fill:none;stroke:#FFF9F1;stroke-opacity:.5;stroke-width:1.6;stroke-linejoin:round"/>
+    <rect x="24" y="44" width="72" height="14" rx="3" style="fill:var(--a)"/>
+    <rect x="55" y="44" width="10" height="57" style="fill:var(--b)"/>
+    <path d="M60 44c-6-12-22-13-20-4 1.5 5 12 5 20 4zM60 44c6-12 22-13 20-4-1.5 5-12 5-20 4z" style="fill:var(--b)"/>
+  </symbol>
+  <symbol id="art-coldbrew" viewBox="0 0 120 120">
+    <ellipse cx="60" cy="106" rx="28" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <rect x="38" y="30" width="44" height="74" rx="10" style="fill:#fff;opacity:.75"/>
+    <rect x="41" y="50" width="38" height="51" rx="8" style="fill:#4A2A17"/>
+    <rect x="47" y="43" width="13" height="13" rx="2.5" transform="rotate(-14 53.5 49.5)" style="fill:#fff;opacity:.92"/>
+    <rect x="61" y="46" width="12" height="12" rx="2.5" transform="rotate(12 67 52)" style="fill:#fff;opacity:.82"/>
+    <path d="M47 64v28" style="stroke:#fff;opacity:.16;stroke-width:4;stroke-linecap:round"/>
+    <rect x="38" y="30" width="44" height="74" rx="10" style="fill:none;stroke:#2A1A12;stroke-opacity:.2;stroke-width:1.5"/>
+    <rect x="40" y="21" width="40" height="11" rx="3" style="fill:var(--a)"/>
+  </symbol>
+  <symbol id="art-dallah" viewBox="0 0 120 120">
+    <ellipse cx="62" cy="106" rx="38" ry="4" style="fill:#2A1A12;opacity:.12"/>
+    <path d="M51 63C44 60 36 51 28 37l-6-5 8 2.5C37 46 44 53 53 56z" style="fill:var(--a)"/>
+    <path d="M65 46c15 2 17 27 4 39" style="fill:none;stroke:var(--a);stroke-width:4.5;stroke-linecap:round"/>
+    <path d="M42 103h28l-3.5-6h-21z" style="fill:var(--a)"/>
+    <path d="M46.5 97C37 88 38 71 50.5 64h11C74 71 75 88 65.5 97z" style="fill:var(--a)"/>
+    <path d="M50.5 64l2-9h7l2 9z" style="fill:var(--a)"/>
+    <path d="M52.5 55l-6-12h19l-6 12z" style="fill:var(--a)"/>
+    <path d="M46.5 43c2-7 7-10 9.5-20 2.5 10 7.5 13 9.5 20z" style="fill:var(--a)"/>
+    <circle cx="56" cy="21.5" r="3" style="fill:var(--a)"/>
+    <path d="M46.5 43h19M50.5 64h11M45 86h22" style="fill:none;stroke:#000;opacity:.18;stroke-width:2"/>
+    <path d="M44 74c0 8 2 14 6 19" style="fill:none;stroke:#fff;opacity:.25;stroke-width:3;stroke-linecap:round"/>
+    <path d="M80 91h18l-2.4 10a2.4 2.4 0 0 1-2.3 1.8h-9a2.4 2.4 0 0 1-2.3-1.8z" style="fill:#FFF9F1"/>
+    <ellipse cx="89" cy="91.5" rx="8.4" ry="1.8" style="fill:#C9A04A"/>
+    <ellipse cx="105" cy="101" rx="4.2" ry="2.6" transform="rotate(-20 105 101)" style="fill:#5A2E14"/>
+  </symbol>
+</svg>
+
+<div class="announce">
+  <div class="wrap announce__inner">
+    <svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-truck"/></svg>
+    <p data-i18n="announce">توصيل مجاني فوق 199 ر.س · الرياض في اليوم نفسه</p>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+  <div class="wrap hdr">
+    <button class="icon-btn hdr__menu" type="button" data-open="menu" aria-haspopup="dialog" aria-controls="menu" aria-label="فتح القائمة" data-i18n-attr="aria-label:menu.open">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+    <a class="logo" href="#top" aria-label="دكّان القهوة – الصفحة الرئيسية" data-i18n-attr="aria-label:logo.label">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#logo-mark"/></svg>
+      <span class="logo__text">
+        <span class="logo__ar" lang="ar" dir="rtl">دكّان القهوة</span>
+        <span class="logo__en" lang="en" dir="ltr">Dukkan Al-Qahwa</span>
+      </span>
+    </a>
+    <form class="search" role="search" action="#shop" data-search>
+      <label class="sr-only" for="q" data-i18n="search.label">ابحث في المتجر</label>
+      <input class="search__input" id="q" name="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="ابحث عن محصول، أداة أو V60" data-i18n-attr="placeholder:search.ph">
+      <button class="search__btn" type="submit" aria-label="ابحث" data-i18n-attr="aria-label:search.submit">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      </button>
+    </form>
+    <a class="lang-toggle hdr__lang" href="?lang=en" hreflang="en" lang="en" aria-label="English" data-lang-toggle>
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-globe"/></svg><span class="lang-toggle__long" data-lang-label>English</span><span class="lang-toggle__short" aria-hidden="true" data-lang-short>EN</span>
+    </a>
+    <button class="icon-btn cart-btn" type="button" data-open="cart" aria-haspopup="dialog" aria-controls="cart" aria-label="السلة فارغة">
+      <svg class="icon" aria-hidden="true"><use href="#i-basket"/></svg>
+      <span class="cart-btn__count" aria-hidden="true" data-cart-count>0</span>
+    </button>
+  </div>
+  <nav class="hdr-nav" aria-label="أقسام المتجر" data-i18n-attr="aria-label:nav.label">
+    <ul class="wrap hdr-nav__list">
+      <li><a href="#shop" data-filter="ethiopia" data-i18n="nav.harvest">حصاد إثيوبيا</a></li>
+      <li><a href="#shop" data-filter="beans" data-i18n="cat.beans">حبوب القهوة</a></li>
+      <li><a href="#shop" data-filter="drip" data-i18n="cat.drip">أكياس التقطير</a></li>
+      <li><a href="#shop" data-filter="tools" data-i18n="cat.tools">أدوات التحضير</a></li>
+      <li><a href="#shop" data-filter="gifts" data-i18n="cat.gifts">صناديق الهدايا</a></li>
+      <li><a href="#brew" data-i18n="nav.brew">دليل التحضير</a></li>
+      <li><a href="#trust" data-i18n="nav.trust">الدفع والإرجاع</a></li>
+      <li><a href="#support" data-i18n="nav.support">خدمة العملاء</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- Seasonal promotion -->
+  <section class="wrap hero" id="harvest" aria-labelledby="hero-title">
+    <div class="hero__card">
+      <div class="hero__body">
+        <p class="eyebrow"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-leaf"/></svg><span data-i18n="hero.eyebrow">موسم الحصاد · محصول 2026</span></p>
+        <h1 class="hero__title" id="hero-title" data-i18n="hero.title">حصاد إثيوبيا الجديد وصل الدكّان</h1>
+        <p class="hero__text" data-i18n="hero.text">غوجي ويرغاتشيفي من محصول هذا العام، نحمّصها طازجة كل أسبوع في الرياض. توت وياسمين وحمضيات في كل كوب.</p>
+        <a class="btn btn--saffron btn--lg" href="#shop" data-filter="ethiopia"><span data-i18n="hero.cta">تسوّق حصاد إثيوبيا</span><svg class="icon icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+        <ul class="hero__facts">
+          <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.f1">كمية محدودة</span></li>
+          <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-gift"/></svg><span data-i18n="hero.f2">كيس تقطير هدية مع طلبات الحصاد</span></li>
+        </ul>
+      </div>
+      <svg class="hero__art" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs>
+          <g id="h-leaf"><path d="M0 0C11-13 37-14 52 0C37 14 11 13 0 0Z"/><path d="M6 0h40" fill="none" stroke="#24513C" stroke-opacity=".45" stroke-width="1.6" stroke-linecap="round"/></g>
+          <g id="h-cherry"><circle r="9"/><circle cx="-3" cy="-3.2" r="2.6" fill="#fff" fill-opacity=".35"/></g>
+        </defs>
+        <circle cx="268" cy="176" r="52" fill="#F0B54A"/>
+        <path d="M0 190C64 160 124 164 184 178C246 192 306 146 400 152V300H0Z" fill="#285040"/>
+        <path d="M26 194C80 180 130 182 180 191M214 186C270 170 330 160 398 166" fill="none" stroke="#33604C" stroke-width="3" stroke-linecap="round"/>
+        <path d="M0 226C72 204 150 212 222 222C284 230 334 208 400 212V300H0Z" fill="#30604A"/>
+        <g fill="#27523E"><circle cx="34" cy="222" r="11"/><circle cx="57" cy="216" r="9"/><circle cx="110" cy="214" r="10"/><circle cx="133" cy="218" r="8"/><circle cx="196" cy="221" r="9"/><circle cx="252" cy="225" r="10"/><circle cx="275" cy="221" r="8"/><circle cx="340" cy="213" r="10"/><circle cx="363" cy="215" r="8"/></g>
+        <path d="M0 262C96 244 184 252 266 260C326 266 366 254 400 250V300H0Z" fill="#3A7155"/>
+        <path d="M420 150C368 152 326 170 286 196C252 218 210 232 150 238" fill="none" stroke="#5B3A22" stroke-width="5" stroke-linecap="round"/>
+        <path d="M331 170c-7 12-8 24-2 36M244 222c5 10 12 16 22 19" fill="none" stroke="#5B3A22" stroke-width="3" stroke-linecap="round"/>
+        <g fill="#6FA77A">
+          <use href="#h-leaf" transform="translate(384 152) rotate(-168)"/>
+          <use href="#h-leaf" transform="translate(358 158) rotate(150)"/>
+          <use href="#h-leaf" transform="translate(312 180) rotate(-138)"/>
+          <use href="#h-leaf" transform="translate(298 188) rotate(118)"/>
+          <use href="#h-leaf" transform="translate(232 222) rotate(-160)"/>
+          <use href="#h-leaf" transform="translate(206 230) rotate(140)"/>
+          <use href="#h-leaf" transform="translate(166 237) rotate(-176)"/>
+        </g>
+        <g fill="#86BC8D" fill-opacity=".9">
+          <use href="#h-leaf" transform="translate(372 155) rotate(-120) scale(.8)"/>
+          <use href="#h-leaf" transform="translate(268 206) rotate(-112) scale(.75)"/>
+        </g>
+        <g fill="#C8372D">
+          <use href="#h-cherry" transform="translate(323 210)"/>
+          <use href="#h-cherry" transform="translate(339 205)"/>
+          <use href="#h-cherry" transform="translate(331 222)"/>
+          <use href="#h-cherry" transform="translate(262 243)"/>
+          <use href="#h-cherry" transform="translate(278 247)"/>
+        </g>
+        <g fill="#E0752F"><use href="#h-cherry" transform="translate(347 219)"/><use href="#h-cherry" transform="translate(270 259)"/></g>
+        <g fill="#9DB85A"><use href="#h-cherry" transform="translate(315 224) scale(.85)"/></g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Delivery promise: Riyadh vs other cities + free-shipping threshold -->
+  <section class="wrap promise" id="delivery" aria-labelledby="promise-title">
+    <h2 class="sr-only" id="promise-title" data-i18n="promise.title">التوصيل والشحن</h2>
+    <ul class="promise__grid">
+      <li class="promise__item">
+        <span class="promise__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+        <div>
+          <p class="promise__label" data-i18n="promise.ryd.label">داخل الرياض</p>
+          <p class="promise__value" data-i18n="promise.ryd.value">يصلك اليوم نفسه</p>
+          <p class="promise__note" data-i18n="promise.ryd.note">للطلبات قبل 2 ظهرًا</p>
+          <p class="promise__fee" data-i18n="promise.ryd.fee">رسوم التوصيل 15 ر.س</p>
+        </div>
+      </li>
+      <li class="promise__item">
+        <span class="promise__icon"><svg class="icon icon--dir" aria-hidden="true"><use href="#i-truck"/></svg></span>
+        <div>
+          <p class="promise__label" data-i18n="promise.ksa.label">باقي مدن المملكة</p>
+          <p class="promise__value" data-i18n="promise.ksa.value">من 2 إلى 4 أيام عمل</p>
+          <p class="promise__note" data-i18n="promise.ksa.note">شحن مُتتبَّع لباب البيت</p>
+          <p class="promise__fee" data-i18n="promise.ksa.fee">رسوم الشحن 25 ر.س</p>
+        </div>
+      </li>
+    </ul>
+    <div class="ship" data-ship>
+      <p class="ship__msg"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-gift"/></svg><span data-ship-msg>التوصيل مجاني للطلبات فوق 199 ر.س</span></p>
+      <span class="meter" aria-hidden="true"><span class="meter__bar"></span></span>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="wrap section" id="categories" aria-labelledby="cats-title">
+    <div class="section__head">
+      <h2 class="section__title" id="cats-title" data-i18n="cats.title">تسوّق حسب الفئة</h2>
+    </div>
+    <ul class="cats">
+      <li><a class="cat" href="#shop" data-filter="beans" style="--tint:#F3E3D3;--ic:#7A3E1D">
+        <span class="cat__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#c-beans"/></svg></span>
+        <span class="cat__label" data-i18n="cat.beans">حبوب القهوة</span></a></li>
+      <li><a class="cat" href="#shop" data-filter="drip" style="--tint:#ECE6F4;--ic:#563A82">
+        <span class="cat__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#c-drip"/></svg></span>
+        <span class="cat__label" data-i18n="cat.drip">أكياس التقطير</span></a></li>
+      <li><a class="cat" href="#shop" data-filter="tools" style="--tint:#F6E4D8;--ic:#9C401B">
+        <span class="cat__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#c-tools"/></svg></span>
+        <span class="cat__label" data-i18n="cat.tools">أدوات التحضير</span></a></li>
+      <li><a class="cat" href="#shop" data-filter="gifts" style="--tint:#F9EBCF;--ic:#7E5410">
+        <span class="cat__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#c-gift"/></svg></span>
+        <span class="cat__label" data-i18n="cat.gifts">صناديق الهدايا</span></a></li>
+    </ul>
+  </section>
+
+  <!-- Products -->
+  <section class="wrap section" id="shop" aria-labelledby="shop-title">
+    <div class="section__head">
+      <h2 class="section__title" id="shop-title" tabindex="-1" data-i18n="shop.title">الأكثر طلبًا</h2>
+      <p class="section__aside" data-i18n="shop.vat">الأسعار شاملة الضريبة</p>
+    </div>
+
+    <div class="chips" role="group" aria-label="تصفية المنتجات حسب الفئة" data-i18n-attr="aria-label:shop.filter">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true" data-i18n="chip.all">الكل</button>
+      <button class="chip" type="button" data-filter="ethiopia" aria-pressed="false" data-i18n="nav.harvest">حصاد إثيوبيا</button>
+      <button class="chip" type="button" data-filter="beans" aria-pressed="false" data-i18n="cat.beans">حبوب القهوة</button>
+      <button class="chip" type="button" data-filter="drip" aria-pressed="false" data-i18n="cat.drip">أكياس التقطير</button>
+      <button class="chip" type="button" data-filter="tools" aria-pressed="false" data-i18n="cat.tools">أدوات التحضير</button>
+      <button class="chip" type="button" data-filter="gifts" aria-pressed="false" data-i18n="cat.gifts">صناديق الهدايا</button>
+    </div>
+
+    <div class="shop-bar">
+      <p class="shop-bar__count" data-results aria-live="polite">12 منتجًا</p>
+      <div class="field-inline">
+        <label for="sort" data-i18n="sort.label">ترتيب حسب</label>
+        <span class="select">
+          <select id="sort" data-sort>
+            <option value="popular" data-i18n="sort.popular">الأكثر طلبًا</option>
+            <option value="price-asc" data-i18n="sort.priceAsc">السعر: من الأقل</option>
+            <option value="price-desc" data-i18n="sort.priceDesc">السعر: من الأعلى</option>
+            <option value="rating" data-i18n="sort.rating">الأعلى تقييمًا</option>
+          </select>
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#i-chev-down"/></svg>
+        </span>
+      </div>
+    </div>
+
+    <div class="search-summary" data-search-summary hidden>
+      <p><span data-search-summary-text></span></p>
+      <button class="link-btn" type="button" data-clear-search data-i18n="search.clear">مسح البحث</button>
+    </div>
+
+    <ul class="grid" id="grid">
+      <li class="product" data-id="goji" data-cat="beans" data-tags="ethiopia new" data-price="89" data-rating="4.9" data-reviews="212" data-kw="guji goji natural ethiopia قوجي جوجي اثيوبيا حبوب بن">
+        <article class="card">
+          <div class="card__media" style="--tint:#F5E3E7;--a:#6E2441;--b:#EBA2B3">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-bag"/></svg>
+            <span class="badge badge--new" data-i18n="badge.new">محصول جديد</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-goji" data-i18n-html="p.goji">إثيوبيا غوجي – <span lang="en">Natural</span></h3>
+            <p class="card__meta" data-i18n="p.goji.meta">250 غ · توت أزرق وياسمين</p>
+            <p class="rating" role="img" aria-label="التقييم 4.9 من 5، 212 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9</span><span class="rating__count" aria-hidden="true">(212)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>89 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="goji" id="add-goji" aria-labelledby="add-goji-t n-goji"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-goji-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="yirga" data-cat="beans" data-tags="ethiopia" data-price="68" data-was="85" data-rating="4.8" data-reviews="174" data-kw="yirgacheffe yirga washed ethiopia يرقاتشيفي يرجاتشيفي اثيوبيا حبوب بن">
+        <article class="card">
+          <div class="card__media" style="--tint:#FAF0D3;--a:#2F5D4A;--b:#F2C14E">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-bag"/></svg>
+            <span class="badge badge--sale" data-i18n="badge.sale">خصم 20%</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-yirga" data-i18n-html="p.yirga">إثيوبيا يرغاتشيفي – <span lang="en">Washed</span></h3>
+            <p class="card__meta" data-i18n="p.yirga.meta">250 غ · ليمون وزهر البرتقال</p>
+            <p class="rating" role="img" aria-label="التقييم 4.8 من 5، 174 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8</span><span class="rating__count" aria-hidden="true">(174)</span></p>
+            <p class="price price--sale" data-price><span class="price__now"><span class="sr-only">السعر بعد الخصم: </span>68 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span> <del class="price__was"><span class="sr-only">بدلًا من </span>85 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></del></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="yirga" id="add-yirga" aria-labelledby="add-yirga-t n-yirga"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-yirga-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="v60" data-cat="tools" data-tags="" data-price="79" data-rating="4.8" data-reviews="256" data-kw="v60 dripper ceramic pour over قمع ترشيح تقطير سيراميك دريب في60 ادوات">
+        <article class="card">
+          <div class="card__media" style="--tint:#F6E7DB;--a:#C9643A;--b:#F0B54A">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-v60"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-v60" data-i18n-html="p.v60">قمع تقطير <span lang="en">V60</span> – سيراميك</h3>
+            <p class="card__meta" data-i18n="p.v60.meta">مقاس 02 · الوزن 410 غ</p>
+            <p class="rating" role="img" aria-label="التقييم 4.8 من 5، 256 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8</span><span class="rating__count" aria-hidden="true">(256)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>79 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="v60" id="add-v60" aria-labelledby="add-v60-t n-v60"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-v60-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="drip-eth" data-cat="drip" data-tags="ethiopia" data-price="45" data-rating="4.7" data-reviews="139" data-kw="drip bags ethiopia اكياس تقطير دريب اثيوبيا">
+        <article class="card">
+          <div class="card__media" style="--tint:#ECE7F4;--a:#5B3F86;--b:#C9B6E6">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-drip"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-drip-eth" data-i18n="p.dripEth">أكياس تقطير – إثيوبيا</h3>
+            <p class="card__meta" data-i18n="p.dripEth.meta">10 أكياس × 12 غ</p>
+            <p class="rating" role="img" aria-label="التقييم 4.7 من 5، 139 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7</span><span class="rating__count" aria-hidden="true">(139)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>45 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="drip-eth" id="add-drip-eth" aria-labelledby="add-drip-eth-t n-drip-eth"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-drip-eth-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product is-soldout" data-id="khawlani" data-cat="beans" data-tags="saudi" data-price="120" data-rating="4.9" data-reviews="64" data-soldout data-kw="khawlani jazan saudi natural خولاني جازان سعودي حبوب بن">
+        <article class="card">
+          <div class="card__media" style="--tint:#F1E6D6;--a:#7A4A23;--b:#E3B26B">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-bag"/></svg>
+            <span class="badge badge--out" data-i18n="badge.out">نفدت الكمية</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-khawlani" data-i18n-html="p.khawlani">خولاني جازان – <span lang="en">Natural</span></h3>
+            <p class="card__meta" data-i18n="p.khawlani.meta">200 غ · تمر وقرفة</p>
+            <p class="rating" role="img" aria-label="التقييم 4.9 من 5، 64 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9</span><span class="rating__count" aria-hidden="true">(64)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>120 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--notify" type="button" data-notify="khawlani" id="nt-khawlani" aria-labelledby="nt-khawlani-t n-khawlani"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-bell"/></svg><span id="nt-khawlani-t" data-notify-label data-i18n="cta.notify">أعلمني عند التوفر</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="espresso" data-cat="beans" data-tags="" data-price="99" data-rating="4.6" data-reviews="301" data-kw="espresso blend house اسبريسو خلطة الدكان حبوب بن">
+        <article class="card">
+          <div class="card__media" style="--tint:#EDE2D8;--a:#2A1A12;--b:#C8A16E">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-bag"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-espresso" data-i18n-html="p.espresso">خلطة الدكّان – <span lang="en">Espresso</span></h3>
+            <p class="card__meta" data-i18n="p.espresso.meta">500 غ · شوكولاتة داكنة وبندق</p>
+            <p class="rating" role="img" aria-label="التقييم 4.6 من 5، 301 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.6</span><span class="rating__count" aria-hidden="true">(301)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>99 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="espresso" id="add-espresso" aria-labelledby="add-espresso-t n-espresso"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-espresso-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="gift-riyadh" data-cat="gifts" data-tags="" data-price="159" data-rating="4.9" data-reviews="47" data-kw="gift box riyadh morning صندوق هدية هدايا صباح الرياض">
+        <article class="card">
+          <div class="card__media" style="--tint:#FBEBD0;--a:#A4471F;--b:#F0B54A">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-box"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-gift-riyadh" data-i18n="p.giftRiyadh">صندوق «صباح الرياض»</h3>
+            <p class="card__meta" data-i18n="p.giftRiyadh.meta">3 محاصيل × 125 غ وبطاقة إهداء</p>
+            <p class="rating" role="img" aria-label="التقييم 4.9 من 5، 47 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.9</span><span class="rating__count" aria-hidden="true">(47)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>159 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="gift-riyadh" id="add-gift-riyadh" aria-labelledby="add-gift-riyadh-t n-gift-riyadh"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-gift-riyadh-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="kettle" data-cat="tools" data-tags="" data-price="249" data-rating="4.7" data-reviews="73" data-kw="gooseneck kettle electric غلاية كهربائية ابريق تقطير ادوات">
+        <article class="card">
+          <div class="card__media" style="--tint:#E6EBEC;--a:#2F3B40;--b:#7CE0B5">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-kettle"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-kettle" data-i18n-html="p.kettle">غلاية تقطير <span lang="en">Gooseneck</span></h3>
+            <p class="card__meta" data-i18n="p.kettle.meta">سعة 0.8 لتر · الوزن 1.1 كغ</p>
+            <p class="rating" role="img" aria-label="التقييم 4.7 من 5، 73 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7</span><span class="rating__count" aria-hidden="true">(73)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>249 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="kettle" id="add-kettle" aria-labelledby="add-kettle-t n-kettle"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-kettle-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="colombia" data-cat="beans" data-tags="" data-price="95" data-rating="4.7" data-reviews="88" data-kw="colombia huila pink bourbon كولومبيا هويلا بوربون حبوب بن">
+        <article class="card">
+          <div class="card__media" style="--tint:#FBE5E0;--a:#B23A3A;--b:#F6C16B">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-bag"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-colombia" data-i18n-html="p.colombia">كولومبيا هويلا – <span lang="en">Pink Bourbon</span></h3>
+            <p class="card__meta" data-i18n="p.colombia.meta">250 غ · فراولة وكراميل</p>
+            <p class="rating" role="img" aria-label="التقييم 4.7 من 5، 88 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.7</span><span class="rating__count" aria-hidden="true">(88)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>95 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="colombia" id="add-colombia" aria-labelledby="add-colombia-t n-colombia"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-colombia-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="drip-mix" data-cat="drip" data-tags="" data-price="59" data-rating="4.8" data-reviews="96" data-kw="drip bags discovery sampler mix اكياس تقطير تشكيلة دريب">
+        <article class="card">
+          <div class="card__media" style="--tint:#E2EFE8;--a:#2E6B4E;--b:#A8D5BD">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-drip"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-drip-mix" data-i18n-html="p.dripMix">تشكيلة التقطير – <span lang="en">Discovery</span></h3>
+            <p class="card__meta" data-i18n="p.dripMix.meta">12 كيسًا من 4 محاصيل</p>
+            <p class="rating" role="img" aria-label="التقييم 4.8 من 5، 96 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8</span><span class="rating__count" aria-hidden="true">(96)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>59 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="drip-mix" id="add-drip-mix" aria-labelledby="add-drip-mix-t n-drip-mix"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-drip-mix-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="grinder" data-cat="tools" data-tags="" data-price="189" data-rating="4.6" data-reviews="58" data-kw="hand grinder burr manual مطحنة يدوية طاحونة ادوات">
+        <article class="card">
+          <div class="card__media" style="--tint:#EEE5DC;--a:#4B3A2E;--b:#B98A5E">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-grinder"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-grinder" data-i18n-html="p.grinder">مطحنة يدوية – <span lang="en">Burr</span></h3>
+            <p class="card__meta" data-i18n="p.grinder.meta">سعة 25 غ · الوزن 480 غ</p>
+            <p class="rating" role="img" aria-label="التقييم 4.6 من 5، 58 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.6</span><span class="rating__count" aria-hidden="true">(58)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>189 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="grinder" id="add-grinder" aria-labelledby="add-grinder-t n-grinder"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-grinder-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+
+      <li class="product" data-id="gift-starter" data-cat="gifts" data-tags="" data-price="149" data-rating="4.8" data-reviews="52" data-kw="starter gift box v60 filters صندوق هدية بداية التقطير فلاتر">
+        <article class="card">
+          <div class="card__media" style="--tint:#E5ECF5;--a:#2B4A6F;--b:#E9C46A">
+            <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><use href="#art-box"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" id="n-gift-starter" data-i18n="p.giftStarter">صندوق بداية التقطير</h3>
+            <p class="card__meta" data-i18n-html="p.giftStarter.meta">قمع <span lang="en">V60</span> وفلاتر و250 غ قهوة</p>
+            <p class="rating" role="img" aria-label="التقييم 4.8 من 5، 52 مراجعة"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><span aria-hidden="true">4.8</span><span class="rating__count" aria-hidden="true">(52)</span></p>
+            <p class="price" data-price><span class="price__now"><span class="sr-only">السعر: </span>149 <span class="cur" aria-hidden="true">ر.س</span><span class="sr-only"> ريال سعودي</span></span></p>
+            <div class="buy"><button class="btn btn--add" type="button" data-add="gift-starter" id="add-gift-starter" aria-labelledby="add-gift-starter-t n-gift-starter"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-plus"/></svg><span id="add-gift-starter-t" data-i18n="cta.add">أضف إلى السلة</span></button></div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <div class="empty" data-empty hidden>
+      <p class="empty__title" data-i18n="empty.title">لا توجد منتجات مطابقة</p>
+      <p class="empty__text" data-i18n="empty.text">جرّب كلمة أخرى أو تصفّح كل المنتجات.</p>
+      <button class="btn btn--ghost" type="button" data-reset data-i18n="empty.reset">عرض كل المنتجات</button>
+    </div>
+  </section>
+
+  <!-- Brew guide teaser (RTL-aware carousel) -->
+  <section class="section brew" id="brew" aria-labelledby="brew-title">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title" id="brew-title" data-i18n="brew.title">دليل التحضير</h2>
+          <p class="section__sub" data-i18n="brew.sub">ثلاث طرق سهلة لقهوة مختصة في البيت، بمقادير دقيقة وخطوات واضحة.</p>
+        </div>
+        <div class="carousel-nav" data-carousel-nav>
+          <button class="icon-btn icon-btn--outline" type="button" data-carousel-prev aria-controls="brew-track" aria-label="الطريقة السابقة" data-i18n-attr="aria-label:carousel.prev">
+            <svg class="icon icon--dir" aria-hidden="true"><use href="#i-chev-back"/></svg>
+          </button>
+          <button class="icon-btn icon-btn--outline" type="button" data-carousel-next aria-controls="brew-track" aria-label="الطريقة التالية" data-i18n-attr="aria-label:carousel.next">
+            <svg class="icon icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="carousel" data-carousel>
+        <ul class="carousel__track" id="brew-track" aria-label="طرق التحضير" data-i18n-attr="aria-label:brew.region">
+          <li class="brew-card" style="--tint:#F6E7DB;--a:#C9643A">
+            <div class="brew-card__media"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#art-v60"/></svg></div>
+            <div class="brew-card__body">
+              <h3 class="brew-card__title" id="b-v60" data-i18n-html="brew.v60.t">تقطير <span lang="en">V60</span></h3>
+              <p class="brew-card__text" data-i18n="brew.v60.d">كوب صافٍ يُبرز النكهات الزهرية للمحاصيل الإثيوبية.</p>
+              <ul class="specs">
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="brew.v60.time">3 دقائق</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-scale"/></svg><span><span class="sr-only" data-i18n="brew.ratio">نسبة القهوة إلى الماء</span> 1:16</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-grind"/></svg><span data-i18n="brew.v60.grind">طحن متوسط</span></li>
+              </ul>
+              <a class="link-arrow" href="#" id="l-v60" aria-labelledby="l-v60-t b-v60"><span id="l-v60-t" data-i18n="brew.read">اقرأ الطريقة</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+            </div>
+          </li>
+          <li class="brew-card" style="--tint:#E4ECF4;--a:#2B4A6F">
+            <div class="brew-card__media"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#art-coldbrew"/></svg></div>
+            <div class="brew-card__body">
+              <h3 class="brew-card__title" id="b-cold" data-i18n-html="brew.cold.t">التخمير البارد <span class="muted" lang="en">Cold Brew</span></h3>
+              <p class="brew-card__text" data-i18n="brew.cold.d">ناعمة ومنعشة لصيف الرياض، تُنقع في الثلاجة طوال الليل.</p>
+              <ul class="specs">
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="brew.cold.time">12 ساعة</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-scale"/></svg><span><span class="sr-only" data-i18n="brew.ratio">نسبة القهوة إلى الماء</span> 1:8</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-grind"/></svg><span data-i18n="brew.cold.grind">طحن خشن</span></li>
+              </ul>
+              <a class="link-arrow" href="#" id="l-cold" aria-labelledby="l-cold-t b-cold"><span id="l-cold-t" data-i18n="brew.read">اقرأ الطريقة</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+            </div>
+          </li>
+          <li class="brew-card" style="--tint:#F7EBD3;--a:#B5832F">
+            <div class="brew-card__media"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#art-dallah"/></svg></div>
+            <div class="brew-card__body">
+              <h3 class="brew-card__title" id="b-saudi" data-i18n="brew.saudi.t">القهوة السعودية</h3>
+              <p class="brew-card__text" data-i18n="brew.saudi.d">شقراء بالهيل والزعفران على طريقة أهل نجد، تُقدَّم مع التمر.</p>
+              <ul class="specs">
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="brew.saudi.time">15 دقيقة</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-scale"/></svg><span><span class="sr-only" data-i18n="brew.ratio">نسبة القهوة إلى الماء</span> 1:30</span></li>
+                <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-leaf"/></svg><span data-i18n="brew.saudi.extra">هيل وزعفران</span></li>
+              </ul>
+              <a class="link-arrow" href="#" id="l-saudi" aria-labelledby="l-saudi-t b-saudi"><span id="l-saudi-t" data-i18n="brew.read">اقرأ الطريقة</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+            </div>
+          </li>
+        </ul>
+        <div class="carousel__dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
+      </div>
+      <a class="section__link" href="#"><span data-i18n="brew.all">كل أدلة التحضير</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a>
+    </div>
+  </section>
+
+  <!-- Trust: payment, returns, customer care -->
+  <section class="wrap section" id="trust" aria-labelledby="trust-title">
+    <div class="section__head">
+      <h2 class="section__title" id="trust-title" data-i18n="trust.title">تسوّق بثقة</h2>
+    </div>
+    <div class="trust">
+      <article class="trust-card" aria-labelledby="t-pay">
+        <span class="trust-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <h3 class="trust-card__title" id="t-pay" data-i18n="trust.pay.t">دفع آمن ومرن</h3>
+        <p data-i18n-html="trust.pay.d">ادفع ببطاقة مدى أو <span lang="en">Apple Pay</span> أو بطاقتك الائتمانية، أو قسّم المبلغ على 4 دفعات بلا فوائد مع <span lang="en">Tabby</span>.</p>
+        <ul class="pay" aria-label="طرق الدفع المقبولة" data-i18n-attr="aria-label:trust.pay.list">
+          <li lang="en">mada</li>
+          <li lang="en">Apple Pay</li>
+          <li lang="en">Tabby</li>
+          <li lang="en">Visa</li>
+          <li lang="en">Mastercard</li>
+        </ul>
+      </article>
+      <article class="trust-card" aria-labelledby="t-ret">
+        <span class="trust-card__icon"><svg class="icon icon--dir" aria-hidden="true"><use href="#i-return"/></svg></span>
+        <h3 class="trust-card__title" id="t-ret" data-i18n="trust.ret.t">إرجاع واستبدال بلا تعقيد</h3>
+        <p data-i18n="trust.ret.d">أرجِع الأدوات غير المستخدمة خلال 14 يومًا من الاستلام واسترد مبلغك كاملًا. وإن وصلتك القهوة تالفة أو غير مطابقة نستبدلها مجانًا.</p>
+        <a class="link-arrow" href="#"><span data-i18n="trust.ret.link">سياسة الإرجاع</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+      </article>
+      <article class="trust-card" id="support" aria-labelledby="t-care">
+        <span class="trust-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-headset"/></svg></span>
+        <h3 class="trust-card__title" id="t-care" data-i18n="trust.care.t">خدمة العملاء</h3>
+        <dl class="hours">
+          <div><dt data-i18n="trust.care.week">السبت – الخميس</dt><dd data-i18n="trust.care.weekHours">9 صباحًا – 11 مساءً</dd></div>
+          <div><dt data-i18n="trust.care.fri">الجمعة</dt><dd data-i18n="trust.care.friHours">4 عصرًا – 11 مساءً</dd></div>
+        </dl>
+        <ul class="contact">
+          <li><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="trust.care.wa">واتساب</span> <a href="#" dir="ltr">+966 50 000 0000</a></li>
+          <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="trust.care.mail">البريد</span> <a href="#" dir="ltr">care@dukkan.example</a></li>
+        </ul>
+        <p class="trust-card__note" data-i18n="trust.care.note">نرد عادةً خلال 10 دقائق.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer">
+    <div class="footer__brand">
+      <a class="logo logo--light" href="#top" aria-label="دكّان القهوة – الصفحة الرئيسية" data-i18n-attr="aria-label:logo.label">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo__text">
+          <span class="logo__ar" lang="ar" dir="rtl">دكّان القهوة</span>
+          <span class="logo__en" lang="en" dir="ltr">Dukkan Al-Qahwa</span>
+        </span>
+      </a>
+      <p class="footer__about" data-i18n="footer.about">محمصة قهوة مختصة صغيرة في الرياض. نحمّص كل أسبوع ونوصل لكل مدن المملكة.</p>
+      <a class="lang-toggle lang-toggle--light" href="?lang=en" hreflang="en" lang="en" data-lang-toggle>
+        <svg class="icon icon--sm" aria-hidden="true"><use href="#i-globe"/></svg><span data-lang-label>English</span>
+      </a>
+    </div>
+    <nav class="footer__nav" aria-label="روابط الموقع" data-i18n-attr="aria-label:footer.nav">
+      <div>
+        <h2 class="footer__h" data-i18n="footer.shop">المتجر</h2>
+        <ul>
+          <li><a href="#shop" data-filter="beans" data-i18n="cat.beans">حبوب القهوة</a></li>
+          <li><a href="#shop" data-filter="drip" data-i18n="cat.drip">أكياس التقطير</a></li>
+          <li><a href="#shop" data-filter="tools" data-i18n="cat.tools">أدوات التحضير</a></li>
+          <li><a href="#shop" data-filter="gifts" data-i18n="cat.gifts">صناديق الهدايا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__h" data-i18n="footer.help">المساعدة</h2>
+        <ul>
+          <li><a href="#delivery" data-i18n="footer.shipping">الشحن والتوصيل</a></li>
+          <li><a href="#trust" data-i18n="footer.returns">الإرجاع والاستبدال</a></li>
+          <li><a href="#" data-i18n="footer.faq">الأسئلة الشائعة</a></li>
+          <li><a href="#support" data-i18n="footer.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__h" data-i18n="footer.about.h">عن الدكّان</h2>
+        <ul>
+          <li><a href="#" data-i18n="footer.story">قصتنا</a></li>
+          <li><a href="#brew" data-i18n="nav.brew">دليل التحضير</a></li>
+          <li><a href="#" data-i18n="footer.terms">الشروط والأحكام</a></li>
+          <li><a href="#" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__social">
+      <h2 class="footer__h" data-i18n="footer.follow">تابعنا</h2>
+      <ul class="social">
+        <li><a href="#" data-i18n="social.ig">إنستغرام</a></li>
+        <li><a href="#" data-i18n="social.x">إكس</a></li>
+        <li><a href="#" data-i18n="social.tt">تيك توك</a></li>
+        <li><a href="#" data-i18n="social.sc">سناب شات</a></li>
+      </ul>
+    </div>
+    <div class="footer__legal">
+      <p class="footer__ids"><span><span data-i18n="footer.cr">السجل التجاري:</span> <span dir="ltr">1010XXXXXX</span></span> <span><span data-i18n="footer.vat">الرقم الضريبي:</span> <span dir="ltr">3XXXXXXXXXXXXX3</span></span></p>
+      <p data-i18n="footer.copy">© 2026 دكّان القهوة. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mini-cart (thumb zone), appears once the cart has items -->
+<div class="cartbar" data-cartbar hidden>
+  <div class="cartbar__info">
+    <p class="cartbar__sum"><span data-cartbar-count></span> · <span data-cartbar-total></span></p>
+    <p class="cartbar__ship" data-ship-short></p>
+    <span class="meter meter--dark" aria-hidden="true"><span class="meter__bar"></span></span>
+  </div>
+  <button class="btn btn--saffron" type="button" data-open="cart" aria-haspopup="dialog" aria-controls="cart"><span data-i18n="cartbar.view">عرض السلة</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></button>
+</div>
+
+<!-- Menu drawer (opens from the inline-start edge) -->
+<dialog class="sheet sheet--start" id="menu" aria-labelledby="menu-title">
+  <div class="sheet__inner">
+    <div class="sheet__head">
+      <h2 class="sheet__title" id="menu-title" data-i18n="menu.title">القائمة</h2>
+      <button class="icon-btn" type="button" data-close aria-label="إغلاق القائمة" data-i18n-attr="aria-label:menu.close">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <nav class="sheet__body" aria-label="القائمة الرئيسية" data-i18n-attr="aria-label:menu.nav">
+      <ul class="menu-list">
+        <li><a href="#shop" data-filter="all"><span data-i18n="menu.all">كل المنتجات</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#shop" data-filter="ethiopia"><span data-i18n="nav.harvest">حصاد إثيوبيا</span><span class="pill" data-i18n="menu.new">جديد</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#shop" data-filter="beans"><span data-i18n="cat.beans">حبوب القهوة</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#shop" data-filter="drip"><span data-i18n="cat.drip">أكياس التقطير</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#shop" data-filter="tools"><span data-i18n="cat.tools">أدوات التحضير</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#shop" data-filter="gifts"><span data-i18n="cat.gifts">صناديق الهدايا</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+      </ul>
+      <ul class="menu-list menu-list--secondary">
+        <li><a href="#brew"><span data-i18n="nav.brew">دليل التحضير</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#delivery"><span data-i18n="footer.shipping">الشحن والتوصيل</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#trust"><span data-i18n="nav.trust">الدفع والإرجاع</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+        <li><a href="#support"><span data-i18n="nav.support">خدمة العملاء</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-chev-fwd"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="sheet__foot">
+      <a class="lang-toggle" href="?lang=en" hreflang="en" lang="en" data-lang-toggle>
+        <svg class="icon icon--sm" aria-hidden="true"><use href="#i-globe"/></svg><span data-lang-label>English</span>
+      </a>
+      <p class="sheet__note" data-i18n="menu.hours">خدمة العملاء يوميًا حتى 11 مساءً</p>
+    </div>
+  </div>
+</dialog>
+
+<!-- Cart drawer (opens from the inline-end edge) -->
+<dialog class="sheet sheet--end" id="cart" aria-labelledby="cart-title">
+  <div class="sheet__inner">
+    <div class="sheet__head">
+      <h2 class="sheet__title" id="cart-title"><span data-i18n="cart.title">سلّة المشتريات</span> <span class="sheet__count" data-cart-title-count></span></h2>
+      <button class="icon-btn" type="button" data-close aria-label="إغلاق السلة" data-i18n-attr="aria-label:cart.close">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="sheet__body">
+      <div class="ship ship--cart" data-ship>
+        <p class="ship__msg"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-gift"/></svg><span data-ship-msg></span></p>
+        <span class="meter" aria-hidden="true"><span class="meter__bar"></span></span>
+      </div>
+      <div class="cart-empty" data-cart-empty>
+        <svg class="cart-empty__art" viewBox="0 0 120 120" aria-hidden="true" style="--a:#A4471F;--b:#F0B54A"><use href="#art-bag"/></svg>
+        <p class="cart-empty__title" data-i18n="cart.empty.t">سلّتك فارغة</p>
+        <p class="cart-empty__text" data-i18n="cart.empty.d">ابدأ بحصاد إثيوبيا الجديد، محمّص هذا الأسبوع.</p>
+        <a class="btn btn--primary" href="#shop" data-filter="ethiopia"><span data-i18n="cart.empty.cta">تسوّق الحصاد</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></a>
+      </div>
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="cart-gift" data-cart-gift hidden><svg class="icon icon--sm" aria-hidden="true"><use href="#i-gift"/></svg><span data-i18n="cart.gift">هدية الحصاد: كيس تقطير إثيوبيا مع طلبك</span></p>
+      <div class="cart-city" data-cart-filled>
+        <label for="city" data-i18n="cart.city">مدينة التوصيل</label>
+        <span class="select select--block">
+          <select id="city" data-city>
+            <option value="riyadh" data-i18n="city.riyadh">الرياض</option>
+            <option value="jeddah" data-i18n="city.jeddah">جدة</option>
+            <option value="makkah" data-i18n="city.makkah">مكة المكرمة</option>
+            <option value="madinah" data-i18n="city.madinah">المدينة المنورة</option>
+            <option value="dammam" data-i18n="city.dammam">الدمام والخبر</option>
+            <option value="other" data-i18n="city.other">مدينة أخرى</option>
+          </select>
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#i-chev-down"/></svg>
+        </span>
+        <p class="cart-eta"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock"/></svg><span data-cart-eta></span></p>
+      </div>
+    </div>
+    <div class="sheet__foot cart-summary" data-cart-filled>
+      <dl class="totals">
+        <div><dt data-i18n="cart.subtotal">المجموع الفرعي</dt><dd data-sub></dd></div>
+        <div><dt data-i18n="cart.delivery">التوصيل</dt><dd data-fee></dd></div>
+        <div class="totals__grand"><dt><span data-i18n="cart.total">الإجمالي</span> <small data-i18n="cart.vat">شامل ضريبة القيمة المضافة</small></dt><dd data-total></dd></div>
+      </dl>
+      <button class="btn btn--primary btn--block" type="button" data-checkout><span data-i18n="cart.checkout">إتمام الطلب</span><svg class="icon icon--sm icon--dir" aria-hidden="true"><use href="#i-arrow-fwd"/></svg></button>
+      <p class="cart-pay" lang="en">mada · Apple Pay · Tabby</p>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" data-toast aria-hidden="true" hidden></div>
+<p class="sr-only" role="status" aria-live="polite" data-status></p>
+</body>
+</html>

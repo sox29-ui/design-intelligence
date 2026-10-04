@@ -18,6 +18,7 @@ verify:
   - line count does not explode at 768
 avoid_when:
   - type-as-image pages that reorient instead of scale (see typography.extreme-scale-needs-a-reason)
+  - immersive full-bleed compositions that scale as a whole (their container is not capped either — see layout.cap-content-width)
 rationale: "Seven references show the same curve: e.g. 40→64→64, 34→48→48, 44→60→60, 24→32→32 px. Capping keeps measure and hierarchy stable on wide screens where containers are capped too."
 trade_offs:
   - very wide screens get no extra drama
@@ -51,14 +52,30 @@ evidence:
       observations:
         - ref-002.responsive.home-xvp-display-size-curve
       note: above-the-fold text is an index box, smaller on desktop by design; the big type lives in chapter scenes
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconsistent
+      observations:
+        - val-001.responsive.home-a-composition-scales-with-viewport
+      note: "analyst (home): immersive hero — the wordmark grows about 33% from 1440 to 1920 together with the whole uncapped composition"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.responsive.home-ar-xvp-display-size-curve
+      note: "auto (home-ar): 390/1440 = 0.51, 1920/1440 = 1.00 (rule: ≈0.6–0.75 and ≈1.0)"
   external: []
 evidence_count: 7
 confidence: medium
-confidence_basis: 7 independent references with measured curves; validation pending
+confidence_basis: "7 independent references with measured curves; validation: 1 consistent, 1 inconsistent, 0 inconclusive"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 1 inconsistent, 0 inconclusive"
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "refined after val-001 (immersive hero grows with the viewport): AVOID WHEN extended to whole-composition scaling; the extension is unvalidated"

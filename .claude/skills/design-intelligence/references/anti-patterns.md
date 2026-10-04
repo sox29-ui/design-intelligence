@@ -23,7 +23,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** replace each element with a brief-derived decision; keep an element only with a one-line justification
 - **VERIFY:** verify-page signature scan: ≤ 1–2 signatures, each justified
 - **WHY (inferred):** None of the twelve extraction references uses the full cluster; the two that use parts of it tie them to identity (driver livery, a long-standing brand gradient). Quality references reach distinctiveness through typography, structure, imagery and content.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-012 (Ounass), ref-005 (Exat Typeface), ref-011 (Megaphone) · counterexamples: ref-001 (Lando Norris) — dark + neon justified by livery; ref-009 (Stripe) — gradient as owned brand signature · standards: di-research-report. Details: `npm run why -- antipattern.generic-premium-cluster`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-012 (Ounass), ref-005 (Exat Typeface), ref-011 (Megaphone) · counterexamples: ref-001 (Lando Norris) — dark + neon justified by livery; ref-009 (Stripe) — gradient as owned brand signature · validation: val-001: consistent, val-002: consistent · standards: di-research-report. Details: `npm run why -- antipattern.generic-premium-cluster`.
 
 ### Glassmorphism floating pill navigation by default
 <!-- rule:antipattern.glass-floating-nav -->
@@ -35,7 +35,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** solid header bar or solid inset blocks; sticky only when navigation is used repeatedly
 - **VERIFY:** verify-page floating-nav / glassmorphism signatures justified; header text contrast over every section it floats over
 - **WHY (inferred):** No extraction reference uses a blurred floating pill nav; the automotive site floats solid white inset blocks with no blur; the payments site uses blur only on a few product-imagery elements.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-012 (Ounass), ref-008 (Our World in Data) · counterexamples: ref-003 (Scout Motors) — floating inset header, but solid and brand-shaped (no blur) · standards: di-research-report. Details: `npm run why -- antipattern.glass-floating-nav`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-012 (Ounass), ref-008 (Our World in Data) · counterexamples: ref-003 (Scout Motors) — floating inset header, but solid and brand-shaped (no blur) · validation: val-001: consistent, val-002: consistent · standards: di-research-report. Details: `npm run why -- antipattern.glass-floating-nav`.
 
 ### Gradient blob or ribbon hero as a default
 <!-- rule:antipattern.gradient-hero-imitation -->
@@ -47,7 +47,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** imagery, typography or a brand-derived graphic device instead; flat colour fields
 - **VERIFY:** verify-page gradient-backgrounds / purple-blue-gradient-palette signatures justified
 - **WHY (inferred):** In the corpus the live gradient ribbon is one company's proprietary signature; every other reference achieves its hero without gradients.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-010 (Tabby) · counterexamples: ref-009 (Stripe) — owned brand signature · standards: di-research-report. Details: `npm run why -- antipattern.gradient-hero-imitation`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-010 (Tabby) · counterexamples: ref-009 (Stripe) — owned brand signature · validation: val-001: consistent, val-002: consistent · standards: di-research-report. Details: `npm run why -- antipattern.gradient-hero-imitation`.
 
 ### Banners inserted above content after first paint
 <!-- rule:antipattern.late-injected-banners -->
@@ -59,7 +59,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** fixed bottom-anchored banners; server-rendered reserved space
 - **VERIFY:** CLS before interaction ≤ 0.1 at 390 and 1440 (verify-page / Lighthouse)
 - **WHY (inferred):** Pre-interaction layout shift above 0.1 appeared on three otherwise careful references (public service 0.23 at desktop, brand guidelines 0.12, luxury commerce 0.11 on mobile), each with banners at the top or edge.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-004 (Dropbox Brand), ref-012 (Ounass) · standards: webdev-vitals. Details: `npm run why -- antipattern.late-injected-banners`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-004 (Dropbox Brand), ref-012 (Ounass) · validation: val-001: inconclusive, val-002: inconclusive · standards: webdev-vitals. Details: `npm run why -- antipattern.late-injected-banners`.
 
 ### Three rounded cards as the default section
 <!-- rule:antipattern.rounded-card-grid-default -->
@@ -71,7 +71,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** lists, tables, editorial modules or a single strong feature instead; square or small-radius cards with borders for dense content
 - **VERIFY:** verify-page rounded-card-grid signature justified
 - **WHY (inferred):** Card groups in information-led references are square-cornered and border- or rule-separated; the large-radius cards in the corpus belong to a playful illustrated identity.
-- *Evidence:* supported by ref-008 (Our World in Data), ref-012 (Ounass), ref-003 (Scout Motors) · counterexamples: ref-010 (Tabby) — large radii are part of a playful illustrated identity · standards: di-research-report. Details: `npm run why -- antipattern.rounded-card-grid-default`.
+- *Evidence:* supported by ref-008 (Our World in Data), ref-012 (Ounass), ref-003 (Scout Motors) · counterexamples: ref-010 (Tabby) — large radii are part of a playful illustrated identity · validation: val-001: consistent, val-002: consistent · standards: di-research-report. Details: `npm run why -- antipattern.rounded-card-grid-default`.
 
 ### Branded preloader that gates content
 <!-- rule:antipattern.content-gating-preloader -->
@@ -83,7 +83,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** progressive rendering; skeletons for real loading only; poster frames for heavy media
 - **VERIFY:** entrance frames: real content visible within ~1–2 s in the lab; LCP estimate
 - **WHY (inferred):** The personal-brand site still showed its full-screen lime preloader 4.2 s after navigation in the lab.
-- *Evidence:* supported by ref-001 (Lando Norris) · standards: webdev-vitals. Details: `npm run why -- antipattern.content-gating-preloader`.
+- *Evidence:* supported by ref-001 (Lando Norris) · validation: val-001: consistent · standards: webdev-vitals. Details: `npm run why -- antipattern.content-gating-preloader`.
 
 ### Dark background + neon accent without a brand reason
 <!-- rule:antipattern.dark-neon-without-identity -->
@@ -95,7 +95,7 @@ The typical generic cluster the research report warns about: giant headline + da
 - **CONSIDER:** derive the accent from a brand asset, product photo or semantic role; light or mid-tone grounds when the brief says calm/precise/trustworthy
 - **VERIFY:** verify-page dark-neon-default signature has a written justification
 - **WHY (inferred):** The one corpus reference with this pairing uses the subject's helmet livery colour, visible in its photographs.
-- *Evidence:* counterexamples: ref-001 (Lando Norris) — justified by identity · standards: di-research-report. Details: `npm run why -- antipattern.dark-neon-without-identity`.
+- *Evidence:* counterexamples: ref-001 (Lando Norris) — justified by identity · validation: val-001: consistent · standards: di-research-report. Details: `npm run why -- antipattern.dark-neon-without-identity`.
 
 ### Headlines burned into images
 <!-- rule:antipattern.text-in-images -->

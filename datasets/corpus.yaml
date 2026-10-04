@@ -477,38 +477,71 @@ references:
     access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: absent }
 
   - id: val-003
-    name: Nahdi Online
-    url: https://www.nahdionline.com/ar-sa
+    name: Whites
+    url: https://www.whites.sa/ar-sa
     pages:
-      - { id: home-ar, url: "https://www.nahdionline.com/ar-sa", purpose: "Arabic mass-market pharmacy commerce", locale: ar-SA, direction: rtl }
+      - id: home-ar
+        url: https://www.whites.sa/ar-sa
+        purpose: Arabic mass-market pharmacy and beauty commerce
+        locale: ar-SA
+        direction: rtl
     split: validation
+    replaces:
+      name: Nahdi Online
+      url: https://www.nahdionline.com/ar-sa
+      reason: >-
+        Served an error page (HTTP 200, "something went wrong / 500" content) to both capture attempts on
+        2026-10-02; not bypassed (D-010). Substitute chosen by slot (Arabic mass-market pharmacy commerce):
+        first reachable site checked — Al-Dawaa returned a Cloudflare challenge, Whites returned 200.
+        Chosen from access checks only (title, html dir, robots.txt); no design was viewed before the choice.
     discovery:
       source: arabic-real-world
       source_url: null
-      signal: "High-traffic Saudi pharmacy/retail commerce (mass-market contrast to ref-012 luxury)"
+      signal: Saudi pharmacy and beauty retail chain (mass-market contrast to ref-012 luxury)
       signal_status: UNVERIFIED
-      signal_evidence: "Market position is general knowledge"
-      checked_at: null
+      signal_evidence: Market position is general knowledge
+      checked_at: 2026-10-04
     dimensions:
-      industry: [ecommerce, health]
-      archetypes: [utilitarian]
+      industry:
+        - ecommerce
+        - health
+      archetypes:
+        - utilitarian
       motion: low
-      objectives: [conversion, task-completion]
+      objectives:
+        - conversion
+        - task-completion
       density: high
       device_focus: mobile-first
-      languages: [ar]
+      languages:
+        - ar
       direction: rtl
       scheme: light
       tech_hints: []
-      studio: Nahdi
+      studio: Whites
       assessment: PRE-CAPTURE-JUDGEMENT
     selection:
-      scores: { quality_signal: 2, archetype_coverage: 3, interaction_diversity: 3, mobile_quality: 4, a11y_perf_contrast: 4, rtl_localization: 5, implementation_diversity: 3 }
-      weighted_total: 3.20
-      unique_contribution: "Tests Arabic commerce rules (product cards, prices, numerals, promos) learned from luxury/fintech references on dense mass-market commerce."
-    access: { checked_at: 2026-10-02, reachable: true, http_status: 200, robots: allowed, notes: "Single-page app; initial render small — capture must wait for content." }
-
-  # ------------------------------------------------------------------ holdout (SEALED)
+      scores:
+        quality_signal: 2
+        archetype_coverage: 3
+        interaction_diversity: 3
+        mobile_quality: 4
+        a11y_perf_contrast: 3
+        rtl_localization: 5
+        implementation_diversity: 3
+      weighted_total: 3.1
+      unique_contribution: Tests Arabic commerce rules (product cards, prices, numerals, promos) learned from
+        luxury/fintech references on dense mass-market commerce (same slot as the unavailable Nahdi).
+    access:
+      checked_at: 2026-10-04
+      reachable: true
+      http_status: 200
+      robots: allowed
+      notes: >-
+        Redirects whites.net/ar → whites.sa/ar-sa; html dir=rtl. Plain HTTP fetch returns the storefront, but the
+        headless-browser capture on 2026-10-04 received an error page ("500 — unexpected error") at every viewport;
+        not bypassed (D-010). Capture data discarded (error page, not the site).
+    capture_status: unavailable
   - id: hol-001
     name: ERA Residence
     url: https://era-residence.com/

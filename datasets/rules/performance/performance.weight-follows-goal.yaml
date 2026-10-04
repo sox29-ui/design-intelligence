@@ -54,7 +54,12 @@ evidence:
       observations:
         - ref-002.performance.home-a-why-cost
       note: ≈15.6 MB campaign page
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.performance.home-ar-390-transfer-bytes
+      note: "auto (home-ar): 1.7 MB transferred on mobile for a task/information/commerce goal (rule: keep it light)"
   external:
     - source_id: webdev-vitals
       note: LCP ≤ 2.5 s, CLS ≤ 0.1 at p75
@@ -62,8 +67,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references within budget; 3 heavy counterexamples with explicit trade-offs
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

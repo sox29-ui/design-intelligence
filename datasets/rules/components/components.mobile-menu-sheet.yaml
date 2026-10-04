@@ -50,14 +50,22 @@ evidence:
       observations:
         - ref-001.components.home-a-menu-probe-inconclusive
       note: toggle exposed no state change in capture (inconclusive)
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.components.home-ar-390-menu
+      note: "auto (home-ar): menu: aria-expanded null→null, dialogs 0, Escape closes: true"
   external: []
 evidence_count: 5
 confidence: medium
-confidence_basis: 5 independent references with measured state; validation pending
+confidence_basis: "5 independent references with measured state; validation: 0 consistent, 1 inconsistent, 0 inconclusive"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 1 inconsistent, 0 inconclusive"

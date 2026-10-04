@@ -1,0 +1,356 @@
+{
+  "ref": "val-001",
+  "generated_by": "scripts/validation-check.ts",
+  "context": {
+    "home": {
+      "page_goal": [
+        "storytelling",
+        "brand-expression"
+      ],
+      "content_density": [
+        "low"
+      ],
+      "language": [
+        "latin"
+      ],
+      "device": [
+        "desktop-immersive"
+      ],
+      "motion_budget": [
+        "expressive"
+      ],
+      "engineering_budget": [
+        "heavy-webgl"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "rule": "accessibility.semantic-skeleton",
+      "page": "home",
+      "applies": true,
+      "result": "inconsistent",
+      "observations": [
+        "val-001.hierarchy.home-1440-h1-count",
+        "val-001.accessibility.home-1440-landmarks"
+      ],
+      "note": "h1 × 0; landmarks {\"header\":1,\"nav\":1,\"main\":0,\"footer\":1,\"aside\":0,\"search\":0}"
+    },
+    {
+      "rule": "accessibility.visible-focus",
+      "page": "home",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-001.accessibility.home-1440-focus-indicator-share"
+      ],
+      "note": "visible indicator on 94% of sampled tab stops"
+    },
+    {
+      "rule": "antipattern.text-in-images",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.dark-neon-without-identity",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.gradient-hero-imitation",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.color.home-1440-gradient-area"
+      ],
+      "note": "gradient area 0 of the page: no gradient-led hero"
+    },
+    {
+      "rule": "color.colour-from-content-or-identity",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "color.text-contrast-floor",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.accessibility.home-1440-axe-violations",
+        "val-001.accessibility.home-390-axe-violations"
+      ],
+      "note": "axe color-contrast nodes: 0 at 1440, 0 at 390"
+    },
+    {
+      "rule": "antipattern.glass-floating-nav",
+      "page": "home",
+      "applies": true,
+      "result": "no-measurement"
+    },
+    {
+      "rule": "antipattern.rounded-card-grid-default",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.components.home-1440-card-groups"
+      ],
+      "note": "0 large-radius card groups"
+    },
+    {
+      "rule": "components.consent-with-real-choice",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "components.data-display-direct",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "components.mobile-menu-sheet",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "components.persistent-primary-action",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "components.trust-next-to-the-ask",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "hierarchy.give-dense-pages-a-map",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "hierarchy.router-hero-for-task-intent",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "layout.cap-content-width",
+      "page": "home",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-001.responsive.home-xvp-container-curve"
+      ],
+      "note": "AVOID WHEN case (immersive/image-led page): container 1350 → 1800 px from 1440 to 1920"
+    },
+    {
+      "rule": "layout.expose-the-grid-for-systems",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "layout.structure-with-lines-not-shadows",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "antipattern.content-gating-preloader",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "motion.duration-by-purpose",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.motion.home-1440-transition-duration"
+      ],
+      "note": "median transition 250 ms on a story/brand page"
+    },
+    {
+      "rule": "motion.honour-reduced-motion",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.motion.home-1440-reduced-motion-response"
+      ],
+      "note": "reduced-motion handling detected ({\"runningAnimationsNormal\":3,\"runningAnimationsReduced\":3,\"cssReducedMotionRules\":0,\"jsReducedMotionQueries\":0,\"rafCallsReduced\":46,\"rafCallsNormal\":473})"
+    },
+    {
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.motion.home-1440-scroll-linked-changes"
+      ],
+      "note": "73 of 3546 sampled elements change with scroll"
+    },
+    {
+      "rule": "motion.warn-before-intense-motion",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "antipattern.late-injected-banners",
+      "page": "home",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-001.performance.home-390-cls-before-interaction",
+        "val-001.performance.home-1440-cls-before-interaction"
+      ],
+      "note": "no significant early layout shift (max 0.000)"
+    },
+    {
+      "rule": "performance.weight-follows-goal",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "antipattern.generic-premium-cluster",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.context-before-style",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.distinct-directions",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "process.verify-in-browser",
+      "page": "home",
+      "applies": true,
+      "result": "needs-analyst"
+    },
+    {
+      "rule": "responsive.transform-not-shrink",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.arabic-needs-more-leading",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.bilingual-type-system",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.isolate-mixed-runs",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.localized-logotype",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.logical-properties",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.mirror-direction-not-identity",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.no-tracking-no-case-arabic",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.numerals-one-system",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.root-direction",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "rtl.test-line-breaks-per-language",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "typography.display-steps-then-caps",
+      "page": "home",
+      "applies": true,
+      "result": "no-measurement"
+    },
+    {
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "page": "home",
+      "applies": true,
+      "result": "inconclusive",
+      "observations": [
+        "val-001.typography.home-1440-scale-range"
+      ],
+      "note": "rule permits but does not require extreme scale; measured 3.4×"
+    },
+    {
+      "rule": "typography.families-with-roles",
+      "page": "home",
+      "applies": true,
+      "result": "consistent",
+      "observations": [
+        "val-001.typography.home-1440-family-share"
+      ],
+      "note": "2 rendered family group(s) ≥ 2% (halyard 98%, arial 2%)"
+    },
+    {
+      "rule": "typography.kicker-labels",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "typography.modest-scale-for-dense-pages",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "typography.reading-measure",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "typography.reading-text-16-to-20",
+      "page": "home",
+      "applies": false
+    },
+    {
+      "rule": "typography.tighten-large-grotesk",
+      "page": "home",
+      "applies": true,
+      "result": "no-measurement"
+    },
+    {
+      "rule": "typography.two-tone-headline",
+      "page": "home",
+      "applies": false
+    }
+  ]
+}

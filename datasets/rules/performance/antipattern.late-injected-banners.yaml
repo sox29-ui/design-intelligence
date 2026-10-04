@@ -31,7 +31,19 @@ evidence:
       observations:
         - ref-012.performance.home-ar-390-cls-before-interaction
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconclusive
+      observations:
+        - val-001.performance.home-390-cls-before-interaction
+        - val-001.performance.home-1440-cls-before-interaction
+      note: "auto (home): no significant early layout shift (max 0.000)"
+    - ref: val-002
+      result: inconclusive
+      observations:
+        - val-002.performance.home-ar-390-cls-before-interaction
+        - val-002.performance.home-ar-1440-cls-before-interaction
+      note: "auto (home-ar): layout shift before interaction 0.127; cause not verified"
   external:
     - source_id: webdev-vitals
       note: CLS ≤ 0.1
@@ -39,8 +51,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 references with measured pre-interaction CLS > 0.1 + Web Vitals
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 0 inconsistent, 2 inconclusive"

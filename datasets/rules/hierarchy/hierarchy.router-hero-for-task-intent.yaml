@@ -24,6 +24,7 @@ verify:
 avoid_when:
   - brand launch, storytelling or single-product pages
   - pages where the visitor does not yet know what to choose
+  - cultural or institutional home pages that lead with a welcome statement — then route through a visible navigation bar and keep the top task (e.g. tickets) visible at 390
 rationale: "A public portal (search), a data publication (search + popular topics) and a luxury department store (department buttons over photography) all spend the first viewport on routing. INFERRED: intent is already formed, so persuasion copy delays the task."
 trade_offs:
   - less room for brand storytelling above the fold
@@ -44,14 +45,26 @@ evidence:
         - ref-012.hierarchy.home-en-a-department-router-hero
         - ref-012.hierarchy.home-en-a-why-router-hero
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-002
+      result: inconsistent
+      observations:
+        - val-002.hierarchy.home-ar-a-welcome-statement-hero
+        - val-002.hierarchy.home-ar-a-why-statement-first
+      note: "analyst (home-ar): cultural institution home spends the first viewport on a very large welcome statement; routing is delegated to the navigation bar (tickets kept visible)"
   external: []
 evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references in different industries and styles
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 1 inconsistent, 0 inconclusive"
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "refined after val-002 (museum home leads with a statement; routing via navigation, tickets visible on mobile): AVOID WHEN extended; unvalidated"

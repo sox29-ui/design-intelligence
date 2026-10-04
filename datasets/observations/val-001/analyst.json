@@ -1,0 +1,282 @@
+{
+  "ref_id": "val-001",
+  "authorship": "analyst",
+  "generator": "scripts/analyst.ts from analyst.src.yaml",
+  "generated_at": "2026-10-04T08:06:30.672Z",
+  "observations": [
+    {
+      "id": "val-001.motion.home-a-intro-loader",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "1440x900",
+      "category": "motion",
+      "property": "intro-loader",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "frame-sequence",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-frame-entrance-900.jpg",
+          "sha256": "383fc0ce35895863c6cdddeb19d4dc675e4dbad83286485c6be3a905b732f3b2"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-frame-entrance-2600.jpg",
+          "sha256": "f05a6c7034a29896a76a1fa17d4e8cadff39b6c6466d805cd1c4db0b94adbf04"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-frame-entrance-4200.jpg",
+          "sha256": "ed2363cf19965f8dcaad9516e2bad0666d51c0d305ff8a1dffaf75eadd0b1f32"
+        }
+      ],
+      "statement": "A full-screen green loading screen with an animated construction drawing of the product and a filling progress ring still covers the page 4.2 s after navigation began (lab, proxied network, software WebGL).",
+      "confidence": 0.9,
+      "assessment": "weakness",
+      "tags": [
+        "preloader",
+        "entrance"
+      ]
+    },
+    {
+      "id": "val-001.hierarchy.home-a-hero-composition",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "1440x900",
+      "category": "hierarchy",
+      "property": "hero-composition",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-top.jpg",
+          "sha256": "782d4b9aade65c255e1923898974057233ba60fa27f8401b943b4a58afc651bb"
+        }
+      ],
+      "statement": "First read is the product wordmark in very large cream letters at top left over a photographic desk scene (a cork coaster on a green cutting mat); second read is a short statement at right; a translucent frosted panel at bottom left credits the studio, and a video thumbnail sits at bottom right.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "hero",
+        "wordmark",
+        "display"
+      ]
+    },
+    {
+      "id": "val-001.responsive.home-a-composition-scales-with-viewport",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "cross-viewport",
+      "category": "responsive",
+      "property": "composition-scales-with-viewport",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/390x844-top.jpg",
+          "sha256": "f0c3bdfb9986699928da0ae42261a935ed04bebaa5290cd09400caa1fafb6a13"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-top.jpg",
+          "sha256": "782d4b9aade65c255e1923898974057233ba60fa27f8401b943b4a58afc651bb"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1920x1080-top.jpg",
+          "sha256": "4fa9c8577cbd0ceb5318423d4aac66c686e701272c58fd0b81f18a531fe1c040"
+        }
+      ],
+      "statement": "The wordmark keeps roughly the same share of the viewport width at 390, 1440 and 1920 (about 610 px wide at 1440 and about 810 px at 1920): the whole hero composition scales with the viewport instead of holding a desktop maximum.",
+      "confidence": 0.8,
+      "assessment": "neutral",
+      "tags": [
+        "scaling",
+        "display",
+        "wide-screen"
+      ]
+    },
+    {
+      "id": "val-001.responsive.home-a-mobile-recomposition",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "390x844",
+      "category": "responsive",
+      "property": "mobile-recomposition",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/390x844-top.jpg",
+          "sha256": "f0c3bdfb9986699928da0ae42261a935ed04bebaa5290cd09400caa1fafb6a13"
+        }
+      ],
+      "statement": "At 390 the navigation collapses into an outlined 'menu' pill and the wordmark, statement, product, studio panel and video thumbnail are re-stacked for the portrait frame rather than shrunk as one picture.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "mobile-transform"
+      ]
+    },
+    {
+      "id": "val-001.components.home-a-plain-text-nav",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "1440x900",
+      "category": "components",
+      "property": "plain-text-nav",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-top.jpg",
+          "sha256": "782d4b9aade65c255e1923898974057233ba60fa27f8401b943b4a58afc651bb"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-scroll-50.jpg",
+          "sha256": "3ef9407d191d0cb9351eb815d4b142693ca2e1015ec6b634e0004e46ee34045d"
+        }
+      ],
+      "statement": "Desktop navigation is four small uppercase text links at top right, the current one marked with a dotted underline; there is no bar, pill, blur or glow behind them.",
+      "confidence": 0.9,
+      "assessment": "neutral",
+      "tags": [
+        "navigation"
+      ]
+    },
+    {
+      "id": "val-001.color.home-a-ai-parody-glow",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "1440x900",
+      "category": "color",
+      "property": "ai-parody-glow",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-scroll-25.jpg",
+          "sha256": "03f1d24bd43d5abb5564b856b29c3859b696865d4e198a7b1c5930746cb301fc"
+        }
+      ],
+      "statement": "One section headed 'Powered by AI*' (its footnote names a vector-drawing program) frames the product in a full-screen rainbow glow vignette on a dark ground — the familiar 'AI product' look, staged as a joke.",
+      "confidence": 0.85,
+      "assessment": "neutral",
+      "tags": [
+        "gradient",
+        "glow",
+        "parody"
+      ]
+    },
+    {
+      "id": "val-001.color.home-a-palette-from-materials",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "palette-from-materials",
+      "value": "see statement",
+      "evidence_type": "OBSERVED",
+      "method": "screenshot",
+      "evidence": [
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-top.jpg",
+          "sha256": "782d4b9aade65c255e1923898974057233ba60fa27f8401b943b4a58afc651bb"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/1440x900-scroll-50.jpg",
+          "sha256": "3ef9407d191d0cb9351eb815d4b142693ca2e1015ec6b634e0004e46ee34045d"
+        },
+        {
+          "artifact": "research-artifacts/val-001/home/20261002T164916Z/390x844-top.jpg",
+          "sha256": "f0c3bdfb9986699928da0ae42261a935ed04bebaa5290cd09400caa1fafb6a13"
+        }
+      ],
+      "statement": "Outside the parody section the palette comes from the product scene: cork orange, cutting-mat green, wood tones and cream type; later sections use a warm dark brown with the cork orange.",
+      "confidence": 0.85,
+      "assessment": "strength",
+      "tags": [
+        "palette",
+        "materials"
+      ]
+    },
+    {
+      "id": "val-001.motion.home-a-why-loader-hides-content",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "cross-viewport",
+      "category": "motion",
+      "property": "why-loader-hides-content",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "val-001.motion.home-a-intro-loader"
+        },
+        {
+          "observation": "val-001.hierarchy.home-a-hero-composition"
+        }
+      ],
+      "statement": "The loader waits for the WebGL scene, but the wordmark, statement and navigation are ordinary page content that could be shown before the scene is ready; the loader hides that content along with the cost.",
+      "confidence": 0.6,
+      "assessment": "weakness",
+      "tags": [
+        "preloader"
+      ]
+    },
+    {
+      "id": "val-001.color.home-a-why-parody-is-justified",
+      "ref_id": "val-001",
+      "page": "home",
+      "source_url": "https://oryzo.ai/",
+      "capture_id": "20261002T164916Z",
+      "captured_at": "2026-10-02T16:49:16.414Z",
+      "viewport": "cross-viewport",
+      "category": "color",
+      "property": "why-parody-is-justified",
+      "value": "see statement",
+      "evidence_type": "INFERRED",
+      "method": "analyst-judgment",
+      "evidence": [
+        {
+          "observation": "val-001.color.home-a-ai-parody-glow"
+        },
+        {
+          "observation": "val-001.color.home-a-palette-from-materials"
+        }
+      ],
+      "statement": "The dark-ground rainbow glow appears only where the copy parodies 'AI-powered' marketing, and the rest of the site draws colour from the product; the generic signature is used on purpose for a reason that comes from the content, not as a default look.",
+      "confidence": 0.7,
+      "assessment": "strength",
+      "tags": [
+        "anti-pattern-boundary"
+      ]
+    }
+  ]
+}

@@ -50,14 +50,27 @@ evidence:
         - ref-004.motion.home-1440-transition-duration
       note: "choreography: p75 1500 ms"
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.motion.home-1440-transition-duration
+      note: "auto (home): median transition 250 ms on a story/brand page"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.motion.home-ar-1440-transition-duration
+      note: "auto (home-ar): median transition 350 ms on a task/information/commerce page (rule: ≈200–300 ms)"
   external: []
 evidence_count: 8
-confidence: medium
-confidence_basis: 8 independent references (measured durations); validation pending
+confidence: high
+confidence_basis: 8 independent references across 6 archetypes (measured durations); consistent on val-001 and val-002 (measured)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation: confidence medium → high (D-006 criteria met; measured validation consistent, D-021)"

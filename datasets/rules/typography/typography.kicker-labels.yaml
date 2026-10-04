@@ -35,7 +35,12 @@ evidence:
       observations:
         - ref-011.components.home-a-content-type-skins
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.typography.home-ar-a-arabic-category-labels
+      note: "analyst (home-ar): small bold Arabic category labels distinguished by weight, not case or tracking"
   external:
     - source_id: rtlstyling-shadeed
       note: no letter-spacing for Arabic
@@ -43,8 +48,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent references, Latin and Arabic
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

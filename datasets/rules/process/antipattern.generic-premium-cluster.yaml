@@ -45,7 +45,21 @@ evidence:
       observations:
         - ref-009.color.home-a-why-ribbon-is-signature
       note: gradient as owned brand signature
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.color.home-a-ai-parody-glow
+        - val-001.color.home-a-palette-from-materials
+        - val-001.components.home-a-plain-text-nav
+        - val-001.color.home-a-why-parody-is-justified
+      note: "analyst (home): parts of the cluster (giant wordmark, a frosted panel, a glow section) appear, each tied to the product scene or the parody; not a default template"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.layout.home-ar-a-bands-and-square-cards
+        - val-002.color.home-ar-a-greyscale-ui-colour-from-art
+      note: "analyst (home-ar): none of the cluster moves present (no gradients, glass, glow, rounded card grid)"
   external:
     - source_id: di-research-report
       note: W11 "Awwwards-flavored AI slop" cluster
@@ -53,8 +67,11 @@ evidence_count: 4
 confidence: medium
 confidence_basis: report warning + 4 references achieving quality without the cluster + 2 justified partial uses
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 2 consistent, 0 inconsistent, 0 inconclusive"

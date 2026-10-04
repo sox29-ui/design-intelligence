@@ -36,7 +36,12 @@ evidence:
       observations:
         - ref-011.rtl.home-a-mobile-header-rtl
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.rtl.home-ar-a-rtl-mirroring
+      note: "analyst (home-ar): layout and arrows mirrored; bilingual logotype and check marks not mirrored"
   external:
     - source_id: rtlstyling-shadeed
       note: what to flip and what not to flip
@@ -44,8 +49,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: 3 independent Arabic references + practitioner source
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

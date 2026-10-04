@@ -1,0 +1,93 @@
+# Analyst observations — val-001 Oryzo AI (validation split). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1920-top, 1440-scroll-25, 1440-scroll-50, 1440-frame-entrance-900/2600/4200.
+items:
+  - key: intro-loader
+    page: home
+    viewport: 1440x900
+    category: motion
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-900, 1440x900-frame-entrance-2600, 1440x900-frame-entrance-4200]
+    statement: "A full-screen green loading screen with an animated construction drawing of the product and a filling progress ring still covers the page 4.2 s after navigation began (lab, proxied network, software WebGL)."
+    confidence: 0.9
+    assessment: weakness
+    tags: [preloader, entrance]
+  - key: hero-composition
+    page: home
+    viewport: 1440x900
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top]
+    statement: "First read is the product wordmark in very large cream letters at top left over a photographic desk scene (a cork coaster on a green cutting mat); second read is a short statement at right; a translucent frosted panel at bottom left credits the studio, and a video thumbnail sits at bottom right."
+    confidence: 0.85
+    assessment: neutral
+    tags: [hero, wordmark, display]
+  - key: composition-scales-with-viewport
+    page: home
+    viewport: cross-viewport
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top, 1440x900-top, 1920x1080-top]
+    statement: "The wordmark keeps roughly the same share of the viewport width at 390, 1440 and 1920 (about 610 px wide at 1440 and about 810 px at 1920): the whole hero composition scales with the viewport instead of holding a desktop maximum."
+    confidence: 0.8
+    assessment: neutral
+    tags: [scaling, display, wide-screen]
+  - key: mobile-recomposition
+    page: home
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "At 390 the navigation collapses into an outlined 'menu' pill and the wordmark, statement, product, studio panel and video thumbnail are re-stacked for the portrait frame rather than shrunk as one picture."
+    confidence: 0.85
+    assessment: strength
+    tags: [mobile-transform]
+  - key: plain-text-nav
+    page: home
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-50]
+    statement: "Desktop navigation is four small uppercase text links at top right, the current one marked with a dotted underline; there is no bar, pill, blur or glow behind them."
+    confidence: 0.9
+    assessment: neutral
+    tags: [navigation]
+  - key: ai-parody-glow
+    page: home
+    viewport: 1440x900
+    category: color
+    type: OBSERVED
+    shots: [1440x900-scroll-25]
+    statement: "One section headed 'Powered by AI*' (its footnote names a vector-drawing program) frames the product in a full-screen rainbow glow vignette on a dark ground — the familiar 'AI product' look, staged as a joke."
+    confidence: 0.85
+    assessment: neutral
+    tags: [gradient, glow, parody]
+  - key: palette-from-materials
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-50, 390x844-top]
+    statement: "Outside the parody section the palette comes from the product scene: cork orange, cutting-mat green, wood tones and cream type; later sections use a warm dark brown with the cork orange."
+    confidence: 0.85
+    assessment: strength
+    tags: [palette, materials]
+  - key: why-loader-hides-content
+    page: home
+    viewport: cross-viewport
+    category: motion
+    type: INFERRED
+    based_on: [intro-loader, hero-composition]
+    statement: "The loader waits for the WebGL scene, but the wordmark, statement and navigation are ordinary page content that could be shown before the scene is ready; the loader hides that content along with the cost."
+    confidence: 0.6
+    assessment: weakness
+    tags: [preloader]
+  - key: why-parody-is-justified
+    page: home
+    viewport: cross-viewport
+    category: color
+    type: INFERRED
+    based_on: [ai-parody-glow, palette-from-materials]
+    statement: "The dark-ground rainbow glow appears only where the copy parodies 'AI-powered' marketing, and the rest of the site draws colour from the product; the generic signature is used on purpose for a reason that comes from the content, not as a default look."
+    confidence: 0.7
+    assessment: strength
+    tags: [anti-pattern-boundary]

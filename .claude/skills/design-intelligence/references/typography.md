@@ -5,6 +5,33 @@
 
 ## Rules (8)
 
+### One or two families (or one superfamily) with explicit roles
+<!-- rule:typography.families-with-roles -->
+`typography.families-with-roles` · principle · confidence **high** · evidence: 10 independent ref(s) · provisional
+
+**Use one or two type families — or one superfamily in several widths — each with a declared role (display, text, label); add a third only for a functional role such as monospace data or a single accent.**
+
+- **WHEN:** page_goal ∈ {any}
+- **CONSIDER:** superfamily widths for display vs text; monospace for labels/figures when it serves data or tone; record roles as tokens
+- **VERIFY:** verify-page families list ≤ 2–3; each family maps to one role
+- **TRADE-OFFS:** fewer expressive accents
+- **WHY (inferred):** Ten of twelve references render one or two families, or one superfamily whose widths appear as separate family names (Scout, Exat, Tabby). The two exceptions are a campaign page and a bilingual news page that add Latin faces for captions or effects.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-005 (Exat Typeface), ref-003 (Scout Motors), ref-008 (Our World in Data), ref-009 (Stripe), ref-001 (Lando Norris), ref-004 (Dropbox Brand), ref-006 (See What Eye See — Eye Condition Simulator), ref-012 (Ounass) · counterexamples: ref-011 (Megaphone) — four families: one Arabic family plus three Latin faces for captions and display; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — campaign mixes grotesk, serif and system faces · validation: val-001: consistent, val-002: consistent. Details: `npm run why -- typography.families-with-roles`.
+
+### Running text at 16–20 px on every viewport
+<!-- rule:typography.reading-text-16-to-20 -->
+`typography.reading-text-16-to-20` · principle · confidence **high** · evidence: 5 independent ref(s) · provisional
+
+**Set the dominant running-text size between 16 and 20 px at all widths for reading, conversion and public pages; 13–14 px only for dense data UI or compact metadata, and never as the dominant size for Arabic.**
+
+- **WHEN:** page_goal ∈ {information-consumption, conversion, task-completion}
+- **CONSIDER:** 16 px minimum body; 18–20 px for public/editorial or Arabic body; keep body size constant across breakpoints (scale display, not body)
+- **VERIFY:** verify-page tiny-text warning (< 12 px share) at 390; Arabic glyph detail legible at 390
+- **AVOID WHEN:** dense data tables and dashboards may use 13–14 px with tabular figures and generous row height
+- **TRADE-OFFS:** longer pages; less density for merchandising
+- **WHY (inferred):** Body size is constant across viewports in every reference; reading-led sites use 16–20 px. The 12 px luxury storefront is the one reference where small text is the dominant size, and it pairs with small Arabic glyphs on phones.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-011 (Megaphone), ref-009 (Stripe), ref-006 (See What Eye See — Eye Condition Simulator) · counterexamples: ref-012 (Ounass) — 12 px dominant text in both languages; legibility weakness on phones; ref-008 (Our World in Data) — 13–14 px in a dense data tool — acceptable with tabular layout · validation: val-002: consistent. Details: `npm run why -- typography.reading-text-16-to-20`.
+
 ### Scale display type in steps and cap it at desktop
 <!-- rule:typography.display-steps-then-caps -->
 `typography.display-steps-then-caps` · principle · confidence **medium** · evidence: 7 independent ref(s) · provisional
@@ -14,10 +41,10 @@
 - **WHEN:** page_goal ∈ {any}
 - **CONSIDER:** clamp() with a max equal to the 1440 size; or 2–3 breakpoint steps (390 / 768 / 1440); re-check line breaks at each step
 - **VERIFY:** display size curve at 390/768/1440/1920 (verify-page summary); no single word lines at 390; line count does not explode at 768
-- **AVOID WHEN:** type-as-image pages that reorient instead of scale (see typography.extreme-scale-needs-a-reason)
+- **AVOID WHEN:** type-as-image pages that reorient instead of scale (see typography.extreme-scale-needs-a-reason); immersive full-bleed compositions that scale as a whole (their container is not capped either — see layout.cap-content-width)
 - **TRADE-OFFS:** very wide screens get no extra drama
 - **WHY (inferred):** Seven references show the same curve: e.g. 40→64→64, 34→48→48, 44→60→60, 24→32→32 px. Capping keeps measure and hierarchy stable on wide screens where containers are capped too.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-009 (Stripe), ref-010 (Tabby), ref-008 (Our World in Data), ref-012 (Ounass), ref-011 (Megaphone), ref-004 (Dropbox Brand) · counterexamples: ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — above-the-fold text is an index box, smaller on desktop by design; the big type lives in chapter scenes. Details: `npm run why -- typography.display-steps-then-caps`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-009 (Stripe), ref-010 (Tabby), ref-008 (Our World in Data), ref-012 (Ounass), ref-011 (Megaphone), ref-004 (Dropbox Brand) · counterexamples: ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — above-the-fold text is an index box, smaller on desktop by design; the big type lives in chapter scenes · validation: val-001: inconsistent, val-002: consistent. Details: `npm run why -- typography.display-steps-then-caps`.
 
 ### Extreme display scale only when type is the message
 <!-- rule:typography.extreme-scale-needs-a-reason -->
@@ -31,20 +58,7 @@
 - **AVOID WHEN:** dashboards and tools; transactional forms; dense editorial/listing pages; the conversion path of commerce pages
 - **TRADE-OFFS:** pushes content below the fold; heavy font files; risk of the generic "giant hero" signature when unjustified
 - **WHY (inferred):** The three references with ratios far above the dense-page range (specimen 41×, storytelling bands 14× and 36×) all use it where type is the subject or a single statement. Exat rotates its word on mobile to keep the scale relationship.
-- *Evidence:* supported by ref-005 (Exat Typeface), ref-003 (Scout Motors), ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)), ref-001 (Lando Norris) · standards: di-research-report. Details: `npm run why -- typography.extreme-scale-needs-a-reason`.
-
-### One or two families (or one superfamily) with explicit roles
-<!-- rule:typography.families-with-roles -->
-`typography.families-with-roles` · principle · confidence **medium** · evidence: 10 independent ref(s) · provisional
-
-**Use one or two type families — or one superfamily in several widths — each with a declared role (display, text, label); add a third only for a functional role such as monospace data or a single accent.**
-
-- **WHEN:** page_goal ∈ {any}
-- **CONSIDER:** superfamily widths for display vs text; monospace for labels/figures when it serves data or tone; record roles as tokens
-- **VERIFY:** verify-page families list ≤ 2–3; each family maps to one role
-- **TRADE-OFFS:** fewer expressive accents
-- **WHY (inferred):** Ten of twelve references render one or two families, or one superfamily whose widths appear as separate family names (Scout, Exat, Tabby). The two exceptions are a campaign page and a bilingual news page that add Latin faces for captions or effects.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-005 (Exat Typeface), ref-003 (Scout Motors), ref-008 (Our World in Data), ref-009 (Stripe), ref-001 (Lando Norris), ref-004 (Dropbox Brand), ref-006 (See What Eye See — Eye Condition Simulator), ref-012 (Ounass) · counterexamples: ref-011 (Megaphone) — four families: one Arabic family plus three Latin faces for captions and display; ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)) — campaign mixes grotesk, serif and system faces. Details: `npm run why -- typography.families-with-roles`.
+- *Evidence:* supported by ref-005 (Exat Typeface), ref-003 (Scout Motors), ref-002 (Shopify Editions — The Renaissance Edition (Winter '26)), ref-001 (Lando Norris) · validation: val-001: inconclusive · standards: di-research-report. Details: `npm run why -- typography.extreme-scale-needs-a-reason`.
 
 ### Small labels classify content; their form depends on script
 <!-- rule:typography.kicker-labels -->
@@ -58,7 +72,7 @@
 - **AVOID WHEN:** low-density single-message pages where labels add noise
 - **TRADE-OFFS:** tiny uppercase labels easily fail contrast
 - **WHY (inferred):** The data publication and the personal-brand site use small uppercase sans kickers; the Arabic news site uses small grey labels without case or tracking.
-- *Evidence:* supported by ref-008 (Our World in Data), ref-003 (Scout Motors), ref-011 (Megaphone) · standards: rtlstyling-shadeed. Details: `npm run why -- typography.kicker-labels`.
+- *Evidence:* supported by ref-008 (Our World in Data), ref-003 (Scout Motors), ref-011 (Megaphone) · validation: val-002: consistent · standards: rtlstyling-shadeed. Details: `npm run why -- typography.kicker-labels`.
 
 ### Keep display scale modest on task, information and dense pages
 <!-- rule:typography.modest-scale-for-dense-pages -->
@@ -69,10 +83,10 @@
 - **WHEN:** page_goal ∈ {task-completion, information-consumption, data-interaction, conversion}; content_density ∈ {medium, high}
 - **CONSIDER:** display ≈ 2–3.5× body at 1440 (corpus range 1.9–3.5); one display size per page; headings step down in 1–2 sizes; search or primary CTA inside the first viewport at 390
 - **VERIFY:** display text ≤ 4 lines at 390; primary task element visible without scrolling at 390; heading levels match visual levels
-- **AVOID WHEN:** the type itself is the product or the message (see typography.extreme-scale-needs-a-reason)
+- **AVOID WHEN:** the type itself is the product or the message (see typography.extreme-scale-needs-a-reason); a cultural or institutional home page whose first viewport is a single welcome statement (brand expression as co-primary goal) — keep the content below it modest
 - **TRADE-OFFS:** less drama; identity has to come from colour, imagery or composition
 - **WHY (inferred):** Measured scale ranges stay between 1.9× and 3.5× on every task, information, commerce and conversion reference, independent of style (utilitarian, editorial, luxury, illustrative). INFERRED: large display steals the first viewport from the task.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-010 (Tabby), ref-011 (Megaphone), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-003 (Scout Motors) — commerce page with a storytelling section reaches 36× — the giant type sits in a heritage-story band, not in the conversion path. Details: `npm run why -- typography.modest-scale-for-dense-pages`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-008 (Our World in Data), ref-009 (Stripe), ref-010 (Tabby), ref-011 (Megaphone), ref-012 (Ounass), ref-004 (Dropbox Brand) · counterexamples: ref-003 (Scout Motors) — commerce page with a storytelling section reaches 36× — the giant type sits in a heritage-story band, not in the conversion path · validation: val-002: inconsistent. Details: `npm run why -- typography.modest-scale-for-dense-pages`.
 
 ### Constrain the reading column
 <!-- rule:typography.reading-measure -->
@@ -86,21 +100,7 @@
 - **AVOID WHEN:** very short UI strings, captions and labels
 - **TRADE-OFFS:** empty space beside the column on wide screens
 - **WHY (inferred):** The public-service start page keeps a single reading column (~61 cpl at 1440); the data publication lets paragraphs run 70–110 cpl, which the eye has to track across a 1280 px container.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-011 (Megaphone) · counterexamples: ref-008 (Our World in Data) — paragraphs reach 80–110 cpl in a 1280 px container. Details: `npm run why -- typography.reading-measure`.
-
-### Running text at 16–20 px on every viewport
-<!-- rule:typography.reading-text-16-to-20 -->
-`typography.reading-text-16-to-20` · principle · confidence **medium** · evidence: 5 independent ref(s) · provisional
-
-**Set the dominant running-text size between 16 and 20 px at all widths for reading, conversion and public pages; 13–14 px only for dense data UI or compact metadata, and never as the dominant size for Arabic.**
-
-- **WHEN:** page_goal ∈ {information-consumption, conversion, task-completion}
-- **CONSIDER:** 16 px minimum body; 18–20 px for public/editorial or Arabic body; keep body size constant across breakpoints (scale display, not body)
-- **VERIFY:** verify-page tiny-text warning (< 12 px share) at 390; Arabic glyph detail legible at 390
-- **AVOID WHEN:** dense data tables and dashboards may use 13–14 px with tabular figures and generous row height
-- **TRADE-OFFS:** longer pages; less density for merchandising
-- **WHY (inferred):** Body size is constant across viewports in every reference; reading-led sites use 16–20 px. The 12 px luxury storefront is the one reference where small text is the dominant size, and it pairs with small Arabic glyphs on phones.
-- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-011 (Megaphone), ref-009 (Stripe), ref-006 (See What Eye See — Eye Condition Simulator) · counterexamples: ref-012 (Ounass) — 12 px dominant text in both languages; legibility weakness on phones; ref-008 (Our World in Data) — 13–14 px in a dense data tool — acceptable with tabular layout. Details: `npm run why -- typography.reading-text-16-to-20`.
+- *Evidence:* supported by ref-007 (GOV.UK), ref-010 (Tabby), ref-011 (Megaphone) · counterexamples: ref-008 (Our World in Data) — paragraphs reach 80–110 cpl in a 1280 px container · validation: val-002: consistent. Details: `npm run why -- typography.reading-measure`.
 
 ### Tighten large grotesk display slightly; never track Arabic
 <!-- rule:typography.tighten-large-grotesk -->

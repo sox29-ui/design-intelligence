@@ -49,6 +49,10 @@ npm run normalize -- ref-001     # raw capture → VERIFIED observations
 npm run skill:build              # compile rules → skill references
 npm run why -- <rule-id>         # provenance: why does this rule exist?
 npm run corpus:check             # diversity / split / studio constraints
+npm run validation:check -- val-001 val-002 [--apply]   # test rules against the validation split
+npm run skill:package            # deterministic ZIP of the skill → dist/
+npm run test:browser             # verifier fixture tests (Chromium)
+npm run bench:score -- cycle-01  # benchmark: verify + Lighthouse + static analysis → automated.json
 ```
 
 See [scripts/README.md](scripts/README.md) for environment notes (browser, proxy CA).

@@ -1,0 +1,104 @@
+# Analyst observations — val-002 Mathaf (Arabic home, validation split). Compiled by scripts/analyst.ts.
+# Inspected: 1440-top, 390-top, 1440-scroll-25, 1440-scroll-50, 390-scroll-25, 1920-scroll-25, 1440-frame-entrance-900.
+notes: "Hero background media did not render in capture (grey gradient where an image or video is expected)."
+items:
+  - key: welcome-statement-hero
+    page: home-ar
+    viewport: cross-viewport
+    category: hierarchy
+    type: OBSERVED
+    shots: [1440x900-top, 390x844-top]
+    statement: "The first viewport holds a notice strip, a dark utility bar with the parent organisation's bilingual logotype, the main navigation (events, visit planning, learning, encyclopedia, tickets) and a very large white, underlined Arabic welcome statement naming the museum; there is no search field or task picker."
+    confidence: 0.9
+    assessment: neutral
+    tags: [hero, statement, display]
+  - key: tickets-persist-on-mobile
+    page: home-ar
+    viewport: 390x844
+    category: components
+    type: OBSERVED
+    shots: [390x844-top]
+    statement: "At 390 the navigation collapses to a menu button and the tickets link stays visible next to it."
+    confidence: 0.85
+    assessment: strength
+    tags: [navigation, persistent-cta]
+  - key: bands-and-square-cards
+    page: home-ar
+    viewport: 1440x900
+    category: layout
+    type: OBSERVED
+    shots: [1440x900-scroll-25, 1440x900-scroll-50]
+    statement: "Sections alternate full-width black and white bands; cards are square-cornered photographs with underlined titles and arrow links; no shadows, glows or rounded containers."
+    confidence: 0.9
+    assessment: neutral
+    tags: [structure, cards]
+  - key: greyscale-ui-colour-from-art
+    page: home-ar
+    viewport: cross-viewport
+    category: color
+    type: OBSERVED
+    shots: [1440x900-scroll-25, 1440x900-scroll-50, 1440x900-top]
+    statement: "The interface is black, white and grey; colour comes from artworks and event photography, plus one saturated green used for a large animated marquee band with a check-marked list of the museum's offers."
+    confidence: 0.85
+    assessment: neutral
+    tags: [palette, accent]
+  - key: rtl-mirroring
+    page: home-ar
+    viewport: cross-viewport
+    category: rtl
+    type: OBSERVED
+    shots: [1440x900-top, 1440x900-scroll-25, 1440x900-scroll-50]
+    statement: "The layout is mirrored: logo at the right edge, menu at the left; link arrows point left (forward in Arabic); the parent organisation's bilingual logotype and the check marks in the marquee are not mirrored."
+    confidence: 0.9
+    assessment: strength
+    tags: [mirroring, icons]
+  - key: arabic-category-labels
+    page: home-ar
+    viewport: cross-viewport
+    category: typography
+    type: OBSERVED
+    shots: [1920x1080-scroll-25, 390x844-scroll-25]
+    statement: "Event cards carry small bold Arabic category labels (talk, film screening, exhibitions, adults) beside a lighter date line; the labels differ by weight, not by case or letter-spacing."
+    confidence: 0.85
+    assessment: strength
+    tags: [labels, kicker]
+  - key: consent-reject-as-link
+    page: home-ar
+    viewport: 1440x900
+    category: components
+    type: OBSERVED
+    shots: [1440x900-frame-entrance-900]
+    statement: "A cookie banner anchored at the bottom edge shows 'agree' as a bold control with an arrow, while 'reject' is a small underlined text link next to 'learn more' and 'change settings'."
+    confidence: 0.85
+    assessment: weakness
+    tags: [consent]
+  - key: full-width-card-grid
+    page: home-ar
+    viewport: 1920x1080
+    category: layout
+    type: OBSERVED
+    shots: [1920x1080-scroll-25, 1440x900-scroll-25]
+    statement: "At 1920 the three-column event grid spans almost the whole viewport width with about 10 px side margins, as it does at 1440; card images grow with the viewport."
+    confidence: 0.85
+    assessment: neutral
+    tags: [container, wide-screen]
+  - key: mobile-stacking
+    page: home-ar
+    viewport: 390x844
+    category: responsive
+    type: OBSERVED
+    shots: [390x844-scroll-25, 1440x900-scroll-25]
+    statement: "At 390 the three-column card rows become one column of the same cards; headings and descriptions keep their roles and little content is dropped."
+    confidence: 0.85
+    assessment: neutral
+    tags: [mobile]
+  - key: why-statement-first
+    page: home-ar
+    viewport: cross-viewport
+    category: hierarchy
+    type: INFERRED
+    based_on: [welcome-statement-hero, tickets-persist-on-mobile, val-002.typography.home-ar-1440-scale-range]
+    statement: "On a cultural institution's home page, brand expression is a co-primary goal: the first viewport is spent on a welcome statement in very large type (about 8× body) while routing is delegated to the navigation bar, with tickets kept visible. Rules that tie information goals to a modest, router-like first viewport do not hold in this context."
+    confidence: 0.7
+    assessment: neutral
+    tags: [context-boundary]

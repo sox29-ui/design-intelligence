@@ -35,7 +35,19 @@ evidence:
       observations:
         - ref-003.components.home-a-inset-header-bars
       note: floating inset header, but solid and brand-shaped (no blur)
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.components.home-a-plain-text-nav
+        - val-001.responsive.home-a-mobile-recomposition
+      note: "analyst (home): plain text links on desktop and an outlined menu pill on mobile; no blurred floating bar"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.components.home-ar-1440-header
+        - val-002.components.home-ar-1440-effects
+      note: "auto (home-ar): header relative, backdrop none: the generic pattern is absent"
   external:
     - source_id: di-research-report
       note: W11 floating nav
@@ -43,8 +55,11 @@ evidence_count: 3
 confidence: medium
 confidence_basis: report + 3 references with solid headers + 1 instructive variant
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 2 consistent, 0 inconsistent, 0 inconclusive"

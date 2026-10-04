@@ -38,14 +38,28 @@ evidence:
         - ref-001.color.home-a-lime-identity-accent
         - ref-001.color.home-a-why-lime-justified
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-001
+      result: consistent
+      observations:
+        - val-001.color.home-a-palette-from-materials
+        - val-001.color.home-a-ai-parody-glow
+      note: "analyst (home): palette taken from the product scene (cork, cutting mat, wood); the one saturated section is content-motivated"
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.color.home-ar-a-greyscale-ui-colour-from-art
+      note: "analyst (home-ar): neutral interface, colour from artworks and photography; one saturated green marquee band (its brand role not verified)"
   external: []
 evidence_count: 4
 confidence: medium
 confidence_basis: 4 independent references
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 2 consistent, 0 inconsistent, 0 inconclusive"

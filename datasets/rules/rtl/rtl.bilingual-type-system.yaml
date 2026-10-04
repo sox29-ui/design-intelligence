@@ -37,7 +37,13 @@ evidence:
         - ref-012.typography.home-ar-a-arabic-type-swap
         - ref-012.typography.home-ar-a-why-bilingual-voice-loss
       note: Latin display serif lost in Arabic
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.typography.home-ar-1440-webfonts
+        - val-002.typography.home-ar-1440-family-share
+      note: "analyst (home-ar): Arabic text faces paired with a Latin face of the same design (Helvetica Neue LT Arabic / LT Pro), DIN Next Arabic for labels, a custom script for display"
   external:
     - source_id: rtlstyling-shadeed
       note: choose the Arabic font deliberately
@@ -45,8 +51,11 @@ evidence_count: 2
 confidence: low
 confidence_basis: 2 independent references + 1 counterexample
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

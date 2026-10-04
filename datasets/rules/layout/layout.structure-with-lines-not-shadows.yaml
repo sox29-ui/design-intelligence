@@ -49,14 +49,22 @@ evidence:
       observations:
         - ref-010.color.home-ar-a-illustration-identity
       note: large-radius image cards are part of a deliberately playful illustrated identity
-  validation: []
+  validation:
+    - ref: val-002
+      result: consistent
+      observations:
+        - val-002.layout.home-ar-a-bands-and-square-cards
+      note: "analyst (home-ar): full-width black/white bands, square-cornered cards, underlines; no shadows, glows or large radii"
   external: []
 evidence_count: 5
 confidence: medium
 confidence_basis: 5 independent references (measured effects + observed structure)
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 1 consistent, 0 inconsistent, 0 inconclusive"

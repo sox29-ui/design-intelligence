@@ -55,16 +55,24 @@ evidence:
         - ref-001.typography.home-1440-scale-range
         - ref-001.typography.home-a-display-type-mix
   counterexamples: []
-  validation: []
+  validation:
+    - ref: val-001
+      result: inconclusive
+      observations:
+        - val-001.typography.home-1440-scale-range
+      note: "auto (home): rule permits but does not require extreme scale; measured 3.4×"
   external:
     - source_id: di-research-report
       note: "example rule shape: oversized display WHEN low density + storytelling"
 evidence_count: 4
 confidence: medium
-confidence_basis: 4 independent references, all low-density brand/story contexts; validation pending
+confidence_basis: "4 independent references, all low-density brand/story contexts; validation: 0 consistent, 0 inconsistent, 1 inconclusive"
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02
     change: created from extraction-split evidence (Phase D synthesis)
+  - version: 0.1.0
+    date: 2026-10-04
+    change: "validation (val-001, val-002; val-003 unavailable): 0 consistent, 0 inconsistent, 1 inconclusive"

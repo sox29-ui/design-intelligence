@@ -46,7 +46,7 @@ evidence_count: 3
 confidence: medium
 confidence_basis: process invariant from the report, illustrated by 3 render-only defects in the corpus
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-04
 history:
   - version: 0.1.0
     date: 2026-10-02

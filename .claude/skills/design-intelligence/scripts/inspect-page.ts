@@ -57,6 +57,8 @@ export type InspectResult = {
 };
 
 const CHALLENGE_RE = /just a moment|attention required|access denied|captcha|verify you are human|are you a robot|request unsuccessful|pardon our interruption/i;
+// Error pages served with HTTP 200 ("soft" errors). The text is tested in the browser and never stored.
+export const SOFT_ERROR_RE = /internal server error|service unavailable|something went wrong|unexpected error|page (?:not found|can.t be found)|\b50[0234]\b[\s\S]{0,60}?(?:error|خطأ)|(?:error|خطأ)[\s\S]{0,60}?\b50[0234]\b|حدث خطأ/i;
 const CONSENT_CONTAINER = '[id*="cookie" i], [class*="cookie" i], [id*="consent" i], [class*="consent" i], [id*="gdpr" i], [class*="gdpr" i], #onetrust-banner-sdk, #onetrust-consent-sdk, #CybotCookiebotDialog, [id*="didomi" i], [id*="usercentrics" i], [aria-label*="cookie" i], [role="dialog"], [role="alertdialog"]';
 const REJECT_RE = /reject|decline|refuse|deny|disagree|only (necessary|essential|required)|(necessary|essential|required) only|continue without|رفض|ارفض|الضرورية فقط/i;
 const MENU_HINT_RE = /menu|navigation|nav|burger|القائمة|قائمة/i;
@@ -541,9 +543,10 @@ export async function inspectPage(o: InspectOptions): Promise<InspectResult> {
         finalUrl = page.url();
         const title = await page.title().catch(() => '');
         const bodyLen = await page.evaluate(() => (document.body ? document.body.innerText.length : 0)).catch(() => 0);
-        if (CHALLENGE_RE.test(title) || (http !== null && http >= 400 && bodyLen < 400)) {
+        const softError = bodyLen < 2000 && (await page.evaluate((src) => new RegExp(src, 'i').test(document.body ? document.body.innerText : ''), SOFT_ERROR_RE.source).catch(() => false));
+        if (CHALLENGE_RE.test(title) || (http !== null && http >= 400 && bodyLen < 400) || softError) {
           blocked = true;
-          blockedReason = `challenge or error page (http ${http})`;
+          blockedReason = softError ? `error page served with http ${http}` : `challenge or error page (http ${http})`;
           vpResults.push({ name: vp.name, width: vp.width, height: vp.height, status: 'blocked', http_status: http, error: blockedReason });
           await ctx.close();
           break;

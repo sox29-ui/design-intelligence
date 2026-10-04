@@ -3,116 +3,439 @@
   "$id": "https://di.local/schemas/corpus.schema.json",
   "title": "DI corpus manifest",
   "type": "object",
-  "required": ["version", "status", "collected_through", "references"],
+  "required": [
+    "version",
+    "status",
+    "collected_through",
+    "references"
+  ],
   "additionalProperties": false,
   "properties": {
-    "version": { "type": "integer", "minimum": 1 },
-    "status": { "enum": ["draft", "frozen"] },
-    "frozen_at": { "type": ["string", "null"], "format": "date" },
-    "collected_through": { "type": "string", "format": "date", "description": "Discovery cut-off date (award year is not treated as complete)." },
-    "notes": { "type": "string" },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "frozen"
+      ]
+    },
+    "frozen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "collected_through": {
+      "type": "string",
+      "format": "date",
+      "description": "Discovery cut-off date (award year is not treated as complete)."
+    },
+    "notes": {
+      "type": "string"
+    },
     "references": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "#/$defs/reference" }
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
     }
   },
   "$defs": {
     "reference": {
       "type": "object",
-      "required": ["id", "name", "url", "pages", "split", "discovery", "dimensions", "selection", "access"],
+      "required": [
+        "id",
+        "name",
+        "url",
+        "pages",
+        "split",
+        "discovery",
+        "dimensions",
+        "selection",
+        "access"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "pattern": "^(ref|val|hol)-[0-9]{3}$" },
-        "name": { "type": "string", "minLength": 1 },
-        "url": { "type": "string", "format": "uri" },
+        "id": {
+          "type": "string",
+          "pattern": "^(ref|val|hol)-[0-9]{3}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
         "pages": {
           "type": "array",
           "minItems": 1,
           "items": {
             "type": "object",
-            "required": ["id", "url", "purpose"],
+            "required": [
+              "id",
+              "url",
+              "purpose"
+            ],
             "additionalProperties": false,
             "properties": {
-              "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-              "url": { "type": "string", "format": "uri" },
-              "purpose": { "type": "string" },
-              "locale": { "type": "string" },
-              "direction": { "enum": ["ltr", "rtl"] }
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "purpose": {
+                "type": "string"
+              },
+              "locale": {
+                "type": "string"
+              },
+              "direction": {
+                "enum": [
+                  "ltr",
+                  "rtl"
+                ]
+              }
             }
           }
         },
-        "split": { "enum": ["extraction", "validation", "holdout"] },
+        "split": {
+          "enum": [
+            "extraction",
+            "validation",
+            "holdout"
+          ]
+        },
         "discovery": {
           "type": "object",
-          "required": ["source", "signal", "signal_status"],
+          "required": [
+            "source",
+            "signal",
+            "signal_status"
+          ],
           "additionalProperties": false,
           "properties": {
-            "source": { "enum": ["awwwards", "cssda", "fwa", "land-book", "siteinspire", "godly", "ilham", "lamha", "arabic-real-world", "real-world", "counter-taste", "other-curated"] },
-            "source_url": { "type": ["string", "null"] },
-            "signal": { "type": "string", "description": "What makes it a quality reference (award, curation, recognised system)." },
-            "signal_status": { "enum": ["VERIFIED", "UNVERIFIED"] },
-            "signal_evidence": { "type": "string" },
-            "checked_at": { "type": ["string", "null"], "format": "date" }
+            "source": {
+              "enum": [
+                "awwwards",
+                "cssda",
+                "fwa",
+                "land-book",
+                "siteinspire",
+                "godly",
+                "ilham",
+                "lamha",
+                "arabic-real-world",
+                "real-world",
+                "counter-taste",
+                "other-curated"
+              ]
+            },
+            "source_url": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "signal": {
+              "type": "string",
+              "description": "What makes it a quality reference (award, curation, recognised system)."
+            },
+            "signal_status": {
+              "enum": [
+                "VERIFIED",
+                "UNVERIFIED"
+              ]
+            },
+            "signal_evidence": {
+              "type": "string"
+            },
+            "checked_at": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            }
           }
         },
         "dimensions": {
           "type": "object",
-          "required": ["industry", "archetypes", "motion", "objectives", "density", "device_focus", "languages", "direction", "scheme", "studio", "assessment"],
+          "required": [
+            "industry",
+            "archetypes",
+            "motion",
+            "objectives",
+            "density",
+            "device_focus",
+            "languages",
+            "direction",
+            "scheme",
+            "studio",
+            "assessment"
+          ],
           "additionalProperties": false,
           "properties": {
-            "industry": { "type": "array", "minItems": 1, "items": { "enum": ["saas", "fintech", "ecommerce", "luxury", "editorial", "media", "agency", "portfolio", "culture", "enterprise", "public-sector", "data-information", "product-hardware", "type-foundry", "nonprofit", "education", "health", "travel", "other"] } },
-            "archetypes": { "type": "array", "minItems": 1, "items": { "enum": ["minimal", "editorial", "swiss-grid", "cinematic", "maximalist", "brutalist", "illustrative", "utilitarian", "immersive-3d", "playful", "corporate"] } },
-            "motion": { "enum": ["low", "medium", "high"] },
-            "objectives": { "type": "array", "minItems": 1, "items": { "enum": ["conversion", "storytelling", "task-completion", "information-consumption", "data-interaction", "brand-expression"] } },
-            "density": { "enum": ["low", "medium", "high"] },
-            "device_focus": { "enum": ["mobile-first", "desktop-immersive", "responsive-general", "dashboard-tablet"] },
-            "languages": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-            "direction": { "enum": ["ltr", "rtl", "bidi"] },
-            "scheme": { "enum": ["light", "dark", "mixed", "monochrome", "saturated"] },
-            "tech_hints": { "type": "array", "items": { "type": "string" } },
-            "studio": { "type": "string", "description": "Designer/agency/company; used to enforce max two per studio." },
-            "assessment": { "enum": ["PRE-CAPTURE-JUDGEMENT", "POST-CAPTURE-CHECKED"], "description": "Dimension labels are INFERRED until checked against captured evidence." }
+            "industry": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "enum": [
+                  "saas",
+                  "fintech",
+                  "ecommerce",
+                  "luxury",
+                  "editorial",
+                  "media",
+                  "agency",
+                  "portfolio",
+                  "culture",
+                  "enterprise",
+                  "public-sector",
+                  "data-information",
+                  "product-hardware",
+                  "type-foundry",
+                  "nonprofit",
+                  "education",
+                  "health",
+                  "travel",
+                  "other"
+                ]
+              }
+            },
+            "archetypes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "enum": [
+                  "minimal",
+                  "editorial",
+                  "swiss-grid",
+                  "cinematic",
+                  "maximalist",
+                  "brutalist",
+                  "illustrative",
+                  "utilitarian",
+                  "immersive-3d",
+                  "playful",
+                  "corporate"
+                ]
+              }
+            },
+            "motion": {
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "objectives": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "enum": [
+                  "conversion",
+                  "storytelling",
+                  "task-completion",
+                  "information-consumption",
+                  "data-interaction",
+                  "brand-expression"
+                ]
+              }
+            },
+            "density": {
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "device_focus": {
+              "enum": [
+                "mobile-first",
+                "desktop-immersive",
+                "responsive-general",
+                "dashboard-tablet"
+              ]
+            },
+            "languages": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "direction": {
+              "enum": [
+                "ltr",
+                "rtl",
+                "bidi"
+              ]
+            },
+            "scheme": {
+              "enum": [
+                "light",
+                "dark",
+                "mixed",
+                "monochrome",
+                "saturated"
+              ]
+            },
+            "tech_hints": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "studio": {
+              "type": "string",
+              "description": "Designer/agency/company; used to enforce max two per studio."
+            },
+            "assessment": {
+              "enum": [
+                "PRE-CAPTURE-JUDGEMENT",
+                "POST-CAPTURE-CHECKED"
+              ],
+              "description": "Dimension labels are INFERRED until checked against captured evidence."
+            }
           }
         },
         "selection": {
           "type": "object",
-          "required": ["scores", "weighted_total", "unique_contribution"],
+          "required": [
+            "scores",
+            "weighted_total",
+            "unique_contribution"
+          ],
           "additionalProperties": false,
           "properties": {
             "scores": {
               "type": "object",
-              "required": ["quality_signal", "archetype_coverage", "interaction_diversity", "mobile_quality", "a11y_perf_contrast", "rtl_localization", "implementation_diversity"],
+              "required": [
+                "quality_signal",
+                "archetype_coverage",
+                "interaction_diversity",
+                "mobile_quality",
+                "a11y_perf_contrast",
+                "rtl_localization",
+                "implementation_diversity"
+              ],
               "additionalProperties": false,
               "properties": {
-                "quality_signal": { "$ref": "#/$defs/score" },
-                "archetype_coverage": { "$ref": "#/$defs/score" },
-                "interaction_diversity": { "$ref": "#/$defs/score" },
-                "mobile_quality": { "$ref": "#/$defs/score" },
-                "a11y_perf_contrast": { "$ref": "#/$defs/score" },
-                "rtl_localization": { "$ref": "#/$defs/score" },
-                "implementation_diversity": { "$ref": "#/$defs/score" }
+                "quality_signal": {
+                  "$ref": "#/$defs/score"
+                },
+                "archetype_coverage": {
+                  "$ref": "#/$defs/score"
+                },
+                "interaction_diversity": {
+                  "$ref": "#/$defs/score"
+                },
+                "mobile_quality": {
+                  "$ref": "#/$defs/score"
+                },
+                "a11y_perf_contrast": {
+                  "$ref": "#/$defs/score"
+                },
+                "rtl_localization": {
+                  "$ref": "#/$defs/score"
+                },
+                "implementation_diversity": {
+                  "$ref": "#/$defs/score"
+                }
               }
             },
-            "weighted_total": { "type": "number", "minimum": 0, "maximum": 5 },
-            "unique_contribution": { "type": "string", "minLength": 20 },
-            "expected_weaknesses": { "type": "string" }
+            "weighted_total": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "unique_contribution": {
+              "type": "string",
+              "minLength": 20
+            },
+            "expected_weaknesses": {
+              "type": "string"
+            }
           }
         },
         "access": {
           "type": "object",
-          "required": ["checked_at", "reachable", "robots"],
+          "required": [
+            "checked_at",
+            "reachable",
+            "robots"
+          ],
           "additionalProperties": false,
           "properties": {
-            "checked_at": { "type": "string", "format": "date" },
-            "reachable": { "type": "boolean" },
-            "http_status": { "type": ["integer", "null"] },
-            "robots": { "enum": ["allowed", "disallowed", "absent", "unknown"] },
-            "notes": { "type": "string" }
+            "checked_at": {
+              "type": "string",
+              "format": "date"
+            },
+            "reachable": {
+              "type": "boolean"
+            },
+            "http_status": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "robots": {
+              "enum": [
+                "allowed",
+                "disallowed",
+                "absent",
+                "unknown"
+              ]
+            },
+            "notes": {
+              "type": "string"
+            }
           }
+        },
+        "replaces": {
+          "type": "object",
+          "description": "Reference this slot replaced after selection (with reason).",
+          "required": [
+            "name",
+            "url",
+            "reason"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "capture_status": {
+          "enum": [
+            "available",
+            "unavailable"
+          ],
+          "description": "unavailable = the site could not be captured in this environment (challenge, error page); no evidence is derived from it."
         }
       }
     },
-    "score": { "type": "integer", "minimum": 0, "maximum": 5 }
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    }
   }
 }
