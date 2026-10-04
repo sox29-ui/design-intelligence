@@ -4,6 +4,8 @@
 //
 //   node scripts/validation-check.ts val-001 [val-002 …]            → datasets/validation/<val>.checks.json
 //   node scripts/validation-check.ts val-001 … --apply               → also write auto results into rule evidence.validation
+//   node scripts/validation-check.ts hol-001 … --predict             → datasets/holdout/predictions.json (before capture)
+//   node scripts/validation-check.ts hol-001 …                       → datasets/holdout/<hol>.checks.json (never applied)
 //
 // Only VERIFIED measurements are used here. Rules without a mechanical check are left to analyst review
 // (entries whose note starts with "analyst:"); --apply never touches those.
@@ -276,20 +278,63 @@ const AVOID_CHECKS: Record<string, (p: Page) => Check | null> = {
   },
 };
 
+/** Context from corpus dimensions only (no observations) — used to pre-register holdout predictions. */
+function contextOnly(cref: any, pageId: string): Partial<Ctx> {
+  const page = cref.pages.find((p: any) => p.id === pageId);
+  const d = cref.dimensions;
+  const lang = String(page?.locale ?? (d.languages ?? ['en'])[0]);
+  const ctx: Partial<Ctx> = {
+    page_goal: d.objectives ?? [],
+    content_density: [d.density],
+    language: [/^ar/i.test(lang) ? 'ar' : 'latin'],
+    device: [d.device_focus],
+    motion_budget: [d.motion === 'high' ? 'expressive' : 'subtle'],
+  };
+  if ((d.tech_hints ?? []).some((t: string) => /webgl|three/i.test(t))) ctx.engineering_budget = ['heavy-webgl'];
+  return ctx;
+}
+
 function main() {
   const args = process.argv.slice(2);
-  const refs = args.filter((a) => /^val-\d{3}$/.test(a));
+  const refs = args.filter((a) => /^(val|hol)-\d{3}$/.test(a));
   const apply = args.includes('--apply');
+  const predict = args.includes('--predict');
   if (!refs.length) {
-    console.error('usage: node scripts/validation-check.ts val-001 [val-002 …] [--apply]');
+    console.error('usage: node scripts/validation-check.ts val-001 [val-002 …] [--apply] | hol-001 … [--predict]');
     process.exit(2);
   }
   const corpus = readYaml<any>(abs('datasets', 'corpus.yaml'));
   const rules = loadRules().filter(({ rule }) => ['provisional', 'accepted', 'weakened', 'candidate'].includes(rule.status) && rule.kind !== 'signature');
+  const holdout = refs.every((r) => r.startsWith('hol-'));
+  if (!holdout && refs.some((r) => r.startsWith('hol-'))) throw new Error('do not mix validation and holdout references in one run');
+  if (holdout) {
+    if (!existsSync(abs('datasets', 'holdout', 'UNSEALED.yaml'))) throw new Error('holdout is sealed (datasets/holdout/UNSEALED.yaml missing)');
+    if (apply) throw new Error('holdout results are never applied to rules');
+  }
+  if (predict) {
+    if (!holdout) throw new Error('--predict is for holdout references');
+    const out: any[] = [];
+    for (const ref of refs) {
+      const cref = corpus.references.find((r: any) => r.id === ref);
+      for (const pg of cref.pages) {
+        const ctx = contextOnly(cref, pg.id);
+        for (const { rule } of rules) {
+          if (rule.status === 'candidate' || rule.id === 'antipattern.late-injected-banners') continue; // that check can never confirm (cause unverifiable)
+          const ok = applies((rule as any).when, ctx as Ctx);
+          const avoidCtx = (ctx.content_density ?? []).includes('high') || (ctx.page_goal ?? []).some((g) => g === 'task-completion' || g === 'data-interaction');
+          if (ok && CHECKS[rule.id]) out.push({ ref, page: pg.id, rule: rule.id, confidence: rule.confidence, predicted: 'consistent', basis: 'WHEN applies' });
+          else if (!ok && AVOID_CHECKS[rule.id] && avoidCtx) out.push({ ref, page: pg.id, rule: rule.id, confidence: rule.confidence, predicted: 'consistent', basis: 'AVOID WHEN context' });
+        }
+      }
+    }
+    writeJson(abs('datasets', 'holdout', 'predictions.json'), { note: 'Pre-registered before any holdout capture: for each rule with a measured check whose WHEN (or AVOID WHEN context) matches the holdout page, DI predicts the measured behaviour will be consistent with the rule.', contexts: Object.fromEntries(refs.map((r) => { const c = corpus.references.find((x: any) => x.id === r); return [r, Object.fromEntries(c.pages.map((p: any) => [p.id, contextOnly(c, p.id)]))]; })), predictions: out });
+    console.log(`pre-registered ${out.length} predictions for ${refs.join(', ')}`);
+    return;
+  }
   const perRule = new Map<string, Array<{ ref: string; result: string; observations: string[]; note: string }>>();
   for (const ref of refs) {
     const cref = corpus.references.find((r: any) => r.id === ref);
-    if (!cref || cref.split !== 'validation') throw new Error(`${ref} is not a validation reference`);
+    if (!cref || cref.split !== (holdout ? 'holdout' : 'validation')) throw new Error(`${ref} is not a ${holdout ? 'holdout' : 'validation'} reference`);
     const out: any[] = [];
     for (const pg of cref.pages) {
       if (!existsSync(abs('datasets', 'observations', ref, 'verified.json'))) throw new Error(`${ref}: no verified observations (run normalize first)`);
@@ -315,7 +360,8 @@ function main() {
         perRule.set(rule.id, list);
       }
     }
-    writeJson(abs('datasets', 'validation', `${ref}.checks.json`), { ref, generated_by: 'scripts/validation-check.ts', context: Object.fromEntries(cref.pages.map((pg: any) => [pg.id, loadPage(ref, pg.id, cref).ctx])), checks: out });
+    const dest = holdout ? abs('datasets', 'holdout', `${ref}.checks.json`) : abs('datasets', 'validation', `${ref}.checks.json`);
+    writeJson(dest, { ref, generated_by: 'scripts/validation-check.ts', context: Object.fromEntries(cref.pages.map((pg: any) => [pg.id, loadPage(ref, pg.id, cref).ctx])), checks: out });
     const tally = out.reduce((m: Record<string, number>, x) => ((m[x.applies ? x.result : 'not-applicable'] = (m[x.applies ? x.result : 'not-applicable'] ?? 0) + 1), m), {});
     console.log(`${ref}: ${JSON.stringify(tally)}`);
   }

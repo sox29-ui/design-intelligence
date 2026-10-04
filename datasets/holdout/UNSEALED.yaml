@@ -1,0 +1,8 @@
+# Holdout unsealed for the v0.1.0 generalization check (datasets/holdout/SEALED.md).
+unsealed_at: 2026-10-04
+freeze_commit: e012194   # release: DI v0.1.0 — rule set frozen before any holdout capture
+version: 0.1.0
+purpose: >-
+  Generalization check only: pre-registered predictions (predictions.json, committed before capture) are compared
+  with measurements of hol-001..003. Holdout results never become rule evidence; any lesson becomes a v0.2 candidate
+  change, and this holdout is spent for future versions (a new holdout is needed for v0.2).

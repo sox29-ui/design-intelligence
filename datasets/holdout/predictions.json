@@ -1,0 +1,505 @@
+{
+  "note": "Pre-registered before any holdout capture: for each rule with a measured check whose WHEN (or AVOID WHEN context) matches the holdout page, DI predicts the measured behaviour will be consistent with the rule.",
+  "contexts": {
+    "hol-001": {
+      "home": {
+        "page_goal": [
+          "storytelling",
+          "conversion"
+        ],
+        "content_density": [
+          "low"
+        ],
+        "language": [
+          "latin"
+        ],
+        "device": [
+          "desktop-immersive"
+        ],
+        "motion_budget": [
+          "expressive"
+        ]
+      }
+    },
+    "hol-002": {
+      "home": {
+        "page_goal": [
+          "information-consumption"
+        ],
+        "content_density": [
+          "high"
+        ],
+        "language": [
+          "ar"
+        ],
+        "device": [
+          "responsive-general"
+        ],
+        "motion_budget": [
+          "subtle"
+        ]
+      }
+    },
+    "hol-003": {
+      "home": {
+        "page_goal": [
+          "conversion"
+        ],
+        "content_density": [
+          "medium"
+        ],
+        "language": [
+          "latin"
+        ],
+        "device": [
+          "responsive-general"
+        ],
+        "motion_budget": [
+          "subtle"
+        ]
+      }
+    }
+  },
+  "predictions": [
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-001",
+      "page": "home",
+      "rule": "typography.tighten-large-grotesk",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "components.mobile-menu-sheet",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "motion.scroll-narrative-for-stories-only",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "AVOID WHEN context"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "performance.weight-follows-goal",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.arabic-needs-more-leading",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.isolate-mixed-runs",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.logical-properties",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.no-tracking-no-case-arabic",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.numerals-one-system",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "rtl.root-direction",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.extreme-scale-needs-a-reason",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "AVOID WHEN context"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.modest-scale-for-dense-pages",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.reading-measure",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-002",
+      "page": "home",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "accessibility.semantic-skeleton",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "accessibility.visible-focus",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "antipattern.gradient-hero-imitation",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "color.text-contrast-floor",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "antipattern.glass-floating-nav",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "antipattern.rounded-card-grid-default",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "components.mobile-menu-sheet",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "layout.cap-content-width",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "motion.duration-by-purpose",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "motion.honour-reduced-motion",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "performance.weight-follows-goal",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "typography.display-steps-then-caps",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "typography.families-with-roles",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "typography.modest-scale-for-dense-pages",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "typography.reading-text-16-to-20",
+      "confidence": "high",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    },
+    {
+      "ref": "hol-003",
+      "page": "home",
+      "rule": "typography.tighten-large-grotesk",
+      "confidence": "medium",
+      "predicted": "consistent",
+      "basis": "WHEN applies"
+    }
+  ]
+}
