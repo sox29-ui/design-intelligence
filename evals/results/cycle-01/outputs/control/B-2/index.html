@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconciliation overview · Ledgerline</title>
+  <meta name="description" content="Ledgerline reconciliation overview: yesterday's match rate, unmatched amount and the exceptions queue.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#exceptions">Skip to exceptions</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-overview" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="4.5" rx="1.5"/><rect x="13.5" y="11" width="7" height="9.5" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-exceptions" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 4.4a2 2 0 0 1 3.4 0l7.4 12.7a2 2 0 0 1-1.7 3H4.6a2 2 0 0 1-1.7-3Z"/><path d="M12 9.5v4M12 16.8v.1"/></symbol>
+    <symbol id="i-payouts" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6.5 9.5v.01M17.5 14.5v.01"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9 12 4.5 20.5 9M5 9.5h14M6.5 10.5v6.5M10 10.5v6.5M14 10.5v6.5M17.5 10.5v6.5M4 19.5h16"/></symbol>
+    <symbol id="i-rules" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 3.5v2.2M12 18.3v2.2M20.5 12h-2.2M5.7 12H3.5M18 6l-1.6 1.6M7.6 16.4 6 18M18 18l-1.6-1.6M7.6 7.6 6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 9.5 5 5 5-5"/></symbol>
+    <symbol id="i-updown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9.5 4-4 4 4M8 14.5l4 4 4-4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6.5 18.5 16h-13Z"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.5 5.5 8h13Z"/></symbol>
+    <symbol id="i-flat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6.5 12h11"/></symbol>
+    <symbol id="i-urgent" viewBox="0 0 24 24"><path fill="currentColor" d="M10.3 3.9a2 2 0 0 1 3.4 0l8.1 13.8a2 2 0 0 1-1.7 3H3.9a2 2 0 0 1-1.7-3Z"/><path d="M12 9v4.6" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/><circle cx="12" cy="17" r="1.25" fill="#fff"/></symbol>
+    <symbol id="i-st-new" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-st-investigating" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4.5 4.5"/></symbol>
+    <symbol id="i-st-waiting" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11M6.5 20.5h11M8 3.5c0 4.5 3 5.5 3.5 8.5-.5 3-3.5 4-3.5 8.5M16 3.5c0 4.5-3 5.5-3.5 8.5.5 3 3.5 4 3.5 8.5"/></symbol>
+    <symbol id="i-st-resolved" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.5"/><path d="m8.6 12.2 2.4 2.4 4.4-4.6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="7.5"/><path d="M12 7.8V12l2.8 1.8"/></symbol>
+    <symbol id="i-sort-asc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18.5v-13m0 0L7.5 10M12 5.5l4.5 4.5"/></symbol>
+    <symbol id="i-sort-desc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13m0 0L7.5 14M12 18.5l4.5-4.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 19.5c1.2-3.3 3.8-5 7-5s5.8 1.7 7 5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 16.5V11a5.5 5.5 0 0 1 11 0v5.5l1.5 1.5H5Z"/><path d="M10 20.5h4"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="3" y="6.5" width="18" height="11" rx="2"/><path d="M7 10.5h.01M10.5 10.5h.01M14 10.5h.01M17 10.5h.01M8 14h8"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h9"/></symbol>
+    <symbol id="i-assign" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="10" cy="8.5" r="3.5"/><path d="M3.5 19.5c1-3.2 3.5-5 6.5-5 1.4 0 2.6.3 3.6 1M17.5 13.5v6M14.5 16.5h6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+  </defs>
+</svg>
+
+<div class="app">
+  <!-- Product chrome -->
+  <aside class="sidebar" id="sidebar" aria-label="Product">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#2c4fd6"/><path d="M6 8h12M6 12h7.5M6 16h4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="m13.2 15.6 2.1 2.1 3.7-4.2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-name">Ledgerline</span>
+      <button class="icon-btn nav-close" type="button" id="nav-close" aria-label="Close navigation"><svg class="ic"><use href="#i-close"/></svg></button>
+    </div>
+
+    <div class="switcher">
+      <button class="switcher-btn" type="button" id="ws-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="ws-menu">
+        <span class="ws-mark" aria-hidden="true">NC</span>
+        <span class="ws-text">
+          <span class="ws-name">Northwind Commerce</span>
+          <span class="ws-env"><span class="env-dot" aria-hidden="true"></span><span id="env-label">Live</span> · 4 entities</span>
+        </span>
+        <svg class="ic ic--muted"><use href="#i-updown"/></svg>
+      </button>
+      <div class="menu" id="ws-menu" role="menu" aria-label="Organisation and environment" hidden>
+        <div class="menu-label" role="presentation">Organisation</div>
+        <button class="menu-item" role="menuitemradio" aria-checked="true" data-ws="northwind" type="button"><svg class="ic check"><use href="#i-check"/></svg>Northwind Commerce</button>
+        <button class="menu-item" role="menuitemradio" aria-checked="false" data-ws="alder" type="button"><svg class="ic check"><use href="#i-check"/></svg>Alder &amp; Pine Home</button>
+        <div class="menu-sep" role="separator"></div>
+        <div class="menu-label" role="presentation">Environment</div>
+        <button class="menu-item" role="menuitemradio" aria-checked="true" data-env="live" type="button"><svg class="ic check"><use href="#i-check"/></svg>Live</button>
+        <button class="menu-item" role="menuitemradio" aria-checked="false" data-env="sandbox" type="button"><svg class="ic check"><use href="#i-check"/></svg>Sandbox <span class="menu-hint">test data</span></button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a class="nav-link" href="#overview" aria-current="page"><svg class="ic"><use href="#i-overview"/></svg>Overview</a></li>
+        <li><a class="nav-link" href="#exceptions-screen" data-stub="Exceptions"><svg class="ic"><use href="#i-exceptions"/></svg>Exceptions <span class="nav-count" id="nav-ex-count" aria-label="37 open">37</span></a></li>
+        <li><a class="nav-link" href="#payouts" data-stub="Payouts"><svg class="ic"><use href="#i-payouts"/></svg>Payouts</a></li>
+        <li><a class="nav-link" href="#bank-feeds" data-stub="Bank feeds"><svg class="ic"><use href="#i-bank"/></svg>Bank feeds</a></li>
+        <li><a class="nav-link" href="#rules" data-stub="Rules"><svg class="ic"><use href="#i-rules"/></svg>Rules</a></li>
+        <li><a class="nav-link" href="#settings" data-stub="Settings"><svg class="ic"><use href="#i-settings"/></svg>Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-foot">
+      <button class="user-btn" type="button" id="user-btn" aria-haspopup="menu" aria-expanded="false" aria-controls="user-menu">
+        <span class="avatar" style="--h:226" aria-hidden="true">JW</span>
+        <span class="user-text"><span class="user-name">Jonas Weber</span><span class="user-role">Finance operations</span></span>
+        <svg class="ic ic--muted"><use href="#i-updown"/></svg>
+      </button>
+      <div class="menu menu--up" id="user-menu" role="menu" aria-label="Account" hidden>
+        <div class="menu-who" role="presentation"><strong>Jonas Weber</strong><span>jonas.weber@northwind.example</span></div>
+        <div class="menu-sep" role="separator"></div>
+        <button class="menu-item" role="menuitem" type="button" data-stub="Profile and preferences"><svg class="ic"><use href="#i-user"/></svg>Profile and preferences</button>
+        <button class="menu-item" role="menuitem" type="button" data-stub="Notification settings"><svg class="ic"><use href="#i-bell"/></svg>Notifications</button>
+        <button class="menu-item" role="menuitem" type="button" data-open-shortcuts><svg class="ic"><use href="#i-keyboard"/></svg>Keyboard shortcuts <kbd class="menu-kbd">?</kbd></button>
+        <div class="menu-sep" role="separator"></div>
+        <button class="menu-item" role="menuitem" type="button" data-stub="Sign out"><svg class="ic"><use href="#i-logout"/></svg>Sign out</button>
+      </div>
+    </div>
+  </aside>
+  <div class="scrim scrim--nav" id="nav-scrim" hidden></div>
+
+  <header class="topbar">
+    <button class="icon-btn" type="button" id="nav-open" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button>
+    <span class="brand brand--top">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="24" height="24" rx="6" fill="#2c4fd6"/><path d="M6 8h12M6 12h7.5M6 16h4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="m13.2 15.6 2.1 2.1 3.7-4.2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-name">Ledgerline</span>
+    </span>
+    <span class="topbar-ws"><span class="env-dot" aria-hidden="true"></span>Northwind Commerce · <span class="env-text">Live</span></span>
+    <span class="avatar topbar-avatar" style="--h:226" role="img" aria-label="Signed in as Jonas Weber">JW</span>
+  </header>
+
+  <main class="main" id="main">
+    <div class="env-banner" id="env-banner" hidden>
+      <svg class="ic"><use href="#i-exceptions"/></svg>
+      <span><strong>Sandbox.</strong> You are looking at test data. Actions here never touch live books.</span>
+    </div>
+
+    <header class="page-head">
+      <div>
+        <h1>Reconciliation overview</h1>
+        <p class="run-line" id="run-line"></p>
+      </div>
+      <div class="page-actions">
+        <button class="btn" type="button" id="export-btn"><svg class="ic"><use href="#i-download"/></svg>Export CSV</button>
+      </div>
+    </header>
+
+    <form class="filters" id="filters" aria-label="Filters" onsubmit="return false">
+      <div class="field">
+        <label for="f-period">Date range</label>
+        <select class="select" id="f-period">
+          <option value="yesterday">Yesterday</option>
+          <option value="7d">Last 7 days</option>
+          <option value="14d">Last 14 days</option>
+          <option value="30d">Last 30 days</option>
+          <option value="custom">Custom range…</option>
+        </select>
+      </div>
+      <div class="field-group" id="custom-range" hidden>
+        <div class="field">
+          <label for="f-from">From</label>
+          <input class="input" type="date" id="f-from">
+        </div>
+        <div class="field">
+          <label for="f-to">To</label>
+          <input class="input" type="date" id="f-to">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-provider">Payment provider</label>
+        <select class="select" id="f-provider"></select>
+      </div>
+      <div class="field">
+        <label for="f-entity">Entity / account</label>
+        <select class="select select--wide" id="f-entity"></select>
+      </div>
+      <div class="filters-end">
+        <p class="period-note" id="period-note" aria-live="polite"></p>
+        <button class="btn btn--ghost" type="button" id="f-reset" hidden>Reset filters</button>
+      </div>
+    </form>
+
+    <div class="notice" id="notice" role="status" hidden>
+      <svg class="ic"><use href="#i-exceptions"/></svg>
+      <p id="notice-text"></p>
+      <div class="notice-actions">
+        <button class="btn btn--sm" type="button" id="notice-show">Show Klarna only</button>
+        <button class="icon-btn icon-btn--sm" type="button" id="notice-dismiss" aria-label="Dismiss notice"><svg class="ic"><use href="#i-close"/></svg></button>
+      </div>
+    </div>
+
+    <section class="kpis" aria-label="Key figures for the selected period">
+      <article class="kpi" data-kpi="rate">
+        <h2 class="kpi-label">Matched rate</h2>
+        <p class="kpi-value"></p>
+        <p class="kpi-delta"></p>
+        <p class="kpi-sub"></p>
+      </article>
+      <article class="kpi" data-kpi="unmatched">
+        <h2 class="kpi-label">Unmatched amount</h2>
+        <p class="kpi-value"></p>
+        <p class="kpi-delta"></p>
+        <p class="kpi-sub"></p>
+      </article>
+      <article class="kpi" data-kpi="open">
+        <h2 class="kpi-label">Open exceptions</h2>
+        <p class="kpi-value"></p>
+        <p class="kpi-delta"></p>
+        <p class="kpi-sub"></p>
+      </article>
+      <article class="kpi" data-kpi="ttr">
+        <h2 class="kpi-label">Median time to resolve</h2>
+        <p class="kpi-value"></p>
+        <p class="kpi-delta"></p>
+        <p class="kpi-sub"></p>
+      </article>
+    </section>
+
+    <!-- Phone: read-only priority view -->
+    <section class="phone-only phone-urgent" aria-labelledby="phone-urgent-title">
+      <p class="phone-note"><svg class="ic"><use href="#i-lock"/></svg>Read-only on phone. Assign and resolve on a tablet or desktop.</p>
+      <h2 class="section-title" id="phone-urgent-title">Urgent exceptions <span class="count-pill" id="phone-urgent-count"></span></h2>
+      <p class="section-hint">Open 3+ days (past SLA) or €5,000 and over. Oldest first.</p>
+      <ul class="u-list" id="phone-urgent-list"></ul>
+    </section>
+
+    <div class="workspace">
+      <section class="card exceptions" id="exceptions" aria-labelledby="ex-title" tabindex="-1">
+        <div class="ex-head">
+          <div class="ex-title-row">
+            <div>
+              <h2 class="card-title" id="ex-title">Exceptions</h2>
+              <p class="ex-summary" id="ex-summary"></p>
+            </div>
+            <div class="ex-tools">
+              <div class="search">
+                <label class="sr-only" for="ex-search">Search exceptions</label>
+                <svg class="ic"><use href="#i-search"/></svg>
+                <input class="input" type="search" id="ex-search" placeholder="Search ID, provider, ref…" autocomplete="off">
+                <kbd class="search-kbd" aria-hidden="true">/</kbd>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="urgent-only">
+                <span class="switch-track" aria-hidden="true"></span>
+                <span>Urgent only</span>
+              </label>
+            </div>
+          </div>
+          <fieldset class="status-tabs">
+            <legend class="sr-only">Filter by status</legend>
+            <label><input type="radio" name="status" value="open" checked><span>Open <span class="tab-count" data-count="open"></span></span></label>
+            <label><input type="radio" name="status" value="new"><span><svg class="ic ic--st st-new"><use href="#i-st-new"/></svg>New <span class="tab-count" data-count="new"></span></span></label>
+            <label><input type="radio" name="status" value="investigating"><span><svg class="ic ic--st st-investigating"><use href="#i-st-investigating"/></svg>Investigating <span class="tab-count" data-count="investigating"></span></span></label>
+            <label><input type="radio" name="status" value="waiting"><span><svg class="ic ic--st st-waiting"><use href="#i-st-waiting"/></svg>Waiting on provider <span class="tab-count" data-count="waiting"></span></span></label>
+            <label><input type="radio" name="status" value="resolved"><span><svg class="ic ic--st st-resolved"><use href="#i-st-resolved"/></svg>Resolved <span class="tab-count" data-count="resolved"></span></span></label>
+            <label><input type="radio" name="status" value="all"><span>All <span class="tab-count" data-count="all"></span></span></label>
+          </fieldset>
+        </div>
+
+        <div class="table-wrap">
+          <table class="ex-table" id="ex-table">
+            <caption class="sr-only" id="ex-caption">Exceptions. Use the up and down arrow keys to move between rows and Enter to open details.</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="c-id">ID</th>
+                <th scope="col" class="c-provider">Provider</th>
+                <th scope="col" class="c-reason">Reason</th>
+                <th scope="col" class="c-amount num" data-sort-key="amount"><button class="sort-btn" type="button" data-sort="amount">Amount<svg class="ic sort-ic"><use href="#i-updown"/></svg></button></th>
+                <th scope="col" class="c-ccy">Ccy</th>
+                <th scope="col" class="c-age num" data-sort-key="age"><button class="sort-btn" type="button" data-sort="age">Age<svg class="ic sort-ic"><use href="#i-updown"/></svg></button></th>
+                <th scope="col" class="c-status">Status</th>
+                <th scope="col" class="c-assignee">Assignee</th>
+              </tr>
+            </thead>
+            <tbody id="ex-body"></tbody>
+          </table>
+        </div>
+        <div class="ex-foot">
+          <p id="ex-foot-text"></p>
+          <button class="btn btn--sm" type="button" id="ex-more" hidden></button>
+        </div>
+      </section>
+
+      <div class="rail">
+        <section class="card trend" aria-labelledby="trend-title">
+          <div class="card-head">
+            <h2 class="card-title" id="trend-title">30-day trend</h2>
+            <fieldset class="seg">
+              <legend class="sr-only">Measure</legend>
+              <label><input type="radio" name="chart-mode" value="value" checked><span>Value</span></label>
+              <label><input type="radio" name="chart-mode" value="count"><span>Count</span></label>
+            </fieldset>
+          </div>
+          <div class="chart" id="trend-chart" tabindex="0" role="group" aria-roledescription="chart" aria-labelledby="trend-title" aria-describedby="chart-summary"></div>
+          <p class="sr-only" id="chart-live" aria-live="polite"></p>
+          <div class="chart-foot">
+            <p id="chart-summary"></p>
+            <details class="chart-data">
+              <summary>Show as table</summary>
+              <div class="chart-data-scroll" id="chart-table"></div>
+            </details>
+          </div>
+        </section>
+
+        <section class="card activity" aria-labelledby="activity-title">
+          <div class="card-head">
+            <h2 class="card-title" id="activity-title">Activity</h2>
+            <span class="card-meta">Last 8 events</span>
+          </div>
+          <ol class="feed" id="feed"></ol>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Exception details: a side panel on desktop, a modal sheet on smaller screens -->
+<div class="scrim scrim--detail" id="detail-scrim" hidden></div>
+<aside class="detail" id="detail" aria-labelledby="detail-title" hidden></aside>
+
+<dialog class="dialog" id="shortcuts" aria-labelledby="shortcuts-title">
+  <div class="dialog-head">
+    <h2 id="shortcuts-title">Keyboard shortcuts</h2>
+    <form method="dialog"><button class="icon-btn" aria-label="Close"><svg class="ic"><use href="#i-close"/></svg></button></form>
+  </div>
+  <dl class="keys">
+    <div><dt><kbd>/</kbd></dt><dd>Search exceptions</dd></div>
+    <div><dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd>Move between exceptions (details follow when open)</dd></div>
+    <div><dt><kbd>Enter</kbd></dt><dd>Open the focused exception</dd></div>
+    <div><dt><kbd>Esc</kbd></dt><dd>Close details and return to the table</dd></div>
+    <div><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Step through days in the trend chart</dd></div>
+    <div><dt><kbd>?</kbd></dt><dd>Show this list</dd></div>
+  </dl>
+</dialog>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+<noscript><p class="noscript">This prototype needs JavaScript to generate its sample data.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
