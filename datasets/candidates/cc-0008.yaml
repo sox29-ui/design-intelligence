@@ -1,0 +1,13 @@
+id: cc-0008
+type: tooling
+targets: [.claude/skills/design-intelligence/scripts/inspect-page.ts]
+summary: Investigate a console error that a treatment run attributed to verify-page re-fetching an external stylesheet; the agent inlined its CSS to silence it. A verifier must not push authors toward worse structure.
+motivation:
+  source: tooling-audit
+  evidence:
+    - evals/results/cycle-01/RUNLOG.md#A-1-treatment
+  recurrence: one run so far; check other treatment runs.
+predicted_effect: No spurious console errors from the harness on multi-file outputs.
+benchmark: { status: not-run, before: null, after: null }
+review: { status: pending, reviewer: null, date: null }
+created: 2026-10-04
