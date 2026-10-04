@@ -18,3 +18,4 @@ Compliance with "work only inside OUTPUT_DIR" is **self-reported, not enforced**
 | D-1 | treatment | 421,194 | 108 | 47.0 min | Skill files only (audit); skipped the Arabic/RTL reference (no Arabic content). Kept one flagged signature (giant "Shade" headline) citing the cultural-home-page AVOID WHEN added after validation. `.di-verify/` not copied. |
 | B-2 | control | 303,763 | 55 | 56.8 min (restarted from an empty folder after the usage-limit interruption) | Reports not using the skill that became visible; audit: 0 Skill calls, 0 repository paths. |
 | B-1 | treatment | 446,480 | 92 | 56.8 min | Skill files only (audit). Reports the same verifier console-error artifact (cc-0008) and did not change its code for it. `.di-verify/` not copied. |
+| A-2 | treatment | 388,589 | 93 | 42.7 min | Skill files only (audit). Applied the cultural-home-page exception to keep a 4.7× title; reports the verifier console-error artifact (cc-0008). `.di-verify/` not copied. |
