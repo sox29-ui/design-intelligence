@@ -1,7 +1,7 @@
 {
   "format": "di-handoff-manifest",
   "di_version": "0.1.0",
-  "file_count": 483,
+  "file_count": 506,
   "components": {
     "skill": {
       "description": "Agent skill: router, contract, compiled references, workflows, runtime verifier",
@@ -213,6 +213,11 @@
           "sha256": "efddf33350aec777a69810639c8a55b256edae2ce84c55d11426b66d1dcbbc48"
         },
         {
+          "path": "schemas/knowledge-export.schema.json",
+          "bytes": 3703,
+          "sha256": "0092a61ea6b3652369ce506e43c91b8b09ff6dffaefbc7153200aa841413fa4a"
+        },
+        {
           "path": "schemas/observation.schema.json",
           "bytes": 5769,
           "sha256": "8d892dc71ff5d7b2c51f51a7209e4688872d19db9543b577ddaad97f520d60d9"
@@ -234,8 +239,8 @@
         },
         {
           "path": "scripts/bench-report.ts",
-          "bytes": 7515,
-          "sha256": "0bb32a44cdbaa58674412550fa0d02952ab04dc8c119d0ded6dc9ba3f3609a93"
+          "bytes": 7795,
+          "sha256": "992c374fae1dbaec2cac15cbd3eb1f8fc0dbe050e3f9e2596cf944e55ba7034a"
         },
         {
           "path": "scripts/build-skill.ts",
@@ -256,6 +261,16 @@
           "path": "scripts/corpus-matrix.ts",
           "bytes": 4305,
           "sha256": "bc19dd7171b82835dafaf41cc14aaec4ec56838fa209d37763033712307dd561"
+        },
+        {
+          "path": "scripts/export-knowledge.ts",
+          "bytes": 5924,
+          "sha256": "f4c956238f41f82502320f5db833ba3f9f996073cdb77edb1783e5fe0ccd54b1"
+        },
+        {
+          "path": "scripts/handoff-manifest.ts",
+          "bytes": 3431,
+          "sha256": "01813e34368937d120b9cb86d15173a93aac3f9ac281cd8771c33b8d90a195e3"
         },
         {
           "path": "scripts/holdout-score.mjs",
@@ -313,15 +328,15 @@
           "sha256": "bf21e754a907900598f12d307800a853c48df50bea3ffe522681c7d87757922f"
         }
       ],
-      "total_bytes": 246767
+      "total_bytes": 260105
     },
     "docs": {
       "description": "Architecture, decisions, evidence taxonomy, ethics, evolution, journal, report extraction",
       "files": [
         {
           "path": "CHANGELOG.md",
-          "bytes": 3011,
-          "sha256": "6227cc3255a2c1c104b776c51a41eb98f1a9875fb92c2eaafe479b10cfb84e11"
+          "bytes": 4108,
+          "sha256": "51922d79f90c3ec66105b8149e3ebbb5cadbc67afe7a5a7fdf6fdd21e5e24884"
         },
         {
           "path": "README.md",
@@ -360,8 +375,8 @@
         },
         {
           "path": "docs/JOURNAL.md",
-          "bytes": 16375,
-          "sha256": "2551adbd3bd6de4a805a4bab248e4779c477171078a1ba1705700aa87855aab5"
+          "bytes": 18310,
+          "sha256": "f3e771e20149e7b6249a038bca25e580164bf9c487ca2c88718e65d16b153500"
         },
         {
           "path": "docs/REPORT-EXTRACTION.md",
@@ -374,7 +389,7 @@
           "sha256": "26853849cab72c946d4342aa924b4cd517dbf660e1ad4fc9fd1616394ac37768"
         }
       ],
-      "total_bytes": 63777
+      "total_bytes": 66809
     },
     "knowledge": {
       "description": "Rules (source of truth), corpus, provenance sources, selection record",
@@ -724,9 +739,34 @@
           "path": "datasets/candidates/cc-0008.yaml",
           "bytes": 1042,
           "sha256": "135b54a60260f29a6ed8d385bd0881ce2260450d2de91daff50c36495ce65120"
+        },
+        {
+          "path": "datasets/candidates/cc-0009.yaml",
+          "bytes": 1384,
+          "sha256": "b6f6069edaafb1add4e7efa423d270099f2add282ca9b484a1c28e305877641e"
+        },
+        {
+          "path": "datasets/candidates/cc-0010.yaml",
+          "bytes": 833,
+          "sha256": "246feced9000ffecbf3b4cee07370c4924eb02c6a91a1a8da5c8306a5052471c"
+        },
+        {
+          "path": "datasets/candidates/cc-0011.yaml",
+          "bytes": 1168,
+          "sha256": "7547e36bf1b7682a465d01bce16ef37688fca3630087535f3b570e218ac8439b"
+        },
+        {
+          "path": "datasets/candidates/cc-0012.yaml",
+          "bytes": 753,
+          "sha256": "18eca4035e7e857ef3afdc096cfbaa82b5224bbf4ac3775d3964e40116c65e8a"
+        },
+        {
+          "path": "datasets/candidates/cc-0013.yaml",
+          "bytes": 699,
+          "sha256": "ec72c069fe0fb560947fc201cc4af13f36e625f380fda68f9ea0dcfc54255494"
         }
       ],
-      "total_bytes": 6600
+      "total_bytes": 11437
     },
     "evidence": {
       "description": "Derived capture data (no page copy) and VERIFIED/OBSERVED/INFERRED observations",
@@ -1689,6 +1729,11 @@
           "sha256": "b0f606c6a67569ce4a285e47d5a37592ff99948403bb410e82eb7878d05b76ee"
         },
         {
+          "path": "evals/results/cycle-01/REPORT.md",
+          "bytes": 12094,
+          "sha256": "1beb7fe6d1935faf9570167db5806f6107907ddf87e720238dbd0cd5cb5d53a3"
+        },
+        {
           "path": "evals/results/cycle-01/RUNLOG.md",
           "bytes": 5008,
           "sha256": "d9a1e8096074c32dbec363a2f4b6a75f02abfce1b0e8214d4b7c7675f29dc32c"
@@ -1697,6 +1742,11 @@
           "path": "evals/results/cycle-01/automated.json",
           "bytes": 79878,
           "sha256": "bcdfe43511827da8f8bf8e737bbbd8d2a4f27623937bbbb502e1e15779bcce48"
+        },
+        {
+          "path": "evals/results/cycle-01/blind-key.SEALED.json",
+          "bytes": 1447,
+          "sha256": "30cadfea24e82bca5948687632c5f7a77448edffd9df795bc3531d770b6d8148"
         },
         {
           "path": "evals/results/cycle-01/blind/A-17B383/index.html",
@@ -1997,6 +2047,26 @@
           "path": "evals/results/cycle-01/blind/D-F9F116/styles.css",
           "bytes": 35457,
           "sha256": "6fa898559d87474af629bc643f152a98811a81ecad1f3201fe275f24211de78e"
+        },
+        {
+          "path": "evals/results/cycle-01/critic-A.json",
+          "bytes": 31964,
+          "sha256": "e637f985314978922779cf6d06d04256f3c87f05da643bb8a1b1922377262d5a"
+        },
+        {
+          "path": "evals/results/cycle-01/critic-B.json",
+          "bytes": 34538,
+          "sha256": "9cf45af47f78aeaf083ab38d94e9a63072de423126247b4f9fc72828d7598e11"
+        },
+        {
+          "path": "evals/results/cycle-01/critic-C.json",
+          "bytes": 31265,
+          "sha256": "f0578a3e63c9afc0e54bcbd363229cd951a5b128c23a316bb2e2d54e4b4519d8"
+        },
+        {
+          "path": "evals/results/cycle-01/critic-D.json",
+          "bytes": 30252,
+          "sha256": "9bf35177f160b26ed883aeb2ed7d17b37556d6a89877638ed953b80f44c3f0cb"
         },
         {
           "path": "evals/results/cycle-01/human-scores.template.yaml",
@@ -2404,6 +2474,16 @@
           "sha256": "59bd823d946b88b3a53de505563c69b362b7d35959a03985aad97e3e5f76c6e7"
         },
         {
+          "path": "evals/results/cycle-01/summary.json",
+          "bytes": 28012,
+          "sha256": "8e2388f3f878c954fba7a039fda1979765241222831a4b38e4ca29d93b5484b5"
+        },
+        {
+          "path": "evals/results/cycle-01/tables.md",
+          "bytes": 2662,
+          "sha256": "03bb83ce4a4ec22c086b8c90492ec0a115e308870d0e63258c9fa0fe46bbb815"
+        },
+        {
           "path": "evals/routing/cases.yaml",
           "bytes": 2757,
           "sha256": "58822a866f1a5a3a421726e74634f5eff401721e21ae0409f1bfb2d41495fd62"
@@ -2424,7 +2504,43 @@
           "sha256": "5667b8e81853c8d4664a1b81b78606c9c56f7b99ad6e122101dc9d1201298774"
         }
       ],
-      "total_bytes": 3589495
+      "total_bytes": 3761729
+    },
+    "handoff": {
+      "description": "Handoff guide, integration guide, knowledge export, packaged skill",
+      "files": [
+        {
+          "path": "handoff/INTEGRATION.md",
+          "bytes": 13066,
+          "sha256": "f5ba198e756549d180f90b68cffe966b6003ec74f24bea4c66598e74a610084b"
+        },
+        {
+          "path": "handoff/README.md",
+          "bytes": 5004,
+          "sha256": "b293788ec09e99fe1e02313a35dbd4736da7b5e4be4160574f562ad8fc900b2e"
+        },
+        {
+          "path": "handoff/design-intelligence-v0.1.0.zip",
+          "bytes": 80659,
+          "sha256": "9f8bf99d5c4c61502ff158da99e301c9adaf7949cf606d402680ebbc581a72e4"
+        },
+        {
+          "path": "handoff/design-intelligence-v0.1.0.zip.sha256",
+          "bytes": 97,
+          "sha256": "0a7bf4030b38ca74a4ae1e3d38f98512633ace160dd706705dea83e80d5fed4e"
+        },
+        {
+          "path": "handoff/di-knowledge-v0.1.0.full.json",
+          "bytes": 4767063,
+          "sha256": "ac151242e29b239c2b6d22e38733992148ca9c57bff89ec6c290c78567a65220"
+        },
+        {
+          "path": "handoff/di-knowledge-v0.1.0.json",
+          "bytes": 225712,
+          "sha256": "c7fc1fb76697271f59907705fc81b3b05d50fe8d7da4c9512369bb26cbc3a853"
+        }
+      ],
+      "total_bytes": 5091601
     },
     "tests": {
       "description": "Unit, integrity, contract and browser fixture tests",
@@ -2438,6 +2554,11 @@
           "path": "tests/corpus.test.ts",
           "bytes": 909,
           "sha256": "d9206082d373034638a315cb6b9d24f3e93f97390fe29b34ec9fbc9715d377b5"
+        },
+        {
+          "path": "tests/export.test.ts",
+          "bytes": 1119,
+          "sha256": "ddd6c436af7c15be8b3b21a96cf7cc7abccb99ce0202e66d1b1df1b9a745ae2f"
         },
         {
           "path": "tests/fixtures/verify-bad/index.html",
@@ -2470,7 +2591,7 @@
           "sha256": "8e5d7d9592eeccf21357d7c40894b71619c028572841a8aeaccbd78c8d9ef791"
         }
       ],
-      "total_bytes": 16773
+      "total_bytes": 17892
     }
   },
   "unassigned": []
