@@ -1,7 +1,7 @@
 {
   "format": "di-handoff-manifest",
   "di_version": "0.1.0",
-  "file_count": 506,
+  "file_count": 509,
   "components": {
     "skill": {
       "description": "Agent skill: router, contract, compiled references, workflows, runtime verifier",
@@ -764,9 +764,14 @@
           "path": "datasets/candidates/cc-0013.yaml",
           "bytes": 699,
           "sha256": "ec72c069fe0fb560947fc201cc4af13f36e625f380fda68f9ea0dcfc54255494"
+        },
+        {
+          "path": "datasets/candidates/cc-0014.yaml",
+          "bytes": 869,
+          "sha256": "bfee3bc0fea89e5446e56ed20b05d8e7663958a726ab3837bf9f5f5c9e9f8d41"
         }
       ],
-      "total_bytes": 11437
+      "total_bytes": 12306
     },
     "evidence": {
       "description": "Derived capture data (no page copy) and VERIFIED/OBSERVED/INFERRED observations",
@@ -2510,6 +2515,11 @@
       "description": "Handoff guide, integration guide, knowledge export, packaged skill",
       "files": [
         {
+          "path": "handoff/FIRST-PROMPT-AR.md",
+          "bytes": 5193,
+          "sha256": "9e87a7bce5cbd566cc8ad5cf10342c9f91aac4ac35d55cb81db4b46ad81d60f1"
+        },
+        {
           "path": "handoff/INTEGRATION.md",
           "bytes": 13066,
           "sha256": "f5ba198e756549d180f90b68cffe966b6003ec74f24bea4c66598e74a610084b"
@@ -2518,6 +2528,11 @@
           "path": "handoff/README.md",
           "bytes": 5004,
           "sha256": "b293788ec09e99fe1e02313a35dbd4736da7b5e4be4160574f562ad8fc900b2e"
+        },
+        {
+          "path": "handoff/SETUP-AR.md",
+          "bytes": 6655,
+          "sha256": "79154e0f9fb4eed895f4ba9fc8f33843901aa2fe2b95e60dd51fb665c6286a2c"
         },
         {
           "path": "handoff/design-intelligence-v0.1.0.zip",
@@ -2540,7 +2555,7 @@
           "sha256": "8fc8d8e250fb93bceaef2ad958d6efb7540bdf30b6a6f392d5f16a5cb78a99a0"
         }
       ],
-      "total_bytes": 5093875
+      "total_bytes": 5105723
     },
     "tests": {
       "description": "Unit, integrity, contract and browser fixture tests",
