@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reconciliation overview · Ledgerline</title>
+<meta name="description" content="Ledgerline reconciliation overview: yesterday's match health and the exception queue for the finance operations team.">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#queue-title">Skip to exceptions</a>
+
+<header class="appbar">
+  <div class="appbar__inner">
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="menu-sheet">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.6"/></svg>
+      Menu
+    </button>
+    <a class="brand" href="#overview">
+      <svg class="brand__mark" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true" focusable="false">
+        <rect width="20" height="20" rx="3" fill="currentColor"/>
+        <path d="M4.5 7h11M4.5 12.5h6.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="14.6" cy="12.5" r="1.7" fill="#fff"/>
+      </svg>
+      <span class="brand__name">Ledgerline</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Product">
+      <ul>
+        <li><a href="#overview" aria-current="page">Overview</a></li>
+        <li><a href="#exceptions">Exceptions <span class="nav-count" data-nav-count>37</span><span class="vh"> open</span></a></li>
+        <li><a href="#payouts">Payouts</a></li>
+        <li><a href="#bank-feeds">Bank feeds</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="appbar__tools">
+      <div class="pop">
+        <button class="env-btn" type="button" id="env-btn" aria-expanded="false" aria-controls="env-pop">
+          <span class="env-btn__org" data-entity-label>Ottervale Group</span>
+          <span class="env-tag" data-env-tag><span class="env-tag__dot" aria-hidden="true"></span><span data-env-label>Live</span></span>
+          <svg class="chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="vh">, switch entity or environment</span>
+        </button>
+        <div class="pop__panel" id="env-pop" hidden>
+          <p class="pop__title">Ottervale Group</p>
+          <fieldset class="radio-list">
+            <legend>Entity</legend>
+            <label><input type="radio" name="entity-c" value="all" checked> <span><strong>All entities</strong><span class="radio-list__hint">Consolidated view</span></span></label>
+            <label><input type="radio" name="entity-c" value="de"> <span><strong>Ottervale Goods GmbH</strong><span class="radio-list__hint">EUR ••4410</span></span></label>
+            <label><input type="radio" name="entity-c" value="uk"> <span><strong>Ottervale Goods Ltd</strong><span class="radio-list__hint">GBP ••7302</span></span></label>
+            <label><input type="radio" name="entity-c" value="se"> <span><strong>Ottervale Nordic AB</strong><span class="radio-list__hint">SEK ••1189</span></span></label>
+          </fieldset>
+          <fieldset class="radio-list">
+            <legend>Environment</legend>
+            <label><input type="radio" name="env" value="live" checked> <span><strong>Live</strong><span class="radio-list__hint">Real provider and bank data</span></span></label>
+            <label><input type="radio" name="env" value="sandbox"> <span><strong>Sandbox</strong><span class="radio-list__hint">Test data, safe to experiment</span></span></label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="pop">
+        <button class="user-btn" type="button" id="user-btn" aria-expanded="false" aria-controls="user-pop">
+          <span class="avatar" aria-hidden="true">MK</span>
+          <span class="user-btn__name">Marta Kowalski</span>
+          <svg class="chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="vh">, account menu</span>
+        </button>
+        <div class="pop__panel pop__panel--end" id="user-pop" hidden>
+          <p class="pop__title">Marta Kowalski</p>
+          <p class="pop__meta">Finance operations manager<br>marta@ottervale.example</p>
+          <ul class="pop__list">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#notifications">Notification settings</a></li>
+            <li><a href="#shortcuts">Keyboard shortcuts</a></li>
+            <li><a href="#sign-out">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<dialog class="sheet" id="menu-sheet" aria-labelledby="menu-sheet-title">
+  <div class="sheet__head">
+    <p class="sheet__title" id="menu-sheet-title">Ledgerline</p>
+    <button class="icon-btn" type="button" data-sheet-close aria-label="Close menu">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Product, menu">
+    <ul class="sheet__nav">
+      <li><a href="#overview" aria-current="page">Overview</a></li>
+      <li><a href="#exceptions">Exceptions <span class="nav-count" data-nav-count>37</span><span class="vh"> open</span></a></li>
+      <li><a href="#payouts">Payouts</a></li>
+      <li><a href="#bank-feeds">Bank feeds</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+  </nav>
+  <div class="sheet__scope">
+  <fieldset class="radio-list">
+    <legend>Entity</legend>
+    <label><input type="radio" name="entity-m" value="all" checked> <span><strong>All entities</strong><span class="radio-list__hint">Consolidated view</span></span></label>
+    <label><input type="radio" name="entity-m" value="de"> <span><strong>Ottervale Goods GmbH</strong><span class="radio-list__hint">EUR ••4410</span></span></label>
+    <label><input type="radio" name="entity-m" value="uk"> <span><strong>Ottervale Goods Ltd</strong><span class="radio-list__hint">GBP ••7302</span></span></label>
+    <label><input type="radio" name="entity-m" value="se"> <span><strong>Ottervale Nordic AB</strong><span class="radio-list__hint">SEK ••1189</span></span></label>
+  </fieldset>
+  <fieldset class="radio-list">
+    <legend>Environment</legend>
+    <label><input type="radio" name="env-m" value="live" checked> <span><strong>Live</strong><span class="radio-list__hint">Real provider and bank data</span></span></label>
+    <label><input type="radio" name="env-m" value="sandbox"> <span><strong>Sandbox</strong><span class="radio-list__hint">Test data, safe to experiment</span></span></label>
+  </fieldset>
+  </div>
+  <div class="sheet__user">
+    <span class="avatar" aria-hidden="true">MK</span>
+    <p><strong>Marta Kowalski</strong><br><span class="muted">marta@ottervale.example</span></p>
+    <a href="#sign-out">Sign out</a>
+  </div>
+</dialog>
+
+<main id="main">
+  <p class="env-banner" data-env-banner hidden>
+    <strong>Sandbox.</strong> You are looking at test data. Nothing here touches Ottervale's books.
+  </p>
+
+  <div class="page">
+    <div class="page-head">
+      <div class="page-head__title">
+        <h1>Reconciliation overview</h1>
+        <p class="run-status">
+          <svg class="run-status__icon" viewBox="0 0 14 14" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4.2 7.2 6.1 9l3.7-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span>Nightly run for <strong>Thu 1 Oct</strong> finished 06:12 CEST · 4 providers and 3 bank feeds synced</span>
+        </p>
+        <p class="scope-line" data-scope-line>Yesterday, 1 Oct · All providers · All entities</p>
+      </div>
+
+      <form class="filters" id="filters" aria-label="Filters">
+        <div class="field">
+          <label for="f-range">Date range</label>
+          <select id="f-range" name="range">
+            <option value="yesterday" selected>Yesterday (1 Oct)</option>
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="custom">Custom range…</option>
+          </select>
+        </div>
+        <div class="field field--pair" data-custom hidden>
+          <div class="field">
+            <label for="f-from">From</label>
+            <input type="date" id="f-from" name="from" min="2026-09-02" max="2026-10-01" value="2026-09-25" aria-describedby="range-error">
+          </div>
+          <div class="field">
+            <label for="f-to">To</label>
+            <input type="date" id="f-to" name="to" min="2026-09-02" max="2026-10-01" value="2026-10-01" aria-describedby="range-error">
+          </div>
+          <p class="field-error" id="range-error" role="alert" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-provider">Payment provider</label>
+          <select id="f-provider" name="provider">
+            <option value="all" selected>All providers</option>
+            <option value="stripe">Stripe</option>
+            <option value="adyen">Adyen</option>
+            <option value="paypal">PayPal</option>
+            <option value="klarna">Klarna</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-entity">Account / entity</label>
+          <select id="f-entity" name="entity">
+            <option value="all" selected>All entities</option>
+            <option value="de">Ottervale Goods GmbH · EUR ••4410</option>
+            <option value="uk">Ottervale Goods Ltd · GBP ••7302</option>
+            <option value="se">Ottervale Nordic AB · SEK ••1189</option>
+          </select>
+        </div>
+        <button class="btn btn--quiet" type="reset" data-reset hidden>Reset filters</button>
+      </form>
+    </div>
+
+    <section class="kpis" aria-labelledby="kpi-title">
+      <h2 class="vh" id="kpi-title">Summary for <span data-period-label>Thu 1 Oct 2026</span></h2>
+      <dl class="kpi-grid">
+        <div class="kpi" data-kpi="rate">
+          <dt>Matched rate</dt>
+          <dd class="kpi__value" data-value>97.4%</dd>
+          <dd class="kpi__note" data-note>of €701,559.62 payout volume</dd>
+          <dd class="kpi__delta" data-delta></dd>
+        </div>
+        <div class="kpi" data-kpi="unmatched">
+          <dt>Unmatched amount</dt>
+          <dd class="kpi__value" data-value>€18,240.55</dd>
+          <dd class="kpi__note" data-note>not matched by the nightly run</dd>
+          <dd class="kpi__delta" data-delta></dd>
+        </div>
+        <div class="kpi" data-kpi="open">
+          <dt>Open exceptions</dt>
+          <dd class="kpi__value" data-value>37</dd>
+          <dd class="kpi__note" data-note>
+            <button class="urgent-link" type="button" data-urgent-link aria-pressed="false">
+              <svg class="i-urgent" viewBox="0 0 14 14" width="14" height="14" aria-hidden="true" focusable="false"><path d="M7 1.2 13.2 12.3H.8Z" fill="currentColor"/><path d="M7 5.2v3.3" stroke="#fff" stroke-width="1.5"/><circle cx="7" cy="10.3" r=".85" fill="#fff"/></svg>
+              <span data-urgent-count>9 urgent</span>
+            </button>
+          </dd>
+          <dd class="kpi__delta" data-delta></dd>
+        </div>
+        <div class="kpi" data-kpi="ttr">
+          <dt>Median time to resolve</dt>
+          <dd class="kpi__value" data-value>1.8 days</dd>
+          <dd class="kpi__note" data-note>across 16 resolved exceptions</dd>
+          <dd class="kpi__delta" data-delta></dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="urgent-m" aria-labelledby="urgent-m-title">
+      <div class="urgent-m__head">
+        <h2 id="urgent-m-title">Urgent exceptions</h2>
+        <p class="muted" data-urgent-m-sub>Open 5+ days or €2,500 or more</p>
+      </div>
+      <ol class="urgent-m__list" data-urgent-m></ol>
+      <p class="urgent-m__note">Phone view shows the priority queue. Filters, sorting and the full table are on tablet and desktop.</p>
+    </section>
+
+    <div class="workspace">
+      <section class="queue" aria-labelledby="queue-title">
+        <div class="queue__head">
+          <h2 id="queue-title" tabindex="-1">Exceptions</h2>
+          <p class="queue__summary" data-queue-summary></p>
+        </div>
+
+        <div class="queue__tools">
+          <fieldset class="seg">
+            <legend class="seg__legend">Status</legend>
+            <div class="seg__opts" data-status-filter>
+              <label class="seg__opt"><input type="radio" name="status" value="open" checked><span>All open</span> <span class="seg__count" data-count="open">37</span></label>
+              <label class="seg__opt"><input type="radio" name="status" value="new"><span>New</span> <span class="seg__count" data-count="new">11</span></label>
+              <label class="seg__opt"><input type="radio" name="status" value="investigating"><span>Investigating</span> <span class="seg__count" data-count="investigating">14</span></label>
+              <label class="seg__opt"><input type="radio" name="status" value="waiting"><span>Waiting on provider</span> <span class="seg__count" data-count="waiting">12</span></label>
+              <label class="seg__opt"><input type="radio" name="status" value="resolved"><span>Resolved</span> <span class="seg__count" data-count="resolved">16</span></label>
+            </div>
+          </fieldset>
+          <label class="check">
+            <input type="checkbox" id="f-urgent" name="urgent">
+            <span>Urgent only</span> <span class="seg__count" data-count="urgent">9</span>
+          </label>
+        </div>
+
+        <div class="table-wrap" data-table-wrap>
+          <table class="xtable" aria-describedby="table-hint">
+            <caption class="vh" data-caption>Exceptions</caption>
+            <colgroup>
+              <col class="col-prio"><col class="col-id"><col class="col-prov"><col class="col-amt"><col class="col-cur"><col class="col-age"><col class="col-reason"><col class="col-status"><col class="col-assignee">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col" class="c-prio" data-sort-th="priority"><button class="sort" type="button" data-sort="priority"><svg class="sort__glyph i-urgent" viewBox="0 0 14 14" width="14" height="14" aria-hidden="true" focusable="false"><path d="M7 1.2 13.2 12.3H.8Z" fill="currentColor"/><path d="M7 5.2v3.3" stroke="#fff" stroke-width="1.5"/><circle cx="7" cy="10.3" r=".85" fill="#fff"/></svg><span class="sort__label">Priority</span><svg class="sort__icon" viewBox="0 0 10 12" width="10" height="12" aria-hidden="true" focusable="false"><path class="sort__up" d="M5 1 8.5 5h-7Z"/><path class="sort__down" d="M5 11 1.5 7h7Z"/></svg></button></th>
+                <th scope="col" class="c-id">ID</th>
+                <th scope="col" class="c-prov">Provider</th>
+                <th scope="col" class="c-amt num" data-sort-th="amount"><button class="sort" type="button" data-sort="amount">Amount<svg class="sort__icon" viewBox="0 0 10 12" width="10" height="12" aria-hidden="true" focusable="false"><path class="sort__up" d="M5 1 8.5 5h-7Z"/><path class="sort__down" d="M5 11 1.5 7h7Z"/></svg></button></th>
+                <th scope="col" class="c-cur"><span aria-hidden="true">Cur.</span><span class="vh">Currency</span></th>
+                <th scope="col" class="c-age num" data-sort-th="age"><button class="sort" type="button" data-sort="age">Age<svg class="sort__icon" viewBox="0 0 10 12" width="10" height="12" aria-hidden="true" focusable="false"><path class="sort__up" d="M5 1 8.5 5h-7Z"/><path class="sort__down" d="M5 11 1.5 7h7Z"/></svg></button></th>
+                <th scope="col" class="c-reason">Reason</th>
+                <th scope="col" class="c-status">Status</th>
+                <th scope="col" class="c-assignee">Assignee</th>
+              </tr>
+            </thead>
+            <tbody data-rows></tbody>
+            <tfoot data-tfoot></tfoot>
+          </table>
+        </div>
+
+        <div class="pager">
+          <p class="pager__label" data-pager-label></p>
+          <div class="pager__btns">
+            <button class="btn btn--small" type="button" data-page="-1">Previous</button>
+            <button class="btn btn--small" type="button" data-page="1">Next</button>
+          </div>
+        </div>
+        <p class="hint" id="table-hint"><kbd>↑</kbd> <kbd>↓</kbd> move between exceptions · <kbd>Enter</kbd> opens details · <kbd>Esc</kbd> closes them. Urgent means open 5+ days or €2,500 or more.</p>
+      </section>
+
+      <aside class="rail" aria-label="Trend, activity and exception details">
+        <section class="panel trend" aria-labelledby="trend-title">
+          <div class="panel__head">
+            <h2 id="trend-title">Payout volume, 30 days</h2>
+            <p class="panel__sub" data-trend-range>2 Sep – 1 Oct · matched vs unmatched, EUR</p>
+          </div>
+          <div class="readout">
+            <button class="icon-btn" type="button" data-day="-1" aria-label="Previous day">
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M10 3.5 5.5 8l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <div class="readout__text" data-readout aria-live="polite"></div>
+            <button class="icon-btn" type="button" data-day="1" aria-label="Next day">
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+          <div class="chart" data-chart-wrap>
+            <svg class="chart__svg" data-chart role="img" aria-labelledby="chart-title chart-desc">
+              <title id="chart-title">Daily payout volume, matched and unmatched</title>
+              <desc id="chart-desc"></desc>
+            </svg>
+          </div>
+          <details class="chart-table">
+            <summary>Show data as a table</summary>
+            <div class="chart-table__scroll" role="region" aria-label="Daily payout volume table" tabindex="0">
+              <table class="mini-table">
+                <caption class="vh">Daily payout volume, matched and unmatched, in EUR</caption>
+                <thead><tr><th scope="col">Day</th><th scope="col" class="num">Matched</th><th scope="col" class="num">Unmatched</th><th scope="col" class="num">Unmatched %</th></tr></thead>
+                <tbody data-chart-table></tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+
+        <section class="panel activity" aria-labelledby="activity-title">
+          <div class="panel__head">
+            <h2 id="activity-title">Activity</h2>
+            <p class="panel__sub">Last 8 events, whole team</p>
+          </div>
+          <div class="journal" data-activity></div>
+        </section>
+
+        <dialog class="detail" id="detail" aria-labelledby="detail-title">
+          <div class="detail__head">
+            <h2 class="detail__title" id="detail-title" tabindex="-1">Exception</h2>
+            <button class="icon-btn" type="button" data-detail-close aria-label="Close details">
+              <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+          <div class="detail__body" data-detail-body></div>
+        </dialog>
+      </aside>
+    </div>
+
+  </div>
+</main>
+
+<footer class="appfoot">
+  <p>Ledgerline · Ottervale Group · Data as of Fri 2 Oct 2026, 09:10 CEST. Sample data for a fictional company.</p>
+</footer>
+
+<div class="vh" aria-live="polite" id="announcer"></div>
+</body>
+</html>
