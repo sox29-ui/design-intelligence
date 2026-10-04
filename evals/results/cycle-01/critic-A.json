@@ -1,0 +1,487 @@
+{
+  "brief": "A",
+  "outputs": [
+    {
+      "blind_id": "A-17B383",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4.5,
+        "originality_art_direction": 3.5,
+        "responsive_quality": 3.5,
+        "accessibility": 4.5,
+        "performance": 4.5,
+        "system_consistency": 4.5
+      },
+      "diagnostic": {
+        "typography": 4.5,
+        "composition": 4,
+        "unjustified_signature_count": 0
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Hero score shrinks to an unreadable fragment on phones",
+          "evidence": "390x844-top.jpg: the stave band (y~620-690) shows only the descending right third of the dotted wave plus one dashed rest, with no rise and no pitch change. 1440x900-top.jpg and 1920x1080-top.jpg show the full rise / silence / fall cycle across the viewport.",
+          "why_it_matters": "Phones are the primary device and the stave is this page's only distinctive image. At 390 it stops reading as a score, so the hook falls back to the caption 'Lento, with the tide'.",
+          "smallest_fix": "Re-frame the SVG (viewBox) so one complete rise-silence-fall cycle fits at <=480 px instead of cropping the desktop drawing."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "The four per-session 'Reserve' links are small, identically named text links",
+          "evidence": "390x844-long.jpg (low-tide section): each session's 'Reserve' is ~60x20 px of underlined text at the heading's right edge; 1440x900-scroll-50.jpg shows four identical 'Reserve' links; the hero CTA is 356x56 px (390x844-top.jpg). Axe and the tap-target check pass, so this is a comfort/naming gap, not a rule failure.",
+          "why_it_matters": "These are the highest-intent conversion points for the evening sessions. A 20 px-tall link is hard to hit one-handed, and a screen-reader link list reads 'Reserve' four times.",
+          "smallest_fix": "Pad each to a >=44 px hit area and add visually hidden date text or an aria-label ('Reserve Saturday 28 November')."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Four font files for two families, and the slowest simulated first paint of the set",
+          "evidence": "automated.json: fonts.count 4 / 97,842 B; lighthouseMobile FCP = LCP = 1773 ms versus 1052-1632 ms for the other four, while JS is only 10 KB and CSS is inlined. Lighthouse performance is still 0.99.",
+          "why_it_matters": "Everything else on the page is lean; the font payload is the only sizeable avoidable cost, and the cross-origin font CSS is the probable cause of the slower first paint (not confirmable from the artifacts).",
+          "smallest_fix": "Preload the two above-the-fold font files, or drop Public Sans for a system sans on labels."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "'Slightly uncanny' is under-served",
+          "evidence": "Whole-page captures read as calm, complete and explanatory (legend, 10,560 stat, form, fictional-disclosure footer). The only unsettling beats are the silences in the stave and the audio button.",
+          "why_it_matters": "The brief asks for contemplative AND slightly uncanny; this tilts to tasteful and safe.",
+          "smallest_fix": "Add one deliberately unexplained, precise detail (for example the current modelled tide minute) instead of more explanation."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Static page for a live work",
+          "evidence": "1440x900-top.jpg vs 1440x900-reduced-motion-top.jpg differ in 8 of 1,296,000 pixels: nothing moves, and no live readout appears anywhere in the captures (the three dark outputs all have one). Only the audio sketch is dynamic.",
+          "why_it_matters": "Reduced motion is trivially honoured, but the 'slowly evolving composition' is told rather than shown.",
+          "smallest_fix": "Add one 'now' marker on the hero stave, paused under prefers-reduced-motion."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Hero 'score' is a chart in notation clothing and the layout is a familiar editorial template",
+          "evidence": "1440x900-top.jpg (zoomed): the dotted curve runs above and below the five staff lines and the dots do not sit on lines or spaces (density is encoded in dot spacing, which is accurate, but it reads as a plot). Layout is a centered hero stack, then left-rail sections (1440x900-long.jpg).",
+          "why_it_matters": "Coherent and brief-derived, but identity rests on one graphic, the 10,560 stat and the how-to-read legend.",
+          "smallest_fix": "Optional: break the centered axis once, for example by letting the stave carry the title's baseline."
+        }
+      ],
+      "central_idea": "The tide as a notated, playable score: a dotted tide curve with silences on a stave, a how-to-read legend and per-session micro-charts against the 20:30 start, in a restrained paper-and-ink layout.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "A-326DE8",
+      "scores": {
+        "brief_fidelity": 4.5,
+        "hierarchy_usability": 4.5,
+        "originality_art_direction": 4.5,
+        "responsive_quality": 4.5,
+        "accessibility": 4.5,
+        "performance": 4,
+        "system_consistency": 4
+      },
+      "diagnostic": {
+        "typography": 4.5,
+        "composition": 4.5,
+        "unjustified_signature_count": 0
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Navigation stays behind a Menu button at 768 px",
+          "evidence": "768x1024-top.jpg: wordmark left, Menu + Reserve right with ~430 px of unused header; inline links appear only at 1440x900-top.jpg. The disclosure itself is sound (automated.json menu: aria-expanded false->true, aria-controls present, Escape closes, focus stays on the button).",
+          "why_it_matters": "Tablet users spend an extra tap to reach three anchors.",
+          "smallest_fix": "Show inline links from ~720 px."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Open menu has no scrim or shadow and cuts hero text mid-line",
+          "evidence": "390x844-menu-open.jpg: the panel's lower edge at y~240 slices 'performed by the room.' in half; automated.json menu.bodyLocked is false, so the page scrolls behind it.",
+          "why_it_matters": "Weak boundary between overlay and content.",
+          "smallest_fix": "Add a 1 px shadow or scrim, or push content down as a true disclosure."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Mini-scores in the low-tide rows are too small to read as notation",
+          "evidence": "1440x900-scroll-50.jpg: each excerpt is ~360x30 px with ~3 px noteheads; 390x844-long.jpg (low-tide section) is similar. The text lines carry the data ('Low water arrives 12 minutes in'), so no information is lost, but the page's central device turns into texture exactly where it should show low water.",
+          "why_it_matters": "The concept stops working at the point where it should explain the evening sessions.",
+          "smallest_fix": "Raise to ~48 px tall, drop beams, and label the rest cluster 'low water'."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "The brief's '(fictional programme)' qualifier is dropped and there is no fiction disclosure",
+          "evidence": "1440x900-long.jpg footer and 390x844-focus.jpg: 'Lisbon Port Authority' and 'Instituto Hidrográfico — data partner' appear as plain partners; the footer line has no fiction note (A-17B383 and A-52FBF5 both carry one).",
+          "why_it_matters": "Real institution names are presented as partners of a fictional work.",
+          "smallest_fix": "Restore the qualifier and add a one-line 'fictional' footer note."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "The reservation block is step one of a longer flow but is labelled as the final action",
+          "evidence": "1440x900-long.jpg (y~3,420-3,710) and 390x844-long.jpg (reserve block): Day / Entry time / People selects, a red 'Reserve a free timed entry', then 'Next, confirm your name and email to receive your entry pass'.",
+          "why_it_matters": "The button promises a completed reservation; the extra step adds friction to a free ticket.",
+          "smallest_fix": "Rename the button 'Continue' or inline the email field."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Score and audio likely depend on 24 KB of client JS with no evidenced fallback (unverified)",
+          "evidence": "automated.json static.bytes: js 24,019 vs html 21,393. The score re-flows to 3 systems at 390 and 2 at >=768 (390x844-top.jpg vs 768x1024-top.jpg), implying client-side layout; no no-JS capture exists.",
+          "why_it_matters": "If the script fails, the hero's main visual and the audio vanish.",
+          "smallest_fix": "Ship one pre-rendered SVG system as the default."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Date-range typography is inconsistent",
+          "evidence": "390x844-top.jpg and 1440x900-top.jpg: the mono hero line shows '14 Nov - 27 Dec 2026' with a spaced hyphen, while the Visit block and footer use en dashes.",
+          "why_it_matters": "Small precision slip on a brand that sells precision.",
+          "smallest_fix": "Use U+2013 in the mono line."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Static page for a live work",
+          "evidence": "1440x900-top.jpg and 1440x900-reduced-motion-top.jpg are pixel-identical (RMSE 0, same 95,652 B file size); no live readout appears anywhere.",
+          "why_it_matters": "Reduced motion is trivially honoured, but 'slowly evolving composition' is told, not shown; the 'Listen to one tide' sketch is the only dynamic element.",
+          "smallest_fix": "Optional: a single 'now' marker on the hero score, paused under prefers-reduced-motion."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Signal red is the loudest colour on a contemplative brand",
+          "evidence": "#b3261e is used for the CTA, the 20:30 'now' line and the room-plan route (390x844-top.jpg, 1440x900-scroll-50.jpg, 390x844-long.jpg).",
+          "why_it_matters": "It is disciplined and functional, and it makes the CTA the strongest element, but it reads editorial-print rather than estuary-at-night 'uncanny'.",
+          "smallest_fix": "Optional: shift toward a darker oxide red."
+        }
+      ],
+      "central_idea": "The page itself is a piece of music: a genuinely engraved score of one tidal cycle (124 readings over 12 h 25 min, rests for slack water, dynamics, 'Lento, con la marea') re-engraved per viewport and reused as excerpts for each low-tide session.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "A-50EF2E",
+      "scores": {
+        "brief_fidelity": 3.5,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 3.5,
+        "responsive_quality": 4,
+        "accessibility": 4,
+        "performance": 4,
+        "system_consistency": 3.5
+      },
+      "diagnostic": {
+        "typography": 3.5,
+        "composition": 4,
+        "unjustified_signature_count": 2
+      },
+      "unjustified_signatures": [
+        "giant-hero-type",
+        "scroll-reveal"
+      ],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Giant title that carries no concept and pushes the CTA and score down",
+          "evidence": "automated.json signatures: giant-hero-type 248 px = 17.2 vw = 7.3x body (157 px at 768, 80 px at 390). 1440x900-top.jpg: the title spans y~155-350; the CTA sits mid-right at x873-1210, y445-500 and the score is pushed to the bottom of the fold.",
+          "why_it_matters": "The scale adds weight but no meaning (compare the waterline in A-52FBF5 and the stave in A-B46EA2) and reads as festival poster, which the brief excludes.",
+          "smallest_fix": "Cap at ~160 px (~11 vw) or give the scale a job, and place the CTA directly under the tagline."
+        },
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Body copy is set in a condensed display serif while 60% of the text falls back to system-ui",
+          "evidence": "automated.json: bodySize 24 px (390) / 34 px (>=768), families system-ui 0.597 and Instrument Serif 0.403, readingCharsPerLine 29.7 at 390. 390x844-long.jpg and 1440x900-long.jpg show 7-8-line paragraphs in the condensed face; system-ui renders as a DejaVu-style sans in these captures, clunky beside the serif, and will differ per OS.",
+          "why_it_matters": "A display-only face tires over paragraphs, the page grows to 8.5 viewports on a phone, and the UI voice of a 'precise' brand is left to the operating system.",
+          "smallest_fix": "Set paragraphs at ~20-22 px in a text face (or Instrument Serif at <=22 px) and self-host one UI face."
+        },
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Heavy motion and reveal footprint",
+          "evidence": "automated.json: 49 infinite animations, 51 opacity-0 pre-reveal elements, 2 IntersectionObservers; Lighthouse TBT 35 ms, bootup 310 ms (highest of the five), main-thread 2,197 ms (third-highest). A 'Pause motion' button exists (a plus for WCAG 2.2.2).",
+          "why_it_matters": "Contradicts 'keep it light' on mid-range phones, and content stays hidden until JS runs.",
+          "smallest_fix": "Drive the hero score from one rAF loop; render sections visible by default and reveal only inside prefers-reduced-motion: no-preference with a .js class."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Header vanishes on scroll and a floating CTA overlaps content",
+          "evidence": "1440x900-scroll-50.jpg: no header; a fixed amber 'Reserve a free timed entry' pill at x1096-1416, y824-876 sits ~4 px below an in-page 'Reserve' button and over a row separator. 390x844-focus.jpg (deep scroll) shows neither header nor pill.",
+          "why_it_matters": "Navigation is unreachable until the user scrolls up, and the pill can cover targets and focused elements (WCAG 2.4.11).",
+          "smallest_fix": "Keep a sticky header with Reserve on mobile and hide the pill while a section's own Reserve is on screen."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "About 35% of the content width beside 'The work' is empty",
+          "evidence": "1440x900-long.jpg (y~1,300-3,150): paragraphs occupy x352-900 of a 96-1344 container, leaving ~440 px empty beside each; the page reaches ~7,173 px (8 viewports).",
+          "why_it_matters": "Dead space lengthens the page without adding content.",
+          "smallest_fix": "Move the legend and room diagram into the empty column."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "No section navigation below 1440 px",
+          "evidence": "390x844-top.jpg and 768x1024-top.jpg: header is wordmark plus one Reserve button; automated.json menu.found is false. Nav links appear only at 1440x900-top.jpg.",
+          "why_it_matters": "No way to jump to 'Low-tide sessions' or 'Visit' on an 8.5-viewport phone page.",
+          "smallest_fix": "Add a three-link row or a disclosure from 768."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Partners block and footer are not evidenced in any capture",
+          "evidence": "The long captures stop at 5,064 / 5,400 px of a 7,216 / 7,173 px page (automated.json pageHeightVh 8.55 / 7.97); 390x844-focus.jpg ends at the booking widget. externalHosts lists instagram, facebook and vimeo, so social links probably exist; partner names and the contact email are unverified.",
+          "why_it_matters": "Required brief content cannot be confirmed.",
+          "smallest_fix": "Re-capture the full page and confirm."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Stock 'moody nocturnal' look shared with A-52FBF5 and A-B46EA2",
+          "evidence": "Teal-black #0b1113 + amber #f0a54a + condensed serif + boxed section letters (A/B/C) + room-section drawing + Pause/Listen pills (1440x900-top.jpg, 390x844-long.jpg). The dim room defends the dark theme, but nothing in the amber is estuarine.",
+          "why_it_matters": "Distinctiveness within the set rests on the live playhead and the section drawing.",
+          "smallest_fix": "Optional: derive the accent from the site (harbour light, tide-table ink) and vary the section device."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Instrument-panel register",
+          "evidence": "'2.20 m RISING' playhead label and '38°42′ N 9°08′ W' coordinates (1440x900-top.jpg).",
+          "why_it_matters": "Leans toward a data-dashboard tone the brief rules out ('not a tech product').",
+          "smallest_fix": "Optional: phrase readings in the page's literary voice."
+        }
+      ],
+      "central_idea": "A nocturnal live score with an amber playhead showing the current tide reading, plus a room section in which the 40 hanging speakers trace the tide curve, ending in a calendar booking flow.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "A-52FBF5",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 3.5,
+        "performance": 4,
+        "system_consistency": 3.5
+      },
+      "diagnostic": {
+        "typography": 3.5,
+        "composition": 4,
+        "unjustified_signature_count": 2
+      },
+      "unjustified_signatures": [
+        "gradient-backgrounds",
+        "scroll-reveal"
+      ],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Tiny text and undersized controls at 390",
+          "evidence": "automated.json gates (WARN): tap-targets, 4 controls under 24x24 px; tiny-text, 9% of text under 12 px. 390x844-top.jpg: the eyebrow, the '10:24 / 1.48 m' readout and the score caption are ~10-11 px mono. The count of 4 matches the four per-session 'Reserve →' text links (~98x20 px in 390x844-long.jpg), which are the likely offenders; the Listen/Pause buttons are icon-only at 390.",
+          "why_it_matters": "Risk against WCAG 2.5.8, and the labels that explain the score are the smallest text on the page.",
+          "smallest_fix": "Raise mono microcopy to >=12 px, give every control a 44 px hit area, and keep text labels on Listen/Pause at 390."
+        },
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Decoration with no brief reason: gradient washes and scroll reveals",
+          "evidence": "automated.json signatures: gradient-backgrounds (area ratio 0.39) and scroll-reveal (59 opacity-0 elements, 4 IntersectionObservers). A contrast-stretched copy of 1440x900-top.jpg shows a radial teal wash across the hero. Main-thread 2,558 ms (second-highest of the five) and bootup 265 ms (second-highest).",
+          "why_it_matters": "Render cost and hidden-until-JS content for no conceptual gain.",
+          "smallest_fix": "Drop the wash or tie it to the waterline; keep sections visible by default."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Display-serif body and a sprawling type system",
+          "evidence": "automated.json: bodySize 24 px (390) / 38.4 px (>=768), 21-22 distinct rendered sizes, families system-ui 0.427, Instrument Serif 0.358, Fragment Mono 0.215. 1440x900-long.jpg (y~1,040-1,350) shows the 38 px condensed paragraph.",
+          "why_it_matters": "No discernible scale, and UI text falls to the OS font.",
+          "smallest_fix": "Collapse to <=10 size tokens and replace system-ui with one self-hosted face."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "The primary CTA is the latest in the set",
+          "evidence": "1440x900-top.jpg: CTA at y~704-758, right of the date, beneath the score band; 390x844-top.jpg: y~568-624, after the score, caption, two icon buttons and the date. Others sit at y~223-577 (1440) and ~300-525 (390). Still above the fold, and the header 'Reserve' compensates.",
+          "why_it_matters": "Reading order puts the action behind the showpiece.",
+          "smallest_fix": "Move date and CTA directly under the tagline and the score beneath."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "No wordmark and no navigation below 1440 until scrolled",
+          "evidence": "390x844-top.jpg and 768x1024-top.jpg: header holds only 'Reserve'; automated.json menu.found is false; nav links appear at 1440x900-top.jpg.",
+          "why_it_matters": "No jump navigation on an 8.4-viewport phone page.",
+          "smallest_fix": "Add a three-link row or disclosure from 768."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Booking states beyond the day grid and the footer are only partly evidenced",
+          "evidence": "The long captures stop at 5,064 / 5,400 px of 7,123 / 6,561 px; the footer, partners and fictional note are visible only in 390x844-focus.jpg.",
+          "why_it_matters": "Completeness cannot be fully confirmed.",
+          "smallest_fix": "Re-capture the full page."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Best single idea in the set, but its neighbours are shared",
+          "evidence": "1440x900-top.jpg (zoomed): the wordmark is clipped at a waterline, cream above and teal below, with a hairline across the page, tracking the modelled tide. The dark teal-black + amber palette, boxed section letters and room-section drawing recur in A-50EF2E and A-B46EA2.",
+          "why_it_matters": "Distinctiveness is carried by one device.",
+          "smallest_fix": "None needed."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Instrument-panel microcopy plus giant type pull toward 'tech' and 'festival'",
+          "evidence": "'10:24 / 1.48 m', '♩ = 50 … played 300 times faster' and the 194 px title (1440x900-top.jpg).",
+          "why_it_matters": "The brief says 'not a tech product, not a festival'.",
+          "smallest_fix": "Optional: soften the telemetry into the page's prose voice."
+        }
+      ],
+      "central_idea": "The wordmark is half-submerged below a waterline above a live, sonified score of a modelled tide; the room section and a booking calendar continue the tide-as-score metaphor.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "A-B46EA2",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 3.5,
+        "originality_art_direction": 3.5,
+        "responsive_quality": 3.5,
+        "accessibility": 3.5,
+        "performance": 3.5,
+        "system_consistency": 2.5
+      },
+      "diagnostic": {
+        "typography": 3.5,
+        "composition": 3.5,
+        "unjustified_signature_count": 0
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Type scale has no discipline",
+          "evidence": "automated.json: distinctFontSizeDeclarations 39 and 37-38 distinct rendered sizes (next worst 21-22, best 9-12); families Newsreader 0.802 and ui-monospace 0.198, the latter a per-OS fallback (a Courier-like 'Entrance' label at 1440x900-long.jpg y~3,080).",
+          "why_it_matters": "Hierarchy becomes arbitrary and the mono varies across devices.",
+          "smallest_fix": "Collapse to <=10 tokenised sizes; self-host or drop the mono."
+        },
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Key reassurance copy is tiny uppercase mono",
+          "evidence": "automated.json gates (WARN): tiny-text, 14% of text under 12 px at 390; tap-targets, 1 control under 24x24 px (likely the 'PAUSE MOTION' toggle, ~115x13 px in 390x844-top.jpg). WHEN / WHERE / OPEN, 'FREE · LIMITED CAPACITY · TIMED ENTRY' and 'NOW IN THE TAGUS' are ~10-11 px letter-spaced caps; the desktop nav is the same (1440x900-top.jpg).",
+          "why_it_matters": "The free/limited message beside the CTA and the motion control are the hardest things to read or hit on a phone.",
+          "smallest_fix": "Use >=12-13 px, reduce tracking, and give the toggle a 44 px hit area."
+        },
+        {
+          "severity": "MEDIUM",
+          "kind": "objective",
+          "title": "Pages are 31-55% longer than the others on mobile",
+          "evidence": "automated.json pageHeightVh: 11.22 at 390 (~9,470 px) versus 7.23-8.55 for the others, and 9.41 at 1440. 'Low-tide sessions' starts ~4,500 px down at 390 versus ~2,300-3,100 px elsewhere (390x844-long.jpg in each folder); 1440x900-scroll-50.jpg shows ~140 px of empty padding above the 'Low-tide sessions' heading.",
+          "why_it_matters": "For social-media phone visitors the evening sessions and the form sit far down.",
+          "smallest_fix": "Fold the 'how it becomes sound' explainer into a disclosure and halve section padding."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Highest main-thread and motion cost of the set, though still in the 'good' band",
+          "evidence": "automated.json: TBT 150 ms, main-thread 2,797 ms, 10 requests (most), 52 infinite animations, Lighthouse performance 0.98 (lowest). Reduced motion starts paused ('PLAY MOTION' in 1440x900-reduced-motion-top.jpg).",
+          "why_it_matters": "Avoidable cost on mid-range phones.",
+          "smallest_fix": "Drive staves and the hero note from one rAF loop and start animations only when in view."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "The hero's focal amber note exists only at 1440 and above",
+          "evidence": "390x844-top.jpg and 768x1024-top.jpg show stave lines through the title but no note, ghost notes or ripple; 1440x900-top.jpg and 1920x1080-top.jpg show them to the right of the 'k'.",
+          "why_it_matters": "The idea's key gesture disappears on the primary device.",
+          "smallest_fix": "Place the note after or under the title on narrow widths."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "No persistent CTA evidenced at depth on the longest page",
+          "evidence": "390x844-focus.jpg (deep scroll) shows no header or Reserve control, whereas A-17B383, A-326DE8 and A-52FBF5 keep a sticky Reserve there; the header is visible at 1440x900-scroll-50.jpg. Not testable at other offsets.",
+          "why_it_matters": "Longest page with the least persistent action on mobile.",
+          "smallest_fix": "Keep the header with Reserve sticky at 390."
+        },
+        {
+          "severity": "LOW",
+          "kind": "objective",
+          "title": "Language of parts is not evidenced",
+          "evidence": "1440x900-long.jpg (y~4,260) shows the Portuguese quote 'Rigorosa como uma tabela de marés, e estranha como um sonho.' and 1440x900-top.jpg the hero 'Senza misura'; automated.json static.lang is en and the span markup is not visible.",
+          "why_it_matters": "Screen readers may read the Portuguese in English phonetics (WCAG 3.1.2).",
+          "smallest_fix": "Add lang='pt' and lang='it' on those spans."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Same dark/amber/lettered-section system as A-50EF2E and A-52FBF5",
+          "evidence": "Boxed section letters A-D, amber note, mono labels and room plan (1440x900-long.jpg). The title set on a five-line stave is the only distinct device.",
+          "why_it_matters": "The long scroll reads as an essay about the work rather than an invitation to it.",
+          "smallest_fix": "Optional: shorten and lead with the sessions."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "kind": "subjective",
+          "title": "Telemetry readouts add a tech register",
+          "evidence": "'reading 112 of 240 · 1.69 m falling · low water about 13:11' (1440x900-long.jpg y~1,550) and 'NOW IN THE TAGUS · MODELLED' (1440x900-top.jpg).",
+          "why_it_matters": "The brief says 'not a tech product'; the 'modelled, not for navigation' honesty softens this.",
+          "smallest_fix": "Optional: phrase in prose."
+        }
+      ],
+      "central_idea": "The title sits on a five-line stave as the first note of a modelled live tide (amber note, ghost notes), followed by lettered movements, a 12-hour modelled score and honest 'modelled, not for navigation' labelling.",
+      "idea_from_brief": true
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "blind_id": "A-326DE8",
+      "weighted_estimate_of_100": 88.5,
+      "justification": "Best brief-derived art direction (a genuinely engraved score, re-engraved per viewport) with the earliest, highest-contrast CTA (y~223 at 1440, ~300 at 390), zero unjustified signatures, clean axe/focus and a correct menu pattern; every defect is LOW."
+    },
+    {
+      "rank": 2,
+      "blind_id": "A-17B383",
+      "weighted_estimate_of_100": 81.5,
+      "justification": "Cleanest and leanest build (10 KB JS, 599 ms main thread, no WARNs, no unjustified signatures) with strong information design (10,560 stat, legend, micro-charts), but a conventional centered template, a mobile hero score reduced to a fragment and little 'uncanny' (close call with #3)."
+    },
+    {
+      "rank": 3,
+      "blind_id": "A-52FBF5",
+      "weighted_estimate_of_100": 78.5,
+      "justification": "Best single idea (title half-submerged by a tide-driven waterline) plus a real booking calendar and paused-by-default reduced motion, held back by tiny-text/target WARNs, gradient and scroll-reveal decoration, the latest CTA of the five and display-serif body copy (close call with #2 and #4)."
+    },
+    {
+      "rank": 4,
+      "blind_id": "A-50EF2E",
+      "weighted_estimate_of_100": 75.5,
+      "justification": "Strong live-score hero and room-section drawing, but a concept-free 248 px title, display-serif body at 24-34 px, 49 infinite animations plus 51 reveal elements, a hide-on-scroll header with an overlapping floating CTA, and partners/footer not evidenced."
+    },
+    {
+      "rank": 5,
+      "blind_id": "A-B46EA2",
+      "weighted_estimate_of_100": 71.5,
+      "justification": "Elegant type and a clever title-on-stave, but the weakest system (39 font-size declarations), the longest pages (11.2 viewports at 390), 10-11 px mono microcopy, the highest main-thread cost, and the hero notes vanish below 1440."
+    }
+  ],
+  "ranking_confidence": "medium"
+}
