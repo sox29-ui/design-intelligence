@@ -31,8 +31,10 @@ function main() {
     const brief = bid.split('-')[0];
     const critic = critics.find((c) => String(c.brief).startsWith(brief));
     const co = critic?.outputs?.find((o: any) => o.blind_id === bid);
-    const rank = critic?.ranking ? critic.ranking.indexOf(bid) + 1 : null;
-    const n = critic?.ranking?.length ?? null;
+    // Critics return ranking as IDs or as { rank, blind_id } objects.
+    const ranking: string[] = critic?.ranking ? [...critic.ranking].sort((x: any, y: any) => (x?.rank ?? 0) - (y?.rank ?? 0)).map((x: any) => (typeof x === 'string' ? x : x.blind_id)) : [];
+    const rank = ranking.length ? ranking.indexOf(bid) + 1 || null : null;
+    const n = ranking.length || null;
     rows.push({
       blind_id: bid, brief, condition: k.condition, run: k.run,
       critic: co ? { scores: co.scores, total: r1(weightedTotal(co.scores, card.weights)), unjustified: (co.unjustified_signatures ?? []).length, gates: co.hard_gate_failures ?? [], idea_from_brief: co.idea_from_brief, rank, of: n, findings: (co.findings ?? []).reduce((m: Record<string, number>, f: any) => ((m[f.level] = (m[f.level] ?? 0) + 1), m), {}) } : null,

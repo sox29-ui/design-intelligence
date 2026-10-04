@@ -1,0 +1,355 @@
+{
+  "brief": "D",
+  "outputs": [
+    {
+      "blind_id": "D-44E09D",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 5,
+        "performance": 4,
+        "system_consistency": 4
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "unjustified_signature_count": 0,
+        "weighted_total_est_100": 82.0,
+        "signatures_detected_and_justified": [],
+        "notes": "Typography: Newsreader 20px body at ~1.6 leading, 26px standfirst, Archivo labels; 37 / 42 / 41.5 chars per line at 390 / 768 / 1440; only 14-18 computed font sizes per viewport; sentence-space collapse is the one real defect. Composition: essay column plus marginal rail at >=1440, diagonal hatch rule as recurring motif, 3x2 teaser grid, tinted interview band, three illustrated archive covers. Automated: no gate warnings, axe 0 at 390 and 1440, focus share 1.0, skip link first, Lighthouse a11y 1.0 / perf 0.99. Evidence coverage: long captures show ~45% of the page at 390 and ~85% at 1440; the footer (about, contributors, contact, colophon) is not visible in any capture, and the newsletter/print offer is seen only in 390x844-focus.jpg, so brief_fidelity is scored on visible content plus the automated report. Human-only checks (screen-reader reading of drop cap and SVG figures) not verifiable from stills."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "issue": "Sentence spaces collapse in the essay body",
+          "evidence": "After full stops and colons the word space is visibly narrower than between ordinary words: 'repeat.A lane', 'engine.Buildings', 'neighbours.The', 'itself.Shutters', 'not.Walk' (390x844-long.jpg y~870-1,010 and y~3,920; 1440x900-long.jpg y~1,010-2,260; 1920x1080-top.jpg first paragraph). The same Newsreader face renders normal sentence spacing at the same size in D-62C7C3 and D-F9F116, so the cause is specific to this build's CSS/font setup, not the typeface itself.",
+          "why_it_matters": "Reading comfort over the ~700-word excerpt is the brief's stated priority. Blurred sentence boundaries slow scanning and look unfinished to a typographer, and phones (half the audience) show it in every paragraph at 20px.",
+          "smallest_fix": "Reset word-spacing and letter-spacing to normal on the prose class and check any font-feature or optical-size override; re-verify '. A', '. T', '. W' pairs at 390 and 1440."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Desktop measure is short and half the page is blank beside the essay",
+          "evidence": "readingCharsPerLine = 41.5 at 1440 and 1920 (42.3 at 768): a 540px column at 20px. The right rail carries one pull quote and two sidenotes, leaving ~600px of empty cream for most of the essay (1440x900-long.jpg y~900-3,000).",
+          "why_it_matters": "41 characters is under the usual 45-75 comfort band, so lines break early and the rag is busy; the unused rail space carries no content.",
+          "smallest_fix": "Widen the prose column to about 32em (~640px, ~49 characters; the rail starts at x=790 so it fits) or seat sidenotes beside their referents."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Pull quote and aside repeat text already in view",
+          "evidence": "Pull quote 'The street, which was once the coolest room in the city, has become the hottest.' sits ~90px below the paragraph that ends with the same sentence at 390 (390x844-long.jpg y~1,903 vs ~1,991) and in the same viewport at 1440 (1440x900-long.jpg source y~1,446, quote y~1,290-1,370). The 'FIG. 1 shows the threshold...' sidenote restates the caption directly above it.",
+          "why_it_matters": "Duplicated copy spends the one margin slot per screen on something the reader has just read; it reads as filler in a publication that must feel authored.",
+          "smallest_fix": "Pull a line from a later paragraph (for example 'It is a way of measuring.') and merge the sidenote into the figure caption."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Subscribe is reachable only through the Menu on phones",
+          "evidence": "390x844-top.jpg header = logotype + Menu only; 390x844-menu-open.jpg lists Subscribe as the last item (y~330). The newsletter and print-offer blocks are beyond the first 5,000px at 390 (absent from 390x844-long.jpg; visible only in 390x844-focus.jpg).",
+          "why_it_matters": "Half the audience reads on phones and the print subscription is the brief's one revenue action; it costs two taps or a very long scroll.",
+          "smallest_fix": "At <=480px add a compact 'Subscribe' text link in the issue strip or beside the 'Continue reading' button."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Heaviest font payload of the four",
+          "evidence": "static/summary: 3 woff2 = 316,134 B, 83% of the 378,559 B transfer (other outputs: 153-224 KB fonts, 241-293 KB total). Lighthouse mobile is still 0.99 with FCP/LCP 1,623 ms.",
+          "why_it_matters": "'Keep the page light' is a brief constraint; the surplus is avoidable on a page of text and line art.",
+          "smallest_fix": "Subset to Latin and drop unused italic/optical-size axes or weights; aim for two font files."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Essay-first opening reads as an article page; issue identity is thin",
+          "evidence": "1440x900-top.jpg: the 'ISSUE 14 / Shade / AUTUMN 2026' strip is ~60px tall and the 64px essay headline plus figure dominate; the 'In this issue' block starts at y~3,400 (1440x900-long.jpg).",
+          "why_it_matters": "The brief asks for an issue home page that also contains the essay opening; here the identity rests on one italic word and a hatch rule.",
+          "smallest_fix": "If essay-first is intended, add a one-line jump ('In this issue - six more pieces') to the strip; otherwise give the strip more presence."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Paper/serif/accent palette is the common default; the sundial drawing is the simplest of the set",
+          "evidence": "palette[0] #f4efe4 with indigo and rust accents sits in the same warm-cream family as the other three outputs (#f4efe5, #f6f1e7). 1440x900-top.jpg: the figure is a stick-person schematic with H/W/angle labels, less refined than the section drawings elsewhere.",
+          "why_it_matters": "Differentiation rests on the hatch motif and one diagram; a schematic pictogram undercuts the architectural credibility the audience expects.",
+          "smallest_fix": "Redraw the figure with building section detail and dimension ticks, and let the hatch motif carry more of the identity at scale."
+        }
+      ],
+      "central_idea": "Shade as drawn geometry: a text-first journal that opens on a sundial section diagram and carries a diagonal-hatch 'shadow' motif through rules, pull-quote marks, chart bars and illustrated archive covers.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "D-62C7C3",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 3,
+        "accessibility": 4,
+        "performance": 3,
+        "system_consistency": 3
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "unjustified_signature_count": 0,
+        "weighted_total_est_100": 74.0,
+        "signatures_detected_and_justified": [
+          "giant-hero-type: 'Shade' cover wordmark at 184.8px / 12.8vw (115-209px across widths) inside the cover card; justified because the brief asks for masthead and issue identity and allows typographic treatments only."
+        ],
+        "notes": "Typography: Newsreader 18-21px body, 37.5 / 57.5 / 47 chars per line at 390 / 768 / 1440, hanging-quote pull quote, small-caps lead-in, footnotes; 28-30 computed font sizes per viewport. Composition: cover left with editor's letter and 8-row contents right at >=1440, then a centred essay with right-hand marginalia and a 2-column teaser grid with SVG thumbnails. Automated: gates WARN h1-count (0 h1 at 390 and 1440) and tap-targets (15 controls <24px at 390); axe 0, focus share 1.0, skip link first, Lighthouse a11y 1.0 but perf 0.82. Evidence coverage: long captures show ~41% of the page at 390 and ~58% at 1440; interview teaser, archive, newsletter/print offer and footer are not visible, so brief_fidelity is provisional (the nav also has no Newsletter link)."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "issue": "No h1 in the document",
+          "evidence": "automated.json gates: h1-count WARN '390x844: 0 h1 elements' and '1440x900: 0 h1 elements'. The cover wordmark and masthead are not exposed as a top-level heading; no other output reports this warning.",
+          "why_it_matters": "The brief names accessible structure (headings, landmarks) as a constraint. Screen-reader users who navigate by heading level 1 find nothing and the issue title is not announced as the page's subject.",
+          "smallest_fix": "Make the issue title the single h1 (visible 'Shade' with a visually hidden 'The Lighthouse Review, Issue 14:' prefix) and keep the cover essay title as h2."
+        },
+        {
+          "severity": "MEDIUM",
+          "issue": "Slow lab first render and the highest layout shift of the set",
+          "evidence": "Lighthouse mobile performance 0.82; FCP = LCP = 3,423 ms (D-44E09D and D-9BC93D: ~1,620 ms); CLS 0.096 (0.033-0.053 elsewhere, 0.1 is the 'good' limit); TBT 0. Weight is small (277,023 B, 8 requests), so the delay is in the render path rather than bytes.",
+          "why_it_matters": "'Keep the page light' is a brief constraint; the cover is the first thing on screen and a 3.4 s simulated mobile LCP with near-limit CLS is felt by the half of the audience on phones.",
+          "smallest_fix": "Preload the two critical woff2 files with font-display: swap, give the cover card/SVG an explicit aspect-ratio, and defer the 4.9 KB slider script."
+        },
+        {
+          "severity": "MEDIUM",
+          "issue": "Controls below 24px at 390",
+          "evidence": "automated.json gate tap-targets WARN: '390: 15 controls smaller than 24x24 px (excluding inline text links)'. The report does not list them; visible candidates are the ~22px range-slider thumb (390x844-top.jpg y~662) and the stand-alone 'Start with the cover essay' link (~20px tall, 390x844-long.jpg y~1,019).",
+          "why_it_matters": "WCAG 2.2 AA 2.5.8 (24px minimum) and the rubric's tap-target check; this page is read by thumb on phones for long stretches.",
+          "smallest_fix": "Give every stand-alone control a >=24x24 hit area (aim 44x44) via padding/min-height and enlarge the slider thumb to >=28px."
+        },
+        {
+          "severity": "MEDIUM",
+          "issue": "Cover essay sits below the first screen and the unrequested editor's letter outranks it",
+          "evidence": "390x844-top.jpg: header + tab nav + cover + slider + two lines of 'From the editor'; the essay kicker and headline first appear at y~1,105-1,200 (390x844-long.jpg). 1440x900-top.jpg: a ~28px six-line editor's letter and an 8-row contents list fill the first screen; the essay headline starts in the second viewport (1440x900-long.jpg d-01, y~1,080).",
+          "why_it_matters": "The brief says the page also contains the opening of the cover essay and that reading is the priority; the one block of copy the brief did not ask for carries more visual weight than the essay's own standfirst.",
+          "smallest_fix": "Cap the cover at ~60vh on phones, cut the letter to 2-3 lines (or move it under the essay excerpt) and keep 'Start with the cover essay' above the fold."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Mobile tab nav hides three of seven sections",
+          "evidence": "390x844-top.jpg y~90: 'Current issue, Essays, Projects, Interviews' are visible, 'Field notes' fades out, 'Archive' and 'About' are off-screen (horizontal scroll only, no visible indicator beyond the fade).",
+          "why_it_matters": "Nearly half of the section links are only discoverable by scrolling a strip on the device the brief says half the audience uses.",
+          "smallest_fix": "Wrap to two rows or show 4-5 items at 390 and move Archive/About to the footer."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Pull quote restates the clause directly above it",
+          "evidence": "'Shade is made by private buildings, but it is consumed in public.' repeats a clause from the preceding paragraph ~200px earlier (390x844-long.jpg y~3,900 vs ~4,110-4,180; 1440x900-long.jpg y~3,371 vs ~3,560-3,630).",
+          "why_it_matters": "Redundant copy in the margin slot weakens the pull-quote device.",
+          "smallest_fix": "Quote a line from beyond the excerpt or from a paragraph not on the same screen."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Byline wraps leave a stranded separator",
+          "evidence": "390x844-long.jpg y~1,490-1,505: '24 min read · Diagrams by the author ·' then '22 September 2026' on the next line (confirmed on a 2x crop).",
+          "why_it_matters": "A dangling bullet at the line end looks like a rendering error in the most visible metadata line.",
+          "smallest_fix": "Draw separators with ::before on non-first items inside a flex-wrap row."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Loosest token discipline of the set",
+          "evidence": "static: 81 distinct colour literals (29-63 elsewhere), 3 radii (1 elsewhere), 28-30 distinct computed font sizes per viewport (12-18 in D-44E09D and D-9BC93D), 32 physical vs 24 logical inline properties.",
+          "why_it_matters": "Raises drift risk as issues are added and weakens the 'clear token system' expected of a publication template.",
+          "smallest_fix": "Collapse colour literals to the declared custom properties, keep one radius, define an 8-10 step type scale and switch to logical properties."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Cover leans on a familiar trope and the 'shadow' needs its caption",
+          "evidence": "1440x900-top.jpg: sun disc over a perspective ground grid on a peach-to-tan gradient, soft drop shadow around the cover card; at 390 the foreshortened cast shadow beneath the word reads as a dark smudge.",
+          "why_it_matters": "'Sun over perspective grid' is a recognisable poster trope and the shadowed card reads as a mock-up; the central idea ('the title casts its own shadow') is legible mainly because the caption says so.",
+          "smallest_fix": "Make the cast shadow a clear directional long shadow that reads without the caption and drop the card shadow."
+        }
+      ],
+      "central_idea": "A time-aware faux-print cover that casts its own shadow (sun slider defaulting to the visitor's local time) fronting a conventional magazine layout of editor's letter, contents and a marginalia essay.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "D-9BC93D",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 5,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 5,
+        "performance": 5,
+        "system_consistency": 5
+      },
+      "diagnostic": {
+        "typography": 5,
+        "composition": 4,
+        "unjustified_signature_count": 0,
+        "weighted_total_est_100": 89.0,
+        "signatures_detected_and_justified": [
+          "giant-hero-type: 'Shade' masthead at 136px / 9.4vw (88-136px across widths); justified because it is the issue title and the brief asks for masthead/issue identity with typographic treatments only."
+        ],
+        "notes": "Typography: Literata 18px at ~1.6 leading with first-line indents, small-caps lead-in, margin footnotes, italic standfirst; 35.5 / 52.2 / 59.6 chars per line at 390 / 768 / 1440; only 12-13 computed font sizes. Composition: 1200px container, split masthead (Shade left, dek right), essay column with figure/notes rail, numbered contents rows, dark interview panel, archive. Automated: no gate warnings, axe 0 at 390 and 1440, focus share 1.0, skip link first, menu uses aria-expanded/aria-controls and Escape closes it, Lighthouse perf 0.99 / a11y 1.0, 293 KB, 131 logical vs 1 physical inline property. Evidence coverage: long captures show ~43% of the page at 390 and ~75% at 1440; the footer (about, contributors, contact, colophon) is not visible and the newsletter, print offer and archive items are seen only in 390x844-focus.jpg, so brief_fidelity is scored on visible content plus the automated report."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "LOW",
+          "issue": "Tablet keeps the phone layout",
+          "evidence": "768x1024-top.jpg: the hamburger 'Menu' is kept at 768 (the five links show inline at 1440); the dek and standfirst are capped at ~510-555px, leaving ~160-230px of dead space at right, and the figure stacks under the title block instead of sitting beside it as at 1440.",
+          "why_it_matters": "The rubric rewards composition that transforms per viewport; 768 is mobile scaled up.",
+          "smallest_fix": "Use an inline nav from ~720px (drop the tagline there) and seat the figure beside the title block from 768."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Subscribe is reachable only through the Menu on phones",
+          "evidence": "390x844-top.jpg header = logotype + Menu only; 390x844-menu-open.jpg shows Subscribe as the last item (y~378). The newsletter and print-edition blocks appear only in 390x844-focus.jpg (absent from the first 5,064px).",
+          "why_it_matters": "Half the audience reads on phones and the print subscription is the brief's one revenue action.",
+          "smallest_fix": "At <=480px add a compact 'Subscribe' text link in the issue meta row or beside 'Continue reading'."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Meta lines strand a separator at 390",
+          "evidence": "390x844-top.jpg y~376: '8 pieces · 1 h 46 min of reading ·' then 'Print edition, 164 pages' on the next line; y~808-830: 'By Leila Haddad · Drawings by Ines Vidal ·' then '28 min read' (confirmed on 2x crops).",
+          "why_it_matters": "A dangling bullet at the line end looks like a rendering error in the first-screen metadata.",
+          "smallest_fix": "Draw separators with ::before on non-first items inside a flex-wrap row."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Contents rows throw author and reading time to the far right edge",
+          "evidence": "1440x900-scroll-50.jpg and 1440x900-long.jpg (rows 02-07): titles end at x~560-620 and deks at x~960, while 'Name · N min' starts at x~1,100-1,200 and is right-aligned to x=1,320.",
+          "why_it_matters": "A 140-640px gap of blank space separates the title from its author and reading time, so the scanning unit breaks.",
+          "smallest_fix": "Move the meta under the dek or narrow the row to the dek width."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Interview speakers are bare initials",
+          "evidence": "1440x900-long.jpg d-05 (y~4,698-4,980): speaker labels 'DO' and 'MQ' in ~11px gold caps; the full names appear only in the dek above.",
+          "why_it_matters": "Readers and screen-reader users must decode who is speaking.",
+          "smallest_fix": "Use surnames or full names as speaker labels."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Identity rests on one oversized italic word and one drawing",
+          "evidence": "1440x900-top.jpg: 136px light-italic 'Shade' on warm-cream paper (#f4efe5) and one dimensioned section drawing; the contents icons are generic pictograms and no motif recurs elsewhere.",
+          "why_it_matters": "Credible and on-brief, but quieter and less ownable than a recurring motif system; the paper/serif/accent look is the default literary-quarterly palette.",
+          "smallest_fix": "Reuse the drawing language (dimension lines, sun-angle ticks) as the rule and label motif across sections."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Indent-only paragraphs at 18px read dense on long phone sessions",
+          "evidence": "390x844-long.jpg slices 1-5 and 1440x900-long.jpg d-01/d-02: paragraphs are separated only by a first-line indent with no vertical gap; bodySize is 18px at every width, the smallest desktop body of the set (others 20-21px).",
+          "why_it_matters": "Print-faithful and defensible, but the brief stresses long reading on phones and large screens.",
+          "smallest_fix": "Raise body to 19-20px on phones and 19px on desktop (measure stays ~56 characters)."
+        }
+      ],
+      "central_idea": "A print-quarterly reading room: Literata book typography (first-line indents, margin footnotes, small-caps lead-in) and a dimensioned street-section drawing under a quiet oversized italic 'Shade' masthead, designed for long reading.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "D-F9F116",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 4,
+        "performance": 3,
+        "system_consistency": 3
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "unjustified_signature_count": 0,
+        "weighted_total_est_100": 77.0,
+        "signatures_detected_and_justified": [
+          "giant-hero-type: 'Shade' cover wordmark at 426.4px / 29.6vw (122px at 390, 217px at 768); justified as the cover artwork and issue identity under the brief's typographic-treatment allowance, but the scale is a hierarchy cost (see MEDIUM finding)."
+        ],
+        "notes": "Typography: Newsreader 18-21px body, first-line indents, italic subheads, 36.8 / 41.5 / 47 chars per line at 390 / 768 / 1440; 33-34 computed font sizes per viewport. Composition: full-bleed navy cover, editor's letter plus 'Highlights' jump list, then a three-column essay (sticky meta rail, prose, marginalia) with a reading-progress meter, illustrated teaser thumbnails. Automated: gate WARN tap-targets (8 controls <24px at 390); axe 0, focus share 1.0, skip link first, Lighthouse a11y 1.0 but perf 0.84. Evidence coverage: long captures show ~42% of the page at 390 and ~58% at 1440; interview teaser, archive, newsletter/print offer and footer are not visible (the nav lists Newsletter and Highlights names an interview), so brief_fidelity is provisional."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "issue": "The cover poster fills the first desktop screen; the essay starts ~1.5 screens down",
+          "evidence": "1440x900-top.jpg: cover block y=147-772 (625px of 900) with the 426px wordmark; the only copy below it is the 'FROM THE EDITOR' label at y~881. The essay kicker/headline is at y~1,324 (1440x900-long.jpg d-01) and y~1,381 at 390 (390x844-long.jpg slice 1).",
+          "why_it_matters": "Reading comfort is the stated priority and the page must contain the essay opening; at 1440x900 the first screen has no readable copy and phone readers scroll ~1.6 screens to reach the essay.",
+          "smallest_fix": "Clamp the wordmark (for example min(24vw, 300px)) and cap the cover block at ~60vh so 'From the editor' and 'Highlights' sit above the fold at 1440x900; cap at ~50vh at 390."
+        },
+        {
+          "severity": "MEDIUM",
+          "issue": "Slow lab first render and the heaviest main-thread cost",
+          "evidence": "Lighthouse mobile performance 0.84; FCP = LCP = 3,423 ms (D-44E09D and D-9BC93D: ~1,620 ms); 9 requests vs 7; main-thread work 834 ms (611-691 ms elsewhere); CLS 0.053. Transfer is the smallest of the four (241,093 B) so the cost is the render path (font loading and the JS-driven cover state), not bytes.",
+          "why_it_matters": "'Keep the page light' is a brief constraint; a 3.4 s simulated mobile LCP on the cover is felt by phone readers.",
+          "smallest_fix": "Preload the cover font with font-display: swap, give the cover a CSS default state so first paint does not wait on the time-of-day script, and drop the extra request."
+        },
+        {
+          "severity": "MEDIUM",
+          "issue": "Controls below 24px at 390",
+          "evidence": "automated.json gate tap-targets WARN: '390: 8 controls smaller than 24x24 px (excluding inline text links)'; the report does not list them.",
+          "why_it_matters": "WCAG 2.2 AA 2.5.8 (24px minimum) and the rubric's tap-target check; phone readers use thumbs.",
+          "smallest_fix": "Pad stand-alone controls to >=24x24 (aim 44x44) with min-height/padding or pseudo-element hit areas."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Type scale is fragmented",
+          "evidence": "static: 36 font-size declarations, 63 colour literals, 31 clamp() uses; 33-34 distinct computed font sizes per viewport (12-18 in D-44E09D and D-9BC93D); display size runs 122px (390) -> 217px (768) -> 426px (1440).",
+          "why_it_matters": "Harder to keep consistent as issues are added and weakens system_consistency; the wordmark scales 3.5x between phone and desktop with no stable ratio.",
+          "smallest_fix": "Define an 8-10 step modular scale as --step-* tokens and map the cover wordmark to the top step only."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Pull quote is two adjacent sentences already on screen",
+          "evidence": "'Shade was something a city owed to the people walking through it. Somewhere in the twentieth century, we stopped paying.' = last sentence of the paragraph above (390x844-long.jpg y~3,471-3,501) + first sentence of the paragraph below (y~4,236), with the quote at y~4,036-4,146; at 1440 the same trio sits at y~2,995 / 3,550-3,690 / 3,754 (1440x900-long.jpg).",
+          "why_it_matters": "The same words appear three times within ~400px, which reads as padding.",
+          "smallest_fix": "Choose one distinct line from a later paragraph."
+        },
+        {
+          "severity": "LOW",
+          "issue": "Header stacks three rows at 390 before the cover",
+          "evidence": "390x844-top.jpg: tagline strip (y 0-52), logotype + Subscribe (y 65-105), nav row (y 118-135); the cover starts at y=163, 19% of the viewport.",
+          "why_it_matters": "Vertical space is spent before any content on an 844px-high screen.",
+          "smallest_fix": "Drop the tagline strip at <=480px (it repeats in the footer/colophon) so the header is two rows."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Wordmark knockout trades legibility for effect",
+          "evidence": "1440x900-top.jpg and 390x844-top.jpg: the light/dark inversion breaks stems and serifs of S, h and d where they cross arch edges; at 390 the 122px word loses outline continuity (y~490-590).",
+          "why_it_matters": "The issue's identity word is the hardest text on the page to read at small sizes and competes with the cast pattern.",
+          "smallest_fix": "Keep the letters one solid colour with the light shafts behind at lower opacity, or apply the inversion to a duplicate shadow layer only."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "issue": "Sans-caps lead-in beside a serif drop cap",
+          "evidence": "1440x900-long.jpg d-01 (y~1,740-1,800) and 390x844-long.jpg slice 2: 'T TWO O'CLOCK ON A JULY AFTERNOON,' set in uppercase sans next to a rust serif 'A'; at 390 it wraps onto two lines.",
+          "why_it_matters": "The initial and its word read as two typefaces; a serif small-caps lead-in flows more naturally into the prose.",
+          "smallest_fix": "Set the lead-in in the serif's small caps at body size."
+        }
+      ],
+      "central_idea": "The cover as a light installation: the word 'Shade' is cut by arcade light shafts computed for the visitor's local time, after which the page settles into a three-column essay (sticky meta rail, prose, marginalia) with a reading-progress meter.",
+      "idea_from_brief": true
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "blind_id": "D-9BC93D",
+      "justification": "Best long-read typography and measure (Literata 18px, 59.6 ch, indents, margin notes), issue identity and essay in the first screen at every width, no automated warnings, Lighthouse 0.99 at 293 KB and the tightest tokens; only LOW defects (tablet reuses the phone layout, Subscribe hidden on phones)."
+    },
+    {
+      "rank": 2,
+      "blind_id": "D-44E09D",
+      "justification": "Most systematic and complete (hatch motif, sundial figure, mini data-viz, illustrated archive covers, interview band; axe 0, no warnings, Lighthouse 0.99) but collapsed sentence spaces in the body, a 41.5 ch desktop measure and a thin issue identity put it a notch behind."
+    },
+    {
+      "rank": 3,
+      "blind_id": "D-F9F116",
+      "justification": "Boldest cover idea and best essay frame (sticky meta rail, progress meter) but the 426px poster fills the first desktop screen, Lighthouse 0.84 with a 3.4 s LCP, 8 sub-24px targets and a 34-size type scale."
+    },
+    {
+      "rank": 4,
+      "blind_id": "D-62C7C3",
+      "justification": "Strong cover concept and contents list, but no h1, 15 sub-24px targets, Lighthouse 0.82 with a 3.4 s LCP and CLS 0.096, the loosest tokens (81 colours) and an editor's letter that outranks the essay."
+    }
+  ],
+  "ranking_confidence": "medium"
+}
