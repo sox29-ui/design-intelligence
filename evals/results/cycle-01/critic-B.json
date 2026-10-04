@@ -1,0 +1,397 @@
+{
+  "brief": "B",
+  "outputs": [
+    {
+      "blind_id": "B-4F5097",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 3.5,
+        "originality_art_direction": 3,
+        "responsive_quality": 3,
+        "accessibility": 3.5,
+        "performance": 3.5,
+        "system_consistency": 3
+      },
+      "diagnostic": {
+        "typography": 3.5,
+        "composition": 3.5,
+        "generic_ai_signatures": 0,
+        "notes": "Score basis (weighted estimate ~69/100). Fidelity 4: richest goal-fit content (late-Klarna banner, targets, EUR equivalents on phone, consistent counts 37 = 15+8+14 and 11 urgent) but nav and entity switcher are unreachable at <=768. Hierarchy 3.5: KPI cards read well, but the table header starts at y=525 and only 8 full rows show at 1440x900. Originality 3: coherent stock SaaS shell, identity carried by copy not form. Responsive 3: strong 390 priority view, dead nav at 390/768, fluid stretch at 1920. Accessibility 3.5: axe {} at 390 and 1440, Lighthouse 100, focus share 1.0 with 0 hidden, skip link first, but the nav toggle is inoperable. Performance 3.5: Lighthouse 0.90, FCP 2,865 ms. System 3: 14 runtime font sizes (18 declared), 12 radii, 55 colour literals. Typography: IBM Plex Sans/Mono, body only 12.5-13 px. Scan hit glow-accents (3) is not visible in any capture; pixel probes find only pale-green status-dot halos on the Live indicator, which follow from the brief's environment/sync indicators, so counted as justified. Tabular figures confirmed in all four outputs (equal rendered widths for different digits)."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "HIGH",
+          "title": "Navigation toggle does nothing below desktop; entity switcher and user menu vanish with it",
+          "evidence": "automated.json summary.menu: ariaExpandedBefore 'false' -> ariaExpandedAfter 'false', visibleLinksBefore 0 -> visibleLinksAfter 0, activeTag 'body' (the other three outputs all flip to expanded='true' and/or move focus into the menu). 390x844-menu-open.jpg is identical to 390x844-top.jpg (no drawer, no list). 768x1024-top.jpg shows the sidebar gone, a bare hamburger, and 'Northwind Commerce - Live' as static text with no chevron; 390x844-top.jpg drops it entirely.",
+          "why_it_matters": "At <=768 px nothing takes the user to Exceptions, Payouts, Bank feeds, Rules, Settings, the user menu or the environment/entity switcher - the app chrome the brief lists - and a visible control that does nothing reads as broken. The brief says the screen must stay usable at 768 px.",
+          "smallest_fix": "Wire the button to toggle a drawer or disclosure (aria-expanded, aria-controls target, Esc closes, focus moved in and restored) and put the entity/environment block inside it, or keep an icon rail at 768. The probe is automated, so confirm by hand."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Activity feed is clipped: 'Last 8 events' shows about 6.5",
+          "evidence": "1440x900-long.jpg: the Activity card's text rows stop at y=1242, then only a 4 px sliver of the next row (y=1270-1273) appears before the card edge (~y=1275). 1440x900-scroll-50.jpg shows the same mid-row cut at the viewport edge. No scrollbar, fade or 'view all' is visible; 6 full events plus a sliver show, the 8th cannot be seen.",
+          "why_it_matters": "The brief asks for the last 8 events; the oldest are hidden with no affordance, and a half-cut row looks like a rendering bug.",
+          "smallest_fix": "Let the card height follow its content (the events are short) or add a visible scroll cue (fade + scrollbar) and a 'View all' link."
+        },
+        {
+          "severity": "LOW",
+          "title": "Three full-width bands sit above the table",
+          "evidence": "1440x900-top.jpg: title row, filter card, amber banner and KPI cards occupy y=0-405; the table header is at y=525 and 8 full rows show (EX-2292..EX-2367). The other three outputs have headers at y=435-450 and show 10-11 rows.",
+          "why_it_matters": "Triage is the primary task; each full-width band above the table costs about two rows on the 1440x900 target.",
+          "smallest_fix": "Move the three filters into the title row (as B-644E29 does) and fold the banner into the Exceptions card header."
+        },
+        {
+          "severity": "LOW",
+          "title": "Default age sort buries amount-urgent rows",
+          "evidence": "1440x900-long.jpg: EX-2399 (6,184.20 EUR) and EX-2404 (8,412.90 EUR) carry the urgent triangle but sit at rows 20 and 23 of 37, far below the fold. The '11 urgent' KPI link and the 'Urgent only' switch mitigate this; 390x844-long.jpg lists all 11 urgent first, so desktop and phone order differently.",
+          "why_it_matters": "The highest-value urgent items are the least visible on desktop.",
+          "smallest_fix": "Default desktop sort to 'urgent first, then oldest', as the phone list already does."
+        },
+        {
+          "severity": "LOW",
+          "title": "KPI cards stagger by about 5 px",
+          "evidence": "1440x900-top.jpg row scan: delta text rows at y=327-338 / 321-330 / 322-330 / 326-335 and footers at y=364-374 / 359-367 / 359-369 / 364-374 across the four cards; cards with a unit suffix ('%', 'days') sit lower. Same at 1920x1080-top.jpg.",
+          "why_it_matters": "Breaks the baseline rhythm of the first thing the user reads and makes the deltas harder to compare across cards.",
+          "smallest_fix": "Fix the value line height or place card rows on a shared grid."
+        },
+        {
+          "severity": "LOW",
+          "title": "Urgency legend sits ~1,500 px away from the icons it explains",
+          "evidence": "1440x900-long.jpg: the red triangle and clock icons start on row 1 (y~560) but the key 'Urgent: open 3+ days or EUR 5,000+ / Past 3-day SLA' appears only in the table footer (y~2080). Urgent rows carry no text label; B-849635 spells out 'Urgent' and B-644E29 / B-80746E put the legend under the table heading.",
+          "why_it_matters": "Icon-only urgency is colour-independent but not self-explanatory until the key is found.",
+          "smallest_fix": "Move the legend under the 'Exceptions' heading."
+        },
+        {
+          "severity": "LOW",
+          "title": "Row-open signifier and keyboard hint missing; detail flow not evidenced",
+          "evidence": "1440x900-long.jpg: IDs are plain bold text (not link-styled) and the table footer has no 'Enter opens' hint, unlike B-644E29, B-80746E and B-849635. No capture for any output shows a selected row or detail panel, so 'open one, assign or resolve' is assumed, not verified.",
+          "why_it_matters": "Opening an exception is the primary task and nothing on the page signals how.",
+          "smallest_fix": "Style IDs as links or buttons, add the key-hint line, and add a selected-row capture."
+        },
+        {
+          "severity": "LOW",
+          "title": "Two money totals on one screen, scope unexplained",
+          "evidence": "1440x900-top.jpg: KPI 'Unmatched amount EUR 17,067.54' (248 transactions) versus the table subtitle '37 open - EUR 48,734.45 at stake (EUR equivalent)'.",
+          "why_it_matters": "A finance manager will ask why they differ; period versus all-open scope is not stated. B-849635 labels the scope.",
+          "smallest_fix": "Label scope explicitly ('all open, all dates') or link the KPI to the filtered table."
+        },
+        {
+          "severity": "LOW",
+          "title": "Lowest Lighthouse mobile performance of the four",
+          "evidence": "automated.json lighthouseMobile: performance 0.90, FCP/LCP 2,865 ms (others 1,789-1,977 ms), 11 requests, 3 font files (77.6 KB), JS 66.5 KB, CSS 36.8 KB.",
+          "why_it_matters": "Slower first paint on a tool opened every morning; avoidable.",
+          "smallest_fix": "Preload the primary font, inline critical CSS, defer non-critical JS."
+        },
+        {
+          "severity": "LOW",
+          "title": "Token drift",
+          "evidence": "automated.json: 14 distinct runtime font sizes at >=768 (11 at 390; 18 declared), 12 distinct radii, 55 colour literals, 37 custom properties; body 12.5 px at 390 and 13 px elsewhere. B-849635 has 9 sizes, 8 radii, 37 colour literals.",
+          "why_it_matters": "Arbitrary values make components and states harder to keep consistent; 12.5 px body text is small on a phone.",
+          "smallest_fix": "Collapse to a 6-8 step type scale, 4-5 radii and semantic colour tokens; lift phone body text to 14 px."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "Colour weight and chip density put emphasis on the wrong things",
+          "evidence": "1440x900-top.jpg: saturated royal-blue 'matched' bars are the largest colour mass in the right rail while the unmatched series (the thing to act on) is the smaller orange; the amber banner is the loudest band on first load; the status tab row mixes four hue-coded icons with count chips, and amber 'Waiting on provider' pills repeat dozens of times in 1440x900-long.jpg.",
+          "why_it_matters": "Emphasis lands on the healthy 97% and on decoration rather than on the exceptions; B-80746E and B-849635 grey the matched series.",
+          "smallest_fix": "Neutralise the matched series, make the banner a one-line strip inside the Exceptions card, cut hue-coded tab icons."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "Stock SaaS shell",
+          "evidence": "1440x900-top.jpg: sidebar + four rounded KPI cards + table + right rail in blue/white/grey; identity comes from the copy (banner) rather than from form.",
+          "why_it_matters": "Coherent but interchangeable with any B2B dashboard; weakly tied to reconciliation.",
+          "smallest_fix": "n/a - art-direction judgement."
+        }
+      ],
+      "central_idea": "A morning-briefing dashboard that tells the manager what changed (late Klarna report: chase the others first) and measures KPIs against targets above a flat, urgency-flagged queue - the narrative follows the brief, but it sits in a stock SaaS shell.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "B-644E29",
+      "scores": {
+        "brief_fidelity": 3.5,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 2.5,
+        "responsive_quality": 4,
+        "accessibility": 3,
+        "performance": 4.5,
+        "system_consistency": 2.5
+      },
+      "diagnostic": {
+        "typography": 3.5,
+        "composition": 4,
+        "generic_ai_signatures": 0,
+        "notes": "Score basis (weighted estimate ~70.5/100). Fidelity 3.5: all content present with useful extras (Urgent/Unassigned/Mine quick filters, key hints, bell, bank-feed sync), but KPI polarity is colour-only, rows are hidden in a nested scroller and hidden links are focusable. Hierarchy 4: compact, table header at y=438 with 10 full rows, legend under the heading, KPI row perfectly aligned (row scan). Originality 2.5: Inter + indigo + tinted pills + sidebar/top bar, nothing specific to reconciliation. Responsive 4: deliberate recomposition (icon rail and merged Provider/Reason at 768, working drawer with scrim and priority list at 390). Accessibility 3: no critical/serious axe issues but axe moderate 1 at both widths, Lighthouse 0.98 with two failed audits, 8 hidden tab stops at 390. Performance 4.5: Lighthouse 0.99, FCP 1,789 ms, 169 KB, one font file. System 2.5: 97 colour literals, 12 radii. Typography: Inter 12-14 px, neutral and legible. Scan hit glow-accents (4): located status-dot halos (functional, justified by the brief's environment/sync indicators) plus the closed-drawer shadow bleed, logged as a defect rather than counted as a stylistic signature."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "title": "Closed mobile drawer stays in the tab order",
+          "evidence": "automated.json gates: focus-hidden WARN '390x844: 8 tab stops off-screen or hidden'; focus.390x844.hidden = 8; menu.visibleLinksBefore = 9 (links exist and are focusable before the menu opens). 390x844-menu-open.jpg shows the 248 px drawer that sits off-canvas when closed.",
+          "why_it_matters": "Keyboard and switch users tab through about eight invisible links before reaching content (WCAG 2.4.3 / 2.4.7); screen-reader users hear a hidden nav.",
+          "smallest_fix": "Hide the closed drawer with visibility:hidden or the inert attribute and restore on open."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "KPI good/bad meaning is carried by colour alone",
+          "evidence": "1440x900-top.jpg and 390x844-top.jpg: delta pills show an arrow plus a number only - down-arrow -0.3 pp (red), up-arrow +4.9% (red), down-arrow -2 (green), up-arrow +0.3 d (red); the same down-arrow means bad on one card and good on another. No 'better/worse' wording (B-4F5097, B-80746E and B-849635 all add it). At 390 the 'from 97.3% on 30 Sep' comparison text is dropped as well.",
+          "why_it_matters": "The brief forbids status carried by colour alone (WCAG 1.4.1); colour-blind users cannot read the day's health from the first row they see.",
+          "smallest_fix": "Add 'better'/'worse' text (or a check/alert glyph) to each pill and keep the 'from X' value on phone."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Nested scroll region hides 19 of 35 rows, including 2 urgent",
+          "evidence": "1440x900-long.jpg: 16 rows render (EX-2299..EX-2485) yet the footer reads '35 of 35 open exceptions'. The 390 list (390x844-long.jpg) marks EX-2494 (4,793.85 GBP) and EX-2498 (12,055.73 EUR) urgent, and neither is among the 16 desktop rows. 1440x900-scroll-50.jpg shows no scrollbar or cue.",
+          "why_it_matters": "Scroll-in-scroll is easy to miss and fights trackpad scrolling; the highest-value urgent row is hidden; keyboard users need the region to be focusable; the '35 of 35' label overstates what is shown.",
+          "smallest_fix": "Paginate or let the card grow (as B-849635 does) and sort urgent first; at minimum give the region tabindex=0, a label and a visible scroll cue."
+        },
+        {
+          "severity": "MEDIUM",
+          "title": "Automated accessibility misses",
+          "evidence": "automated.json axe: moderate 1 at 390 and at 1440; lighthouseMobile accessibility 0.98 with failedAccessibilityAudits ['heading-order', 'label-content-name-mismatch'] (the other three outputs: none).",
+          "why_it_matters": "label-content-name-mismatch is WCAG 2.5.3 (Level A): voice-control users cannot say what they see; heading skips break heading navigation.",
+          "smallest_fix": "Start accessible names with the visible text (for example 'Export CSV', 'All 35') and use h1 -> h2 for card titles."
+        },
+        {
+          "severity": "LOW",
+          "title": "Closed-drawer shadow bleeds onto the page",
+          "evidence": "390x844-top.jpg left-edge pixels: x=0..12 run rgb(224,225,230) -> (237,238,243) against a page background of (244,245,247), constant from y=120 to y=800 - a faint bluish band on the left edge of 390x844-top.jpg and 390x844-long.jpg. 1440x900-top.jpg and 1920x1080-top.jpg show a 13-level fade (242 -> 255) over the first 15 px at the top of the sidebar. The scan counts 4 coloured shadows (glow-accents).",
+          "why_it_matters": "A stray shadow is a visible polish defect and shows the off-canvas panel is only translated, not hidden (see the focus-order finding).",
+          "smallest_fix": "Apply the drawer's box-shadow only in the open state."
+        },
+        {
+          "severity": "LOW",
+          "title": "Trend chart has no visible text or table alternative",
+          "evidence": "1440x900-top.jpg right column: legend, a one-day readout ('Thu 1 Oct, 601,454 / 18,298, 97.0% matched') and two bar series; no 'show as table' disclosure, whereas B-4F5097, B-80746E and B-849635 each have one.",
+          "why_it_matters": "The 30 daily values are available only visually; accessible names or descriptions cannot be verified from the capture.",
+          "smallest_fix": "Add a disclosure with the 30-day numbers as a table."
+        },
+        {
+          "severity": "LOW",
+          "title": "768: icon-only rail and initials-only assignees",
+          "evidence": "768x1024-top.jpg: six unlabeled glyphs in a ~62 px rail with the '35' badge overlapping the Exceptions icon; the Assignee column shows only 'MS', 'AP', 'TB'.",
+          "why_it_matters": "Touch tablets have no hover tooltips; initials are ambiguous (AP vs PN) in a triage list where owner identity matters.",
+          "smallest_fix": "Offer an expandable labelled rail and show first names; there is room at 768 px."
+        },
+        {
+          "severity": "LOW",
+          "title": "Compound ages wobble; amounts not normalised; scope of totals unclear",
+          "evidence": "1440x900-top.jpg: Age strings '18d 18h', '11d 2h', '9d 18h', '9d 2h' are right-aligned so day digits start at x=550/559/559/568; GBP, USD and EUR share one Amount column; the KPI says '13 exceptions flagged - 18,298 still open' while single rows read 13,810.77 and 16,356.76 EUR (all-dates scope not labelled).",
+          "why_it_matters": "The brief asks that numbers be easy to compare; mixed units and mixed currencies make column scanning harder.",
+          "smallest_fix": "Use decimal days or padded hours, show an approximate EUR value per non-EUR row, label scope ('all dates')."
+        },
+        {
+          "severity": "LOW",
+          "title": "Two overlapping filter controls in the table header",
+          "evidence": "1440x900-top.jpg: segmented 'All 35 | Urgent 11 | Unassigned 3 | Mine 6' sits beside a 'Status: All open' select.",
+          "why_it_matters": "It is unclear whether they combine, and Urgent/Unassigned/Mine are not statuses.",
+          "smallest_fix": "One labelled filter row: 'View' (All/Urgent/Unassigned/Mine) and 'Status'."
+        },
+        {
+          "severity": "LOW",
+          "title": "Token drift",
+          "evidence": "automated.json: 97 distinct colour literals, 12 distinct radii, 16 declared font-size values (12 at runtime), 42 custom properties versus 37 / 8 / 13 / 57 in B-849635.",
+          "why_it_matters": "Arbitrary values erode consistent states and components.",
+          "smallest_fix": "Collapse colours and radii to semantic tokens."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "Generic SaaS shell",
+          "evidence": "1440x900-top.jpg: Inter, indigo-blue accent, tinted pills, sidebar plus top bar (about 200 px + 52 px of chrome), rounded white cards. The quick filters and key hints are features, not an organising idea.",
+          "why_it_matters": "Nothing in the visual language is specific to reconciliation; interchangeable with any SaaS admin.",
+          "smallest_fix": "n/a - art-direction judgement."
+        }
+      ],
+      "central_idea": "A conventional sidebar + KPI-card + data-table SaaS console tuned for keyboard triage (Urgent/Unassigned/Mine quick filters, key hints) - the shell is stock and only the quick filters follow from the brief.",
+      "idea_from_brief": false
+    },
+    {
+      "blind_id": "B-80746E",
+      "scores": {
+        "brief_fidelity": 4,
+        "hierarchy_usability": 4,
+        "originality_art_direction": 3.5,
+        "responsive_quality": 4,
+        "accessibility": 4.5,
+        "performance": 4,
+        "system_consistency": 4
+      },
+      "diagnostic": {
+        "typography": 4,
+        "composition": 4,
+        "generic_ai_signatures": 0,
+        "notes": "Score basis (weighted estimate ~79.5/100). Fidelity 4: complete content plus per-row EUR equivalents, EUR total row and urgent definition above the table; default view hides 3 urgent rows. Hierarchy 4: top nav frees width, header at y=435 with 11 rows visible, KPI strip compact. Originality 3.5: warm ledger-paper identity, mono blue IDs, accounting double underline on the total; restrained but shares DNA with B-849635. Responsive 4: filter disclosure, queue cards and working nav disclosure at 390; 2x2 KPIs and merged currency at 768; centred max-width at 1920. Accessibility 4.5: axe {} at both widths, Lighthouse 100, focus 1.0 with 0 hidden, menu opens and Esc closes; human checks (screen reader, detail flow) unverified. Performance 4: Lighthouse 0.98, 199 KB, 9 requests. System 4: 6 runtime font sizes, 64 custom properties, 415 var() uses, 189 logical properties versus 1 physical, but 62 colour literals and 10 radii. Typography: IBM Plex Sans/Mono, uppercase micro-labels, tabular figures confirmed. No signatures detected by the scan."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "title": "Default queue hides 3 of the 9 urgent rows",
+          "evidence": "1440x900-long.jpg: 'Showing 12 of 37 - Show all 37'; the 12 rows are age-sorted and only 6 carry the urgent flag (EX-2243..EX-2257) while the KPI says '9 urgent'. 390x844-long.jpg lists all 9 urgent first, including EX-2276 (6,204.75 EUR), EX-2288 (5,640.00 EUR) and EX-2312 (7,912.35 EUR), none of which appears in the desktop default.",
+          "why_it_matters": "Finding the urgent ones is the primary task; the highest-value urgent items are the ones cut, and desktop and phone order differently.",
+          "smallest_fix": "Default sort 'urgent first, then oldest' (as the phone list already does) or pin urgent rows above the 12-row cut."
+        },
+        {
+          "severity": "LOW",
+          "title": "KPI cells misaligned",
+          "evidence": "1440x900-top.jpg row scan: delta rows at y=223-235 in cells 1, 2 and 4 but y=227-241 in cell 3 (the 'now' chip and flag link add height); cell 2 carries an extra '293 transactions' line while cells 1 and 4 right-align 'Target'.",
+          "why_it_matters": "The strip is the first read; uneven rows slow comparison of the deltas.",
+          "smallest_fix": "Fixed-height label and delta rows on a shared grid."
+        },
+        {
+          "severity": "LOW",
+          "title": "768 abbreviates labels and names",
+          "evidence": "768x1024-top.jpg: Status reads 'Waiting' (1440: 'Waiting on provider'); assignees are first names only ('Jonas', 'Tomas', 'Lea').",
+          "why_it_matters": "'Waiting' alone is ambiguous (on whom?) and breaks the vocabulary used by the tab row; first names collide on bigger teams.",
+          "smallest_fix": "Keep 'Waiting on provider' with wrapping or add abbr/title; keep initials plus surname."
+        },
+        {
+          "severity": "LOW",
+          "title": "Phone: KPI block pushes the urgent list down; page runs 3.17 viewports",
+          "evidence": "390x844-top.jpg: KPI cells use 4-5 text lines (y~200-470) so the first urgent card starts at y~631 (about 2 cards above the fold; B-4F5097 shows ~3.3, B-644E29 ~4). automated.json pageHeightVh 390 = 3.17 because chart, activity and footer follow the queue.",
+          "why_it_matters": "The brief accepts KPIs + urgent exceptions on phone; the extra content lengthens the path to the first exception.",
+          "smallest_fix": "Hide the 'Target' and 'transactions' lines at <=480 px; move chart and activity behind disclosures."
+        },
+        {
+          "severity": "LOW",
+          "title": "Compound ages defeat column comparison",
+          "evidence": "1440x900-top.jpg Age column: '5d 2h' and '4d 6h' start at x=479 while '3d 14h' and '2d 23h' start at x=471 - the day digits shift with the hour digits (B-644E29 has the same pattern).",
+          "why_it_matters": "The brief asks for numbers that are easy to compare; the rest of the page has tabular figures, this column undercuts it.",
+          "smallest_fix": "Decimal days ('5.1 d') or zero-padded hours."
+        },
+        {
+          "severity": "LOW",
+          "title": "Row-detail flow not evidenced",
+          "evidence": "No capture shows a selected row or detail panel; the page prints 'Enter opens one, Esc closes it' and styles IDs as blue links (1440x900-scroll-50.jpg), so the flow is assumed rather than verified.",
+          "why_it_matters": "'Open one, assign or resolve' is the primary task.",
+          "smallest_fix": "Add selected-row and sorted/filtered states to the capture set."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "The darkest object on the page is a filter; status glyphs are weak",
+          "evidence": "1440x900-top.jpg: the black 'Open 37' segment is the highest-contrast element; KPI numerals are regular-weight 28 px; status is a ~12 px glyph plus plain text, so 'Investigating' vs 'Waiting on provider' is read slowly.",
+          "why_it_matters": "The eye lands on a filter before the KPIs or urgent rows; status scanning is slower than with filled pills.",
+          "smallest_fix": "Lighter selected-segment state; heavier KPI numerals; larger status glyphs."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "Visual DNA overlaps with B-849635",
+          "evidence": "automated.json: both use IBM Plex Sans/Mono, a warm paper ground (#f5f4f0 vs #f4f3ee), a top nav with underline, grey 'matched' vs warm 'unmatched' small multiples, a 'show data as table' disclosure and an in-page sample-data footer.",
+          "why_it_matters": "A coherent ledger identity, but candidates are hard to tell apart (B-4F5097 also uses Plex).",
+          "smallest_fix": "None required for this brief; vary neutrals or typeface if diversity matters."
+        }
+      ],
+      "central_idea": "A calm ledger-paper workspace that keeps the queue short (12 of 37 with a totals row), normalises mixed currencies to EUR and reserves the warning colour for unmatched volume - derived from the brief's comparison and triage needs.",
+      "idea_from_brief": true
+    },
+    {
+      "blind_id": "B-849635",
+      "scores": {
+        "brief_fidelity": 4.5,
+        "hierarchy_usability": 4.5,
+        "originality_art_direction": 4,
+        "responsive_quality": 4,
+        "accessibility": 4.5,
+        "performance": 4,
+        "system_consistency": 4.5
+      },
+      "diagnostic": {
+        "typography": 4.5,
+        "composition": 4.5,
+        "generic_ai_signatures": 0,
+        "notes": "Score basis (weighted estimate ~86/100). Fidelity 4.5: all content and constraints; priority-first sort puts the 9 urgent rows on top and matches the KPI '9 urgent'; arithmetic is coherent (683,319.07 + 18,240.55 = 701,559.62; 11+14+12 = 37); detail panel and mixed-currency normalisation not evidenced. Hierarchy 4.5: red 'Urgent' column and '9 urgent' KPI link lead the eye, header at y=450 with 10 rows visible. Originality 4: ledger idiom (double rules, time-first log, chart annotation) with a reason for each move; shares DNA with B-80746E. Responsive 4: priority view and filter summary line at 390, modal drawer carrying entity and environment, centred max-width at 1920; 768 is a squeezed desktop layout. Accessibility 4.5: axe {} at both widths, Lighthouse 100, focus 1.0 with 0 hidden, drawer is a modal dialog with scroll lock and Esc; human checks unverified. Performance 4: Lighthouse 0.97, 23 KB unused JS. System 4.5: 37 colour literals, 8 radii, 493 var() uses, 224 logical properties versus 0 physical. Typography: IBM Plex Sans/Mono at 14 px table text, 32 px KPI numerals, tabular figures confirmed, decimal-day ages align cleanly. No signatures detected by the scan."
+      },
+      "unjustified_signatures": [],
+      "hard_gate_failures": [],
+      "findings": [
+        {
+          "severity": "LOW",
+          "title": "KPI band loses its baseline in cell 3",
+          "evidence": "1440x900-top.jpg row scan: sub-line rows at y=242-254 and delta rows at y=269-281 in cells 1, 2 and 4, but y=247-259 and y=276-287 in cell 3 (the '9 urgent' link cell), i.e. 5-7 px lower; visible again in 1920x1080-top.jpg (delta line at y=281 vs 274).",
+          "why_it_matters": "The band is the page's anchor; a stagger across four cells reads as unfinished and weakens left-to-right comparison of the deltas.",
+          "smallest_fix": "Fixed min-height per KPI row or a shared 4-row subgrid so the link row cannot add height."
+        },
+        {
+          "severity": "LOW",
+          "title": "KPI band does not recompose below desktop",
+          "evidence": "768x1024-top.jpg keeps four ~182 px columns, so secondary copy wraps to two lines ('of 701,559.62 payout / volume', 'not matched by the nightly / run', 'across 16 resolved / exceptions') and cell heights differ. 390x844-top.jpg switches to 2x2 but keeps every secondary line: the block is ~325 px tall (y 185-510) and the first urgent row starts at y~606 (3 rows above the fold vs ~4 for B-644E29).",
+          "why_it_matters": "At 768 legibility drops; at 390 the brief's priority view (KPIs + urgent exceptions) is pushed down by secondary copy.",
+          "smallest_fix": "Use 2x2 up to ~900 px and drop the 'of ... payout volume' and 'not matched...' lines at <=480 px."
+        },
+        {
+          "severity": "LOW",
+          "title": "768 table is the desktop table squeezed",
+          "evidence": "768x1024-top.jpg: all nine columns kept; Priority collapses to an unlabeled red triangle plus sort arrow and assignees become 'Priya S.', 'Ana R.', 'Jonas B.'. B-644E29 instead merges Provider/Reason and B-80746E merges currency into amount.",
+          "why_it_matters": "Tablet usability is an explicit constraint; abbreviations lose identity and the 'Urgent' word that makes status non-colour-only at desktop disappears.",
+          "smallest_fix": "At <=820 px stack Provider over Reason, keep 'Urgent' as visually hidden text with a title, and keep full first names."
+        },
+        {
+          "severity": "LOW",
+          "title": "Mixed-currency amounts are not normalised per row",
+          "evidence": "1440x900-top.jpg: EX-2139 1,018.40 GBP, EX-2174 760.00 SEK and EX-2203 2,075.00 EUR share one sortable Amount column while the footer reads 'Total, 37 open (EUR equivalent) 22,053.55'. B-80746E prints an approximate EUR value per non-EUR row.",
+          "why_it_matters": "Sorting or eyeballing 'amount' across GBP/SEK/EUR is ambiguous; the brief asks that numbers be easy to compare.",
+          "smallest_fix": "Show an approximate EUR value on non-EUR rows, sort on it, and footnote the rate date."
+        },
+        {
+          "severity": "LOW",
+          "title": "Activity feed starts below the fold at 1440x900",
+          "evidence": "1440x900-top.jpg: 'Activity' heading at y~835, 'TODAY' at y~875, first event at y~905 (>900); B-80746E and B-644E29 show 2-3 events on load. The chart card above is ~445 px tall.",
+          "why_it_matters": "The 'what just happened' panel is invisible on load for a morning-triage user.",
+          "smallest_fix": "Shorten the chart card or move Activity above the chart."
+        },
+        {
+          "severity": "LOW",
+          "title": "Heaviest script of the four with unused code",
+          "evidence": "automated.json: static.bytes.js 70,591 (largest), lighthouseMobile.stable.unusedJsBytes 23,098, tbt 77 ms, performance 0.97.",
+          "why_it_matters": "Small but avoidable cost on a 9-request page.",
+          "smallest_fix": "Lazy-load drawer and chart-stepper code or drop dead paths."
+        },
+        {
+          "severity": "LOW",
+          "title": "Row-detail / assign / resolve flow not evidenced",
+          "evidence": "No capture shows a selected row, detail panel or sort/filter state; the page prints 'Enter opens details - Esc closes them' (1440x900-scroll-50.jpg footer) and styles IDs as underlined links.",
+          "why_it_matters": "'Open one, assign or resolve' is the primary task; it is assumed, not verified (same gap for all four outputs).",
+          "smallest_fix": "Add selected-row and sorted/filtered states to the capture set."
+        },
+        {
+          "severity": "SUBJECTIVE",
+          "title": "Visual DNA overlaps with B-80746E",
+          "evidence": "automated.json: both use IBM Plex Sans/Mono, a warm paper ground (#f4f3ee vs #f5f4f0), a top nav with underline, grey 'matched' vs warm 'unmatched' small multiples, a 'show data as table' disclosure and an in-page sample-data footer.",
+          "why_it_matters": "A coherent ledger identity, but candidates are hard to tell apart.",
+          "smallest_fix": "None required for this brief; vary neutrals or typeface if diversity matters."
+        }
+      ],
+      "central_idea": "A ledger-style operations console: the exception table sorts by priority so the nine urgent rows lead (with the word 'Urgent' spelled out), the KPI band closes with an accounting double rule and activity reads as a time-first log - derived from the brief's reconcile-and-triage finance context.",
+      "idea_from_brief": true
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "blind_id": "B-849635",
+      "justification": "Only design that makes triage the sort order (nine labelled 'Urgent' rows lead and match the KPI), with the tightest tokens (37 colour literals, 8 radii), clean axe/Lighthouse, a modal drawer carrying entity/environment switching and a steppable annotated chart; flaws are LOW (KPI stagger, cramped 768 KPI band)."
+    },
+    {
+      "rank": 2,
+      "blind_id": "B-80746E",
+      "justification": "Same clean accessibility and ledger identity plus per-row EUR equivalents and a totals row, but the default age sort with a 12-row cut hides 3 of 9 urgent rows and the phone KPI block pushes the urgent list down."
+    },
+    {
+      "rank": 3,
+      "blind_id": "B-644E29",
+      "justification": "Efficient and well recomposed for tablet/phone with the best Lighthouse performance (0.99), but colour-only KPI deltas, focusable hidden drawer links, a nested-scroll table, axe/Lighthouse misses and the most generic look (97 colour literals); near-tie with #4."
+    },
+    {
+      "rank": 4,
+      "blind_id": "B-4F5097",
+      "justification": "Richest operational narrative and clean axe, but the nav toggle is dead below desktop (entity switcher and user menu vanish too), the activity feed is clipped, the table starts lowest, and token drift is high; near-tie with #3."
+    }
+  ],
+  "ranking_confidence": "medium"
+}
