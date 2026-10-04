@@ -233,20 +233,54 @@ export function stripRevealingComments(file: string, text: string) {
   return text;
 }
 
+// Screenshots handed to the blind critic (copied under neutral IDs; the originals' paths reveal the condition).
+const CRITIC_SHOTS = /^(390x844-(top|long|menu-open|focus)|768x1024-top|1440x900-(top|long|scroll-50|reduced-motion-top)|1920x1080-top)\.jpg$/;
+
 function blind(cycle: string, seed: string) {
   const outputs = listOutputs(cycle);
+  const auto = existsSync(abs('evals', 'results', cycle, 'automated.json')) ? readJson<any>(abs('evals', 'results', cycle, 'automated.json')) : { outputs: {} };
   const base = abs('evals', 'results', cycle, 'blind');
+  const packet = abs('research-artifacts', 'bench', cycle, 'blind');
   rmSync(base, { recursive: true, force: true });
+  rmSync(packet, { recursive: true, force: true });
   const key: Record<string, { condition: string; run: string }> = {};
   const ids = outputs.map((o) => ({ o, id: createHash('sha256').update(`${seed}:${o.condition}/${o.run}`).digest('hex').slice(0, 6).toUpperCase() }));
   for (const { o, id } of ids) {
-    const dst = join(base, `${o.brief}-${id}`);
+    const bid = `${o.brief}-${id}`;
+    const dst = join(base, bid);
     cpSync(o.dir, dst, { recursive: true, filter: (src) => !src.endsWith('NOTES.md') && !/\/\.[^/]+$/.test(src) });
     for (const f of walk(dst)) if (/\.(html|css|js)$/.test(f)) writeFileSync(f, stripRevealingComments(f, readFileSync(f, 'utf8')));
-    key[`${o.brief}-${id}`] = { condition: o.condition, run: o.run };
+    key[bid] = { condition: o.condition, run: o.run };
+    // Critic packet: neutral screenshots + condition-neutral automated report.
+    const src = abs('research-artifacts', 'bench', cycle, o.condition, o.run, 'artifacts');
+    const pdst = join(packet, bid);
+    mkdirSync(pdst, { recursive: true });
+    if (existsSync(src)) for (const f of readdirSync(src)) if (CRITIC_SHOTS.test(f)) cpSync(join(src, f), join(pdst, f));
+    const a = auto.outputs?.[`${o.condition}/${o.run}`];
+    if (a) {
+      const { condition: _c, run: _r, static: st, style: _s, sourceSha256: _h, scoredAt: _t, ...rest } = a;
+      const { diRuleIdMentions: _m, files: _f, ...stat } = st ?? {};
+      writeJson(join(pdst, 'automated.json'), { blind_id: bid, ...rest, static: stat });
+    }
   }
   writeJson(abs('evals', 'results', cycle, 'blind-key.SEALED.json'), { note: 'Do not open before critic and human scoring are complete.', seedSha256: createHash('sha256').update(seed).digest('hex'), key });
-  console.log(`blinded ${ids.length} output(s) → evals/results/${cycle}/blind/`);
+  // Human review packet (evals/human/README.md).
+  const byBrief = new Map<string, string[]>();
+  for (const bid of Object.keys(key).sort()) byBrief.set(bid.split('-')[0], [...(byBrief.get(bid.split('-')[0]) ?? []), bid]);
+  const briefFiles = readdirSync(abs('evals', 'briefs')).filter((f) => f.endsWith('.md'));
+  const P = [`# Review packet — ${cycle}`, '', 'Blind outputs per brief. Serve a folder locally (for example `npx http-server evals/results/' + cycle + '/blind/<ID>`) and review it at 390 px and 1440 px wide, then fill in `human-scores.template.yaml` (one copy per reviewer). Rendered captures can be regenerated with `node .claude/skills/design-intelligence/scripts/verify-page.ts <folder> --out <tmp>`. Do not open `outputs/`, `automated.json`, `RUNLOG.md` or `blind-key.SEALED.json` before submitting scores — they reveal the conditions.', ''];
+  const T = ['# Human blind scores — copy per reviewer. Scores 1–5 per evals/rubrics/scorecard.yaml anchors.', `cycle: ${cycle}`, 'reviewer: ""', 'date: ""', 'outputs:'];
+  for (const [b, list] of byBrief) {
+    P.push(`## Brief ${b} — \`evals/briefs/${briefFiles.find((f) => f.startsWith(b + '-'))}\``, '');
+    for (const bid of list) P.push(`- \`${bid}\` — \`evals/results/${cycle}/blind/${bid}/index.html\``);
+    P.push('');
+    for (const bid of list) {
+      T.push(`  ${bid}:`, '    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }', '    hard_gate_failures: []', '    rank_within_brief: null', '    findings: []');
+    }
+  }
+  writeFileSync(abs('evals', 'results', cycle, 'review-packet.md'), P.join('\n'));
+  writeFileSync(abs('evals', 'results', cycle, 'human-scores.template.yaml'), T.join('\n') + '\n');
+  console.log(`blinded ${ids.length} output(s) → evals/results/${cycle}/blind/ (critic packet: research-artifacts/bench/${cycle}/blind/)`);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
