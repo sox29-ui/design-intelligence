@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tidewrack · a composition written by the tide · Lisbon, 14 Nov – 27 Dec 2026</title>
+  <meta name="description" content="A sound installation that turns tide readings from the Tagus estuary into a slowly evolving composition. Armazém 7, Cais do Sodré, Lisbon. 14 November – 27 December 2026. Free timed entry.">
+  <meta name="theme-color" content="#0b1315">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tidewrack: a composition written by the tide, performed by the room">
+  <meta property="og:description" content="Sound installation by Inês Varela. Armazém 7, Cais do Sodré, Lisbon · 14 Nov – 27 Dec 2026 · Free timed entry.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1315'/%3E%3Cpath d='M5 12.5h22M5 19.5h22' stroke='%23ece6d8' stroke-opacity='.35'/%3E%3Cellipse cx='16' cy='16' rx='6.2' ry='4.4' transform='rotate(-20 16 16)' fill='%23e7b462'/%3E%3C/svg%3E">
+
+  <!-- Fonts load without blocking first paint; metric-matched fallbacks keep layout steady. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fragment+Mono&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fragment+Mono&amp;family=Instrument+Serif:ital@0;1&amp;display=swap"></noscript>
+
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.className = 'js';</script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    "name": "Tidewrack",
+    "description": "A composition written by the tide, performed by the room. A sound installation by Inês Varela.",
+    "startDate": "2026-11-14",
+    "endDate": "2026-12-27",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "isAccessibleForFree": true,
+    "performer": { "@type": "Person", "name": "Inês Varela" },
+    "location": {
+      "@type": "Place",
+      "name": "Armazém 7",
+      "address": { "@type": "PostalAddress", "streetAddress": "Armazém 7, Cais do Sodré", "addressLocality": "Lisboa", "addressCountry": "PT" }
+    },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/LimitedAvailability" }
+  }
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="wordmark" href="#top">Tidewrack</a>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#work">The work</a></li>
+          <li><a href="#sessions">Low-tide sessions</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--header" href="#reserve" data-header-cta>Reserve<span class="vh"> a free timed entry</span></a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ Hero: the title page of a score ============ -->
+    <section class="hero" aria-labelledby="title">
+      <div class="hero__inner">
+        <p class="hero__credits">
+          <span>For forty suspended speakers <span class="credits__line">and the Tagus estuary</span></span>
+          <span><span class="vh">, by </span><span lang="pt">Inês Varela</span></span>
+        </p>
+
+        <h1 class="title" id="title" data-title>
+          <span class="title__dry">Tidewrack</span>
+          <span class="title__wet" aria-hidden="true">Tidewrack</span>
+        </h1>
+
+        <p class="hero__line">A composition written by the tide, performed by the room.</p>
+      </div>
+
+      <div class="score" data-score>
+        <div class="score__stage">
+          <canvas class="score__canvas" role="img" aria-describedby="score-caption" aria-label="A musical stave runs across the screen. Notes rise and fall with a modelled tide, gather into chords while the water runs fast, and give way to rests where the tide turns."></canvas>
+          <p class="score__readout" aria-hidden="true"><span data-readout-time>00:00</span><span data-readout-trend></span><span class="score__level"><svg viewBox="0 0 12 10" width="10" height="9"><path d="M1.5 1.5h9L6 8z" fill="none" stroke="currentColor"/><path d="M3.5 9.5h5" stroke="currentColor"/></svg><span data-water-label>2.10 m</span></span></p>
+        </div>
+        <div class="score__meta">
+          <p class="score__caption" id="score-caption">
+            <span class="tempo"><svg viewBox="0 0 10 22" width="8" height="17" aria-hidden="true"><path d="M8.2 2v15.4" stroke="currentColor" stroke-width="1.2"/><ellipse cx="4.9" cy="17.6" rx="3.9" ry="2.7" transform="rotate(-22 4.9 17.6)" fill="currentColor"/></svg><span class="vh">Tempo: 50 beats a minute.</span><span aria-hidden="true">= 50</span></span>
+            Each note is six minutes of a modelled tide, played 300 times faster.
+          </p>
+          <div class="score__controls">
+            <button class="ctl" type="button" data-sound aria-describedby="sound-note" hidden>
+              <svg class="ctl__icon ctl__icon--a" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 8v4h3l4 3.5v-11L6 8z" fill="currentColor"/><path d="M13 7.2a4 4 0 0 1 0 5.6M15.3 5a7.2 7.2 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <svg class="ctl__icon ctl__icon--b" viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="5" width="10" height="10" rx="1" fill="currentColor"/></svg>
+              <span data-label>Listen</span>
+            </button>
+            <button class="ctl" type="button" data-motion hidden>
+              <svg class="ctl__icon ctl__icon--a" viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="4" width="3.2" height="12" rx=".8" fill="currentColor"/><rect x="11.8" y="4" width="3.2" height="12" rx=".8" fill="currentColor"/></svg>
+              <svg class="ctl__icon ctl__icon--b" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4.2v11.6L15.5 10z" fill="currentColor"/></svg>
+              <span data-label>Pause motion</span>
+            </button>
+          </div>
+          <p class="vh" id="sound-note">Plays a short sketch generated in your browser from the modelled tide. It is not a recording of the installation.</p>
+        </div>
+      </div>
+
+      <div class="hero__visit">
+        <div class="hero__facts">
+          <p class="hero__dates"><time datetime="2026-11-14">14 November</time> – <time datetime="2026-12-27">27 December 2026</time></p>
+          <p class="hero__place"><span lang="pt">Armazém 7, Cais do Sodré</span>, Lisbon</p>
+        </div>
+        <div class="hero__action">
+          <a class="btn btn--primary btn--large" href="#reserve" id="hero-cta">Reserve a free timed entry<svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="hero__fine">Free · Tuesday–Sunday, 11:00–19:00 · Limited places</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ The work ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <h2 class="label work__label" id="work-title">The work</h2>
+
+      <div class="movement">
+        <div class="movement__head">
+          <span class="mark" aria-hidden="true">A</span>
+          <h3 class="label" id="m-idea">The idea</h3>
+        </div>
+        <p class="lead">Every six minutes, a tide gauge in the Tagus estuary takes a reading. <i>Tidewrack</i> turns each one into an instruction for the room: the height of the water sets the pitch, the speed of its rise and fall sets the density, and the slack water at every turn of the tide becomes silence.</p>
+        <ul class="key" role="list" aria-label="How the tide is scored">
+          <li>
+            <svg class="key__glyph" viewBox="0 0 132 60" aria-hidden="true" focusable="false"><path class="g-staff" d="M2 46H130"/><path class="g-staff" d="M2 38H130"/><path class="g-staff" d="M2 30H130"/><path class="g-staff" d="M2 22H130"/><path class="g-staff" d="M2 14H130"/><path class="g-curve" d="M6 48 L8 47.98 L10 47.9 L12 47.78 L14 47.61 L16 47.39 L18 47.12 L20 46.8 L22 46.44 L24 46.04 L26 45.59 L28 45.1 L30 44.56 L32 43.99 L34 43.38 L36 42.73 L38 42.04 L40 41.33 L42 40.58 L44 39.8 L46 39 L48 38.17 L50 37.32 L52 36.45 L54 35.56 L56 34.66 L58 33.74 L60 32.82 L62 31.88 L64 30.94 L66 30 L68 29.06 L70 28.12 L72 27.18 L74 26.26 L76 25.34 L78 24.44 L80 23.55 L82 22.68 L84 21.83 L86 21 L88 20.2 L90 19.42 L92 18.67 L94 17.96 L96 17.27 L98 16.62 L100 16.01 L102 15.44 L104 14.9 L106 14.41 L108 13.96 L110 13.56 L112 13.2 L114 12.88 L116 12.61 L118 12.39 L120 12.22 L122 12.1 L124 12.02 L126 12"/><ellipse class="g-note" cx="18" cy="46" rx="4.2" ry="2.9" transform="rotate(-20 18 46)"/><ellipse class="g-note" cx="42" cy="42" rx="4.2" ry="2.9" transform="rotate(-20 42 42)"/><ellipse class="g-note" cx="66" cy="30" rx="4.2" ry="2.9" transform="rotate(-20 66 30)"/><ellipse class="g-note" cx="90" cy="18" rx="4.2" ry="2.9" transform="rotate(-20 90 18)"/><ellipse class="g-note" cx="114" cy="14" rx="4.2" ry="2.9" transform="rotate(-20 114 14)"/></svg>
+            <p><b>Height → pitch</b> <span>Higher water, higher notes.</span></p>
+          </li>
+          <li>
+            <svg class="key__glyph" viewBox="0 0 132 60" aria-hidden="true" focusable="false"><path class="g-staff" d="M2 46H130"/><path class="g-staff" d="M2 38H130"/><path class="g-staff" d="M2 30H130"/><path class="g-staff" d="M2 22H130"/><path class="g-staff" d="M2 14H130"/><ellipse class="g-note" cx="22" cy="34" rx="4.2" ry="2.9" transform="rotate(-20 22 34)"/><ellipse class="g-note" cx="64" cy="38" rx="4.2" ry="2.9" transform="rotate(-20 64 38)"/><ellipse class="g-note" cx="64" cy="30" rx="4.2" ry="2.9" transform="rotate(-20 64 30)"/><ellipse class="g-note" cx="106" cy="42" rx="4.2" ry="2.9" transform="rotate(-20 106 42)"/><ellipse class="g-note" cx="106" cy="34" rx="4.2" ry="2.9" transform="rotate(-20 106 34)"/><ellipse class="g-note" cx="106" cy="26" rx="4.2" ry="2.9" transform="rotate(-20 106 26)"/></svg>
+            <p><b>Speed → density</b> <span>When the tide runs fast, notes gather into chords.</span></p>
+          </li>
+          <li>
+            <svg class="key__glyph" viewBox="0 0 132 60" aria-hidden="true" focusable="false"><path class="g-staff" d="M2 46H130"/><path class="g-staff" d="M2 38H130"/><path class="g-staff" d="M2 30H130"/><path class="g-staff" d="M2 22H130"/><path class="g-staff" d="M2 14H130"/><path class="g-curve" d="M10 14 L12 16.53 L14 18.96 L16 21.3 L18 23.55 L20 25.71 L22 27.78 L24 29.75 L26 31.63 L28 33.42 L30 35.12 L32 36.73 L34 38.24 L36 39.67 L38 41 L40 42.24 L42 43.39 L44 44.44 L46 45.41 L48 46.28 L50 47.06 L52 47.75 L54 48.35 L56 48.85 L58 49.27 L60 49.59 L62 49.82 L64 49.95 L66 50 L68 49.95 L70 49.82 L72 49.59 L74 49.27 L76 48.85 L78 48.35 L80 47.75 L82 47.06 L84 46.28 L86 45.41 L88 44.44 L90 43.39 L92 42.24 L94 41 L96 39.67 L98 38.24 L100 36.73 L102 35.12 L104 33.42 L106 31.63 L108 29.75 L110 27.78 L112 25.71 L114 23.55 L116 21.3 L118 18.96 L120 16.53 L122 14"/><ellipse class="g-note" cx="16" cy="22" rx="4.2" ry="2.9" transform="rotate(-20 16 22)"/><ellipse class="g-note" cx="38" cy="42" rx="4.2" ry="2.9" transform="rotate(-20 38 42)"/><ellipse class="g-note" cx="94" cy="42" rx="4.2" ry="2.9" transform="rotate(-20 94 42)"/><ellipse class="g-note" cx="116" cy="22" rx="4.2" ry="2.9" transform="rotate(-20 116 22)"/><rect class="g-rest" x="61" y="26.4" width="10" height="3.6"/><path class="g-fermata" d="M59.5 10.5a6.5 6.5 0 0 1 13 0"/><circle class="g-rest" cx="66" cy="9" r="1.2"/></svg>
+            <p><b>Slack water → silence</b> <span>As the tide turns, the room falls quiet.</span></p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="movement">
+        <div class="movement__head">
+          <span class="mark" aria-hidden="true">B</span>
+          <h3 class="label" id="m-space">The space</h3>
+        </div>
+        <p class="lead">Forty speakers hang at different heights in a converted harbour warehouse. There is no stage and no front row: you walk through the sound as it gathers, thins and moves overhead, the way the tide moves through the estuary outside.</p>
+        <figure class="drawing" data-inview>
+          <svg class="drawing__svg" viewBox="0 0 640 300" aria-hidden="true" focusable="false"><path class="d-line" d="M0 262H588V296"/><path class="d-line" d="M24 262V96L288 42L552 96V262"/><path class="d-fine" d="M24 96H552 M90 96V82.5 M156 96V69 M222 96V55.5 M288 96V42 M354 96V55.5 M420 96V69 M486 96V82.5 M90 96L156 69 M156 96L222 55.5 M222 96L288 42 M486 96L420 69 M420 96L354 55.5 M354 96L288 42"/><path class="d-water" d="M588 279H640"/><path class="d-water" d="M606 269.5h12l-6 9z M604 283.5h16 M608 287.5h8"/><path class="d-bench" d="M232 249H284 M237 249V262 M279 249V262"/><path class="d-bench" d="M468 249H512 M473 249V262 M507 249V262"/><g class="speakers"><g class="spk" style="--i:0"><path class="d-cable" d="M44 96V166.49"/><rect x="41.3" y="166.49" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:1"><path class="d-cable" d="M56.51 96V172.51"/><rect x="53.81" y="172.51" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:2"><path class="d-cable" d="M69.03 96V191.63"/><rect x="66.33" y="191.63" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:3"><path class="d-cable" d="M81.54 96V190.77"/><rect x="78.84" y="190.77" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:4"><path class="d-cable" d="M94.05 96V190.51"/><rect x="91.35" y="190.51" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:5"><path class="d-cable" d="M106.56 96V190.13"/><rect x="103.86" y="190.13" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:6"><path class="d-cable" d="M119.08 96V191.43"/><rect x="116.38" y="191.43" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:7"><path class="d-cable" d="M131.59 96V186.97"/><rect x="128.89" y="186.97" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:8"><path class="d-cable" d="M144.1 96V190.02"/><rect x="141.4" y="190.02" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:9"><path class="d-cable" d="M156.62 96V189.8"/><rect x="153.92" y="189.8" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:10"><path class="d-cable" d="M169.13 96V178.25"/><rect x="166.43" y="178.25" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:11"><path class="d-cable" d="M181.64 96V171.79"/><rect x="178.94" y="171.79" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:12"><path class="d-cable" d="M194.15 96V176.04"/><rect x="191.45" y="176.04" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:13"><path class="d-cable" d="M206.67 96V166.15"/><rect x="203.97" y="166.15" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:14"><path class="d-cable" d="M219.18 96V154.78"/><rect x="216.48" y="154.78" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:15"><path class="d-cable" d="M231.69 96V151.23"/><rect x="228.99" y="151.23" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:16"><path class="d-cable" d="M244.21 96V143.91"/><rect x="241.51" y="143.91" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:17"><path class="d-cable" d="M256.72 96V142.02"/><rect x="254.02" y="142.02" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:18"><path class="d-cable" d="M269.23 96V133.01"/><rect x="266.53" y="133.01" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:19"><path class="d-cable" d="M281.74 96V139.47"/><rect x="279.04" y="139.47" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:20"><path class="d-cable" d="M294.26 96V124.24"/><rect x="291.56" y="124.24" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:21"><path class="d-cable" d="M306.77 96V131.79"/><rect x="304.07" y="131.79" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:22"><path class="d-cable" d="M319.28 96V119.37"/><rect x="316.58" y="119.37" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:23"><path class="d-cable" d="M331.79 96V118.34"/><rect x="329.09" y="118.34" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:24"><path class="d-cable" d="M344.31 96V119.4"/><rect x="341.61" y="119.4" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:25"><path class="d-cable" d="M356.82 96V123.6"/><rect x="354.12" y="123.6" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:26"><path class="d-cable" d="M369.33 96V130.8"/><rect x="366.63" y="130.8" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:27"><path class="d-cable" d="M381.85 96V138.26"/><rect x="379.15" y="138.26" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:28"><path class="d-cable" d="M394.36 96V132.12"/><rect x="391.66" y="132.12" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:29"><path class="d-cable" d="M406.87 96V151.05"/><rect x="404.17" y="151.05" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:30"><path class="d-cable" d="M419.38 96V151.27"/><rect x="416.68" y="151.27" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:31"><path class="d-cable" d="M431.9 96V158.6"/><rect x="429.2" y="158.6" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:32"><path class="d-cable" d="M444.41 96V165.81"/><rect x="441.71" y="165.81" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:33"><path class="d-cable" d="M456.92 96V176.5"/><rect x="454.22" y="176.5" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:34"><path class="d-cable" d="M469.44 96V176.77"/><rect x="466.74" y="176.77" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:35"><path class="d-cable" d="M481.95 96V186.68"/><rect x="479.25" y="186.68" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:36"><path class="d-cable" d="M494.46 96V189.59"/><rect x="491.76" y="189.59" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:37"><path class="d-cable" d="M506.97 96V180.5"/><rect x="504.27" y="180.5" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:38"><path class="d-cable" d="M519.49 96V185.14"/><rect x="516.79" y="185.14" width="5.4" height="8.6" rx="1"/></g><g class="spk" style="--i:39"><path class="d-cable" d="M532 96V189.43"/><rect x="529.3" y="189.43" width="5.4" height="8.6" rx="1"/></g></g><g class="d-person"><circle cx="166" cy="234.4" r="3.4"/><rect x="162.7" y="239" width="6.6" height="23" rx="3.3"/></g><g class="d-person"><circle cx="330" cy="232.4" r="3.4"/><rect x="326.7" y="237" width="6.6" height="25" rx="3.3"/></g><g class="d-person"><circle cx="356" cy="235.9" r="3.4"/><rect x="352.7" y="240.5" width="6.6" height="21.5" rx="3.3"/></g><g class="d-person"><circle cx="440" cy="233.4" r="3.4"/><rect x="436.7" y="238" width="6.6" height="24" rx="3.3"/></g></svg>
+          <figcaption class="caption">Section through <span lang="pt">Armazém 7</span>: forty speakers hang from the roof trusses; benches along the floor.</figcaption>
+        </figure>
+      </div>
+
+      <div class="movement">
+        <div class="movement__head">
+          <span class="mark" aria-hidden="true">C</span>
+          <h3 class="label" id="m-artist">The artist</h3>
+        </div>
+        <p class="lead"><span lang="pt">Inês Varela</span> is a composer born in <span lang="pt">Setúbal</span>, on the <span lang="pt">Sado</span> estuary, who works with environmental data. She treats each measurement as a note not yet played, and in <i>Tidewrack</i> she leaves the river to finish every phrase.</p>
+      </div>
+    </section>
+
+    <!-- ============ Press ============ -->
+    <section class="press rule-top" aria-labelledby="press-title">
+      <h2 class="vh" id="press-title">Press</h2>
+      <figure class="quote">
+        <blockquote><p>Less a concert than a change in the weather. You walk in, and the river is already mid-sentence.</p></blockquote>
+        <figcaption><cite lang="pt">Arquivo Sonoro</cite></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote><p>Patient, exact and faintly eerie: a piece that asks you to keep time with the moon.</p></blockquote>
+        <figcaption><cite>The Listening Post</cite></figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ Low-tide sessions ============ -->
+    <section class="sessions rule-top" id="sessions" aria-labelledby="sessions-title">
+      <div class="section-head">
+        <h2 class="h2" id="sessions-title">Low-tide sessions</h2>
+        <p class="section-head__intro">Four evenings when the doors reopen at 20:30 and the piece is heard around low water: at its lowest, sparest and closest to silence.</p>
+      </div>
+      <ol class="session-list" role="list">
+        <li class="session">
+          <h3 class="session__date"><span class="session__dow" aria-hidden="true">Sat</span> <span class="session__day" aria-hidden="true">28 Nov</span><span class="vh">Saturday 28 November</span></h3>
+          <dl class="session__times">
+            <div><dt>Starts</dt><dd><time datetime="2026-11-28T20:30">20:30</time></dd></div>
+            <div><dt>Predicted low water</dt><dd><time datetime="2026-11-28T20:42">20:42</time></dd></div>
+          </dl>
+          <div class="session__tide">
+            <svg class="session__curve" viewBox="0 -2 240 62" aria-hidden="true" focusable="false"><path class="c-axis" d="M0 46H240 M0 44v4 M60 44v4 M120 44v4 M180 44v4 M240 44v4"/><text class="c-label" x="60" y="59" text-anchor="middle">20:00</text><text class="c-label" x="180" y="59" text-anchor="middle">21:00</text><path class="c-start" d="M120 0V46"/><path class="c-tide" d="M0 21.06 L6 22.24 L12 23.38 L18 24.48 L24 25.53 L30 26.53 L36 27.48 L42 28.39 L48 29.24 L54 30.05 L60 30.81 L66 31.52 L72 32.18 L78 32.78 L84 33.34 L90 33.84 L96 34.29 L102 34.69 L108 35.04 L114 35.33 L120 35.57 L126 35.76 L132 35.89 L138 35.97 L144 36 L150 35.97 L156 35.89 L162 35.76 L168 35.57 L174 35.33 L180 35.04 L186 34.69 L192 34.29 L198 33.84 L204 33.34 L210 32.78 L216 32.18 L222 31.52 L228 30.81 L234 30.05 L240 29.24"/><circle class="c-low" cx="144" cy="36" r="3.4"/></svg>
+            <p class="session__rel">The tide turns 12 minutes in.</p>
+          </div>
+          <a class="session__cta" href="#reserve" data-session="2026-11-28">Reserve<span class="vh"> the low-tide session on Saturday 28 November</span><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span class="session__dow" aria-hidden="true">Sun</span> <span class="session__day" aria-hidden="true">6 Dec</span><span class="vh">Sunday 6 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Starts</dt><dd><time datetime="2026-12-06T20:30">20:30</time></dd></div>
+            <div><dt>Predicted low water</dt><dd><time datetime="2026-12-06T19:58">19:58</time></dd></div>
+          </dl>
+          <div class="session__tide">
+            <svg class="session__curve" viewBox="0 -2 240 62" aria-hidden="true" focusable="false"><path class="c-axis" d="M0 46H240 M0 44v4 M60 44v4 M120 44v4 M180 44v4 M240 44v4"/><text class="c-label" x="60" y="59" text-anchor="middle">20:00</text><text class="c-label" x="180" y="59" text-anchor="middle">21:00</text><path class="c-start" d="M120 0V46"/><path class="c-tide" d="M0 33.68 L6 34.15 L12 34.57 L18 34.93 L24 35.24 L30 35.5 L36 35.7 L42 35.85 L48 35.95 L54 36 L60 35.99 L66 35.93 L72 35.81 L78 35.64 L84 35.42 L90 35.14 L96 34.81 L102 34.43 L108 34 L114 33.51 L120 32.97 L126 32.39 L132 31.74 L138 31.05 L144 30.31 L150 29.52 L156 28.68 L162 27.79 L168 26.85 L174 25.86 L180 24.83 L186 23.75 L192 22.63 L198 21.46 L204 20.25 L210 18.99 L216 17.69 L222 16.35 L228 14.96 L234 13.54 L240 12.08"/><circle class="c-low" cx="56" cy="36" r="3.4"/></svg>
+            <p class="session__rel">The tide turns 32 minutes before we begin.</p>
+          </div>
+          <a class="session__cta" href="#reserve" data-session="2026-12-06">Reserve<span class="vh"> the low-tide session on Sunday 6 December</span><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span class="session__dow" aria-hidden="true">Sun</span> <span class="session__day" aria-hidden="true">13 Dec</span><span class="vh">Sunday 13 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Starts</dt><dd><time datetime="2026-12-13T20:30">20:30</time></dd></div>
+            <div><dt>Predicted low water</dt><dd><time datetime="2026-12-13T20:16">20:16</time></dd></div>
+          </dl>
+          <div class="session__tide">
+            <svg class="session__curve" viewBox="0 -2 240 62" aria-hidden="true" focusable="false"><path class="c-axis" d="M0 46H240 M0 44v4 M60 44v4 M120 44v4 M180 44v4 M240 44v4"/><text class="c-label" x="60" y="59" text-anchor="middle">20:00</text><text class="c-label" x="180" y="59" text-anchor="middle">21:00</text><path class="c-start" d="M120 0V46"/><path class="c-tide" d="M0 29.79 L6 30.56 L12 31.29 L18 31.96 L24 32.59 L30 33.16 L36 33.68 L42 34.15 L48 34.57 L54 34.93 L60 35.24 L66 35.5 L72 35.7 L78 35.85 L84 35.95 L90 36 L96 35.99 L102 35.93 L108 35.81 L114 35.64 L120 35.42 L126 35.14 L132 34.81 L138 34.43 L144 34 L150 33.51 L156 32.97 L162 32.39 L168 31.74 L174 31.05 L180 30.31 L186 29.52 L192 28.68 L198 27.79 L204 26.85 L210 25.86 L216 24.83 L222 23.75 L228 22.63 L234 21.46 L240 20.25"/><circle class="c-low" cx="92" cy="36" r="3.4"/></svg>
+            <p class="session__rel">The tide turns 14 minutes before we begin.</p>
+          </div>
+          <a class="session__cta" href="#reserve" data-session="2026-12-13">Reserve<span class="vh"> the low-tide session on Sunday 13 December</span><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </li>
+        <li class="session">
+          <h3 class="session__date"><span class="session__dow" aria-hidden="true">Sun</span> <span class="session__day" aria-hidden="true">20 Dec</span><span class="vh">Sunday 20 December</span></h3>
+          <dl class="session__times">
+            <div><dt>Starts</dt><dd><time datetime="2026-12-20T20:30">20:30</time></dd></div>
+            <div><dt>Predicted low water</dt><dd><time datetime="2026-12-20T21:03">21:03</time></dd></div>
+          </dl>
+          <div class="session__tide">
+            <svg class="session__curve" viewBox="0 -2 240 62" aria-hidden="true" focusable="false"><path class="c-axis" d="M0 46H240 M0 44v4 M60 44v4 M120 44v4 M180 44v4 M240 44v4"/><text class="c-label" x="60" y="59" text-anchor="middle">20:00</text><text class="c-label" x="180" y="59" text-anchor="middle">21:00</text><path class="c-start" d="M120 0V46"/><path class="c-tide" d="M0 11.59 L6 13.06 L12 14.5 L18 15.89 L24 17.25 L30 18.56 L36 19.83 L42 21.06 L48 22.24 L54 23.38 L60 24.48 L66 25.53 L72 26.53 L78 27.48 L84 28.39 L90 29.24 L96 30.05 L102 30.81 L108 31.52 L114 32.18 L120 32.78 L126 33.34 L132 33.84 L138 34.29 L144 34.69 L150 35.04 L156 35.33 L162 35.57 L168 35.76 L174 35.89 L180 35.97 L186 36 L192 35.97 L198 35.89 L204 35.76 L210 35.57 L216 35.33 L222 35.04 L228 34.69 L234 34.29 L240 33.84"/><circle class="c-low" cx="186" cy="36" r="3.4"/></svg>
+            <p class="session__rel">The tide turns 33 minutes in.</p>
+          </div>
+          <a class="session__cta" href="#reserve" data-session="2026-12-20">Reserve<span class="vh"> the low-tide session on Sunday 20 December</span><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </li>
+      </ol>
+      <p class="fine">Low-water times are predictions and can shift by a few minutes. Sessions use the same free timed entry.</p>
+    </section>
+
+    <!-- ============ Visit + reserve ============ -->
+    <div class="plan rule-top">
+      <section class="visit" id="visit" aria-labelledby="visit-title">
+        <h2 class="h2" id="visit-title">Visit</h2>
+        <dl class="facts">
+          <div>
+            <dt>Dates</dt>
+            <dd><time datetime="2026-11-14">14 November</time> – <time datetime="2026-12-27">27 December 2026</time></dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Tuesday – Sunday, 11:00–19:00<br>Closed Mondays</dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd><span lang="pt">Armazém 7, Cais do Sodré</span><br>Lisbon, Portugal<br><a class="link" href="https://www.openstreetmap.org/search?query=Cais%20do%20Sodr%C3%A9%2C%20Lisboa">Open in map<span class="vh"> (opens OpenStreetMap)</span></a></dd>
+          </div>
+          <div>
+            <dt>Getting there</dt>
+            <dd><span lang="pt">Cais do Sodré</span> station: metro, train and ferry</dd>
+          </div>
+          <div>
+            <dt>Admission</dt>
+            <dd>Free, with a timed entry. Places are limited.</dd>
+          </div>
+          <div>
+            <dt>Access</dt>
+            <dd>Step-free access. Seating is available. The room is dim; give your eyes a minute to adjust.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+        <h2 class="h2" id="reserve-title" tabindex="-1">Reserve a free timed entry</h2>
+        <p class="reserve__intro">Pick a day and an entry time. Entry is free; places are limited so the room stays quiet.</p>
+
+        <form class="booking" id="booking" action="#reserve" method="get" novalidate>
+          <div class="errors" id="errors" tabindex="-1" role="group" aria-labelledby="errors-title" hidden>
+            <h3 class="errors__title" id="errors-title">Check your reservation</h3>
+            <ul class="errors__list" role="list"></ul>
+          </div>
+
+          <fieldset class="field" id="field-day" aria-describedby="day-hint day-error">
+            <legend class="field__legend"><span class="step" aria-hidden="true">1</span>Day</legend>
+            <p class="field__hint" id="day-hint">Open Tuesday to Sunday. <span class="lt-key"><span class="lt-dot" aria-hidden="true"></span>Low-tide session that evening</span></p>
+            <p class="field__error" id="day-error" hidden></p>
+            <div class="cal">
+              <div class="cal__dow" aria-hidden="true"><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+              <div class="cal__grid">
+                <div class="cal__cell cal__cell--off" aria-hidden="true"><span>10</span></div>
+                <div class="cal__cell cal__cell--off" aria-hidden="true"><span>11</span></div>
+                <div class="cal__cell cal__cell--off" aria-hidden="true"><span>12</span></div>
+                <div class="cal__cell cal__cell--off" aria-hidden="true"><span>13</span></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-14" value="2026-11-14"><label for="day-2026-11-14"><span class="cal__m" aria-hidden="true">Nov</span><span class="cal__n" aria-hidden="true">14</span><span class="vh">Saturday 14 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-15" value="2026-11-15"><label for="day-2026-11-15"><span class="cal__n" aria-hidden="true">15</span><span class="vh">Sunday 15 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-17" value="2026-11-17"><label for="day-2026-11-17"><span class="cal__n" aria-hidden="true">17</span><span class="vh">Tuesday 17 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-18" value="2026-11-18"><label for="day-2026-11-18"><span class="cal__n" aria-hidden="true">18</span><span class="vh">Wednesday 18 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-19" value="2026-11-19"><label for="day-2026-11-19"><span class="cal__n" aria-hidden="true">19</span><span class="vh">Thursday 19 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-20" value="2026-11-20"><label for="day-2026-11-20"><span class="cal__n" aria-hidden="true">20</span><span class="vh">Friday 20 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-21" value="2026-11-21"><label for="day-2026-11-21"><span class="cal__n" aria-hidden="true">21</span><span class="vh">Saturday 21 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-22" value="2026-11-22"><label for="day-2026-11-22"><span class="cal__n" aria-hidden="true">22</span><span class="vh">Sunday 22 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-24" value="2026-11-24"><label for="day-2026-11-24"><span class="cal__n" aria-hidden="true">24</span><span class="vh">Tuesday 24 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-25" value="2026-11-25"><label for="day-2026-11-25"><span class="cal__n" aria-hidden="true">25</span><span class="vh">Wednesday 25 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-26" value="2026-11-26"><label for="day-2026-11-26"><span class="cal__n" aria-hidden="true">26</span><span class="vh">Thursday 26 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-27" value="2026-11-27"><label for="day-2026-11-27"><span class="cal__n" aria-hidden="true">27</span><span class="vh">Friday 27 November</span></label></div>
+                <div class="cal__cell cal__cell--lt"><input type="radio" name="day" id="day-2026-11-28" value="2026-11-28"><label for="day-2026-11-28"><span class="cal__n" aria-hidden="true">28</span><span class="vh">Saturday 28 November, low-tide session that evening</span><span class="cal__lt" aria-hidden="true"></span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-11-29" value="2026-11-29"><label for="day-2026-11-29"><span class="cal__n" aria-hidden="true">29</span><span class="vh">Sunday 29 November</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-01" value="2026-12-01"><label for="day-2026-12-01"><span class="cal__m" aria-hidden="true">Dec</span><span class="cal__n" aria-hidden="true">1</span><span class="vh">Tuesday 1 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-02" value="2026-12-02"><label for="day-2026-12-02"><span class="cal__n" aria-hidden="true">2</span><span class="vh">Wednesday 2 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-03" value="2026-12-03"><label for="day-2026-12-03"><span class="cal__n" aria-hidden="true">3</span><span class="vh">Thursday 3 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-04" value="2026-12-04"><label for="day-2026-12-04"><span class="cal__n" aria-hidden="true">4</span><span class="vh">Friday 4 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-05" value="2026-12-05"><label for="day-2026-12-05"><span class="cal__n" aria-hidden="true">5</span><span class="vh">Saturday 5 December</span></label></div>
+                <div class="cal__cell cal__cell--lt"><input type="radio" name="day" id="day-2026-12-06" value="2026-12-06"><label for="day-2026-12-06"><span class="cal__n" aria-hidden="true">6</span><span class="vh">Sunday 6 December, low-tide session that evening</span><span class="cal__lt" aria-hidden="true"></span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-08" value="2026-12-08"><label for="day-2026-12-08"><span class="cal__n" aria-hidden="true">8</span><span class="vh">Tuesday 8 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-09" value="2026-12-09"><label for="day-2026-12-09"><span class="cal__n" aria-hidden="true">9</span><span class="vh">Wednesday 9 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-10" value="2026-12-10"><label for="day-2026-12-10"><span class="cal__n" aria-hidden="true">10</span><span class="vh">Thursday 10 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-11" value="2026-12-11"><label for="day-2026-12-11"><span class="cal__n" aria-hidden="true">11</span><span class="vh">Friday 11 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-12" value="2026-12-12"><label for="day-2026-12-12"><span class="cal__n" aria-hidden="true">12</span><span class="vh">Saturday 12 December</span></label></div>
+                <div class="cal__cell cal__cell--lt"><input type="radio" name="day" id="day-2026-12-13" value="2026-12-13"><label for="day-2026-12-13"><span class="cal__n" aria-hidden="true">13</span><span class="vh">Sunday 13 December, low-tide session that evening</span><span class="cal__lt" aria-hidden="true"></span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-15" value="2026-12-15"><label for="day-2026-12-15"><span class="cal__n" aria-hidden="true">15</span><span class="vh">Tuesday 15 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-16" value="2026-12-16"><label for="day-2026-12-16"><span class="cal__n" aria-hidden="true">16</span><span class="vh">Wednesday 16 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-17" value="2026-12-17"><label for="day-2026-12-17"><span class="cal__n" aria-hidden="true">17</span><span class="vh">Thursday 17 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-18" value="2026-12-18"><label for="day-2026-12-18"><span class="cal__n" aria-hidden="true">18</span><span class="vh">Friday 18 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-19" value="2026-12-19"><label for="day-2026-12-19"><span class="cal__n" aria-hidden="true">19</span><span class="vh">Saturday 19 December</span></label></div>
+                <div class="cal__cell cal__cell--lt"><input type="radio" name="day" id="day-2026-12-20" value="2026-12-20"><label for="day-2026-12-20"><span class="cal__n" aria-hidden="true">20</span><span class="vh">Sunday 20 December, low-tide session that evening</span><span class="cal__lt" aria-hidden="true"></span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-22" value="2026-12-22"><label for="day-2026-12-22"><span class="cal__n" aria-hidden="true">22</span><span class="vh">Tuesday 22 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-23" value="2026-12-23"><label for="day-2026-12-23"><span class="cal__n" aria-hidden="true">23</span><span class="vh">Wednesday 23 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-24" value="2026-12-24"><label for="day-2026-12-24"><span class="cal__n" aria-hidden="true">24</span><span class="vh">Thursday 24 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-25" value="2026-12-25"><label for="day-2026-12-25"><span class="cal__n" aria-hidden="true">25</span><span class="vh">Friday 25 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-26" value="2026-12-26"><label for="day-2026-12-26"><span class="cal__n" aria-hidden="true">26</span><span class="vh">Saturday 26 December</span></label></div>
+                <div class="cal__cell"><input type="radio" name="day" id="day-2026-12-27" value="2026-12-27"><label for="day-2026-12-27"><span class="cal__n" aria-hidden="true">27</span><span class="vh">Sunday 27 December</span></label></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="field" id="field-time" aria-describedby="time-hint time-error">
+            <legend class="field__legend"><span class="step" aria-hidden="true">2</span>Entry time</legend>
+            <p class="field__hint" id="time-hint" data-time-hint>Entry every half hour from 11:00; last entry 18:30.</p>
+            <p class="field__error" id="time-error" hidden></p>
+            <div class="slots">
+              <div class="slot"><input type="radio" name="time" id="time-1100" value="11:00"><label for="time-1100"><span class="slot__t">11:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1130" value="11:30"><label for="time-1130"><span class="slot__t">11:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1200" value="12:00"><label for="time-1200"><span class="slot__t">12:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1230" value="12:30"><label for="time-1230"><span class="slot__t">12:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1300" value="13:00"><label for="time-1300"><span class="slot__t">13:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1330" value="13:30"><label for="time-1330"><span class="slot__t">13:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1400" value="14:00"><label for="time-1400"><span class="slot__t">14:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1430" value="14:30"><label for="time-1430"><span class="slot__t">14:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1500" value="15:00"><label for="time-1500"><span class="slot__t">15:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1530" value="15:30"><label for="time-1530"><span class="slot__t">15:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1600" value="16:00"><label for="time-1600"><span class="slot__t">16:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1630" value="16:30"><label for="time-1630"><span class="slot__t">16:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1700" value="17:00"><label for="time-1700"><span class="slot__t">17:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1730" value="17:30"><label for="time-1730"><span class="slot__t">17:30</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1800" value="18:00"><label for="time-1800"><span class="slot__t">18:00</span><span class="slot__s"></span></label></div>
+              <div class="slot"><input type="radio" name="time" id="time-1830" value="18:30"><label for="time-1830"><span class="slot__t">18:30</span><span class="slot__s"></span></label></div>
+              <div class="slot slot--session" data-session-slot><input type="radio" name="time" id="time-2030" value="20:30"><label for="time-2030"><span class="slot__t">20:30</span><span class="slot__s" data-session-note>Low-tide session · 28 Nov, 6, 13 &amp; 20 Dec only</span></label></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="field" id="field-party" aria-describedby="party-hint">
+            <legend class="field__legend"><span class="step" aria-hidden="true">3</span>People</legend>
+            <p class="field__hint" id="party-hint">Up to four per reservation.</p>
+            <div class="party">
+              <div class="chip"><input type="radio" name="party" id="party-1" value="1"><label for="party-1">1</label></div>
+              <div class="chip"><input type="radio" name="party" id="party-2" value="2" checked><label for="party-2">2</label></div>
+              <div class="chip"><input type="radio" name="party" id="party-3" value="3"><label for="party-3">3</label></div>
+              <div class="chip"><input type="radio" name="party" id="party-4" value="4"><label for="party-4">4</label></div>
+            </div>
+          </fieldset>
+
+          <div class="field" id="field-email">
+            <label class="field__legend" for="email"><span class="step" aria-hidden="true">4</span>Email</label>
+            <p class="field__hint" id="email-hint">We’ll send your ticket here. No account needed.</p>
+            <p class="field__error" id="email-error" hidden></p>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="off" required aria-describedby="email-hint email-error">
+          </div>
+
+          <div class="booking__submit">
+            <p class="summary" data-summary aria-live="polite">Choose a day and a time.</p>
+            <button class="btn btn--primary btn--large" type="submit">Reserve a free timed entry</button>
+            <p class="fine">If your plans change, cancel from your ticket email so someone else can come.</p>
+          </div>
+        </form>
+
+        <div class="confirm" id="confirm" hidden>
+          <p class="confirm__kicker label">Reserved</p>
+          <h3 class="confirm__title" tabindex="-1">Your place is held.</h3>
+          <p class="confirm__what" data-confirm-what></p>
+          <p>Your ticket is on its way to <strong data-confirm-email></strong>. Show it on your phone at the door.</p>
+          <div class="confirm__actions">
+            <a class="btn btn--ghost" href="#" data-ics download="tidewrack.ics">Add to calendar</a>
+            <button class="btn btn--text" type="button" data-again>Change reservation</button>
+          </div>
+          <p class="fine">Prototype note: no booking system is connected, so no ticket has actually been sent.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="wrack" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="xMidYMid slice" focusable="false"><path class="w-line" d="M0 30.54 L10 30.93 L20 31.16 L30 31.22 L40 31.15 L50 30.97 L60 30.74 L70 30.5 L80 30.31 L90 30.2 L100 30.21 L110 30.35 L120 30.62 L130 31 L140 31.46 L150 31.97 L160 32.46 L170 32.89 L180 33.21 L190 33.37 L200 33.35 L210 33.13 L220 32.72 L230 32.15 L240 31.44 L250 30.66 L260 29.85 L270 29.06 L280 28.36 L290 27.78 L300 27.35 L310 27.09 L320 26.98 L330 27.03 L340 27.17 L350 27.39 L360 27.61 L370 27.8 L380 27.92 L390 27.92 L400 27.79 L410 27.53 L420 27.15 L430 26.67 L440 26.15 L450 25.63 L460 25.16 L470 24.79 L480 24.58 L490 24.54 L500 24.69 L510 25.04 L520 25.56 L530 26.23 L540 26.99 L550 27.79 L560 28.58 L570 29.29 L580 29.9 L590 30.36 L600 30.66 L610 30.8 L620 30.79 L630 30.67 L640 30.48 L650 30.26 L660 30.07 L670 29.95 L680 29.94 L690 30.06 L700 30.31 L710 30.69 L720 31.17 L730 31.71 L740 32.25 L750 32.76 L760 33.18 L770 33.45 L780 33.55 L790 33.46 L800 33.17 L810 32.7 L820 32.08 L830 31.35 L840 30.57 L850 29.78 L860 29.05 L870 28.43 L880 27.93 L890 27.6 L900 27.43 L910 27.41 L920 27.5 L930 27.67 L940 27.88 L950 28.07 L960 28.19 L970 28.21 L980 28.11 L990 27.86 L1000 27.49 L1010 27.01 L1020 26.46 L1030 25.89 L1040 25.34 L1050 24.88 L1060 24.55 L1070 24.39 L1080 24.42 L1090 24.65 L1100 25.06 L1110 25.64 L1120 26.33 L1130 27.09 L1140 27.87 L1150 28.6 L1160 29.25 L1170 29.77 L1180 30.13 L1190 30.33 L1200 30.39"/><path class="w-stroke" d="M6 22.07l3.12 -3" opacity="0.69"/><ellipse class="w-mark" cx="24.29" cy="22.34" rx="2.7" ry="1.9" transform="rotate(-20 24.29 22.34)" opacity="0.39"/><ellipse class="w-mark" cx="37.29" cy="21.29" rx="2.7" ry="1.9" transform="rotate(-20 37.29 21.29)" opacity="0.57"/><ellipse class="w-mark" cx="42.12" cy="21.45" rx="2.7" ry="1.9" transform="rotate(-20 42.12 21.45)" opacity="0.78"/><ellipse class="w-mark" cx="48.83" cy="22" rx="2.7" ry="1.9" transform="rotate(-20 48.83 22)" opacity="0.58"/><circle class="w-mark" cx="66.77" cy="21.79" r="0.73" opacity="0.39"/><ellipse class="w-mark" cx="78.81" cy="25.51" rx="2.7" ry="1.9" transform="rotate(-20 78.81 25.51)" opacity="0.88"/><rect class="w-mark" x="93.14" y="17.97" width="6" height="2.2" opacity="0.45"/><path class="w-stroke" d="M119.54 21.57l3.3 5.72" opacity="0.45"/><path class="w-stroke" d="M141.19 25.42l6.12 4.52" opacity="0.63"/><ellipse class="w-mark" cx="157.56" cy="29.56" rx="2.7" ry="1.9" transform="rotate(-20 157.56 29.56)" opacity="0.36"/><ellipse class="w-mark" cx="165" cy="29.53" rx="2.7" ry="1.9" transform="rotate(-20 165 29.53)" opacity="0.44"/><circle class="w-mark" cx="181.6" cy="30.28" r="1.47" opacity="0.36"/><path class="w-stroke" d="M186.7 23.94l4.16 -7.37" opacity="0.65"/><ellipse class="w-mark" cx="208.28" cy="28.81" rx="2.7" ry="1.9" transform="rotate(-20 208.28 28.81)" opacity="0.87"/><ellipse class="w-mark" cx="222.84" cy="21.08" rx="2.7" ry="1.9" transform="rotate(-20 222.84 21.08)" opacity="0.81"/><path class="w-stroke" d="M238.86 20.91l3.17 2.97" opacity="0.9"/><ellipse class="w-mark" cx="242.47" cy="27.46" rx="2.7" ry="1.9" transform="rotate(-20 242.47 27.46)" opacity="0.68"/><path class="w-stroke" d="M249.36 20.39l3.47 -2.65" opacity="0.68"/><ellipse class="w-mark" cx="261.12" cy="26.36" rx="2.7" ry="1.9" transform="rotate(-20 261.12 26.36)" opacity="0.38"/><path class="w-stroke" d="M264.95 25.48l4.29 -1.33" opacity="0.76"/><ellipse class="w-mark" cx="279.5" cy="17.39" rx="2.7" ry="1.9" transform="rotate(-20 279.5 17.39)" opacity="0.88"/><ellipse class="w-mark" cx="285.57" cy="17.5" rx="2.7" ry="1.9" transform="rotate(-20 285.57 17.5)" opacity="0.45"/><ellipse class="w-mark" cx="307.87" cy="18.15" rx="2.7" ry="1.9" transform="rotate(-20 307.87 18.15)" opacity="0.67"/><path class="w-stroke" d="M314.83 20.14l4.1 4.44" opacity="0.72"/><ellipse class="w-mark" cx="328.12" cy="22.23" rx="2.7" ry="1.9" transform="rotate(-20 328.12 22.23)" opacity="0.53"/><ellipse class="w-mark" cx="341.77" cy="17.23" rx="2.7" ry="1.9" transform="rotate(-20 341.77 17.23)" opacity="0.39"/><ellipse class="w-mark" cx="346.07" cy="17.76" rx="2.7" ry="1.9" transform="rotate(-20 346.07 17.76)" opacity="0.72"/><circle class="w-mark" cx="349.64" cy="17.84" r="1.41" opacity="0.86"/><ellipse class="w-mark" cx="355.19" cy="18.61" rx="2.7" ry="1.9" transform="rotate(-20 355.19 18.61)" opacity="0.9"/><path class="w-stroke" d="M358.73 20.5l6.1 4.45" opacity="0.64"/><ellipse class="w-mark" cx="368.22" cy="17.62" rx="2.7" ry="1.9" transform="rotate(-20 368.22 17.62)" opacity="0.54"/><ellipse class="w-mark" cx="376.56" cy="19.16" rx="2.7" ry="1.9" transform="rotate(-20 376.56 19.16)" opacity="0.72"/><ellipse class="w-mark" cx="378.86" cy="16.95" rx="2.7" ry="1.9" transform="rotate(-20 378.86 16.95)" opacity="0.39"/><path class="w-stroke" d="M390.92 21.34l5.49 -1.31" opacity="0.82"/><circle class="w-mark" cx="399.36" cy="23.47" r="0.95" opacity="0.7"/><path class="w-stroke" d="M418.68 16.86l3.75 0.03" opacity="0.73"/><path class="w-stroke" d="M442.41 19.09l7.77 3.92" opacity="0.67"/><circle class="w-mark" cx="455.47" cy="20.55" r="1.5" opacity="0.36"/><circle class="w-mark" cx="471.33" cy="16.07" r="1.37" opacity="0.67"/><ellipse class="w-mark" cx="477.78" cy="21.37" rx="2.7" ry="1.9" transform="rotate(-20 477.78 21.37)" opacity="0.54"/><path class="w-stroke" d="M486.18 19.06l3.82 -1.48" opacity="0.81"/><ellipse class="w-glow" cx="491.59" cy="19.99" rx="2.7" ry="1.9" transform="rotate(-20 491.59 19.99)" opacity="1"/><path class="w-stroke" d="M506.6 20.71l8.71 0.15" opacity="0.7"/><circle class="w-mark" cx="510.37" cy="22.24" r="1.1" opacity="0.84"/><ellipse class="w-mark" cx="531.91" cy="23.36" rx="2.7" ry="1.9" transform="rotate(-20 531.91 23.36)" opacity="0.43"/><ellipse class="w-mark" cx="541.89" cy="19.56" rx="2.7" ry="1.9" transform="rotate(-20 541.89 19.56)" opacity="0.65"/><path class="w-stroke" d="M548.06 19.59l4.76 -4.51" opacity="0.45"/><ellipse class="w-mark" cx="563.11" cy="24.68" rx="2.7" ry="1.9" transform="rotate(-20 563.11 24.68)" opacity="0.57"/><path class="w-stroke" d="M574.16 21.5l4.95 1.4" opacity="0.46"/><path class="w-stroke" d="M581.33 23.33l7.55 -4.44" opacity="0.51"/><path class="w-stroke" d="M586.59 19.13l2.82 -2.32" opacity="0.71"/><path class="w-stroke" d="M600.66 25.5l5.96 4.55" opacity="0.4"/><circle class="w-mark" cx="622.58" cy="26.8" r="0.86" opacity="0.44"/><circle class="w-mark" cx="632.6" cy="25.26" r="1.18" opacity="0.5"/><circle class="w-mark" cx="637.11" cy="19.52" r="1.02" opacity="0.56"/><path class="w-stroke" d="M650.83 20.91l3.75 1.18" opacity="0.58"/><path class="w-stroke" d="M664.54 27.14l4.33 7.06" opacity="0.45"/><ellipse class="w-mark" cx="676.66" cy="22.81" rx="2.7" ry="1.9" transform="rotate(-20 676.66 22.81)" opacity="0.58"/><rect class="w-mark" x="693.26" y="20.64" width="6" height="2.2" opacity="0.55"/><path class="w-stroke" d="M708.52 20.46l5.39 5.23" opacity="0.61"/><ellipse class="w-mark" cx="714.05" cy="19.85" rx="2.7" ry="1.9" transform="rotate(-20 714.05 19.85)" opacity="0.58"/><path class="w-stroke" d="M718.63 20.45l3.35 3.29" opacity="0.49"/><ellipse class="w-mark" cx="731.19" cy="20.99" rx="2.7" ry="1.9" transform="rotate(-20 731.19 20.99)" opacity="0.4"/><rect class="w-mark" x="734.5" y="28.12" width="6" height="2.2" opacity="0.39"/><circle class="w-mark" cx="741.44" cy="22.37" r="1.29" opacity="0.74"/><ellipse class="w-mark" cx="743.88" cy="23.58" rx="2.7" ry="1.9" transform="rotate(-20 743.88 23.58)" opacity="0.61"/><circle class="w-mark" cx="767.16" cy="26.05" r="1.3" opacity="0.58"/><ellipse class="w-mark" cx="780.72" cy="27.23" rx="2.7" ry="1.9" transform="rotate(-20 780.72 27.23)" opacity="0.4"/><circle class="w-mark" cx="802.7" cy="26.25" r="0.76" opacity="0.56"/><ellipse class="w-glow" cx="823.84" cy="21.48" rx="2.7" ry="1.9" transform="rotate(-20 823.84 21.48)" opacity="1"/><circle class="w-mark" cx="842.69" cy="26.81" r="1.29" opacity="0.86"/><path class="w-stroke" d="M846.22 25.23l8.04 -3.18" opacity="0.79"/><ellipse class="w-mark" cx="869.65" cy="20.41" rx="2.7" ry="1.9" transform="rotate(-20 869.65 20.41)" opacity="0.85"/><circle class="w-mark" cx="873.17" cy="17.59" r="0.94" opacity="0.81"/><path class="w-stroke" d="M876.55 21.06l5.42 -1.17" opacity="0.54"/><ellipse class="w-mark" cx="879.76" cy="21.04" rx="2.7" ry="1.9" transform="rotate(-20 879.76 21.04)" opacity="0.55"/><circle class="w-mark" cx="897.02" cy="21.29" r="1.13" opacity="0.84"/><ellipse class="w-mark" cx="905.72" cy="17.83" rx="2.7" ry="1.9" transform="rotate(-20 905.72 17.83)" opacity="0.87"/><ellipse class="w-mark" cx="919.35" cy="24.03" rx="2.7" ry="1.9" transform="rotate(-20 919.35 24.03)" opacity="0.41"/><circle class="w-mark" cx="925.04" cy="19.91" r="1.08" opacity="0.71"/><path class="w-stroke" d="M944.56 20.41l5.16 2.38" opacity="0.63"/><rect class="w-mark" x="959.08" y="22.41" width="6" height="2.2" opacity="0.78"/><path class="w-stroke" d="M975.89 23.06l4.17 0.78" opacity="0.36"/><path class="w-stroke" d="M993.65 19.65l4.8 -1.02" opacity="0.39"/><path class="w-stroke" d="M1000.83 23.53l8.01 -1.45" opacity="0.73"/><path class="w-stroke" d="M1007.66 18.99l4.7 2.69" opacity="0.87"/><path class="w-stroke" d="M1010.03 20l5.62 6.66" opacity="0.81"/><path class="w-stroke" d="M1015.64 23.74l3.96 -2.88" opacity="0.87"/><circle class="w-mark" cx="1019.04" cy="19.87" r="1.01" opacity="0.63"/><ellipse class="w-mark" cx="1027.87" cy="19.82" rx="2.7" ry="1.9" transform="rotate(-20 1027.87 19.82)" opacity="0.9"/><ellipse class="w-mark" cx="1030.56" cy="20.37" rx="2.7" ry="1.9" transform="rotate(-20 1030.56 20.37)" opacity="0.43"/><ellipse class="w-mark" cx="1053.69" cy="13.64" rx="2.7" ry="1.9" transform="rotate(-20 1053.69 13.64)" opacity="0.53"/><circle class="w-mark" cx="1056.34" cy="15.72" r="1.38" opacity="0.37"/><path class="w-stroke" d="M1063.1 16.46l1.94 3.72" opacity="0.78"/><ellipse class="w-mark" cx="1073.19" cy="18.53" rx="2.7" ry="1.9" transform="rotate(-20 1073.19 18.53)" opacity="0.56"/><ellipse class="w-mark" cx="1083.53" cy="19.5" rx="2.7" ry="1.9" transform="rotate(-20 1083.53 19.5)" opacity="0.51"/><ellipse class="w-mark" cx="1090.9" cy="19.68" rx="2.7" ry="1.9" transform="rotate(-20 1090.9 19.68)" opacity="0.48"/><ellipse class="w-mark" cx="1103.49" cy="15.54" rx="2.7" ry="1.9" transform="rotate(-20 1103.49 15.54)" opacity="0.42"/><ellipse class="w-mark" cx="1111.93" cy="20.32" rx="2.7" ry="1.9" transform="rotate(-20 1111.93 20.32)" opacity="0.89"/><rect class="w-mark" x="1114.71" y="21.07" width="6" height="2.2" opacity="0.71"/><ellipse class="w-mark" cx="1130.08" cy="17.77" rx="2.7" ry="1.9" transform="rotate(-20 1130.08 17.77)" opacity="0.54"/><path class="w-stroke" d="M1147.76 22.42l5.08 0.32" opacity="0.73"/><path class="w-stroke" d="M1168.73 26.38l8.64 2.02" opacity="0.59"/><circle class="w-mark" cx="1175.12" cy="22.42" r="1.22" opacity="0.47"/><path class="w-stroke" d="M1181.17 21l7.73 -3.63" opacity="0.54"/></svg>
+    </div>
+    <div class="site-footer__inner">
+      <section class="partners" aria-labelledby="partners-title">
+        <h2 class="label" id="partners-title">Partners</h2>
+        <ul class="partners__list" role="list">
+          <li><span lang="pt">Fundação Maré</span></li>
+          <li>Lisbon Port Authority <span class="role">programme partner</span></li>
+          <li><span lang="pt">Instituto Hidrográfico</span> <span class="role">data partner</span></li>
+        </ul>
+      </section>
+      <section aria-labelledby="contact-title">
+        <h2 class="label" id="contact-title">Contact</h2>
+        <p><a class="link" href="mailto:ola@tidewrack.example">ola@tidewrack.example</a></p>
+      </section>
+      <section aria-labelledby="follow-title">
+        <h2 class="label" id="follow-title">Follow</h2>
+        <ul class="social" role="list">
+          <li><a class="link" href="#">Instagram</a></li>
+          <li><a class="link" href="#">Facebook</a></li>
+          <li><a class="link" href="#">Bluesky</a></li>
+        </ul>
+      </section>
+      <div class="site-footer__sign">
+        <p class="footer-mark">Tidewrack</p>
+        <p class="fine">Tidewrack is a fictional installation. The artist, press quotes and partnerships on this page are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

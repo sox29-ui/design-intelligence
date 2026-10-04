@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دكّان القهوة — قهوة مختصة نحمّصها في الرياض</title>
+  <meta name="description" content="دكّان القهوة: محمصة قهوة مختصة في الرياض. حبوب القهوة وأكياس التقطير وأدوات التحضير وصناديق الهدايا، مع توصيل مجاني للطلبات من 199 ر.س.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=Kufam:wght@700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- Icon + illustration sprite (decorative; every use is aria-hidden) -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- UI icons: 24×24, stroked with currentColor -->
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.25"/><path d="m15.2 15.2 4.8 4.8"/></g></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4.75 8.25h14.5l-1.1 12H5.85z"/><path d="M8.75 10.5V7a3.25 3.25 0 0 1 6.5 0v3.5" stroke-linecap="round"/></g></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+      <!-- Directional icons are drawn for LTR and mirrored in RTL with .flip-rtl -->
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9.5 5.5 6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14.5M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow-back" viewBox="0 0 24 24"><path d="M19.5 12H5M10.5 6.5 5 12l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4.25l2.75 3.25v2.75h-7z"/><circle cx="6.5" cy="17.5" r="1.75" fill="var(--icon-bg, #fff)"/><circle cx="16.5" cy="17.5" r="1.75" fill="var(--icon-bg, #fff)"/></g></symbol>
+      <symbol id="i-return" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 5.5 4.5 9.5l4 4"/><path d="M4.75 9.5h9.5a5.25 5.25 0 0 1 0 10.5H9.5"/></g></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.6l2.55 5.2 5.75.84-4.16 4.05.98 5.72L12 16.72l-5.12 2.69.98-5.72L3.7 9.64l5.75-.84z" fill="currentColor"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5.5 12h13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.25"/><path d="M12 7.5V12l3 2"/></g></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 14.75h4"/></g></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2"/><rect x="3.5" y="13.5" width="4" height="6" rx="1.5"/><rect x="16.5" y="13.5" width="4" height="6" rx="1.5"/></g></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 16.5V11a5.5 5.5 0 0 1 11 0v5.5l1.5 2h-14z"/><path d="M10 20.75a2 2 0 0 0 4 0"/></g></symbol>
+
+      <!-- Brand mark: Najdi rooftop crenellation (شُرّافات) -->
+      <symbol id="mark" viewBox="0 0 28 16"><path d="M0 16V9.5l4.67-6.5 4.66 6.5L14 3l4.67 6.5L23.33 3 28 9.5V16z" fill="currentColor"/></symbol>
+
+      <!-- Category icons: 32×32 line drawings -->
+      <symbol id="cat-beans" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12.5" cy="12" rx="5.6" ry="8.2" transform="rotate(-38 12.5 12)"/><path d="M8.2 17.4c3.4-1.6 4.6-4.6 4.4-6.8s1.3-4.4 4.2-5.6"/><ellipse cx="21" cy="21" rx="5" ry="7.2" transform="rotate(28 21 21)"/><path d="M24.4 15.6c-2.3 1.8-3 4.2-2.6 6s-.5 3.8-2.8 5"/></g></symbol>
+      <symbol id="cat-drip" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5h16v4.5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M22.5 19.5h1.75a2.75 2.75 0 0 1 0 5.5H22"/><path d="M10 5.5h9v9.5l-2 2h-5l-2-2z"/><path d="M10 8.5H6.5v6M19 8.5h3.5v6"/></g></symbol>
+      <symbol id="cat-tools" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 7.5h17l-5.5 11.5h-6z"/><path d="M22.5 9.5h2.25a2.5 2.5 0 0 1 0 5H21"/><path d="M10.5 19v2.5h7V19"/><path d="M5.5 25.5h17"/><path d="M12.2 10.5l1.6 5M15.8 10.5l-1.6 5"/></g></symbol>
+      <symbol id="cat-gift" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="20" height="13" rx="1"/><rect x="4.5" y="10" width="23" height="4.5" rx="1"/><path d="M16 10v17"/><path d="M16 10c-1.5-3.6-6.5-4.6-6.5-1.8S14 10 16 10zM16 10c1.5-3.6 6.5-4.6 6.5-1.8S18 10 16 10z"/></g></symbol>
+
+      <!-- Brew method drawings: 64×64 -->
+      <symbol id="brew-v60" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12h32l-10 20H24z"/><path d="M46 15h3a4 4 0 0 1 0 8h-6"/><path d="M22 32h20"/><path d="M27 18l3 10M37 18l-3 10"/><path d="M18 40h28v8a8 8 0 0 1-8 8H26a8 8 0 0 1-8-8z"/><path d="M46 43h2a3.5 3.5 0 0 1 0 7h-2"/></g><path d="M32 34.5v2.5" stroke="var(--accent, #9c3d1d)" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="brew-cold" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="17" y="16" width="30" height="40" rx="6"/><path d="M20 10h24v6H20z"/><path d="M17 27h30"/></g><g fill="none" stroke="var(--accent, #9c3d1d)" stroke-width="2" stroke-linejoin="round"><rect x="23" y="33" width="8" height="8" rx="1.5" transform="rotate(-12 27 37)"/><rect x="34" y="40" width="8" height="8" rx="1.5" transform="rotate(10 38 44)"/></g></symbol>
+      <symbol id="brew-dallah" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 57h20"/><path d="M24 57l2-5h12l2 5"/><path d="M26 52c-5-3-6-10-2-14h16c4 4 3 11-2 14z"/><path d="M26.5 38l2.5-15h6l2.5 15"/><path d="M28 23c0-4 2-6.5 4-8.5 2 2 4 4.5 4 8.5"/><path d="M32 14.5V10"/><path d="M24 42c-6-1.5-9-6-10.5-12.5L10 26"/><path d="M40 44c6.5-1 8-6 6.5-10.5S41 27 35.5 26"/></g><path d="M30 10h4" stroke="var(--accent, #9c3d1d)" stroke-width="2.4" stroke-linecap="round"/></symbol>
+
+      <!-- Product illustrations: 120×120, colours come from each product's custom properties -->
+      <symbol id="art-bag" viewBox="0 0 120 120"><ellipse cx="60" cy="107" rx="33" ry="4" fill="#1e1914" opacity=".1"/><path d="M33 24h54l4 76a6 6 0 0 1-6 6H35a6 6 0 0 1-6-6z" style="fill:var(--bag,#d8bf9a)"/><path d="M33 24 29 100a6 6 0 0 0 2.2 4.6L37.5 24z" fill="#1e1914" opacity=".08"/><path d="M33 13h54v12H33z" style="fill:var(--bag-2,#c4a57c)"/><path d="M37 13v12M41 13v12M45 13v12M49 13v12M53 13v12M57 13v12M61 13v12M65 13v12M69 13v12M73 13v12M77 13v12M81 13v12" stroke="#1e1914" stroke-opacity=".13"/><circle cx="60" cy="35" r="3.6" style="fill:var(--bag-2,#c4a57c)"/><rect x="40" y="47" width="40" height="42" rx="2" style="fill:var(--label,#9c3d1d)"/><path d="M50 61.5V58l3.33-4.5 3.34 4.5L60 53.5l3.33 4.5 3.34-4.5L70 58v3.5z" fill="#fff" opacity=".92"/><rect x="48" y="67.5" width="24" height="2.6" rx="1.3" fill="#fff" opacity=".85"/><rect x="52" y="74" width="16" height="2.2" rx="1.1" fill="#fff" opacity=".6"/></symbol>
+      <symbol id="art-dripbox" viewBox="0 0 120 120"><ellipse cx="60" cy="107" rx="37" ry="4" fill="#1e1914" opacity=".1"/><rect x="36" y="22" width="22" height="34" rx="2" fill="#fbf7f1" stroke="#1e1914" stroke-opacity=".2"/><rect x="58" y="16" width="24" height="40" rx="2" fill="#fff" stroke="#1e1914" stroke-opacity=".2"/><path d="M62 24h-5v9M78 24h5v9" fill="none" stroke="#1e1914" stroke-opacity=".25" stroke-width="1.4"/><path d="M25 46h70v54a6 6 0 0 1-6 6H31a6 6 0 0 1-6-6z" style="fill:var(--label,#9c3d1d)"/><path d="M25 46h70v8H25z" fill="#1e1914" opacity=".16"/><rect x="38" y="64" width="44" height="28" rx="2" fill="#fff" opacity=".94"/><path d="M50 77V74l3.33-4.5 3.34 4.5L60 69.5l3.33 4.5 3.34-4.5L70 74v3z" style="fill:var(--label,#9c3d1d)"/><rect x="47" y="82" width="26" height="2.6" rx="1.3" fill="#1e1914" opacity=".35"/></symbol>
+      <symbol id="art-v60" viewBox="0 0 120 120"><ellipse cx="60" cy="107" rx="36" ry="4" fill="#1e1914" opacity=".1"/><path d="M38 78h44v18a8 8 0 0 1-8 8H46a8 8 0 0 1-8-8z" fill="#2b231e"/><path d="M82 82h4a6 6 0 0 1 0 12h-4" fill="none" stroke="#2b231e" stroke-width="4"/><ellipse cx="60" cy="76" rx="29" ry="5.5" fill="#fff" stroke="#1e1914" stroke-opacity=".28" stroke-width="1.5"/><path d="M27 26h66L71 72H49z" fill="#fff" stroke="#1e1914" stroke-opacity=".3" stroke-width="1.5" stroke-linejoin="round"/><path d="M25 22h70v6H25z" fill="#fff" stroke="#1e1914" stroke-opacity=".3" stroke-width="1.5"/><path d="M43 34l10 32M55 32l5 36M67 33l-3 33M79 34l-11 30" stroke="#1e1914" stroke-opacity=".13" stroke-width="1.6" fill="none"/><path d="M93 34c11 1 12 19 0 20" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M93 34c11 1 12 19 0 20" fill="none" stroke="#1e1914" stroke-opacity=".28" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="art-kettle" viewBox="0 0 120 120"><ellipse cx="62" cy="107" rx="34" ry="4" fill="#1e1914" opacity=".1"/><path d="M45 92c-12-1-15-13-17-28S23 41 12 37" fill="none" stroke="#2b231e" stroke-width="5" stroke-linecap="round"/><path d="M42 56h46l3 44a6 6 0 0 1-6 6H45a6 6 0 0 1-6-6z" fill="#2b231e"/><path d="M48 48h34l2 8H46z" fill="#3d342d"/><rect x="61" y="41" width="8" height="7" rx="2" fill="#3d342d"/><path d="M90 62c15 2 15 31 0 33" fill="none" stroke="#2b231e" stroke-width="6" stroke-linecap="round"/><circle cx="65" cy="78" r="8" fill="#f4eee4"/><path d="M65 78l3.5-4.5" stroke="#9c3d1d" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="art-gift" viewBox="0 0 120 120"><ellipse cx="60" cy="107" rx="36" ry="4" fill="#1e1914" opacity=".1"/><path d="M28 52h64v48a6 6 0 0 1-6 6H34a6 6 0 0 1-6-6z" fill="#d8bf9a"/><path d="M24 40h72v14H24z" fill="#c6a77d"/><path d="M55 40h10v66H55z" style="fill:var(--label,#9c3d1d)"/><path d="M60 40c-6-12-21-14-21-6s13 6 21 6c8 0 21 2 21-6s-15-6-21 6z" fill="none" style="stroke:var(--label,#9c3d1d)" stroke-width="5" stroke-linejoin="round"/><path d="M35 82v-3l3.33-4.5 3.34 4.5L45 74.5l3.33 4.5V82z" fill="#1e1914" opacity=".45"/></symbol>
+      <symbol id="art-kit" viewBox="0 0 120 120"><ellipse cx="60" cy="107" rx="37" ry="4" fill="#1e1914" opacity=".1"/><path d="M24 34h72v66a6 6 0 0 1-6 6H30a6 6 0 0 1-6-6z" style="fill:var(--label,#2e6b3f)"/><path d="M24 34h72v10H24z" fill="#1e1914" opacity=".18"/><rect x="36" y="52" width="48" height="40" rx="3" fill="#fff" opacity=".95"/><path d="M46 60h28l-9 19h-10z" fill="none" stroke="#1e1914" stroke-width="2.2" stroke-linejoin="round"/><path d="M50 84h20" stroke="#1e1914" stroke-width="2.2" stroke-linecap="round"/><path d="M74 63h2.5a3.5 3.5 0 0 1 0 7H72" fill="none" stroke="#1e1914" stroke-width="2.2" stroke-linecap="round"/></symbol>
+      <symbol id="art-cherries" viewBox="0 0 120 120"><path d="M6 40c34 6 66 2 108-16" fill="none" stroke="#4d6a33" stroke-width="3.2" stroke-linecap="round"/><path d="M28 40c-5-12 4-21 17-22-1 12-7 19-17 22z" fill="#5d7f3e"/><path d="M84 30c3-12 15-16 24-12-5 10-13 13-24 12z" fill="#5d7f3e"/><circle cx="46" cy="52" r="9" fill="#b3261e"/><circle cx="62" cy="54" r="9" fill="#8a1d16"/><circle cx="75" cy="46" r="8" fill="#c8402c"/><circle cx="43" cy="49" r="2.4" fill="#fff" opacity=".4"/><circle cx="72.5" cy="43.5" r="2" fill="#fff" opacity=".4"/></symbol>
+    </defs>
+  </svg>
+
+
+  <header class="site-header" data-header>
+    <p class="announce" id="top">
+      <span class="announce-item"><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg>توصيل مجاني للطلبات من 199 ر.س</span>
+      <span class="announce-item announce-item--wide">الرياض: خلال 24 ساعة</span>
+      <span class="announce-item announce-item--wider">قسّم طلبك على 4 دفعات مع تابي</span>
+    </p>
+    <div class="container header-bar">
+      <button class="icon-btn menu-toggle" type="button" aria-label="القائمة" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+      </button>
+
+      <a class="logo" href="#top" aria-label="دكّان القهوة — الصفحة الرئيسية">
+        <svg class="logo-mark" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+        <span class="logo-word">دكّان القهوة</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="الأقسام">
+        <ul>
+          <li><a href="#shop" data-filter="beans">حبوب القهوة</a></li>
+          <li><a href="#shop" data-filter="drip">أكياس التقطير</a></li>
+          <li><a href="#shop" data-filter="tools">أدوات التحضير</a></li>
+          <li><a href="#shop" data-filter="gifts">صناديق الهدايا</a></li>
+          <li><a href="#guide">دليل التحضير</a></li>
+        </ul>
+      </nav>
+
+      <form class="search" id="search" role="search" action="#shop" data-search>
+        <label class="sr-only" for="search-input">ابحث في المتجر</label>
+        <svg class="i search-icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+        <input id="search-input" name="q" type="search" placeholder="ابحث: غوجي، V60، هدية…" autocomplete="off" enterkeyhint="search" data-search-input>
+        <button class="search-submit" type="submit">بحث</button>
+        <div class="search-suggest" aria-label="عمليات بحث شائعة" role="group">
+          <span class="search-suggest-label" aria-hidden="true">شائع:</span>
+          <button type="button" data-suggest="غوجي">غوجي</button>
+          <button type="button" data-suggest="V60"><bdi>V60</bdi></button>
+          <button type="button" data-suggest="أكياس تقطير">أكياس تقطير</button>
+          <button type="button" data-suggest="هدية">هدايا</button>
+        </div>
+      </form>
+
+      <button class="icon-btn search-toggle" type="button" aria-label="البحث" aria-expanded="false" aria-controls="search" data-search-toggle>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+      </button>
+
+      <button class="cart-btn" type="button" aria-haspopup="dialog" aria-controls="cart" aria-label="السلة فارغة" data-open-cart data-cart-button>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-bag"/></svg>
+        <span class="cart-btn-text" aria-hidden="true">السلة</span>
+        <span class="cart-count is-empty" aria-hidden="true" data-cart-count>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Seasonal promotion -->
+    <section class="promo" aria-labelledby="promo-title">
+      <div class="container promo-inner">
+        <div class="promo-copy">
+          <div class="promo-head">
+            <p class="promo-kicker">موسم 2026 · كمية محدودة</p>
+            <h1 id="promo-title" class="promo-title"><span class="title-line">وصل محصول</span> <span class="title-line">إثيوبيا الجديد</span></h1>
+          </div>
+          <p class="promo-text">غوجي ويرغاتشيفي محمّصة هذا الأسبوع بتحميص فاتح يُبرز التوت والياسمين.</p>
+          <div class="promo-actions">
+            <a class="btn btn--light btn--promo" href="#shop" data-filter="harvest">
+              <span class="btn-label">تسوّق المحصول الجديد</span>
+              <span class="btn-end">
+                <span class="btn-meta">من 59 ر.س</span>
+                <svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+              </span>
+            </a>
+          </div>
+          <div class="promo-eta">
+            <svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg>
+            <dl class="eta-mini" aria-label="مدة التوصيل">
+              <div><dt>الرياض</dt><dd>خلال 24 ساعة</dd></div>
+              <div><dt>باقي المدن</dt><dd>خلال 4 أيام عمل</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="promo-art" aria-hidden="true">
+          <svg class="promo-cherries" focusable="false"><use href="#art-cherries"/></svg>
+          <svg class="promo-bag" focusable="false" style="--label:#8a3a56"><use href="#art-bag"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Categories (route + filter) and products -->
+    <section class="shop" id="shop" aria-labelledby="shop-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="shop-title" class="section-title">تسوّق من الدكّان</h2>
+          <p class="section-lede section-lede--wide">نحمّص كل أسبوع في الرياض، ونشحنها طازجة.</p>
+        </div>
+
+        <div class="cats" role="group" aria-label="اختر فئة لعرض منتجاتها">
+          <button class="cat" type="button" aria-pressed="false" data-cat-filter="beans">
+            <span class="cat-icon"><svg aria-hidden="true" focusable="false"><use href="#cat-beans"/></svg></span>
+            <span class="cat-label">حبوب القهوة</span>
+          </button>
+          <button class="cat" type="button" aria-pressed="false" data-cat-filter="drip">
+            <span class="cat-icon"><svg aria-hidden="true" focusable="false"><use href="#cat-drip"/></svg></span>
+            <span class="cat-label">أكياس التقطير</span>
+          </button>
+          <button class="cat" type="button" aria-pressed="false" data-cat-filter="tools">
+            <span class="cat-icon"><svg aria-hidden="true" focusable="false"><use href="#cat-tools"/></svg></span>
+            <span class="cat-label">أدوات التحضير</span>
+          </button>
+          <button class="cat" type="button" aria-pressed="false" data-cat-filter="gifts">
+            <span class="cat-icon"><svg aria-hidden="true" focusable="false"><use href="#cat-gift"/></svg></span>
+            <span class="cat-label">صناديق الهدايا</span>
+          </button>
+        </div>
+
+        <div class="results-bar">
+          <p class="results-status" id="results-status" role="status" data-results-status>كل المنتجات · 12 منتجًا</p>
+          <button class="link-btn" type="button" hidden data-clear-filter>إظهار كل المنتجات</button>
+        </div>
+
+        <ul class="products" data-products aria-labelledby="shop-title">
+          <li class="product" data-id="guji" data-price="89" data-cat="beans" data-tags="harvest" data-keywords="اثيوبيا غوجي ناتشرال طبيعي natural guji ethiopia توت ياسمين حبوب بن فاتح محصول جديد" data-art="bag" style="--tint:#f4e5ea;--label:#8a3a56">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              <span class="badge badge--new">محصول جديد</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">إثيوبيا غوجي – <bdi lang="en">Natural</bdi></h3>
+              <p class="product-notes">توت بري · ياسمين · كاكاو</p>
+              <p class="product-meta">250 غ · تحميص فاتح</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.9 <span class="rating-count">(214)</span></span><span class="sr-only">التقييم 4.9 من 5، من 214 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 89 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف إثيوبيا غوجي – Natural إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="yirgacheffe" data-price="84" data-cat="beans" data-tags="harvest" data-keywords="اثيوبيا يرغاتشيفي واشد مغسول washed yirgacheffe ethiopia ليمون حبوب بن فاتح محصول جديد" data-art="bag" style="--tint:#f7eed3;--label:#bf8a14">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              <span class="badge badge--new">محصول جديد</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">إثيوبيا يرغاتشيفي – <bdi lang="en">Washed</bdi></h3>
+              <p class="product-notes">ليمون · زهر البرتقال · شاي أسود</p>
+              <p class="product-meta">250 غ · تحميص فاتح</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.8 <span class="rating-count">(167)</span></span><span class="sr-only">التقييم 4.8 من 5، من 167 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 84 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف إثيوبيا يرغاتشيفي – Washed إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="huila" data-price="69" data-cat="beans" data-keywords="كولومبيا هويلا واشد مغسول washed huila colombia كراميل حبوب بن متوسط خصم عرض" data-art="bag" style="--tint:#f5e5d6;--label:#b0602a">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              <span class="badge badge--sale">وفّر 16 ر.س</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">كولومبيا هويلا – <bdi lang="en">Washed</bdi></h3>
+              <p class="product-notes">كراميل · تفاح أحمر · بندق</p>
+              <p class="product-meta">250 غ · تحميص متوسط</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.7 <span class="rating-count">(98)</span></span><span class="sr-only">التقييم 4.7 من 5، من 98 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price price--sale"><span class="sr-only">السعر بعد الخصم:</span> 69 <span class="cur">ر.س</span> <del class="price-was"><span class="sr-only">بدلًا من</span> 85 <span class="cur">ر.س</span></del></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف كولومبيا هويلا – Washed إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product is-soldout" data-id="haraz" data-price="145" data-cat="beans" data-soldout data-keywords="اليمن يمني حراز ناتشرال طبيعي natural haraz yemen زبيب حبوب بن متوسط" data-art="bag" style="--tint:#f1e3df;--label:#7d2c28">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+              <span class="badge badge--out">نفدت الكمية</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">اليمن حراز – <bdi lang="en">Natural</bdi></h3>
+              <p class="product-notes">زبيب · قرفة · شوكولاتة</p>
+              <p class="product-meta">250 غ · تحميص متوسط</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.9 <span class="rating-count">(61)</span></span><span class="sr-only">التقييم 4.9 من 5، من 61 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 145 <span class="cur">ر.س</span></p>
+              <div class="qty"><button class="btn-notify" type="button" aria-pressed="false" data-notify aria-label="أعلمني عند توفر اليمن حراز – Natural"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-bell"/></svg><span data-notify-text>أعلمني عند توفره</span></button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="espresso" data-price="179" data-cat="beans" data-keywords="خلطة الدكان اسبريسو espresso blend شوكولاتة حبوب بن داكن كيلو" data-art="bag" style="--tint:#ece4dd;--label:#9c3d1d;--bag:#2b221c;--bag-2:#171210">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">خلطة الدكّان – <bdi lang="en">Espresso</bdi></h3>
+              <p class="product-notes">شوكولاتة داكنة · لوز محمّص · دبس التمر</p>
+              <p class="product-meta">1 كغ · تحميص متوسط داكن</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.6 <span class="rating-count">(320)</span></span><span class="sr-only">التقييم 4.6 من 5، من 320 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 179 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف خلطة الدكّان – Espresso إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="khawlani" data-price="65" data-cat="beans" data-keywords="خولاني سعودي قهوة سعودية عربية شقراء اشقر دلة هيل حبوب بن" data-art="bag" style="--tint:#f6ecd4;--label:#b07a12;--bag:#f6f1e8;--bag-2:#e1d5c1">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-bag"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">خولاني سعودي – تحميص أشقر</h3>
+              <p class="product-notes">عسل · تمر · مكسرات</p>
+              <p class="product-meta">500 غ · للقهوة السعودية</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.8 <span class="rating-count">(402)</span></span><span class="sr-only">التقييم 4.8 من 5، من 402 تقييم</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 65 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف خولاني سعودي – تحميص أشقر إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="drip-ethiopia" data-price="59" data-cat="drip" data-tags="harvest" data-keywords="اكياس تقطير drip bags اثيوبيا غوجي جاهزة سريعة محصول جديد" data-art="dripbox" style="--tint:#f4e5ea;--label:#8a3a56">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-dripbox"/></svg>
+              <span class="badge badge--new">محصول جديد</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">أكياس تقطير إثيوبيا – <bdi lang="en">Drip Bags</bdi></h3>
+              <p class="product-notes">توت بري · ياسمين · كوب في 3 دقائق</p>
+              <p class="product-meta">10 أكياس × 12 غ</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.7 <span class="rating-count">(143)</span></span><span class="sr-only">التقييم 4.7 من 5، من 143 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 59 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف أكياس تقطير إثيوبيا – Drip Bags إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="drip-house" data-price="49" data-cat="drip" data-keywords="اكياس تقطير drip bags خلطة الدكان شوكولاتة كراميل جاهزة" data-art="dripbox" style="--tint:#ece4dd;--label:#3b2a20">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-dripbox"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">أكياس تقطير خلطة الدكّان</h3>
+              <p class="product-notes">شوكولاتة · كراميل · قوام متوازن</p>
+              <p class="product-meta">10 أكياس × 12 غ</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.5 <span class="rating-count">(88)</span></span><span class="sr-only">التقييم 4.5 من 5، من 88 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 49 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف أكياس تقطير خلطة الدكّان إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="v60" data-price="95" data-cat="tools" data-keywords="قمع تقطير v60 في 60 سيراميك فلتر فلاتر ادوات تحضير" data-art="v60" style="--tint:#e9edec">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-v60"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">قمع تقطير <bdi lang="en">V60</bdi> سيراميك – مقاس 02</h3>
+              <p class="product-notes">لكوب أو كوبين · معه 40 فلترًا</p>
+              <p class="product-meta">سيراميك أبيض</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.8 <span class="rating-count">(76)</span></span><span class="sr-only">التقييم 4.8 من 5، من 76 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 95 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف قمع تقطير V60 سيراميك إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="kettle" data-price="189" data-cat="tools" data-keywords="غلاية تقطير gooseneck جوزنك ابريق كتل ادوات تحضير" data-art="kettle" style="--tint:#e9e7e3">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-kettle"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">غلاية تقطير <bdi lang="en">Gooseneck</bdi> – 900 مل</h3>
+              <p class="product-notes">صبّ دقيق · ميزان حرارة مدمج</p>
+              <p class="product-meta">ستانلس ستيل أسود</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.7 <span class="rating-count">(54)</span></span><span class="sr-only">التقييم 4.7 من 5، من 54 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 189 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف غلاية تقطير Gooseneck إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="gift-origins" data-price="149" data-cat="gifts" data-keywords="صندوق هدية هدايا رحلة المحاصيل اثيوبيا كولومبيا كينيا تذوق" data-art="gift" style="--tint:#f3e6dc;--label:#9c3d1d">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-gift"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">صندوق «رحلة المحاصيل»</h3>
+              <p class="product-notes">إثيوبيا · كولومبيا · كينيا</p>
+              <p class="product-meta">3 × 100 غ · بطاقة إهداء</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.9 <span class="rating-count">(57)</span></span><span class="sr-only">التقييم 4.9 من 5، من 57 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 149 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف صندوق رحلة المحاصيل إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+
+          <li class="product" data-id="gift-starter" data-price="199" data-cat="gifts" data-keywords="صندوق هدية هدايا بداية التقطير مبتدئ v60 قمع فلاتر غوجي" data-art="kit" style="--tint:#e8eee6;--label:#2e6b3f">
+            <div class="product-media">
+              <svg class="art" aria-hidden="true" focusable="false"><use href="#art-kit"/></svg>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">صندوق بداية التقطير</h3>
+              <p class="product-notes">قمع <bdi lang="en">V60</bdi> · 40 فلترًا · غوجي 250 غ</p>
+              <p class="product-meta">جاهز للإهداء · توصيله مجاني</p>
+              <p class="rating"><span aria-hidden="true"><svg class="i i-star" focusable="false"><use href="#i-star"/></svg>4.8 <span class="rating-count">(39)</span></span><span class="sr-only">التقييم 4.8 من 5، من 39 تقييمًا</span></p>
+            </div>
+            <div class="product-buy">
+              <p class="price"><span class="sr-only">السعر:</span> 199 <span class="cur">ر.س</span></p>
+              <div class="qty" data-qty><button class="btn-add" type="button" data-add aria-label="أضف صندوق بداية التقطير إلى السلة"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg>أضف</button></div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="empty-results" hidden data-empty>
+          <p>لم نجد ما يطابق بحثك. جرّب «غوجي» أو «<bdi>V60</bdi>» أو «هدية».</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Trust: delivery, payment, returns, support -->
+    <section class="service" id="service" aria-labelledby="service-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="service-title" class="section-title">تسوّق بثقة</h2>
+          <p class="section-lede">مواعيد توصيل واضحة، ودفع آمن، وإرجاع بلا تعقيد.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-item service-item--delivery" id="delivery" aria-labelledby="delivery-title">
+            <h3 id="delivery-title" class="service-title"><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg>التوصيل</h3>
+            <table class="eta">
+              <caption class="sr-only">مدة التوصيل حسب المدينة</caption>
+              <thead class="sr-only">
+                <tr><th scope="col">المدينة</th><th scope="col">مدة التوصيل</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">الرياض</th>
+                  <td><strong>خلال 24 ساعة</strong><span>اطلب قبل 3 عصرًا يصلك اليوم نفسه</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">باقي مدن المملكة</th>
+                  <td><strong>من 2 إلى 4 أيام عمل</strong><span>جدة والدمام ومكة والمدينة وغيرها</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="free-ship"><strong>التوصيل مجاني</strong> للطلبات من 199 ر.س، و25 ر.س لما دون ذلك.</p>
+          </article>
+
+          <article class="service-item" id="payment" aria-labelledby="payment-title">
+            <h3 id="payment-title" class="service-title"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-card"/></svg>الدفع</h3>
+            <ul class="pay-list" aria-label="طرق الدفع المتاحة">
+              <li>مدى <bdi lang="en">mada</bdi></li>
+              <li><bdi lang="en">Apple Pay</bdi></li>
+              <li>تابي <bdi lang="en">Tabby</bdi></li>
+              <li><bdi lang="en">Visa / Mastercard</bdi></li>
+            </ul>
+            <p>قسّم طلبك على 4 دفعات بلا فوائد مع تابي. بيانات بطاقتك لا تُحفظ لدينا.</p>
+          </article>
+
+          <article class="service-item" id="returns" aria-labelledby="returns-title">
+            <h3 id="returns-title" class="service-title"><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-return"/></svg>الإرجاع والاستبدال</h3>
+            <ul class="plain-list">
+              <li>الأدوات: إرجاع خلال 7 أيام من الاستلام إذا كانت بحالتها الأصلية.</li>
+              <li>القهوة: لا تُرجَع بعد فتح الكيس حفاظًا على سلامتها.</li>
+              <li>وصلك طلب تالف أو خاطئ؟ نستبدله مجانًا.</li>
+            </ul>
+          </article>
+
+          <article class="service-item" id="support" aria-labelledby="support-title">
+            <h3 id="support-title" class="service-title"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-headset"/></svg>خدمة العملاء</h3>
+            <dl class="hours">
+              <div><dt>السبت إلى الخميس</dt><dd>9 صباحًا – 11 مساءً</dd></div>
+              <div><dt>الجمعة</dt><dd>4 عصرًا – 11 مساءً</dd></div>
+            </dl>
+            <p class="contact">واتساب والهاتف: <bdi dir="ltr" class="nowrap">920 000 000</bdi></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Brew guide teaser -->
+    <section class="guide" id="guide" aria-labelledby="guide-title">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <h2 id="guide-title" class="section-title">دليل التحضير</h2>
+            <p class="section-lede">ثلاث طرق نحبّها، بمقادير جرّبناها على قهوتنا.</p>
+          </div>
+          <div class="carousel-controls" data-carousel-controls>
+            <button class="icon-btn icon-btn--outline" type="button" aria-label="الطريقة السابقة" aria-controls="guide-track" data-prev>
+              <svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow-back"/></svg>
+            </button>
+            <button class="icon-btn icon-btn--outline" type="button" aria-label="الطريقة التالية" aria-controls="guide-track" data-next>
+              <svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <ol class="guide-track" id="guide-track" aria-label="طرق التحضير" data-track>
+          <li class="method">
+            <svg class="method-art" aria-hidden="true" focusable="false"><use href="#brew-v60"/></svg>
+            <h3 class="method-title">التقطير بقمع <bdi lang="en">V60</bdi></h3>
+            <p class="method-text">كوب صافٍ يُبرز حموضة القهوة الإثيوبية ونكهات التوت.</p>
+            <dl class="specs">
+              <div><dt>المقادير</dt><dd>15 غ قهوة لكل 250 مل ماء</dd></div>
+              <div><dt>الطحنة</dt><dd>متوسطة ناعمة</dd></div>
+              <div><dt>الوقت</dt><dd>3 دقائق</dd></div>
+            </dl>
+            <a class="text-link" href="#guide-v60">الوصفة خطوة بخطوة<svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="method">
+            <svg class="method-art" aria-hidden="true" focusable="false"><use href="#brew-cold"/></svg>
+            <h3 class="method-title">القهوة الباردة</h3>
+            <p class="method-text">لصيف الرياض: حضّرها في المساء واشربها صباحًا مع الثلج.</p>
+            <dl class="specs">
+              <div><dt>المقادير</dt><dd>100 غ قهوة لكل لتر ماء</dd></div>
+              <div><dt>الطحنة</dt><dd>خشنة</dd></div>
+              <div><dt>الوقت</dt><dd>16 ساعة في الثلاجة</dd></div>
+            </dl>
+            <a class="text-link" href="#guide-cold-brew">الوصفة خطوة بخطوة<svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </li>
+          <li class="method">
+            <svg class="method-art" aria-hidden="true" focusable="false"><use href="#brew-dallah"/></svg>
+            <h3 class="method-title">القهوة السعودية بالدلّة</h3>
+            <p class="method-text">خولاني بتحميص أشقر، مع الهيل والزعفران كما في المجلس.</p>
+            <dl class="specs">
+              <div><dt>المقادير</dt><dd>30 غ قهوة لكل لتر ماء</dd></div>
+              <div><dt>الطحنة</dt><dd>متوسطة</dd></div>
+              <div><dt>الوقت</dt><dd>15 دقيقة على نار هادئة</dd></div>
+            </dl>
+            <a class="text-link" href="#guide-dallah">الوصفة خطوة بخطوة<svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="logo logo--footer"><svg class="logo-mark" aria-hidden="true" focusable="false"><use href="#mark"/></svg><span class="logo-word">دكّان القهوة</span></p>
+          <p>محمصة قهوة مختصة في الرياض، نحمّص كل أسبوع ونرسل إلى كل مدن المملكة.</p>
+          <ul class="social" aria-label="حساباتنا على وسائل التواصل">
+            <li><a href="#social-instagram">إنستغرام</a></li>
+            <li><a href="#social-x">إكس</a></li>
+            <li><a href="#social-tiktok">تيك توك</a></li>
+            <li><a href="#social-snapchat">سناب شات</a></li>
+          </ul>
+        </div>
+        <nav class="footer-col" aria-labelledby="f-shop">
+          <h2 class="footer-title" id="f-shop">تسوّق</h2>
+          <ul>
+            <li><a href="#shop" data-filter="beans">حبوب القهوة</a></li>
+            <li><a href="#shop" data-filter="drip">أكياس التقطير</a></li>
+            <li><a href="#shop" data-filter="tools">أدوات التحضير</a></li>
+            <li><a href="#shop" data-filter="gifts">صناديق الهدايا</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-help">
+          <h2 class="footer-title" id="f-help">المساعدة</h2>
+          <ul>
+            <li><a href="#delivery">الشحن والتوصيل</a></li>
+            <li><a href="#returns">الإرجاع والاستبدال</a></li>
+            <li><a href="#payment">طرق الدفع</a></li>
+            <li><a href="#support">تواصل معنا</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-about">
+          <h2 class="footer-title" id="f-about">الدكّان</h2>
+          <ul>
+            <li><a href="#guide">دليل التحضير</a></li>
+            <li><a href="#page-about">قصتنا</a></li>
+            <li><a href="#page-terms">الشروط والأحكام</a></li>
+            <li><a href="#page-privacy">سياسة الخصوصية</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <p>السجل التجاري: <bdi dir="ltr">1010XXXXXX</bdi> · الرقم الضريبي: <bdi dir="ltr">3XXXXXXXXXXXXX3</bdi></p>
+        <p>جميع الأسعار بالريال السعودي وشاملة ضريبة القيمة المضافة.</p>
+        <p>© 2026 دكّان القهوة، الرياض.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile cart summary (fixed overlay: no layout shift) -->
+  <aside class="cart-bar" aria-label="ملخص السلة" data-cart-bar>
+    <div class="container cart-bar-inner">
+      <div class="cart-bar-info">
+        <p class="cart-bar-total" data-bar-total></p>
+        <p class="cart-bar-ship" data-ship-msg></p>
+        <div class="meter" aria-hidden="true"><span class="meter-fill" data-meter></span></div>
+      </div>
+      <button class="btn btn--primary" type="button" aria-haspopup="dialog" aria-controls="cart" data-open-cart>عرض السلة</button>
+    </div>
+  </aside>
+
+  <!-- Menu sheet (opens from the inline start: the right in Arabic) -->
+  <dialog class="sheet sheet--start" id="menu" aria-labelledby="menu-title" data-menu>
+    <div class="sheet-head">
+      <h2 class="sheet-title" id="menu-title">القائمة</h2>
+      <button class="icon-btn" type="button" aria-label="إغلاق القائمة" data-close>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <nav class="sheet-body" aria-label="أقسام المتجر">
+      <a class="menu-feature" href="#shop" data-filter="harvest">
+        <span><strong>محصول إثيوبيا الجديد</strong><span class="menu-feature-sub">3 منتجات · يبدأ من 59 ر.س</span></span>
+        <svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg>
+      </a>
+      <ul class="menu-list">
+        <li><a href="#shop" data-filter="beans"><svg class="i i-cat" aria-hidden="true" focusable="false"><use href="#cat-beans"/></svg><span>حبوب القهوة</span><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></a></li>
+        <li><a href="#shop" data-filter="drip"><svg class="i i-cat" aria-hidden="true" focusable="false"><use href="#cat-drip"/></svg><span>أكياس التقطير</span><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></a></li>
+        <li><a href="#shop" data-filter="tools"><svg class="i i-cat" aria-hidden="true" focusable="false"><use href="#cat-tools"/></svg><span>أدوات التحضير</span><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></a></li>
+        <li><a href="#shop" data-filter="gifts"><svg class="i i-cat" aria-hidden="true" focusable="false"><use href="#cat-gift"/></svg><span>صناديق الهدايا</span><svg class="i flip-rtl" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></a></li>
+      </ul>
+      <ul class="menu-links">
+        <li><a href="#guide">دليل التحضير</a></li>
+        <li><a href="#delivery">الشحن والتوصيل</a></li>
+        <li><a href="#returns">الإرجاع والاستبدال</a></li>
+        <li><a href="#support">خدمة العملاء</a></li>
+      </ul>
+    </nav>
+    <div class="sheet-foot">
+      <button class="btn btn--outline btn--block" type="button" data-open-cart>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-bag"/></svg>
+        <span data-menu-cart-label>السلة فارغة</span>
+      </button>
+      <p class="sheet-note"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>خدمة العملاء يوميًا حتى 11 مساءً</p>
+    </div>
+  </dialog>
+
+  <!-- Cart sheet (opens from the inline end: the left in Arabic) -->
+  <dialog class="sheet sheet--end" id="cart" aria-labelledby="cart-title" data-cart>
+    <div class="sheet-head">
+      <h2 class="sheet-title" id="cart-title">سلتك</h2>
+      <button class="icon-btn" type="button" aria-label="إغلاق السلة" data-close>
+        <svg class="i" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <div class="sheet-body">
+      <div class="cart-ship">
+        <p data-ship-msg></p>
+        <div class="meter" aria-hidden="true"><span class="meter-fill" data-meter></span></div>
+      </div>
+      <ul class="cart-items" data-cart-items></ul>
+      <div class="cart-empty" data-cart-empty>
+        <p>سلتك فارغة حتى الآن.</p>
+        <a class="btn btn--outline" href="#shop" data-filter="harvest">تسوّق المحصول الجديد</a>
+      </div>
+    </div>
+    <div class="sheet-foot cart-summary" data-cart-summary>
+      <dl class="totals">
+        <div><dt>المجموع الفرعي</dt><dd data-subtotal></dd></div>
+        <div><dt>التوصيل</dt><dd data-shipping></dd></div>
+        <div class="totals-grand"><dt>الإجمالي</dt><dd data-total></dd></div>
+      </dl>
+      <button class="btn btn--primary btn--block" type="button" data-checkout>إتمام الطلب</button>
+      <p class="checkout-note" hidden data-checkout-note>هذه نسخة عرض من المتجر، لن يتم أي دفع.</p>
+      <p class="cart-pay">الدفع: مدى · <bdi lang="en">Apple Pay</bdi> · تابي · <bdi lang="en">Visa</bdi></p>
+    </div>
+  </dialog>
+
+  <div class="sr-only" aria-live="polite" data-live></div>
+</body>
+</html>

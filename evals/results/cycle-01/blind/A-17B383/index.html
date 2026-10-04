@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewrack · a sound installation by Inês Varela · Lisbon, 14 Nov – 27 Dec 2026</title>
+<meta name="description" content="Tidewrack turns tide-gauge readings from the Tagus estuary into a slowly evolving composition for forty speakers. Armazém 7, Cais do Sodré, Lisbon. 14 November – 27 December 2026. Free timed entry.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#EEF0EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1413" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tidewrack · a composition written by the tide">
+<meta property="og:description" content="A sound installation in Lisbon. 14 Nov – 27 Dec 2026. Free timed entry.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23EEF0EC'/%3E%3Cg stroke='%239AA49F'%3E%3Cpath d='M0 9h32M0 13h32M0 17h32M0 21h32M0 25h32'/%3E%3C/g%3E%3Cg fill='%23141B1B'%3E%3Ccircle cx='6' cy='9' r='2.4'/%3E%3Ccircle cx='13' cy='17' r='2.4'/%3E%3Ccircle cx='26' cy='13' r='2.4'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;600&amp;family=Spectral:ital,wght@0,300;0,400;1,300&amp;display=swap">
+<style>
+/* Tidewrack — inlined so the first paint needs no extra request.
+   Tokens first; components below. Logical properties throughout. */
+
+:root {
+  color-scheme: light dark;
+
+  /* colour roles — light: fog paper and ink */
+  --paper: #EEF0EC;
+  --band: #E3E7E2;
+  --ink: #141B1B;
+  --ink-2: #4A5653;        /* muted text: 6.7:1 on paper, 6.1:1 on band */
+  --rule: #B3BBB6;         /* hairlines (decorative, deliberately < 3:1) */
+  --staff: #9AA49F;        /* stave lines */
+  --wrack: #6E5513;        /* accent: the tide line, low water, playhead. 6.2:1 */
+  --field: #FAFBF9;
+  --field-line: #6B7672;   /* form control borders ≥ 3:1 */
+  --focus: #141B1B;
+  --on-ink: #EEF0EC;
+  --ink-hover: #2F3B39;
+
+  /* type */
+  --serif: "Spectral", Georgia, "Times New Roman", serif;
+  --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --t-label: 0.8125rem;                                  /* 13 */
+  --t-small: 0.9375rem;                                  /* 15 */
+  --t-ui: 1rem;                                          /* 16 */
+  --t-body: 1.125rem;                                    /* 18, constant */
+  --t-lead: clamp(1.25rem, 1.15rem + 0.42vw, 1.5rem);    /* 20 → 24 */
+  --t-h3: 1.5rem;                                        /* 24 */
+  --t-sub: clamp(1.375rem, 1.143rem + 0.952vw, 2rem);    /* 22 → 32 */
+  --t-h2: clamp(1.875rem, 1.596rem + 1.143vw, 2.625rem); /* 30 → 42 */
+  --t-stat: clamp(3rem, 2.443rem + 2.286vw, 4.5rem);     /* 48 → 72 */
+  --t-display: clamp(3.5rem, 3.071rem + 3.81vw, 6.5rem); /* 64 at 390 → 104 at 1440, held above */
+
+  /* space */
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem; --s-5: 1.5rem;
+  --s-6: 2rem; --s-7: 3rem; --s-8: 4rem; --s-9: 6rem;
+  --section: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+  --gutter: clamp(1rem, 0.6rem + 1.8vw, 2.5rem);
+  --header-h: 3.75rem;
+
+  /* shape + motion */
+  --radius: 2px;
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-write: 2600ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (max-width: 22.5rem) {
+  :root { --t-sub: 1.25rem; }   /* keep "A composition written by the tide," on one line on the narrowest phones */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* "the room is dim": same system, inverted */
+  :root {
+    --paper: #0E1413;
+    --band: #151D1C;
+    --ink: #E6EAE5;
+    --ink-2: #A2ADA9;
+    --rule: #33403D;
+    --staff: #4C5A57;
+    --wrack: #D2AE55;
+    --field: #111918;
+    --field-line: #7F8B87;
+    --focus: #E6EAE5;
+    --on-ink: #0E1413;
+    --ink-hover: #C3CCC7;
+  }
+}
+
+/* ---------- base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-block-start: calc(var(--header-h) + 1rem);
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { font-weight: 400; line-height: 1.15; text-wrap: balance; }
+p { text-wrap: pretty; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+em, cite { font-style: italic; }
+svg { display: block; }
+address { font-style: normal; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+[tabindex="-1"]:focus { outline: none; }
+
+.vh {
+  position: absolute !important;
+  inline-size: 1px; block-size: 1px;
+  overflow: hidden; clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: var(--s-4);
+  inset-block-start: -10rem;
+  z-index: 100;
+  padding: var(--s-3) var(--s-4);
+  background: var(--ink);
+  color: var(--on-ink);
+  font: 600 var(--t-ui)/1.2 var(--sans);
+}
+.skip:focus { inset-block-start: var(--s-3); }
+
+.wrap {
+  inline-size: 100%;
+  max-inline-size: 76rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* labels: the gauge's voice */
+.kicker, .s-k, .facts dt, .foot-h, .p-role, .hero-facts, .fine, .listen-time, .s-key, .field label {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-block-size: 3rem;
+  padding: 0.75rem 1.35rem;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font: 600 var(--t-ui)/1.2 var(--sans);
+  letter-spacing: 0.005em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--dur-base) var(--ease), color var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease);
+}
+.btn-ink { background: var(--ink); color: var(--on-ink); }
+.btn-line { background: transparent; color: var(--ink); border-color: var(--field-line); }
+.btn-sm { min-block-size: 2.75rem; padding: 0.5rem 1rem; font-size: var(--t-small); }
+.btn-lg { min-block-size: 3.5rem; padding: 0.9rem 1.6rem; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 20;
+  background: var(--paper);
+  border-block-end: 1px solid var(--rule);
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--s-5);
+  min-block-size: var(--header-h);
+}
+.brand {
+  margin-inline-end: auto;
+  font-size: 1.25rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+.nav { display: none; }
+.nav ul { display: flex; gap: var(--s-5); }
+.nav a {
+  font: 500 var(--t-small)/1.2 var(--sans);
+  text-decoration: none;
+  padding-block: var(--s-2);
+  border-block-end: 1px solid transparent;
+  transition: border-color var(--dur-base) var(--ease);
+}
+.long { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+@media (min-width: 48rem) {
+  :root { --header-h: 4.25rem; }
+  .nav { display: block; }
+}
+@media (min-width: 72rem) {
+  .long { position: static; inline-size: auto; block-size: auto; overflow: visible; clip-path: none; }
+}
+
+/* ---------- hero: a score's title page ---------- */
+.hero { padding-block: clamp(1.75rem, 1rem + 3vw, 4rem) var(--section); }
+.hero-head { text-align: center; }
+.kicker {
+  font-size: var(--t-label);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.title {
+  margin-block: var(--s-3) var(--s-3);
+  font-size: var(--t-display);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+.subtitle {
+  font-size: var(--t-sub);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.25;
+  max-inline-size: 22em;
+  margin-inline: auto;
+}
+.clause { display: inline-block; }
+.hero-facts {
+  display: grid;
+  gap: var(--s-1);
+  margin-block-start: clamp(1.25rem, 1rem + 1.2vw, 2rem);
+  font-size: var(--t-ui);
+  line-height: 1.5;
+}
+.hero-act {
+  display: grid;
+  justify-items: center;
+  gap: var(--s-3);
+  margin-block-start: var(--s-5);
+}
+.hero-act .btn { inline-size: 100%; max-inline-size: 26rem; }
+.fine { font-size: var(--t-label); color: var(--ink-2); letter-spacing: 0.04em; }
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--s-5);
+}
+.instrumentation {
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--t-body);
+  line-height: 1.35;
+  max-inline-size: 15em;
+}
+.composer {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  text-align: end;
+  letter-spacing: 0.06em;
+  font-variant-caps: all-small-caps;
+  white-space: nowrap;
+}
+
+.score { margin-block-start: clamp(2.5rem, 1.6rem + 3.5vw, 4.5rem); }
+.score-head { display: grid; gap: var(--s-4); }
+.tempo { font-size: var(--t-ui); line-height: 1.4; }
+.tempo-word { font-family: var(--sans); font-weight: 600; letter-spacing: 0.02em; }
+.metro { display: inline-flex; align-items: center; gap: 0.25em; margin-inline-start: 0.5em; font-family: var(--sans); font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.crotchet { inline-size: 0.55em; block-size: 1.2em; fill: currentColor; transform: translateY(-0.12em); }
+
+.score-band {
+  position: relative;
+  inline-size: 100%;
+  min-inline-size: 0;            /* stop min-height transferring a minimum width through the ratio */
+  min-block-size: clamp(8.25rem, 6rem + 9vw, 11.5rem);
+  aspect-ratio: 1488 / 184;
+  margin-block-start: var(--s-2);
+  color: var(--ink);
+}
+.score-band > svg { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; }
+.score-staff path, .score-notes .ledgers path { stroke: var(--staff); stroke-width: 1; fill: none; vector-effect: non-scaling-stroke; }
+.score-notes .notes, .score-notes .grace, .score-notes .rests { fill: var(--ink); }
+.score-notes .playhead { display: none; }
+.score-notes .playhead path { stroke: var(--wrack); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.score-notes .playhead circle { fill: none; stroke: var(--wrack); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+[data-playing] .score-notes .playhead { display: inline; }
+
+.score-foot {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  margin-block-start: var(--s-3);
+}
+.score-cap {
+  font-size: var(--t-ui);
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-inline-size: 34em;
+}
+.listen-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s-3) var(--s-4); flex: none; }
+.listen-wrap[hidden] { display: none; }
+.listen { white-space: nowrap; }
+.listen svg { inline-size: 0.875rem; block-size: 0.875rem; fill: currentColor; flex: none; }
+.listen .i-stop, [data-playing] .listen .i-play { display: none; }
+[data-playing] .listen .i-stop { display: block; }
+.listen-time { font-size: var(--t-label); color: var(--ink-2); letter-spacing: 0.04em; }
+
+@media (min-width: 48rem) {
+  .score-foot { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+  .hero-facts { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-1) 0; }
+  .hero-facts li + li::before { content: "·"; padding-inline: 0.6em; color: var(--ink-2); }
+  .hero-act .btn { inline-size: auto; }
+}
+
+/* ---------- sections ---------- */
+.section { padding-block: var(--section); border-block-start: 1px solid var(--rule); }
+.grid { display: grid; gap: var(--s-6); }
+.section-h { font-size: var(--t-h2); font-weight: 300; line-height: 1.1; }
+.main-col { min-inline-size: 0; }
+
+@media (min-width: 60rem) {
+  .grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+    column-gap: clamp(2rem, 1rem + 2vw, 3.5rem);
+    align-items: start;
+  }
+  .section-h { grid-column: 1; }
+  .main-col { grid-column: 2; }
+}
+
+/* the work */
+.movement + .movement { margin-block-start: var(--s-7); }
+.movement h3 {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-3);
+  font-size: var(--t-h3);
+  margin-block-end: var(--s-3);
+}
+.num {
+  min-inline-size: 2.5rem;
+  font-size: var(--t-body);
+  letter-spacing: 0.04em;
+  color: var(--wrack);
+}
+.movement p { max-inline-size: 36em; }
+
+.legend-title {
+  margin-block-start: var(--s-6);
+  font: 600 var(--t-label)/1.2 var(--sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.legend {
+  display: grid;
+  gap: 0;
+  margin-block-start: var(--s-3);
+  border-block-start: 1px solid var(--rule);
+}
+.legend > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--s-4);
+  padding-block: var(--s-3);
+  border-block-end: 1px solid var(--rule);
+}
+.legend dt { display: flex; align-items: center; gap: var(--s-4); font-size: var(--t-ui); }
+.legend dt svg { inline-size: 2.75rem; block-size: 1.5rem; flex: none; fill: var(--ink); }
+.legend .lg-staff { stroke: var(--staff); stroke-width: 1; fill: none; vector-effect: non-scaling-stroke; }
+.legend dd { font: 600 var(--t-label)/1.2 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+.legend dd { display: flex; align-items: center; gap: var(--s-3); }
+.legend dd::before { content: ""; inline-size: 1.75rem; block-size: 1px; background: currentColor; }
+
+.stat { display: grid; gap: var(--s-2); max-inline-size: 22rem; }
+.stat-n {
+  font-size: var(--t-stat);
+  font-weight: 300;
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.stat-l { font: 500 var(--t-small)/1.5 var(--sans); color: var(--ink-2); }
+@media (min-width: 60rem) {
+  .work .stat { grid-column: 3; grid-row: 1; padding-block-start: var(--s-1); }
+}
+
+/* low-tide sessions */
+.lead { font-size: var(--t-lead); font-weight: 300; line-height: 1.45; max-inline-size: 32em; }
+.session-list { margin-block-start: var(--s-6); border-block-start: 1px solid var(--rule); counter-reset: s; }
+.session {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "date link" "times times" "tl tl" "note note";
+  gap: var(--s-2) var(--s-4);
+  padding-block: var(--s-5);
+  border-block-end: 1px solid var(--rule);
+}
+.s-date { grid-area: date; font-size: var(--t-h3); line-height: 1.25; }
+.s-times {
+  grid-area: times;
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: 0 var(--s-2);
+  font-family: var(--sans);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.s-k { font-size: var(--t-label); color: var(--ink-2); letter-spacing: 0.04em; }
+.s-v { font-weight: 600; font-size: var(--t-ui); margin-inline-end: var(--s-4); }
+.s-low { color: var(--wrack); }
+.s-note { grid-area: note; font-size: var(--t-ui); color: var(--ink-2); }
+.tl { grid-area: tl; inline-size: 100%; block-size: auto; max-block-size: 5.5rem; margin-block: var(--s-2); }
+.tl .tl-axis { stroke: var(--rule); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.tl .tl-tick { stroke: var(--staff); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.tl .tl-start { stroke: var(--ink); stroke-width: 1.25; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; }
+.tl .tl-dots, .tl .tl-rests { fill: var(--ink); }
+.tl .tl-low { fill: var(--wrack); }
+.s-link {
+  grid-area: link;
+  align-self: start;
+  font: 600 var(--t-small)/1.2 var(--sans);
+  padding-block: var(--s-2);
+  min-block-size: 2.75rem;
+  display: inline-flex; align-items: center;
+}
+.s-key {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3);
+  margin-block-start: var(--s-4);
+  font-size: var(--t-label);
+  color: var(--ink-2);
+}
+.s-key .k { display: inline-flex; align-items: center; gap: var(--s-2); margin-inline-end: var(--s-3); }
+.k-start { inline-size: 0; block-size: 0.9rem; border-inline-start: 1.5px dashed var(--ink); }
+.k-low { inline-size: 0; block-size: 0; border-inline: 5px solid transparent; border-block-end: 8px solid var(--wrack); }
+.k-rest { inline-size: 0.6rem; block-size: 0.2rem; background: var(--ink); }
+
+@media (min-width: 40rem) {
+  .session {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) auto;
+    grid-template-areas: "date tl link" "times tl link" "note tl link";
+    align-items: center;
+    column-gap: var(--s-5);
+  }
+  .tl { margin-block: 0; }
+  .s-link { align-self: center; }
+}
+@media (min-width: 60rem) {
+  .sessions .main-col { grid-column: 2 / 4; }
+  .sessions .lead { max-inline-size: 36em; }
+}
+
+/* visit */
+.facts { border-block-start: 1px solid var(--rule); }
+.facts > div {
+  display: grid;
+  gap: var(--s-1);
+  padding-block: var(--s-4);
+  border-block-end: 1px solid var(--rule);
+}
+.facts dt { font-size: var(--t-label); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+.facts dd { max-inline-size: 34em; }
+@media (min-width: 40rem) {
+  .facts > div { grid-template-columns: 8rem 1fr; gap: var(--s-5); align-items: baseline; }
+}
+@media (min-width: 60rem) {
+  .visit .main-col, .partners .main-col { grid-column: 2 / 4; }
+}
+
+/* reserve */
+.reserve { background: var(--band); }
+.reserve-intro p { margin-block-start: var(--s-4); max-inline-size: 30em; }
+.press { display: grid; gap: var(--s-5); }
+.reserve .quote { max-inline-size: 24em; }
+.quote blockquote p { font-size: var(--t-lead); font-weight: 300; font-style: italic; line-height: 1.35; }
+.quote figcaption { margin-block-start: var(--s-2); font: 500 var(--t-small)/1.4 var(--sans); color: var(--ink-2); }
+.quote figcaption::before { content: "— "; }
+.quote cite { font-style: normal; }
+
+.reserve-form { display: grid; gap: var(--s-5); align-content: start; }
+.field { display: grid; gap: var(--s-2); }
+.field label { font-size: var(--t-small); font-weight: 600; }
+.field select, .field input {
+  inline-size: 100%;
+  min-block-size: 3.25rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--field-line);
+  border-radius: var(--radius);
+  background-color: var(--field);
+  color: var(--ink);
+  font: 400 var(--t-body)/1.3 var(--serif);
+}
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-inline-end: 2.75rem;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 1.35rem) 55%, calc(100% - 1rem) 55%;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+}
+.field [aria-invalid="true"] { border-color: var(--ink); border-width: 2px; }
+.hint { font: 400 var(--t-label)/1.45 var(--sans); color: var(--ink-2); }
+.err { font: 600 var(--t-small)/1.4 var(--sans); color: var(--ink); }
+.err:empty { display: none; }
+.err::before { content: "! "; color: var(--wrack); }
+.field-qty select { max-inline-size: 8rem; }
+.reserve-form .btn { justify-self: stretch; }
+.status:empty { display: none; }
+.status {
+  padding: var(--s-4) var(--s-5);
+  border-inline-start: 3px solid var(--wrack);
+  background: var(--paper);
+  font-size: var(--t-ui);
+  line-height: 1.5;
+}
+.status strong { font-weight: 400; font-style: italic; }
+.status small { display: block; margin-block-start: var(--s-2); font: 400 var(--t-label)/1.45 var(--sans); color: var(--ink-2); }
+
+@media (min-width: 60rem) {
+  .reserve .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    row-gap: var(--s-7);
+  }
+  .reserve-intro { grid-column: 1; grid-row: 1; }
+  .press { grid-column: 1; grid-row: 2; align-self: start; }
+  .reserve-form { grid-column: 2; grid-row: 1 / span 2; }
+  .reserve .section-h { grid-column: auto; }
+}
+
+/* partners */
+.partner-list { display: grid; gap: var(--s-4); font-size: 1.25rem; line-height: 1.4; }
+@media (min-width: 40rem) { .partner-list { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--s-6); } }
+.p-role { display: block; font-size: var(--t-label); color: var(--ink-2); letter-spacing: 0.04em; }
+
+/* ---------- footer ---------- */
+.site-footer { background: var(--band); border-block-start: 1px solid var(--rule); padding-block: var(--s-8) var(--s-6); }
+.foot { display: grid; gap: var(--s-6); }
+.foot-title { font-size: var(--t-h2); font-weight: 300; line-height: 1; }
+.foot-h { font-size: var(--t-label); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); margin-block-end: var(--s-2); }
+.foot-list { display: grid; gap: var(--s-1); }
+.foot-col a { display: inline-block; padding-block: var(--s-1); font: 500 var(--t-ui)/1.4 var(--sans); }
+.foot-note { font: 400 var(--t-label)/1.5 var(--sans); color: var(--ink-2); padding-block-start: var(--s-5); border-block-start: 1px solid var(--rule); }
+.foot-note span { display: block; max-inline-size: 42em; }
+@media (min-width: 48rem) {
+  .foot { grid-template-columns: 2fr 1fr 1fr 1fr; }
+  .foot-note { grid-column: 1 / -1; }
+}
+
+/* ---------- hover (pointer devices only, so taps never leave a stuck state) ---------- */
+@media (hover: hover) {
+  a:hover { text-decoration-thickness: 2px; }
+  .btn-ink:hover { background: var(--ink-hover); border-color: var(--ink-hover); }
+  .btn-line:hover { background: var(--band); border-color: var(--ink); }
+  .nav a:hover { border-block-end-color: var(--ink); }
+  .field select:hover, .field input:hover { border-color: var(--ink); }
+}
+
+/* ---------- motion (only when the visitor has not asked for less) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  /* the tide writes the score once, left to right */
+  .score-notes { animation: write var(--dur-write) cubic-bezier(0.35, 0.1, 0.35, 1) 250ms both; }
+  @keyframes write {
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+  }
+}
+
+@media print {
+  .site-header, .listen-wrap, .reserve-form, .skip { display: none; }
+  .section { border: 0; }
+}
+</style>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <p class="brand">Tidewrack</p>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#work">The work</a></li>
+        <li><a href="#sessions">Low-tide sessions</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-ink btn-sm" href="#reserve"><span>Reserve<span class="long"> a free timed entry</span></span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="title">
+    <div class="wrap hero-head">
+      <p class="kicker">Sound installation · Lisbon</p>
+      <h1 id="title" class="title">Tidewrack</h1>
+      <p class="subtitle"><span class="clause">A composition written by the tide,</span> <span class="clause">performed by the room.</span></p>
+      <ul class="hero-facts">
+        <li><time datetime="2026-11-14">14 Nov</time> – <time datetime="2026-12-27">27 Dec 2026</time></li>
+        <li>Tue–Sun, 11:00–19:00</li>
+        <li><span lang="pt">Armazém 7, Cais do Sodré</span>, Lisbon</li>
+      </ul>
+      <div class="hero-act">
+        <a class="btn btn-ink btn-lg" href="#reserve">Reserve a free timed entry</a>
+        <p class="fine">Free · limited capacity · timed entry</p>
+      </div>
+    </div>
+
+    <figure class="score" aria-labelledby="score-cap">
+      <div class="wrap score-head">
+        <div class="credits">
+          <p class="instrumentation">for forty suspended speakers and the Tagus estuary</p>
+          <p class="composer"><span class="vh">Composed by </span>Inês Varela</p>
+        </div>
+        <p class="tempo"><span class="tempo-word">Lento,</span> with the tide <span class="metro" role="img" aria-label="one beat every six minutes"><svg class="crotchet" viewBox="0 0 12 28" aria-hidden="true" focusable="false"><ellipse cx="5" cy="23" rx="4.6" ry="3.4" transform="rotate(-22 5 23)"/><path d="M9.1 22V1.5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> = 6&nbsp;min</span></p>
+      </div>
+      <div class="score-band" data-score>
+        <svg class="score-staff" viewBox="0 0 1488 184" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g class="staff"><path d="M-2000 64H3488"/><path d="M-2000 78H3488"/><path d="M-2000 92H3488"/><path d="M-2000 106H3488"/><path d="M-2000 120H3488"/></g></svg>
+        <svg class="score-notes" viewBox="0 0 1488 184" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g class="ledgers"><path d="M360 50h12"/><path d="M372 50h12"/><path d="M384 50h12"/><path d="M396 50h12"/><path d="M408 50h12"/><path d="M420 50h12"/><path d="M432 50h12"/><path d="M444 50h12"/><path d="M456 50h12"/><path d="M468 50h12"/><path d="M552 50h12"/><path d="M564 50h12"/><path d="M576 50h12"/><path d="M588 50h12"/><path d="M600 50h12"/><path d="M612 50h12"/><path d="M624 50h12"/><path d="M636 50h12"/><path d="M648 50h12"/><path d="M660 50h12"/><path d="M672 50h12"/><path d="M1164 134h12"/><path d="M1176 134h12"/><path d="M1188 134h12"/><path d="M1200 134h12"/><path d="M1212 134h12"/><path d="M1224 134h12"/><path d="M1236 134h12"/><path d="M1248 134h12"/><path d="M1260 134h12"/><path d="M1368 134h12"/><path d="M1380 134h12"/><path d="M1392 134h12"/><path d="M1404 134h12"/><path d="M1416 134h12"/><path d="M1428 134h12"/><path d="M1440 134h12"/><path d="M1452 134h12"/></g><g class="rests"><rect x="483" y="90.5" width="6" height="3"/><rect x="495" y="90.5" width="6" height="3"/><rect x="507" y="90.5" width="6" height="3"/><rect x="519" y="90.5" width="6" height="3"/><rect x="531" y="90.5" width="6" height="3"/><rect x="543" y="90.5" width="6" height="3"/><rect x="1275" y="90.5" width="6" height="3"/><rect x="1287" y="90.5" width="6" height="3"/><rect x="1299" y="90.5" width="6" height="3"/><rect x="1311" y="90.5" width="6" height="3"/><rect x="1323" y="90.5" width="6" height="3"/><rect x="1335" y="90.5" width="6" height="3"/><rect x="1347" y="90.5" width="6" height="3"/><rect x="1359" y="90.5" width="6" height="3"/></g><g class="notes"><circle cx="6" cy="128.9" r="3.3"/><circle cx="18" cy="127" r="3.3"/><circle cx="30" cy="125" r="3.3"/><circle cx="42" cy="122.8" r="3.3"/><circle cx="54" cy="120.6" r="3.3"/><circle cx="66" cy="118.2" r="3.3"/><circle cx="78" cy="115.7" r="3.3"/><circle cx="90" cy="113.2" r="3.3"/><circle cx="102" cy="110.5" r="3.3"/><circle cx="114" cy="107.8" r="3.3"/><circle cx="126" cy="105" r="3.3"/><circle cx="138" cy="102.2" r="3.3"/><circle cx="150" cy="99.3" r="3.3"/><circle cx="162" cy="96.3" r="3.3"/><circle cx="174" cy="93.3" r="3.3"/><circle cx="186" cy="90.3" r="3.3"/><circle cx="198" cy="87.3" r="3.3"/><circle cx="210" cy="84.3" r="3.3"/><circle cx="222" cy="81.3" r="3.3"/><circle cx="234" cy="78.3" r="3.3"/><circle cx="246" cy="75.3" r="3.3"/><circle cx="258" cy="72.4" r="3.3"/><circle cx="270" cy="69.6" r="3.3"/><circle cx="282" cy="66.8" r="3.3"/><circle cx="294" cy="64" r="3.3"/><circle cx="306" cy="61.4" r="3.3"/><circle cx="318" cy="58.9" r="3.3"/><circle cx="330" cy="56.4" r="3.3"/><circle cx="342" cy="54.1" r="3.3"/><circle cx="354" cy="51.9" r="3.3"/><circle cx="366" cy="49.8" r="3.3"/><circle cx="378" cy="47.8" r="3.3"/><circle cx="390" cy="46" r="3.3"/><circle cx="402" cy="44.4" r="3.3"/><circle cx="414" cy="42.9" r="3.3"/><circle cx="426" cy="41.5" r="3.3"/><circle cx="438" cy="40.3" r="3.3"/><circle cx="450" cy="39.3" r="3.3"/><circle cx="462" cy="38.5" r="3.3"/><circle cx="474" cy="37.8" r="3.3"/><circle cx="558" cy="37.8" r="3.3"/><circle cx="570" cy="38.4" r="3.3"/><circle cx="582" cy="39.2" r="3.3"/><circle cx="594" cy="40.1" r="3.3"/><circle cx="606" cy="41.2" r="3.3"/><circle cx="618" cy="42.4" r="3.3"/><circle cx="630" cy="43.8" r="3.3"/><circle cx="642" cy="45.2" r="3.3"/><circle cx="654" cy="46.8" r="3.3"/><circle cx="666" cy="48.5" r="3.3"/><circle cx="678" cy="50.2" r="3.3"/><circle cx="690" cy="52.1" r="3.3"/><circle cx="702" cy="54.1" r="3.3"/><circle cx="714" cy="56.1" r="3.3"/><circle cx="726" cy="58.2" r="3.3"/><circle cx="738" cy="60.4" r="3.3"/><circle cx="750" cy="62.6" r="3.3"/><circle cx="762" cy="64.8" r="3.3"/><circle cx="774" cy="67.1" r="3.3"/><circle cx="786" cy="69.5" r="3.3"/><circle cx="798" cy="71.8" r="3.3"/><circle cx="810" cy="74.2" r="3.3"/><circle cx="822" cy="76.6" r="3.3"/><circle cx="834" cy="79" r="3.3"/><circle cx="846" cy="81.4" r="3.3"/><circle cx="858" cy="83.8" r="3.3"/><circle cx="870" cy="86.1" r="3.3"/><circle cx="882" cy="88.5" r="3.3"/><circle cx="894" cy="90.9" r="3.3"/><circle cx="906" cy="93.2" r="3.3"/><circle cx="918" cy="95.5" r="3.3"/><circle cx="930" cy="97.8" r="3.3"/><circle cx="942" cy="100" r="3.3"/><circle cx="954" cy="102.2" r="3.3"/><circle cx="966" cy="104.4" r="3.3"/><circle cx="978" cy="106.5" r="3.3"/><circle cx="990" cy="108.6" r="3.3"/><circle cx="1002" cy="110.7" r="3.3"/><circle cx="1014" cy="112.7" r="3.3"/><circle cx="1026" cy="114.6" r="3.3"/><circle cx="1038" cy="116.5" r="3.3"/><circle cx="1050" cy="118.4" r="3.3"/><circle cx="1062" cy="120.2" r="3.3"/><circle cx="1074" cy="121.9" r="3.3"/><circle cx="1086" cy="123.6" r="3.3"/><circle cx="1098" cy="125.2" r="3.3"/><circle cx="1110" cy="126.8" r="3.3"/><circle cx="1122" cy="128.3" r="3.3"/><circle cx="1134" cy="129.8" r="3.3"/><circle cx="1146" cy="131.2" r="3.3"/><circle cx="1158" cy="132.5" r="3.3"/><circle cx="1170" cy="133.7" r="3.3"/><circle cx="1182" cy="134.9" r="3.3"/><circle cx="1194" cy="136" r="3.3"/><circle cx="1206" cy="137" r="3.3"/><circle cx="1218" cy="137.9" r="3.3"/><circle cx="1230" cy="138.8" r="3.3"/><circle cx="1242" cy="139.6" r="3.3"/><circle cx="1254" cy="140.2" r="3.3"/><circle cx="1266" cy="140.8" r="3.3"/><circle cx="1374" cy="141" r="3.3"/><circle cx="1386" cy="140.4" r="3.3"/><circle cx="1398" cy="139.7" r="3.3"/><circle cx="1410" cy="138.8" r="3.3"/><circle cx="1422" cy="137.9" r="3.3"/><circle cx="1434" cy="136.8" r="3.3"/><circle cx="1446" cy="135.5" r="3.3"/><circle cx="1458" cy="134.2" r="3.3"/><circle cx="1470" cy="132.7" r="3.3"/><circle cx="1482" cy="131" r="3.3"/></g><g class="grace"><circle cx="12" cy="128" r="1.9"/><circle cx="24" cy="126" r="1.9"/><circle cx="34" cy="124.3" r="1.9"/><circle cx="38" cy="123.5" r="1.9"/><circle cx="46" cy="122.1" r="1.9"/><circle cx="50" cy="121.3" r="1.9"/><circle cx="58" cy="119.8" r="1.9"/><circle cx="62" cy="119" r="1.9"/><circle cx="70" cy="117.4" r="1.9"/><circle cx="74" cy="116.6" r="1.9"/><circle cx="82" cy="114.9" r="1.9"/><circle cx="86" cy="114" r="1.9"/><circle cx="94" cy="112.3" r="1.9"/><circle cx="98" cy="111.4" r="1.9"/><circle cx="106" cy="109.6" r="1.9"/><circle cx="110" cy="108.7" r="1.9"/><circle cx="118" cy="106.9" r="1.9"/><circle cx="122" cy="106" r="1.9"/><circle cx="130" cy="104.1" r="1.9"/><circle cx="134" cy="103.1" r="1.9"/><circle cx="142" cy="101.2" r="1.9"/><circle cx="146" cy="100.2" r="1.9"/><circle cx="154" cy="98.3" r="1.9"/><circle cx="158" cy="97.3" r="1.9"/><circle cx="166" cy="95.3" r="1.9"/><circle cx="170" cy="94.3" r="1.9"/><circle cx="178" cy="92.3" r="1.9"/><circle cx="182" cy="91.3" r="1.9"/><circle cx="190" cy="89.3" r="1.9"/><circle cx="194" cy="88.3" r="1.9"/><circle cx="202" cy="86.3" r="1.9"/><circle cx="206" cy="85.3" r="1.9"/><circle cx="214" cy="83.3" r="1.9"/><circle cx="218" cy="82.3" r="1.9"/><circle cx="226" cy="80.3" r="1.9"/><circle cx="230" cy="79.3" r="1.9"/><circle cx="238" cy="77.3" r="1.9"/><circle cx="242" cy="76.3" r="1.9"/><circle cx="250" cy="74.4" r="1.9"/><circle cx="254" cy="73.4" r="1.9"/><circle cx="262" cy="71.5" r="1.9"/><circle cx="266" cy="70.5" r="1.9"/><circle cx="274" cy="68.6" r="1.9"/><circle cx="278" cy="67.7" r="1.9"/><circle cx="286" cy="65.9" r="1.9"/><circle cx="290" cy="64.9" r="1.9"/><circle cx="298" cy="63.2" r="1.9"/><circle cx="302" cy="62.3" r="1.9"/><circle cx="310" cy="60.5" r="1.9"/><circle cx="314" cy="59.7" r="1.9"/><circle cx="322" cy="58" r="1.9"/><circle cx="326" cy="57.2" r="1.9"/><circle cx="334" cy="55.6" r="1.9"/><circle cx="338" cy="54.8" r="1.9"/><circle cx="346" cy="53.3" r="1.9"/><circle cx="350" cy="52.6" r="1.9"/><circle cx="358" cy="51.2" r="1.9"/><circle cx="362" cy="50.5" r="1.9"/><circle cx="370" cy="49.1" r="1.9"/><circle cx="374" cy="48.5" r="1.9"/><circle cx="384" cy="46.9" r="1.9"/><circle cx="396" cy="45.2" r="1.9"/><circle cx="408" cy="43.6" r="1.9"/><circle cx="420" cy="42.2" r="1.9"/><circle cx="432" cy="40.9" r="1.9"/><circle cx="624" cy="43.1" r="1.9"/><circle cx="636" cy="44.5" r="1.9"/><circle cx="648" cy="46" r="1.9"/><circle cx="660" cy="47.6" r="1.9"/><circle cx="672" cy="49.3" r="1.9"/><circle cx="684" cy="51.2" r="1.9"/><circle cx="696" cy="53.1" r="1.9"/><circle cx="706" cy="54.7" r="1.9"/><circle cx="710" cy="55.4" r="1.9"/><circle cx="718" cy="56.8" r="1.9"/><circle cx="722" cy="57.5" r="1.9"/><circle cx="730" cy="58.9" r="1.9"/><circle cx="734" cy="59.6" r="1.9"/><circle cx="742" cy="61.1" r="1.9"/><circle cx="746" cy="61.8" r="1.9"/><circle cx="754" cy="63.3" r="1.9"/><circle cx="758" cy="64.1" r="1.9"/><circle cx="766" cy="65.6" r="1.9"/><circle cx="770" cy="66.4" r="1.9"/><circle cx="778" cy="67.9" r="1.9"/><circle cx="782" cy="68.7" r="1.9"/><circle cx="790" cy="70.3" r="1.9"/><circle cx="794" cy="71" r="1.9"/><circle cx="802" cy="72.6" r="1.9"/><circle cx="806" cy="73.4" r="1.9"/><circle cx="814" cy="75" r="1.9"/><circle cx="818" cy="75.8" r="1.9"/><circle cx="826" cy="77.4" r="1.9"/><circle cx="830" cy="78.2" r="1.9"/><circle cx="838" cy="79.8" r="1.9"/><circle cx="842" cy="80.6" r="1.9"/><circle cx="850" cy="82.2" r="1.9"/><circle cx="854" cy="83" r="1.9"/><circle cx="862" cy="84.6" r="1.9"/><circle cx="866" cy="85.3" r="1.9"/><circle cx="874" cy="86.9" r="1.9"/><circle cx="878" cy="87.7" r="1.9"/><circle cx="886" cy="89.3" r="1.9"/><circle cx="890" cy="90.1" r="1.9"/><circle cx="898" cy="91.6" r="1.9"/><circle cx="902" cy="92.4" r="1.9"/><circle cx="910" cy="94" r="1.9"/><circle cx="914" cy="94.7" r="1.9"/><circle cx="922" cy="96.2" r="1.9"/><circle cx="926" cy="97" r="1.9"/><circle cx="934" cy="98.5" r="1.9"/><circle cx="938" cy="99.3" r="1.9"/><circle cx="946" cy="100.7" r="1.9"/><circle cx="950" cy="101.5" r="1.9"/><circle cx="958" cy="102.9" r="1.9"/><circle cx="962" cy="103.7" r="1.9"/><circle cx="970" cy="105.1" r="1.9"/><circle cx="974" cy="105.8" r="1.9"/><circle cx="982" cy="107.2" r="1.9"/><circle cx="986" cy="107.9" r="1.9"/><circle cx="994" cy="109.3" r="1.9"/><circle cx="998" cy="110" r="1.9"/><circle cx="1006" cy="111.3" r="1.9"/><circle cx="1010" cy="112" r="1.9"/><circle cx="1020" cy="113.6" r="1.9"/><circle cx="1032" cy="115.6" r="1.9"/><circle cx="1044" cy="117.4" r="1.9"/><circle cx="1056" cy="119.3" r="1.9"/><circle cx="1068" cy="121.1" r="1.9"/><circle cx="1080" cy="122.8" r="1.9"/><circle cx="1092" cy="124.4" r="1.9"/><circle cx="1104" cy="126" r="1.9"/><circle cx="1116" cy="127.6" r="1.9"/><circle cx="1128" cy="129.1" r="1.9"/><circle cx="1140" cy="130.5" r="1.9"/><circle cx="1152" cy="131.8" r="1.9"/><circle cx="1164" cy="133.1" r="1.9"/><circle cx="1176" cy="134.3" r="1.9"/><circle cx="1440" cy="136.2" r="1.9"/><circle cx="1452" cy="134.9" r="1.9"/><circle cx="1464" cy="133.4" r="1.9"/><circle cx="1476" cy="131.9" r="1.9"/><circle cx="1488" cy="130.2" r="1.9"/></g><g class="playhead" transform="translate(-40 0)"><path d="M0 26V158"/><circle cx="0" cy="92" r="7"/></g></svg>
+      </div>
+      <figcaption class="wrap score-foot">
+        <span class="score-cap" id="score-cap">One tide, read every six minutes: notes rise with the water, crowd together as it runs, and fall silent at the turn.</span>
+        <span class="listen-wrap" data-listen hidden>
+          <button class="btn btn-line listen" type="button" data-listen-button>
+            <svg class="i-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 2.5v11l9-5.5z"/></svg>
+            <svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 3.5h9v9h-9z"/></svg>
+            <span data-listen-label>Hear this tide in one minute</span>
+          </button>
+          <span class="listen-time" data-listen-time aria-hidden="true">Plays sound · 1:02</span>
+        </span>
+      </figcaption>
+    </figure>
+
+  </section>
+
+  <section id="work" class="section work" aria-labelledby="work-h">
+    <div class="wrap grid">
+      <h2 id="work-h" class="section-h">The work</h2>
+      <div class="main-col">
+        <article class="movement" aria-labelledby="idea-h">
+          <h3 id="idea-h"><span class="num" aria-hidden="true">I.</span> The idea</h3>
+          <p>Every six minutes, a tide gauge in the Tagus estuary takes a reading. <em>Tidewrack</em> turns each one into sound: the height of the water sets the pitch, the speed of its rise and fall sets the density of notes, and slack water, the still minutes when the tide turns, becomes silence.</p>
+          <p class="legend-title">How to read the score</p>
+          <dl class="legend">
+            <div>
+              <dt><svg viewBox="0 0 44 24" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 4h44M0 9h44M0 14h44M0 19h44"/><circle cx="12" cy="17" r="2.6"/><circle cx="30" cy="6" r="2.6"/></svg>Height of the water</dt>
+              <dd>pitch</dd>
+            </div>
+            <div>
+              <dt><svg viewBox="0 0 44 24" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 4h44M0 9h44M0 14h44M0 19h44"/><circle cx="8" cy="18" r="2.6"/><circle cx="13" cy="15.5" r="1.6"/><circle cx="17.5" cy="13" r="1.6"/><circle cx="22" cy="10.5" r="2.6"/><circle cx="26.5" cy="8.5" r="1.6"/><circle cx="31" cy="6.5" r="1.6"/><circle cx="36" cy="4.5" r="2.6"/></svg>Speed of the water</dt>
+              <dd>density</dd>
+            </div>
+            <div>
+              <dt><svg viewBox="0 0 44 24" aria-hidden="true" focusable="false"><path class="lg-staff" d="M0 4h44M0 9h44M0 14h44M0 19h44"/><circle cx="5" cy="17" r="2.6"/><rect x="15" y="10.3" width="5" height="2.4"/><rect x="24" y="10.3" width="5" height="2.4"/><circle cx="39" cy="17" r="2.6"/></svg>Slack water</dt>
+              <dd>silence</dd>
+            </div>
+          </dl>
+        </article>
+        <article class="movement" aria-labelledby="room-h">
+          <h3 id="room-h"><span class="num" aria-hidden="true">II.</span> The room</h3>
+          <p>Forty speakers hang through a converted warehouse on the waterfront. There is no stage and no front row. You walk through the composition, and it moves past you from speaker to speaker, the way water finds its way along a channel.</p>
+        </article>
+        <article class="movement" aria-labelledby="composer-h">
+          <h3 id="composer-h"><span class="num" aria-hidden="true">III.</span> The composer</h3>
+          <p>Inês Varela was born in Setúbal, on the Sado estuary, and works with environmental data. For <em>Tidewrack</em> she wrote the rules, not the notes. For six weeks, the river writes the rest.</p>
+        </article>
+      </div>
+      <p class="stat"><span class="stat-n">10,560</span> <span class="stat-l">readings between 14&nbsp;November and 27&nbsp;December, one every six minutes, day and night. No two days of the score are the same.</span></p>
+    </div>
+  </section>
+
+  <section id="sessions" class="section sessions" aria-labelledby="sessions-h">
+    <div class="wrap grid">
+      <h2 id="sessions-h" class="section-h">Low-tide sessions</h2>
+      <div class="main-col">
+        <p class="lead">On four evenings the room reopens at 20:30 for a performance close to low water, when the score thins into silence. The tide keeps its own time, so the silence arrives at a different minute each night.</p>
+        <ol class="session-list">
+          <li class="session">
+            <h3 class="s-date"><time datetime="2026-11-28T20:30">Saturday 28 November</time></h3>
+            <p class="s-times"><span class="s-k">Begins</span> <span class="s-v">20:30</span> <span class="s-k">Predicted low tide</span> <span class="s-v s-low">20:42</span></p>
+            <p class="s-note">Low water 12 minutes after the start</p>
+            <svg class="tl" viewBox="0 0 240 76" aria-hidden="true" focusable="false"><path class="tl-axis" d="M10 68H230"/><path class="tl-tick" d="M10 66v4"/><path class="tl-tick" d="M65 66v4"/><path class="tl-tick" d="M120 66v4"/><path class="tl-tick" d="M175 66v4"/><path class="tl-tick" d="M230 66v4"/><path class="tl-start" d="M120 4V70"/><g class="tl-rests"><rect x="106.5" y="56.4" width="5" height="2.4"/><rect x="117.5" y="57.3" width="5" height="2.4"/><rect x="128.5" y="57.8" width="5" height="2.4"/><rect x="139.5" y="58" width="5" height="2.4"/><rect x="150.5" y="57.8" width="5" height="2.4"/><rect x="161.5" y="57.3" width="5" height="2.4"/><rect x="172.5" y="56.4" width="5" height="2.4"/></g><g class="tl-dots"><circle cx="10" cy="33.4" r="2.6"/><circle cx="21" cy="37.2" r="2.6"/><circle cx="32" cy="40.7" r="2.6"/><circle cx="43" cy="44" r="2.6"/><circle cx="54" cy="46.9" r="2.6"/><circle cx="65" cy="49.5" r="2.6"/><circle cx="76" cy="51.7" r="2.6"/><circle cx="87" cy="53.6" r="2.6"/><circle cx="98" cy="55.2" r="2.6"/><circle cx="186" cy="55.2" r="2.6"/><circle cx="197" cy="53.6" r="2.6"/><circle cx="208" cy="51.7" r="2.6"/><circle cx="219" cy="49.5" r="2.6"/><circle cx="230" cy="46.9" r="2.6"/></g><path class="tl-low" d="M142 63l-4 7h8z"/></svg>
+            <a class="s-link" href="#reserve" data-day="2026-11-28" data-time="20:30">Reserve<span class="vh"> for Saturday 28 November, 20:30</span></a>
+          </li>
+          <li class="session">
+            <h3 class="s-date"><time datetime="2026-12-06T20:30">Sunday 6 December</time></h3>
+            <p class="s-times"><span class="s-k">Begins</span> <span class="s-v">20:30</span> <span class="s-k">Predicted low tide</span> <span class="s-v s-low">19:58</span></p>
+            <p class="s-note">Low water 32 minutes before the start</p>
+            <svg class="tl" viewBox="0 0 240 76" aria-hidden="true" focusable="false"><path class="tl-axis" d="M10 68H230"/><path class="tl-tick" d="M10 66v4"/><path class="tl-tick" d="M65 66v4"/><path class="tl-tick" d="M120 66v4"/><path class="tl-tick" d="M175 66v4"/><path class="tl-tick" d="M230 66v4"/><path class="tl-start" d="M120 4V70"/><g class="tl-rests"><rect x="29.5" y="56.7" width="5" height="2.4"/><rect x="40.5" y="57.5" width="5" height="2.4"/><rect x="51.5" y="57.9" width="5" height="2.4"/><rect x="62.5" y="58" width="5" height="2.4"/><rect x="73.5" y="57.7" width="5" height="2.4"/><rect x="84.5" y="57" width="5" height="2.4"/></g><g class="tl-dots"><circle cx="10" cy="54.2" r="2.6"/><circle cx="21" cy="55.6" r="2.6"/><circle cx="98" cy="56" r="2.6"/><circle cx="109" cy="54.7" r="2.6"/><circle cx="120" cy="53" r="2.6"/><circle cx="131" cy="51" r="2.6"/><circle cx="142" cy="48.6" r="2.6"/><circle cx="153" cy="45.9" r="2.6"/><circle cx="164" cy="42.9" r="2.6"/><circle cx="175" cy="39.6" r="2.6"/><circle cx="186" cy="36" r="2.6"/><circle cx="197" cy="32" r="2.6"/><circle cx="208" cy="27.8" r="2.6"/><circle cx="219" cy="23.3" r="2.6"/><circle cx="230" cy="18.6" r="2.6"/></g><path class="tl-low" d="M61.3 63l-4 7h8z"/></svg>
+            <a class="s-link" href="#reserve" data-day="2026-12-06" data-time="20:30">Reserve<span class="vh"> for Sunday 6 December, 20:30</span></a>
+          </li>
+          <li class="session">
+            <h3 class="s-date"><time datetime="2026-12-13T20:30">Sunday 13 December</time></h3>
+            <p class="s-times"><span class="s-k">Begins</span> <span class="s-v">20:30</span> <span class="s-k">Predicted low tide</span> <span class="s-v s-low">20:16</span></p>
+            <p class="s-note">Low water 14 minutes before the start</p>
+            <svg class="tl" viewBox="0 0 240 76" aria-hidden="true" focusable="false"><path class="tl-axis" d="M10 68H230"/><path class="tl-tick" d="M10 66v4"/><path class="tl-tick" d="M65 66v4"/><path class="tl-tick" d="M120 66v4"/><path class="tl-tick" d="M175 66v4"/><path class="tl-tick" d="M230 66v4"/><path class="tl-start" d="M120 4V70"/><g class="tl-rests"><rect x="62.5" y="56.7" width="5" height="2.4"/><rect x="73.5" y="57.5" width="5" height="2.4"/><rect x="84.5" y="57.9" width="5" height="2.4"/><rect x="95.5" y="58" width="5" height="2.4"/><rect x="106.5" y="57.7" width="5" height="2.4"/><rect x="117.5" y="57" width="5" height="2.4"/></g><g class="tl-dots"><circle cx="10" cy="47.8" r="2.6"/><circle cx="21" cy="50.2" r="2.6"/><circle cx="32" cy="52.4" r="2.6"/><circle cx="43" cy="54.2" r="2.6"/><circle cx="54" cy="55.6" r="2.6"/><circle cx="131" cy="56" r="2.6"/><circle cx="142" cy="54.7" r="2.6"/><circle cx="153" cy="53" r="2.6"/><circle cx="164" cy="51" r="2.6"/><circle cx="175" cy="48.6" r="2.6"/><circle cx="186" cy="45.9" r="2.6"/><circle cx="197" cy="42.9" r="2.6"/><circle cx="208" cy="39.6" r="2.6"/><circle cx="219" cy="36" r="2.6"/><circle cx="230" cy="32" r="2.6"/></g><path class="tl-low" d="M94.3 63l-4 7h8z"/></svg>
+            <a class="s-link" href="#reserve" data-day="2026-12-13" data-time="20:30">Reserve<span class="vh"> for Sunday 13 December, 20:30</span></a>
+          </li>
+          <li class="session">
+            <h3 class="s-date"><time datetime="2026-12-20T20:30">Sunday 20 December</time></h3>
+            <p class="s-times"><span class="s-k">Begins</span> <span class="s-v">20:30</span> <span class="s-k">Predicted low tide</span> <span class="s-v s-low">21:03</span></p>
+            <p class="s-note">Low water 33 minutes after the start</p>
+            <svg class="tl" viewBox="0 0 240 76" aria-hidden="true" focusable="false"><path class="tl-axis" d="M10 68H230"/><path class="tl-tick" d="M10 66v4"/><path class="tl-tick" d="M65 66v4"/><path class="tl-tick" d="M120 66v4"/><path class="tl-tick" d="M175 66v4"/><path class="tl-tick" d="M230 66v4"/><path class="tl-start" d="M120 4V70"/><g class="tl-rests"><rect x="150.5" y="56.9" width="5" height="2.4"/><rect x="161.5" y="57.6" width="5" height="2.4"/><rect x="172.5" y="58" width="5" height="2.4"/><rect x="183.5" y="58" width="5" height="2.4"/><rect x="194.5" y="57.6" width="5" height="2.4"/><rect x="205.5" y="56.9" width="5" height="2.4"/></g><g class="tl-dots"><circle cx="10" cy="17.8" r="2.6"/><circle cx="21" cy="22.6" r="2.6"/><circle cx="32" cy="27.1" r="2.6"/><circle cx="43" cy="31.4" r="2.6"/><circle cx="54" cy="35.3" r="2.6"/><circle cx="65" cy="39" r="2.6"/><circle cx="76" cy="42.4" r="2.6"/><circle cx="87" cy="45.5" r="2.6"/><circle cx="98" cy="48.2" r="2.6"/><circle cx="109" cy="50.6" r="2.6"/><circle cx="120" cy="52.7" r="2.6"/><circle cx="131" cy="54.4" r="2.6"/><circle cx="142" cy="55.8" r="2.6"/><circle cx="219" cy="55.8" r="2.6"/><circle cx="230" cy="54.4" r="2.6"/></g><path class="tl-low" d="M180.5 63l-4 7h8z"/></svg>
+            <a class="s-link" href="#reserve" data-day="2026-12-20" data-time="20:30">Reserve<span class="vh"> for Sunday 20 December, 20:30</span></a>
+          </li>
+        </ol>
+        <p class="s-key" aria-hidden="true"><span class="k"><span class="k-start"></span>20:30 start</span> <span class="k"><span class="k-low"></span>predicted low water</span> <span class="k"><span class="k-rest"></span>silence</span> <span class="k">each line runs 19:30–21:30</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="section visit" aria-labelledby="visit-h">
+    <div class="wrap grid">
+      <h2 id="visit-h" class="section-h">Visit</h2>
+      <dl class="facts main-col">
+        <div><dt>Dates</dt><dd><time datetime="2026-11-14">14 November</time> – <time datetime="2026-12-27">27 December 2026</time></dd></div>
+        <div><dt>Hours</dt><dd>Tuesday to Sunday, 11:00–19:00. Closed on Mondays.<br>Low-tide sessions begin at 20:30.</dd></div>
+        <div><dt>Address</dt><dd><address><span lang="pt">Armazém 7, Cais do Sodré</span><br>Lisbon, Portugal</address></dd></div>
+        <div><dt>Access</dt><dd>Step-free access. Seating is available. The room is dim, so give your eyes a minute when you arrive.</dd></div>
+        <div><dt>Entry</dt><dd>Free, with a timed reservation. Capacity is limited.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="reserve" class="section reserve" aria-labelledby="reserve-h" tabindex="-1">
+    <div class="wrap grid">
+      <div class="reserve-intro">
+        <h2 id="reserve-h" class="section-h">Reserve a free timed entry</h2>
+        <p>Entry is free. Visits are timed so the room never fills, and places are limited, especially for the low-tide sessions.</p>
+      </div>
+      <form class="reserve-form" id="reserve-form" action="#reserve" method="get" data-form>
+        <div class="field">
+          <label for="f-day">Day</label>
+          <select id="f-day" name="day" required aria-describedby="f-day-err">
+            <option value="">Choose a day</option>
+            <optgroup label="November"><option value="2026-11-14">Sat 14 Nov</option><option value="2026-11-15">Sun 15 Nov</option><option value="2026-11-17">Tue 17 Nov</option><option value="2026-11-18">Wed 18 Nov</option><option value="2026-11-19">Thu 19 Nov</option><option value="2026-11-20">Fri 20 Nov</option><option value="2026-11-21">Sat 21 Nov</option><option value="2026-11-22">Sun 22 Nov</option><option value="2026-11-24">Tue 24 Nov</option><option value="2026-11-25">Wed 25 Nov</option><option value="2026-11-26">Thu 26 Nov</option><option value="2026-11-27">Fri 27 Nov</option><option value="2026-11-28">Sat 28 Nov · low-tide session</option><option value="2026-11-29">Sun 29 Nov</option></optgroup><optgroup label="December"><option value="2026-12-01">Tue 1 Dec</option><option value="2026-12-02">Wed 2 Dec</option><option value="2026-12-03">Thu 3 Dec</option><option value="2026-12-04">Fri 4 Dec</option><option value="2026-12-05">Sat 5 Dec</option><option value="2026-12-06">Sun 6 Dec · low-tide session</option><option value="2026-12-08">Tue 8 Dec</option><option value="2026-12-09">Wed 9 Dec</option><option value="2026-12-10">Thu 10 Dec</option><option value="2026-12-11">Fri 11 Dec</option><option value="2026-12-12">Sat 12 Dec</option><option value="2026-12-13">Sun 13 Dec · low-tide session</option><option value="2026-12-15">Tue 15 Dec</option><option value="2026-12-16">Wed 16 Dec</option><option value="2026-12-17">Thu 17 Dec</option><option value="2026-12-18">Fri 18 Dec</option><option value="2026-12-19">Sat 19 Dec</option><option value="2026-12-20">Sun 20 Dec · low-tide session</option><option value="2026-12-22">Tue 22 Dec</option><option value="2026-12-23">Wed 23 Dec</option><option value="2026-12-24">Thu 24 Dec</option><option value="2026-12-25">Fri 25 Dec</option><option value="2026-12-26">Sat 26 Dec</option><option value="2026-12-27">Sun 27 Dec</option></optgroup>
+          </select>
+          <p class="err" id="f-day-err" data-err></p>
+        </div>
+        <div class="field">
+          <label for="f-time">Entry time</label>
+          <select id="f-time" name="time" required aria-describedby="f-time-hint f-time-err">
+            <option value="">Choose a time</option>
+            <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+            <option value="20:30" data-session>20:30 · low-tide session</option>
+          </select>
+          <p class="hint" id="f-time-hint">Entry every half hour. 20:30 is for low-tide session evenings only.</p>
+          <p class="err" id="f-time-err" data-err></p>
+        </div>
+        <div class="field field-qty">
+          <label for="f-qty">Tickets</label>
+          <select id="f-qty" name="tickets">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-hint f-email-err">
+          <p class="hint" id="f-email-hint">Your timed ticket is sent here.</p>
+          <p class="err" id="f-email-err" data-err></p>
+        </div>
+        <button class="btn btn-ink btn-lg" type="submit">Reserve a free timed entry</button>
+        <div class="status" role="status" aria-live="polite" data-status></div>
+      </form>
+      <div class="press">
+        <figure class="quote">
+          <blockquote><p>“As exact as a tide table, and as strange as the sea at night.”</p></blockquote>
+          <figcaption><cite>The Listening Post</cite></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>“A room that listens to the river and lets you overhear it.”</p></blockquote>
+          <figcaption><cite lang="pt">Arquivo Sonoro</cite></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section partners" aria-labelledby="partners-h">
+    <div class="wrap grid">
+      <h2 id="partners-h" class="section-h">Partners</h2>
+      <ul class="partner-list main-col">
+        <li lang="pt">Fundação Maré</li>
+        <li>Lisbon Port Authority <span class="p-role">fictional programme</span></li>
+        <li><span lang="pt">Instituto Hidrográfico</span> <span class="p-role">data partner</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p class="foot-title">Tidewrack</p>
+    <div class="foot-col">
+      <h2 class="foot-h">Contact</h2>
+      <p><a href="mailto:hello@tidewrack.example">hello@tidewrack.example</a></p>
+    </div>
+    <div class="foot-col">
+      <h2 class="foot-h">Follow</h2>
+      <ul class="foot-list">
+        <li><a href="https://example.org/tidewrack/instagram">Instagram</a></li>
+        <li><a href="https://example.org/tidewrack/bluesky">Bluesky</a></li>
+        <li><a href="https://example.org/tidewrack/facebook">Facebook</a></li>
+      </ul>
+    </div>
+    <nav class="foot-col" aria-label="On this page">
+      <h2 class="foot-h">On this page</h2>
+      <ul class="foot-list">
+        <li><a href="#work">The work</a></li>
+        <li><a href="#sessions">Low-tide sessions</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+      </ul>
+    </nav>
+    <p class="foot-note"><span>Tidewrack, Inês Varela and the press quoted here are fictional. Social links are placeholders.</span></p>
+  </div>
+</footer>
+</body>
+</html>

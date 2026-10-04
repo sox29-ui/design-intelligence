@@ -1,0 +1,3329 @@
+{
+  "cycle": "cycle-01",
+  "outputs": {
+    "control/A-1": {
+      "condition": "control",
+      "run": "A-1",
+      "brief": "A",
+      "sourceSha256": "bf6ebc7ef9a986b023b867d08cc09a482f34499f2ad01059652f6cda85d8fb1f",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 17.22,
+            "size": 248,
+            "body": 34
+          }
+        },
+        {
+          "id": "scroll-reveal",
+          "evidence": {
+            "opacityZeroElements": 51,
+            "intersectionObservers": 2
+          }
+        },
+        {
+          "id": "decorative-motion",
+          "evidence": {
+            "infiniteAnimations": 49
+          }
+        },
+        {
+          "id": "dark-neon-default",
+          "evidence": {
+            "scheme": "dark",
+            "neon": [
+              "#f0a54a",
+              "#f0a54a"
+            ]
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 79.95,
+          "768x1024": 157.44,
+          "1440x900": 248,
+          "1920x1080": 248
+        },
+        "bodySize": {
+          "390x844": 24,
+          "768x1024": 34,
+          "1440x900": 34,
+          "1920x1080": 34
+        },
+        "distinctFontSizes": {
+          "390x844": 16,
+          "768x1024": 20,
+          "1440x900": 20,
+          "1920x1080": 20
+        },
+        "readingCharsPerLine": {
+          "390x844": 29.7,
+          "768x1024": 40.5,
+          "1440x900": 41,
+          "1920x1080": 41
+        },
+        "families": {
+          "system-ui": 0.597,
+          "Instrument Serif": 0.403
+        },
+        "scheme": "dark",
+        "palette": [
+          "#0b1113",
+          "#070c0e",
+          "#10191c",
+          "#f0a54a"
+        ],
+        "buttonRadius": 3,
+        "transferBytes": 148868,
+        "requests": 7,
+        "fonts": {
+          "count": 2,
+          "bytes": 44718,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 76,
+        "pageHeightVh": {
+          "390x844": 8.55,
+          "768x1024": 7.46,
+          "1440x900": 7.97,
+          "1920x1080": 6.74
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 44790,
+          "css": 27018,
+          "js": 29761,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [
+          "www.openstreetmap.org",
+          "www.instagram.com",
+          "www.facebook.com",
+          "vimeo.com"
+        ],
+        "googleFontFamilies": [
+          "Instrument Serif"
+        ],
+        "customPropertiesDeclared": 21,
+        "varUses": 164,
+        "distinctFontSizeDeclarations": 13,
+        "distinctColorLiterals": 24,
+        "distinctRadii": 3,
+        "mediaQueries": 13,
+        "containerQueries": 0,
+        "clampUses": 29,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 15,
+        "physicalInlineProps": 15,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "system-ui",
+          "instrument serif"
+        ],
+        "scheme": "dark",
+        "palette": [
+          "#0b1113",
+          "#070c0e",
+          "#10191c"
+        ],
+        "displayPx1440": 248,
+        "bodyPx1440": 34,
+        "buttonRadius": 3,
+        "googleFonts": [
+          "Instrument Serif"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:08:35.510Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1058,
+          "lcp": 1488,
+          "tbt": 35,
+          "cls": 0.003,
+          "speedIndex": 1058,
+          "tti": 1638
+        },
+        "stable": {
+          "totalByteWeight": 135607,
+          "domSize": null,
+          "requests": 6,
+          "mainThreadWorkMs": 2197,
+          "bootupTimeMs": 310,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:08:42.095Z"
+    },
+    "control/A-2": {
+      "condition": "control",
+      "run": "A-2",
+      "brief": "A",
+      "sourceSha256": "2ae1a1c286752fd068b9d51564005163775afd13378318cf764b1d453e225338",
+      "gates": [
+        {
+          "id": "tap-targets",
+          "level": "WARN",
+          "detail": "390: 4 controls smaller than 24×24 px (excluding inline text links)"
+        },
+        {
+          "id": "tiny-text",
+          "level": "WARN",
+          "detail": "390: 9% of text below 12 px"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 13.5,
+            "size": 194.4,
+            "body": 38.4
+          }
+        },
+        {
+          "id": "gradient-backgrounds",
+          "evidence": {
+            "gradientAreaRatio": 0.39
+          }
+        },
+        {
+          "id": "scroll-reveal",
+          "evidence": {
+            "opacityZeroElements": 59,
+            "intersectionObservers": 4
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 103.35,
+          "768x1024": 203.52,
+          "1440x900": 194.4,
+          "1920x1080": 200
+        },
+        "bodySize": {
+          "390x844": 24,
+          "768x1024": 38.4,
+          "1440x900": 38.4,
+          "1920x1080": 38.4
+        },
+        "distinctFontSizes": {
+          "390x844": 21,
+          "768x1024": 22,
+          "1440x900": 21,
+          "1920x1080": 21
+        },
+        "readingCharsPerLine": {
+          "390x844": 32,
+          "768x1024": 40,
+          "1440x900": 39.3,
+          "1920x1080": 39.3
+        },
+        "families": {
+          "system-ui": 0.427,
+          "Instrument Serif": 0.358,
+          "Fragment Mono": 0.215
+        },
+        "scheme": "dark",
+        "palette": [
+          "#0b1315",
+          "#e7b462",
+          "#0e181b"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 195335,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 70703,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 88,
+        "pageHeightVh": {
+          "390x844": 8.44,
+          "768x1024": 7.51,
+          "1440x900": 7.29,
+          "1920x1080": 6.08
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 60661,
+          "css": 29723,
+          "js": 31435,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [
+          "schema.org",
+          "www.openstreetmap.org"
+        ],
+        "googleFontFamilies": [
+          "Fragment Mono",
+          "Instrument Serif"
+        ],
+        "customPropertiesDeclared": 27,
+        "varUses": 210,
+        "distinctFontSizeDeclarations": 13,
+        "distinctColorLiterals": 21,
+        "distinctRadii": 3,
+        "mediaQueries": 10,
+        "containerQueries": 0,
+        "clampUses": 42,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 0,
+        "physicalInlineProps": 20,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "system-ui",
+          "instrument serif",
+          "fragment mono"
+        ],
+        "scheme": "dark",
+        "palette": [
+          "#0b1315",
+          "#e7b462",
+          "#0e181b"
+        ],
+        "displayPx1440": 194.4,
+        "bodyPx1440": 38.4,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Fragment Mono",
+          "Instrument Serif"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:09:54.441Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1052,
+          "lcp": 1427,
+          "tbt": 21,
+          "cls": 0.009,
+          "speedIndex": 1052,
+          "tti": 1614
+        },
+        "stable": {
+          "totalByteWeight": 171922,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 2558,
+          "bootupTimeMs": 265,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:10:01.091Z"
+    },
+    "control/A-3": {
+      "condition": "control",
+      "run": "A-3",
+      "brief": "A",
+      "sourceSha256": "237ab5e89ee644d18ecda6dd6673369b860674e1142b809334e3136d4ad4189d",
+      "gates": [
+        {
+          "id": "tap-targets",
+          "level": "WARN",
+          "detail": "390: 1 controls smaller than 24×24 px (excluding inline text links)"
+        },
+        {
+          "id": "tiny-text",
+          "level": "WARN",
+          "detail": "390: 14% of text below 12 px"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 13.89,
+            "size": 200,
+            "body": 19
+          }
+        },
+        {
+          "id": "decorative-motion",
+          "evidence": {
+            "infiniteAnimations": 52
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 70.98,
+          "768x1024": 139.776,
+          "1440x900": 200,
+          "1920x1080": 200
+        },
+        "bodySize": {
+          "390x844": 17.17,
+          "768x1024": 18.304,
+          "1440x900": 19,
+          "1920x1080": 19
+        },
+        "distinctFontSizes": {
+          "390x844": 38,
+          "768x1024": 38,
+          "1440x900": 37,
+          "1920x1080": 37
+        },
+        "readingCharsPerLine": {
+          "390x844": 34,
+          "768x1024": 30.6,
+          "1440x900": 41,
+          "1920x1080": 41
+        },
+        "families": {
+          "Newsreader": 0.802,
+          "ui-monospace": 0.198
+        },
+        "scheme": "dark",
+        "palette": [
+          "#0e1312",
+          "#121a18",
+          "#ebe6da"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 189438,
+        "requests": 10,
+        "fonts": {
+          "count": 3,
+          "bytes": 71827,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 128,
+        "pageHeightVh": {
+          "390x844": 11.22,
+          "768x1024": 8.09,
+          "1440x900": 9.41,
+          "1920x1080": 7.95
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 46424,
+          "css": 32681,
+          "js": 33026,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [
+          "schema.org",
+          "www.openstreetmap.org",
+          "www.instagram.com",
+          "bsky.app",
+          "vimeo.com"
+        ],
+        "googleFontFamilies": [
+          "Newsreader"
+        ],
+        "customPropertiesDeclared": 22,
+        "varUses": 212,
+        "distinctFontSizeDeclarations": 39,
+        "distinctColorLiterals": 15,
+        "distinctRadii": 2,
+        "mediaQueries": 13,
+        "containerQueries": 0,
+        "clampUses": 31,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 15,
+        "physicalInlineProps": 21,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "newsreader",
+          "ui-monospace"
+        ],
+        "scheme": "dark",
+        "palette": [
+          "#0e1312",
+          "#121a18",
+          "#ebe6da"
+        ],
+        "displayPx1440": 200,
+        "bodyPx1440": 19,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Newsreader"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:11:18.619Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1202,
+          "lcp": 1437,
+          "tbt": 150,
+          "cls": 0.003,
+          "speedIndex": 1202,
+          "tti": 1954
+        },
+        "stable": {
+          "totalByteWeight": 187012,
+          "domSize": null,
+          "requests": 8,
+          "mainThreadWorkMs": 2797,
+          "bootupTimeMs": 79,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:11:25.525Z"
+    },
+    "control/B-1": {
+      "condition": "control",
+      "run": "B-1",
+      "brief": "B",
+      "sourceSha256": "82990eb5500b89f3f5ef9615a4771457e27b9dc53d4c79a8aefd231969d8760a",
+      "gates": [
+        {
+          "id": "focus-hidden",
+          "level": "WARN",
+          "detail": "390x844: 8 tab stops off-screen or hidden"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "glow-accents",
+          "evidence": {
+            "coloredGlowShadows": 4
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 20,
+          "768x1024": 28,
+          "1440x900": 28,
+          "1920x1080": 28
+        },
+        "bodySize": {
+          "390x844": 12.5,
+          "768x1024": 14,
+          "1440x900": 13.5,
+          "1920x1080": 13.5
+        },
+        "distinctFontSizes": {
+          "390x844": 11,
+          "768x1024": 12,
+          "1440x900": 12,
+          "1920x1080": 12
+        },
+        "readingCharsPerLine": {
+          "390x844": 20.8,
+          "768x1024": 40,
+          "1440x900": 40,
+          "1920x1080": 40
+        },
+        "families": {
+          "Inter": 0.998,
+          "ui-monospace": 0.002
+        },
+        "scheme": "light",
+        "palette": [
+          "#f4f5f7",
+          "#ffffff",
+          "#f8f9fb"
+        ],
+        "buttonRadius": 8,
+        "transferBytes": 169442,
+        "requests": 11,
+        "fonts": {
+          "count": 1,
+          "bytes": 49035,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 296,
+        "pageHeightVh": {
+          "390x844": 1.89,
+          "768x1024": 2.08,
+          "1440x900": 1.4,
+          "1920x1080": 1.27
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 9,
+          "visibleLinksAfter": 9,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "a",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 8,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {
+          "moderate": 1
+        },
+        "768x1024": null,
+        "1440x900": {
+          "moderate": 1
+        },
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "css/base.css",
+          "css/dashboard.css",
+          "index.html",
+          "js/app.js",
+          "js/chart.js",
+          "js/core.js",
+          "js/data.js",
+          "js/views.js"
+        ],
+        "bytes": {
+          "html": 18057,
+          "css": 33366,
+          "js": 65466,
+          "other": 0
+        },
+        "lang": "en-GB",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Inter"
+        ],
+        "customPropertiesDeclared": 42,
+        "varUses": 210,
+        "distinctFontSizeDeclarations": 16,
+        "distinctColorLiterals": 97,
+        "distinctRadii": 12,
+        "mediaQueries": 9,
+        "containerQueries": 1,
+        "clampUses": 0,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 1,
+        "physicalInlineProps": 33,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "inter",
+          "ui-monospace"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f4f5f7",
+          "#ffffff",
+          "#f8f9fb"
+        ],
+        "displayPx1440": 28,
+        "bodyPx1440": 13.5,
+        "buttonRadius": 8,
+        "googleFonts": [
+          "Inter"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:12:32.617Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 0.98,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1789,
+          "lcp": 1789,
+          "tbt": 0,
+          "cls": 0.019,
+          "speedIndex": 1789,
+          "tti": 1789
+        },
+        "stable": {
+          "totalByteWeight": 169254,
+          "domSize": null,
+          "requests": 11,
+          "mainThreadWorkMs": 492,
+          "bootupTimeMs": 74,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": [
+          "heading-order",
+          "label-content-name-mismatch"
+        ]
+      },
+      "scoredAt": "2026-10-04T10:12:38.263Z"
+    },
+    "control/B-2": {
+      "condition": "control",
+      "run": "B-2",
+      "brief": "B",
+      "sourceSha256": "ea1ef72c415df384b694dc2ef750f6a15a7d561cf17036e64bb02ff3931ba951",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "glow-accents",
+          "evidence": {
+            "coloredGlowShadows": 3
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 21,
+          "768x1024": 28,
+          "1440x900": 26,
+          "1920x1080": 28
+        },
+        "bodySize": {
+          "390x844": 12.5,
+          "768x1024": 13,
+          "1440x900": 13,
+          "1920x1080": 13
+        },
+        "distinctFontSizes": {
+          "390x844": 11,
+          "768x1024": 14,
+          "1440x900": 14,
+          "1920x1080": 14
+        },
+        "readingCharsPerLine": {
+          "390x844": 29.3,
+          "768x1024": 27.3,
+          "1440x900": 26.7,
+          "1920x1080": 26.7
+        },
+        "families": {
+          "IBM Plex Sans": 0.922,
+          "IBM Plex Mono": 0.078
+        },
+        "scheme": "light",
+        "palette": [
+          "#f4f5f7",
+          "#ffffff",
+          "#fff4dc"
+        ],
+        "buttonRadius": 6,
+        "transferBytes": 208260,
+        "requests": 11,
+        "fonts": {
+          "count": 3,
+          "bytes": 77645,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 224,
+        "pageHeightVh": {
+          "390x844": 1.95,
+          "768x1024": 2.91,
+          "1440x900": 2.38,
+          "1920x1080": 1.98
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "false",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 0,
+          "visibleLinksAfter": 0,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "body",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "css/base.css",
+          "css/components.css",
+          "index.html",
+          "js/app.js",
+          "js/chart.js",
+          "js/data.js"
+        ],
+        "bytes": {
+          "html": 23626,
+          "css": 36831,
+          "js": 66534,
+          "other": 0
+        },
+        "lang": "en-GB",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "customPropertiesDeclared": 37,
+        "varUses": 257,
+        "distinctFontSizeDeclarations": 18,
+        "distinctColorLiterals": 55,
+        "distinctRadii": 12,
+        "mediaQueries": 7,
+        "containerQueries": 7,
+        "clampUses": 0,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 3,
+        "physicalInlineProps": 51,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans",
+          "ibm plex mono"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f4f5f7",
+          "#ffffff",
+          "#fff4dc"
+        ],
+        "displayPx1440": 26,
+        "bodyPx1440": 13,
+        "buttonRadius": 6,
+        "googleFonts": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:13:49.130Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.9,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 2865,
+          "lcp": 2865,
+          "tbt": 0,
+          "cls": 0,
+          "speedIndex": 2999,
+          "tti": 2865
+        },
+        "stable": {
+          "totalByteWeight": 181744,
+          "domSize": null,
+          "requests": 10,
+          "mainThreadWorkMs": 530,
+          "bootupTimeMs": 131,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:13:55.561Z"
+    },
+    "control/C-1": {
+      "condition": "control",
+      "run": "C-1",
+      "brief": "C",
+      "sourceSha256": "f04ea7d06b448843db3f688ae133291f563fc5d60d2e4d518701edcceb7a3150",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "glow-accents",
+          "evidence": {
+            "coloredGlowShadows": 3
+          }
+        },
+        {
+          "id": "glassmorphism",
+          "evidence": {
+            "backdropBlurElements": 1
+          }
+        },
+        {
+          "id": "rounded-card-grid",
+          "evidence": {
+            "roundedCardGroups": 2
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 32.76,
+          "768x1024": 54,
+          "1440x900": 54,
+          "1920x1080": 54
+        },
+        "bodySize": {
+          "390x844": 13,
+          "768x1024": 13,
+          "1440x900": 13,
+          "1920x1080": 13
+        },
+        "distinctFontSizes": {
+          "390x844": 16,
+          "768x1024": 16,
+          "1440x900": 16,
+          "1920x1080": 16
+        },
+        "readingCharsPerLine": {
+          "390x844": 15.1,
+          "768x1024": 16.2,
+          "1440x900": 16.2,
+          "1920x1080": 16.2
+        },
+        "families": {
+          "IBM Plex Sans Arabic": 0.952,
+          "Reem Kufi": 0.048
+        },
+        "scheme": "light",
+        "palette": [
+          "#faf6f0",
+          "#ffffff",
+          "#f3ebdf",
+          "#22150e",
+          "#f6e7db"
+        ],
+        "buttonRadius": 14,
+        "transferBytes": 316643,
+        "requests": 11,
+        "fonts": {
+          "count": 6,
+          "bytes": 165571,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 248,
+        "pageHeightVh": {
+          "390x844": 6.88,
+          "768x1024": 4.8,
+          "1440x900": 4.37,
+          "1920x1080": 3.64
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": null,
+          "ariaExpandedAfter": null,
+          "hasAriaControls": true,
+          "visibleLinksBefore": 3,
+          "visibleLinksAfter": 14,
+          "escapeCloses": true,
+          "bodyLocked": true,
+          "activeTag": "button",
+          "dialogs": 1
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {
+          "moderate": 1
+        },
+        "768x1024": null,
+        "1440x900": {
+          "moderate": 1
+        },
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 68537,
+          "css": 37486,
+          "js": 41478,
+          "other": 0
+        },
+        "lang": "ar",
+        "dir": "rtl",
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "customPropertiesDeclared": 31,
+        "varUses": 185,
+        "distinctFontSizeDeclarations": 22,
+        "distinctColorLiterals": 54,
+        "distinctRadii": 11,
+        "mediaQueries": 9,
+        "containerQueries": 0,
+        "clampUses": 1,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 237,
+        "physicalInlineProps": 4,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans arabic",
+          "reem kufi"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#faf6f0",
+          "#ffffff",
+          "#f3ebdf"
+        ],
+        "displayPx1440": 54,
+        "bodyPx1440": 13,
+        "buttonRadius": 14,
+        "googleFonts": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:15:07.342Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.9
+        },
+        "metrics": {
+          "fcp": 1784,
+          "lcp": 1861,
+          "tbt": 10,
+          "cls": 0.008,
+          "speedIndex": 1784,
+          "tti": 1861
+        },
+        "stable": {
+          "totalByteWeight": 285521,
+          "domSize": null,
+          "requests": 12,
+          "mainThreadWorkMs": 963,
+          "bootupTimeMs": 87,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": [
+          "label-content-name-mismatch"
+        ]
+      },
+      "scoredAt": "2026-10-04T10:15:13.588Z"
+    },
+    "control/C-2": {
+      "condition": "control",
+      "run": "C-2",
+      "brief": "C",
+      "sourceSha256": "298c681ced6fde620e5f444c62906ce79f2cef201c1c449b51c03f47263e19d2",
+      "gates": [
+        {
+          "id": "h1-count",
+          "level": "WARN",
+          "detail": "390x844: 0 h1 elements"
+        },
+        {
+          "id": "h1-count",
+          "level": "WARN",
+          "detail": "1440x900: 0 h1 elements"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "glassmorphism",
+          "evidence": {
+            "backdropBlurElements": 1
+          }
+        },
+        {
+          "id": "rounded-card-grid",
+          "evidence": {
+            "roundedCardGroups": 2
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 28.08,
+          "768x1024": 55.296,
+          "1440x900": 56,
+          "1920x1080": 56
+        },
+        "bodySize": {
+          "390x844": 15,
+          "768x1024": 15,
+          "1440x900": 15,
+          "1920x1080": 15
+        },
+        "distinctFontSizes": {
+          "390x844": 11,
+          "768x1024": 11,
+          "1440x900": 11,
+          "1920x1080": 11
+        },
+        "readingCharsPerLine": {
+          "390x844": 19,
+          "768x1024": 20.4,
+          "1440x900": 20.4,
+          "1920x1080": 20.4
+        },
+        "families": {
+          "IBM Plex Sans Arabic": 0.958,
+          "Reem Kufi": 0.042
+        },
+        "scheme": "light",
+        "palette": [
+          "#faf6f0",
+          "#ffffff",
+          "#f2eadf",
+          "#2a1f18",
+          "#1e3a2d"
+        ],
+        "buttonRadius": 12,
+        "transferBytes": 266627,
+        "requests": 11,
+        "fonts": {
+          "count": 6,
+          "bytes": 151337,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 256,
+        "pageHeightVh": {
+          "390x844": 6.77,
+          "768x1024": 4.35,
+          "1440x900": 4.08,
+          "1920x1080": 3.4
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": null,
+          "ariaExpandedAfter": null,
+          "hasAriaControls": true,
+          "visibleLinksBefore": 2,
+          "visibleLinksAfter": 10,
+          "escapeCloses": true,
+          "bodyLocked": true,
+          "activeTag": "button",
+          "dialogs": 1
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {
+          "moderate": 2
+        },
+        "768x1024": null,
+        "1440x900": {
+          "moderate": 2
+        },
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 60338,
+          "css": 30735,
+          "js": 20624,
+          "other": 0
+        },
+        "lang": "ar",
+        "dir": "rtl",
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "customPropertiesDeclared": 30,
+        "varUses": 173,
+        "distinctFontSizeDeclarations": 13,
+        "distinctColorLiterals": 40,
+        "distinctRadii": 12,
+        "mediaQueries": 8,
+        "containerQueries": 0,
+        "clampUses": 3,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 213,
+        "physicalInlineProps": 1,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans arabic",
+          "reem kufi"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#faf6f0",
+          "#ffffff",
+          "#f2eadf"
+        ],
+        "displayPx1440": 56,
+        "bodyPx1440": 15,
+        "buttonRadius": 12,
+        "googleFonts": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:16:25.096Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1774,
+          "lcp": 1774,
+          "tbt": 0,
+          "cls": 0.157,
+          "speedIndex": 1774,
+          "tti": 1774
+        },
+        "stable": {
+          "totalByteWeight": 234756,
+          "domSize": null,
+          "requests": 11,
+          "mainThreadWorkMs": 1092,
+          "bootupTimeMs": 44,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": [
+          "label-content-name-mismatch"
+        ]
+      },
+      "scoredAt": "2026-10-04T10:16:31.327Z"
+    },
+    "control/D-1": {
+      "condition": "control",
+      "run": "D-1",
+      "brief": "D",
+      "sourceSha256": "511e524d999cf62bc7a67b4e69d1d80c58b4c3bdabb8432218ea38dfc4755179",
+      "gates": [
+        {
+          "id": "tap-targets",
+          "level": "WARN",
+          "detail": "390: 8 controls smaller than 24×24 px (excluding inline text links)"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 29.61,
+            "size": 426.4,
+            "body": 21
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 122.5,
+          "768x1024": 216.651,
+          "1440x900": 426.4,
+          "1920x1080": 426.4
+        },
+        "bodySize": {
+          "390x844": 18.044,
+          "768x1024": 19.4048,
+          "1440x900": 21,
+          "1920x1080": 21
+        },
+        "distinctFontSizes": {
+          "390x844": 33,
+          "768x1024": 34,
+          "1440x900": 34,
+          "1920x1080": 34
+        },
+        "readingCharsPerLine": {
+          "390x844": 36.8,
+          "768x1024": 41.5,
+          "1440x900": 47,
+          "1920x1080": 46.3
+        },
+        "families": {
+          "Newsreader": 0.705,
+          "Instrument Sans": 0.295
+        },
+        "scheme": "light",
+        "palette": [
+          "#f6f1e7",
+          "#233049",
+          "#1e3a33",
+          "#ede3d0",
+          "#ebd4a5"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 241093,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 152975,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 512,
+        "pageHeightVh": {
+          "390x844": 14.43,
+          "768x1024": 9.98,
+          "1440x900": 10.31,
+          "1920x1080": 8.72
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "script.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 45718,
+          "css": 35457,
+          "js": 3927,
+          "other": 0
+        },
+        "lang": "en-GB",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Instrument Sans",
+          "Newsreader"
+        ],
+        "customPropertiesDeclared": 52,
+        "varUses": 230,
+        "distinctFontSizeDeclarations": 36,
+        "distinctColorLiterals": 63,
+        "distinctRadii": 1,
+        "mediaQueries": 14,
+        "containerQueries": 3,
+        "clampUses": 31,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 20,
+        "physicalInlineProps": 18,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "newsreader",
+          "instrument sans"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f6f1e7",
+          "#233049",
+          "#1e3a33"
+        ],
+        "displayPx1440": 426.4,
+        "bodyPx1440": 21,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Instrument Sans",
+          "Newsreader"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:17:44.490Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.84,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 3423,
+          "lcp": 3423,
+          "tbt": 0,
+          "cls": 0.053,
+          "speedIndex": 3423,
+          "tti": 3423
+        },
+        "stable": {
+          "totalByteWeight": 239831,
+          "domSize": null,
+          "requests": 9,
+          "mainThreadWorkMs": 834,
+          "bootupTimeMs": 11,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:17:51.405Z"
+    },
+    "control/D-2": {
+      "condition": "control",
+      "run": "D-2",
+      "brief": "D",
+      "sourceSha256": "b1f78c09ae894c902ae26d3ac49eb5f8e57f3e018fc17f8560374a907519896c",
+      "gates": [
+        {
+          "id": "h1-count",
+          "level": "WARN",
+          "detail": "390x844: 0 h1 elements"
+        },
+        {
+          "id": "tap-targets",
+          "level": "WARN",
+          "detail": "390: 15 controls smaller than 24×24 px (excluding inline text links)"
+        },
+        {
+          "id": "h1-count",
+          "level": "WARN",
+          "detail": "1440x900: 0 h1 elements"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 12.83,
+            "size": 184.8,
+            "body": 21
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 115.5,
+          "768x1024": 158.4,
+          "1440x900": 184.8,
+          "1920x1080": 208.663
+        },
+        "bodySize": {
+          "390x844": 18.13,
+          "768x1024": 19.264,
+          "1440x900": 21,
+          "1920x1080": 21
+        },
+        "distinctFontSizes": {
+          "390x844": 28,
+          "768x1024": 30,
+          "1440x900": 29,
+          "1920x1080": 30
+        },
+        "readingCharsPerLine": {
+          "390x844": 37.5,
+          "768x1024": 57.5,
+          "1440x900": 47,
+          "1920x1080": 47
+        },
+        "families": {
+          "Newsreader": 0.697,
+          "Instrument Sans": 0.303
+        },
+        "scheme": "light",
+        "palette": [
+          "#f6f1e7",
+          "#1e2a22",
+          "#eee6d6",
+          "#1b1a18",
+          "#fffdf8"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 277023,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 188767,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 488,
+        "pageHeightVh": {
+          "390x844": 14.65,
+          "768x1024": 10.11,
+          "1440x900": 10.39,
+          "1920x1080": 8.77
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 43051,
+          "css": 37308,
+          "js": 4877,
+          "other": 0
+        },
+        "lang": "en-GB",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Instrument Sans",
+          "Newsreader"
+        ],
+        "customPropertiesDeclared": 58,
+        "varUses": 281,
+        "distinctFontSizeDeclarations": 5,
+        "distinctColorLiterals": 81,
+        "distinctRadii": 3,
+        "mediaQueries": 11,
+        "containerQueries": 0,
+        "clampUses": 24,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 24,
+        "physicalInlineProps": 32,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "newsreader",
+          "instrument sans"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f6f1e7",
+          "#1e2a22",
+          "#eee6d6"
+        ],
+        "displayPx1440": 184.8,
+        "bodyPx1440": 21,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Instrument Sans",
+          "Newsreader"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:19:04.784Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.82,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 3423,
+          "lcp": 3423,
+          "tbt": 0,
+          "cls": 0.096,
+          "speedIndex": 3423,
+          "tti": 3423
+        },
+        "stable": {
+          "totalByteWeight": 275652,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 640,
+          "bootupTimeMs": 9,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:19:11.773Z"
+    },
+    "treatment/A-1": {
+      "condition": "treatment",
+      "run": "A-1",
+      "brief": "A",
+      "sourceSha256": "4f930bff8d4ce9ad0a1a0ab312c974ead3f44668e482f58645bf4d01b5cf3073",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 7.22,
+            "size": 104,
+            "body": 18
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 63.995,
+          "768x1024": 78.3968,
+          "1440x900": 104,
+          "1920x1080": 104
+        },
+        "bodySize": {
+          "390x844": 18,
+          "768x1024": 18,
+          "1440x900": 18,
+          "1920x1080": 18
+        },
+        "distinctFontSizes": {
+          "390x844": 11,
+          "768x1024": 11,
+          "1440x900": 10,
+          "1920x1080": 10
+        },
+        "readingCharsPerLine": {
+          "390x844": 33.3,
+          "768x1024": 47,
+          "1440x900": 41.5,
+          "1920x1080": 41.5
+        },
+        "families": {
+          "Spectral": 0.655,
+          "Public Sans": 0.345
+        },
+        "scheme": "light",
+        "palette": [
+          "#eef0ec",
+          "#e3e7e2",
+          "#fafbf9",
+          "#141b1b"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 166153,
+        "requests": 8,
+        "fonts": {
+          "count": 4,
+          "bytes": 97842,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 208,
+        "pageHeightVh": {
+          "390x844": 7.84,
+          "768x1024": 5.27,
+          "1440x900": 5.42,
+          "1920x1080": 4.64
+        },
+        "menu": {
+          "found": false
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "script.js"
+        ],
+        "bytes": {
+          "html": 54805,
+          "css": 0,
+          "js": 10309,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Public Sans",
+          "Spectral"
+        ],
+        "customPropertiesDeclared": 41,
+        "varUses": 217,
+        "distinctFontSizeDeclarations": 11,
+        "distinctColorLiterals": 20,
+        "distinctRadii": 2,
+        "mediaQueries": 9,
+        "containerQueries": 0,
+        "clampUses": 12,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 114,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "spectral",
+          "public sans"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#eef0ec",
+          "#e3e7e2",
+          "#fafbf9"
+        ],
+        "displayPx1440": 104,
+        "bodyPx1440": 18,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Public Sans",
+          "Spectral"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:20:21.176Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1773,
+          "lcp": 1773,
+          "tbt": 0,
+          "cls": 0.008,
+          "speedIndex": 1773,
+          "tti": 1773
+        },
+        "stable": {
+          "totalByteWeight": 141370,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 599,
+          "bootupTimeMs": 10,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:20:27.145Z"
+    },
+    "treatment/A-2": {
+      "condition": "treatment",
+      "run": "A-2",
+      "brief": "A",
+      "sourceSha256": "8b663003da3fcb95b80dc594e3d2bd3c3b80775a01e185afd0c18d50ec023851",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 52,
+          "768x1024": 63.5206,
+          "1440x900": 84,
+          "1920x1080": 84
+        },
+        "bodySize": {
+          "390x844": 18,
+          "768x1024": 18,
+          "1440x900": 18,
+          "1920x1080": 18
+        },
+        "distinctFontSizes": {
+          "390x844": 9,
+          "768x1024": 12,
+          "1440x900": 12,
+          "1920x1080": 12
+        },
+        "readingCharsPerLine": {
+          "390x844": 35.7,
+          "768x1024": 55,
+          "1440x900": 52,
+          "1920x1080": 52
+        },
+        "families": {
+          "Newsreader": 0.877,
+          "DM Mono": 0.123
+        },
+        "scheme": "light",
+        "palette": [
+          "#f3f1eb",
+          "#10171a",
+          "#e8e5dc",
+          "#b3261e",
+          "#fbfaf6"
+        ],
+        "buttonRadius": 0,
+        "transferBytes": 170406,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 99581,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 288,
+        "pageHeightVh": {
+          "390x844": 7.23,
+          "768x1024": 5,
+          "1440x900": 4.81,
+          "1920x1080": 4.14
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 3,
+          "visibleLinksAfter": 6,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "button",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 21393,
+          "css": 22460,
+          "js": 24019,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [
+          "schema.org",
+          "www.instagram.com",
+          "bsky.app",
+          "www.youtube.com"
+        ],
+        "googleFontFamilies": [
+          "DM Mono",
+          "Newsreader"
+        ],
+        "customPropertiesDeclared": 57,
+        "varUses": 246,
+        "distinctFontSizeDeclarations": 13,
+        "distinctColorLiterals": 29,
+        "distinctRadii": 1,
+        "mediaQueries": 11,
+        "containerQueries": 0,
+        "clampUses": 10,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 110,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "newsreader",
+          "dm mono"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f3f1eb",
+          "#10171a",
+          "#e8e5dc"
+        ],
+        "displayPx1440": 84,
+        "bodyPx1440": 18,
+        "buttonRadius": 0,
+        "googleFonts": [
+          "DM Mono",
+          "Newsreader"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:21:37.066Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1632,
+          "lcp": 1632,
+          "tbt": 0,
+          "cls": 0,
+          "speedIndex": 1632,
+          "tti": 1632
+        },
+        "stable": {
+          "totalByteWeight": 163329,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 1834,
+          "bootupTimeMs": 60,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:21:43.711Z"
+    },
+    "treatment/B-1": {
+      "condition": "treatment",
+      "run": "B-1",
+      "brief": "B",
+      "sourceSha256": "4f69d3dd2d84fe13caa1b905dc2668c33112a4607680bfba5904b5524b40a7f6",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 22,
+          "768x1024": 28,
+          "1440x900": 28,
+          "1920x1080": 28
+        },
+        "bodySize": {
+          "390x844": 13,
+          "768x1024": 13,
+          "1440x900": 13,
+          "1920x1080": 13
+        },
+        "distinctFontSizes": {
+          "390x844": 6,
+          "768x1024": 6,
+          "1440x900": 6,
+          "1920x1080": 6
+        },
+        "readingCharsPerLine": {
+          "390x844": 26.7,
+          "768x1024": 67,
+          "1440x900": 80,
+          "1920x1080": 80
+        },
+        "families": {
+          "IBM Plex Sans": 0.94,
+          "IBM Plex Mono": 0.06
+        },
+        "scheme": "light",
+        "palette": [
+          "#f5f4f0",
+          "#ffffff",
+          "#e4e1da"
+        ],
+        "buttonRadius": 4,
+        "transferBytes": 198976,
+        "requests": 9,
+        "fonts": {
+          "count": 3,
+          "bytes": 77645,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 252,
+        "pageHeightVh": {
+          "390x844": 3.17,
+          "768x1024": 2.04,
+          "1440x900": 1.53,
+          "1920x1080": 1.28
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 1,
+          "visibleLinksAfter": 7,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "a",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "data.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 19687,
+          "css": 36654,
+          "js": 61492,
+          "other": 0
+        },
+        "lang": "en-GB",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "customPropertiesDeclared": 64,
+        "varUses": 415,
+        "distinctFontSizeDeclarations": 10,
+        "distinctColorLiterals": 62,
+        "distinctRadii": 10,
+        "mediaQueries": 8,
+        "containerQueries": 1,
+        "clampUses": 0,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 189,
+        "physicalInlineProps": 1,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans",
+          "ibm plex mono"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f5f4f0",
+          "#ffffff",
+          "#e4e1da"
+        ],
+        "displayPx1440": 28,
+        "bodyPx1440": 13,
+        "buttonRadius": 4,
+        "googleFonts": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:22:50.716Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1943,
+          "lcp": 1943,
+          "tbt": 67,
+          "cls": 0,
+          "speedIndex": 1943,
+          "tti": 2071
+        },
+        "stable": {
+          "totalByteWeight": 172214,
+          "domSize": null,
+          "requests": 8,
+          "mainThreadWorkMs": 494,
+          "bootupTimeMs": 53,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:22:56.351Z"
+    },
+    "treatment/B-2": {
+      "condition": "treatment",
+      "run": "B-2",
+      "brief": "B",
+      "sourceSha256": "6e207aa3438065eaa76575414924cd89a9f3bf4e2e2d31a655ca5d90e6590290",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 24,
+          "768x1024": 26,
+          "1440x900": 32,
+          "1920x1080": 32
+        },
+        "bodySize": {
+          "390x844": 13,
+          "768x1024": 13,
+          "1440x900": 14,
+          "1920x1080": 14
+        },
+        "distinctFontSizes": {
+          "390x844": 8,
+          "768x1024": 9,
+          "1440x900": 9,
+          "1920x1080": 9
+        },
+        "readingCharsPerLine": {
+          "390x844": 31.3,
+          "768x1024": 36,
+          "1440x900": 47,
+          "1920x1080": 47
+        },
+        "families": {
+          "IBM Plex Sans": 0.949,
+          "IBM Plex Mono": 0.051
+        },
+        "scheme": "light",
+        "palette": [
+          "#f4f3ee",
+          "#ffffff"
+        ],
+        "buttonRadius": 3,
+        "transferBytes": 210550,
+        "requests": 9,
+        "fonts": {
+          "count": 3,
+          "bytes": 77645,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 248,
+        "pageHeightVh": {
+          "390x844": 2.56,
+          "768x1024": 2.06,
+          "1440x900": 1.64,
+          "1920x1080": 1.37
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 1,
+          "visibleLinksAfter": 7,
+          "escapeCloses": true,
+          "bodyLocked": true,
+          "activeTag": "a",
+          "dialogs": 1
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "data.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 20634,
+          "css": 38182,
+          "js": 70591,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ],
+        "customPropertiesDeclared": 57,
+        "varUses": 493,
+        "distinctFontSizeDeclarations": 13,
+        "distinctColorLiterals": 37,
+        "distinctRadii": 8,
+        "mediaQueries": 7,
+        "containerQueries": 0,
+        "clampUses": 0,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 224,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans",
+          "ibm plex mono"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f4f3ee",
+          "#ffffff"
+        ],
+        "displayPx1440": 32,
+        "bodyPx1440": 14,
+        "buttonRadius": 3,
+        "googleFonts": [
+          "IBM Plex Mono",
+          "IBM Plex Sans"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:24:02.735Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1977,
+          "lcp": 1977,
+          "tbt": 77,
+          "cls": 0.01,
+          "speedIndex": 1977,
+          "tti": 2172
+        },
+        "stable": {
+          "totalByteWeight": 183777,
+          "domSize": null,
+          "requests": 8,
+          "mainThreadWorkMs": 545,
+          "bootupTimeMs": 80,
+          "unusedJsBytes": 23098,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:24:08.287Z"
+    },
+    "treatment/C-1": {
+      "condition": "treatment",
+      "run": "C-1",
+      "brief": "C",
+      "sourceSha256": "178b48df730b5139516868287febf30f3f3d5ab5f0f2d9eb249b0be6abf4f86e",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 36.0055,
+          "768x1024": 43.2064,
+          "1440x900": 56,
+          "1920x1080": 56
+        },
+        "bodySize": {
+          "390x844": 16,
+          "768x1024": 16,
+          "1440x900": 16,
+          "1920x1080": 16
+        },
+        "distinctFontSizes": {
+          "390x844": 8,
+          "768x1024": 8,
+          "1440x900": 8,
+          "1920x1080": 8
+        },
+        "readingCharsPerLine": {
+          "390x844": 19.4,
+          "768x1024": 19.7,
+          "1440x900": 19.7,
+          "1920x1080": 19.7
+        },
+        "families": {
+          "IBM Plex Sans Arabic": 0.954,
+          "Reem Kufi": 0.046
+        },
+        "scheme": "light",
+        "palette": [
+          "#f7f2ea",
+          "#efe6d8",
+          "#8a1c2b",
+          "#221a14",
+          "#fffcf7"
+        ],
+        "buttonRadius": 6,
+        "transferBytes": 250765,
+        "requests": 10,
+        "fonts": {
+          "count": 6,
+          "bytes": 153723,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 288,
+        "pageHeightVh": {
+          "390x844": 7.07,
+          "768x1024": 5.21,
+          "1440x900": 3.88,
+          "1920x1080": 3.23
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 6,
+          "visibleLinksAfter": 12,
+          "escapeCloses": true,
+          "bodyLocked": true,
+          "activeTag": "button",
+          "dialogs": 1
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 49232,
+          "css": 31695,
+          "js": 14214,
+          "other": 0
+        },
+        "lang": "ar",
+        "dir": "rtl",
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ],
+        "customPropertiesDeclared": 45,
+        "varUses": 384,
+        "distinctFontSizeDeclarations": 10,
+        "distinctColorLiterals": 24,
+        "distinctRadii": 7,
+        "mediaQueries": 7,
+        "containerQueries": 0,
+        "clampUses": 2,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 209,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans arabic",
+          "reem kufi"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f7f2ea",
+          "#efe6d8",
+          "#8a1c2b"
+        ],
+        "displayPx1440": 56,
+        "bodyPx1440": 16,
+        "buttonRadius": 6,
+        "googleFonts": [
+          "IBM Plex Sans Arabic",
+          "Reem Kufi"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:25:17.984Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1777,
+          "lcp": 1777,
+          "tbt": 0,
+          "cls": 0.01,
+          "speedIndex": 1777,
+          "tti": 1777
+        },
+        "stable": {
+          "totalByteWeight": 221370,
+          "domSize": null,
+          "requests": 10,
+          "mainThreadWorkMs": 1182,
+          "bootupTimeMs": 11,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:25:24.329Z"
+    },
+    "treatment/C-2": {
+      "condition": "treatment",
+      "run": "C-2",
+      "brief": "C",
+      "sourceSha256": "563f7c6d51d494f061524ae986af349b62c8700164507b275d12e1bd25a9f948",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 30,
+          "768x1024": 35.0374,
+          "1440x900": 43.9952,
+          "1920x1080": 44
+        },
+        "bodySize": {
+          "390x844": 17,
+          "768x1024": 17,
+          "1440x900": 17,
+          "1920x1080": 17
+        },
+        "distinctFontSizes": {
+          "390x844": 10,
+          "768x1024": 11,
+          "1440x900": 11,
+          "1920x1080": 11
+        },
+        "readingCharsPerLine": {
+          "390x844": 26.2,
+          "768x1024": 16.4,
+          "1440x900": 19,
+          "1920x1080": 19
+        },
+        "families": {
+          "IBM Plex Sans Arabic": 0.973,
+          "Kufam": 0.027
+        },
+        "scheme": "light",
+        "palette": [
+          "#ffffff",
+          "#f6f1e9",
+          "#9c3d1d",
+          "#1e1914",
+          "#f4e5ea"
+        ],
+        "buttonRadius": 6,
+        "transferBytes": 310480,
+        "requests": 11,
+        "fonts": {
+          "count": 6,
+          "bytes": 193801,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 272,
+        "pageHeightVh": {
+          "390x844": 6.26,
+          "768x1024": 4.35,
+          "1440x900": 3.84,
+          "1920x1080": 3.2
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 2,
+          "visibleLinksAfter": 11,
+          "escapeCloses": true,
+          "bodyLocked": true,
+          "activeTag": "button",
+          "dialogs": 1
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "app.js",
+          "index.html",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 54753,
+          "css": 36979,
+          "js": 21364,
+          "other": 0
+        },
+        "lang": "ar",
+        "dir": "rtl",
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "IBM Plex Sans Arabic",
+          "Kufam"
+        ],
+        "customPropertiesDeclared": 49,
+        "varUses": 323,
+        "distinctFontSizeDeclarations": 14,
+        "distinctColorLiterals": 30,
+        "distinctRadii": 10,
+        "mediaQueries": 8,
+        "containerQueries": 0,
+        "clampUses": 2,
+        "reducedMotion": true,
+        "colorSchemeSupport": false,
+        "logicalProps": 295,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "ibm plex sans arabic",
+          "kufam"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#ffffff",
+          "#f6f1e9",
+          "#9c3d1d"
+        ],
+        "displayPx1440": 43.9952,
+        "bodyPx1440": 17,
+        "buttonRadius": 6,
+        "googleFonts": [
+          "IBM Plex Sans Arabic",
+          "Kufam"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:26:35.811Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.96,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1785,
+          "lcp": 1785,
+          "tbt": 0,
+          "cls": 0.011,
+          "speedIndex": 1785,
+          "tti": 1785
+        },
+        "stable": {
+          "totalByteWeight": 260601,
+          "domSize": null,
+          "requests": 12,
+          "mainThreadWorkMs": 1052,
+          "bootupTimeMs": 42,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": [
+          "label-content-name-mismatch"
+        ]
+      },
+      "scoredAt": "2026-10-04T10:26:42.039Z"
+    },
+    "treatment/D-1": {
+      "condition": "treatment",
+      "run": "D-1",
+      "brief": "D",
+      "sourceSha256": "bf0c54b1112527c84ac7a47f015593275274205831ee7718c06d07b7dcf409a2",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [
+        {
+          "id": "giant-hero-type",
+          "evidence": {
+            "sizeVw": 9.44,
+            "size": 136,
+            "body": 18
+          }
+        }
+      ],
+      "summary": {
+        "displaySize": {
+          "390x844": 88,
+          "768x1024": 108.157,
+          "1440x900": 136,
+          "1920x1080": 136
+        },
+        "bodySize": {
+          "390x844": 18,
+          "768x1024": 18,
+          "1440x900": 18,
+          "1920x1080": 18
+        },
+        "distinctFontSizes": {
+          "390x844": 13,
+          "768x1024": 13,
+          "1440x900": 12,
+          "1920x1080": 12
+        },
+        "readingCharsPerLine": {
+          "390x844": 35.5,
+          "768x1024": 52.2,
+          "1440x900": 59.6,
+          "1920x1080": 59.6
+        },
+        "families": {
+          "Literata": 0.752,
+          "Schibsted Grotesk": 0.248
+        },
+        "scheme": "light",
+        "palette": [
+          "#f4efe5",
+          "#17242d",
+          "#eee3cb",
+          "#8a3a22",
+          "#1f4e52"
+        ],
+        "buttonRadius": 0,
+        "transferBytes": 293113,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 223504,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 456,
+        "pageHeightVh": {
+          "390x844": 14.11,
+          "768x1024": 9.16,
+          "1440x900": 7.95,
+          "1920x1080": 6.63
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 2,
+          "visibleLinksAfter": 7,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "button",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 36447,
+          "css": 27070,
+          "js": 2718,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Literata",
+          "Schibsted Grotesk"
+        ],
+        "customPropertiesDeclared": 55,
+        "varUses": 296,
+        "distinctFontSizeDeclarations": 12,
+        "distinctColorLiterals": 39,
+        "distinctRadii": 1,
+        "mediaQueries": 9,
+        "containerQueries": 0,
+        "clampUses": 12,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 131,
+        "physicalInlineProps": 1,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "literata",
+          "schibsted grotesk"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f4efe5",
+          "#17242d",
+          "#eee3cb"
+        ],
+        "displayPx1440": 136,
+        "bodyPx1440": 18,
+        "buttonRadius": 0,
+        "googleFonts": [
+          "Literata",
+          "Schibsted Grotesk"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:27:54.354Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1621,
+          "lcp": 1621,
+          "tbt": 0,
+          "cls": 0.038,
+          "speedIndex": 1621,
+          "tti": 1621
+        },
+        "stable": {
+          "totalByteWeight": 291990,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 691,
+          "bootupTimeMs": 11,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:28:00.545Z"
+    },
+    "treatment/D-2": {
+      "condition": "treatment",
+      "run": "D-2",
+      "brief": "D",
+      "sourceSha256": "ca55ce7d961edc2a0c0a6b9b1d2521cb0d11ab472819f1c4a2de648a0e48e4ae",
+      "gates": [
+        {
+          "id": "all",
+          "level": "PASS",
+          "detail": "no objective gate failed"
+        }
+      ],
+      "failed": false,
+      "signatures": [],
+      "summary": {
+        "displaySize": {
+          "390x844": 40.0034,
+          "768x1024": 48.6445,
+          "1440x900": 64,
+          "1920x1080": 64
+        },
+        "bodySize": {
+          "390x844": 20,
+          "768x1024": 20,
+          "1440x900": 20,
+          "1920x1080": 20
+        },
+        "distinctFontSizes": {
+          "390x844": 14,
+          "768x1024": 18,
+          "1440x900": 17,
+          "1920x1080": 17
+        },
+        "readingCharsPerLine": {
+          "390x844": 37.3,
+          "768x1024": 42.3,
+          "1440x900": 41.5,
+          "1920x1080": 41.5
+        },
+        "families": {
+          "Newsreader": 0.861,
+          "Archivo": 0.139
+        },
+        "scheme": "light",
+        "palette": [
+          "#f4efe4",
+          "#1d2130",
+          "#dde0ee",
+          "#1f2747",
+          "#2d6a6e"
+        ],
+        "buttonRadius": 2,
+        "transferBytes": 378559,
+        "requests": 8,
+        "fonts": {
+          "count": 3,
+          "bytes": 316134,
+          "formats": [
+            "woff2"
+          ]
+        },
+        "lcpLabMs": 228,
+        "pageHeightVh": {
+          "390x844": 13.27,
+          "768x1024": 7.72,
+          "1440x900": 7.05,
+          "1920x1080": 5.88
+        },
+        "menu": {
+          "found": true,
+          "ariaExpandedBefore": "false",
+          "ariaExpandedAfter": "true",
+          "hasAriaControls": true,
+          "visibleLinksBefore": 1,
+          "visibleLinksAfter": 6,
+          "escapeCloses": true,
+          "bodyLocked": false,
+          "activeTag": "a",
+          "dialogs": 0
+        }
+      },
+      "focus": {
+        "390x844": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "768x1024": null,
+        "1440x900": {
+          "share": 1,
+          "hidden": 0,
+          "skipFirst": true
+        },
+        "1920x1080": null
+      },
+      "axe": {
+        "390x844": {},
+        "768x1024": null,
+        "1440x900": {},
+        "1920x1080": null
+      },
+      "static": {
+        "files": [
+          "index.html",
+          "main.js",
+          "styles.css"
+        ],
+        "bytes": {
+          "html": 29602,
+          "css": 27155,
+          "js": 2660,
+          "other": 0
+        },
+        "lang": "en",
+        "dir": null,
+        "externalHosts": [],
+        "googleFontFamilies": [
+          "Archivo",
+          "Newsreader"
+        ],
+        "customPropertiesDeclared": 45,
+        "varUses": 304,
+        "distinctFontSizeDeclarations": 21,
+        "distinctColorLiterals": 29,
+        "distinctRadii": 1,
+        "mediaQueries": 8,
+        "containerQueries": 0,
+        "clampUses": 9,
+        "reducedMotion": true,
+        "colorSchemeSupport": true,
+        "logicalProps": 103,
+        "physicalInlineProps": 0,
+        "diRuleIdMentions": 0
+      },
+      "style": {
+        "families": [
+          "newsreader",
+          "archivo"
+        ],
+        "scheme": "light",
+        "palette": [
+          "#f4efe4",
+          "#1d2130",
+          "#dde0ee"
+        ],
+        "displayPx1440": 64,
+        "bodyPx1440": 20,
+        "buttonRadius": 2,
+        "googleFonts": [
+          "Archivo",
+          "Newsreader"
+        ]
+      },
+      "lighthouseMobile": {
+        "lighthouseVersion": "13.5.0",
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "fetchTime": "2026-10-04T10:29:13.212Z",
+        "runWarnings": 0,
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 1
+        },
+        "metrics": {
+          "fcp": 1623,
+          "lcp": 1623,
+          "tbt": 0,
+          "cls": 0.033,
+          "speedIndex": 1623,
+          "tti": 1623
+        },
+        "stable": {
+          "totalByteWeight": 377581,
+          "domSize": null,
+          "requests": 7,
+          "mainThreadWorkMs": 611,
+          "bootupTimeMs": 12,
+          "unusedJsBytes": 0,
+          "fontDisplayPass": null
+        },
+        "failedAccessibilityAudits": []
+      },
+      "scoredAt": "2026-10-04T10:29:19.308Z"
+    }
+  },
+  "diversity": {
+    "control": {
+      "crossBriefPairs": 12,
+      "meanSameness": 0.486
+    },
+    "treatment": {
+      "crossBriefPairs": 12,
+      "meanSameness": 0.704
+    }
+  },
+  "notes": "Lab values from a proxied container (D-009); compare within this cycle only. Sameness is a crude proxy (fonts, palette, scheme, radius)."
+}

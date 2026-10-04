@@ -1,0 +1,90 @@
+# Human blind scores — copy per reviewer. Scores 1–5 per evals/rubrics/scorecard.yaml anchors.
+cycle: cycle-01
+reviewer: ""
+date: ""
+outputs:
+  A-17B383:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  A-326DE8:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  A-50EF2E:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  A-52FBF5:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  A-B46EA2:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  B-4F5097:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  B-644E29:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  B-80746E:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  B-849635:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  C-44AD05:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  C-664C03:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  C-C49BB2:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  C-F4122C:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  D-44E09D:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  D-62C7C3:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  D-9BC93D:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
+  D-F9F116:
+    scores: { brief_fidelity: null, hierarchy_usability: null, originality_art_direction: null, responsive_quality: null, accessibility: null, performance: null, system_consistency: null }
+    hard_gate_failures: []
+    rank_within_brief: null
+    findings: []
